@@ -3,6 +3,19 @@
  */
 package it.univaq.coevolution.scoping;
 
+import it.univaq.coevolution.migration.*;
+
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.eclipse.emf.common.util.EList;
+import org.eclipse.emf.ecore.*;
+
+import org.eclipse.emf.ecore.EcorePackage;
+import org.eclipse.xtext.resource.IEObjectDescription;
+import org.eclipse.xtext.scoping.IScope;
+import org.eclipse.xtext.scoping.Scopes;
 import org.eclipse.xtext.scoping.impl.AbstractDeclarativeScopeProvider;
 
 /**
@@ -13,5 +26,496 @@ import org.eclipse.xtext.scoping.impl.AbstractDeclarativeScopeProvider;
  *
  */
 public class MigrationScopeProvider extends AbstractDeclarativeScopeProvider {
+public IScope scope_packageSetters_def_metafeature(packageSetters_def f, EReference r) {
+		
+		List union=new ArrayList();
+		EPackage p=EcorePackage.eINSTANCE;
+		EClass  c=	(EClass) p.getEClassifier("EPackage");
+		for (EStructuralFeature feature : c.getEAllAttributes()) {
+			
+			union.add(feature);
+		}
 
+		for (EClass supertype : c.getESuperTypes()) {
+			for (EStructuralFeature feature : supertype.getEAllAttributes()) {
+				union.add(feature);
+		}
+		}
+		
+		return Scopes.scopeFor(union);
+}		
+	
+public IScope scope_packageSetters_metafeature(packageSetters f, EReference r) {
+		
+		List union=new ArrayList();
+		EPackage p=EcorePackage.eINSTANCE;
+		EClass  c=	(EClass) p.getEClassifier("EPackage");
+		for (EStructuralFeature feature : c.getEAllAttributes()) {
+			
+			union.add(feature);
+		}
+
+		for (EClass supertype : c.getESuperTypes()) {
+			for (EStructuralFeature feature : supertype.getEAllAttributes()) {
+				union.add(feature);
+		}
+		}
+		
+		return Scopes.scopeFor(union);
+}	
+
+public IScope scope_FeatureSetters_valueFeature(FeatureSetters f, EReference r) {
+	
+	//String type=(f.getValueRef().get(0) instanceof Parameter)?(((Parameter)f.getValueRef().get(0)).getType().getName()):(f.getValueRef()).get(0).getClass().getSuperclass().getSuperclass().getSimpleName().substring(0,(f.getValueRef()).get(0).getClass().getSuperclass().getSuperclass().getSimpleName().indexOf("Impl"));
+	
+	String type=(f.getValueRef()).get(0).getClass().getSuperclass().getSimpleName().substring(0,(f.getValueRef()).get(0).getClass().getSuperclass().getSimpleName().indexOf("Impl"));
+	List union=new ArrayList();
+	EPackage p=EcorePackage.eINSTANCE;
+	EClass  c=	(EClass) p.getEClassifier(type);
+	for (EStructuralFeature feature : c.getEAllAttributes()) {
+		
+		union.add(feature);
+	}
+
+	for (EClass supertype : c.getESuperTypes()) {
+		for (EStructuralFeature feature : supertype.getEAllAttributes()) {
+			union.add(feature);
+	}
+	}
+	union.add(c.getEStructuralFeature("eType"));
+	union.add(c.getEStructuralFeature("eContainingClass"));
+	return Scopes.scopeFor(union);
+}
+
+public IScope scope_FeatureSetters_metafeature(FeatureSetters f, EReference r) {
+		
+		
+		
+		List union=new ArrayList();
+		EPackage p=EcorePackage.eINSTANCE;
+		EClass  c=	(EClass) p.getEClassifier("EStructuralFeature");
+		for (EStructuralFeature feature : c.getEAllAttributes()) {
+			
+			union.add(feature);
+		}
+
+		for (EClass supertype : c.getESuperTypes()) {
+			for (EStructuralFeature feature : supertype.getEAllAttributes()) {
+				union.add(feature);
+		}
+		}
+		union.add(c.getEStructuralFeature("eType"));
+		union.add(c.getEStructuralFeature("eContainingClass"));
+		return Scopes.scopeFor(union);
+}
+public IScope scope_classSetters_def_metafeature(classSetters_def f, EReference r) {
+	
+	
+	
+	List union=new ArrayList();
+	EPackage p=EcorePackage.eINSTANCE;
+	EClass  c=	(EClass) p.getEClassifier("EClass");
+	for (EStructuralFeature feature : c.getEAllAttributes()) {
+		
+		union.add(feature);
+	}
+	union.add(c.getEStructuralFeature("eSuperTypes"));
+	for (EClass supertype : c.getESuperTypes()) {
+		for (EStructuralFeature feature : supertype.getEAllAttributes()) {
+			union.add(feature);
+	}
+}
+return Scopes.scopeFor(union);
+}
+
+public IScope scope_classSetter_metafeature(classSetter f, EReference r) {
+		
+		
+		
+		List union=new ArrayList();
+		EPackage p=EcorePackage.eINSTANCE;
+		EClass  c=	(EClass) p.getEClassifier("EClass");
+		for (EStructuralFeature feature : c.getEAllAttributes()) {
+			
+			union.add(feature);
+		}
+		union.add(c.getEStructuralFeature("eSuperTypes"));
+		for (EClass supertype : c.getESuperTypes()) {
+			for (EStructuralFeature feature : supertype.getEAllAttributes()) {
+				union.add(feature);
+		}
+}
+return Scopes.scopeFor(union);
+}
+public IScope scope_FilterMigrator_internalFeature(FilterMigrator f, EReference r) {
+	
+	List union=new ArrayList();
+	EClass metaclass=(EClass) f.getFeature().getEType();
+	for (EStructuralFeature feature : metaclass.getEStructuralFeatures()) {
+		union.add(feature);
+	}
+	return Scopes.scopeFor( union);
+	}
+
+	public IScope scope_FilterMigrator_feature(FilterMigrator f, EReference r) {
+		
+		
+		
+		List union=new ArrayList();
+	
+		if(f.eContainer() instanceof MigratorSX){
+		MigratorSX container=(MigratorSX)f.eContainer();
+			for (EStructuralFeature feature : ((EClass)(container).getElementSX()).getEStructuralFeatures()) {
+			
+			union.add(feature);
+			}
+	for (EClass supertype : ((EClass)((MigratorSX)f.eContainer()).getElementSX()).getESuperTypes()) {
+			for (EStructuralFeature feature : supertype.getEStructuralFeatures()) {
+	
+			union.add(feature);
+			}
+	}
+		}else{
+		MigratorDX containerDX=(MigratorDX)f.eContainer();
+	for (EStructuralFeature feature : ((EClass)(containerDX).getElementDX()).getEStructuralFeatures()) {
+			
+			union.add(feature);
+			}
+	for (EClass supertype : ((EClass)((MigratorDX)f.eContainer()).getElementDX()).getESuperTypes()) {
+			for (EStructuralFeature feature : supertype.getEStructuralFeatures()) {
+	
+			union.add(feature);
+			}
+		}}
+		
+		
+	
+		
+		return Scopes.scopeFor(union);
+	}
+	
+	public IScope scope_FilterMigrator_dxobj(FilterMigrator f, EReference r) {
+		List union=new ArrayList();
+		
+		if(f.eContainer() instanceof MigratorSX){
+		OpDef operation=((OpDef)(((Rule)((MigratorSX)f.eContainer()).eContainer()).getFilter()));
+		union.add(operation.getRef());
+		union.addAll(operation.getSettersdef());
+		}else{
+			//migratorDx
+	MigratorDX migratorDx=(MigratorDX) f.eContainer();
+	RewritingRule rwr=(RewritingRule)migratorDx.eContainer();
+	Rule rule=(Rule)rwr.eContainer();
+	OpDef operation=rule.getFilter();
+	
+		//OpDef operation=((OpDef)(((Rule)((MigratorDX)f.eContainer()).eContainer()).getFilter()));
+		union.add(operation.getRef());
+		
+		EList<EObject> setters_defs=operation.getSettersdef();
+	
+		for (EObject eObject : setters_defs) {
+			
+			EStructuralFeature par=eObject.eClass().getEStructuralFeature("par");
+			List<EObject> pars=(List<EObject>) eObject.eGet(par);
+			
+			for (EObject singlePar : pars) {
+			
+			union.add(singlePar);
+		}
+			
+		}
+		
+		
+
+
+		
+			
+		}
+		return Scopes.scopeFor(union);
+	}
+
+//	public IScope scope_Parameter_type(Parameter f, EReference r) {
+//		List union=new ArrayList();
+//		
+//		EPackage p=EcorePackage.eINSTANCE;
+//	
+//	
+//
+//		for (EClassifier type : p.getEClassifiers()) {
+//			union.add(type);
+//		}
+//		return Scopes.scopeFor(union);
+//	}
+	
+	
+	public IScope scope_FilterMigrator_dxgetters(FilterMigrator f, EReference r) {
+		List union=new ArrayList();
+		
+		EClass ecl=f.eClass().eClass();
+		List<EStructuralFeature> all=ecl.getEAllStructuralFeatures();
+		union.addAll(all);
+		
+		return Scopes.scopeFor(union);
+
+	}
+
+	public IScope scope_MigratorSX_elementSX(MigratorSX f, EReference r) {
+		List union=new ArrayList();
+		List<EPackage> list_packages=((MigrationProgram)f.eContainer().eContainer()).getTransformationPackage();
+		List<EClassifier> list_Ex = new ArrayList<EClassifier>();
+		
+		for(EPackage p : list_packages){
+			union.addAll(p.getEClassifiers()
+			);
+		}
+		
+		
+		return Scopes.scopeFor(union);
+	}
+	
+	public IScope scope_MigratorDX_elementDX(MigratorDX f, EReference r) {
+		List union=new ArrayList();
+		List<EPackage> list_packages=((MigrationProgram)f.eContainer().eContainer()).getTransformationPackage();
+		List<EClassifier> list_Ex = new ArrayList<EClassifier>();
+		
+		for(EPackage p : list_packages){
+			union.addAll(p.getEClassifiers()
+			);
+		}
+		
+		
+		return Scopes.scopeFor(union);
+	}
+	
+	public IScope scope_Argument_arg(CallOperator o, EReference r) {
+//		
+		List union=new ArrayList();
+	
+		if(o.eContainer() instanceof eStructuralFeatureOp){
+		
+			getEpackages(o, union);
+			getEClasses(getRootPackage(o), union);
+			getEAttributes(getRootClass( o), union);
+			getEReferences(getRootClass( o), union);
+		}
+		
+		
+		if(o.eContainer() instanceof ClassOp){
+			getEpackages(o, union);
+			getEClasses(getRootPackage(o), union);
+			
+		}
+
+		if(o.eContainer() instanceof PackageOp){
+		
+				IScope parent = delegateGetScope(o, r) ;// all EPackages from the workspace
+				
+				for(IEObjectDescription e : parent.getAllElements()){
+
+					if(e.getEClass().getName().equals("EPackage")){
+		
+						union.add((EObject)e);
+				}
+	
+
+		}
+
+				getEpackages(o, union);
+		}
+//	
+//		
+//
+	return Scopes.scopeFor(union);
+		//return ;
+}
+	
+	
+	
+	///////////////////////////////////////////////////////////////
+	public IScope scope_ClassOp_eSuperTypes(ClassOp c, EReference r) {
+		List union=new ArrayList();
+
+		
+//		if(((PackageOp)c.eContainer()).getRef()!=null){
+//		List<EClassifier> list_Ex=((PackageOp)c.eContainer()).getRef().getEClassifiers();
+//		union.addAll(list_Ex);
+//		}
+//	
+//		//EList<EClassifier> list_new=((PackageOp)c.eContainer()).getNew().getEClassifiers();
+//		EList<ClassOp> list_new=((PackageOp)c.eContainer()).getClassOperations();
+//		for (ClassOp cop : ((PackageOp)c.eContainer()).getClassOperations()) {
+//		union.add(cop.getVar());
+//		}
+		getEClasses(c.eContainer(), union);
+		return Scopes.scopeFor(union);
+		}
+	
+	
+	public IScope scope_CHANGECLASS_ref(CHANGECLASS c, EReference r) {
+		List union=new ArrayList();
+		
+		getEClasses(c.eContainer().eContainer(), union);
+		return Scopes.scopeFor(union);
+	}
+
+	public IScope scope_ClassOp_ref(ClassOp c, EReference r) {
+		List union=new ArrayList();
+
+
+//		if(((PackageOp)c.eContainer()).getRef()!=null){
+//		List<EClassifier> list_Ex=((PackageOp)c.eContainer()).getRef().getEClassifiers();
+//		union.addAll(list_Ex);
+//		}
+//	
+//		//EList<EClassifier> list_new=((PackageOp)c.eContainer()).getNew().getEClassifiers();
+//		EList<ClassOp> list_new=((PackageOp)c.eContainer()).getClassOperations();
+//		for (ClassOp cop : ((PackageOp)c.eContainer()).getClassOperations()) {
+//		union.add(cop.getVar());
+//		}
+		getEClasses(c.eContainer(), union);
+		return Scopes.scopeFor(union);
+		}
+	
+public List getEClasses(EObject o,List union){
+		
+
+	
+	if((((PackageOp)o).getOp() instanceof CHANGEPACKAGE) &&(((CHANGEPACKAGE)((PackageOp)o).getOp()).getRef()!=null)){
+			List<EClassifier> list_Ex=((CHANGEPACKAGE)((PackageOp)o).getOp()).getRef().getEClassifiers();
+			union.addAll(list_Ex);
+			}	
+		
+		//EList<ClassOp> list_new=((PackageOp)getRootPackage(o)).getClasses();
+		
+		for (ClassOp cop : ((PackageOp)o).getClasses()) {
+			
+		union.add(cop.getVar());
+		}
+		return union;
+		
+	}
+	
+	
+	public IScope scope_CHANGEATTRIBUTE_refAttr(AttributeOp attr, EReference r) {
+	List union=new ArrayList();
+
+	getEAttributes(attr.eContainer(), union);
+	
+	return Scopes.scopeFor(union);
+	
+	
+	}
+	public IScope scope_MOVEATTRIBUTE_refAttr(AttributeOp attr, EReference r) {
+		List union=new ArrayList();
+
+		getEAttributes(attr.eContainer(), union);
+		
+		return Scopes.scopeFor(union);
+		
+		
+		}
+	
+	public IScope scope_CHANGEREFERENCE_refRef(ReferenceOp ref, EReference r) {
+		List union=new ArrayList();
+
+		getEReferences(ref.eContainer(), union);
+		
+		return Scopes.scopeFor(union);
+		
+		
+		}
+	public IScope scope_MOVEREFERENCE_refRef(ReferenceOp ref, EReference r) {
+		List union=new ArrayList();
+
+		getEReferences(ref.eContainer(), union);
+		
+		return Scopes.scopeFor(union);
+		
+		
+		}
+	public IScope scope_ReferenceOp_refRef(ReferenceOp ref, EReference r) {
+		List union=new ArrayList();
+
+		//System.out.println(((ClassOp)ref.eContainer()).getRef().getName());
+		getEReferences(ref.eContainer(), union);
+		
+		
+		return Scopes.scopeFor(union);
+
+		}
+	
+	///////////////////utility/////////////////////////////////////////
+	public Model getRoot(EObject o){
+		Model m;
+		if(o instanceof Model){ 
+			return (Model)o;
+			}else{
+			return getRoot(o.eContainer());	
+				
+			}
+			
+	}
+	
+	public it.univaq.coevolution.migration.PackageOp getRootPackage(EObject o){
+		it.univaq.coevolution.migration.PackageOp p;
+		if(o instanceof it.univaq.coevolution.migration.PackageOp){ 
+			return (it.univaq.coevolution.migration.PackageOp)o;
+			}else{
+				
+			return getRootPackage(o.eContainer());	
+				
+			}
+			
+	}
+	
+	public it.univaq.coevolution.migration.ClassOp getRootClass(EObject o){
+		it.univaq.coevolution.migration.ClassOp c;
+		if(o instanceof it.univaq.coevolution.migration.ClassOp){ 
+			return (it.univaq.coevolution.migration.ClassOp)o;
+			}else{
+			return getRootClass(o.eContainer());	
+				
+			}
+			
+	}
+	
+	public List getEpackages(EObject o,List union){
+		EList<PackageOp> list_packages=getRoot(o).getPackages();
+		for (PackageOp pop : getRoot(o).getPackages()) {
+		union.add(pop.getVar());
+		}
+		
+
+		return union;
+	}
+	
+	
+	
+	public List getEAttributes(EObject container,List union){
+		//test if is instanceof changed class
+		if(((ClassOp)container).getOp() instanceof CHANGECLASS){
+		//if(((ClassOp)container).getChange_op()!=null){
+			List<EAttribute> list_Ex=((CHANGECLASS)((ClassOp)container).getOp()).getRef().getEAttributes();
+			union.addAll(list_Ex);
+			}
+			for (AttributeOp aop : ((ClassOp)container).getAttributes()) {
+				union.add(aop.getVar());
+				}
+			return union;
+	}
+	
+	public List getEReferences(EObject container,List union){
+		
+		if(((ClassOp)container).getOp() instanceof CHANGECLASS){
+			List<EReference> list_Ex=((CHANGECLASS)((ClassOp)container).getOp()).getRef().getEReferences();
+			union.addAll(list_Ex);
+			}
+			
+			//EList<ReferenceOp> list_new=((ClassOp)container).getEReferenceOperations();
+			for (ReferenceOp rop : ((ClassOp)container).getReferences()) {
+			union.add(rop.getVar());
+			}
+			return union;
+		
+	}
 }
