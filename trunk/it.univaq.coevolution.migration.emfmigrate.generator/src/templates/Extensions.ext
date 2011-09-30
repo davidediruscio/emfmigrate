@@ -1,0 +1,4 @@
+import it::univaq::coevolution::migration::emfmigrate;
+
+sortedGreetings(Model this) :
+	this.greetings.sortBy(g|g.name.toLowerCase());
