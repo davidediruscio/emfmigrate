@@ -7,6 +7,7 @@ import it.univaq.coevolution.migration.*;
 
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 import org.eclipse.emf.common.util.EList;
@@ -147,6 +148,24 @@ public IScope scope_classSetter_metafeature(classSetter f, EReference r) {
 }
 return Scopes.scopeFor(union);
 }
+
+
+//////////////////MIO     scope per il set Esupertype 
+ 
+public IScope scope_classSetter_valueRef(classSetter f, EReference r) {
+	List union=new ArrayList();
+	getEClasses(f.eContainer().eContainer(), union);
+	for (int i=union.size()-1; i>-1;i--)
+		if (!union.get(i).getClass().getSimpleName().equals("EClassImpl"))
+			union.remove(i);
+	return Scopes.scopeFor(union);
+}
+
+
+//////////////////END MIO
+
+
+
 public IScope scope_FilterMigrator_internalFeature(FilterMigrator f, EReference r) {
 	
 	List union=new ArrayList();
@@ -376,24 +395,6 @@ public IScope scope_FilterMigrator_internalFeature(FilterMigrator f, EReference 
 		return Scopes.scopeFor(union);
 		}
 	
-public List getEClasses(EObject o,List union){
-		
-
-	
-	if((((PackageOp)o).getOp() instanceof CHANGEPACKAGE) &&(((CHANGEPACKAGE)((PackageOp)o).getOp()).getRef()!=null)){
-			List<EClassifier> list_Ex=((CHANGEPACKAGE)((PackageOp)o).getOp()).getRef().getEClassifiers();
-			union.addAll(list_Ex);
-			}	
-		
-		//EList<ClassOp> list_new=((PackageOp)getRootPackage(o)).getClasses();
-		
-		for (ClassOp cop : ((PackageOp)o).getClasses()) {
-			
-		union.add(cop.getVar());
-		}
-		return union;
-		
-	}
 	
 	
 	public IScope scope_CHANGEATTRIBUTE_refAttr(AttributeOp attr, EReference r) {
@@ -489,6 +490,24 @@ public List getEClasses(EObject o,List union){
 		return union;
 	}
 	
+	public List getEClasses(EObject o,List union){
+		
+
+		
+		if((((PackageOp)o).getOp() instanceof CHANGEPACKAGE) &&(((CHANGEPACKAGE)((PackageOp)o).getOp()).getRef()!=null)){
+				List<EClassifier> list_Ex=((CHANGEPACKAGE)((PackageOp)o).getOp()).getRef().getEClassifiers();
+				union.addAll(list_Ex);
+				}	
+			
+			//EList<ClassOp> list_new=((PackageOp)getRootPackage(o)).getClasses();
+			
+			for (ClassOp cop : ((PackageOp)o).getClasses()) {
+				
+			union.add(cop.getVar());
+			}
+			return union;
+			
+		}
 	
 	
 	public List getEAttributes(EObject container,List union){
