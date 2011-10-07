@@ -154,13 +154,15 @@ return Scopes.scopeFor(union);
  
 public IScope scope_classSetter_valueRef(classSetter f, EReference r) {
 	List union=new ArrayList();
-	getEClasses(f.eContainer().eContainer(), union);
+	EPackage p=EcorePackage.eINSTANCE;
+	EClass c= (EClass) p.getEClassifier("EClass");
+	if (c.getEStructuralFeature(f.getMetafeature().getName()).getEType().getClass().getSimpleName().indexOf("EClass")>-1)
+		getEClasses(f.eContainer().eContainer(), union);
 	//for (int i=union.size()-1; i>-1;i--)
 		//if (!union.get(i).getClass().getSimpleName().equals("EClassImpl"))
 			//union.remove(i);
 	return Scopes.scopeFor(union);
 }
-
 
 //////////////////END MIO
 
