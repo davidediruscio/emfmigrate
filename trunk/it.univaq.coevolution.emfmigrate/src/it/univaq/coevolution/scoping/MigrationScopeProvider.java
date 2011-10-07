@@ -155,9 +155,9 @@ return Scopes.scopeFor(union);
 public IScope scope_classSetter_valueRef(classSetter f, EReference r) {
 	List union=new ArrayList();
 	getEClasses(f.eContainer().eContainer(), union);
-	for (int i=union.size()-1; i>-1;i--)
-		if (!union.get(i).getClass().getSimpleName().equals("EClassImpl"))
-			union.remove(i);
+	//for (int i=union.size()-1; i>-1;i--)
+		//if (!union.get(i).getClass().getSimpleName().equals("EClassImpl"))
+			//union.remove(i);
 	return Scopes.scopeFor(union);
 }
 
