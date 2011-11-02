@@ -1,0 +1,113 @@
+grammar it.univaq.coevolution.differences.edelta.EDeltaLang with org.eclipse.xtext.common.Terminals
+
+generate eDeltaLang "http://www.univaq.it/coevolution/differences/edelta/EDeltaLang"
+import "http://www.eclipse.org/emf/2002/Ecore" as ecore
+
+Model: packages+=(EPackageOperation|ComplexOperatorDef)*;
+
+
+EPackageOperation:
+	('package' var=Package '=')? 
+	((op=(ChangePackage|AddPackage|DeletePackage) '{'
+	
+	(setters+=setter|classes+=EClassOperation)*
+	'}')|complex+=ComplexOperator);
+
+DeletePackage:
+	'deletePackage''('(ref=[ecore::EPackage] )')'
+;
+
+
+AddPackage:
+	'addPackage''(' (new=STRING|ref=[STRING] ) ')'
+;
+
+
+ChangePackage:
+	'changePackage''('(ref=[ecore::EPackage] )')'
+;
+
+	
+Package returns ecore::EPackage :{Package} name=ID;
+
+EClassOperation :
+("class" var=Class "=")?
+
+((op=ChangeClass
+|
+op=AddClass
+|
+op=DeleteClass)
+
+(("{"
+ (setters+=setter|attributes+= EAttributeOperation|references+=EReferenceOperation)*
+"}")|complex+=ComplexOperator)
+)
+;
+
+ChangeClass:op="changeClass(" (ref=[ecore::EClass] )")";
+
+
+AddClass:op="addClass(" (new=STRING|ref=[STRING] ) ")";
+
+
+DeleteClass:op="deleteClass(" (ref=[ecore::EClass] )")";
+
+Class returns ecore::EClass:{Class}name=ID;
+setter: "set" metafeature=[ecore::EStructuralFeature] "<=" ((value=STRING|BOOL)|card=Cardinality| valueRef+=[ecore::EObject])
+( "," valueRef+=[ecore::EObject])*";";
+
+Cardinality returns ecore::EInt: INT| '*';	
+
+
+
+
+EAttributeOperation:
+("attribute" var=Attribute "=")?
+((op=ChangeAttribute|
+op=AddAttribute|
+op=DeleteAttribute)
+('{' setters+=setter* '}')|complex+=ComplexOperator)
+;
+ChangeAttribute:op="changeAttribute(" (ref=[ecore::EAttribute] )")";
+
+
+AddAttribute:op="addAttribute("(new=STRING|ref=[STRING] )")";
+
+
+DeleteAttribute:op="deleteAttribute(" (ref=[ecore::EAttribute] )")";
+
+EReferenceOperation:
+("reference" var=Reference "=")?
+((op=ChangeReference|
+op=AddReference|
+op=DeleteReference)
+('{' setters+=setter* '}')|complex+=ComplexOperator)
+;
+
+ChangeReference:op="changeReference""(" (ref=[ecore::EReference] )")";
+
+
+AddReference:op="addReference""("(new=STRING|ref=[STRING] )")";
+
+
+DeleteReference:op="deleteReference" "(" (ref=[ecore::EReference] )")";
+
+ComplexOperatorDef:'def change' name=ID ('(' (params+=Parameter)? (',' params+=Parameter)* ')') "{"
+ (packageOperations+=EPackageOperation|classOperations+=EClassOperation|attributeOperations+=EAttributeOperation|referenceOperations+=EReferenceOperation)*
+ "}";
+ 
+ComplexOperator:ref=[ComplexOperatorDef]'('(args+=[ecore::EObject]|new+=STRING)? (',' (args+=[ecore::EObject]|new+=STRING) )*  ')'";";
+
+Parameter returns ecore::EObject:  (Class ":" "class" |Reference ":" "reference"|Package ":" "package"|Attribute ":" "attribute"|BooleanDef ":" "bool" | IntDef ":" "int"|StringDef ":" "string");
+
+
+Attribute returns ecore::EAttribute:{Attribute} name=ID; 
+Reference returns ecore::EReference:{Reference} name=ID;
+BooleanDef returns BOOL :{BooleanDef} name=ID;
+StringDef returns STRING : name=ID;
+IntDef returns INT:{IntDef} name=ID;
+
+
+terminal BOOL returns ecore::EBoolean: 'true'|'false';
+	
