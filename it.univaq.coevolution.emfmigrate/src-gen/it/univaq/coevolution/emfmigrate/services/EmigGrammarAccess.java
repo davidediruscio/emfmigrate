@@ -1163,13 +1163,11 @@ public class EmigGrammarAccess extends AbstractGrammarElementFinder {
 		private final RuleCall cValueDotNavigationObjDXParserRuleCall_2_0 = (RuleCall)cValueAssignment_2.eContents().get(0);
 		
 		//FilterMigrator:
-		//	featureSX=DotNavigationObjSX //specification=SpecificationCS?
-		//	op="=" //EssentialOCLInfixOperator   
+		//	featureSX=DotNavigationObjSX op="=" //EssentialOCLInfixOperator   
 		//	value=DotNavigationObjDX?;
 		public ParserRule getRule() { return rule; }
 
-		//featureSX=DotNavigationObjSX //specification=SpecificationCS?
-		//op="=" //EssentialOCLInfixOperator   
+		//featureSX=DotNavigationObjSX op="=" //EssentialOCLInfixOperator   
 		//value=DotNavigationObjDX?
 		public Group getGroup() { return cGroup; }
 
@@ -1641,8 +1639,7 @@ public class EmigGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//FilterMigrator:
-	//	featureSX=DotNavigationObjSX //specification=SpecificationCS?
-	//	op="=" //EssentialOCLInfixOperator   
+	//	featureSX=DotNavigationObjSX op="=" //EssentialOCLInfixOperator   
 	//	value=DotNavigationObjDX?;
 	public FilterMigratorElements getFilterMigratorAccess() {
 		return (pFilterMigrator != null) ? pFilterMigrator : (pFilterMigrator = new FilterMigratorElements());

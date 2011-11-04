@@ -5570,14 +5570,12 @@ protected class MigratorDX_NullKeyword_1 extends KeywordToken  {
 /************ begin Rule FilterMigrator ****************
  *
  * FilterMigrator:
- * 	featureSX=DotNavigationObjSX //specification=SpecificationCS?
- * 	op="=" //EssentialOCLInfixOperator   
+ * 	featureSX=DotNavigationObjSX op="=" //EssentialOCLInfixOperator   
  * 	value=DotNavigationObjDX?;
  *
  **/
 
-// featureSX=DotNavigationObjSX //specification=SpecificationCS?
-// op="=" //EssentialOCLInfixOperator   
+// featureSX=DotNavigationObjSX op="=" //EssentialOCLInfixOperator   
 // value=DotNavigationObjDX?
 protected class FilterMigrator_Group extends GroupToken {
 	

@@ -8,95 +8,95 @@
     complianceLevel="5.0" copyrightFields="false" editPluginID="it.univaq.coevolution.emfmigrate.edit"
     editorPluginID="it.univaq.coevolution.emfmigrate.editor">
   <genPackages prefix="Emig" basePackage="it.univaq.coevolution.emfmigrate" disposableProviderFactory="true"
-      ecorePackage="platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#/">
-    <genClasses ecoreClass="platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//MyModel">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//MyModel/migrationLib"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//MyModel/MigrationProgr"/>
+      ecorePackage="Emig.ecore#/">
+    <genClasses ecoreClass="Emig.ecore#//MyModel">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Emig.ecore#//MyModel/migrationLib"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Emig.ecore#//MyModel/MigrationProgr"/>
     </genClasses>
-    <genClasses ecoreClass="platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//MigrationLibrary">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//MigrationLibrary/title"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//MigrationLibrary/rules"/>
+    <genClasses ecoreClass="Emig.ecore#//MigrationLibrary">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Emig.ecore#//MigrationLibrary/title"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Emig.ecore#//MigrationLibrary/rules"/>
     </genClasses>
-    <genClasses ecoreClass="platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//MigrationProgram">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//MigrationProgram/libs"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//MigrationProgram/migr"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//MigrationProgram/typeArt"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//MigrationProgram/name"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//MigrationProgram/transformationPackage"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//MigrationProgram/delta"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//MigrationProgram/rules"/>
+    <genClasses ecoreClass="Emig.ecore#//MigrationProgram">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Emig.ecore#//MigrationProgram/libs"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Emig.ecore#//MigrationProgram/migr"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Emig.ecore#//MigrationProgram/typeArt"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Emig.ecore#//MigrationProgram/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Emig.ecore#//MigrationProgram/transformationPackage"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Emig.ecore#//MigrationProgram/delta"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Emig.ecore#//MigrationProgram/rules"/>
     </genClasses>
-    <genClasses ecoreClass="platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//Artifact">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//Artifact/type"/>
+    <genClasses ecoreClass="Emig.ecore#//Artifact">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Emig.ecore#//Artifact/type"/>
     </genClasses>
-    <genClasses ecoreClass="platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//Rule">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//Rule/name"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//Rule/filter"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//Rule/rewritingRules"/>
+    <genClasses ecoreClass="Emig.ecore#//Rule">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Emig.ecore#//Rule/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Emig.ecore#//Rule/filter"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Emig.ecore#//Rule/rewritingRules"/>
     </genClasses>
-    <genClasses ecoreClass="platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//OpDef">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//OpDef/op"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//OpDef/setters"/>
+    <genClasses ecoreClass="Emig.ecore#//OpDef">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Emig.ecore#//OpDef/op"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Emig.ecore#//OpDef/setters"/>
     </genClasses>
-    <genClasses ecoreClass="platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//EPackageOpDef">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//EPackageOpDef/var"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//EPackageOpDef/ref"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//EPackageOpDef/classes"/>
+    <genClasses ecoreClass="Emig.ecore#//EPackageOpDef">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Emig.ecore#//EPackageOpDef/var"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Emig.ecore#//EPackageOpDef/ref"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Emig.ecore#//EPackageOpDef/classes"/>
     </genClasses>
-    <genClasses ecoreClass="platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//EClassOpDef">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//EClassOpDef/var"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//EClassOpDef/ref"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//EClassOpDef/attributes"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//EClassOpDef/references"/>
+    <genClasses ecoreClass="Emig.ecore#//EClassOpDef">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Emig.ecore#//EClassOpDef/var"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Emig.ecore#//EClassOpDef/ref"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Emig.ecore#//EClassOpDef/attributes"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Emig.ecore#//EClassOpDef/references"/>
     </genClasses>
-    <genClasses ecoreClass="platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//EAttributeOpDef">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//EAttributeOpDef/var"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//EAttributeOpDef/ref"/>
+    <genClasses ecoreClass="Emig.ecore#//EAttributeOpDef">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Emig.ecore#//EAttributeOpDef/var"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Emig.ecore#//EAttributeOpDef/ref"/>
     </genClasses>
-    <genClasses ecoreClass="platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//EReferenceOpDef">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//EReferenceOpDef/var"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//EReferenceOpDef/ref"/>
+    <genClasses ecoreClass="Emig.ecore#//EReferenceOpDef">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Emig.ecore#//EReferenceOpDef/var"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Emig.ecore#//EReferenceOpDef/ref"/>
     </genClasses>
-    <genClasses ecoreClass="platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//setterDef">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//setterDef/metafeature"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//setterDef/operator"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//setterDef/par"/>
+    <genClasses ecoreClass="Emig.ecore#//setterDef">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Emig.ecore#//setterDef/metafeature"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Emig.ecore#//setterDef/operator"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Emig.ecore#//setterDef/par"/>
     </genClasses>
-    <genClasses ecoreClass="platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//RewritingRule">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//RewritingRule/migratorsSX"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//RewritingRule/migratorDX"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//RewritingRule/migratorSX"/>
+    <genClasses ecoreClass="Emig.ecore#//RewritingRule">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Emig.ecore#//RewritingRule/migratorsSX"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Emig.ecore#//RewritingRule/migratorDX"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Emig.ecore#//RewritingRule/migratorSX"/>
     </genClasses>
-    <genClasses ecoreClass="platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//Migrator">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//Migrator/name"/>
+    <genClasses ecoreClass="Emig.ecore#//Migrator">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Emig.ecore#//Migrator/name"/>
     </genClasses>
-    <genClasses ecoreClass="platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//MigratorSX">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//MigratorSX/elementSX"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//MigratorSX/filterSX"/>
+    <genClasses ecoreClass="Emig.ecore#//MigratorSX">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Emig.ecore#//MigratorSX/elementSX"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Emig.ecore#//MigratorSX/filterSX"/>
     </genClasses>
-    <genClasses ecoreClass="platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//MigratorDX">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//MigratorDX/elementDX"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//MigratorDX/filterDX"/>
+    <genClasses ecoreClass="Emig.ecore#//MigratorDX">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Emig.ecore#//MigratorDX/elementDX"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Emig.ecore#//MigratorDX/filterDX"/>
     </genClasses>
-    <genClasses ecoreClass="platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//FilterMigrator">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//FilterMigrator/featureSX"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//FilterMigrator/op"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//FilterMigrator/value"/>
+    <genClasses ecoreClass="Emig.ecore#//FilterMigrator">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Emig.ecore#//FilterMigrator/featureSX"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Emig.ecore#//FilterMigrator/op"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Emig.ecore#//FilterMigrator/value"/>
     </genClasses>
-    <genClasses ecoreClass="platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//DotNavigationObjSX">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//DotNavigationObjSX/obj"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//DotNavigationObjSX/ref"/>
+    <genClasses ecoreClass="Emig.ecore#//DotNavigationObjSX">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Emig.ecore#//DotNavigationObjSX/obj"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Emig.ecore#//DotNavigationObjSX/ref"/>
     </genClasses>
-    <genClasses ecoreClass="platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//DotNavigationObjDX">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//DotNavigationObjDX/obj"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//DotNavigationObjDX/ref"/>
+    <genClasses ecoreClass="Emig.ecore#//DotNavigationObjDX">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Emig.ecore#//DotNavigationObjDX/obj"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Emig.ecore#//DotNavigationObjDX/ref"/>
     </genClasses>
-    <genClasses ecoreClass="platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//Parameter">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//Parameter/name"/>
+    <genClasses ecoreClass="Emig.ecore#//Parameter">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Emig.ecore#//Parameter/name"/>
     </genClasses>
-    <genClasses ecoreClass="platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//Package"/>
-    <genClasses ecoreClass="platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//Class"/>
-    <genClasses ecoreClass="platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//Attribute"/>
-    <genClasses ecoreClass="platform:/resource/it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/Emig.ecore#//Reference"/>
+    <genClasses ecoreClass="Emig.ecore#//Package"/>
+    <genClasses ecoreClass="Emig.ecore#//Class"/>
+    <genClasses ecoreClass="Emig.ecore#//Attribute"/>
+    <genClasses ecoreClass="Emig.ecore#//Reference"/>
   </genPackages>
 </genmodel:GenModel>
