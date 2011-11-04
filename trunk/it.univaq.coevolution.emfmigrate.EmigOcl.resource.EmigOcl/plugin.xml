@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+	<extension point="org.emftext.access.syntax">
+		<metaInformationProvider class="it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.mopp.EmigOclMetaInformation" id="it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.mopp.EmigOclMetaInformation">
+		</metaInformationProvider>
+	</extension>
+	
+	<extension id="it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.problem" name="EMFText Problem" point="org.eclipse.core.resources.markers">
+		<persistent value="true">
+		</persistent>
+		<super type="org.eclipse.core.resources.problemmarker">
+		</super>
+		<super type="org.eclipse.core.resources.textmarker">
+		</super>
+		<super type="org.eclipse.emf.ecore.diagnostic">
+		</super>
+	</extension>
+	
+	<extension id="it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.problem.syntax_error" name="EMFText Problem" point="org.eclipse.core.resources.markers">
+		<persistent value="true">
+		</persistent>
+		<super type="it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.problem">
+		</super>
+	</extension>
+	
+	<extension id="it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.problem.print_problem" name="EMFText Problem" point="org.eclipse.core.resources.markers">
+		<persistent value="true">
+		</persistent>
+		<super type="it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.problem">
+		</super>
+	</extension>
+	
+	<extension id="it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.problem.unresolved_reference" name="EMFText Problem" point="org.eclipse.core.resources.markers">
+		<persistent value="true">
+		</persistent>
+		<super type="it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.problem">
+		</super>
+	</extension>
+	
+	<extension id="it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.problem.analysis_problem" name="EMFText Problem" point="org.eclipse.core.resources.markers">
+		<persistent value="true">
+		</persistent>
+		<super type="it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.problem">
+		</super>
+	</extension>
+	
+	<extension id="it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.problem.builder_error" name="EMFText Problem" point="org.eclipse.core.resources.markers">
+		<persistent value="true">
+		</persistent>
+		<super type="it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.problem">
+		</super>
+	</extension>
+	
+	<extension id="it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.nature" name="EmigOcl nature" point="org.eclipse.core.resources.natures">
+		<runtime>
+			<run class="it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.mopp.EmigOclNature">
+			</run>
+		</runtime>
+		<builder id="it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.builder">
+		</builder>
+	</extension>
+	
+	<extension point="org.eclipse.core.resources.builders" id="it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.builder" name="EmigOcl Builder">
+		<builder hasNature="true">
+			<run class="it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.mopp.EmigOclBuilderAdapter">
+			</run>
+		</builder>
+	</extension>
+	
+	<extension-point id="it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.default_load_options" name="Default Load Options" schema="schema/default_load_options.exsd">
+	</extension-point>
+	
+	<extension point="org.eclipse.emf.ecore.extension_parser">
+		<parser class="it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.mopp.EmigOclResourceFactoryDelegator" type="EmigOcl">
+		</parser>
+	</extension>
+	
+	<extension-point id="it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.additional_extension_parser" name="Additional Extension Parser" schema="schema/additional_extension_parser.exsd">
+	</extension-point>
+	
+	<extension point="org.eclipse.debug.core.breakpoints">
+		<breakpoint class="it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.debug.EmigOclLineBreakpoint" id="it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.debug.breakpoint" markerType="it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.debug.lineBreakpoint.marker" name="EmigOcl Breakpoint">
+		</breakpoint>
+	</extension>
+	
+	<extension id="it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.debug.lineBreakpoint.marker" point="org.eclipse.core.resources.markers">
+		<super type="org.eclipse.debug.core.lineBreakpointMarker">
+		</super>
+		<super type="org.eclipse.core.resources.textmarker">
+		</super>
+		<persistent value="true">
+		</persistent>
+	</extension>
+	
+	<extension point="org.eclipse.debug.core.launchConfigurationTypes">
+		<launchConfigurationType id="it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.ui.launchConfigurationType" delegate="it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.launch.EmigOclLaunchConfigurationDelegate" modes="run,debug" name="EmigOcl Application" sourceLocatorId="it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.ui.sourceLocator" sourcePathComputerId="it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.ui.sourcePathComputer" delegateName="EmigOcl Launch Tooling" delegateDescription="This will run or debug .EmigOcl files.">
+		</launchConfigurationType>
+	</extension>
+	
+	<extension point="org.eclipse.debug.core.sourcePathComputers">
+		<sourcePathComputer class="it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.debug.EmigOclSourcePathComputerDelegate" id="it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.ui.sourcePathComputer">
+		</sourcePathComputer>
+	</extension>
+	
+	<extension point="org.eclipse.debug.core.sourceLocators">
+		<sourceLocator id="it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.ui.sourceLocator" class="it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.debug.EmigOclSourceLocator" name="EmigOcl Source Locator">
+		</sourceLocator>
+	</extension>
+	
+</plugin>
