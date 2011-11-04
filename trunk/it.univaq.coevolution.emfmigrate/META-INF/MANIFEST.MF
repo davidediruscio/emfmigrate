@@ -30,4 +30,8 @@ Export-Package: it.univaq.coevolution.emfmigrate,
  it.univaq.coevolution.emfmigrate.parseTreeConstruction,
  it.univaq.coevolution.emfmigrate.parser.antlr,
  it.univaq.coevolution.emfmigrate.parser.antlr.internal,
- it.univaq.coevolution.emfmigrate.validation
+ it.univaq.coevolution.emfmigrate.validation,
+ it.univaq.coevolution.emfmigrate.scoping,
+ it.univaq.coevolution.emfmigrate.generator,
+ it.univaq.coevolution.emfmigrate.formatting
+
