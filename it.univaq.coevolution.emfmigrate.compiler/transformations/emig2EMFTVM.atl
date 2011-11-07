@@ -1,0 +1,183 @@
+-- @atlcompiler emftvm
+-- @nsURI EMFTVM=http://www.eclipse.org/m2m/atl/2011/EMFTVM
+-- @nsURI EMig=http://www.univaq.it/coevolution/emfmigrate/Emig
+
+
+module emig2EMFTVM;
+create OUT: EMFTVM from IN: EMig;
+
+-- ======================================================================
+-- helpers begin
+-- ======================================================================
+
+helper context String def: firstToUpper(): String =
+	self.substring(1, 1).toUpper() + self.substring(2, self.size());
+
+helper context ECORE!ENamedElement def : qName : String =
+	self.name;
+
+helper context ECORE!EClassifier def : qName : String =
+	if self.ePackage.oclIsUndefined() then
+		self.name
+	else
+		self.ePackage.qName + '::' + self.name
+	endif;
+
+helper context ECORE!EPackage def : qName : String =
+	if self.eSuperPackage.oclIsUndefined() then
+		self.name
+	else
+		self.eSuperPackage.qName + '::' + self.name
+	endif;
+helper context EMig!MigratorSX def: typeModel: String=
+	self.rewritingRule.refImmediateComposite().typeModel
+	;
+helper context EMig!MigratorDX def: typeModel: String=
+	self.rewritingRule.refImmediateComposite().typeModel
+	;
+helper context EMig!Rule def: typeModel: String=
+	self.refImmediateComposite().typeModel
+	;
+helper context EMig!MigrationProgram def: typeModel: String=
+	self.transformationPackage->first().name
+	;
+
+-- ======================================================================
+-- helpers end
+-- ======================================================================
+
+-- ======================================================================
+-- matched rules begin
+-- ======================================================================
+
+rule MigrationProgram {
+	from
+		s: EMig!MigrationProgram in IN
+	to
+		t: EMFTVM!Module (
+			name <- s.name,
+			sourceName <- s.name + '.emig',
+			rules <- s.rules,
+			features <- Sequence{main},
+			inputModels <- Sequence{delta},
+			inoutModels <- Sequence{inmodel}
+		),
+		inmodel: EMFTVM!ModelDeclaration (
+			modelName <- 'IN',
+			metaModelName <- s.transformationPackage -> first().name
+		),
+		delta: EMFTVM!ModelDeclaration (
+			modelName <- 'DELTA',
+			metaModelName <- 'EDELTA'
+		),
+		main: EMFTVM!Operation (
+			name <- 'main',
+			static <- true,
+			"context" <- 'ExecEnv',
+			contextModel <- 'EMFTVM',
+			type <- 'java.lang.Object',
+			typeModel <- '#native',
+			body <- body
+		),
+		body: EMFTVM!CodeBlock (
+			lineNumbers <- Sequence{ln}
+		),
+		ln: EMFTVM!LineNumber (
+			startLine <- s.line,
+			endLine <- s.endline,
+			startChar <- s.offset,
+			endChar <- s.endoffset
+		)
+}
+
+rule Rule {
+	from
+		s: EMig!Rule in IN
+	to
+		t: EMFTVM!Rule (
+			name <- s.name,
+			inputElements <- s.rewritingRules -> collect(r | r.migratorSX) -> flatten()
+					-> prepend(s.filter),
+			outputElements <- s.rewritingRules -> collect(r | r.migratorDX) -> flatten()
+					-> reject(e | e.rewritingRule.migratorSX -> exists(n | n.name = e.
+					name)),
+			default <- true,
+			distinctElements <- false,
+			mode <- #automaticSingle
+		)
+}
+
+rule MigratorSX{
+	from s:EMig!MigratorSX in IN
+	to t: EMFTVM!InputRuleElement(
+		name<-s.name,
+		type<-s.elementSX.qName,
+		typeModel <- s.typeModel,
+		models <- Sequence{'IN'}
+		)
+}
+rule MigratorDX{
+	from s:EMig!MigratorDX in IN (
+		-- create only output elements for new migratorDX
+		not s.rewritingRule.migratorSX -> exists(n | n.name = s.name)						  
+	)
+--TODO: maps to multiple input elements in migratorSX
+	to t: EMFTVM!OutputRuleElement(
+		name<-s.name,
+		type<-s.elementSX.qName,
+		typeModel <- s.typeModel,
+		models <- Sequence{'IN'},
+		"mapsTo" <- s.rewritingRule.migratorSX->first()
+		)
+}
+
+abstract rule OpDef {
+	from
+		s: EMig!OpDef in IN
+	to
+		t: EMFTVM!InputRuleElement (
+			type <- s.op.firstToUpper(),
+			typeModel <- 'EDELTA',
+			models <- Sequence{'DELTA'}
+		)
+}
+rule EPackageOpDef extends OpDef {
+	from
+		s: EMig!EPackageOpDef in IN
+	to
+		t: EMFTVM!InputRuleElement (
+			name <- s.var.name
+		)
+}
+rule EClassOpDef extends OpDef {
+	from
+		s: EMig!EClassOpDef in IN
+	to
+		t: EMFTVM!InputRuleElement (
+			name <- s.var.name
+		),
+		cb:EMFTVM!CodeBlock(
+		code <- Sequence{}	
+		)
+}
+rule EAttributeOpDef extends OpDef {
+	from
+		s: EMig!EAttributeOpDef in IN
+	to
+		t: EMFTVM!InputRuleElement (
+			name <- s.var.name
+		)
+}
+rule EReferenceOpDef extends OpDef {
+	from
+		s: EMig!EReferenceOpDef in IN
+	to
+		t: EMFTVM!InputRuleElement (
+			name <- s.var.name
+		)
+}
+
+
+-- ======================================================================
+-- matched rules end
+-- ======================================================================
