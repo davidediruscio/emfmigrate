@@ -53,6 +53,15 @@ public interface EmigOclFactory extends EFactory {
 	SuperExp createSuperExp();
 
 	/**
+	 * Returns a new object of class '<em>Self Exp</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Self Exp</em>'.
+	 * @generated
+	 */
+	SelfExp createSelfExp();
+
+	/**
 	 * Returns a new object of class '<em>String Exp</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -206,6 +215,60 @@ public interface EmigOclFactory extends EFactory {
 	OperatorCallExp createOperatorCallExp();
 
 	/**
+	 * Returns a new object of class '<em>Not Op Call Exp</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Not Op Call Exp</em>'.
+	 * @generated
+	 */
+	NotOpCallExp createNotOpCallExp();
+
+	/**
+	 * Returns a new object of class '<em>Rel Op Call Exp</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Rel Op Call Exp</em>'.
+	 * @generated
+	 */
+	RelOpCallExp createRelOpCallExp();
+
+	/**
+	 * Returns a new object of class '<em>Add Op Call Exp</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Add Op Call Exp</em>'.
+	 * @generated
+	 */
+	AddOpCallExp createAddOpCallExp();
+
+	/**
+	 * Returns a new object of class '<em>Int Op Call Exp</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Int Op Call Exp</em>'.
+	 * @generated
+	 */
+	IntOpCallExp createIntOpCallExp();
+
+	/**
+	 * Returns a new object of class '<em>Mul Op Call Exp</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Mul Op Call Exp</em>'.
+	 * @generated
+	 */
+	MulOpCallExp createMulOpCallExp();
+
+	/**
+	 * Returns a new object of class '<em>Brace Exp</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Brace Exp</em>'.
+	 * @generated
+	 */
+	BraceExp createBraceExp();
+
+	/**
 	 * Returns a new object of class '<em>Collection Operation Call Exp</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -287,13 +350,13 @@ public interface EmigOclFactory extends EFactory {
 	CollectionType createCollectionType();
 
 	/**
-	 * Returns a new object of class '<em>Ocl Type</em>'.
+	 * Returns a new object of class '<em>Ocl Model Element Exp</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Ocl Type</em>'.
+	 * @return a new object of class '<em>Ocl Model Element Exp</em>'.
 	 * @generated
 	 */
-	OclType createOclType();
+	OclModelElementExp createOclModelElementExp();
 
 	/**
 	 * Returns a new object of class '<em>String Type</em>'.

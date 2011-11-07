@@ -23,8 +23,12 @@ public class EmigOclTokenResolverFactory implements it.univaq.coevolution.emfmig
 	public EmigOclTokenResolverFactory() {
 		tokenName2TokenResolver = new java.util.LinkedHashMap<String, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.IEmigOclTokenResolver>();
 		featureName2CollectInTokenResolver = new java.util.LinkedHashMap<String, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.IEmigOclTokenResolver>();
-		registerTokenResolver("TXTOP", new it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.analysis.EmigOclTXTOPTokenResolver());
-		registerTokenResolver("SYMOP", new it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.analysis.EmigOclSYMOPTokenResolver());
+		registerTokenResolver("NOTOP", new it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.analysis.EmigOclNOTOPTokenResolver());
+		registerTokenResolver("BOOLOP", new it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.analysis.EmigOclBOOLOPTokenResolver());
+		registerTokenResolver("INTOP", new it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.analysis.EmigOclINTOPTokenResolver());
+		registerTokenResolver("RELOP", new it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.analysis.EmigOclRELOPTokenResolver());
+		registerTokenResolver("ADDOP", new it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.analysis.EmigOclADDOPTokenResolver());
+		registerTokenResolver("MULOP", new it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.analysis.EmigOclMULOPTokenResolver());
 		registerTokenResolver("FLOAT", new it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.analysis.EmigOclFLOATTokenResolver());
 		registerTokenResolver("INTEGER", new it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.analysis.EmigOclINTEGERTokenResolver());
 		registerTokenResolver("STRINGTYPE", new it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.analysis.EmigOclSTRINGTYPETokenResolver());

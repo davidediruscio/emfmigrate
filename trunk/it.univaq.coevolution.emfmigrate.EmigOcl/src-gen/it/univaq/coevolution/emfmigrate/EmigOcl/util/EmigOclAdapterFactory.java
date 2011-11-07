@@ -92,6 +92,10 @@ public class EmigOclAdapterFactory extends AdapterFactoryImpl {
 				return createSuperExpAdapter();
 			}
 			@Override
+			public Adapter caseSelfExp(SelfExp object) {
+				return createSelfExpAdapter();
+			}
+			@Override
 			public Adapter casePrimitiveExp(PrimitiveExp object) {
 				return createPrimitiveExpAdapter();
 			}
@@ -176,6 +180,30 @@ public class EmigOclAdapterFactory extends AdapterFactoryImpl {
 				return createOperatorCallExpAdapter();
 			}
 			@Override
+			public Adapter caseNotOpCallExp(NotOpCallExp object) {
+				return createNotOpCallExpAdapter();
+			}
+			@Override
+			public Adapter caseRelOpCallExp(RelOpCallExp object) {
+				return createRelOpCallExpAdapter();
+			}
+			@Override
+			public Adapter caseAddOpCallExp(AddOpCallExp object) {
+				return createAddOpCallExpAdapter();
+			}
+			@Override
+			public Adapter caseIntOpCallExp(IntOpCallExp object) {
+				return createIntOpCallExpAdapter();
+			}
+			@Override
+			public Adapter caseMulOpCallExp(MulOpCallExp object) {
+				return createMulOpCallExpAdapter();
+			}
+			@Override
+			public Adapter caseBraceExp(BraceExp object) {
+				return createBraceExpAdapter();
+			}
+			@Override
 			public Adapter caseCollectionOperationCallExp(CollectionOperationCallExp object) {
 				return createCollectionOperationCallExpAdapter();
 			}
@@ -218,6 +246,10 @@ public class EmigOclAdapterFactory extends AdapterFactoryImpl {
 			@Override
 			public Adapter caseOclType(OclType object) {
 				return createOclTypeAdapter();
+			}
+			@Override
+			public Adapter caseOclModelElementExp(OclModelElementExp object) {
+				return createOclModelElementExpAdapter();
 			}
 			@Override
 			public Adapter casePrimitive(Primitive object) {
@@ -390,6 +422,20 @@ public class EmigOclAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createSuperExpAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link it.univaq.coevolution.emfmigrate.EmigOcl.SelfExp <em>Self Exp</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.SelfExp
+	 * @generated
+	 */
+	public Adapter createSelfExpAdapter() {
 		return null;
 	}
 
@@ -688,6 +734,90 @@ public class EmigOclAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
+	 * Creates a new adapter for an object of class '{@link it.univaq.coevolution.emfmigrate.EmigOcl.NotOpCallExp <em>Not Op Call Exp</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.NotOpCallExp
+	 * @generated
+	 */
+	public Adapter createNotOpCallExpAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link it.univaq.coevolution.emfmigrate.EmigOcl.RelOpCallExp <em>Rel Op Call Exp</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.RelOpCallExp
+	 * @generated
+	 */
+	public Adapter createRelOpCallExpAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link it.univaq.coevolution.emfmigrate.EmigOcl.AddOpCallExp <em>Add Op Call Exp</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.AddOpCallExp
+	 * @generated
+	 */
+	public Adapter createAddOpCallExpAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link it.univaq.coevolution.emfmigrate.EmigOcl.IntOpCallExp <em>Int Op Call Exp</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.IntOpCallExp
+	 * @generated
+	 */
+	public Adapter createIntOpCallExpAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link it.univaq.coevolution.emfmigrate.EmigOcl.MulOpCallExp <em>Mul Op Call Exp</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.MulOpCallExp
+	 * @generated
+	 */
+	public Adapter createMulOpCallExpAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link it.univaq.coevolution.emfmigrate.EmigOcl.BraceExp <em>Brace Exp</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.BraceExp
+	 * @generated
+	 */
+	public Adapter createBraceExpAdapter() {
+		return null;
+	}
+
+	/**
 	 * Creates a new adapter for an object of class '{@link it.univaq.coevolution.emfmigrate.EmigOcl.CollectionOperationCallExp <em>Collection Operation Call Exp</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
@@ -838,6 +968,20 @@ public class EmigOclAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createOclTypeAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link it.univaq.coevolution.emfmigrate.EmigOcl.OclModelElementExp <em>Ocl Model Element Exp</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.OclModelElementExp
+	 * @generated
+	 */
+	public Adapter createOclModelElementExpAdapter() {
 		return null;
 	}
 

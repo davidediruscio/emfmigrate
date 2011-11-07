@@ -29,10 +29,10 @@ package it.univaq.coevolution.emfmigrate.EmigOcl;
  * </p>
  *
  * @see it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage#getOclType()
- * @model
+ * @model abstract="true"
  * @generated
  */
-public interface OclType extends OclExpression {
+public interface OclType extends LocatedElement {
 	/**
 	 * Returns the value of the '<em><b>Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->

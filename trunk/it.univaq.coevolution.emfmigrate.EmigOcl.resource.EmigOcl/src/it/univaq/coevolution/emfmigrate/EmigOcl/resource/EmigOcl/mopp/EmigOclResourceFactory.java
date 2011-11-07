@@ -13,7 +13,7 @@ public class EmigOclResourceFactory implements org.eclipse.emf.ecore.resource.Re
 	}
 	
 	public org.eclipse.emf.ecore.resource.Resource createResource(org.eclipse.emf.common.util.URI uri) {
-		return new it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.mopp.EmigOclResource(uri);
+		return new EmigOclLocationResource(uri);
 	}
 	
 }

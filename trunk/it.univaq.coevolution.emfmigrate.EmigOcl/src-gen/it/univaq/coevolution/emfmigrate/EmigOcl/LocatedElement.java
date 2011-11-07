@@ -30,6 +30,7 @@ import org.eclipse.emf.ecore.EObject;
 public interface LocatedElement extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Line</b></em>' attribute.
+	 * The default value is <code>"-1"</code>.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Line</em>' attribute isn't clear,
@@ -38,13 +39,14 @@ public interface LocatedElement extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Line</em>' attribute.
 	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage#getLocatedElement_Line()
-	 * @model dataType="it.univaq.coevolution.emfmigrate.EmigOcl.Integer" required="true" transient="true" changeable="false" volatile="true" derived="true"
+	 * @model default="-1" dataType="it.univaq.coevolution.emfmigrate.EmigOcl.Integer" required="true" transient="true" changeable="false" volatile="true" derived="true"
 	 * @generated
 	 */
 	int getLine();
 
 	/**
 	 * Returns the value of the '<em><b>Column</b></em>' attribute.
+	 * The default value is <code>"-1"</code>.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Column</em>' attribute isn't clear,
@@ -53,13 +55,14 @@ public interface LocatedElement extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Column</em>' attribute.
 	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage#getLocatedElement_Column()
-	 * @model dataType="it.univaq.coevolution.emfmigrate.EmigOcl.Integer" required="true" transient="true" changeable="false" volatile="true" derived="true"
+	 * @model default="-1" dataType="it.univaq.coevolution.emfmigrate.EmigOcl.Integer" required="true" transient="true" changeable="false" volatile="true" derived="true"
 	 * @generated
 	 */
 	int getColumn();
 
 	/**
 	 * Returns the value of the '<em><b>Char Start</b></em>' attribute.
+	 * The default value is <code>"-1"</code>.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Char Start</em>' attribute isn't clear,
@@ -68,13 +71,14 @@ public interface LocatedElement extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Char Start</em>' attribute.
 	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage#getLocatedElement_CharStart()
-	 * @model dataType="it.univaq.coevolution.emfmigrate.EmigOcl.Integer" required="true" transient="true" changeable="false" volatile="true" derived="true"
+	 * @model default="-1" dataType="it.univaq.coevolution.emfmigrate.EmigOcl.Integer" required="true" transient="true" changeable="false" volatile="true" derived="true"
 	 * @generated
 	 */
 	int getCharStart();
 
 	/**
 	 * Returns the value of the '<em><b>Char End</b></em>' attribute.
+	 * The default value is <code>"-1"</code>.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Char End</em>' attribute isn't clear,
@@ -83,7 +87,7 @@ public interface LocatedElement extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Char End</em>' attribute.
 	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage#getLocatedElement_CharEnd()
-	 * @model dataType="it.univaq.coevolution.emfmigrate.EmigOcl.Integer" required="true" transient="true" changeable="false" volatile="true" derived="true"
+	 * @model default="-1" dataType="it.univaq.coevolution.emfmigrate.EmigOcl.Integer" required="true" transient="true" changeable="false" volatile="true" derived="true"
 	 * @generated
 	 */
 	int getCharEnd();

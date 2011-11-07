@@ -87,6 +87,10 @@ public class EmigOclPrinter implements it.univaq.coevolution.emfmigrate.EmigOcl.
 			print_it_univaq_coevolution_emfmigrate_EmigOcl_SuperExp((it.univaq.coevolution.emfmigrate.EmigOcl.SuperExp) element, globaltab, out);
 			return;
 		}
+		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.SelfExp) {
+			print_it_univaq_coevolution_emfmigrate_EmigOcl_SelfExp((it.univaq.coevolution.emfmigrate.EmigOcl.SelfExp) element, globaltab, out);
+			return;
+		}
 		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.StringExp) {
 			print_it_univaq_coevolution_emfmigrate_EmigOcl_StringExp((it.univaq.coevolution.emfmigrate.EmigOcl.StringExp) element, globaltab, out);
 			return;
@@ -147,8 +151,28 @@ public class EmigOclPrinter implements it.univaq.coevolution.emfmigrate.EmigOcl.
 			print_it_univaq_coevolution_emfmigrate_EmigOcl_NavigationOrAttributeCallExp((it.univaq.coevolution.emfmigrate.EmigOcl.NavigationOrAttributeCallExp) element, globaltab, out);
 			return;
 		}
-		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.OperatorCallExp) {
-			print_it_univaq_coevolution_emfmigrate_EmigOcl_OperatorCallExp((it.univaq.coevolution.emfmigrate.EmigOcl.OperatorCallExp) element, globaltab, out);
+		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.RelOpCallExp) {
+			print_it_univaq_coevolution_emfmigrate_EmigOcl_RelOpCallExp((it.univaq.coevolution.emfmigrate.EmigOcl.RelOpCallExp) element, globaltab, out);
+			return;
+		}
+		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.AddOpCallExp) {
+			print_it_univaq_coevolution_emfmigrate_EmigOcl_AddOpCallExp((it.univaq.coevolution.emfmigrate.EmigOcl.AddOpCallExp) element, globaltab, out);
+			return;
+		}
+		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.IntOpCallExp) {
+			print_it_univaq_coevolution_emfmigrate_EmigOcl_IntOpCallExp((it.univaq.coevolution.emfmigrate.EmigOcl.IntOpCallExp) element, globaltab, out);
+			return;
+		}
+		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.MulOpCallExp) {
+			print_it_univaq_coevolution_emfmigrate_EmigOcl_MulOpCallExp((it.univaq.coevolution.emfmigrate.EmigOcl.MulOpCallExp) element, globaltab, out);
+			return;
+		}
+		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.NotOpCallExp) {
+			print_it_univaq_coevolution_emfmigrate_EmigOcl_NotOpCallExp((it.univaq.coevolution.emfmigrate.EmigOcl.NotOpCallExp) element, globaltab, out);
+			return;
+		}
+		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.BraceExp) {
+			print_it_univaq_coevolution_emfmigrate_EmigOcl_BraceExp((it.univaq.coevolution.emfmigrate.EmigOcl.BraceExp) element, globaltab, out);
 			return;
 		}
 		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.CollectionOperationCallExp) {
@@ -173,6 +197,10 @@ public class EmigOclPrinter implements it.univaq.coevolution.emfmigrate.EmigOcl.
 		}
 		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.IfExp) {
 			print_it_univaq_coevolution_emfmigrate_EmigOcl_IfExp((it.univaq.coevolution.emfmigrate.EmigOcl.IfExp) element, globaltab, out);
+			return;
+		}
+		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.OclModelElementExp) {
+			print_it_univaq_coevolution_emfmigrate_EmigOcl_OclModelElementExp((it.univaq.coevolution.emfmigrate.EmigOcl.OclModelElementExp) element, globaltab, out);
 			return;
 		}
 		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.VariableDeclaration) {
@@ -231,16 +259,16 @@ public class EmigOclPrinter implements it.univaq.coevolution.emfmigrate.EmigOcl.
 			print_it_univaq_coevolution_emfmigrate_EmigOcl_MapType((it.univaq.coevolution.emfmigrate.EmigOcl.MapType) element, globaltab, out);
 			return;
 		}
-		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.OperationCallExp) {
-			print_it_univaq_coevolution_emfmigrate_EmigOcl_OperationCallExp((it.univaq.coevolution.emfmigrate.EmigOcl.OperationCallExp) element, globaltab, out);
+		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.OperatorCallExp) {
+			print_it_univaq_coevolution_emfmigrate_EmigOcl_OperatorCallExp((it.univaq.coevolution.emfmigrate.EmigOcl.OperatorCallExp) element, globaltab, out);
 			return;
 		}
 		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.CollectionType) {
 			print_it_univaq_coevolution_emfmigrate_EmigOcl_CollectionType((it.univaq.coevolution.emfmigrate.EmigOcl.CollectionType) element, globaltab, out);
 			return;
 		}
-		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.OclType) {
-			print_it_univaq_coevolution_emfmigrate_EmigOcl_OclType((it.univaq.coevolution.emfmigrate.EmigOcl.OclType) element, globaltab, out);
+		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.OperationCallExp) {
+			print_it_univaq_coevolution_emfmigrate_EmigOcl_OperationCallExp((it.univaq.coevolution.emfmigrate.EmigOcl.OperationCallExp) element, globaltab, out);
 			return;
 		}
 		
@@ -359,6 +387,9 @@ public class EmigOclPrinter implements it.univaq.coevolution.emfmigrate.EmigOcl.
 		// DEFINITION PART BEGINS (LineBreak)
 		out.println();
 		out.print(localtab);
+		// DEFINITION PART BEGINS (CsString)
+		out.print("models");
+		out.print(" ");
 		// DEFINITION PART BEGINS (Containment)
 		count = printCountingMap.get("models");
 		if (count > 0) {
@@ -424,69 +455,23 @@ public class EmigOclPrinter implements it.univaq.coevolution.emfmigrate.EmigOcl.
 	public void print_it_univaq_coevolution_emfmigrate_EmigOcl_Module_1(it.univaq.coevolution.emfmigrate.EmigOcl.Module element, String outertab, java.io.PrintWriter out, java.util.Map<String, Integer> printCountingMap) {
 		String localtab = outertab;
 		int count;
-		boolean iterate = true;
-		java.io.StringWriter sWriter = null;
-		java.io.PrintWriter out1 = null;
-		java.util.Map<String, Integer> printCountingMap1 = null;
 		// DEFINITION PART BEGINS (LineBreak)
 		out.println();
 		out.print(localtab);
 		// DEFINITION PART BEGINS (Containment)
 		count = printCountingMap.get("features");
 		if (count > 0) {
-			Object o = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.MODULE__FEATURES));
-			java.util.List<?> list = (java.util.List<?>) o;
-			int index = list.size() - count;
-			if (index >= 0) {
-				o = list.get(index);
-			} else {
-				o = null;
+			java.util.List<?> list = (java.util.List<?>)element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.MODULE__FEATURES));
+			int index  = list.size() - count;
+			if (index < 0) {
+				index = 0;
 			}
-			if (o != null) {
+			java.util.ListIterator<?> it  = list.listIterator(index);
+			while (it.hasNext()) {
+				Object o = it.next();
 				doPrint((org.eclipse.emf.ecore.EObject) o, out, localtab);
 			}
-			printCountingMap.put("features", count - 1);
-		}
-		// DEFINITION PART BEGINS (CompoundDefinition)
-		iterate = true;
-		while (iterate) {
-			sWriter = new java.io.StringWriter();
-			out1 = new java.io.PrintWriter(sWriter);
-			printCountingMap1 = new java.util.LinkedHashMap<String, Integer>(printCountingMap);
-			print_it_univaq_coevolution_emfmigrate_EmigOcl_Module_1_0(element, localtab, out1, printCountingMap1);
-			if (printCountingMap.equals(printCountingMap1)) {
-				iterate = false;
-				out1.close();
-			} else {
-				out1.flush();
-				out1.close();
-				out.print(sWriter.toString());
-				printCountingMap.putAll(printCountingMap1);
-			}
-		}
-	}
-	
-	public void print_it_univaq_coevolution_emfmigrate_EmigOcl_Module_1_0(it.univaq.coevolution.emfmigrate.EmigOcl.Module element, String outertab, java.io.PrintWriter out, java.util.Map<String, Integer> printCountingMap) {
-		String localtab = outertab;
-		int count;
-		// DEFINITION PART BEGINS (CsString)
-		out.print(",");
-		out.print(" ");
-		// DEFINITION PART BEGINS (Containment)
-		count = printCountingMap.get("features");
-		if (count > 0) {
-			Object o = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.MODULE__FEATURES));
-			java.util.List<?> list = (java.util.List<?>) o;
-			int index = list.size() - count;
-			if (index >= 0) {
-				o = list.get(index);
-			} else {
-				o = null;
-			}
-			if (o != null) {
-				doPrint((org.eclipse.emf.ecore.EObject) o, out, localtab);
-			}
-			printCountingMap.put("features", count - 1);
+			printCountingMap.put("features", 0);
 		}
 	}
 	
@@ -559,75 +544,6 @@ public class EmigOclPrinter implements it.univaq.coevolution.emfmigrate.EmigOcl.
 				doPrint((org.eclipse.emf.ecore.EObject) o, out, localtab);
 			}
 			printCountingMap.put("context_", count - 1);
-		}
-	}
-	
-	
-	public void print_it_univaq_coevolution_emfmigrate_EmigOcl_OclType(it.univaq.coevolution.emfmigrate.EmigOcl.OclType element, String outertab, java.io.PrintWriter out) {
-		// The printCountingMap contains a mapping from feature names to the number of
-		// remaining elements that still need to be printed. The map is initialized with
-		// the number of elements stored in each structural feature. For lists this is the
-		// list size. For non-multiple features it is either 1 (if the feature is set) or
-		// 0 (if the feature is null).
-		java.util.Map<String, Integer> printCountingMap = new java.util.LinkedHashMap<String, Integer>(26);
-		Object temp;
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_TYPE__TYPE));
-		printCountingMap.put("type", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_TYPE__IF_EXP3));
-		printCountingMap.put("ifExp3", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_TYPE__APPLIED_PROPERTY));
-		printCountingMap.put("appliedProperty", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_TYPE__COLLECTION));
-		printCountingMap.put("collection", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_TYPE__LET_EXP));
-		printCountingMap.put("letExp", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_TYPE__LOOP_EXP));
-		printCountingMap.put("loopExp", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_TYPE__PARENT_OPERATION));
-		printCountingMap.put("parentOperation", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_TYPE__INITIALIZED_VARIABLE));
-		printCountingMap.put("initializedVariable", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_TYPE__IF_EXP2));
-		printCountingMap.put("ifExp2", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_TYPE__OWNING_OPERATION));
-		printCountingMap.put("owningOperation", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_TYPE__IF_EXP1));
-		printCountingMap.put("ifExp1", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_TYPE__OWNING_ATTRIBUTE));
-		printCountingMap.put("owningAttribute", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_TYPE__NAME));
-		printCountingMap.put("name", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_TYPE__DEFINITIONS));
-		printCountingMap.put("definitions", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_TYPE__OCL_EXPRESSION));
-		printCountingMap.put("oclExpression", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_TYPE__OPERATION));
-		printCountingMap.put("operation", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_TYPE__MAP_TYPE2));
-		printCountingMap.put("mapType2", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_TYPE__ATTRIBUTE));
-		printCountingMap.put("attribute", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_TYPE__MAP_TYPE));
-		printCountingMap.put("mapType", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_TYPE__COLLECTION_TYPES));
-		printCountingMap.put("collectionTypes", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_TYPE__TUPLE_TYPE_ATTRIBUTE));
-		printCountingMap.put("tupleTypeAttribute", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_TYPE__VARIABLE_DECLARATION));
-		printCountingMap.put("variableDeclaration", temp == null ? 0 : 1);
-		// print collected hidden tokens
-		int count;
-		// DEFINITION PART BEGINS (PlaceholderUsingDefaultToken)
-		count = printCountingMap.get("name");
-		if (count > 0) {
-			Object o = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_TYPE__NAME));
-			if (o != null) {
-				it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.IEmigOclTokenResolver resolver = tokenResolverFactory.createTokenResolver("TEXT");
-				resolver.setOptions(getOptions());
-				out.print(resolver.deResolve((Object) o, element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_TYPE__NAME), element));
-				out.print(" ");
-			}
-			printCountingMap.put("name", count - 1);
 		}
 	}
 	
@@ -1059,6 +975,45 @@ public class EmigOclPrinter implements it.univaq.coevolution.emfmigrate.EmigOcl.
 		// print collected hidden tokens
 		// DEFINITION PART BEGINS (CsString)
 		out.print("super");
+		out.print(" ");
+	}
+	
+	
+	public void print_it_univaq_coevolution_emfmigrate_EmigOcl_SelfExp(it.univaq.coevolution.emfmigrate.EmigOcl.SelfExp element, String outertab, java.io.PrintWriter out) {
+		// The printCountingMap contains a mapping from feature names to the number of
+		// remaining elements that still need to be printed. The map is initialized with
+		// the number of elements stored in each structural feature. For lists this is the
+		// list size. For non-multiple features it is either 1 (if the feature is set) or
+		// 0 (if the feature is null).
+		java.util.Map<String, Integer> printCountingMap = new java.util.LinkedHashMap<String, Integer>(16);
+		Object temp;
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.SELF_EXP__TYPE));
+		printCountingMap.put("type", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.SELF_EXP__IF_EXP3));
+		printCountingMap.put("ifExp3", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.SELF_EXP__APPLIED_PROPERTY));
+		printCountingMap.put("appliedProperty", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.SELF_EXP__COLLECTION));
+		printCountingMap.put("collection", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.SELF_EXP__LET_EXP));
+		printCountingMap.put("letExp", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.SELF_EXP__LOOP_EXP));
+		printCountingMap.put("loopExp", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.SELF_EXP__PARENT_OPERATION));
+		printCountingMap.put("parentOperation", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.SELF_EXP__INITIALIZED_VARIABLE));
+		printCountingMap.put("initializedVariable", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.SELF_EXP__IF_EXP2));
+		printCountingMap.put("ifExp2", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.SELF_EXP__OWNING_OPERATION));
+		printCountingMap.put("owningOperation", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.SELF_EXP__IF_EXP1));
+		printCountingMap.put("ifExp1", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.SELF_EXP__OWNING_ATTRIBUTE));
+		printCountingMap.put("owningAttribute", temp == null ? 0 : 1);
+		// print collected hidden tokens
+		// DEFINITION PART BEGINS (CsString)
+		out.print("self");
 		out.print(" ");
 	}
 	
@@ -2549,168 +2504,487 @@ public class EmigOclPrinter implements it.univaq.coevolution.emfmigrate.EmigOcl.
 		printCountingMap.put("operationName", temp == null ? 0 : 1);
 		// print collected hidden tokens
 		int count;
-		int alt = -1;
-		alt = 0;
-		int matches = 		matchCount(printCountingMap, java.util.Arrays.asList(		"source"		,
-		"operationName"		,
-		"arguments"		));
-		int tempMatchCount;
-		tempMatchCount = 		matchCount(printCountingMap, java.util.Arrays.asList(		"source"		,
-		"operationName"		,
-		"arguments"		));
-		if (tempMatchCount > matches) {
-			alt = 1;
-			matches = tempMatchCount;
+		// DEFINITION PART BEGINS (Containment)
+		count = printCountingMap.get("source");
+		if (count > 0) {
+			Object o = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OPERATOR_CALL_EXP__SOURCE));
+			if (o != null) {
+				doPrint((org.eclipse.emf.ecore.EObject) o, out, localtab);
+			}
+			printCountingMap.put("source", count - 1);
 		}
-		switch(alt) {
-			case 1:			{
-				// DEFINITION PART BEGINS (Containment)
-				count = printCountingMap.get("source");
-				if (count > 0) {
-					Object o = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OPERATOR_CALL_EXP__SOURCE));
-					if (o != null) {
-						doPrint((org.eclipse.emf.ecore.EObject) o, out, localtab);
-					}
-					printCountingMap.put("source", count - 1);
-				}
-				// DEFINITION PART BEGINS (CompoundDefinition)
-				print_it_univaq_coevolution_emfmigrate_EmigOcl_OperatorCallExp_1(element, localtab, out, printCountingMap);
-				// DEFINITION PART BEGINS (Containment)
-				count = printCountingMap.get("arguments");
-				if (count > 0) {
-					Object o = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OPERATOR_CALL_EXP__ARGUMENTS));
-					java.util.List<?> list = (java.util.List<?>) o;
-					int index = list.size() - count;
-					if (index >= 0) {
-						o = list.get(index);
-					} else {
-						o = null;
-					}
-					if (o != null) {
-						doPrint((org.eclipse.emf.ecore.EObject) o, out, localtab);
-					}
-					printCountingMap.put("arguments", count - 1);
-				}
+		// DEFINITION PART BEGINS (PlaceholderUsingSpecifiedToken)
+		count = printCountingMap.get("operationName");
+		if (count > 0) {
+			Object o = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OPERATOR_CALL_EXP__OPERATION_NAME));
+			if (o != null) {
+				it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.IEmigOclTokenResolver resolver = tokenResolverFactory.createTokenResolver("BOOLOP");
+				resolver.setOptions(getOptions());
+				out.print(resolver.deResolve((Object) o, element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OPERATOR_CALL_EXP__OPERATION_NAME), element));
+				out.print(" ");
 			}
-			break;
-			default:			// DEFINITION PART BEGINS (CsString)
-			out.print("(");
-			out.print(" ");
-			// DEFINITION PART BEGINS (Containment)
-			count = printCountingMap.get("source");
-			if (count > 0) {
-				Object o = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OPERATOR_CALL_EXP__SOURCE));
-				if (o != null) {
-					doPrint((org.eclipse.emf.ecore.EObject) o, out, localtab);
-				}
-				printCountingMap.put("source", count - 1);
+			printCountingMap.put("operationName", count - 1);
+		}
+		// DEFINITION PART BEGINS (Containment)
+		count = printCountingMap.get("arguments");
+		if (count > 0) {
+			Object o = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OPERATOR_CALL_EXP__ARGUMENTS));
+			java.util.List<?> list = (java.util.List<?>) o;
+			int index = list.size() - count;
+			if (index >= 0) {
+				o = list.get(index);
+			} else {
+				o = null;
 			}
-			// DEFINITION PART BEGINS (CompoundDefinition)
-			print_it_univaq_coevolution_emfmigrate_EmigOcl_OperatorCallExp_0(element, localtab, out, printCountingMap);
-			// DEFINITION PART BEGINS (Containment)
-			count = printCountingMap.get("arguments");
-			if (count > 0) {
-				Object o = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OPERATOR_CALL_EXP__ARGUMENTS));
-				java.util.List<?> list = (java.util.List<?>) o;
-				int index = list.size() - count;
-				if (index >= 0) {
-					o = list.get(index);
-				} else {
-					o = null;
-				}
-				if (o != null) {
-					doPrint((org.eclipse.emf.ecore.EObject) o, out, localtab);
-				}
-				printCountingMap.put("arguments", count - 1);
+			if (o != null) {
+				doPrint((org.eclipse.emf.ecore.EObject) o, out, localtab);
 			}
-			// DEFINITION PART BEGINS (CsString)
-			out.print(")");
-			out.print(" ");
+			printCountingMap.put("arguments", count - 1);
 		}
 	}
 	
-	public void print_it_univaq_coevolution_emfmigrate_EmigOcl_OperatorCallExp_0(it.univaq.coevolution.emfmigrate.EmigOcl.OperatorCallExp element, String outertab, java.io.PrintWriter out, java.util.Map<String, Integer> printCountingMap) {
+	
+	public void print_it_univaq_coevolution_emfmigrate_EmigOcl_RelOpCallExp(it.univaq.coevolution.emfmigrate.EmigOcl.RelOpCallExp element, String outertab, java.io.PrintWriter out) {
+		String localtab = outertab;
+		// The printCountingMap contains a mapping from feature names to the number of
+		// remaining elements that still need to be printed. The map is initialized with
+		// the number of elements stored in each structural feature. For lists this is the
+		// list size. For non-multiple features it is either 1 (if the feature is set) or
+		// 0 (if the feature is null).
+		java.util.Map<String, Integer> printCountingMap = new java.util.LinkedHashMap<String, Integer>(19);
+		Object temp;
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.REL_OP_CALL_EXP__TYPE));
+		printCountingMap.put("type", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.REL_OP_CALL_EXP__IF_EXP3));
+		printCountingMap.put("ifExp3", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.REL_OP_CALL_EXP__APPLIED_PROPERTY));
+		printCountingMap.put("appliedProperty", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.REL_OP_CALL_EXP__COLLECTION));
+		printCountingMap.put("collection", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.REL_OP_CALL_EXP__LET_EXP));
+		printCountingMap.put("letExp", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.REL_OP_CALL_EXP__LOOP_EXP));
+		printCountingMap.put("loopExp", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.REL_OP_CALL_EXP__PARENT_OPERATION));
+		printCountingMap.put("parentOperation", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.REL_OP_CALL_EXP__INITIALIZED_VARIABLE));
+		printCountingMap.put("initializedVariable", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.REL_OP_CALL_EXP__IF_EXP2));
+		printCountingMap.put("ifExp2", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.REL_OP_CALL_EXP__OWNING_OPERATION));
+		printCountingMap.put("owningOperation", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.REL_OP_CALL_EXP__IF_EXP1));
+		printCountingMap.put("ifExp1", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.REL_OP_CALL_EXP__OWNING_ATTRIBUTE));
+		printCountingMap.put("owningAttribute", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.REL_OP_CALL_EXP__SOURCE));
+		printCountingMap.put("source", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.REL_OP_CALL_EXP__ARGUMENTS));
+		printCountingMap.put("arguments", temp == null ? 0 : ((java.util.Collection<?>) temp).size());
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.REL_OP_CALL_EXP__OPERATION_NAME));
+		printCountingMap.put("operationName", temp == null ? 0 : 1);
+		// print collected hidden tokens
 		int count;
-		int alt = -1;
-		alt = 0;
-		int matches = 		matchCount(printCountingMap, java.util.Arrays.asList(		"operationName"		));
-		int tempMatchCount;
-		tempMatchCount = 		matchCount(printCountingMap, java.util.Arrays.asList(		"operationName"		));
-		if (tempMatchCount > matches) {
-			alt = 1;
-			matches = tempMatchCount;
+		// DEFINITION PART BEGINS (Containment)
+		count = printCountingMap.get("source");
+		if (count > 0) {
+			Object o = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.REL_OP_CALL_EXP__SOURCE));
+			if (o != null) {
+				doPrint((org.eclipse.emf.ecore.EObject) o, out, localtab);
+			}
+			printCountingMap.put("source", count - 1);
 		}
-		switch(alt) {
-			case 1:			{
-				// DEFINITION PART BEGINS (PlaceholderUsingSpecifiedToken)
-				count = printCountingMap.get("operationName");
-				if (count > 0) {
-					Object o = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OPERATOR_CALL_EXP__OPERATION_NAME));
-					if (o != null) {
-						it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.IEmigOclTokenResolver resolver = tokenResolverFactory.createTokenResolver("SYMOP");
-						resolver.setOptions(getOptions());
-						out.print(resolver.deResolve((Object) o, element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OPERATOR_CALL_EXP__OPERATION_NAME), element));
-						out.print(" ");
-					}
-					printCountingMap.put("operationName", count - 1);
-				}
+		// DEFINITION PART BEGINS (PlaceholderUsingSpecifiedToken)
+		count = printCountingMap.get("operationName");
+		if (count > 0) {
+			Object o = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.REL_OP_CALL_EXP__OPERATION_NAME));
+			if (o != null) {
+				it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.IEmigOclTokenResolver resolver = tokenResolverFactory.createTokenResolver("RELOP");
+				resolver.setOptions(getOptions());
+				out.print(resolver.deResolve((Object) o, element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.REL_OP_CALL_EXP__OPERATION_NAME), element));
+				out.print(" ");
 			}
-			break;
-			default:			// DEFINITION PART BEGINS (PlaceholderUsingSpecifiedToken)
-			count = printCountingMap.get("operationName");
-			if (count > 0) {
-				Object o = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OPERATOR_CALL_EXP__OPERATION_NAME));
-				if (o != null) {
-					it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.IEmigOclTokenResolver resolver = tokenResolverFactory.createTokenResolver("TXTOP");
-					resolver.setOptions(getOptions());
-					out.print(resolver.deResolve((Object) o, element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OPERATOR_CALL_EXP__OPERATION_NAME), element));
-					out.print(" ");
-				}
-				printCountingMap.put("operationName", count - 1);
+			printCountingMap.put("operationName", count - 1);
+		}
+		// DEFINITION PART BEGINS (Containment)
+		count = printCountingMap.get("arguments");
+		if (count > 0) {
+			Object o = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.REL_OP_CALL_EXP__ARGUMENTS));
+			java.util.List<?> list = (java.util.List<?>) o;
+			int index = list.size() - count;
+			if (index >= 0) {
+				o = list.get(index);
+			} else {
+				o = null;
 			}
+			if (o != null) {
+				doPrint((org.eclipse.emf.ecore.EObject) o, out, localtab);
+			}
+			printCountingMap.put("arguments", count - 1);
 		}
 	}
 	
-	public void print_it_univaq_coevolution_emfmigrate_EmigOcl_OperatorCallExp_1(it.univaq.coevolution.emfmigrate.EmigOcl.OperatorCallExp element, String outertab, java.io.PrintWriter out, java.util.Map<String, Integer> printCountingMap) {
+	
+	public void print_it_univaq_coevolution_emfmigrate_EmigOcl_AddOpCallExp(it.univaq.coevolution.emfmigrate.EmigOcl.AddOpCallExp element, String outertab, java.io.PrintWriter out) {
+		String localtab = outertab;
+		// The printCountingMap contains a mapping from feature names to the number of
+		// remaining elements that still need to be printed. The map is initialized with
+		// the number of elements stored in each structural feature. For lists this is the
+		// list size. For non-multiple features it is either 1 (if the feature is set) or
+		// 0 (if the feature is null).
+		java.util.Map<String, Integer> printCountingMap = new java.util.LinkedHashMap<String, Integer>(19);
+		Object temp;
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.ADD_OP_CALL_EXP__TYPE));
+		printCountingMap.put("type", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.ADD_OP_CALL_EXP__IF_EXP3));
+		printCountingMap.put("ifExp3", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.ADD_OP_CALL_EXP__APPLIED_PROPERTY));
+		printCountingMap.put("appliedProperty", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.ADD_OP_CALL_EXP__COLLECTION));
+		printCountingMap.put("collection", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.ADD_OP_CALL_EXP__LET_EXP));
+		printCountingMap.put("letExp", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.ADD_OP_CALL_EXP__LOOP_EXP));
+		printCountingMap.put("loopExp", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.ADD_OP_CALL_EXP__PARENT_OPERATION));
+		printCountingMap.put("parentOperation", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.ADD_OP_CALL_EXP__INITIALIZED_VARIABLE));
+		printCountingMap.put("initializedVariable", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.ADD_OP_CALL_EXP__IF_EXP2));
+		printCountingMap.put("ifExp2", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.ADD_OP_CALL_EXP__OWNING_OPERATION));
+		printCountingMap.put("owningOperation", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.ADD_OP_CALL_EXP__IF_EXP1));
+		printCountingMap.put("ifExp1", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.ADD_OP_CALL_EXP__OWNING_ATTRIBUTE));
+		printCountingMap.put("owningAttribute", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.ADD_OP_CALL_EXP__SOURCE));
+		printCountingMap.put("source", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.ADD_OP_CALL_EXP__ARGUMENTS));
+		printCountingMap.put("arguments", temp == null ? 0 : ((java.util.Collection<?>) temp).size());
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.ADD_OP_CALL_EXP__OPERATION_NAME));
+		printCountingMap.put("operationName", temp == null ? 0 : 1);
+		// print collected hidden tokens
 		int count;
-		int alt = -1;
-		alt = 0;
-		int matches = 		matchCount(printCountingMap, java.util.Arrays.asList(		"operationName"		));
-		int tempMatchCount;
-		tempMatchCount = 		matchCount(printCountingMap, java.util.Arrays.asList(		"operationName"		));
-		if (tempMatchCount > matches) {
-			alt = 1;
-			matches = tempMatchCount;
-		}
-		switch(alt) {
-			case 1:			{
-				// DEFINITION PART BEGINS (PlaceholderUsingSpecifiedToken)
-				count = printCountingMap.get("operationName");
-				if (count > 0) {
-					Object o = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OPERATOR_CALL_EXP__OPERATION_NAME));
-					if (o != null) {
-						it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.IEmigOclTokenResolver resolver = tokenResolverFactory.createTokenResolver("SYMOP");
-						resolver.setOptions(getOptions());
-						out.print(resolver.deResolve((Object) o, element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OPERATOR_CALL_EXP__OPERATION_NAME), element));
-						out.print(" ");
-					}
-					printCountingMap.put("operationName", count - 1);
-				}
+		// DEFINITION PART BEGINS (Containment)
+		count = printCountingMap.get("source");
+		if (count > 0) {
+			Object o = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.ADD_OP_CALL_EXP__SOURCE));
+			if (o != null) {
+				doPrint((org.eclipse.emf.ecore.EObject) o, out, localtab);
 			}
-			break;
-			default:			// DEFINITION PART BEGINS (PlaceholderUsingSpecifiedToken)
-			count = printCountingMap.get("operationName");
-			if (count > 0) {
-				Object o = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OPERATOR_CALL_EXP__OPERATION_NAME));
-				if (o != null) {
-					it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.IEmigOclTokenResolver resolver = tokenResolverFactory.createTokenResolver("TXTOP");
-					resolver.setOptions(getOptions());
-					out.print(resolver.deResolve((Object) o, element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OPERATOR_CALL_EXP__OPERATION_NAME), element));
-					out.print(" ");
-				}
-				printCountingMap.put("operationName", count - 1);
-			}
+			printCountingMap.put("source", count - 1);
 		}
+		// DEFINITION PART BEGINS (PlaceholderUsingSpecifiedToken)
+		count = printCountingMap.get("operationName");
+		if (count > 0) {
+			Object o = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.ADD_OP_CALL_EXP__OPERATION_NAME));
+			if (o != null) {
+				it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.IEmigOclTokenResolver resolver = tokenResolverFactory.createTokenResolver("ADDOP");
+				resolver.setOptions(getOptions());
+				out.print(resolver.deResolve((Object) o, element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.ADD_OP_CALL_EXP__OPERATION_NAME), element));
+				out.print(" ");
+			}
+			printCountingMap.put("operationName", count - 1);
+		}
+		// DEFINITION PART BEGINS (Containment)
+		count = printCountingMap.get("arguments");
+		if (count > 0) {
+			Object o = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.ADD_OP_CALL_EXP__ARGUMENTS));
+			java.util.List<?> list = (java.util.List<?>) o;
+			int index = list.size() - count;
+			if (index >= 0) {
+				o = list.get(index);
+			} else {
+				o = null;
+			}
+			if (o != null) {
+				doPrint((org.eclipse.emf.ecore.EObject) o, out, localtab);
+			}
+			printCountingMap.put("arguments", count - 1);
+		}
+	}
+	
+	
+	public void print_it_univaq_coevolution_emfmigrate_EmigOcl_IntOpCallExp(it.univaq.coevolution.emfmigrate.EmigOcl.IntOpCallExp element, String outertab, java.io.PrintWriter out) {
+		String localtab = outertab;
+		// The printCountingMap contains a mapping from feature names to the number of
+		// remaining elements that still need to be printed. The map is initialized with
+		// the number of elements stored in each structural feature. For lists this is the
+		// list size. For non-multiple features it is either 1 (if the feature is set) or
+		// 0 (if the feature is null).
+		java.util.Map<String, Integer> printCountingMap = new java.util.LinkedHashMap<String, Integer>(19);
+		Object temp;
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.INT_OP_CALL_EXP__TYPE));
+		printCountingMap.put("type", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.INT_OP_CALL_EXP__IF_EXP3));
+		printCountingMap.put("ifExp3", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.INT_OP_CALL_EXP__APPLIED_PROPERTY));
+		printCountingMap.put("appliedProperty", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.INT_OP_CALL_EXP__COLLECTION));
+		printCountingMap.put("collection", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.INT_OP_CALL_EXP__LET_EXP));
+		printCountingMap.put("letExp", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.INT_OP_CALL_EXP__LOOP_EXP));
+		printCountingMap.put("loopExp", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.INT_OP_CALL_EXP__PARENT_OPERATION));
+		printCountingMap.put("parentOperation", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.INT_OP_CALL_EXP__INITIALIZED_VARIABLE));
+		printCountingMap.put("initializedVariable", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.INT_OP_CALL_EXP__IF_EXP2));
+		printCountingMap.put("ifExp2", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.INT_OP_CALL_EXP__OWNING_OPERATION));
+		printCountingMap.put("owningOperation", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.INT_OP_CALL_EXP__IF_EXP1));
+		printCountingMap.put("ifExp1", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.INT_OP_CALL_EXP__OWNING_ATTRIBUTE));
+		printCountingMap.put("owningAttribute", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.INT_OP_CALL_EXP__SOURCE));
+		printCountingMap.put("source", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.INT_OP_CALL_EXP__ARGUMENTS));
+		printCountingMap.put("arguments", temp == null ? 0 : ((java.util.Collection<?>) temp).size());
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.INT_OP_CALL_EXP__OPERATION_NAME));
+		printCountingMap.put("operationName", temp == null ? 0 : 1);
+		// print collected hidden tokens
+		int count;
+		// DEFINITION PART BEGINS (Containment)
+		count = printCountingMap.get("source");
+		if (count > 0) {
+			Object o = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.INT_OP_CALL_EXP__SOURCE));
+			if (o != null) {
+				doPrint((org.eclipse.emf.ecore.EObject) o, out, localtab);
+			}
+			printCountingMap.put("source", count - 1);
+		}
+		// DEFINITION PART BEGINS (PlaceholderUsingSpecifiedToken)
+		count = printCountingMap.get("operationName");
+		if (count > 0) {
+			Object o = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.INT_OP_CALL_EXP__OPERATION_NAME));
+			if (o != null) {
+				it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.IEmigOclTokenResolver resolver = tokenResolverFactory.createTokenResolver("INTOP");
+				resolver.setOptions(getOptions());
+				out.print(resolver.deResolve((Object) o, element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.INT_OP_CALL_EXP__OPERATION_NAME), element));
+				out.print(" ");
+			}
+			printCountingMap.put("operationName", count - 1);
+		}
+		// DEFINITION PART BEGINS (Containment)
+		count = printCountingMap.get("arguments");
+		if (count > 0) {
+			Object o = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.INT_OP_CALL_EXP__ARGUMENTS));
+			java.util.List<?> list = (java.util.List<?>) o;
+			int index = list.size() - count;
+			if (index >= 0) {
+				o = list.get(index);
+			} else {
+				o = null;
+			}
+			if (o != null) {
+				doPrint((org.eclipse.emf.ecore.EObject) o, out, localtab);
+			}
+			printCountingMap.put("arguments", count - 1);
+		}
+	}
+	
+	
+	public void print_it_univaq_coevolution_emfmigrate_EmigOcl_MulOpCallExp(it.univaq.coevolution.emfmigrate.EmigOcl.MulOpCallExp element, String outertab, java.io.PrintWriter out) {
+		String localtab = outertab;
+		// The printCountingMap contains a mapping from feature names to the number of
+		// remaining elements that still need to be printed. The map is initialized with
+		// the number of elements stored in each structural feature. For lists this is the
+		// list size. For non-multiple features it is either 1 (if the feature is set) or
+		// 0 (if the feature is null).
+		java.util.Map<String, Integer> printCountingMap = new java.util.LinkedHashMap<String, Integer>(19);
+		Object temp;
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.MUL_OP_CALL_EXP__TYPE));
+		printCountingMap.put("type", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.MUL_OP_CALL_EXP__IF_EXP3));
+		printCountingMap.put("ifExp3", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.MUL_OP_CALL_EXP__APPLIED_PROPERTY));
+		printCountingMap.put("appliedProperty", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.MUL_OP_CALL_EXP__COLLECTION));
+		printCountingMap.put("collection", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.MUL_OP_CALL_EXP__LET_EXP));
+		printCountingMap.put("letExp", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.MUL_OP_CALL_EXP__LOOP_EXP));
+		printCountingMap.put("loopExp", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.MUL_OP_CALL_EXP__PARENT_OPERATION));
+		printCountingMap.put("parentOperation", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.MUL_OP_CALL_EXP__INITIALIZED_VARIABLE));
+		printCountingMap.put("initializedVariable", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.MUL_OP_CALL_EXP__IF_EXP2));
+		printCountingMap.put("ifExp2", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.MUL_OP_CALL_EXP__OWNING_OPERATION));
+		printCountingMap.put("owningOperation", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.MUL_OP_CALL_EXP__IF_EXP1));
+		printCountingMap.put("ifExp1", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.MUL_OP_CALL_EXP__OWNING_ATTRIBUTE));
+		printCountingMap.put("owningAttribute", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.MUL_OP_CALL_EXP__SOURCE));
+		printCountingMap.put("source", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.MUL_OP_CALL_EXP__ARGUMENTS));
+		printCountingMap.put("arguments", temp == null ? 0 : ((java.util.Collection<?>) temp).size());
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.MUL_OP_CALL_EXP__OPERATION_NAME));
+		printCountingMap.put("operationName", temp == null ? 0 : 1);
+		// print collected hidden tokens
+		int count;
+		// DEFINITION PART BEGINS (Containment)
+		count = printCountingMap.get("source");
+		if (count > 0) {
+			Object o = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.MUL_OP_CALL_EXP__SOURCE));
+			if (o != null) {
+				doPrint((org.eclipse.emf.ecore.EObject) o, out, localtab);
+			}
+			printCountingMap.put("source", count - 1);
+		}
+		// DEFINITION PART BEGINS (PlaceholderUsingSpecifiedToken)
+		count = printCountingMap.get("operationName");
+		if (count > 0) {
+			Object o = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.MUL_OP_CALL_EXP__OPERATION_NAME));
+			if (o != null) {
+				it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.IEmigOclTokenResolver resolver = tokenResolverFactory.createTokenResolver("MULOP");
+				resolver.setOptions(getOptions());
+				out.print(resolver.deResolve((Object) o, element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.MUL_OP_CALL_EXP__OPERATION_NAME), element));
+				out.print(" ");
+			}
+			printCountingMap.put("operationName", count - 1);
+		}
+		// DEFINITION PART BEGINS (Containment)
+		count = printCountingMap.get("arguments");
+		if (count > 0) {
+			Object o = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.MUL_OP_CALL_EXP__ARGUMENTS));
+			java.util.List<?> list = (java.util.List<?>) o;
+			int index = list.size() - count;
+			if (index >= 0) {
+				o = list.get(index);
+			} else {
+				o = null;
+			}
+			if (o != null) {
+				doPrint((org.eclipse.emf.ecore.EObject) o, out, localtab);
+			}
+			printCountingMap.put("arguments", count - 1);
+		}
+	}
+	
+	
+	public void print_it_univaq_coevolution_emfmigrate_EmigOcl_NotOpCallExp(it.univaq.coevolution.emfmigrate.EmigOcl.NotOpCallExp element, String outertab, java.io.PrintWriter out) {
+		String localtab = outertab;
+		// The printCountingMap contains a mapping from feature names to the number of
+		// remaining elements that still need to be printed. The map is initialized with
+		// the number of elements stored in each structural feature. For lists this is the
+		// list size. For non-multiple features it is either 1 (if the feature is set) or
+		// 0 (if the feature is null).
+		java.util.Map<String, Integer> printCountingMap = new java.util.LinkedHashMap<String, Integer>(19);
+		Object temp;
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.NOT_OP_CALL_EXP__TYPE));
+		printCountingMap.put("type", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.NOT_OP_CALL_EXP__IF_EXP3));
+		printCountingMap.put("ifExp3", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.NOT_OP_CALL_EXP__APPLIED_PROPERTY));
+		printCountingMap.put("appliedProperty", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.NOT_OP_CALL_EXP__COLLECTION));
+		printCountingMap.put("collection", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.NOT_OP_CALL_EXP__LET_EXP));
+		printCountingMap.put("letExp", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.NOT_OP_CALL_EXP__LOOP_EXP));
+		printCountingMap.put("loopExp", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.NOT_OP_CALL_EXP__PARENT_OPERATION));
+		printCountingMap.put("parentOperation", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.NOT_OP_CALL_EXP__INITIALIZED_VARIABLE));
+		printCountingMap.put("initializedVariable", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.NOT_OP_CALL_EXP__IF_EXP2));
+		printCountingMap.put("ifExp2", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.NOT_OP_CALL_EXP__OWNING_OPERATION));
+		printCountingMap.put("owningOperation", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.NOT_OP_CALL_EXP__IF_EXP1));
+		printCountingMap.put("ifExp1", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.NOT_OP_CALL_EXP__OWNING_ATTRIBUTE));
+		printCountingMap.put("owningAttribute", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.NOT_OP_CALL_EXP__SOURCE));
+		printCountingMap.put("source", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.NOT_OP_CALL_EXP__ARGUMENTS));
+		printCountingMap.put("arguments", temp == null ? 0 : ((java.util.Collection<?>) temp).size());
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.NOT_OP_CALL_EXP__OPERATION_NAME));
+		printCountingMap.put("operationName", temp == null ? 0 : 1);
+		// print collected hidden tokens
+		int count;
+		// DEFINITION PART BEGINS (PlaceholderUsingSpecifiedToken)
+		count = printCountingMap.get("operationName");
+		if (count > 0) {
+			Object o = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.NOT_OP_CALL_EXP__OPERATION_NAME));
+			if (o != null) {
+				it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.IEmigOclTokenResolver resolver = tokenResolverFactory.createTokenResolver("NOTOP");
+				resolver.setOptions(getOptions());
+				out.print(resolver.deResolve((Object) o, element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.NOT_OP_CALL_EXP__OPERATION_NAME), element));
+				out.print(" ");
+			}
+			printCountingMap.put("operationName", count - 1);
+		}
+		// DEFINITION PART BEGINS (Containment)
+		count = printCountingMap.get("source");
+		if (count > 0) {
+			Object o = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.NOT_OP_CALL_EXP__SOURCE));
+			if (o != null) {
+				doPrint((org.eclipse.emf.ecore.EObject) o, out, localtab);
+			}
+			printCountingMap.put("source", count - 1);
+		}
+	}
+	
+	
+	public void print_it_univaq_coevolution_emfmigrate_EmigOcl_BraceExp(it.univaq.coevolution.emfmigrate.EmigOcl.BraceExp element, String outertab, java.io.PrintWriter out) {
+		String localtab = outertab;
+		// The printCountingMap contains a mapping from feature names to the number of
+		// remaining elements that still need to be printed. The map is initialized with
+		// the number of elements stored in each structural feature. For lists this is the
+		// list size. For non-multiple features it is either 1 (if the feature is set) or
+		// 0 (if the feature is null).
+		java.util.Map<String, Integer> printCountingMap = new java.util.LinkedHashMap<String, Integer>(17);
+		Object temp;
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.BRACE_EXP__TYPE));
+		printCountingMap.put("type", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.BRACE_EXP__IF_EXP3));
+		printCountingMap.put("ifExp3", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.BRACE_EXP__APPLIED_PROPERTY));
+		printCountingMap.put("appliedProperty", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.BRACE_EXP__COLLECTION));
+		printCountingMap.put("collection", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.BRACE_EXP__LET_EXP));
+		printCountingMap.put("letExp", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.BRACE_EXP__LOOP_EXP));
+		printCountingMap.put("loopExp", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.BRACE_EXP__PARENT_OPERATION));
+		printCountingMap.put("parentOperation", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.BRACE_EXP__INITIALIZED_VARIABLE));
+		printCountingMap.put("initializedVariable", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.BRACE_EXP__IF_EXP2));
+		printCountingMap.put("ifExp2", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.BRACE_EXP__OWNING_OPERATION));
+		printCountingMap.put("owningOperation", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.BRACE_EXP__IF_EXP1));
+		printCountingMap.put("ifExp1", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.BRACE_EXP__OWNING_ATTRIBUTE));
+		printCountingMap.put("owningAttribute", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.BRACE_EXP__SOURCE));
+		printCountingMap.put("source", temp == null ? 0 : 1);
+		// print collected hidden tokens
+		int count;
+		// DEFINITION PART BEGINS (CsString)
+		out.print("(");
+		out.print(" ");
+		// DEFINITION PART BEGINS (Containment)
+		count = printCountingMap.get("source");
+		if (count > 0) {
+			Object o = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.BRACE_EXP__SOURCE));
+			if (o != null) {
+				doPrint((org.eclipse.emf.ecore.EObject) o, out, localtab);
+			}
+			printCountingMap.put("source", count - 1);
+		}
+		// DEFINITION PART BEGINS (CsString)
+		out.print(")");
+		out.print(" ");
 	}
 	
 	
@@ -3393,6 +3667,74 @@ public class EmigOclPrinter implements it.univaq.coevolution.emfmigrate.EmigOcl.
 	}
 	
 	
+	public void print_it_univaq_coevolution_emfmigrate_EmigOcl_OclModelElementExp(it.univaq.coevolution.emfmigrate.EmigOcl.OclModelElementExp element, String outertab, java.io.PrintWriter out) {
+		// The printCountingMap contains a mapping from feature names to the number of
+		// remaining elements that still need to be printed. The map is initialized with
+		// the number of elements stored in each structural feature. For lists this is the
+		// list size. For non-multiple features it is either 1 (if the feature is set) or
+		// 0 (if the feature is null).
+		java.util.Map<String, Integer> printCountingMap = new java.util.LinkedHashMap<String, Integer>(18);
+		Object temp;
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_MODEL_ELEMENT_EXP__TYPE));
+		printCountingMap.put("type", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_MODEL_ELEMENT_EXP__IF_EXP3));
+		printCountingMap.put("ifExp3", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_MODEL_ELEMENT_EXP__APPLIED_PROPERTY));
+		printCountingMap.put("appliedProperty", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_MODEL_ELEMENT_EXP__COLLECTION));
+		printCountingMap.put("collection", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_MODEL_ELEMENT_EXP__LET_EXP));
+		printCountingMap.put("letExp", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_MODEL_ELEMENT_EXP__LOOP_EXP));
+		printCountingMap.put("loopExp", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_MODEL_ELEMENT_EXP__PARENT_OPERATION));
+		printCountingMap.put("parentOperation", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_MODEL_ELEMENT_EXP__INITIALIZED_VARIABLE));
+		printCountingMap.put("initializedVariable", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_MODEL_ELEMENT_EXP__IF_EXP2));
+		printCountingMap.put("ifExp2", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_MODEL_ELEMENT_EXP__OWNING_OPERATION));
+		printCountingMap.put("owningOperation", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_MODEL_ELEMENT_EXP__IF_EXP1));
+		printCountingMap.put("ifExp1", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_MODEL_ELEMENT_EXP__OWNING_ATTRIBUTE));
+		printCountingMap.put("owningAttribute", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_MODEL_ELEMENT_EXP__MODEL));
+		printCountingMap.put("model", temp == null ? 0 : 1);
+		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_MODEL_ELEMENT_EXP__NAME));
+		printCountingMap.put("name", temp == null ? 0 : 1);
+		// print collected hidden tokens
+		int count;
+		// DEFINITION PART BEGINS (PlaceholderUsingDefaultToken)
+		count = printCountingMap.get("model");
+		if (count > 0) {
+			Object o = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_MODEL_ELEMENT_EXP__MODEL));
+			if (o != null) {
+				it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.IEmigOclTokenResolver resolver = tokenResolverFactory.createTokenResolver("TEXT");
+				resolver.setOptions(getOptions());
+				out.print(resolver.deResolve(getReferenceResolverSwitch() == null ? null : getReferenceResolverSwitch().getOclModelElementExpModelReferenceResolver().deResolve((it.univaq.coevolution.emfmigrate.EmigOcl.OclModel) o, element, (org.eclipse.emf.ecore.EReference) element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_MODEL_ELEMENT_EXP__MODEL)), element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_MODEL_ELEMENT_EXP__MODEL), element));
+				out.print(" ");
+			}
+			printCountingMap.put("model", count - 1);
+		}
+		// DEFINITION PART BEGINS (CsString)
+		out.print("!");
+		out.print(" ");
+		// DEFINITION PART BEGINS (PlaceholderUsingDefaultToken)
+		count = printCountingMap.get("name");
+		if (count > 0) {
+			Object o = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_MODEL_ELEMENT_EXP__NAME));
+			if (o != null) {
+				it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.IEmigOclTokenResolver resolver = tokenResolverFactory.createTokenResolver("TEXT");
+				resolver.setOptions(getOptions());
+				out.print(resolver.deResolve((Object) o, element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_MODEL_ELEMENT_EXP__NAME), element));
+				out.print(" ");
+			}
+			printCountingMap.put("name", count - 1);
+		}
+	}
+	
+	
 	public void print_it_univaq_coevolution_emfmigrate_EmigOcl_VariableDeclaration(it.univaq.coevolution.emfmigrate.EmigOcl.VariableDeclaration element, String outertab, java.io.PrintWriter out) {
 		String localtab = outertab;
 		// The printCountingMap contains a mapping from feature names to the number of
@@ -3501,32 +3843,8 @@ public class EmigOclPrinter implements it.univaq.coevolution.emfmigrate.EmigOcl.
 		// the number of elements stored in each structural feature. For lists this is the
 		// list size. For non-multiple features it is either 1 (if the feature is set) or
 		// 0 (if the feature is null).
-		java.util.Map<String, Integer> printCountingMap = new java.util.LinkedHashMap<String, Integer>(27);
+		java.util.Map<String, Integer> printCountingMap = new java.util.LinkedHashMap<String, Integer>(15);
 		Object temp;
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.COLLECTION_TYPE__TYPE));
-		printCountingMap.put("type", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.COLLECTION_TYPE__IF_EXP3));
-		printCountingMap.put("ifExp3", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.COLLECTION_TYPE__APPLIED_PROPERTY));
-		printCountingMap.put("appliedProperty", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.COLLECTION_TYPE__COLLECTION));
-		printCountingMap.put("collection", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.COLLECTION_TYPE__LET_EXP));
-		printCountingMap.put("letExp", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.COLLECTION_TYPE__LOOP_EXP));
-		printCountingMap.put("loopExp", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.COLLECTION_TYPE__PARENT_OPERATION));
-		printCountingMap.put("parentOperation", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.COLLECTION_TYPE__INITIALIZED_VARIABLE));
-		printCountingMap.put("initializedVariable", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.COLLECTION_TYPE__IF_EXP2));
-		printCountingMap.put("ifExp2", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.COLLECTION_TYPE__OWNING_OPERATION));
-		printCountingMap.put("owningOperation", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.COLLECTION_TYPE__IF_EXP1));
-		printCountingMap.put("ifExp1", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.COLLECTION_TYPE__OWNING_ATTRIBUTE));
-		printCountingMap.put("owningAttribute", temp == null ? 0 : 1);
 		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.COLLECTION_TYPE__NAME));
 		printCountingMap.put("name", temp == null ? 0 : 1);
 		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.COLLECTION_TYPE__DEFINITIONS));
@@ -3587,32 +3905,8 @@ public class EmigOclPrinter implements it.univaq.coevolution.emfmigrate.EmigOcl.
 		// the number of elements stored in each structural feature. For lists this is the
 		// list size. For non-multiple features it is either 1 (if the feature is set) or
 		// 0 (if the feature is null).
-		java.util.Map<String, Integer> printCountingMap = new java.util.LinkedHashMap<String, Integer>(26);
+		java.util.Map<String, Integer> printCountingMap = new java.util.LinkedHashMap<String, Integer>(14);
 		Object temp;
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.STRING_TYPE__TYPE));
-		printCountingMap.put("type", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.STRING_TYPE__IF_EXP3));
-		printCountingMap.put("ifExp3", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.STRING_TYPE__APPLIED_PROPERTY));
-		printCountingMap.put("appliedProperty", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.STRING_TYPE__COLLECTION));
-		printCountingMap.put("collection", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.STRING_TYPE__LET_EXP));
-		printCountingMap.put("letExp", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.STRING_TYPE__LOOP_EXP));
-		printCountingMap.put("loopExp", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.STRING_TYPE__PARENT_OPERATION));
-		printCountingMap.put("parentOperation", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.STRING_TYPE__INITIALIZED_VARIABLE));
-		printCountingMap.put("initializedVariable", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.STRING_TYPE__IF_EXP2));
-		printCountingMap.put("ifExp2", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.STRING_TYPE__OWNING_OPERATION));
-		printCountingMap.put("owningOperation", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.STRING_TYPE__IF_EXP1));
-		printCountingMap.put("ifExp1", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.STRING_TYPE__OWNING_ATTRIBUTE));
-		printCountingMap.put("owningAttribute", temp == null ? 0 : 1);
 		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.STRING_TYPE__NAME));
 		printCountingMap.put("name", temp == null ? 0 : 1);
 		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.STRING_TYPE__DEFINITIONS));
@@ -3656,32 +3950,8 @@ public class EmigOclPrinter implements it.univaq.coevolution.emfmigrate.EmigOcl.
 		// the number of elements stored in each structural feature. For lists this is the
 		// list size. For non-multiple features it is either 1 (if the feature is set) or
 		// 0 (if the feature is null).
-		java.util.Map<String, Integer> printCountingMap = new java.util.LinkedHashMap<String, Integer>(26);
+		java.util.Map<String, Integer> printCountingMap = new java.util.LinkedHashMap<String, Integer>(14);
 		Object temp;
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.BOOLEAN_TYPE__TYPE));
-		printCountingMap.put("type", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.BOOLEAN_TYPE__IF_EXP3));
-		printCountingMap.put("ifExp3", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.BOOLEAN_TYPE__APPLIED_PROPERTY));
-		printCountingMap.put("appliedProperty", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.BOOLEAN_TYPE__COLLECTION));
-		printCountingMap.put("collection", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.BOOLEAN_TYPE__LET_EXP));
-		printCountingMap.put("letExp", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.BOOLEAN_TYPE__LOOP_EXP));
-		printCountingMap.put("loopExp", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.BOOLEAN_TYPE__PARENT_OPERATION));
-		printCountingMap.put("parentOperation", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.BOOLEAN_TYPE__INITIALIZED_VARIABLE));
-		printCountingMap.put("initializedVariable", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.BOOLEAN_TYPE__IF_EXP2));
-		printCountingMap.put("ifExp2", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.BOOLEAN_TYPE__OWNING_OPERATION));
-		printCountingMap.put("owningOperation", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.BOOLEAN_TYPE__IF_EXP1));
-		printCountingMap.put("ifExp1", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.BOOLEAN_TYPE__OWNING_ATTRIBUTE));
-		printCountingMap.put("owningAttribute", temp == null ? 0 : 1);
 		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.BOOLEAN_TYPE__NAME));
 		printCountingMap.put("name", temp == null ? 0 : 1);
 		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.BOOLEAN_TYPE__DEFINITIONS));
@@ -3725,32 +3995,8 @@ public class EmigOclPrinter implements it.univaq.coevolution.emfmigrate.EmigOcl.
 		// the number of elements stored in each structural feature. For lists this is the
 		// list size. For non-multiple features it is either 1 (if the feature is set) or
 		// 0 (if the feature is null).
-		java.util.Map<String, Integer> printCountingMap = new java.util.LinkedHashMap<String, Integer>(26);
+		java.util.Map<String, Integer> printCountingMap = new java.util.LinkedHashMap<String, Integer>(14);
 		Object temp;
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.INTEGER_TYPE__TYPE));
-		printCountingMap.put("type", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.INTEGER_TYPE__IF_EXP3));
-		printCountingMap.put("ifExp3", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.INTEGER_TYPE__APPLIED_PROPERTY));
-		printCountingMap.put("appliedProperty", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.INTEGER_TYPE__COLLECTION));
-		printCountingMap.put("collection", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.INTEGER_TYPE__LET_EXP));
-		printCountingMap.put("letExp", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.INTEGER_TYPE__LOOP_EXP));
-		printCountingMap.put("loopExp", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.INTEGER_TYPE__PARENT_OPERATION));
-		printCountingMap.put("parentOperation", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.INTEGER_TYPE__INITIALIZED_VARIABLE));
-		printCountingMap.put("initializedVariable", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.INTEGER_TYPE__IF_EXP2));
-		printCountingMap.put("ifExp2", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.INTEGER_TYPE__OWNING_OPERATION));
-		printCountingMap.put("owningOperation", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.INTEGER_TYPE__IF_EXP1));
-		printCountingMap.put("ifExp1", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.INTEGER_TYPE__OWNING_ATTRIBUTE));
-		printCountingMap.put("owningAttribute", temp == null ? 0 : 1);
 		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.INTEGER_TYPE__NAME));
 		printCountingMap.put("name", temp == null ? 0 : 1);
 		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.INTEGER_TYPE__DEFINITIONS));
@@ -3794,32 +4040,8 @@ public class EmigOclPrinter implements it.univaq.coevolution.emfmigrate.EmigOcl.
 		// the number of elements stored in each structural feature. For lists this is the
 		// list size. For non-multiple features it is either 1 (if the feature is set) or
 		// 0 (if the feature is null).
-		java.util.Map<String, Integer> printCountingMap = new java.util.LinkedHashMap<String, Integer>(26);
+		java.util.Map<String, Integer> printCountingMap = new java.util.LinkedHashMap<String, Integer>(14);
 		Object temp;
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.REAL_TYPE__TYPE));
-		printCountingMap.put("type", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.REAL_TYPE__IF_EXP3));
-		printCountingMap.put("ifExp3", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.REAL_TYPE__APPLIED_PROPERTY));
-		printCountingMap.put("appliedProperty", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.REAL_TYPE__COLLECTION));
-		printCountingMap.put("collection", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.REAL_TYPE__LET_EXP));
-		printCountingMap.put("letExp", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.REAL_TYPE__LOOP_EXP));
-		printCountingMap.put("loopExp", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.REAL_TYPE__PARENT_OPERATION));
-		printCountingMap.put("parentOperation", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.REAL_TYPE__INITIALIZED_VARIABLE));
-		printCountingMap.put("initializedVariable", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.REAL_TYPE__IF_EXP2));
-		printCountingMap.put("ifExp2", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.REAL_TYPE__OWNING_OPERATION));
-		printCountingMap.put("owningOperation", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.REAL_TYPE__IF_EXP1));
-		printCountingMap.put("ifExp1", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.REAL_TYPE__OWNING_ATTRIBUTE));
-		printCountingMap.put("owningAttribute", temp == null ? 0 : 1);
 		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.REAL_TYPE__NAME));
 		printCountingMap.put("name", temp == null ? 0 : 1);
 		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.REAL_TYPE__DEFINITIONS));
@@ -3864,32 +4086,8 @@ public class EmigOclPrinter implements it.univaq.coevolution.emfmigrate.EmigOcl.
 		// the number of elements stored in each structural feature. For lists this is the
 		// list size. For non-multiple features it is either 1 (if the feature is set) or
 		// 0 (if the feature is null).
-		java.util.Map<String, Integer> printCountingMap = new java.util.LinkedHashMap<String, Integer>(27);
+		java.util.Map<String, Integer> printCountingMap = new java.util.LinkedHashMap<String, Integer>(15);
 		Object temp;
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.BAG_TYPE__TYPE));
-		printCountingMap.put("type", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.BAG_TYPE__IF_EXP3));
-		printCountingMap.put("ifExp3", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.BAG_TYPE__APPLIED_PROPERTY));
-		printCountingMap.put("appliedProperty", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.BAG_TYPE__COLLECTION));
-		printCountingMap.put("collection", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.BAG_TYPE__LET_EXP));
-		printCountingMap.put("letExp", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.BAG_TYPE__LOOP_EXP));
-		printCountingMap.put("loopExp", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.BAG_TYPE__PARENT_OPERATION));
-		printCountingMap.put("parentOperation", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.BAG_TYPE__INITIALIZED_VARIABLE));
-		printCountingMap.put("initializedVariable", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.BAG_TYPE__IF_EXP2));
-		printCountingMap.put("ifExp2", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.BAG_TYPE__OWNING_OPERATION));
-		printCountingMap.put("owningOperation", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.BAG_TYPE__IF_EXP1));
-		printCountingMap.put("ifExp1", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.BAG_TYPE__OWNING_ATTRIBUTE));
-		printCountingMap.put("owningAttribute", temp == null ? 0 : 1);
 		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.BAG_TYPE__NAME));
 		printCountingMap.put("name", temp == null ? 0 : 1);
 		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.BAG_TYPE__DEFINITIONS));
@@ -3951,32 +4149,8 @@ public class EmigOclPrinter implements it.univaq.coevolution.emfmigrate.EmigOcl.
 		// the number of elements stored in each structural feature. For lists this is the
 		// list size. For non-multiple features it is either 1 (if the feature is set) or
 		// 0 (if the feature is null).
-		java.util.Map<String, Integer> printCountingMap = new java.util.LinkedHashMap<String, Integer>(27);
+		java.util.Map<String, Integer> printCountingMap = new java.util.LinkedHashMap<String, Integer>(15);
 		Object temp;
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.ORDERED_SET_TYPE__TYPE));
-		printCountingMap.put("type", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.ORDERED_SET_TYPE__IF_EXP3));
-		printCountingMap.put("ifExp3", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.ORDERED_SET_TYPE__APPLIED_PROPERTY));
-		printCountingMap.put("appliedProperty", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.ORDERED_SET_TYPE__COLLECTION));
-		printCountingMap.put("collection", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.ORDERED_SET_TYPE__LET_EXP));
-		printCountingMap.put("letExp", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.ORDERED_SET_TYPE__LOOP_EXP));
-		printCountingMap.put("loopExp", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.ORDERED_SET_TYPE__PARENT_OPERATION));
-		printCountingMap.put("parentOperation", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.ORDERED_SET_TYPE__INITIALIZED_VARIABLE));
-		printCountingMap.put("initializedVariable", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.ORDERED_SET_TYPE__IF_EXP2));
-		printCountingMap.put("ifExp2", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.ORDERED_SET_TYPE__OWNING_OPERATION));
-		printCountingMap.put("owningOperation", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.ORDERED_SET_TYPE__IF_EXP1));
-		printCountingMap.put("ifExp1", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.ORDERED_SET_TYPE__OWNING_ATTRIBUTE));
-		printCountingMap.put("owningAttribute", temp == null ? 0 : 1);
 		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.ORDERED_SET_TYPE__NAME));
 		printCountingMap.put("name", temp == null ? 0 : 1);
 		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.ORDERED_SET_TYPE__DEFINITIONS));
@@ -4038,32 +4212,8 @@ public class EmigOclPrinter implements it.univaq.coevolution.emfmigrate.EmigOcl.
 		// the number of elements stored in each structural feature. For lists this is the
 		// list size. For non-multiple features it is either 1 (if the feature is set) or
 		// 0 (if the feature is null).
-		java.util.Map<String, Integer> printCountingMap = new java.util.LinkedHashMap<String, Integer>(27);
+		java.util.Map<String, Integer> printCountingMap = new java.util.LinkedHashMap<String, Integer>(15);
 		Object temp;
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.SEQUENCE_TYPE__TYPE));
-		printCountingMap.put("type", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.SEQUENCE_TYPE__IF_EXP3));
-		printCountingMap.put("ifExp3", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.SEQUENCE_TYPE__APPLIED_PROPERTY));
-		printCountingMap.put("appliedProperty", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.SEQUENCE_TYPE__COLLECTION));
-		printCountingMap.put("collection", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.SEQUENCE_TYPE__LET_EXP));
-		printCountingMap.put("letExp", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.SEQUENCE_TYPE__LOOP_EXP));
-		printCountingMap.put("loopExp", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.SEQUENCE_TYPE__PARENT_OPERATION));
-		printCountingMap.put("parentOperation", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.SEQUENCE_TYPE__INITIALIZED_VARIABLE));
-		printCountingMap.put("initializedVariable", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.SEQUENCE_TYPE__IF_EXP2));
-		printCountingMap.put("ifExp2", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.SEQUENCE_TYPE__OWNING_OPERATION));
-		printCountingMap.put("owningOperation", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.SEQUENCE_TYPE__IF_EXP1));
-		printCountingMap.put("ifExp1", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.SEQUENCE_TYPE__OWNING_ATTRIBUTE));
-		printCountingMap.put("owningAttribute", temp == null ? 0 : 1);
 		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.SEQUENCE_TYPE__NAME));
 		printCountingMap.put("name", temp == null ? 0 : 1);
 		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.SEQUENCE_TYPE__DEFINITIONS));
@@ -4125,32 +4275,8 @@ public class EmigOclPrinter implements it.univaq.coevolution.emfmigrate.EmigOcl.
 		// the number of elements stored in each structural feature. For lists this is the
 		// list size. For non-multiple features it is either 1 (if the feature is set) or
 		// 0 (if the feature is null).
-		java.util.Map<String, Integer> printCountingMap = new java.util.LinkedHashMap<String, Integer>(27);
+		java.util.Map<String, Integer> printCountingMap = new java.util.LinkedHashMap<String, Integer>(15);
 		Object temp;
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.SET_TYPE__TYPE));
-		printCountingMap.put("type", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.SET_TYPE__IF_EXP3));
-		printCountingMap.put("ifExp3", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.SET_TYPE__APPLIED_PROPERTY));
-		printCountingMap.put("appliedProperty", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.SET_TYPE__COLLECTION));
-		printCountingMap.put("collection", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.SET_TYPE__LET_EXP));
-		printCountingMap.put("letExp", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.SET_TYPE__LOOP_EXP));
-		printCountingMap.put("loopExp", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.SET_TYPE__PARENT_OPERATION));
-		printCountingMap.put("parentOperation", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.SET_TYPE__INITIALIZED_VARIABLE));
-		printCountingMap.put("initializedVariable", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.SET_TYPE__IF_EXP2));
-		printCountingMap.put("ifExp2", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.SET_TYPE__OWNING_OPERATION));
-		printCountingMap.put("owningOperation", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.SET_TYPE__IF_EXP1));
-		printCountingMap.put("ifExp1", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.SET_TYPE__OWNING_ATTRIBUTE));
-		printCountingMap.put("owningAttribute", temp == null ? 0 : 1);
 		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.SET_TYPE__NAME));
 		printCountingMap.put("name", temp == null ? 0 : 1);
 		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.SET_TYPE__DEFINITIONS));
@@ -4211,32 +4337,8 @@ public class EmigOclPrinter implements it.univaq.coevolution.emfmigrate.EmigOcl.
 		// the number of elements stored in each structural feature. For lists this is the
 		// list size. For non-multiple features it is either 1 (if the feature is set) or
 		// 0 (if the feature is null).
-		java.util.Map<String, Integer> printCountingMap = new java.util.LinkedHashMap<String, Integer>(26);
+		java.util.Map<String, Integer> printCountingMap = new java.util.LinkedHashMap<String, Integer>(14);
 		Object temp;
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_ANY_TYPE__TYPE));
-		printCountingMap.put("type", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_ANY_TYPE__IF_EXP3));
-		printCountingMap.put("ifExp3", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_ANY_TYPE__APPLIED_PROPERTY));
-		printCountingMap.put("appliedProperty", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_ANY_TYPE__COLLECTION));
-		printCountingMap.put("collection", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_ANY_TYPE__LET_EXP));
-		printCountingMap.put("letExp", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_ANY_TYPE__LOOP_EXP));
-		printCountingMap.put("loopExp", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_ANY_TYPE__PARENT_OPERATION));
-		printCountingMap.put("parentOperation", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_ANY_TYPE__INITIALIZED_VARIABLE));
-		printCountingMap.put("initializedVariable", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_ANY_TYPE__IF_EXP2));
-		printCountingMap.put("ifExp2", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_ANY_TYPE__OWNING_OPERATION));
-		printCountingMap.put("owningOperation", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_ANY_TYPE__IF_EXP1));
-		printCountingMap.put("ifExp1", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_ANY_TYPE__OWNING_ATTRIBUTE));
-		printCountingMap.put("owningAttribute", temp == null ? 0 : 1);
 		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_ANY_TYPE__NAME));
 		printCountingMap.put("name", temp == null ? 0 : 1);
 		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_ANY_TYPE__DEFINITIONS));
@@ -4281,32 +4383,8 @@ public class EmigOclPrinter implements it.univaq.coevolution.emfmigrate.EmigOcl.
 		// the number of elements stored in each structural feature. For lists this is the
 		// list size. For non-multiple features it is either 1 (if the feature is set) or
 		// 0 (if the feature is null).
-		java.util.Map<String, Integer> printCountingMap = new java.util.LinkedHashMap<String, Integer>(27);
+		java.util.Map<String, Integer> printCountingMap = new java.util.LinkedHashMap<String, Integer>(15);
 		Object temp;
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.TUPLE_TYPE__TYPE));
-		printCountingMap.put("type", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.TUPLE_TYPE__IF_EXP3));
-		printCountingMap.put("ifExp3", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.TUPLE_TYPE__APPLIED_PROPERTY));
-		printCountingMap.put("appliedProperty", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.TUPLE_TYPE__COLLECTION));
-		printCountingMap.put("collection", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.TUPLE_TYPE__LET_EXP));
-		printCountingMap.put("letExp", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.TUPLE_TYPE__LOOP_EXP));
-		printCountingMap.put("loopExp", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.TUPLE_TYPE__PARENT_OPERATION));
-		printCountingMap.put("parentOperation", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.TUPLE_TYPE__INITIALIZED_VARIABLE));
-		printCountingMap.put("initializedVariable", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.TUPLE_TYPE__IF_EXP2));
-		printCountingMap.put("ifExp2", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.TUPLE_TYPE__OWNING_OPERATION));
-		printCountingMap.put("owningOperation", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.TUPLE_TYPE__IF_EXP1));
-		printCountingMap.put("ifExp1", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.TUPLE_TYPE__OWNING_ATTRIBUTE));
-		printCountingMap.put("owningAttribute", temp == null ? 0 : 1);
 		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.TUPLE_TYPE__NAME));
 		printCountingMap.put("name", temp == null ? 0 : 1);
 		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.TUPLE_TYPE__DEFINITIONS));
@@ -4484,32 +4562,8 @@ public class EmigOclPrinter implements it.univaq.coevolution.emfmigrate.EmigOcl.
 		// the number of elements stored in each structural feature. For lists this is the
 		// list size. For non-multiple features it is either 1 (if the feature is set) or
 		// 0 (if the feature is null).
-		java.util.Map<String, Integer> printCountingMap = new java.util.LinkedHashMap<String, Integer>(27);
+		java.util.Map<String, Integer> printCountingMap = new java.util.LinkedHashMap<String, Integer>(15);
 		Object temp;
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_MODEL_ELEMENT__TYPE));
-		printCountingMap.put("type", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_MODEL_ELEMENT__IF_EXP3));
-		printCountingMap.put("ifExp3", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_MODEL_ELEMENT__APPLIED_PROPERTY));
-		printCountingMap.put("appliedProperty", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_MODEL_ELEMENT__COLLECTION));
-		printCountingMap.put("collection", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_MODEL_ELEMENT__LET_EXP));
-		printCountingMap.put("letExp", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_MODEL_ELEMENT__LOOP_EXP));
-		printCountingMap.put("loopExp", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_MODEL_ELEMENT__PARENT_OPERATION));
-		printCountingMap.put("parentOperation", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_MODEL_ELEMENT__INITIALIZED_VARIABLE));
-		printCountingMap.put("initializedVariable", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_MODEL_ELEMENT__IF_EXP2));
-		printCountingMap.put("ifExp2", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_MODEL_ELEMENT__OWNING_OPERATION));
-		printCountingMap.put("owningOperation", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_MODEL_ELEMENT__IF_EXP1));
-		printCountingMap.put("ifExp1", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_MODEL_ELEMENT__OWNING_ATTRIBUTE));
-		printCountingMap.put("owningAttribute", temp == null ? 0 : 1);
 		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_MODEL_ELEMENT__NAME));
 		printCountingMap.put("name", temp == null ? 0 : 1);
 		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.OCL_MODEL_ELEMENT__DEFINITIONS));
@@ -4571,32 +4625,8 @@ public class EmigOclPrinter implements it.univaq.coevolution.emfmigrate.EmigOcl.
 		// the number of elements stored in each structural feature. For lists this is the
 		// list size. For non-multiple features it is either 1 (if the feature is set) or
 		// 0 (if the feature is null).
-		java.util.Map<String, Integer> printCountingMap = new java.util.LinkedHashMap<String, Integer>(28);
+		java.util.Map<String, Integer> printCountingMap = new java.util.LinkedHashMap<String, Integer>(16);
 		Object temp;
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.MAP_TYPE__TYPE));
-		printCountingMap.put("type", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.MAP_TYPE__IF_EXP3));
-		printCountingMap.put("ifExp3", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.MAP_TYPE__APPLIED_PROPERTY));
-		printCountingMap.put("appliedProperty", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.MAP_TYPE__COLLECTION));
-		printCountingMap.put("collection", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.MAP_TYPE__LET_EXP));
-		printCountingMap.put("letExp", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.MAP_TYPE__LOOP_EXP));
-		printCountingMap.put("loopExp", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.MAP_TYPE__PARENT_OPERATION));
-		printCountingMap.put("parentOperation", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.MAP_TYPE__INITIALIZED_VARIABLE));
-		printCountingMap.put("initializedVariable", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.MAP_TYPE__IF_EXP2));
-		printCountingMap.put("ifExp2", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.MAP_TYPE__OWNING_OPERATION));
-		printCountingMap.put("owningOperation", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.MAP_TYPE__IF_EXP1));
-		printCountingMap.put("ifExp1", temp == null ? 0 : 1);
-		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.MAP_TYPE__OWNING_ATTRIBUTE));
-		printCountingMap.put("owningAttribute", temp == null ? 0 : 1);
 		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.MAP_TYPE__NAME));
 		printCountingMap.put("name", temp == null ? 0 : 1);
 		temp = element.eGet(element.eClass().getEStructuralFeature(it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage.MAP_TYPE__DEFINITIONS));

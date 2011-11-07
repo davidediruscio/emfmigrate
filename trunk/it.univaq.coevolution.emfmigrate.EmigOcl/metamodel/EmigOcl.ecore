@@ -5,13 +5,17 @@
     nsURI="http://www.univaq.it/coevolution/emfmigrate/EmigOcl" nsPrefix="EmigOcl">
   <eClassifiers xsi:type="ecore:EClass" name="LocatedElement" abstract="true">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="line" lowerBound="1" eType="#//Integer"
-        changeable="false" volatile="true" transient="true" derived="true"/>
+        changeable="false" volatile="true" transient="true" defaultValueLiteral="-1"
+        derived="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="column" lowerBound="1"
-        eType="#//Integer" changeable="false" volatile="true" transient="true" derived="true"/>
+        eType="#//Integer" changeable="false" volatile="true" transient="true" defaultValueLiteral="-1"
+        derived="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="charStart" lowerBound="1"
-        eType="#//Integer" changeable="false" volatile="true" transient="true" derived="true"/>
+        eType="#//Integer" changeable="false" volatile="true" transient="true" defaultValueLiteral="-1"
+        derived="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="charEnd" lowerBound="1"
-        eType="#//Integer" changeable="false" volatile="true" transient="true" derived="true"/>
+        eType="#//Integer" changeable="false" volatile="true" transient="true" defaultValueLiteral="-1"
+        derived="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Module" eSuperTypes="#//LocatedElement">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="#//String"/>
@@ -51,6 +55,7 @@
         lowerBound="1" eType="#//VariableDeclaration" eOpposite="#//VariableDeclaration/variableExp"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="SuperExp" eSuperTypes="#//OclExpression"/>
+  <eClassifiers xsi:type="ecore:EClass" name="SelfExp" eSuperTypes="#//OclExpression"/>
   <eClassifiers xsi:type="ecore:EClass" name="PrimitiveExp" abstract="true" eSuperTypes="#//OclExpression"/>
   <eClassifiers xsi:type="ecore:EClass" name="StringExp" eSuperTypes="#//PrimitiveExp">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="stringSymbol" ordered="false"
@@ -117,6 +122,12 @@
         unique="false" lowerBound="1" eType="#//String"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="OperatorCallExp" eSuperTypes="#//OperationCallExp"/>
+  <eClassifiers xsi:type="ecore:EClass" name="NotOpCallExp" eSuperTypes="#//OperatorCallExp"/>
+  <eClassifiers xsi:type="ecore:EClass" name="RelOpCallExp" eSuperTypes="#//OperatorCallExp"/>
+  <eClassifiers xsi:type="ecore:EClass" name="AddOpCallExp" eSuperTypes="#//OperatorCallExp"/>
+  <eClassifiers xsi:type="ecore:EClass" name="IntOpCallExp" eSuperTypes="#//OperatorCallExp"/>
+  <eClassifiers xsi:type="ecore:EClass" name="MulOpCallExp" eSuperTypes="#//OperatorCallExp"/>
+  <eClassifiers xsi:type="ecore:EClass" name="BraceExp" eSuperTypes="#//PropertyCallExp"/>
   <eClassifiers xsi:type="ecore:EClass" name="CollectionOperationCallExp" eSuperTypes="#//OperationCallExp"/>
   <eClassifiers xsi:type="ecore:EClass" name="LoopExp" abstract="true" eSuperTypes="#//PropertyCallExp">
     <eStructuralFeatures xsi:type="ecore:EReference" name="body" ordered="false" lowerBound="1"
@@ -172,7 +183,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="elementType" ordered="false"
         lowerBound="1" eType="#//OclType" containment="true" eOpposite="#//OclType/collectionTypes"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="OclType" eSuperTypes="#//OclExpression">
+  <eClassifiers xsi:type="ecore:EClass" name="OclType" abstract="true" eSuperTypes="#//LocatedElement">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" ordered="false" unique="false"
         lowerBound="1" eType="#//String"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="definitions" ordered="false"
@@ -193,6 +204,11 @@
         eType="#//TupleTypeAttribute" eOpposite="#//TupleTypeAttribute/type"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="variableDeclaration" ordered="false"
         eType="#//VariableDeclaration" eOpposite="#//VariableDeclaration/type"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="OclModelElementExp" eSuperTypes="#//OclExpression">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="model" lowerBound="1" eType="#//OclModel"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" ordered="false" unique="false"
+        lowerBound="1" eType="#//String"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Primitive" abstract="true" eSuperTypes="#//OclType"/>
   <eClassifiers xsi:type="ecore:EClass" name="StringType" eSuperTypes="#//Primitive"/>

@@ -696,6 +696,169 @@ public interface EmigOclPackage extends EPackage {
 	int SUPER_EXP_FEATURE_COUNT = OCL_EXPRESSION_FEATURE_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link it.univaq.coevolution.emfmigrate.EmigOcl.impl.SelfExpImpl <em>Self Exp</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.SelfExpImpl
+	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getSelfExp()
+	 * @generated
+	 */
+	int SELF_EXP = 5;
+
+	/**
+	 * The feature id for the '<em><b>Line</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SELF_EXP__LINE = OCL_EXPRESSION__LINE;
+
+	/**
+	 * The feature id for the '<em><b>Column</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SELF_EXP__COLUMN = OCL_EXPRESSION__COLUMN;
+
+	/**
+	 * The feature id for the '<em><b>Char Start</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SELF_EXP__CHAR_START = OCL_EXPRESSION__CHAR_START;
+
+	/**
+	 * The feature id for the '<em><b>Char End</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SELF_EXP__CHAR_END = OCL_EXPRESSION__CHAR_END;
+
+	/**
+	 * The feature id for the '<em><b>Type</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SELF_EXP__TYPE = OCL_EXPRESSION__TYPE;
+
+	/**
+	 * The feature id for the '<em><b>If Exp3</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SELF_EXP__IF_EXP3 = OCL_EXPRESSION__IF_EXP3;
+
+	/**
+	 * The feature id for the '<em><b>Applied Property</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SELF_EXP__APPLIED_PROPERTY = OCL_EXPRESSION__APPLIED_PROPERTY;
+
+	/**
+	 * The feature id for the '<em><b>Collection</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SELF_EXP__COLLECTION = OCL_EXPRESSION__COLLECTION;
+
+	/**
+	 * The feature id for the '<em><b>Let Exp</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SELF_EXP__LET_EXP = OCL_EXPRESSION__LET_EXP;
+
+	/**
+	 * The feature id for the '<em><b>Loop Exp</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SELF_EXP__LOOP_EXP = OCL_EXPRESSION__LOOP_EXP;
+
+	/**
+	 * The feature id for the '<em><b>Parent Operation</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SELF_EXP__PARENT_OPERATION = OCL_EXPRESSION__PARENT_OPERATION;
+
+	/**
+	 * The feature id for the '<em><b>Initialized Variable</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SELF_EXP__INITIALIZED_VARIABLE = OCL_EXPRESSION__INITIALIZED_VARIABLE;
+
+	/**
+	 * The feature id for the '<em><b>If Exp2</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SELF_EXP__IF_EXP2 = OCL_EXPRESSION__IF_EXP2;
+
+	/**
+	 * The feature id for the '<em><b>Owning Operation</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SELF_EXP__OWNING_OPERATION = OCL_EXPRESSION__OWNING_OPERATION;
+
+	/**
+	 * The feature id for the '<em><b>If Exp1</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SELF_EXP__IF_EXP1 = OCL_EXPRESSION__IF_EXP1;
+
+	/**
+	 * The feature id for the '<em><b>Owning Attribute</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SELF_EXP__OWNING_ATTRIBUTE = OCL_EXPRESSION__OWNING_ATTRIBUTE;
+
+	/**
+	 * The number of structural features of the '<em>Self Exp</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SELF_EXP_FEATURE_COUNT = OCL_EXPRESSION_FEATURE_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link it.univaq.coevolution.emfmigrate.EmigOcl.impl.PrimitiveExpImpl <em>Primitive Exp</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -703,7 +866,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getPrimitiveExp()
 	 * @generated
 	 */
-	int PRIMITIVE_EXP = 5;
+	int PRIMITIVE_EXP = 6;
 
 	/**
 	 * The feature id for the '<em><b>Line</b></em>' attribute.
@@ -866,7 +1029,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getStringExp()
 	 * @generated
 	 */
-	int STRING_EXP = 6;
+	int STRING_EXP = 7;
 
 	/**
 	 * The feature id for the '<em><b>Line</b></em>' attribute.
@@ -1038,7 +1201,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getBooleanExp()
 	 * @generated
 	 */
-	int BOOLEAN_EXP = 7;
+	int BOOLEAN_EXP = 8;
 
 	/**
 	 * The feature id for the '<em><b>Line</b></em>' attribute.
@@ -1210,7 +1373,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getNumericExp()
 	 * @generated
 	 */
-	int NUMERIC_EXP = 8;
+	int NUMERIC_EXP = 9;
 
 	/**
 	 * The feature id for the '<em><b>Line</b></em>' attribute.
@@ -1373,7 +1536,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getRealExp()
 	 * @generated
 	 */
-	int REAL_EXP = 9;
+	int REAL_EXP = 10;
 
 	/**
 	 * The feature id for the '<em><b>Line</b></em>' attribute.
@@ -1545,7 +1708,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getIntegerExp()
 	 * @generated
 	 */
-	int INTEGER_EXP = 10;
+	int INTEGER_EXP = 11;
 
 	/**
 	 * The feature id for the '<em><b>Line</b></em>' attribute.
@@ -1717,7 +1880,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getCollectionExp()
 	 * @generated
 	 */
-	int COLLECTION_EXP = 11;
+	int COLLECTION_EXP = 12;
 
 	/**
 	 * The feature id for the '<em><b>Line</b></em>' attribute.
@@ -1889,7 +2052,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getBagExp()
 	 * @generated
 	 */
-	int BAG_EXP = 12;
+	int BAG_EXP = 13;
 
 	/**
 	 * The feature id for the '<em><b>Line</b></em>' attribute.
@@ -2061,7 +2224,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getOrderedSetExp()
 	 * @generated
 	 */
-	int ORDERED_SET_EXP = 13;
+	int ORDERED_SET_EXP = 14;
 
 	/**
 	 * The feature id for the '<em><b>Line</b></em>' attribute.
@@ -2233,7 +2396,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getSequenceExp()
 	 * @generated
 	 */
-	int SEQUENCE_EXP = 14;
+	int SEQUENCE_EXP = 15;
 
 	/**
 	 * The feature id for the '<em><b>Line</b></em>' attribute.
@@ -2405,7 +2568,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getSetExp()
 	 * @generated
 	 */
-	int SET_EXP = 15;
+	int SET_EXP = 16;
 
 	/**
 	 * The feature id for the '<em><b>Line</b></em>' attribute.
@@ -2577,7 +2740,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getTupleExp()
 	 * @generated
 	 */
-	int TUPLE_EXP = 16;
+	int TUPLE_EXP = 17;
 
 	/**
 	 * The feature id for the '<em><b>Line</b></em>' attribute.
@@ -2749,7 +2912,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getVariableDeclaration()
 	 * @generated
 	 */
-	int VARIABLE_DECLARATION = 32;
+	int VARIABLE_DECLARATION = 39;
 
 	/**
 	 * The feature id for the '<em><b>Line</b></em>' attribute.
@@ -2858,7 +3021,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getTuplePart()
 	 * @generated
 	 */
-	int TUPLE_PART = 17;
+	int TUPLE_PART = 18;
 
 	/**
 	 * The feature id for the '<em><b>Line</b></em>' attribute.
@@ -2976,7 +3139,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getMapExp()
 	 * @generated
 	 */
-	int MAP_EXP = 18;
+	int MAP_EXP = 19;
 
 	/**
 	 * The feature id for the '<em><b>Line</b></em>' attribute.
@@ -3148,7 +3311,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getMapElement()
 	 * @generated
 	 */
-	int MAP_ELEMENT = 19;
+	int MAP_ELEMENT = 20;
 
 	/**
 	 * The feature id for the '<em><b>Line</b></em>' attribute.
@@ -3230,7 +3393,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getEnumLiteralExp()
 	 * @generated
 	 */
-	int ENUM_LITERAL_EXP = 20;
+	int ENUM_LITERAL_EXP = 21;
 
 	/**
 	 * The feature id for the '<em><b>Line</b></em>' attribute.
@@ -3402,7 +3565,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getOclUndefinedExp()
 	 * @generated
 	 */
-	int OCL_UNDEFINED_EXP = 21;
+	int OCL_UNDEFINED_EXP = 22;
 
 	/**
 	 * The feature id for the '<em><b>Line</b></em>' attribute.
@@ -3565,7 +3728,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getPropertyCallExp()
 	 * @generated
 	 */
-	int PROPERTY_CALL_EXP = 22;
+	int PROPERTY_CALL_EXP = 23;
 
 	/**
 	 * The feature id for the '<em><b>Line</b></em>' attribute.
@@ -3737,7 +3900,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getNavigationOrAttributeCallExp()
 	 * @generated
 	 */
-	int NAVIGATION_OR_ATTRIBUTE_CALL_EXP = 23;
+	int NAVIGATION_OR_ATTRIBUTE_CALL_EXP = 24;
 
 	/**
 	 * The feature id for the '<em><b>Line</b></em>' attribute.
@@ -3918,7 +4081,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getOperationCallExp()
 	 * @generated
 	 */
-	int OPERATION_CALL_EXP = 24;
+	int OPERATION_CALL_EXP = 25;
 
 	/**
 	 * The feature id for the '<em><b>Line</b></em>' attribute.
@@ -4108,7 +4271,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getOperatorCallExp()
 	 * @generated
 	 */
-	int OPERATOR_CALL_EXP = 25;
+	int OPERATOR_CALL_EXP = 26;
 
 	/**
 	 * The feature id for the '<em><b>Line</b></em>' attribute.
@@ -4291,6 +4454,1128 @@ public interface EmigOclPackage extends EPackage {
 	int OPERATOR_CALL_EXP_FEATURE_COUNT = OPERATION_CALL_EXP_FEATURE_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link it.univaq.coevolution.emfmigrate.EmigOcl.impl.NotOpCallExpImpl <em>Not Op Call Exp</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.NotOpCallExpImpl
+	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getNotOpCallExp()
+	 * @generated
+	 */
+	int NOT_OP_CALL_EXP = 27;
+
+	/**
+	 * The feature id for the '<em><b>Line</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NOT_OP_CALL_EXP__LINE = OPERATOR_CALL_EXP__LINE;
+
+	/**
+	 * The feature id for the '<em><b>Column</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NOT_OP_CALL_EXP__COLUMN = OPERATOR_CALL_EXP__COLUMN;
+
+	/**
+	 * The feature id for the '<em><b>Char Start</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NOT_OP_CALL_EXP__CHAR_START = OPERATOR_CALL_EXP__CHAR_START;
+
+	/**
+	 * The feature id for the '<em><b>Char End</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NOT_OP_CALL_EXP__CHAR_END = OPERATOR_CALL_EXP__CHAR_END;
+
+	/**
+	 * The feature id for the '<em><b>Type</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NOT_OP_CALL_EXP__TYPE = OPERATOR_CALL_EXP__TYPE;
+
+	/**
+	 * The feature id for the '<em><b>If Exp3</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NOT_OP_CALL_EXP__IF_EXP3 = OPERATOR_CALL_EXP__IF_EXP3;
+
+	/**
+	 * The feature id for the '<em><b>Applied Property</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NOT_OP_CALL_EXP__APPLIED_PROPERTY = OPERATOR_CALL_EXP__APPLIED_PROPERTY;
+
+	/**
+	 * The feature id for the '<em><b>Collection</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NOT_OP_CALL_EXP__COLLECTION = OPERATOR_CALL_EXP__COLLECTION;
+
+	/**
+	 * The feature id for the '<em><b>Let Exp</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NOT_OP_CALL_EXP__LET_EXP = OPERATOR_CALL_EXP__LET_EXP;
+
+	/**
+	 * The feature id for the '<em><b>Loop Exp</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NOT_OP_CALL_EXP__LOOP_EXP = OPERATOR_CALL_EXP__LOOP_EXP;
+
+	/**
+	 * The feature id for the '<em><b>Parent Operation</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NOT_OP_CALL_EXP__PARENT_OPERATION = OPERATOR_CALL_EXP__PARENT_OPERATION;
+
+	/**
+	 * The feature id for the '<em><b>Initialized Variable</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NOT_OP_CALL_EXP__INITIALIZED_VARIABLE = OPERATOR_CALL_EXP__INITIALIZED_VARIABLE;
+
+	/**
+	 * The feature id for the '<em><b>If Exp2</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NOT_OP_CALL_EXP__IF_EXP2 = OPERATOR_CALL_EXP__IF_EXP2;
+
+	/**
+	 * The feature id for the '<em><b>Owning Operation</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NOT_OP_CALL_EXP__OWNING_OPERATION = OPERATOR_CALL_EXP__OWNING_OPERATION;
+
+	/**
+	 * The feature id for the '<em><b>If Exp1</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NOT_OP_CALL_EXP__IF_EXP1 = OPERATOR_CALL_EXP__IF_EXP1;
+
+	/**
+	 * The feature id for the '<em><b>Owning Attribute</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NOT_OP_CALL_EXP__OWNING_ATTRIBUTE = OPERATOR_CALL_EXP__OWNING_ATTRIBUTE;
+
+	/**
+	 * The feature id for the '<em><b>Source</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NOT_OP_CALL_EXP__SOURCE = OPERATOR_CALL_EXP__SOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Arguments</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NOT_OP_CALL_EXP__ARGUMENTS = OPERATOR_CALL_EXP__ARGUMENTS;
+
+	/**
+	 * The feature id for the '<em><b>Operation Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NOT_OP_CALL_EXP__OPERATION_NAME = OPERATOR_CALL_EXP__OPERATION_NAME;
+
+	/**
+	 * The number of structural features of the '<em>Not Op Call Exp</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int NOT_OP_CALL_EXP_FEATURE_COUNT = OPERATOR_CALL_EXP_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link it.univaq.coevolution.emfmigrate.EmigOcl.impl.RelOpCallExpImpl <em>Rel Op Call Exp</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.RelOpCallExpImpl
+	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getRelOpCallExp()
+	 * @generated
+	 */
+	int REL_OP_CALL_EXP = 28;
+
+	/**
+	 * The feature id for the '<em><b>Line</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REL_OP_CALL_EXP__LINE = OPERATOR_CALL_EXP__LINE;
+
+	/**
+	 * The feature id for the '<em><b>Column</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REL_OP_CALL_EXP__COLUMN = OPERATOR_CALL_EXP__COLUMN;
+
+	/**
+	 * The feature id for the '<em><b>Char Start</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REL_OP_CALL_EXP__CHAR_START = OPERATOR_CALL_EXP__CHAR_START;
+
+	/**
+	 * The feature id for the '<em><b>Char End</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REL_OP_CALL_EXP__CHAR_END = OPERATOR_CALL_EXP__CHAR_END;
+
+	/**
+	 * The feature id for the '<em><b>Type</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REL_OP_CALL_EXP__TYPE = OPERATOR_CALL_EXP__TYPE;
+
+	/**
+	 * The feature id for the '<em><b>If Exp3</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REL_OP_CALL_EXP__IF_EXP3 = OPERATOR_CALL_EXP__IF_EXP3;
+
+	/**
+	 * The feature id for the '<em><b>Applied Property</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REL_OP_CALL_EXP__APPLIED_PROPERTY = OPERATOR_CALL_EXP__APPLIED_PROPERTY;
+
+	/**
+	 * The feature id for the '<em><b>Collection</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REL_OP_CALL_EXP__COLLECTION = OPERATOR_CALL_EXP__COLLECTION;
+
+	/**
+	 * The feature id for the '<em><b>Let Exp</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REL_OP_CALL_EXP__LET_EXP = OPERATOR_CALL_EXP__LET_EXP;
+
+	/**
+	 * The feature id for the '<em><b>Loop Exp</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REL_OP_CALL_EXP__LOOP_EXP = OPERATOR_CALL_EXP__LOOP_EXP;
+
+	/**
+	 * The feature id for the '<em><b>Parent Operation</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REL_OP_CALL_EXP__PARENT_OPERATION = OPERATOR_CALL_EXP__PARENT_OPERATION;
+
+	/**
+	 * The feature id for the '<em><b>Initialized Variable</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REL_OP_CALL_EXP__INITIALIZED_VARIABLE = OPERATOR_CALL_EXP__INITIALIZED_VARIABLE;
+
+	/**
+	 * The feature id for the '<em><b>If Exp2</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REL_OP_CALL_EXP__IF_EXP2 = OPERATOR_CALL_EXP__IF_EXP2;
+
+	/**
+	 * The feature id for the '<em><b>Owning Operation</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REL_OP_CALL_EXP__OWNING_OPERATION = OPERATOR_CALL_EXP__OWNING_OPERATION;
+
+	/**
+	 * The feature id for the '<em><b>If Exp1</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REL_OP_CALL_EXP__IF_EXP1 = OPERATOR_CALL_EXP__IF_EXP1;
+
+	/**
+	 * The feature id for the '<em><b>Owning Attribute</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REL_OP_CALL_EXP__OWNING_ATTRIBUTE = OPERATOR_CALL_EXP__OWNING_ATTRIBUTE;
+
+	/**
+	 * The feature id for the '<em><b>Source</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REL_OP_CALL_EXP__SOURCE = OPERATOR_CALL_EXP__SOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Arguments</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REL_OP_CALL_EXP__ARGUMENTS = OPERATOR_CALL_EXP__ARGUMENTS;
+
+	/**
+	 * The feature id for the '<em><b>Operation Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REL_OP_CALL_EXP__OPERATION_NAME = OPERATOR_CALL_EXP__OPERATION_NAME;
+
+	/**
+	 * The number of structural features of the '<em>Rel Op Call Exp</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int REL_OP_CALL_EXP_FEATURE_COUNT = OPERATOR_CALL_EXP_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link it.univaq.coevolution.emfmigrate.EmigOcl.impl.AddOpCallExpImpl <em>Add Op Call Exp</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.AddOpCallExpImpl
+	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getAddOpCallExp()
+	 * @generated
+	 */
+	int ADD_OP_CALL_EXP = 29;
+
+	/**
+	 * The feature id for the '<em><b>Line</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADD_OP_CALL_EXP__LINE = OPERATOR_CALL_EXP__LINE;
+
+	/**
+	 * The feature id for the '<em><b>Column</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADD_OP_CALL_EXP__COLUMN = OPERATOR_CALL_EXP__COLUMN;
+
+	/**
+	 * The feature id for the '<em><b>Char Start</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADD_OP_CALL_EXP__CHAR_START = OPERATOR_CALL_EXP__CHAR_START;
+
+	/**
+	 * The feature id for the '<em><b>Char End</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADD_OP_CALL_EXP__CHAR_END = OPERATOR_CALL_EXP__CHAR_END;
+
+	/**
+	 * The feature id for the '<em><b>Type</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADD_OP_CALL_EXP__TYPE = OPERATOR_CALL_EXP__TYPE;
+
+	/**
+	 * The feature id for the '<em><b>If Exp3</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADD_OP_CALL_EXP__IF_EXP3 = OPERATOR_CALL_EXP__IF_EXP3;
+
+	/**
+	 * The feature id for the '<em><b>Applied Property</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADD_OP_CALL_EXP__APPLIED_PROPERTY = OPERATOR_CALL_EXP__APPLIED_PROPERTY;
+
+	/**
+	 * The feature id for the '<em><b>Collection</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADD_OP_CALL_EXP__COLLECTION = OPERATOR_CALL_EXP__COLLECTION;
+
+	/**
+	 * The feature id for the '<em><b>Let Exp</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADD_OP_CALL_EXP__LET_EXP = OPERATOR_CALL_EXP__LET_EXP;
+
+	/**
+	 * The feature id for the '<em><b>Loop Exp</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADD_OP_CALL_EXP__LOOP_EXP = OPERATOR_CALL_EXP__LOOP_EXP;
+
+	/**
+	 * The feature id for the '<em><b>Parent Operation</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADD_OP_CALL_EXP__PARENT_OPERATION = OPERATOR_CALL_EXP__PARENT_OPERATION;
+
+	/**
+	 * The feature id for the '<em><b>Initialized Variable</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADD_OP_CALL_EXP__INITIALIZED_VARIABLE = OPERATOR_CALL_EXP__INITIALIZED_VARIABLE;
+
+	/**
+	 * The feature id for the '<em><b>If Exp2</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADD_OP_CALL_EXP__IF_EXP2 = OPERATOR_CALL_EXP__IF_EXP2;
+
+	/**
+	 * The feature id for the '<em><b>Owning Operation</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADD_OP_CALL_EXP__OWNING_OPERATION = OPERATOR_CALL_EXP__OWNING_OPERATION;
+
+	/**
+	 * The feature id for the '<em><b>If Exp1</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADD_OP_CALL_EXP__IF_EXP1 = OPERATOR_CALL_EXP__IF_EXP1;
+
+	/**
+	 * The feature id for the '<em><b>Owning Attribute</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADD_OP_CALL_EXP__OWNING_ATTRIBUTE = OPERATOR_CALL_EXP__OWNING_ATTRIBUTE;
+
+	/**
+	 * The feature id for the '<em><b>Source</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADD_OP_CALL_EXP__SOURCE = OPERATOR_CALL_EXP__SOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Arguments</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADD_OP_CALL_EXP__ARGUMENTS = OPERATOR_CALL_EXP__ARGUMENTS;
+
+	/**
+	 * The feature id for the '<em><b>Operation Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADD_OP_CALL_EXP__OPERATION_NAME = OPERATOR_CALL_EXP__OPERATION_NAME;
+
+	/**
+	 * The number of structural features of the '<em>Add Op Call Exp</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADD_OP_CALL_EXP_FEATURE_COUNT = OPERATOR_CALL_EXP_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link it.univaq.coevolution.emfmigrate.EmigOcl.impl.IntOpCallExpImpl <em>Int Op Call Exp</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.IntOpCallExpImpl
+	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getIntOpCallExp()
+	 * @generated
+	 */
+	int INT_OP_CALL_EXP = 30;
+
+	/**
+	 * The feature id for the '<em><b>Line</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INT_OP_CALL_EXP__LINE = OPERATOR_CALL_EXP__LINE;
+
+	/**
+	 * The feature id for the '<em><b>Column</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INT_OP_CALL_EXP__COLUMN = OPERATOR_CALL_EXP__COLUMN;
+
+	/**
+	 * The feature id for the '<em><b>Char Start</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INT_OP_CALL_EXP__CHAR_START = OPERATOR_CALL_EXP__CHAR_START;
+
+	/**
+	 * The feature id for the '<em><b>Char End</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INT_OP_CALL_EXP__CHAR_END = OPERATOR_CALL_EXP__CHAR_END;
+
+	/**
+	 * The feature id for the '<em><b>Type</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INT_OP_CALL_EXP__TYPE = OPERATOR_CALL_EXP__TYPE;
+
+	/**
+	 * The feature id for the '<em><b>If Exp3</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INT_OP_CALL_EXP__IF_EXP3 = OPERATOR_CALL_EXP__IF_EXP3;
+
+	/**
+	 * The feature id for the '<em><b>Applied Property</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INT_OP_CALL_EXP__APPLIED_PROPERTY = OPERATOR_CALL_EXP__APPLIED_PROPERTY;
+
+	/**
+	 * The feature id for the '<em><b>Collection</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INT_OP_CALL_EXP__COLLECTION = OPERATOR_CALL_EXP__COLLECTION;
+
+	/**
+	 * The feature id for the '<em><b>Let Exp</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INT_OP_CALL_EXP__LET_EXP = OPERATOR_CALL_EXP__LET_EXP;
+
+	/**
+	 * The feature id for the '<em><b>Loop Exp</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INT_OP_CALL_EXP__LOOP_EXP = OPERATOR_CALL_EXP__LOOP_EXP;
+
+	/**
+	 * The feature id for the '<em><b>Parent Operation</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INT_OP_CALL_EXP__PARENT_OPERATION = OPERATOR_CALL_EXP__PARENT_OPERATION;
+
+	/**
+	 * The feature id for the '<em><b>Initialized Variable</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INT_OP_CALL_EXP__INITIALIZED_VARIABLE = OPERATOR_CALL_EXP__INITIALIZED_VARIABLE;
+
+	/**
+	 * The feature id for the '<em><b>If Exp2</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INT_OP_CALL_EXP__IF_EXP2 = OPERATOR_CALL_EXP__IF_EXP2;
+
+	/**
+	 * The feature id for the '<em><b>Owning Operation</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INT_OP_CALL_EXP__OWNING_OPERATION = OPERATOR_CALL_EXP__OWNING_OPERATION;
+
+	/**
+	 * The feature id for the '<em><b>If Exp1</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INT_OP_CALL_EXP__IF_EXP1 = OPERATOR_CALL_EXP__IF_EXP1;
+
+	/**
+	 * The feature id for the '<em><b>Owning Attribute</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INT_OP_CALL_EXP__OWNING_ATTRIBUTE = OPERATOR_CALL_EXP__OWNING_ATTRIBUTE;
+
+	/**
+	 * The feature id for the '<em><b>Source</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INT_OP_CALL_EXP__SOURCE = OPERATOR_CALL_EXP__SOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Arguments</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INT_OP_CALL_EXP__ARGUMENTS = OPERATOR_CALL_EXP__ARGUMENTS;
+
+	/**
+	 * The feature id for the '<em><b>Operation Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INT_OP_CALL_EXP__OPERATION_NAME = OPERATOR_CALL_EXP__OPERATION_NAME;
+
+	/**
+	 * The number of structural features of the '<em>Int Op Call Exp</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INT_OP_CALL_EXP_FEATURE_COUNT = OPERATOR_CALL_EXP_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link it.univaq.coevolution.emfmigrate.EmigOcl.impl.MulOpCallExpImpl <em>Mul Op Call Exp</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.MulOpCallExpImpl
+	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getMulOpCallExp()
+	 * @generated
+	 */
+	int MUL_OP_CALL_EXP = 31;
+
+	/**
+	 * The feature id for the '<em><b>Line</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MUL_OP_CALL_EXP__LINE = OPERATOR_CALL_EXP__LINE;
+
+	/**
+	 * The feature id for the '<em><b>Column</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MUL_OP_CALL_EXP__COLUMN = OPERATOR_CALL_EXP__COLUMN;
+
+	/**
+	 * The feature id for the '<em><b>Char Start</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MUL_OP_CALL_EXP__CHAR_START = OPERATOR_CALL_EXP__CHAR_START;
+
+	/**
+	 * The feature id for the '<em><b>Char End</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MUL_OP_CALL_EXP__CHAR_END = OPERATOR_CALL_EXP__CHAR_END;
+
+	/**
+	 * The feature id for the '<em><b>Type</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MUL_OP_CALL_EXP__TYPE = OPERATOR_CALL_EXP__TYPE;
+
+	/**
+	 * The feature id for the '<em><b>If Exp3</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MUL_OP_CALL_EXP__IF_EXP3 = OPERATOR_CALL_EXP__IF_EXP3;
+
+	/**
+	 * The feature id for the '<em><b>Applied Property</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MUL_OP_CALL_EXP__APPLIED_PROPERTY = OPERATOR_CALL_EXP__APPLIED_PROPERTY;
+
+	/**
+	 * The feature id for the '<em><b>Collection</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MUL_OP_CALL_EXP__COLLECTION = OPERATOR_CALL_EXP__COLLECTION;
+
+	/**
+	 * The feature id for the '<em><b>Let Exp</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MUL_OP_CALL_EXP__LET_EXP = OPERATOR_CALL_EXP__LET_EXP;
+
+	/**
+	 * The feature id for the '<em><b>Loop Exp</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MUL_OP_CALL_EXP__LOOP_EXP = OPERATOR_CALL_EXP__LOOP_EXP;
+
+	/**
+	 * The feature id for the '<em><b>Parent Operation</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MUL_OP_CALL_EXP__PARENT_OPERATION = OPERATOR_CALL_EXP__PARENT_OPERATION;
+
+	/**
+	 * The feature id for the '<em><b>Initialized Variable</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MUL_OP_CALL_EXP__INITIALIZED_VARIABLE = OPERATOR_CALL_EXP__INITIALIZED_VARIABLE;
+
+	/**
+	 * The feature id for the '<em><b>If Exp2</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MUL_OP_CALL_EXP__IF_EXP2 = OPERATOR_CALL_EXP__IF_EXP2;
+
+	/**
+	 * The feature id for the '<em><b>Owning Operation</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MUL_OP_CALL_EXP__OWNING_OPERATION = OPERATOR_CALL_EXP__OWNING_OPERATION;
+
+	/**
+	 * The feature id for the '<em><b>If Exp1</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MUL_OP_CALL_EXP__IF_EXP1 = OPERATOR_CALL_EXP__IF_EXP1;
+
+	/**
+	 * The feature id for the '<em><b>Owning Attribute</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MUL_OP_CALL_EXP__OWNING_ATTRIBUTE = OPERATOR_CALL_EXP__OWNING_ATTRIBUTE;
+
+	/**
+	 * The feature id for the '<em><b>Source</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MUL_OP_CALL_EXP__SOURCE = OPERATOR_CALL_EXP__SOURCE;
+
+	/**
+	 * The feature id for the '<em><b>Arguments</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MUL_OP_CALL_EXP__ARGUMENTS = OPERATOR_CALL_EXP__ARGUMENTS;
+
+	/**
+	 * The feature id for the '<em><b>Operation Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MUL_OP_CALL_EXP__OPERATION_NAME = OPERATOR_CALL_EXP__OPERATION_NAME;
+
+	/**
+	 * The number of structural features of the '<em>Mul Op Call Exp</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MUL_OP_CALL_EXP_FEATURE_COUNT = OPERATOR_CALL_EXP_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link it.univaq.coevolution.emfmigrate.EmigOcl.impl.BraceExpImpl <em>Brace Exp</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.BraceExpImpl
+	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getBraceExp()
+	 * @generated
+	 */
+	int BRACE_EXP = 32;
+
+	/**
+	 * The feature id for the '<em><b>Line</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BRACE_EXP__LINE = PROPERTY_CALL_EXP__LINE;
+
+	/**
+	 * The feature id for the '<em><b>Column</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BRACE_EXP__COLUMN = PROPERTY_CALL_EXP__COLUMN;
+
+	/**
+	 * The feature id for the '<em><b>Char Start</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BRACE_EXP__CHAR_START = PROPERTY_CALL_EXP__CHAR_START;
+
+	/**
+	 * The feature id for the '<em><b>Char End</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BRACE_EXP__CHAR_END = PROPERTY_CALL_EXP__CHAR_END;
+
+	/**
+	 * The feature id for the '<em><b>Type</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BRACE_EXP__TYPE = PROPERTY_CALL_EXP__TYPE;
+
+	/**
+	 * The feature id for the '<em><b>If Exp3</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BRACE_EXP__IF_EXP3 = PROPERTY_CALL_EXP__IF_EXP3;
+
+	/**
+	 * The feature id for the '<em><b>Applied Property</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BRACE_EXP__APPLIED_PROPERTY = PROPERTY_CALL_EXP__APPLIED_PROPERTY;
+
+	/**
+	 * The feature id for the '<em><b>Collection</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BRACE_EXP__COLLECTION = PROPERTY_CALL_EXP__COLLECTION;
+
+	/**
+	 * The feature id for the '<em><b>Let Exp</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BRACE_EXP__LET_EXP = PROPERTY_CALL_EXP__LET_EXP;
+
+	/**
+	 * The feature id for the '<em><b>Loop Exp</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BRACE_EXP__LOOP_EXP = PROPERTY_CALL_EXP__LOOP_EXP;
+
+	/**
+	 * The feature id for the '<em><b>Parent Operation</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BRACE_EXP__PARENT_OPERATION = PROPERTY_CALL_EXP__PARENT_OPERATION;
+
+	/**
+	 * The feature id for the '<em><b>Initialized Variable</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BRACE_EXP__INITIALIZED_VARIABLE = PROPERTY_CALL_EXP__INITIALIZED_VARIABLE;
+
+	/**
+	 * The feature id for the '<em><b>If Exp2</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BRACE_EXP__IF_EXP2 = PROPERTY_CALL_EXP__IF_EXP2;
+
+	/**
+	 * The feature id for the '<em><b>Owning Operation</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BRACE_EXP__OWNING_OPERATION = PROPERTY_CALL_EXP__OWNING_OPERATION;
+
+	/**
+	 * The feature id for the '<em><b>If Exp1</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BRACE_EXP__IF_EXP1 = PROPERTY_CALL_EXP__IF_EXP1;
+
+	/**
+	 * The feature id for the '<em><b>Owning Attribute</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BRACE_EXP__OWNING_ATTRIBUTE = PROPERTY_CALL_EXP__OWNING_ATTRIBUTE;
+
+	/**
+	 * The feature id for the '<em><b>Source</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BRACE_EXP__SOURCE = PROPERTY_CALL_EXP__SOURCE;
+
+	/**
+	 * The number of structural features of the '<em>Brace Exp</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BRACE_EXP_FEATURE_COUNT = PROPERTY_CALL_EXP_FEATURE_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link it.univaq.coevolution.emfmigrate.EmigOcl.impl.CollectionOperationCallExpImpl <em>Collection Operation Call Exp</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4298,7 +5583,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getCollectionOperationCallExp()
 	 * @generated
 	 */
-	int COLLECTION_OPERATION_CALL_EXP = 26;
+	int COLLECTION_OPERATION_CALL_EXP = 33;
 
 	/**
 	 * The feature id for the '<em><b>Line</b></em>' attribute.
@@ -4488,7 +5773,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getLoopExp()
 	 * @generated
 	 */
-	int LOOP_EXP = 27;
+	int LOOP_EXP = 34;
 
 	/**
 	 * The feature id for the '<em><b>Line</b></em>' attribute.
@@ -4678,7 +5963,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getIterateExp()
 	 * @generated
 	 */
-	int ITERATE_EXP = 28;
+	int ITERATE_EXP = 35;
 
 	/**
 	 * The feature id for the '<em><b>Line</b></em>' attribute.
@@ -4877,7 +6162,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getIteratorExp()
 	 * @generated
 	 */
-	int ITERATOR_EXP = 29;
+	int ITERATOR_EXP = 36;
 
 	/**
 	 * The feature id for the '<em><b>Line</b></em>' attribute.
@@ -5076,7 +6361,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getLetExp()
 	 * @generated
 	 */
-	int LET_EXP = 30;
+	int LET_EXP = 37;
 
 	/**
 	 * The feature id for the '<em><b>Line</b></em>' attribute.
@@ -5257,7 +6542,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getIfExp()
 	 * @generated
 	 */
-	int IF_EXP = 31;
+	int IF_EXP = 38;
 
 	/**
 	 * The feature id for the '<em><b>Line</b></em>' attribute.
@@ -5447,7 +6732,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getIterator()
 	 * @generated
 	 */
-	int ITERATOR = 33;
+	int ITERATOR = 40;
 
 	/**
 	 * The feature id for the '<em><b>Line</b></em>' attribute.
@@ -5565,7 +6850,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getParameter()
 	 * @generated
 	 */
-	int PARAMETER = 34;
+	int PARAMETER = 41;
 
 	/**
 	 * The feature id for the '<em><b>Line</b></em>' attribute.
@@ -5683,7 +6968,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getOclType()
 	 * @generated
 	 */
-	int OCL_TYPE = 36;
+	int OCL_TYPE = 43;
 
 	/**
 	 * The feature id for the '<em><b>Line</b></em>' attribute.
@@ -5692,7 +6977,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OCL_TYPE__LINE = OCL_EXPRESSION__LINE;
+	int OCL_TYPE__LINE = LOCATED_ELEMENT__LINE;
 
 	/**
 	 * The feature id for the '<em><b>Column</b></em>' attribute.
@@ -5701,7 +6986,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OCL_TYPE__COLUMN = OCL_EXPRESSION__COLUMN;
+	int OCL_TYPE__COLUMN = LOCATED_ELEMENT__COLUMN;
 
 	/**
 	 * The feature id for the '<em><b>Char Start</b></em>' attribute.
@@ -5710,7 +6995,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OCL_TYPE__CHAR_START = OCL_EXPRESSION__CHAR_START;
+	int OCL_TYPE__CHAR_START = LOCATED_ELEMENT__CHAR_START;
 
 	/**
 	 * The feature id for the '<em><b>Char End</b></em>' attribute.
@@ -5719,115 +7004,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OCL_TYPE__CHAR_END = OCL_EXPRESSION__CHAR_END;
-
-	/**
-	 * The feature id for the '<em><b>Type</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int OCL_TYPE__TYPE = OCL_EXPRESSION__TYPE;
-
-	/**
-	 * The feature id for the '<em><b>If Exp3</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int OCL_TYPE__IF_EXP3 = OCL_EXPRESSION__IF_EXP3;
-
-	/**
-	 * The feature id for the '<em><b>Applied Property</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int OCL_TYPE__APPLIED_PROPERTY = OCL_EXPRESSION__APPLIED_PROPERTY;
-
-	/**
-	 * The feature id for the '<em><b>Collection</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int OCL_TYPE__COLLECTION = OCL_EXPRESSION__COLLECTION;
-
-	/**
-	 * The feature id for the '<em><b>Let Exp</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int OCL_TYPE__LET_EXP = OCL_EXPRESSION__LET_EXP;
-
-	/**
-	 * The feature id for the '<em><b>Loop Exp</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int OCL_TYPE__LOOP_EXP = OCL_EXPRESSION__LOOP_EXP;
-
-	/**
-	 * The feature id for the '<em><b>Parent Operation</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int OCL_TYPE__PARENT_OPERATION = OCL_EXPRESSION__PARENT_OPERATION;
-
-	/**
-	 * The feature id for the '<em><b>Initialized Variable</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int OCL_TYPE__INITIALIZED_VARIABLE = OCL_EXPRESSION__INITIALIZED_VARIABLE;
-
-	/**
-	 * The feature id for the '<em><b>If Exp2</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int OCL_TYPE__IF_EXP2 = OCL_EXPRESSION__IF_EXP2;
-
-	/**
-	 * The feature id for the '<em><b>Owning Operation</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int OCL_TYPE__OWNING_OPERATION = OCL_EXPRESSION__OWNING_OPERATION;
-
-	/**
-	 * The feature id for the '<em><b>If Exp1</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int OCL_TYPE__IF_EXP1 = OCL_EXPRESSION__IF_EXP1;
-
-	/**
-	 * The feature id for the '<em><b>Owning Attribute</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int OCL_TYPE__OWNING_ATTRIBUTE = OCL_EXPRESSION__OWNING_ATTRIBUTE;
+	int OCL_TYPE__CHAR_END = LOCATED_ELEMENT__CHAR_END;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -5836,7 +7013,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OCL_TYPE__NAME = OCL_EXPRESSION_FEATURE_COUNT + 0;
+	int OCL_TYPE__NAME = LOCATED_ELEMENT_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Definitions</b></em>' container reference.
@@ -5845,7 +7022,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OCL_TYPE__DEFINITIONS = OCL_EXPRESSION_FEATURE_COUNT + 1;
+	int OCL_TYPE__DEFINITIONS = LOCATED_ELEMENT_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Ocl Expression</b></em>' container reference.
@@ -5854,7 +7031,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OCL_TYPE__OCL_EXPRESSION = OCL_EXPRESSION_FEATURE_COUNT + 2;
+	int OCL_TYPE__OCL_EXPRESSION = LOCATED_ELEMENT_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Operation</b></em>' container reference.
@@ -5863,7 +7040,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OCL_TYPE__OPERATION = OCL_EXPRESSION_FEATURE_COUNT + 3;
+	int OCL_TYPE__OPERATION = LOCATED_ELEMENT_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Map Type2</b></em>' container reference.
@@ -5872,7 +7049,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OCL_TYPE__MAP_TYPE2 = OCL_EXPRESSION_FEATURE_COUNT + 4;
+	int OCL_TYPE__MAP_TYPE2 = LOCATED_ELEMENT_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Attribute</b></em>' container reference.
@@ -5881,7 +7058,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OCL_TYPE__ATTRIBUTE = OCL_EXPRESSION_FEATURE_COUNT + 5;
+	int OCL_TYPE__ATTRIBUTE = LOCATED_ELEMENT_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Map Type</b></em>' container reference.
@@ -5890,7 +7067,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OCL_TYPE__MAP_TYPE = OCL_EXPRESSION_FEATURE_COUNT + 6;
+	int OCL_TYPE__MAP_TYPE = LOCATED_ELEMENT_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Collection Types</b></em>' container reference.
@@ -5899,7 +7076,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OCL_TYPE__COLLECTION_TYPES = OCL_EXPRESSION_FEATURE_COUNT + 7;
+	int OCL_TYPE__COLLECTION_TYPES = LOCATED_ELEMENT_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Tuple Type Attribute</b></em>' container reference.
@@ -5908,7 +7085,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OCL_TYPE__TUPLE_TYPE_ATTRIBUTE = OCL_EXPRESSION_FEATURE_COUNT + 8;
+	int OCL_TYPE__TUPLE_TYPE_ATTRIBUTE = LOCATED_ELEMENT_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Variable Declaration</b></em>' container reference.
@@ -5917,7 +7094,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OCL_TYPE__VARIABLE_DECLARATION = OCL_EXPRESSION_FEATURE_COUNT + 9;
+	int OCL_TYPE__VARIABLE_DECLARATION = LOCATED_ELEMENT_FEATURE_COUNT + 9;
 
 	/**
 	 * The number of structural features of the '<em>Ocl Type</em>' class.
@@ -5926,7 +7103,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OCL_TYPE_FEATURE_COUNT = OCL_EXPRESSION_FEATURE_COUNT + 10;
+	int OCL_TYPE_FEATURE_COUNT = LOCATED_ELEMENT_FEATURE_COUNT + 10;
 
 	/**
 	 * The meta object id for the '{@link it.univaq.coevolution.emfmigrate.EmigOcl.impl.CollectionTypeImpl <em>Collection Type</em>}' class.
@@ -5936,7 +7113,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getCollectionType()
 	 * @generated
 	 */
-	int COLLECTION_TYPE = 35;
+	int COLLECTION_TYPE = 42;
 
 	/**
 	 * The feature id for the '<em><b>Line</b></em>' attribute.
@@ -5973,114 +7150,6 @@ public interface EmigOclPackage extends EPackage {
 	 * @ordered
 	 */
 	int COLLECTION_TYPE__CHAR_END = OCL_TYPE__CHAR_END;
-
-	/**
-	 * The feature id for the '<em><b>Type</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COLLECTION_TYPE__TYPE = OCL_TYPE__TYPE;
-
-	/**
-	 * The feature id for the '<em><b>If Exp3</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COLLECTION_TYPE__IF_EXP3 = OCL_TYPE__IF_EXP3;
-
-	/**
-	 * The feature id for the '<em><b>Applied Property</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COLLECTION_TYPE__APPLIED_PROPERTY = OCL_TYPE__APPLIED_PROPERTY;
-
-	/**
-	 * The feature id for the '<em><b>Collection</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COLLECTION_TYPE__COLLECTION = OCL_TYPE__COLLECTION;
-
-	/**
-	 * The feature id for the '<em><b>Let Exp</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COLLECTION_TYPE__LET_EXP = OCL_TYPE__LET_EXP;
-
-	/**
-	 * The feature id for the '<em><b>Loop Exp</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COLLECTION_TYPE__LOOP_EXP = OCL_TYPE__LOOP_EXP;
-
-	/**
-	 * The feature id for the '<em><b>Parent Operation</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COLLECTION_TYPE__PARENT_OPERATION = OCL_TYPE__PARENT_OPERATION;
-
-	/**
-	 * The feature id for the '<em><b>Initialized Variable</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COLLECTION_TYPE__INITIALIZED_VARIABLE = OCL_TYPE__INITIALIZED_VARIABLE;
-
-	/**
-	 * The feature id for the '<em><b>If Exp2</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COLLECTION_TYPE__IF_EXP2 = OCL_TYPE__IF_EXP2;
-
-	/**
-	 * The feature id for the '<em><b>Owning Operation</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COLLECTION_TYPE__OWNING_OPERATION = OCL_TYPE__OWNING_OPERATION;
-
-	/**
-	 * The feature id for the '<em><b>If Exp1</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COLLECTION_TYPE__IF_EXP1 = OCL_TYPE__IF_EXP1;
-
-	/**
-	 * The feature id for the '<em><b>Owning Attribute</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int COLLECTION_TYPE__OWNING_ATTRIBUTE = OCL_TYPE__OWNING_ATTRIBUTE;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -6191,6 +7260,187 @@ public interface EmigOclPackage extends EPackage {
 	int COLLECTION_TYPE_FEATURE_COUNT = OCL_TYPE_FEATURE_COUNT + 1;
 
 	/**
+	 * The meta object id for the '{@link it.univaq.coevolution.emfmigrate.EmigOcl.impl.OclModelElementExpImpl <em>Ocl Model Element Exp</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.OclModelElementExpImpl
+	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getOclModelElementExp()
+	 * @generated
+	 */
+	int OCL_MODEL_ELEMENT_EXP = 44;
+
+	/**
+	 * The feature id for the '<em><b>Line</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OCL_MODEL_ELEMENT_EXP__LINE = OCL_EXPRESSION__LINE;
+
+	/**
+	 * The feature id for the '<em><b>Column</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OCL_MODEL_ELEMENT_EXP__COLUMN = OCL_EXPRESSION__COLUMN;
+
+	/**
+	 * The feature id for the '<em><b>Char Start</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OCL_MODEL_ELEMENT_EXP__CHAR_START = OCL_EXPRESSION__CHAR_START;
+
+	/**
+	 * The feature id for the '<em><b>Char End</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OCL_MODEL_ELEMENT_EXP__CHAR_END = OCL_EXPRESSION__CHAR_END;
+
+	/**
+	 * The feature id for the '<em><b>Type</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OCL_MODEL_ELEMENT_EXP__TYPE = OCL_EXPRESSION__TYPE;
+
+	/**
+	 * The feature id for the '<em><b>If Exp3</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OCL_MODEL_ELEMENT_EXP__IF_EXP3 = OCL_EXPRESSION__IF_EXP3;
+
+	/**
+	 * The feature id for the '<em><b>Applied Property</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OCL_MODEL_ELEMENT_EXP__APPLIED_PROPERTY = OCL_EXPRESSION__APPLIED_PROPERTY;
+
+	/**
+	 * The feature id for the '<em><b>Collection</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OCL_MODEL_ELEMENT_EXP__COLLECTION = OCL_EXPRESSION__COLLECTION;
+
+	/**
+	 * The feature id for the '<em><b>Let Exp</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OCL_MODEL_ELEMENT_EXP__LET_EXP = OCL_EXPRESSION__LET_EXP;
+
+	/**
+	 * The feature id for the '<em><b>Loop Exp</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OCL_MODEL_ELEMENT_EXP__LOOP_EXP = OCL_EXPRESSION__LOOP_EXP;
+
+	/**
+	 * The feature id for the '<em><b>Parent Operation</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OCL_MODEL_ELEMENT_EXP__PARENT_OPERATION = OCL_EXPRESSION__PARENT_OPERATION;
+
+	/**
+	 * The feature id for the '<em><b>Initialized Variable</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OCL_MODEL_ELEMENT_EXP__INITIALIZED_VARIABLE = OCL_EXPRESSION__INITIALIZED_VARIABLE;
+
+	/**
+	 * The feature id for the '<em><b>If Exp2</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OCL_MODEL_ELEMENT_EXP__IF_EXP2 = OCL_EXPRESSION__IF_EXP2;
+
+	/**
+	 * The feature id for the '<em><b>Owning Operation</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OCL_MODEL_ELEMENT_EXP__OWNING_OPERATION = OCL_EXPRESSION__OWNING_OPERATION;
+
+	/**
+	 * The feature id for the '<em><b>If Exp1</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OCL_MODEL_ELEMENT_EXP__IF_EXP1 = OCL_EXPRESSION__IF_EXP1;
+
+	/**
+	 * The feature id for the '<em><b>Owning Attribute</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OCL_MODEL_ELEMENT_EXP__OWNING_ATTRIBUTE = OCL_EXPRESSION__OWNING_ATTRIBUTE;
+
+	/**
+	 * The feature id for the '<em><b>Model</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OCL_MODEL_ELEMENT_EXP__MODEL = OCL_EXPRESSION_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OCL_MODEL_ELEMENT_EXP__NAME = OCL_EXPRESSION_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of structural features of the '<em>Ocl Model Element Exp</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OCL_MODEL_ELEMENT_EXP_FEATURE_COUNT = OCL_EXPRESSION_FEATURE_COUNT + 2;
+
+	/**
 	 * The meta object id for the '{@link it.univaq.coevolution.emfmigrate.EmigOcl.impl.PrimitiveImpl <em>Primitive</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -6198,7 +7448,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getPrimitive()
 	 * @generated
 	 */
-	int PRIMITIVE = 37;
+	int PRIMITIVE = 45;
 
 	/**
 	 * The feature id for the '<em><b>Line</b></em>' attribute.
@@ -6235,114 +7485,6 @@ public interface EmigOclPackage extends EPackage {
 	 * @ordered
 	 */
 	int PRIMITIVE__CHAR_END = OCL_TYPE__CHAR_END;
-
-	/**
-	 * The feature id for the '<em><b>Type</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRIMITIVE__TYPE = OCL_TYPE__TYPE;
-
-	/**
-	 * The feature id for the '<em><b>If Exp3</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRIMITIVE__IF_EXP3 = OCL_TYPE__IF_EXP3;
-
-	/**
-	 * The feature id for the '<em><b>Applied Property</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRIMITIVE__APPLIED_PROPERTY = OCL_TYPE__APPLIED_PROPERTY;
-
-	/**
-	 * The feature id for the '<em><b>Collection</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRIMITIVE__COLLECTION = OCL_TYPE__COLLECTION;
-
-	/**
-	 * The feature id for the '<em><b>Let Exp</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRIMITIVE__LET_EXP = OCL_TYPE__LET_EXP;
-
-	/**
-	 * The feature id for the '<em><b>Loop Exp</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRIMITIVE__LOOP_EXP = OCL_TYPE__LOOP_EXP;
-
-	/**
-	 * The feature id for the '<em><b>Parent Operation</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRIMITIVE__PARENT_OPERATION = OCL_TYPE__PARENT_OPERATION;
-
-	/**
-	 * The feature id for the '<em><b>Initialized Variable</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRIMITIVE__INITIALIZED_VARIABLE = OCL_TYPE__INITIALIZED_VARIABLE;
-
-	/**
-	 * The feature id for the '<em><b>If Exp2</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRIMITIVE__IF_EXP2 = OCL_TYPE__IF_EXP2;
-
-	/**
-	 * The feature id for the '<em><b>Owning Operation</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRIMITIVE__OWNING_OPERATION = OCL_TYPE__OWNING_OPERATION;
-
-	/**
-	 * The feature id for the '<em><b>If Exp1</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRIMITIVE__IF_EXP1 = OCL_TYPE__IF_EXP1;
-
-	/**
-	 * The feature id for the '<em><b>Owning Attribute</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int PRIMITIVE__OWNING_ATTRIBUTE = OCL_TYPE__OWNING_ATTRIBUTE;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -6451,7 +7593,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getStringType()
 	 * @generated
 	 */
-	int STRING_TYPE = 38;
+	int STRING_TYPE = 46;
 
 	/**
 	 * The feature id for the '<em><b>Line</b></em>' attribute.
@@ -6488,114 +7630,6 @@ public interface EmigOclPackage extends EPackage {
 	 * @ordered
 	 */
 	int STRING_TYPE__CHAR_END = PRIMITIVE__CHAR_END;
-
-	/**
-	 * The feature id for the '<em><b>Type</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STRING_TYPE__TYPE = PRIMITIVE__TYPE;
-
-	/**
-	 * The feature id for the '<em><b>If Exp3</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STRING_TYPE__IF_EXP3 = PRIMITIVE__IF_EXP3;
-
-	/**
-	 * The feature id for the '<em><b>Applied Property</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STRING_TYPE__APPLIED_PROPERTY = PRIMITIVE__APPLIED_PROPERTY;
-
-	/**
-	 * The feature id for the '<em><b>Collection</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STRING_TYPE__COLLECTION = PRIMITIVE__COLLECTION;
-
-	/**
-	 * The feature id for the '<em><b>Let Exp</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STRING_TYPE__LET_EXP = PRIMITIVE__LET_EXP;
-
-	/**
-	 * The feature id for the '<em><b>Loop Exp</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STRING_TYPE__LOOP_EXP = PRIMITIVE__LOOP_EXP;
-
-	/**
-	 * The feature id for the '<em><b>Parent Operation</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STRING_TYPE__PARENT_OPERATION = PRIMITIVE__PARENT_OPERATION;
-
-	/**
-	 * The feature id for the '<em><b>Initialized Variable</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STRING_TYPE__INITIALIZED_VARIABLE = PRIMITIVE__INITIALIZED_VARIABLE;
-
-	/**
-	 * The feature id for the '<em><b>If Exp2</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STRING_TYPE__IF_EXP2 = PRIMITIVE__IF_EXP2;
-
-	/**
-	 * The feature id for the '<em><b>Owning Operation</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STRING_TYPE__OWNING_OPERATION = PRIMITIVE__OWNING_OPERATION;
-
-	/**
-	 * The feature id for the '<em><b>If Exp1</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STRING_TYPE__IF_EXP1 = PRIMITIVE__IF_EXP1;
-
-	/**
-	 * The feature id for the '<em><b>Owning Attribute</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int STRING_TYPE__OWNING_ATTRIBUTE = PRIMITIVE__OWNING_ATTRIBUTE;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -6704,7 +7738,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getBooleanType()
 	 * @generated
 	 */
-	int BOOLEAN_TYPE = 39;
+	int BOOLEAN_TYPE = 47;
 
 	/**
 	 * The feature id for the '<em><b>Line</b></em>' attribute.
@@ -6741,114 +7775,6 @@ public interface EmigOclPackage extends EPackage {
 	 * @ordered
 	 */
 	int BOOLEAN_TYPE__CHAR_END = PRIMITIVE__CHAR_END;
-
-	/**
-	 * The feature id for the '<em><b>Type</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BOOLEAN_TYPE__TYPE = PRIMITIVE__TYPE;
-
-	/**
-	 * The feature id for the '<em><b>If Exp3</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BOOLEAN_TYPE__IF_EXP3 = PRIMITIVE__IF_EXP3;
-
-	/**
-	 * The feature id for the '<em><b>Applied Property</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BOOLEAN_TYPE__APPLIED_PROPERTY = PRIMITIVE__APPLIED_PROPERTY;
-
-	/**
-	 * The feature id for the '<em><b>Collection</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BOOLEAN_TYPE__COLLECTION = PRIMITIVE__COLLECTION;
-
-	/**
-	 * The feature id for the '<em><b>Let Exp</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BOOLEAN_TYPE__LET_EXP = PRIMITIVE__LET_EXP;
-
-	/**
-	 * The feature id for the '<em><b>Loop Exp</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BOOLEAN_TYPE__LOOP_EXP = PRIMITIVE__LOOP_EXP;
-
-	/**
-	 * The feature id for the '<em><b>Parent Operation</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BOOLEAN_TYPE__PARENT_OPERATION = PRIMITIVE__PARENT_OPERATION;
-
-	/**
-	 * The feature id for the '<em><b>Initialized Variable</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BOOLEAN_TYPE__INITIALIZED_VARIABLE = PRIMITIVE__INITIALIZED_VARIABLE;
-
-	/**
-	 * The feature id for the '<em><b>If Exp2</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BOOLEAN_TYPE__IF_EXP2 = PRIMITIVE__IF_EXP2;
-
-	/**
-	 * The feature id for the '<em><b>Owning Operation</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BOOLEAN_TYPE__OWNING_OPERATION = PRIMITIVE__OWNING_OPERATION;
-
-	/**
-	 * The feature id for the '<em><b>If Exp1</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BOOLEAN_TYPE__IF_EXP1 = PRIMITIVE__IF_EXP1;
-
-	/**
-	 * The feature id for the '<em><b>Owning Attribute</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BOOLEAN_TYPE__OWNING_ATTRIBUTE = PRIMITIVE__OWNING_ATTRIBUTE;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -6957,7 +7883,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getNumericType()
 	 * @generated
 	 */
-	int NUMERIC_TYPE = 40;
+	int NUMERIC_TYPE = 48;
 
 	/**
 	 * The feature id for the '<em><b>Line</b></em>' attribute.
@@ -6994,114 +7920,6 @@ public interface EmigOclPackage extends EPackage {
 	 * @ordered
 	 */
 	int NUMERIC_TYPE__CHAR_END = PRIMITIVE__CHAR_END;
-
-	/**
-	 * The feature id for the '<em><b>Type</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int NUMERIC_TYPE__TYPE = PRIMITIVE__TYPE;
-
-	/**
-	 * The feature id for the '<em><b>If Exp3</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int NUMERIC_TYPE__IF_EXP3 = PRIMITIVE__IF_EXP3;
-
-	/**
-	 * The feature id for the '<em><b>Applied Property</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int NUMERIC_TYPE__APPLIED_PROPERTY = PRIMITIVE__APPLIED_PROPERTY;
-
-	/**
-	 * The feature id for the '<em><b>Collection</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int NUMERIC_TYPE__COLLECTION = PRIMITIVE__COLLECTION;
-
-	/**
-	 * The feature id for the '<em><b>Let Exp</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int NUMERIC_TYPE__LET_EXP = PRIMITIVE__LET_EXP;
-
-	/**
-	 * The feature id for the '<em><b>Loop Exp</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int NUMERIC_TYPE__LOOP_EXP = PRIMITIVE__LOOP_EXP;
-
-	/**
-	 * The feature id for the '<em><b>Parent Operation</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int NUMERIC_TYPE__PARENT_OPERATION = PRIMITIVE__PARENT_OPERATION;
-
-	/**
-	 * The feature id for the '<em><b>Initialized Variable</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int NUMERIC_TYPE__INITIALIZED_VARIABLE = PRIMITIVE__INITIALIZED_VARIABLE;
-
-	/**
-	 * The feature id for the '<em><b>If Exp2</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int NUMERIC_TYPE__IF_EXP2 = PRIMITIVE__IF_EXP2;
-
-	/**
-	 * The feature id for the '<em><b>Owning Operation</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int NUMERIC_TYPE__OWNING_OPERATION = PRIMITIVE__OWNING_OPERATION;
-
-	/**
-	 * The feature id for the '<em><b>If Exp1</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int NUMERIC_TYPE__IF_EXP1 = PRIMITIVE__IF_EXP1;
-
-	/**
-	 * The feature id for the '<em><b>Owning Attribute</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int NUMERIC_TYPE__OWNING_ATTRIBUTE = PRIMITIVE__OWNING_ATTRIBUTE;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -7210,7 +8028,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getIntegerType()
 	 * @generated
 	 */
-	int INTEGER_TYPE = 41;
+	int INTEGER_TYPE = 49;
 
 	/**
 	 * The feature id for the '<em><b>Line</b></em>' attribute.
@@ -7247,114 +8065,6 @@ public interface EmigOclPackage extends EPackage {
 	 * @ordered
 	 */
 	int INTEGER_TYPE__CHAR_END = NUMERIC_TYPE__CHAR_END;
-
-	/**
-	 * The feature id for the '<em><b>Type</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTEGER_TYPE__TYPE = NUMERIC_TYPE__TYPE;
-
-	/**
-	 * The feature id for the '<em><b>If Exp3</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTEGER_TYPE__IF_EXP3 = NUMERIC_TYPE__IF_EXP3;
-
-	/**
-	 * The feature id for the '<em><b>Applied Property</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTEGER_TYPE__APPLIED_PROPERTY = NUMERIC_TYPE__APPLIED_PROPERTY;
-
-	/**
-	 * The feature id for the '<em><b>Collection</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTEGER_TYPE__COLLECTION = NUMERIC_TYPE__COLLECTION;
-
-	/**
-	 * The feature id for the '<em><b>Let Exp</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTEGER_TYPE__LET_EXP = NUMERIC_TYPE__LET_EXP;
-
-	/**
-	 * The feature id for the '<em><b>Loop Exp</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTEGER_TYPE__LOOP_EXP = NUMERIC_TYPE__LOOP_EXP;
-
-	/**
-	 * The feature id for the '<em><b>Parent Operation</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTEGER_TYPE__PARENT_OPERATION = NUMERIC_TYPE__PARENT_OPERATION;
-
-	/**
-	 * The feature id for the '<em><b>Initialized Variable</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTEGER_TYPE__INITIALIZED_VARIABLE = NUMERIC_TYPE__INITIALIZED_VARIABLE;
-
-	/**
-	 * The feature id for the '<em><b>If Exp2</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTEGER_TYPE__IF_EXP2 = NUMERIC_TYPE__IF_EXP2;
-
-	/**
-	 * The feature id for the '<em><b>Owning Operation</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTEGER_TYPE__OWNING_OPERATION = NUMERIC_TYPE__OWNING_OPERATION;
-
-	/**
-	 * The feature id for the '<em><b>If Exp1</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTEGER_TYPE__IF_EXP1 = NUMERIC_TYPE__IF_EXP1;
-
-	/**
-	 * The feature id for the '<em><b>Owning Attribute</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int INTEGER_TYPE__OWNING_ATTRIBUTE = NUMERIC_TYPE__OWNING_ATTRIBUTE;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -7463,7 +8173,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getRealType()
 	 * @generated
 	 */
-	int REAL_TYPE = 42;
+	int REAL_TYPE = 50;
 
 	/**
 	 * The feature id for the '<em><b>Line</b></em>' attribute.
@@ -7500,114 +8210,6 @@ public interface EmigOclPackage extends EPackage {
 	 * @ordered
 	 */
 	int REAL_TYPE__CHAR_END = NUMERIC_TYPE__CHAR_END;
-
-	/**
-	 * The feature id for the '<em><b>Type</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int REAL_TYPE__TYPE = NUMERIC_TYPE__TYPE;
-
-	/**
-	 * The feature id for the '<em><b>If Exp3</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int REAL_TYPE__IF_EXP3 = NUMERIC_TYPE__IF_EXP3;
-
-	/**
-	 * The feature id for the '<em><b>Applied Property</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int REAL_TYPE__APPLIED_PROPERTY = NUMERIC_TYPE__APPLIED_PROPERTY;
-
-	/**
-	 * The feature id for the '<em><b>Collection</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int REAL_TYPE__COLLECTION = NUMERIC_TYPE__COLLECTION;
-
-	/**
-	 * The feature id for the '<em><b>Let Exp</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int REAL_TYPE__LET_EXP = NUMERIC_TYPE__LET_EXP;
-
-	/**
-	 * The feature id for the '<em><b>Loop Exp</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int REAL_TYPE__LOOP_EXP = NUMERIC_TYPE__LOOP_EXP;
-
-	/**
-	 * The feature id for the '<em><b>Parent Operation</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int REAL_TYPE__PARENT_OPERATION = NUMERIC_TYPE__PARENT_OPERATION;
-
-	/**
-	 * The feature id for the '<em><b>Initialized Variable</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int REAL_TYPE__INITIALIZED_VARIABLE = NUMERIC_TYPE__INITIALIZED_VARIABLE;
-
-	/**
-	 * The feature id for the '<em><b>If Exp2</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int REAL_TYPE__IF_EXP2 = NUMERIC_TYPE__IF_EXP2;
-
-	/**
-	 * The feature id for the '<em><b>Owning Operation</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int REAL_TYPE__OWNING_OPERATION = NUMERIC_TYPE__OWNING_OPERATION;
-
-	/**
-	 * The feature id for the '<em><b>If Exp1</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int REAL_TYPE__IF_EXP1 = NUMERIC_TYPE__IF_EXP1;
-
-	/**
-	 * The feature id for the '<em><b>Owning Attribute</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int REAL_TYPE__OWNING_ATTRIBUTE = NUMERIC_TYPE__OWNING_ATTRIBUTE;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -7716,7 +8318,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getBagType()
 	 * @generated
 	 */
-	int BAG_TYPE = 43;
+	int BAG_TYPE = 51;
 
 	/**
 	 * The feature id for the '<em><b>Line</b></em>' attribute.
@@ -7753,114 +8355,6 @@ public interface EmigOclPackage extends EPackage {
 	 * @ordered
 	 */
 	int BAG_TYPE__CHAR_END = COLLECTION_TYPE__CHAR_END;
-
-	/**
-	 * The feature id for the '<em><b>Type</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BAG_TYPE__TYPE = COLLECTION_TYPE__TYPE;
-
-	/**
-	 * The feature id for the '<em><b>If Exp3</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BAG_TYPE__IF_EXP3 = COLLECTION_TYPE__IF_EXP3;
-
-	/**
-	 * The feature id for the '<em><b>Applied Property</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BAG_TYPE__APPLIED_PROPERTY = COLLECTION_TYPE__APPLIED_PROPERTY;
-
-	/**
-	 * The feature id for the '<em><b>Collection</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BAG_TYPE__COLLECTION = COLLECTION_TYPE__COLLECTION;
-
-	/**
-	 * The feature id for the '<em><b>Let Exp</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BAG_TYPE__LET_EXP = COLLECTION_TYPE__LET_EXP;
-
-	/**
-	 * The feature id for the '<em><b>Loop Exp</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BAG_TYPE__LOOP_EXP = COLLECTION_TYPE__LOOP_EXP;
-
-	/**
-	 * The feature id for the '<em><b>Parent Operation</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BAG_TYPE__PARENT_OPERATION = COLLECTION_TYPE__PARENT_OPERATION;
-
-	/**
-	 * The feature id for the '<em><b>Initialized Variable</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BAG_TYPE__INITIALIZED_VARIABLE = COLLECTION_TYPE__INITIALIZED_VARIABLE;
-
-	/**
-	 * The feature id for the '<em><b>If Exp2</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BAG_TYPE__IF_EXP2 = COLLECTION_TYPE__IF_EXP2;
-
-	/**
-	 * The feature id for the '<em><b>Owning Operation</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BAG_TYPE__OWNING_OPERATION = COLLECTION_TYPE__OWNING_OPERATION;
-
-	/**
-	 * The feature id for the '<em><b>If Exp1</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BAG_TYPE__IF_EXP1 = COLLECTION_TYPE__IF_EXP1;
-
-	/**
-	 * The feature id for the '<em><b>Owning Attribute</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BAG_TYPE__OWNING_ATTRIBUTE = COLLECTION_TYPE__OWNING_ATTRIBUTE;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -7978,7 +8472,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getOrderedSetType()
 	 * @generated
 	 */
-	int ORDERED_SET_TYPE = 44;
+	int ORDERED_SET_TYPE = 52;
 
 	/**
 	 * The feature id for the '<em><b>Line</b></em>' attribute.
@@ -8015,114 +8509,6 @@ public interface EmigOclPackage extends EPackage {
 	 * @ordered
 	 */
 	int ORDERED_SET_TYPE__CHAR_END = COLLECTION_TYPE__CHAR_END;
-
-	/**
-	 * The feature id for the '<em><b>Type</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ORDERED_SET_TYPE__TYPE = COLLECTION_TYPE__TYPE;
-
-	/**
-	 * The feature id for the '<em><b>If Exp3</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ORDERED_SET_TYPE__IF_EXP3 = COLLECTION_TYPE__IF_EXP3;
-
-	/**
-	 * The feature id for the '<em><b>Applied Property</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ORDERED_SET_TYPE__APPLIED_PROPERTY = COLLECTION_TYPE__APPLIED_PROPERTY;
-
-	/**
-	 * The feature id for the '<em><b>Collection</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ORDERED_SET_TYPE__COLLECTION = COLLECTION_TYPE__COLLECTION;
-
-	/**
-	 * The feature id for the '<em><b>Let Exp</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ORDERED_SET_TYPE__LET_EXP = COLLECTION_TYPE__LET_EXP;
-
-	/**
-	 * The feature id for the '<em><b>Loop Exp</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ORDERED_SET_TYPE__LOOP_EXP = COLLECTION_TYPE__LOOP_EXP;
-
-	/**
-	 * The feature id for the '<em><b>Parent Operation</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ORDERED_SET_TYPE__PARENT_OPERATION = COLLECTION_TYPE__PARENT_OPERATION;
-
-	/**
-	 * The feature id for the '<em><b>Initialized Variable</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ORDERED_SET_TYPE__INITIALIZED_VARIABLE = COLLECTION_TYPE__INITIALIZED_VARIABLE;
-
-	/**
-	 * The feature id for the '<em><b>If Exp2</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ORDERED_SET_TYPE__IF_EXP2 = COLLECTION_TYPE__IF_EXP2;
-
-	/**
-	 * The feature id for the '<em><b>Owning Operation</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ORDERED_SET_TYPE__OWNING_OPERATION = COLLECTION_TYPE__OWNING_OPERATION;
-
-	/**
-	 * The feature id for the '<em><b>If Exp1</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ORDERED_SET_TYPE__IF_EXP1 = COLLECTION_TYPE__IF_EXP1;
-
-	/**
-	 * The feature id for the '<em><b>Owning Attribute</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int ORDERED_SET_TYPE__OWNING_ATTRIBUTE = COLLECTION_TYPE__OWNING_ATTRIBUTE;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -8240,7 +8626,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getSequenceType()
 	 * @generated
 	 */
-	int SEQUENCE_TYPE = 45;
+	int SEQUENCE_TYPE = 53;
 
 	/**
 	 * The feature id for the '<em><b>Line</b></em>' attribute.
@@ -8277,114 +8663,6 @@ public interface EmigOclPackage extends EPackage {
 	 * @ordered
 	 */
 	int SEQUENCE_TYPE__CHAR_END = COLLECTION_TYPE__CHAR_END;
-
-	/**
-	 * The feature id for the '<em><b>Type</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SEQUENCE_TYPE__TYPE = COLLECTION_TYPE__TYPE;
-
-	/**
-	 * The feature id for the '<em><b>If Exp3</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SEQUENCE_TYPE__IF_EXP3 = COLLECTION_TYPE__IF_EXP3;
-
-	/**
-	 * The feature id for the '<em><b>Applied Property</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SEQUENCE_TYPE__APPLIED_PROPERTY = COLLECTION_TYPE__APPLIED_PROPERTY;
-
-	/**
-	 * The feature id for the '<em><b>Collection</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SEQUENCE_TYPE__COLLECTION = COLLECTION_TYPE__COLLECTION;
-
-	/**
-	 * The feature id for the '<em><b>Let Exp</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SEQUENCE_TYPE__LET_EXP = COLLECTION_TYPE__LET_EXP;
-
-	/**
-	 * The feature id for the '<em><b>Loop Exp</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SEQUENCE_TYPE__LOOP_EXP = COLLECTION_TYPE__LOOP_EXP;
-
-	/**
-	 * The feature id for the '<em><b>Parent Operation</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SEQUENCE_TYPE__PARENT_OPERATION = COLLECTION_TYPE__PARENT_OPERATION;
-
-	/**
-	 * The feature id for the '<em><b>Initialized Variable</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SEQUENCE_TYPE__INITIALIZED_VARIABLE = COLLECTION_TYPE__INITIALIZED_VARIABLE;
-
-	/**
-	 * The feature id for the '<em><b>If Exp2</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SEQUENCE_TYPE__IF_EXP2 = COLLECTION_TYPE__IF_EXP2;
-
-	/**
-	 * The feature id for the '<em><b>Owning Operation</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SEQUENCE_TYPE__OWNING_OPERATION = COLLECTION_TYPE__OWNING_OPERATION;
-
-	/**
-	 * The feature id for the '<em><b>If Exp1</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SEQUENCE_TYPE__IF_EXP1 = COLLECTION_TYPE__IF_EXP1;
-
-	/**
-	 * The feature id for the '<em><b>Owning Attribute</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SEQUENCE_TYPE__OWNING_ATTRIBUTE = COLLECTION_TYPE__OWNING_ATTRIBUTE;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -8502,7 +8780,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getSetType()
 	 * @generated
 	 */
-	int SET_TYPE = 46;
+	int SET_TYPE = 54;
 
 	/**
 	 * The feature id for the '<em><b>Line</b></em>' attribute.
@@ -8539,114 +8817,6 @@ public interface EmigOclPackage extends EPackage {
 	 * @ordered
 	 */
 	int SET_TYPE__CHAR_END = COLLECTION_TYPE__CHAR_END;
-
-	/**
-	 * The feature id for the '<em><b>Type</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SET_TYPE__TYPE = COLLECTION_TYPE__TYPE;
-
-	/**
-	 * The feature id for the '<em><b>If Exp3</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SET_TYPE__IF_EXP3 = COLLECTION_TYPE__IF_EXP3;
-
-	/**
-	 * The feature id for the '<em><b>Applied Property</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SET_TYPE__APPLIED_PROPERTY = COLLECTION_TYPE__APPLIED_PROPERTY;
-
-	/**
-	 * The feature id for the '<em><b>Collection</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SET_TYPE__COLLECTION = COLLECTION_TYPE__COLLECTION;
-
-	/**
-	 * The feature id for the '<em><b>Let Exp</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SET_TYPE__LET_EXP = COLLECTION_TYPE__LET_EXP;
-
-	/**
-	 * The feature id for the '<em><b>Loop Exp</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SET_TYPE__LOOP_EXP = COLLECTION_TYPE__LOOP_EXP;
-
-	/**
-	 * The feature id for the '<em><b>Parent Operation</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SET_TYPE__PARENT_OPERATION = COLLECTION_TYPE__PARENT_OPERATION;
-
-	/**
-	 * The feature id for the '<em><b>Initialized Variable</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SET_TYPE__INITIALIZED_VARIABLE = COLLECTION_TYPE__INITIALIZED_VARIABLE;
-
-	/**
-	 * The feature id for the '<em><b>If Exp2</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SET_TYPE__IF_EXP2 = COLLECTION_TYPE__IF_EXP2;
-
-	/**
-	 * The feature id for the '<em><b>Owning Operation</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SET_TYPE__OWNING_OPERATION = COLLECTION_TYPE__OWNING_OPERATION;
-
-	/**
-	 * The feature id for the '<em><b>If Exp1</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SET_TYPE__IF_EXP1 = COLLECTION_TYPE__IF_EXP1;
-
-	/**
-	 * The feature id for the '<em><b>Owning Attribute</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SET_TYPE__OWNING_ATTRIBUTE = COLLECTION_TYPE__OWNING_ATTRIBUTE;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -8764,7 +8934,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getOclAnyType()
 	 * @generated
 	 */
-	int OCL_ANY_TYPE = 47;
+	int OCL_ANY_TYPE = 55;
 
 	/**
 	 * The feature id for the '<em><b>Line</b></em>' attribute.
@@ -8801,114 +8971,6 @@ public interface EmigOclPackage extends EPackage {
 	 * @ordered
 	 */
 	int OCL_ANY_TYPE__CHAR_END = OCL_TYPE__CHAR_END;
-
-	/**
-	 * The feature id for the '<em><b>Type</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int OCL_ANY_TYPE__TYPE = OCL_TYPE__TYPE;
-
-	/**
-	 * The feature id for the '<em><b>If Exp3</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int OCL_ANY_TYPE__IF_EXP3 = OCL_TYPE__IF_EXP3;
-
-	/**
-	 * The feature id for the '<em><b>Applied Property</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int OCL_ANY_TYPE__APPLIED_PROPERTY = OCL_TYPE__APPLIED_PROPERTY;
-
-	/**
-	 * The feature id for the '<em><b>Collection</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int OCL_ANY_TYPE__COLLECTION = OCL_TYPE__COLLECTION;
-
-	/**
-	 * The feature id for the '<em><b>Let Exp</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int OCL_ANY_TYPE__LET_EXP = OCL_TYPE__LET_EXP;
-
-	/**
-	 * The feature id for the '<em><b>Loop Exp</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int OCL_ANY_TYPE__LOOP_EXP = OCL_TYPE__LOOP_EXP;
-
-	/**
-	 * The feature id for the '<em><b>Parent Operation</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int OCL_ANY_TYPE__PARENT_OPERATION = OCL_TYPE__PARENT_OPERATION;
-
-	/**
-	 * The feature id for the '<em><b>Initialized Variable</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int OCL_ANY_TYPE__INITIALIZED_VARIABLE = OCL_TYPE__INITIALIZED_VARIABLE;
-
-	/**
-	 * The feature id for the '<em><b>If Exp2</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int OCL_ANY_TYPE__IF_EXP2 = OCL_TYPE__IF_EXP2;
-
-	/**
-	 * The feature id for the '<em><b>Owning Operation</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int OCL_ANY_TYPE__OWNING_OPERATION = OCL_TYPE__OWNING_OPERATION;
-
-	/**
-	 * The feature id for the '<em><b>If Exp1</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int OCL_ANY_TYPE__IF_EXP1 = OCL_TYPE__IF_EXP1;
-
-	/**
-	 * The feature id for the '<em><b>Owning Attribute</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int OCL_ANY_TYPE__OWNING_ATTRIBUTE = OCL_TYPE__OWNING_ATTRIBUTE;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -9017,7 +9079,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getTupleType()
 	 * @generated
 	 */
-	int TUPLE_TYPE = 48;
+	int TUPLE_TYPE = 56;
 
 	/**
 	 * The feature id for the '<em><b>Line</b></em>' attribute.
@@ -9054,114 +9116,6 @@ public interface EmigOclPackage extends EPackage {
 	 * @ordered
 	 */
 	int TUPLE_TYPE__CHAR_END = OCL_TYPE__CHAR_END;
-
-	/**
-	 * The feature id for the '<em><b>Type</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TUPLE_TYPE__TYPE = OCL_TYPE__TYPE;
-
-	/**
-	 * The feature id for the '<em><b>If Exp3</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TUPLE_TYPE__IF_EXP3 = OCL_TYPE__IF_EXP3;
-
-	/**
-	 * The feature id for the '<em><b>Applied Property</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TUPLE_TYPE__APPLIED_PROPERTY = OCL_TYPE__APPLIED_PROPERTY;
-
-	/**
-	 * The feature id for the '<em><b>Collection</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TUPLE_TYPE__COLLECTION = OCL_TYPE__COLLECTION;
-
-	/**
-	 * The feature id for the '<em><b>Let Exp</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TUPLE_TYPE__LET_EXP = OCL_TYPE__LET_EXP;
-
-	/**
-	 * The feature id for the '<em><b>Loop Exp</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TUPLE_TYPE__LOOP_EXP = OCL_TYPE__LOOP_EXP;
-
-	/**
-	 * The feature id for the '<em><b>Parent Operation</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TUPLE_TYPE__PARENT_OPERATION = OCL_TYPE__PARENT_OPERATION;
-
-	/**
-	 * The feature id for the '<em><b>Initialized Variable</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TUPLE_TYPE__INITIALIZED_VARIABLE = OCL_TYPE__INITIALIZED_VARIABLE;
-
-	/**
-	 * The feature id for the '<em><b>If Exp2</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TUPLE_TYPE__IF_EXP2 = OCL_TYPE__IF_EXP2;
-
-	/**
-	 * The feature id for the '<em><b>Owning Operation</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TUPLE_TYPE__OWNING_OPERATION = OCL_TYPE__OWNING_OPERATION;
-
-	/**
-	 * The feature id for the '<em><b>If Exp1</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TUPLE_TYPE__IF_EXP1 = OCL_TYPE__IF_EXP1;
-
-	/**
-	 * The feature id for the '<em><b>Owning Attribute</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TUPLE_TYPE__OWNING_ATTRIBUTE = OCL_TYPE__OWNING_ATTRIBUTE;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -9279,7 +9233,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getTupleTypeAttribute()
 	 * @generated
 	 */
-	int TUPLE_TYPE_ATTRIBUTE = 49;
+	int TUPLE_TYPE_ATTRIBUTE = 57;
 
 	/**
 	 * The feature id for the '<em><b>Line</b></em>' attribute.
@@ -9361,7 +9315,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getOclModelElement()
 	 * @generated
 	 */
-	int OCL_MODEL_ELEMENT = 50;
+	int OCL_MODEL_ELEMENT = 58;
 
 	/**
 	 * The feature id for the '<em><b>Line</b></em>' attribute.
@@ -9398,114 +9352,6 @@ public interface EmigOclPackage extends EPackage {
 	 * @ordered
 	 */
 	int OCL_MODEL_ELEMENT__CHAR_END = OCL_TYPE__CHAR_END;
-
-	/**
-	 * The feature id for the '<em><b>Type</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int OCL_MODEL_ELEMENT__TYPE = OCL_TYPE__TYPE;
-
-	/**
-	 * The feature id for the '<em><b>If Exp3</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int OCL_MODEL_ELEMENT__IF_EXP3 = OCL_TYPE__IF_EXP3;
-
-	/**
-	 * The feature id for the '<em><b>Applied Property</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int OCL_MODEL_ELEMENT__APPLIED_PROPERTY = OCL_TYPE__APPLIED_PROPERTY;
-
-	/**
-	 * The feature id for the '<em><b>Collection</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int OCL_MODEL_ELEMENT__COLLECTION = OCL_TYPE__COLLECTION;
-
-	/**
-	 * The feature id for the '<em><b>Let Exp</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int OCL_MODEL_ELEMENT__LET_EXP = OCL_TYPE__LET_EXP;
-
-	/**
-	 * The feature id for the '<em><b>Loop Exp</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int OCL_MODEL_ELEMENT__LOOP_EXP = OCL_TYPE__LOOP_EXP;
-
-	/**
-	 * The feature id for the '<em><b>Parent Operation</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int OCL_MODEL_ELEMENT__PARENT_OPERATION = OCL_TYPE__PARENT_OPERATION;
-
-	/**
-	 * The feature id for the '<em><b>Initialized Variable</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int OCL_MODEL_ELEMENT__INITIALIZED_VARIABLE = OCL_TYPE__INITIALIZED_VARIABLE;
-
-	/**
-	 * The feature id for the '<em><b>If Exp2</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int OCL_MODEL_ELEMENT__IF_EXP2 = OCL_TYPE__IF_EXP2;
-
-	/**
-	 * The feature id for the '<em><b>Owning Operation</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int OCL_MODEL_ELEMENT__OWNING_OPERATION = OCL_TYPE__OWNING_OPERATION;
-
-	/**
-	 * The feature id for the '<em><b>If Exp1</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int OCL_MODEL_ELEMENT__IF_EXP1 = OCL_TYPE__IF_EXP1;
-
-	/**
-	 * The feature id for the '<em><b>Owning Attribute</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int OCL_MODEL_ELEMENT__OWNING_ATTRIBUTE = OCL_TYPE__OWNING_ATTRIBUTE;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -9623,7 +9469,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getMapType()
 	 * @generated
 	 */
-	int MAP_TYPE = 51;
+	int MAP_TYPE = 59;
 
 	/**
 	 * The feature id for the '<em><b>Line</b></em>' attribute.
@@ -9660,114 +9506,6 @@ public interface EmigOclPackage extends EPackage {
 	 * @ordered
 	 */
 	int MAP_TYPE__CHAR_END = OCL_TYPE__CHAR_END;
-
-	/**
-	 * The feature id for the '<em><b>Type</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MAP_TYPE__TYPE = OCL_TYPE__TYPE;
-
-	/**
-	 * The feature id for the '<em><b>If Exp3</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MAP_TYPE__IF_EXP3 = OCL_TYPE__IF_EXP3;
-
-	/**
-	 * The feature id for the '<em><b>Applied Property</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MAP_TYPE__APPLIED_PROPERTY = OCL_TYPE__APPLIED_PROPERTY;
-
-	/**
-	 * The feature id for the '<em><b>Collection</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MAP_TYPE__COLLECTION = OCL_TYPE__COLLECTION;
-
-	/**
-	 * The feature id for the '<em><b>Let Exp</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MAP_TYPE__LET_EXP = OCL_TYPE__LET_EXP;
-
-	/**
-	 * The feature id for the '<em><b>Loop Exp</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MAP_TYPE__LOOP_EXP = OCL_TYPE__LOOP_EXP;
-
-	/**
-	 * The feature id for the '<em><b>Parent Operation</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MAP_TYPE__PARENT_OPERATION = OCL_TYPE__PARENT_OPERATION;
-
-	/**
-	 * The feature id for the '<em><b>Initialized Variable</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MAP_TYPE__INITIALIZED_VARIABLE = OCL_TYPE__INITIALIZED_VARIABLE;
-
-	/**
-	 * The feature id for the '<em><b>If Exp2</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MAP_TYPE__IF_EXP2 = OCL_TYPE__IF_EXP2;
-
-	/**
-	 * The feature id for the '<em><b>Owning Operation</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MAP_TYPE__OWNING_OPERATION = OCL_TYPE__OWNING_OPERATION;
-
-	/**
-	 * The feature id for the '<em><b>If Exp1</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MAP_TYPE__IF_EXP1 = OCL_TYPE__IF_EXP1;
-
-	/**
-	 * The feature id for the '<em><b>Owning Attribute</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MAP_TYPE__OWNING_ATTRIBUTE = OCL_TYPE__OWNING_ATTRIBUTE;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -9894,7 +9632,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getOclFeatureDefinition()
 	 * @generated
 	 */
-	int OCL_FEATURE_DEFINITION = 52;
+	int OCL_FEATURE_DEFINITION = 60;
 
 	/**
 	 * The feature id for the '<em><b>Line</b></em>' attribute.
@@ -9967,7 +9705,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getOclContextDefinition()
 	 * @generated
 	 */
-	int OCL_CONTEXT_DEFINITION = 53;
+	int OCL_CONTEXT_DEFINITION = 61;
 
 	/**
 	 * The feature id for the '<em><b>Line</b></em>' attribute.
@@ -10040,7 +9778,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getOclFeature()
 	 * @generated
 	 */
-	int OCL_FEATURE = 54;
+	int OCL_FEATURE = 62;
 
 	/**
 	 * The feature id for the '<em><b>Line</b></em>' attribute.
@@ -10104,7 +9842,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getAttribute()
 	 * @generated
 	 */
-	int ATTRIBUTE = 55;
+	int ATTRIBUTE = 63;
 
 	/**
 	 * The feature id for the '<em><b>Line</b></em>' attribute.
@@ -10195,7 +9933,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getOperation()
 	 * @generated
 	 */
-	int OPERATION = 56;
+	int OPERATION = 64;
 
 	/**
 	 * The feature id for the '<em><b>Line</b></em>' attribute.
@@ -10295,7 +10033,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getOclModel()
 	 * @generated
 	 */
-	int OCL_MODEL = 57;
+	int OCL_MODEL = 65;
 
 	/**
 	 * The feature id for the '<em><b>Line</b></em>' attribute.
@@ -10385,7 +10123,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getBoolean()
 	 * @generated
 	 */
-	int BOOLEAN = 58;
+	int BOOLEAN = 66;
 
 	/**
 	 * The meta object id for the '<em>Double</em>' data type.
@@ -10394,7 +10132,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getDouble()
 	 * @generated
 	 */
-	int DOUBLE = 59;
+	int DOUBLE = 67;
 
 	/**
 	 * The meta object id for the '<em>Integer</em>' data type.
@@ -10403,7 +10141,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getInteger()
 	 * @generated
 	 */
-	int INTEGER = 60;
+	int INTEGER = 68;
 
 	/**
 	 * The meta object id for the '<em>String</em>' data type.
@@ -10413,7 +10151,7 @@ public interface EmigOclPackage extends EPackage {
 	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getString()
 	 * @generated
 	 */
-	int STRING = 61;
+	int STRING = 69;
 
 
 	/**
@@ -10685,6 +10423,16 @@ public interface EmigOclPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getSuperExp();
+
+	/**
+	 * Returns the meta object for class '{@link it.univaq.coevolution.emfmigrate.EmigOcl.SelfExp <em>Self Exp</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Self Exp</em>'.
+	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.SelfExp
+	 * @generated
+	 */
+	EClass getSelfExp();
 
 	/**
 	 * Returns the meta object for class '{@link it.univaq.coevolution.emfmigrate.EmigOcl.PrimitiveExp <em>Primitive Exp</em>}'.
@@ -11071,6 +10819,66 @@ public interface EmigOclPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getOperatorCallExp();
+
+	/**
+	 * Returns the meta object for class '{@link it.univaq.coevolution.emfmigrate.EmigOcl.NotOpCallExp <em>Not Op Call Exp</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Not Op Call Exp</em>'.
+	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.NotOpCallExp
+	 * @generated
+	 */
+	EClass getNotOpCallExp();
+
+	/**
+	 * Returns the meta object for class '{@link it.univaq.coevolution.emfmigrate.EmigOcl.RelOpCallExp <em>Rel Op Call Exp</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Rel Op Call Exp</em>'.
+	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.RelOpCallExp
+	 * @generated
+	 */
+	EClass getRelOpCallExp();
+
+	/**
+	 * Returns the meta object for class '{@link it.univaq.coevolution.emfmigrate.EmigOcl.AddOpCallExp <em>Add Op Call Exp</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Add Op Call Exp</em>'.
+	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.AddOpCallExp
+	 * @generated
+	 */
+	EClass getAddOpCallExp();
+
+	/**
+	 * Returns the meta object for class '{@link it.univaq.coevolution.emfmigrate.EmigOcl.IntOpCallExp <em>Int Op Call Exp</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Int Op Call Exp</em>'.
+	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.IntOpCallExp
+	 * @generated
+	 */
+	EClass getIntOpCallExp();
+
+	/**
+	 * Returns the meta object for class '{@link it.univaq.coevolution.emfmigrate.EmigOcl.MulOpCallExp <em>Mul Op Call Exp</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Mul Op Call Exp</em>'.
+	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.MulOpCallExp
+	 * @generated
+	 */
+	EClass getMulOpCallExp();
+
+	/**
+	 * Returns the meta object for class '{@link it.univaq.coevolution.emfmigrate.EmigOcl.BraceExp <em>Brace Exp</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Brace Exp</em>'.
+	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.BraceExp
+	 * @generated
+	 */
+	EClass getBraceExp();
 
 	/**
 	 * Returns the meta object for class '{@link it.univaq.coevolution.emfmigrate.EmigOcl.CollectionOperationCallExp <em>Collection Operation Call Exp</em>}'.
@@ -11489,6 +11297,38 @@ public interface EmigOclPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getOclType_VariableDeclaration();
+
+	/**
+	 * Returns the meta object for class '{@link it.univaq.coevolution.emfmigrate.EmigOcl.OclModelElementExp <em>Ocl Model Element Exp</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Ocl Model Element Exp</em>'.
+	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.OclModelElementExp
+	 * @generated
+	 */
+	EClass getOclModelElementExp();
+
+	/**
+	 * Returns the meta object for the reference '{@link it.univaq.coevolution.emfmigrate.EmigOcl.OclModelElementExp#getModel <em>Model</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Model</em>'.
+	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.OclModelElementExp#getModel()
+	 * @see #getOclModelElementExp()
+	 * @generated
+	 */
+	EReference getOclModelElementExp_Model();
+
+	/**
+	 * Returns the meta object for the attribute '{@link it.univaq.coevolution.emfmigrate.EmigOcl.OclModelElementExp#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see it.univaq.coevolution.emfmigrate.EmigOcl.OclModelElementExp#getName()
+	 * @see #getOclModelElementExp()
+	 * @generated
+	 */
+	EAttribute getOclModelElementExp_Name();
 
 	/**
 	 * Returns the meta object for class '{@link it.univaq.coevolution.emfmigrate.EmigOcl.Primitive <em>Primitive</em>}'.
@@ -12227,6 +12067,16 @@ public interface EmigOclPackage extends EPackage {
 		EClass SUPER_EXP = eINSTANCE.getSuperExp();
 
 		/**
+		 * The meta object literal for the '{@link it.univaq.coevolution.emfmigrate.EmigOcl.impl.SelfExpImpl <em>Self Exp</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.SelfExpImpl
+		 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getSelfExp()
+		 * @generated
+		 */
+		EClass SELF_EXP = eINSTANCE.getSelfExp();
+
+		/**
 		 * The meta object literal for the '{@link it.univaq.coevolution.emfmigrate.EmigOcl.impl.PrimitiveExpImpl <em>Primitive Exp</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -12565,6 +12415,66 @@ public interface EmigOclPackage extends EPackage {
 		EClass OPERATOR_CALL_EXP = eINSTANCE.getOperatorCallExp();
 
 		/**
+		 * The meta object literal for the '{@link it.univaq.coevolution.emfmigrate.EmigOcl.impl.NotOpCallExpImpl <em>Not Op Call Exp</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.NotOpCallExpImpl
+		 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getNotOpCallExp()
+		 * @generated
+		 */
+		EClass NOT_OP_CALL_EXP = eINSTANCE.getNotOpCallExp();
+
+		/**
+		 * The meta object literal for the '{@link it.univaq.coevolution.emfmigrate.EmigOcl.impl.RelOpCallExpImpl <em>Rel Op Call Exp</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.RelOpCallExpImpl
+		 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getRelOpCallExp()
+		 * @generated
+		 */
+		EClass REL_OP_CALL_EXP = eINSTANCE.getRelOpCallExp();
+
+		/**
+		 * The meta object literal for the '{@link it.univaq.coevolution.emfmigrate.EmigOcl.impl.AddOpCallExpImpl <em>Add Op Call Exp</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.AddOpCallExpImpl
+		 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getAddOpCallExp()
+		 * @generated
+		 */
+		EClass ADD_OP_CALL_EXP = eINSTANCE.getAddOpCallExp();
+
+		/**
+		 * The meta object literal for the '{@link it.univaq.coevolution.emfmigrate.EmigOcl.impl.IntOpCallExpImpl <em>Int Op Call Exp</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.IntOpCallExpImpl
+		 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getIntOpCallExp()
+		 * @generated
+		 */
+		EClass INT_OP_CALL_EXP = eINSTANCE.getIntOpCallExp();
+
+		/**
+		 * The meta object literal for the '{@link it.univaq.coevolution.emfmigrate.EmigOcl.impl.MulOpCallExpImpl <em>Mul Op Call Exp</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.MulOpCallExpImpl
+		 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getMulOpCallExp()
+		 * @generated
+		 */
+		EClass MUL_OP_CALL_EXP = eINSTANCE.getMulOpCallExp();
+
+		/**
+		 * The meta object literal for the '{@link it.univaq.coevolution.emfmigrate.EmigOcl.impl.BraceExpImpl <em>Brace Exp</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.BraceExpImpl
+		 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getBraceExp()
+		 * @generated
+		 */
+		EClass BRACE_EXP = eINSTANCE.getBraceExp();
+
+		/**
 		 * The meta object literal for the '{@link it.univaq.coevolution.emfmigrate.EmigOcl.impl.CollectionOperationCallExpImpl <em>Collection Operation Call Exp</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -12897,6 +12807,32 @@ public interface EmigOclPackage extends EPackage {
 		 * @generated
 		 */
 		EReference OCL_TYPE__VARIABLE_DECLARATION = eINSTANCE.getOclType_VariableDeclaration();
+
+		/**
+		 * The meta object literal for the '{@link it.univaq.coevolution.emfmigrate.EmigOcl.impl.OclModelElementExpImpl <em>Ocl Model Element Exp</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.OclModelElementExpImpl
+		 * @see it.univaq.coevolution.emfmigrate.EmigOcl.impl.EmigOclPackageImpl#getOclModelElementExp()
+		 * @generated
+		 */
+		EClass OCL_MODEL_ELEMENT_EXP = eINSTANCE.getOclModelElementExp();
+
+		/**
+		 * The meta object literal for the '<em><b>Model</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference OCL_MODEL_ELEMENT_EXP__MODEL = eINSTANCE.getOclModelElementExp_Model();
+
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OCL_MODEL_ELEMENT_EXP__NAME = eINSTANCE.getOclModelElementExp_Name();
 
 		/**
 		 * The meta object literal for the '{@link it.univaq.coevolution.emfmigrate.EmigOcl.impl.PrimitiveImpl <em>Primitive</em>}' class.

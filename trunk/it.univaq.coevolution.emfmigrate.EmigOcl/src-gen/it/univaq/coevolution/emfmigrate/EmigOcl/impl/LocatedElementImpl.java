@@ -39,7 +39,7 @@ public abstract class LocatedElementImpl extends EObjectImpl implements LocatedE
 	 * @generated
 	 * @ordered
 	 */
-	protected static final int LINE_EDEFAULT = 0;
+	protected static final int LINE_EDEFAULT = -1;
 
 	/**
 	 * The default value of the '{@link #getColumn() <em>Column</em>}' attribute.
@@ -49,7 +49,7 @@ public abstract class LocatedElementImpl extends EObjectImpl implements LocatedE
 	 * @generated
 	 * @ordered
 	 */
-	protected static final int COLUMN_EDEFAULT = 0;
+	protected static final int COLUMN_EDEFAULT = -1;
 
 	/**
 	 * The default value of the '{@link #getCharStart() <em>Char Start</em>}' attribute.
@@ -59,7 +59,7 @@ public abstract class LocatedElementImpl extends EObjectImpl implements LocatedE
 	 * @generated
 	 * @ordered
 	 */
-	protected static final int CHAR_START_EDEFAULT = 0;
+	protected static final int CHAR_START_EDEFAULT = -1;
 
 	/**
 	 * The default value of the '{@link #getCharEnd() <em>Char End</em>}' attribute.
@@ -69,7 +69,7 @@ public abstract class LocatedElementImpl extends EObjectImpl implements LocatedE
 	 * @generated
 	 * @ordered
 	 */
-	protected static final int CHAR_END_EDEFAULT = 0;
+	protected static final int CHAR_END_EDEFAULT = -1;
 
 	/**
 	 * <!-- begin-user-doc -->
