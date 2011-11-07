@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: emfMigrate Compiler
+Bundle-SymbolicName: it.univaq.coevolution.emfmigrate.compiler;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: it.univaq.coevolution.emfmigrate.compiler.Activator
+Bundle-Vendor: University of L'Aquila
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.core.resources
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ActivationPolicy: lazy
