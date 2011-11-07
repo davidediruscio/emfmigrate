@@ -9,47 +9,63 @@ create OUT: EMFTVM from IN: EMig;
 -- ======================================================================
 -- helpers begin
 -- ======================================================================
+helper context EMig!FilterMigrator def: isSX: Boolean =
+	self.refImmediateComposite().oclIsKindOf(EMig!MigratorSX);
+
+helper context EMig!DotNavigationObjDX def: isSX: Boolean =
+	self.refImmediateComposite().isSX;
+
+helper context EMig!DotNavigationObjSX def: isSX: Boolean =
+	self.refImmediateComposite().isSX;
 
 helper context String def: firstToUpper(): String =
 	self.substring(1, 1).toUpper() + self.substring(2, self.size());
 
-helper context ECORE!ENamedElement def : qName : String =
+helper context ECORE!ENamedElement def: qName: String =
 	self.name;
 
-helper context ECORE!EClassifier def : qName : String =
+helper context ECORE!EClassifier def: qName: String =
 	if self.ePackage.oclIsUndefined() then
 		self.name
 	else
 		self.ePackage.qName + '::' + self.name
 	endif;
 
-helper context ECORE!EPackage def : qName : String =
+helper context ECORE!EPackage def: qName: String =
 	if self.eSuperPackage.oclIsUndefined() then
 		self.name
 	else
 		self.eSuperPackage.qName + '::' + self.name
 	endif;
-helper context EMig!MigratorSX def: typeModel: String=
-	self.rewritingRule.refImmediateComposite().typeModel
-	;
-helper context EMig!MigratorDX def: typeModel: String=
-	self.rewritingRule.refImmediateComposite().typeModel
-	;
-helper context EMig!Rule def: typeModel: String=
-	self.refImmediateComposite().typeModel
-	;
-helper context EMig!MigrationProgram def: typeModel: String=
-	self.transformationPackage->first().name
-	;
+
+helper context EMig!MigratorSX def: typeModel: String =
+	self.rewritingRule.refImmediateComposite().typeModel;
+
+helper context EMig!MigratorDX def: typeModel: String =
+	self.rewritingRule.refImmediateComposite().typeModel;
+
+helper context EMig!Rule def: typeModel: String =
+	self.refImmediateComposite().typeModel;
+
+helper context EMig!MigrationProgram def: typeModel: String =
+	self.transformationPackage -> first().name;
+
+helper context EMig!EObject def: localVar(): EMFTVM!LocalVariable =
+	let parent: OclAny =
+		self.refImmediateComposite()
+	in
+		if parent.oclIsKindOf(EMig!OpDef) then
+			thisModule.resolveTemp(self, 'ref')
+		else
+			thisModule.resolveTemp(self, 'lv1')
+		endif;
 
 -- ======================================================================
 -- helpers end
 -- ======================================================================
-
 -- ======================================================================
 -- matched rules begin
 -- ======================================================================
-
 rule MigrationProgram {
 	from
 		s: EMig!MigrationProgram in IN
@@ -64,7 +80,9 @@ rule MigrationProgram {
 		),
 		inmodel: EMFTVM!ModelDeclaration (
 			modelName <- 'IN',
-			metaModelName <- s.transformationPackage -> first().name
+			metaModelName <- s.transformationPackage -> first().name --first
+					-- transformation package {e.g.ATL}
+			
 		),
 		delta: EMFTVM!ModelDeclaration (
 			modelName <- 'DELTA',
@@ -103,31 +121,157 @@ rule Rule {
 					name)),
 			default <- true,
 			distinctElements <- false,
-			mode <- #automaticSingle
+			mode <- #automaticSingle,
+			matcher <- matcher
+		),
+		applier: EMFTVM!CodeBlock (
+			localVariables <- s.rewritingRules -> collect(r | r.migratorSX) -> flatten()
+					-> prepend(s.filter) -> union(s.rewritingRules -> collect(r | r.
+					migratorDX) -> flatten() -> reject(e | e.rewritingRule.migratorSX ->
+					exists(n | n.name = e.name))) -> collect(n | thisModule.
+					resolveTemp(n, 'lv2'))
+		),
+		matcher: EMFTVM!CodeBlock (
+			localVariables <- s.rewritingRules -> collect(r | r.migratorSX) -> flatten()
+					-> prepend(s.filter) -> collect(n | thisModule.resolveTemp(n, 'lv1'))
+					-> append(thisModule.resolveTemp(s.filter, 'ref')),
+			code <- Sequence{invoke_filter,
+						invoke_refinit},
+			lineNumbers <- Sequence{ln},
+			nested <- Sequence{thisModule.resolveTemp(s.filter, 'cb'),
+						thisModule.resolveTemp(s.filter, 'initRef')}
+		),
+		ln: EMFTVM!LineNumber (
+			instructions <- Sequence{invoke_filter,
+						invoke_refinit},
+			startLine <- s.line,
+			endLine <- s.endline,
+			startChar <- s.offset,
+			endChar <- s.endoffset
+		),
+		invoke_filter: EMFTVM!InvokeCb (
+			codeBlock <- thisModule.resolveTemp(s.filter, 'cb')
+		),
+		invoke_refinit: EMFTVM!InvokeCb (
+			codeBlock <- thisModule.resolveTemp(s.filter, 'initRef')
 		)
 }
 
-rule MigratorSX{
-	from s:EMig!MigratorSX in IN
-	to t: EMFTVM!InputRuleElement(
-		name<-s.name,
-		type<-s.elementSX.qName,
-		typeModel <- s.typeModel,
-		models <- Sequence{'IN'}
+rule MigratorSX {
+	from
+		s: EMig!MigratorSX in IN
+	to
+		t: EMFTVM!InputRuleElement (
+			name <- s.name,
+			type <- s.elementSX.qName,
+			typeModel <- s.typeModel,
+			models <- Sequence{'IN'}
+		),
+		lv1: EMFTVM!LocalVariable (
+			name <- s.name,
+			type <- s.elementSX.qName,
+			typeModel <- s.typeModel
+		),
+		lv2: EMFTVM!LocalVariable (
+			name <- s.name,
+			type <- s.elementSX.qName,
+			typeModel <- s.typeModel
+		),
+		cb: EMFTVM!CodeBlock (
+			code <- s.filterSX -> prepend(pusht),
+			lineNumbers <- Sequence{ln}
+		),
+		ln: EMFTVM!LineNumber (
+			startLine <- s.line,
+			endLine <- s.endline,
+			startChar <- s.offset,
+			endChar <- s.endoffset,
+			instructions <- s.filterSX -> prepend(pusht)
+		),
+		pusht: EMFTVM!Pusht
+}
+
+rule FilterMigratorSX {
+	from
+		s: EMig!FilterMigrator in IN (
+			s.isSX
+		)
+	to
+		t: EMFTVM!CodeBlock (
+			code <- Sequence{invokecb_value,
+						invokecb_feature,
+						invoke},
+			nested <- Sequence{s.value,
+						s.featureSX},
+			lineNumbers <- Sequence{ln}
+		),
+		ln: EMFTVM!LineNumber (
+			instructions <- Sequence{invokecb_value,
+						invokecb_feature,
+						invoke},
+			startLine <- s.line,
+			endLine <- s.endline,
+			startChar <- s.offset,
+			endChar <- s.endoffset
+		),
+		invokecb_value: EMFTVM!InvokeCb (
+			codeBlock <- s.value
+		),
+		invokecb_feature: EMFTVM!InvokeCb (
+			codeBlock <- s.featureSX
+		),
+		invoke: EMFTVM!Invoke (
+			opname <- s.op,
+			argcount <- 1
 		)
 }
-rule MigratorDX{
-	from s:EMig!MigratorDX in IN (
-		-- create only output elements for new migratorDX
-		not s.rewritingRule.migratorSX -> exists(n | n.name = s.name)						  
-	)
---TODO: maps to multiple input elements in migratorSX
-	to t: EMFTVM!OutputRuleElement(
-		name<-s.name,
-		type<-s.elementSX.qName,
-		typeModel <- s.typeModel,
-		models <- Sequence{'IN'},
-		"mapsTo" <- s.rewritingRule.migratorSX->first()
+
+rule DotNavigationObjDX {
+	from
+		s: EMig!DotNavigationObjDX in IN (
+			s.isSX
+		)
+	to
+		t: EMFTVM!CodeBlock (
+			code <- Sequence{load,
+						get},
+			lineNumbers <- Sequence{ln}
+		),
+		ln: EMFTVM!LineNumber (
+			startLine <- s.line,
+			endLine <- s.endline,
+			startChar <- s.offset,
+			endChar <- s.endoffset,
+			instructions <- Sequence{load,
+						get}
+		),
+		load: EMFTVM!Load (
+			localVariable <- s.obj.localVar()
+		),
+		get: EMFTVM!Get (
+			fieldname <- s.ref.name
+		)
+}
+
+rule MigratorDX {
+	from
+		s: EMig!MigratorDX in IN (
+			-- create only output elements for new migratorDX
+		not s.rewritingRule.migratorSX -> exists(n | n.name = s.name)
+		) --TODO: maps to multiple input elements in migratorSX
+	
+	to
+		t: EMFTVM!OutputRuleElement (
+			name <- s.name,
+			type <- s.elementSX.qName,
+			typeModel <- s.typeModel,
+			models <- Sequence{'IN'},
+			"mapsTo" <- s.rewritingRule.migratorSX -> first()
+		),
+		lv2: EMFTVM!LocalVariable (
+			name <- s.name,
+			type <- s.elementSX.qName,
+			typeModel <- s.typeModel
 		)
 }
 
@@ -139,16 +283,72 @@ abstract rule OpDef {
 			type <- s.op.firstToUpper(),
 			typeModel <- 'EDELTA',
 			models <- Sequence{'DELTA'}
-		)
+		),
+		lv1: EMFTVM!LocalVariable (
+			type <- s.op.firstToUpper(),
+			typeModel <- 'EDELTA'
+		),
+		lv2: EMFTVM!LocalVariable (
+			type <- s.op.firstToUpper(),
+			typeModel <- 'EDELTA'
+		),
+		cb: EMFTVM!CodeBlock (
+			code <- s.setters -> collect(n | thisModule.resolveTemp(n, '_and')) ->
+					prepend(pusht),
+			lineNumbers <- Sequence{ln},
+			nested <- s.setters
+		),
+		ln: EMFTVM!LineNumber (
+			startLine <- s.line,
+			endLine <- s.endline,
+			startChar <- s.offset,
+			endChar <- s.endoffset,
+			instructions <- s.setters -> collect(n | thisModule.resolveTemp(n, '_and'))
+					-> prepend(pusht)
+		),
+		pusht: EMFTVM!Pusht,
+		ref: EMFTVM!LocalVariable (
+			startInstruction <- thisModule.resolveTemp(s.refImmediateComposite(),
+					'invoke_refinit')
+		),
+		initRef: EMFTVM!CodeBlock (
+			code <- Sequence{load,
+						get}
+		),
+		load: EMFTVM!Load (
+			localVariable <- lv1
+		),
+		--[lv1]
+		get: EMFTVM!Get (
+			fieldname <- 'ref'
+		),
+		--[ref]
+		store: EMFTVM!Store (
+			localVariable <- ref
+		) --[]
+	
 }
+
 rule EPackageOpDef extends OpDef {
 	from
 		s: EMig!EPackageOpDef in IN
 	to
 		t: EMFTVM!InputRuleElement (
 			name <- s.var.name
+		),
+		lv1: EMFTVM!LocalVariable (
+			name <- s.var.name
+		),
+		lv2: EMFTVM!LocalVariable (
+			name <- s.var.name
+		),
+		ref: EMFTVM!LocalVariable (
+			name <- s.ref.name,
+			type <- 'ecore::EPackage',
+			typeModel <- 'EDELTA'
 		)
-}
+		}
+
 rule EClassOpDef extends OpDef {
 	from
 		s: EMig!EClassOpDef in IN
@@ -156,24 +356,155 @@ rule EClassOpDef extends OpDef {
 		t: EMFTVM!InputRuleElement (
 			name <- s.var.name
 		),
-		cb:EMFTVM!CodeBlock(
-		code <- Sequence{}	
+		lv1: EMFTVM!LocalVariable (
+			name <- s.var.name
+		),
+		lv2: EMFTVM!LocalVariable (
+			name <- s.var.name
+		),
+		ref: EMFTVM!LocalVariable (
+			name <- s.ref.name,
+			type <- 'ecore::EClass',
+			typeModel <- 'EDELTA'
 		)
-}
+	
+		  }
+
 rule EAttributeOpDef extends OpDef {
 	from
 		s: EMig!EAttributeOpDef in IN
 	to
 		t: EMFTVM!InputRuleElement (
 			name <- s.var.name
-		)
+		),
+		lv1: EMFTVM!LocalVariable (
+			name <- s.var.name
+		),
+		lv2: EMFTVM!LocalVariable (
+			name <- s.var.name
+		),
+		ref: EMFTVM!LocalVariable (
+			name <- s.ref.name,
+			type <- 'ecore::EAttribute',
+			typeModel <- 'EDELTA'
+		)	
 }
+
 rule EReferenceOpDef extends OpDef {
 	from
 		s: EMig!EReferenceOpDef in IN
 	to
 		t: EMFTVM!InputRuleElement (
 			name <- s.var.name
+		),
+		lv1: EMFTVM!LocalVariable (
+			name <- s.var.name
+		),
+		lv2: EMFTVM!LocalVariable (
+			name <- s.var.name
+		),
+		ref: EMFTVM!LocalVariable (
+			name <- s.ref.name,
+			type <- 'ecore::EReference',
+			typeModel <- 'EDELTA'
+		)	
+}
+
+rule setterDef {
+	from
+		s: EMig!setterDef in IN
+	to
+		t: EMFTVM!CodeBlock (
+			code <- Sequence{load,
+						invoke,
+						get,
+						it,
+						get_mf,
+						get_name,
+						push,
+						invoke_eq,
+						if_eq,
+						endit,
+						pushF,
+						goto,
+						pop,
+						pusht},
+			lineNumbers <- Sequence{ln}
+		),
+		ln: EMFTVM!LineNumber (
+			startLine <- s.line,
+			endLine <- s.endline,
+			startChar <- s.offset,
+			endChar <- s.endoffset,
+			instructions <- Sequence{load,
+						invoke,
+						get,
+						it,
+						get_mf,
+						get_name,
+						push,
+						invoke_eq,
+						if_eq,
+						endit,
+						pushF,
+						goto,
+						pop,
+						pusht}
+		),
+		load: EMFTVM!Load (
+			localVariable <- thisModule.resolveTemp(s.refImmediateComposite(), 'lv1')
+		),
+		--[lv1]
+		invoke: EMFTVM!Invoke (
+			opname <- 'refImmediateComposite',
+			argcount <- 0
+		),
+		--[eco element]
+		get: EMFTVM!Get (
+			fieldname <- 'setters'
+		),
+		--[Sequence{setters}]
+		it: EMFTVM!Iterate (
+			target <- endit
+		),
+		--[it,s]
+		get_mf: EMFTVM!Get (
+			fieldname <- 'metafeature'
+		),
+		--[it,mf]
+		get_name: EMFTVM!Get (
+			fieldname <- 'name'
+		),
+		--[it,name]
+		push: EMFTVM!Push (
+			stringValue <- s.metafeature.name
+		),
+		--[it,name,mf.name]
+		invoke_eq: EMFTVM!Invoke (
+			opname <- '=',
+			argcount <- 1
+		),
+		--[it,boolean]
+		if_eq: EMFTVM!If (
+			target <- goto
+		),
+		--[it]
+		endit: EMFTVM!Enditerate (
+			target <- it
+		),
+		pushF: EMFTVM!Pushf,
+		-- [false]
+		goto: EMFTVM!Goto (
+			target <- pusht
+		),
+		--[false]
+		pop: EMFTVM!Pop,
+		--[]
+		--[]
+		pusht: EMFTVM!Pusht,
+		--[true]
+		_and: EMFTVM!And (
+			codeBlock <- t
 		)
 }
 
