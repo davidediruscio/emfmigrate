@@ -122,26 +122,30 @@ public class EmigOclPrinter2 implements it.univaq.coevolution.emfmigrate.EmigOcl
 			return;
 		}
 		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.OclModel) {
-			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_4, foundFormattingElements);
+			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_3, foundFormattingElements);
 			return;
 		}
 		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.Attribute) {
-			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_5, foundFormattingElements);
+			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_4, foundFormattingElements);
 			return;
 		}
 		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.Operation) {
-			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_6, foundFormattingElements);
+			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_5, foundFormattingElements);
 			return;
 		}
 		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.Parameter) {
-			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_7, foundFormattingElements);
+			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_6, foundFormattingElements);
 			return;
 		}
 		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.VariableExp) {
-			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_8, foundFormattingElements);
+			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_7, foundFormattingElements);
 			return;
 		}
 		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.SuperExp) {
+			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_8, foundFormattingElements);
+			return;
+		}
+		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.SelfExp) {
 			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_9, foundFormattingElements);
 			return;
 		}
@@ -205,100 +209,124 @@ public class EmigOclPrinter2 implements it.univaq.coevolution.emfmigrate.EmigOcl
 			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_24, foundFormattingElements);
 			return;
 		}
+		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.RelOpCallExp) {
+			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_27, foundFormattingElements);
+			return;
+		}
+		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.AddOpCallExp) {
+			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_28, foundFormattingElements);
+			return;
+		}
+		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.IntOpCallExp) {
+			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_29, foundFormattingElements);
+			return;
+		}
+		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.MulOpCallExp) {
+			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_30, foundFormattingElements);
+			return;
+		}
+		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.NotOpCallExp) {
+			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_31, foundFormattingElements);
+			return;
+		}
+		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.BraceExp) {
+			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_32, foundFormattingElements);
+			return;
+		}
+		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.CollectionOperationCallExp) {
+			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_33, foundFormattingElements);
+			return;
+		}
+		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.IterateExp) {
+			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_34, foundFormattingElements);
+			return;
+		}
+		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.IteratorExp) {
+			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_35, foundFormattingElements);
+			return;
+		}
+		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.Iterator) {
+			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_36, foundFormattingElements);
+			return;
+		}
+		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.LetExp) {
+			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_37, foundFormattingElements);
+			return;
+		}
+		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.IfExp) {
+			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_38, foundFormattingElements);
+			return;
+		}
+		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.OclModelElementExp) {
+			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_39, foundFormattingElements);
+			return;
+		}
+		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.VariableDeclaration) {
+			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_40, foundFormattingElements);
+			return;
+		}
+		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.StringType) {
+			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_42, foundFormattingElements);
+			return;
+		}
+		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.BooleanType) {
+			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_43, foundFormattingElements);
+			return;
+		}
+		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.IntegerType) {
+			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_44, foundFormattingElements);
+			return;
+		}
+		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.RealType) {
+			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_45, foundFormattingElements);
+			return;
+		}
+		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.BagType) {
+			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_46, foundFormattingElements);
+			return;
+		}
+		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.OrderedSetType) {
+			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_47, foundFormattingElements);
+			return;
+		}
+		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.SequenceType) {
+			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_48, foundFormattingElements);
+			return;
+		}
+		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.SetType) {
+			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_49, foundFormattingElements);
+			return;
+		}
+		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.OclAnyType) {
+			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_50, foundFormattingElements);
+			return;
+		}
+		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.TupleType) {
+			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_51, foundFormattingElements);
+			return;
+		}
+		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.TupleTypeAttribute) {
+			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_52, foundFormattingElements);
+			return;
+		}
+		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.OclModelElement) {
+			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_53, foundFormattingElements);
+			return;
+		}
+		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.MapType) {
+			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_54, foundFormattingElements);
+			return;
+		}
 		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.OperatorCallExp) {
 			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_26, foundFormattingElements);
 			return;
 		}
-		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.CollectionOperationCallExp) {
-			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_27, foundFormattingElements);
-			return;
-		}
-		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.IterateExp) {
-			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_28, foundFormattingElements);
-			return;
-		}
-		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.IteratorExp) {
-			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_29, foundFormattingElements);
-			return;
-		}
-		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.Iterator) {
-			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_30, foundFormattingElements);
-			return;
-		}
-		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.LetExp) {
-			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_31, foundFormattingElements);
-			return;
-		}
-		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.IfExp) {
-			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_32, foundFormattingElements);
-			return;
-		}
-		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.VariableDeclaration) {
-			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_33, foundFormattingElements);
-			return;
-		}
-		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.StringType) {
-			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_35, foundFormattingElements);
-			return;
-		}
-		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.BooleanType) {
-			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_36, foundFormattingElements);
-			return;
-		}
-		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.IntegerType) {
-			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_37, foundFormattingElements);
-			return;
-		}
-		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.RealType) {
-			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_38, foundFormattingElements);
-			return;
-		}
-		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.BagType) {
-			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_39, foundFormattingElements);
-			return;
-		}
-		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.OrderedSetType) {
-			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_40, foundFormattingElements);
-			return;
-		}
-		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.SequenceType) {
+		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.CollectionType) {
 			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_41, foundFormattingElements);
-			return;
-		}
-		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.SetType) {
-			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_42, foundFormattingElements);
-			return;
-		}
-		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.OclAnyType) {
-			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_43, foundFormattingElements);
-			return;
-		}
-		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.TupleType) {
-			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_44, foundFormattingElements);
-			return;
-		}
-		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.TupleTypeAttribute) {
-			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_45, foundFormattingElements);
-			return;
-		}
-		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.OclModelElement) {
-			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_46, foundFormattingElements);
-			return;
-		}
-		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.MapType) {
-			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_47, foundFormattingElements);
 			return;
 		}
 		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.OperationCallExp) {
 			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_25, foundFormattingElements);
-			return;
-		}
-		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.CollectionType) {
-			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_34, foundFormattingElements);
-			return;
-		}
-		if (element instanceof it.univaq.coevolution.emfmigrate.EmigOcl.OclType) {
-			printInternal(element, it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.grammar.EmigOclGrammarInformationProvider.EMIGOCL_3, foundFormattingElements);
 			return;
 		}
 		

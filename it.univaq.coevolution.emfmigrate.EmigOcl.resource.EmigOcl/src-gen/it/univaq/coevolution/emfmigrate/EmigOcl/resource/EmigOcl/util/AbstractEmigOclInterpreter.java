@@ -184,6 +184,12 @@ public class AbstractEmigOclInterpreter<ResultType, ContextType> {
 		if (result != null) {
 			return result;
 		}
+		if (object instanceof it.univaq.coevolution.emfmigrate.EmigOcl.OclModelElementExp) {
+			result = interprete_it_univaq_coevolution_emfmigrate_EmigOcl_OclModelElementExp((it.univaq.coevolution.emfmigrate.EmigOcl.OclModelElementExp) object, context);
+		}
+		if (result != null) {
+			return result;
+		}
 		if (object instanceof it.univaq.coevolution.emfmigrate.EmigOcl.CollectionType) {
 			result = interprete_it_univaq_coevolution_emfmigrate_EmigOcl_CollectionType((it.univaq.coevolution.emfmigrate.EmigOcl.CollectionType) object, context);
 		}
@@ -246,6 +252,42 @@ public class AbstractEmigOclInterpreter<ResultType, ContextType> {
 		}
 		if (object instanceof it.univaq.coevolution.emfmigrate.EmigOcl.CollectionOperationCallExp) {
 			result = interprete_it_univaq_coevolution_emfmigrate_EmigOcl_CollectionOperationCallExp((it.univaq.coevolution.emfmigrate.EmigOcl.CollectionOperationCallExp) object, context);
+		}
+		if (result != null) {
+			return result;
+		}
+		if (object instanceof it.univaq.coevolution.emfmigrate.EmigOcl.BraceExp) {
+			result = interprete_it_univaq_coevolution_emfmigrate_EmigOcl_BraceExp((it.univaq.coevolution.emfmigrate.EmigOcl.BraceExp) object, context);
+		}
+		if (result != null) {
+			return result;
+		}
+		if (object instanceof it.univaq.coevolution.emfmigrate.EmigOcl.MulOpCallExp) {
+			result = interprete_it_univaq_coevolution_emfmigrate_EmigOcl_MulOpCallExp((it.univaq.coevolution.emfmigrate.EmigOcl.MulOpCallExp) object, context);
+		}
+		if (result != null) {
+			return result;
+		}
+		if (object instanceof it.univaq.coevolution.emfmigrate.EmigOcl.IntOpCallExp) {
+			result = interprete_it_univaq_coevolution_emfmigrate_EmigOcl_IntOpCallExp((it.univaq.coevolution.emfmigrate.EmigOcl.IntOpCallExp) object, context);
+		}
+		if (result != null) {
+			return result;
+		}
+		if (object instanceof it.univaq.coevolution.emfmigrate.EmigOcl.AddOpCallExp) {
+			result = interprete_it_univaq_coevolution_emfmigrate_EmigOcl_AddOpCallExp((it.univaq.coevolution.emfmigrate.EmigOcl.AddOpCallExp) object, context);
+		}
+		if (result != null) {
+			return result;
+		}
+		if (object instanceof it.univaq.coevolution.emfmigrate.EmigOcl.RelOpCallExp) {
+			result = interprete_it_univaq_coevolution_emfmigrate_EmigOcl_RelOpCallExp((it.univaq.coevolution.emfmigrate.EmigOcl.RelOpCallExp) object, context);
+		}
+		if (result != null) {
+			return result;
+		}
+		if (object instanceof it.univaq.coevolution.emfmigrate.EmigOcl.NotOpCallExp) {
+			result = interprete_it_univaq_coevolution_emfmigrate_EmigOcl_NotOpCallExp((it.univaq.coevolution.emfmigrate.EmigOcl.NotOpCallExp) object, context);
 		}
 		if (result != null) {
 			return result;
@@ -376,6 +418,12 @@ public class AbstractEmigOclInterpreter<ResultType, ContextType> {
 		if (result != null) {
 			return result;
 		}
+		if (object instanceof it.univaq.coevolution.emfmigrate.EmigOcl.SelfExp) {
+			result = interprete_it_univaq_coevolution_emfmigrate_EmigOcl_SelfExp((it.univaq.coevolution.emfmigrate.EmigOcl.SelfExp) object, context);
+		}
+		if (result != null) {
+			return result;
+		}
 		if (object instanceof it.univaq.coevolution.emfmigrate.EmigOcl.SuperExp) {
 			result = interprete_it_univaq_coevolution_emfmigrate_EmigOcl_SuperExp((it.univaq.coevolution.emfmigrate.EmigOcl.SuperExp) object, context);
 		}
@@ -426,6 +474,10 @@ public class AbstractEmigOclInterpreter<ResultType, ContextType> {
 	}
 	
 	public ResultType interprete_it_univaq_coevolution_emfmigrate_EmigOcl_SuperExp(it.univaq.coevolution.emfmigrate.EmigOcl.SuperExp object, ContextType context) {
+		return null;
+	}
+	
+	public ResultType interprete_it_univaq_coevolution_emfmigrate_EmigOcl_SelfExp(it.univaq.coevolution.emfmigrate.EmigOcl.SelfExp object, ContextType context) {
 		return null;
 	}
 	
@@ -513,6 +565,30 @@ public class AbstractEmigOclInterpreter<ResultType, ContextType> {
 		return null;
 	}
 	
+	public ResultType interprete_it_univaq_coevolution_emfmigrate_EmigOcl_NotOpCallExp(it.univaq.coevolution.emfmigrate.EmigOcl.NotOpCallExp object, ContextType context) {
+		return null;
+	}
+	
+	public ResultType interprete_it_univaq_coevolution_emfmigrate_EmigOcl_RelOpCallExp(it.univaq.coevolution.emfmigrate.EmigOcl.RelOpCallExp object, ContextType context) {
+		return null;
+	}
+	
+	public ResultType interprete_it_univaq_coevolution_emfmigrate_EmigOcl_AddOpCallExp(it.univaq.coevolution.emfmigrate.EmigOcl.AddOpCallExp object, ContextType context) {
+		return null;
+	}
+	
+	public ResultType interprete_it_univaq_coevolution_emfmigrate_EmigOcl_IntOpCallExp(it.univaq.coevolution.emfmigrate.EmigOcl.IntOpCallExp object, ContextType context) {
+		return null;
+	}
+	
+	public ResultType interprete_it_univaq_coevolution_emfmigrate_EmigOcl_MulOpCallExp(it.univaq.coevolution.emfmigrate.EmigOcl.MulOpCallExp object, ContextType context) {
+		return null;
+	}
+	
+	public ResultType interprete_it_univaq_coevolution_emfmigrate_EmigOcl_BraceExp(it.univaq.coevolution.emfmigrate.EmigOcl.BraceExp object, ContextType context) {
+		return null;
+	}
+	
 	public ResultType interprete_it_univaq_coevolution_emfmigrate_EmigOcl_CollectionOperationCallExp(it.univaq.coevolution.emfmigrate.EmigOcl.CollectionOperationCallExp object, ContextType context) {
 		return null;
 	}
@@ -554,6 +630,10 @@ public class AbstractEmigOclInterpreter<ResultType, ContextType> {
 	}
 	
 	public ResultType interprete_it_univaq_coevolution_emfmigrate_EmigOcl_OclType(it.univaq.coevolution.emfmigrate.EmigOcl.OclType object, ContextType context) {
+		return null;
+	}
+	
+	public ResultType interprete_it_univaq_coevolution_emfmigrate_EmigOcl_OclModelElementExp(it.univaq.coevolution.emfmigrate.EmigOcl.OclModelElementExp object, ContextType context) {
 		return null;
 	}
 	

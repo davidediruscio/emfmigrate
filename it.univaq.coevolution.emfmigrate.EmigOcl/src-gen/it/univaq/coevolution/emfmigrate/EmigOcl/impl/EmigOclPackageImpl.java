@@ -6,11 +6,13 @@
  */
 package it.univaq.coevolution.emfmigrate.EmigOcl.impl;
 
+import it.univaq.coevolution.emfmigrate.EmigOcl.AddOpCallExp;
 import it.univaq.coevolution.emfmigrate.EmigOcl.Attribute;
 import it.univaq.coevolution.emfmigrate.EmigOcl.BagExp;
 import it.univaq.coevolution.emfmigrate.EmigOcl.BagType;
 import it.univaq.coevolution.emfmigrate.EmigOcl.BooleanExp;
 import it.univaq.coevolution.emfmigrate.EmigOcl.BooleanType;
+import it.univaq.coevolution.emfmigrate.EmigOcl.BraceExp;
 import it.univaq.coevolution.emfmigrate.EmigOcl.CollectionExp;
 import it.univaq.coevolution.emfmigrate.EmigOcl.CollectionOperationCallExp;
 import it.univaq.coevolution.emfmigrate.EmigOcl.CollectionType;
@@ -18,6 +20,7 @@ import it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclFactory;
 import it.univaq.coevolution.emfmigrate.EmigOcl.EmigOclPackage;
 import it.univaq.coevolution.emfmigrate.EmigOcl.EnumLiteralExp;
 import it.univaq.coevolution.emfmigrate.EmigOcl.IfExp;
+import it.univaq.coevolution.emfmigrate.EmigOcl.IntOpCallExp;
 import it.univaq.coevolution.emfmigrate.EmigOcl.IntegerExp;
 import it.univaq.coevolution.emfmigrate.EmigOcl.IntegerType;
 import it.univaq.coevolution.emfmigrate.EmigOcl.IterateExp;
@@ -30,7 +33,9 @@ import it.univaq.coevolution.emfmigrate.EmigOcl.MapElement;
 import it.univaq.coevolution.emfmigrate.EmigOcl.MapExp;
 import it.univaq.coevolution.emfmigrate.EmigOcl.MapType;
 import it.univaq.coevolution.emfmigrate.EmigOcl.Module;
+import it.univaq.coevolution.emfmigrate.EmigOcl.MulOpCallExp;
 import it.univaq.coevolution.emfmigrate.EmigOcl.NavigationOrAttributeCallExp;
+import it.univaq.coevolution.emfmigrate.EmigOcl.NotOpCallExp;
 import it.univaq.coevolution.emfmigrate.EmigOcl.NumericExp;
 import it.univaq.coevolution.emfmigrate.EmigOcl.NumericType;
 import it.univaq.coevolution.emfmigrate.EmigOcl.OclAnyType;
@@ -40,6 +45,7 @@ import it.univaq.coevolution.emfmigrate.EmigOcl.OclFeature;
 import it.univaq.coevolution.emfmigrate.EmigOcl.OclFeatureDefinition;
 import it.univaq.coevolution.emfmigrate.EmigOcl.OclModel;
 import it.univaq.coevolution.emfmigrate.EmigOcl.OclModelElement;
+import it.univaq.coevolution.emfmigrate.EmigOcl.OclModelElementExp;
 import it.univaq.coevolution.emfmigrate.EmigOcl.OclType;
 import it.univaq.coevolution.emfmigrate.EmigOcl.OclUndefinedExp;
 import it.univaq.coevolution.emfmigrate.EmigOcl.Operation;
@@ -53,6 +59,8 @@ import it.univaq.coevolution.emfmigrate.EmigOcl.PrimitiveExp;
 import it.univaq.coevolution.emfmigrate.EmigOcl.PropertyCallExp;
 import it.univaq.coevolution.emfmigrate.EmigOcl.RealExp;
 import it.univaq.coevolution.emfmigrate.EmigOcl.RealType;
+import it.univaq.coevolution.emfmigrate.EmigOcl.RelOpCallExp;
+import it.univaq.coevolution.emfmigrate.EmigOcl.SelfExp;
 import it.univaq.coevolution.emfmigrate.EmigOcl.SequenceExp;
 import it.univaq.coevolution.emfmigrate.EmigOcl.SequenceType;
 import it.univaq.coevolution.emfmigrate.EmigOcl.SetExp;
@@ -72,7 +80,6 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
-
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
 /**
@@ -116,6 +123,13 @@ public class EmigOclPackageImpl extends EPackageImpl implements EmigOclPackage {
 	 * @generated
 	 */
 	private EClass superExpEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass selfExpEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -269,6 +283,48 @@ public class EmigOclPackageImpl extends EPackageImpl implements EmigOclPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass notOpCallExpEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass relOpCallExpEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass addOpCallExpEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass intOpCallExpEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass mulOpCallExpEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass braceExpEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass collectionOperationCallExpEClass = null;
 
 	/**
@@ -340,6 +396,13 @@ public class EmigOclPackageImpl extends EPackageImpl implements EmigOclPackage {
 	 * @generated
 	 */
 	private EClass oclTypeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass oclModelElementExpEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -807,6 +870,15 @@ public class EmigOclPackageImpl extends EPackageImpl implements EmigOclPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getSelfExp() {
+		return selfExpEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public EClass getPrimitiveExp() {
 		return primitiveExpEClass;
 	}
@@ -1133,6 +1205,60 @@ public class EmigOclPackageImpl extends EPackageImpl implements EmigOclPackage {
 	 */
 	public EClass getOperatorCallExp() {
 		return operatorCallExpEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getNotOpCallExp() {
+		return notOpCallExpEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getRelOpCallExp() {
+		return relOpCallExpEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getAddOpCallExp() {
+		return addOpCallExpEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getIntOpCallExp() {
+		return intOpCallExpEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getMulOpCallExp() {
+		return mulOpCallExpEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getBraceExp() {
+		return braceExpEClass;
 	}
 
 	/**
@@ -1484,6 +1610,33 @@ public class EmigOclPackageImpl extends EPackageImpl implements EmigOclPackage {
 	 */
 	public EReference getOclType_VariableDeclaration() {
 		return (EReference)oclTypeEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getOclModelElementExp() {
+		return oclModelElementExpEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getOclModelElementExp_Model() {
+		return (EReference)oclModelElementExpEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getOclModelElementExp_Name() {
+		return (EAttribute)oclModelElementExpEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -1976,6 +2129,8 @@ public class EmigOclPackageImpl extends EPackageImpl implements EmigOclPackage {
 
 		superExpEClass = createEClass(SUPER_EXP);
 
+		selfExpEClass = createEClass(SELF_EXP);
+
 		primitiveExpEClass = createEClass(PRIMITIVE_EXP);
 
 		stringExpEClass = createEClass(STRING_EXP);
@@ -2034,6 +2189,18 @@ public class EmigOclPackageImpl extends EPackageImpl implements EmigOclPackage {
 
 		operatorCallExpEClass = createEClass(OPERATOR_CALL_EXP);
 
+		notOpCallExpEClass = createEClass(NOT_OP_CALL_EXP);
+
+		relOpCallExpEClass = createEClass(REL_OP_CALL_EXP);
+
+		addOpCallExpEClass = createEClass(ADD_OP_CALL_EXP);
+
+		intOpCallExpEClass = createEClass(INT_OP_CALL_EXP);
+
+		mulOpCallExpEClass = createEClass(MUL_OP_CALL_EXP);
+
+		braceExpEClass = createEClass(BRACE_EXP);
+
 		collectionOperationCallExpEClass = createEClass(COLLECTION_OPERATION_CALL_EXP);
 
 		loopExpEClass = createEClass(LOOP_EXP);
@@ -2083,6 +2250,10 @@ public class EmigOclPackageImpl extends EPackageImpl implements EmigOclPackage {
 		createEReference(oclTypeEClass, OCL_TYPE__COLLECTION_TYPES);
 		createEReference(oclTypeEClass, OCL_TYPE__TUPLE_TYPE_ATTRIBUTE);
 		createEReference(oclTypeEClass, OCL_TYPE__VARIABLE_DECLARATION);
+
+		oclModelElementExpEClass = createEClass(OCL_MODEL_ELEMENT_EXP);
+		createEReference(oclModelElementExpEClass, OCL_MODEL_ELEMENT_EXP__MODEL);
+		createEAttribute(oclModelElementExpEClass, OCL_MODEL_ELEMENT_EXP__NAME);
 
 		primitiveEClass = createEClass(PRIMITIVE);
 
@@ -2188,6 +2359,7 @@ public class EmigOclPackageImpl extends EPackageImpl implements EmigOclPackage {
 		oclExpressionEClass.getESuperTypes().add(this.getLocatedElement());
 		variableExpEClass.getESuperTypes().add(this.getOclExpression());
 		superExpEClass.getESuperTypes().add(this.getOclExpression());
+		selfExpEClass.getESuperTypes().add(this.getOclExpression());
 		primitiveExpEClass.getESuperTypes().add(this.getOclExpression());
 		stringExpEClass.getESuperTypes().add(this.getPrimitiveExp());
 		booleanExpEClass.getESuperTypes().add(this.getPrimitiveExp());
@@ -2209,6 +2381,12 @@ public class EmigOclPackageImpl extends EPackageImpl implements EmigOclPackage {
 		navigationOrAttributeCallExpEClass.getESuperTypes().add(this.getPropertyCallExp());
 		operationCallExpEClass.getESuperTypes().add(this.getPropertyCallExp());
 		operatorCallExpEClass.getESuperTypes().add(this.getOperationCallExp());
+		notOpCallExpEClass.getESuperTypes().add(this.getOperatorCallExp());
+		relOpCallExpEClass.getESuperTypes().add(this.getOperatorCallExp());
+		addOpCallExpEClass.getESuperTypes().add(this.getOperatorCallExp());
+		intOpCallExpEClass.getESuperTypes().add(this.getOperatorCallExp());
+		mulOpCallExpEClass.getESuperTypes().add(this.getOperatorCallExp());
+		braceExpEClass.getESuperTypes().add(this.getPropertyCallExp());
 		collectionOperationCallExpEClass.getESuperTypes().add(this.getOperationCallExp());
 		loopExpEClass.getESuperTypes().add(this.getPropertyCallExp());
 		iterateExpEClass.getESuperTypes().add(this.getLoopExp());
@@ -2219,7 +2397,8 @@ public class EmigOclPackageImpl extends EPackageImpl implements EmigOclPackage {
 		iteratorEClass.getESuperTypes().add(this.getVariableDeclaration());
 		parameterEClass.getESuperTypes().add(this.getVariableDeclaration());
 		collectionTypeEClass.getESuperTypes().add(this.getOclType());
-		oclTypeEClass.getESuperTypes().add(this.getOclExpression());
+		oclTypeEClass.getESuperTypes().add(this.getLocatedElement());
+		oclModelElementExpEClass.getESuperTypes().add(this.getOclExpression());
 		primitiveEClass.getESuperTypes().add(this.getOclType());
 		stringTypeEClass.getESuperTypes().add(this.getPrimitive());
 		booleanTypeEClass.getESuperTypes().add(this.getPrimitive());
@@ -2244,10 +2423,10 @@ public class EmigOclPackageImpl extends EPackageImpl implements EmigOclPackage {
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(locatedElementEClass, LocatedElement.class, "LocatedElement", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getLocatedElement_Line(), this.getInteger(), "line", null, 1, 1, LocatedElement.class, IS_TRANSIENT, IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
-		initEAttribute(getLocatedElement_Column(), this.getInteger(), "column", null, 1, 1, LocatedElement.class, IS_TRANSIENT, IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
-		initEAttribute(getLocatedElement_CharStart(), this.getInteger(), "charStart", null, 1, 1, LocatedElement.class, IS_TRANSIENT, IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
-		initEAttribute(getLocatedElement_CharEnd(), this.getInteger(), "charEnd", null, 1, 1, LocatedElement.class, IS_TRANSIENT, IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLocatedElement_Line(), this.getInteger(), "line", "-1", 1, 1, LocatedElement.class, IS_TRANSIENT, IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLocatedElement_Column(), this.getInteger(), "column", "-1", 1, 1, LocatedElement.class, IS_TRANSIENT, IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLocatedElement_CharStart(), this.getInteger(), "charStart", "-1", 1, 1, LocatedElement.class, IS_TRANSIENT, IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLocatedElement_CharEnd(), this.getInteger(), "charEnd", "-1", 1, 1, LocatedElement.class, IS_TRANSIENT, IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 
 		initEClass(moduleEClass, Module.class, "Module", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getModule_Name(), this.getString(), "name", null, 1, 1, Module.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2272,6 +2451,8 @@ public class EmigOclPackageImpl extends EPackageImpl implements EmigOclPackage {
 		initEReference(getVariableExp_ReferredVariable(), this.getVariableDeclaration(), this.getVariableDeclaration_VariableExp(), "referredVariable", null, 1, 1, VariableExp.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(superExpEClass, SuperExp.class, "SuperExp", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(selfExpEClass, SelfExp.class, "SelfExp", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(primitiveExpEClass, PrimitiveExp.class, "PrimitiveExp", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
@@ -2331,6 +2512,18 @@ public class EmigOclPackageImpl extends EPackageImpl implements EmigOclPackage {
 
 		initEClass(operatorCallExpEClass, OperatorCallExp.class, "OperatorCallExp", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
+		initEClass(notOpCallExpEClass, NotOpCallExp.class, "NotOpCallExp", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(relOpCallExpEClass, RelOpCallExp.class, "RelOpCallExp", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(addOpCallExpEClass, AddOpCallExp.class, "AddOpCallExp", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(intOpCallExpEClass, IntOpCallExp.class, "IntOpCallExp", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(mulOpCallExpEClass, MulOpCallExp.class, "MulOpCallExp", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(braceExpEClass, BraceExp.class, "BraceExp", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
 		initEClass(collectionOperationCallExpEClass, CollectionOperationCallExp.class, "CollectionOperationCallExp", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(loopExpEClass, LoopExp.class, "LoopExp", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -2369,7 +2562,7 @@ public class EmigOclPackageImpl extends EPackageImpl implements EmigOclPackage {
 		initEClass(collectionTypeEClass, CollectionType.class, "CollectionType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getCollectionType_ElementType(), this.getOclType(), this.getOclType_CollectionTypes(), "elementType", null, 1, 1, CollectionType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
-		initEClass(oclTypeEClass, OclType.class, "OclType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(oclTypeEClass, OclType.class, "OclType", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getOclType_Name(), this.getString(), "name", null, 1, 1, OclType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getOclType_Definitions(), this.getOclContextDefinition(), this.getOclContextDefinition_Context_(), "definitions", null, 0, 1, OclType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getOclType_OclExpression(), this.getOclExpression(), this.getOclExpression_Type(), "oclExpression", null, 0, 1, OclType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
@@ -2380,6 +2573,10 @@ public class EmigOclPackageImpl extends EPackageImpl implements EmigOclPackage {
 		initEReference(getOclType_CollectionTypes(), this.getCollectionType(), this.getCollectionType_ElementType(), "collectionTypes", null, 0, 1, OclType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getOclType_TupleTypeAttribute(), this.getTupleTypeAttribute(), this.getTupleTypeAttribute_Type(), "tupleTypeAttribute", null, 0, 1, OclType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 		initEReference(getOclType_VariableDeclaration(), this.getVariableDeclaration(), this.getVariableDeclaration_Type(), "variableDeclaration", null, 0, 1, OclType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
+
+		initEClass(oclModelElementExpEClass, OclModelElementExp.class, "OclModelElementExp", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getOclModelElementExp_Model(), this.getOclModel(), null, "model", null, 1, 1, OclModelElementExp.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getOclModelElementExp_Name(), this.getString(), "name", null, 1, 1, OclModelElementExp.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, !IS_ORDERED);
 
 		initEClass(primitiveEClass, Primitive.class, "Primitive", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 

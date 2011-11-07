@@ -49,7 +49,7 @@ import org.eclipse.emf.ecore.util.EcoreUtil;
  *
  * @generated
  */
-public class OclTypeImpl extends OclExpressionImpl implements OclType {
+public abstract class OclTypeImpl extends LocatedElementImpl implements OclType {
 	/**
 	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->

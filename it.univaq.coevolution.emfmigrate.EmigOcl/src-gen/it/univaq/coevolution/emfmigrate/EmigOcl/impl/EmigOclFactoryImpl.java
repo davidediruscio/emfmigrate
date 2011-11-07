@@ -64,6 +64,7 @@ public class EmigOclFactoryImpl extends EFactoryImpl implements EmigOclFactory {
 			case EmigOclPackage.MODULE: return createModule();
 			case EmigOclPackage.VARIABLE_EXP: return createVariableExp();
 			case EmigOclPackage.SUPER_EXP: return createSuperExp();
+			case EmigOclPackage.SELF_EXP: return createSelfExp();
 			case EmigOclPackage.STRING_EXP: return createStringExp();
 			case EmigOclPackage.BOOLEAN_EXP: return createBooleanExp();
 			case EmigOclPackage.REAL_EXP: return createRealExp();
@@ -81,6 +82,12 @@ public class EmigOclFactoryImpl extends EFactoryImpl implements EmigOclFactory {
 			case EmigOclPackage.NAVIGATION_OR_ATTRIBUTE_CALL_EXP: return createNavigationOrAttributeCallExp();
 			case EmigOclPackage.OPERATION_CALL_EXP: return createOperationCallExp();
 			case EmigOclPackage.OPERATOR_CALL_EXP: return createOperatorCallExp();
+			case EmigOclPackage.NOT_OP_CALL_EXP: return createNotOpCallExp();
+			case EmigOclPackage.REL_OP_CALL_EXP: return createRelOpCallExp();
+			case EmigOclPackage.ADD_OP_CALL_EXP: return createAddOpCallExp();
+			case EmigOclPackage.INT_OP_CALL_EXP: return createIntOpCallExp();
+			case EmigOclPackage.MUL_OP_CALL_EXP: return createMulOpCallExp();
+			case EmigOclPackage.BRACE_EXP: return createBraceExp();
 			case EmigOclPackage.COLLECTION_OPERATION_CALL_EXP: return createCollectionOperationCallExp();
 			case EmigOclPackage.ITERATE_EXP: return createIterateExp();
 			case EmigOclPackage.ITERATOR_EXP: return createIteratorExp();
@@ -90,7 +97,7 @@ public class EmigOclFactoryImpl extends EFactoryImpl implements EmigOclFactory {
 			case EmigOclPackage.ITERATOR: return createIterator();
 			case EmigOclPackage.PARAMETER: return createParameter();
 			case EmigOclPackage.COLLECTION_TYPE: return createCollectionType();
-			case EmigOclPackage.OCL_TYPE: return createOclType();
+			case EmigOclPackage.OCL_MODEL_ELEMENT_EXP: return createOclModelElementExp();
 			case EmigOclPackage.STRING_TYPE: return createStringType();
 			case EmigOclPackage.BOOLEAN_TYPE: return createBooleanType();
 			case EmigOclPackage.INTEGER_TYPE: return createIntegerType();
@@ -184,6 +191,16 @@ public class EmigOclFactoryImpl extends EFactoryImpl implements EmigOclFactory {
 	public SuperExp createSuperExp() {
 		SuperExpImpl superExp = new SuperExpImpl();
 		return superExp;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public SelfExp createSelfExp() {
+		SelfExpImpl selfExp = new SelfExpImpl();
+		return selfExp;
 	}
 
 	/**
@@ -361,6 +378,66 @@ public class EmigOclFactoryImpl extends EFactoryImpl implements EmigOclFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public NotOpCallExp createNotOpCallExp() {
+		NotOpCallExpImpl notOpCallExp = new NotOpCallExpImpl();
+		return notOpCallExp;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public RelOpCallExp createRelOpCallExp() {
+		RelOpCallExpImpl relOpCallExp = new RelOpCallExpImpl();
+		return relOpCallExp;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public AddOpCallExp createAddOpCallExp() {
+		AddOpCallExpImpl addOpCallExp = new AddOpCallExpImpl();
+		return addOpCallExp;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public IntOpCallExp createIntOpCallExp() {
+		IntOpCallExpImpl intOpCallExp = new IntOpCallExpImpl();
+		return intOpCallExp;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public MulOpCallExp createMulOpCallExp() {
+		MulOpCallExpImpl mulOpCallExp = new MulOpCallExpImpl();
+		return mulOpCallExp;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public BraceExp createBraceExp() {
+		BraceExpImpl braceExp = new BraceExpImpl();
+		return braceExp;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public CollectionOperationCallExp createCollectionOperationCallExp() {
 		CollectionOperationCallExpImpl collectionOperationCallExp = new CollectionOperationCallExpImpl();
 		return collectionOperationCallExp;
@@ -451,9 +528,9 @@ public class EmigOclFactoryImpl extends EFactoryImpl implements EmigOclFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public OclType createOclType() {
-		OclTypeImpl oclType = new OclTypeImpl();
-		return oclType;
+	public OclModelElementExp createOclModelElementExp() {
+		OclModelElementExpImpl oclModelElementExp = new OclModelElementExpImpl();
+		return oclModelElementExp;
 	}
 
 	/**

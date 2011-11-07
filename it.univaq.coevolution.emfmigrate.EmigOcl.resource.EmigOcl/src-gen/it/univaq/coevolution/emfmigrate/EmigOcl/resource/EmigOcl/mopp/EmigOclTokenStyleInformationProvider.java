@@ -9,7 +9,13 @@ package it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.mopp;
 public class EmigOclTokenStyleInformationProvider {
 	
 	public it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.IEmigOclTokenStyle getDefaultTokenStyle(String tokenName) {
-		if ("TXTOP".equals(tokenName)) {
+		if ("NOTOP".equals(tokenName)) {
+			return new it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.mopp.EmigOclTokenStyle(new int[] {0x80, 0x00, 0x40}, null, true, false, false, false);
+		}
+		if ("BOOLOP".equals(tokenName)) {
+			return new it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.mopp.EmigOclTokenStyle(new int[] {0x80, 0x00, 0x40}, null, true, false, false, false);
+		}
+		if ("INTOP".equals(tokenName)) {
 			return new it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.mopp.EmigOclTokenStyle(new int[] {0x80, 0x00, 0x40}, null, true, false, false, false);
 		}
 		if ("COMMENT".equals(tokenName)) {
@@ -66,6 +72,9 @@ public class EmigOclTokenStyleInformationProvider {
 		if ("module".equals(tokenName)) {
 			return new it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.mopp.EmigOclTokenStyle(new int[] {0x80, 0x00, 0x55}, null, true, false, false, false);
 		}
+		if ("models".equals(tokenName)) {
+			return new it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.mopp.EmigOclTokenStyle(new int[] {0x80, 0x00, 0x55}, null, true, false, false, false);
+		}
 		if ("def".equals(tokenName)) {
 			return new it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.mopp.EmigOclTokenStyle(new int[] {0x80, 0x00, 0x55}, null, true, false, false, false);
 		}
@@ -73,6 +82,9 @@ public class EmigOclTokenStyleInformationProvider {
 			return new it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.mopp.EmigOclTokenStyle(new int[] {0x80, 0x00, 0x55}, null, true, false, false, false);
 		}
 		if ("super".equals(tokenName)) {
+			return new it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.mopp.EmigOclTokenStyle(new int[] {0x80, 0x00, 0x55}, null, true, false, false, false);
+		}
+		if ("self".equals(tokenName)) {
 			return new it.univaq.coevolution.emfmigrate.EmigOcl.resource.EmigOcl.mopp.EmigOclTokenStyle(new int[] {0x80, 0x00, 0x55}, null, true, false, false, false);
 		}
 		if ("Bag".equals(tokenName)) {

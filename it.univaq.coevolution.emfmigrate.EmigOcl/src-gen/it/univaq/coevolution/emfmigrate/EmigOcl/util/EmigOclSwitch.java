@@ -106,6 +106,14 @@ public class EmigOclSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case EmigOclPackage.SELF_EXP: {
+				SelfExp selfExp = (SelfExp)theEObject;
+				T result = caseSelfExp(selfExp);
+				if (result == null) result = caseOclExpression(selfExp);
+				if (result == null) result = caseLocatedElement(selfExp);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			case EmigOclPackage.PRIMITIVE_EXP: {
 				PrimitiveExp primitiveExp = (PrimitiveExp)theEObject;
 				T result = casePrimitiveExp(primitiveExp);
@@ -288,6 +296,70 @@ public class EmigOclSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
+			case EmigOclPackage.NOT_OP_CALL_EXP: {
+				NotOpCallExp notOpCallExp = (NotOpCallExp)theEObject;
+				T result = caseNotOpCallExp(notOpCallExp);
+				if (result == null) result = caseOperatorCallExp(notOpCallExp);
+				if (result == null) result = caseOperationCallExp(notOpCallExp);
+				if (result == null) result = casePropertyCallExp(notOpCallExp);
+				if (result == null) result = caseOclExpression(notOpCallExp);
+				if (result == null) result = caseLocatedElement(notOpCallExp);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case EmigOclPackage.REL_OP_CALL_EXP: {
+				RelOpCallExp relOpCallExp = (RelOpCallExp)theEObject;
+				T result = caseRelOpCallExp(relOpCallExp);
+				if (result == null) result = caseOperatorCallExp(relOpCallExp);
+				if (result == null) result = caseOperationCallExp(relOpCallExp);
+				if (result == null) result = casePropertyCallExp(relOpCallExp);
+				if (result == null) result = caseOclExpression(relOpCallExp);
+				if (result == null) result = caseLocatedElement(relOpCallExp);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case EmigOclPackage.ADD_OP_CALL_EXP: {
+				AddOpCallExp addOpCallExp = (AddOpCallExp)theEObject;
+				T result = caseAddOpCallExp(addOpCallExp);
+				if (result == null) result = caseOperatorCallExp(addOpCallExp);
+				if (result == null) result = caseOperationCallExp(addOpCallExp);
+				if (result == null) result = casePropertyCallExp(addOpCallExp);
+				if (result == null) result = caseOclExpression(addOpCallExp);
+				if (result == null) result = caseLocatedElement(addOpCallExp);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case EmigOclPackage.INT_OP_CALL_EXP: {
+				IntOpCallExp intOpCallExp = (IntOpCallExp)theEObject;
+				T result = caseIntOpCallExp(intOpCallExp);
+				if (result == null) result = caseOperatorCallExp(intOpCallExp);
+				if (result == null) result = caseOperationCallExp(intOpCallExp);
+				if (result == null) result = casePropertyCallExp(intOpCallExp);
+				if (result == null) result = caseOclExpression(intOpCallExp);
+				if (result == null) result = caseLocatedElement(intOpCallExp);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case EmigOclPackage.MUL_OP_CALL_EXP: {
+				MulOpCallExp mulOpCallExp = (MulOpCallExp)theEObject;
+				T result = caseMulOpCallExp(mulOpCallExp);
+				if (result == null) result = caseOperatorCallExp(mulOpCallExp);
+				if (result == null) result = caseOperationCallExp(mulOpCallExp);
+				if (result == null) result = casePropertyCallExp(mulOpCallExp);
+				if (result == null) result = caseOclExpression(mulOpCallExp);
+				if (result == null) result = caseLocatedElement(mulOpCallExp);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case EmigOclPackage.BRACE_EXP: {
+				BraceExp braceExp = (BraceExp)theEObject;
+				T result = caseBraceExp(braceExp);
+				if (result == null) result = casePropertyCallExp(braceExp);
+				if (result == null) result = caseOclExpression(braceExp);
+				if (result == null) result = caseLocatedElement(braceExp);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
 			case EmigOclPackage.COLLECTION_OPERATION_CALL_EXP: {
 				CollectionOperationCallExp collectionOperationCallExp = (CollectionOperationCallExp)theEObject;
 				T result = caseCollectionOperationCallExp(collectionOperationCallExp);
@@ -370,7 +442,6 @@ public class EmigOclSwitch<T> extends Switch<T> {
 				CollectionType collectionType = (CollectionType)theEObject;
 				T result = caseCollectionType(collectionType);
 				if (result == null) result = caseOclType(collectionType);
-				if (result == null) result = caseOclExpression(collectionType);
 				if (result == null) result = caseLocatedElement(collectionType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
@@ -378,8 +449,15 @@ public class EmigOclSwitch<T> extends Switch<T> {
 			case EmigOclPackage.OCL_TYPE: {
 				OclType oclType = (OclType)theEObject;
 				T result = caseOclType(oclType);
-				if (result == null) result = caseOclExpression(oclType);
 				if (result == null) result = caseLocatedElement(oclType);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case EmigOclPackage.OCL_MODEL_ELEMENT_EXP: {
+				OclModelElementExp oclModelElementExp = (OclModelElementExp)theEObject;
+				T result = caseOclModelElementExp(oclModelElementExp);
+				if (result == null) result = caseOclExpression(oclModelElementExp);
+				if (result == null) result = caseLocatedElement(oclModelElementExp);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -387,7 +465,6 @@ public class EmigOclSwitch<T> extends Switch<T> {
 				Primitive primitive = (Primitive)theEObject;
 				T result = casePrimitive(primitive);
 				if (result == null) result = caseOclType(primitive);
-				if (result == null) result = caseOclExpression(primitive);
 				if (result == null) result = caseLocatedElement(primitive);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
@@ -397,7 +474,6 @@ public class EmigOclSwitch<T> extends Switch<T> {
 				T result = caseStringType(stringType);
 				if (result == null) result = casePrimitive(stringType);
 				if (result == null) result = caseOclType(stringType);
-				if (result == null) result = caseOclExpression(stringType);
 				if (result == null) result = caseLocatedElement(stringType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
@@ -407,7 +483,6 @@ public class EmigOclSwitch<T> extends Switch<T> {
 				T result = caseBooleanType(booleanType);
 				if (result == null) result = casePrimitive(booleanType);
 				if (result == null) result = caseOclType(booleanType);
-				if (result == null) result = caseOclExpression(booleanType);
 				if (result == null) result = caseLocatedElement(booleanType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
@@ -417,7 +492,6 @@ public class EmigOclSwitch<T> extends Switch<T> {
 				T result = caseNumericType(numericType);
 				if (result == null) result = casePrimitive(numericType);
 				if (result == null) result = caseOclType(numericType);
-				if (result == null) result = caseOclExpression(numericType);
 				if (result == null) result = caseLocatedElement(numericType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
@@ -428,7 +502,6 @@ public class EmigOclSwitch<T> extends Switch<T> {
 				if (result == null) result = caseNumericType(integerType);
 				if (result == null) result = casePrimitive(integerType);
 				if (result == null) result = caseOclType(integerType);
-				if (result == null) result = caseOclExpression(integerType);
 				if (result == null) result = caseLocatedElement(integerType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
@@ -439,7 +512,6 @@ public class EmigOclSwitch<T> extends Switch<T> {
 				if (result == null) result = caseNumericType(realType);
 				if (result == null) result = casePrimitive(realType);
 				if (result == null) result = caseOclType(realType);
-				if (result == null) result = caseOclExpression(realType);
 				if (result == null) result = caseLocatedElement(realType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
@@ -449,7 +521,6 @@ public class EmigOclSwitch<T> extends Switch<T> {
 				T result = caseBagType(bagType);
 				if (result == null) result = caseCollectionType(bagType);
 				if (result == null) result = caseOclType(bagType);
-				if (result == null) result = caseOclExpression(bagType);
 				if (result == null) result = caseLocatedElement(bagType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
@@ -459,7 +530,6 @@ public class EmigOclSwitch<T> extends Switch<T> {
 				T result = caseOrderedSetType(orderedSetType);
 				if (result == null) result = caseCollectionType(orderedSetType);
 				if (result == null) result = caseOclType(orderedSetType);
-				if (result == null) result = caseOclExpression(orderedSetType);
 				if (result == null) result = caseLocatedElement(orderedSetType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
@@ -469,7 +539,6 @@ public class EmigOclSwitch<T> extends Switch<T> {
 				T result = caseSequenceType(sequenceType);
 				if (result == null) result = caseCollectionType(sequenceType);
 				if (result == null) result = caseOclType(sequenceType);
-				if (result == null) result = caseOclExpression(sequenceType);
 				if (result == null) result = caseLocatedElement(sequenceType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
@@ -479,7 +548,6 @@ public class EmigOclSwitch<T> extends Switch<T> {
 				T result = caseSetType(setType);
 				if (result == null) result = caseCollectionType(setType);
 				if (result == null) result = caseOclType(setType);
-				if (result == null) result = caseOclExpression(setType);
 				if (result == null) result = caseLocatedElement(setType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
@@ -488,7 +556,6 @@ public class EmigOclSwitch<T> extends Switch<T> {
 				OclAnyType oclAnyType = (OclAnyType)theEObject;
 				T result = caseOclAnyType(oclAnyType);
 				if (result == null) result = caseOclType(oclAnyType);
-				if (result == null) result = caseOclExpression(oclAnyType);
 				if (result == null) result = caseLocatedElement(oclAnyType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
@@ -497,7 +564,6 @@ public class EmigOclSwitch<T> extends Switch<T> {
 				TupleType tupleType = (TupleType)theEObject;
 				T result = caseTupleType(tupleType);
 				if (result == null) result = caseOclType(tupleType);
-				if (result == null) result = caseOclExpression(tupleType);
 				if (result == null) result = caseLocatedElement(tupleType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
@@ -513,7 +579,6 @@ public class EmigOclSwitch<T> extends Switch<T> {
 				OclModelElement oclModelElement = (OclModelElement)theEObject;
 				T result = caseOclModelElement(oclModelElement);
 				if (result == null) result = caseOclType(oclModelElement);
-				if (result == null) result = caseOclExpression(oclModelElement);
 				if (result == null) result = caseLocatedElement(oclModelElement);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
@@ -522,7 +587,6 @@ public class EmigOclSwitch<T> extends Switch<T> {
 				MapType mapType = (MapType)theEObject;
 				T result = caseMapType(mapType);
 				if (result == null) result = caseOclType(mapType);
-				if (result == null) result = caseOclExpression(mapType);
 				if (result == null) result = caseLocatedElement(mapType);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
@@ -647,6 +711,21 @@ public class EmigOclSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseSuperExp(SuperExp object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Self Exp</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Self Exp</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseSelfExp(SelfExp object) {
 		return null;
 	}
 
@@ -966,6 +1045,96 @@ public class EmigOclSwitch<T> extends Switch<T> {
 	}
 
 	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Not Op Call Exp</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Not Op Call Exp</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseNotOpCallExp(NotOpCallExp object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Rel Op Call Exp</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Rel Op Call Exp</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseRelOpCallExp(RelOpCallExp object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Add Op Call Exp</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Add Op Call Exp</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseAddOpCallExp(AddOpCallExp object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Int Op Call Exp</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Int Op Call Exp</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseIntOpCallExp(IntOpCallExp object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Mul Op Call Exp</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Mul Op Call Exp</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseMulOpCallExp(MulOpCallExp object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Brace Exp</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Brace Exp</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseBraceExp(BraceExp object) {
+		return null;
+	}
+
+	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Collection Operation Call Exp</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -1127,6 +1296,21 @@ public class EmigOclSwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseOclType(OclType object) {
+		return null;
+	}
+
+	/**
+	 * Returns the result of interpreting the object as an instance of '<em>Ocl Model Element Exp</em>'.
+	 * <!-- begin-user-doc -->
+	 * This implementation returns null;
+	 * returning a non-null result will terminate the switch.
+	 * <!-- end-user-doc -->
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Ocl Model Element Exp</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
+	public T caseOclModelElementExp(OclModelElementExp object) {
 		return null;
 	}
 
