@@ -162,13 +162,13 @@ rule Rule {
 			applier <- applier
 		),
 		applier: EMFTVM!CodeBlock (
-			localVariables <- s.rewritingRules -> collect(r | r.migratorSX) -> flatten()
-					-> prepend(s.filter) -> union(s.rewritingRules -> collect(r | r.
-					migratorDX) -> flatten() -> reject(e | e.rewritingRule.migratorSX ->
-					exists(n | n.name = e.name))) -> collect(n | thisModule.
-					resolveTemp(n, 'lv2')) -> append(thisModule.resolveTemp(s.filter,
+			localVariables <- Sequence{s.filter}->union(s.rewritingRules -> collect(r | r.migratorSX) -> flatten())
+					-> union(s.rewritingRules ->
+					collect(r | r.migratorDX) -> flatten() -> reject(e | e.rewritingRule.
+					migratorSX -> exists(n | n.name = e.name))) -> collect(dx | thisModule.
+					resolveTemp(dx, 'lv2')) -> append(thisModule.resolveTemp(s.filter,
 					'ref2')) -> union(s.filter.setters -> collect(m | m.par -> collect(p
-					| thisModule.resolveTemp(p, 'lv2'))) -> flatten()),
+					| thisModule.resolveTemp(p, 'lv2'))) -> flatten())->prepend(atrace),
 			nested <- Sequence{thisModule.resolveTemp(s.filter, 'initRef2')} -> union(s.
 					filter.setters -> collect(e | e.par -> collect(p | thisModule.
 					resolveTemp(p, 'initLv2'))) -> flatten()) -> union(s.rewritingRules
@@ -185,6 +185,11 @@ rule Rule {
 			endLine <- s.endline,
 			startChar <- s.offset,
 			endChar <- s.endoffset
+		),
+		atrace: EMFTVM!LocalVariable (
+			name <- '__trace__'
+--			type <- 'TraceLink',
+--			typeModel <- 'TRACE'
 		),
 		invoke_allcbs: EMFTVM!InvokeAllCbs,
 		matcher: EMFTVM!CodeBlock (
@@ -313,8 +318,7 @@ rule MigratorSXDeleted extends MigratorSX {
 		pop_dx: EMFTVM!Pop --[sx]
 		,
 		delete_lv2: EMFTVM!Delete --[]
-	
-		 }
+	  }
 
 rule FilterMigratorSX {
 	from
@@ -409,13 +413,12 @@ rule DotNavigationObjSX {
 		)
 }
 
-rule MigratorDX {
+rule MigratorDX extends MigratorDXRefining {
 	from
 		s: EMig!MigratorDX in IN (
 			-- create only output elements for new migratorDX
-		not s.rewritingRule.migratorSX -> exists(n | n.name = s.name)
-		) --TODO: maps to multiple input elements in migratorSX
-	
+			not s.rewritingRule.migratorSX -> exists(n | n.name = s.name)
+		)
 	to
 		t: EMFTVM!OutputRuleElement (
 			name <- s.name,
@@ -428,29 +431,12 @@ rule MigratorDX {
 			name <- s.name,
 			type <- s.elementDX.qName,
 			typeModel <- s.typeModel
-		),
-		cb: EMFTVM!CodeBlock (
-			nested <- s.filterDX,
-			code <- Sequence{invoke_allCbs},
-			lineNumbers <- Sequence{ln}
-		),
-		invoke_allCbs: EMFTVM!InvokeAllCbs,
-		ln: EMFTVM!LineNumber (
-			startLine <- s.line,
-			endLine <- s.endline,
-			startChar <- s.offset,
-			endChar <- s.endoffset,
-			instructions <- Sequence{invoke_allCbs}
 		)
 }
 
 rule MigratorDXRefining {
 	from
-		s: EMig!MigratorDX in IN (
-			-- create only output elements for new migratorDX
-		s.rewritingRule.migratorSX -> exists(n | n.name = s.name)
-		) --TODO: maps to multiple input elements in migratorSX
-	
+		s: EMig!MigratorDX in IN
 	to
 		cb: EMFTVM!CodeBlock (
 			nested <- s.filterDX,
@@ -876,9 +862,8 @@ rule Parameter {
 						lv1_dupS,
 						lv1_get_vr,
 						lv1_dup_valueRef,
-						lv1_push_null,
-						lv1_invoke_eq2,
-						lv1_if_null,
+						lv1_invoke_isEmpty,
+						lv1_if_empty,
 						lv1_store,
 						lv1_pop_s2,
 						lv1_goto2,
@@ -909,9 +894,8 @@ rule Parameter {
 						lv1_dupS,
 						lv1_get_vr,
 						lv1_dup_valueRef,
-						lv1_push_null,
-						lv1_invoke_eq2,
-						lv1_if_null,
+						lv1_invoke_isEmpty,
+						lv1_if_empty,
 						lv1_store,
 						lv1_pop_s2,
 						lv1_goto2,
@@ -967,14 +951,11 @@ rule Parameter {
 		),
 		lv1_dup_valueRef: EMFTVM!Dup --[it,s,valueRef,valueRef]
 		,
-		lv1_push_null: EMFTVM!Push --[it,s,valueRef,valueRef,null]
-		,
-		lv1_invoke_eq2: EMFTVM!Invoke (
-			argcount <- 1,
-			opname <- '='
+		lv1_invoke_isEmpty: EMFTVM!Invoke (
+			opname <- 'isEmpty'
 		) --[it,s,valueRef,Bool]
 		,
-		lv1_if_null: EMFTVM!If (
+		lv1_if_empty: EMFTVM!If (
 			target <- lv1_goto2
 		) --[it,s,valueRef]
 		,
@@ -1016,9 +997,8 @@ rule Parameter {
 						lv2_dupS,
 						lv2_get_vr,
 						lv2_dup_valueRef,
-						lv2_push_null,
-						lv2_invoke_eq2,
-						lv2_if_null,
+						lv2_invoke_isEmpty,
+						lv2_if_empty,
 						lv2_store,
 						lv2_pop_s2,
 						lv2_goto2,
@@ -1049,9 +1029,8 @@ rule Parameter {
 						lv2_dupS,
 						lv2_get_vr,
 						lv2_dup_valueRef,
-						lv2_push_null,
-						lv2_invoke_eq2,
-						lv2_if_null,
+						lv2_invoke_isEmpty,
+						lv2_if_empty,
 						lv2_store,
 						lv2_pop_s2,
 						lv2_goto2,
@@ -1125,14 +1104,11 @@ rule Parameter {
 		--[it,s,valueRef]
 		lv2_dup_valueRef: EMFTVM!Dup --[it,s,valueRef,valueRef]
 		,
-		lv2_push_null: EMFTVM!Push --[it,s,valueRef,valueRef,null]
-		,
-		lv2_invoke_eq2: EMFTVM!Invoke (
-			argcount <- 1,
-			opname <- '='
+		lv2_invoke_isEmpty: EMFTVM!Invoke (
+			opname <- 'isEmpty'
 		) --[it,s,valueRef,Bool]
 		,
-		lv2_if_null: EMFTVM!If (
+		lv2_if_empty: EMFTVM!If (
 			target <- lv2_goto2
 		) --[it,s,valueRef]
 		,
