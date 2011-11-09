@@ -108,13 +108,13 @@ public interface EmigPackage extends EPackage
   int MIGRATION_LIBRARY = 1;
 
   /**
-   * The feature id for the '<em><b>Title</b></em>' attribute.
+   * The feature id for the '<em><b>Name</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int MIGRATION_LIBRARY__TITLE = 0;
+  int MIGRATION_LIBRARY__NAME = 0;
 
   /**
    * The feature id for the '<em><b>Rules</b></em>' containment reference list.
@@ -135,6 +135,61 @@ public interface EmigPackage extends EPackage
   int MIGRATION_LIBRARY_FEATURE_COUNT = 2;
 
   /**
+   * The meta object id for the '{@link it.univaq.coevolution.emfmigrate.emig.impl.LocatedElementImpl <em>Located Element</em>}' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see it.univaq.coevolution.emfmigrate.emig.impl.LocatedElementImpl
+   * @see it.univaq.coevolution.emfmigrate.emig.impl.EmigPackageImpl#getLocatedElement()
+   * @generated
+   */
+  int LOCATED_ELEMENT = 2;
+
+  /**
+   * The feature id for the '<em><b>Line</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int LOCATED_ELEMENT__LINE = 0;
+
+  /**
+   * The feature id for the '<em><b>Endline</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int LOCATED_ELEMENT__ENDLINE = 1;
+
+  /**
+   * The feature id for the '<em><b>Offset</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int LOCATED_ELEMENT__OFFSET = 2;
+
+  /**
+   * The feature id for the '<em><b>Endoffset</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int LOCATED_ELEMENT__ENDOFFSET = 3;
+
+  /**
+   * The number of structural features of the '<em>Located Element</em>' class.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int LOCATED_ELEMENT_FEATURE_COUNT = 4;
+
+  /**
    * The meta object id for the '{@link it.univaq.coevolution.emfmigrate.emig.impl.MigrationProgramImpl <em>Migration Program</em>}' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -142,34 +197,43 @@ public interface EmigPackage extends EPackage
    * @see it.univaq.coevolution.emfmigrate.emig.impl.EmigPackageImpl#getMigrationProgram()
    * @generated
    */
-  int MIGRATION_PROGRAM = 2;
+  int MIGRATION_PROGRAM = 3;
 
   /**
-   * The feature id for the '<em><b>Libs</b></em>' attribute list.
+   * The feature id for the '<em><b>Line</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int MIGRATION_PROGRAM__LIBS = 0;
+  int MIGRATION_PROGRAM__LINE = LOCATED_ELEMENT__LINE;
 
   /**
-   * The feature id for the '<em><b>Migr</b></em>' attribute.
+   * The feature id for the '<em><b>Endline</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int MIGRATION_PROGRAM__MIGR = 1;
+  int MIGRATION_PROGRAM__ENDLINE = LOCATED_ELEMENT__ENDLINE;
 
   /**
-   * The feature id for the '<em><b>Type Art</b></em>' containment reference.
+   * The feature id for the '<em><b>Offset</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int MIGRATION_PROGRAM__TYPE_ART = 2;
+  int MIGRATION_PROGRAM__OFFSET = LOCATED_ELEMENT__OFFSET;
+
+  /**
+   * The feature id for the '<em><b>Endoffset</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int MIGRATION_PROGRAM__ENDOFFSET = LOCATED_ELEMENT__ENDOFFSET;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -178,7 +242,43 @@ public interface EmigPackage extends EPackage
    * @generated
    * @ordered
    */
-  int MIGRATION_PROGRAM__NAME = 3;
+  int MIGRATION_PROGRAM__NAME = LOCATED_ELEMENT_FEATURE_COUNT + 0;
+
+  /**
+   * The feature id for the '<em><b>Libs</b></em>' attribute list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int MIGRATION_PROGRAM__LIBS = LOCATED_ELEMENT_FEATURE_COUNT + 1;
+
+  /**
+   * The feature id for the '<em><b>Migr</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int MIGRATION_PROGRAM__MIGR = LOCATED_ELEMENT_FEATURE_COUNT + 2;
+
+  /**
+   * The feature id for the '<em><b>Type Art</b></em>' containment reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int MIGRATION_PROGRAM__TYPE_ART = LOCATED_ELEMENT_FEATURE_COUNT + 3;
+
+  /**
+   * The feature id for the '<em><b>Artifact</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int MIGRATION_PROGRAM__ARTIFACT = LOCATED_ELEMENT_FEATURE_COUNT + 4;
 
   /**
    * The feature id for the '<em><b>Transformation Package</b></em>' reference list.
@@ -187,7 +287,7 @@ public interface EmigPackage extends EPackage
    * @generated
    * @ordered
    */
-  int MIGRATION_PROGRAM__TRANSFORMATION_PACKAGE = 4;
+  int MIGRATION_PROGRAM__TRANSFORMATION_PACKAGE = LOCATED_ELEMENT_FEATURE_COUNT + 5;
 
   /**
    * The feature id for the '<em><b>Delta</b></em>' attribute.
@@ -196,7 +296,7 @@ public interface EmigPackage extends EPackage
    * @generated
    * @ordered
    */
-  int MIGRATION_PROGRAM__DELTA = 5;
+  int MIGRATION_PROGRAM__DELTA = LOCATED_ELEMENT_FEATURE_COUNT + 6;
 
   /**
    * The feature id for the '<em><b>Rules</b></em>' containment reference list.
@@ -205,7 +305,7 @@ public interface EmigPackage extends EPackage
    * @generated
    * @ordered
    */
-  int MIGRATION_PROGRAM__RULES = 6;
+  int MIGRATION_PROGRAM__RULES = LOCATED_ELEMENT_FEATURE_COUNT + 7;
 
   /**
    * The number of structural features of the '<em>Migration Program</em>' class.
@@ -214,7 +314,7 @@ public interface EmigPackage extends EPackage
    * @generated
    * @ordered
    */
-  int MIGRATION_PROGRAM_FEATURE_COUNT = 7;
+  int MIGRATION_PROGRAM_FEATURE_COUNT = LOCATED_ELEMENT_FEATURE_COUNT + 8;
 
   /**
    * The meta object id for the '{@link it.univaq.coevolution.emfmigrate.emig.impl.ArtifactImpl <em>Artifact</em>}' class.
@@ -224,7 +324,43 @@ public interface EmigPackage extends EPackage
    * @see it.univaq.coevolution.emfmigrate.emig.impl.EmigPackageImpl#getArtifact()
    * @generated
    */
-  int ARTIFACT = 3;
+  int ARTIFACT = 4;
+
+  /**
+   * The feature id for the '<em><b>Line</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int ARTIFACT__LINE = LOCATED_ELEMENT__LINE;
+
+  /**
+   * The feature id for the '<em><b>Endline</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int ARTIFACT__ENDLINE = LOCATED_ELEMENT__ENDLINE;
+
+  /**
+   * The feature id for the '<em><b>Offset</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int ARTIFACT__OFFSET = LOCATED_ELEMENT__OFFSET;
+
+  /**
+   * The feature id for the '<em><b>Endoffset</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int ARTIFACT__ENDOFFSET = LOCATED_ELEMENT__ENDOFFSET;
 
   /**
    * The feature id for the '<em><b>Type</b></em>' attribute.
@@ -233,7 +369,7 @@ public interface EmigPackage extends EPackage
    * @generated
    * @ordered
    */
-  int ARTIFACT__TYPE = 0;
+  int ARTIFACT__TYPE = LOCATED_ELEMENT_FEATURE_COUNT + 0;
 
   /**
    * The number of structural features of the '<em>Artifact</em>' class.
@@ -242,7 +378,7 @@ public interface EmigPackage extends EPackage
    * @generated
    * @ordered
    */
-  int ARTIFACT_FEATURE_COUNT = 1;
+  int ARTIFACT_FEATURE_COUNT = LOCATED_ELEMENT_FEATURE_COUNT + 1;
 
   /**
    * The meta object id for the '{@link it.univaq.coevolution.emfmigrate.emig.impl.RuleImpl <em>Rule</em>}' class.
@@ -252,7 +388,43 @@ public interface EmigPackage extends EPackage
    * @see it.univaq.coevolution.emfmigrate.emig.impl.EmigPackageImpl#getRule()
    * @generated
    */
-  int RULE = 4;
+  int RULE = 5;
+
+  /**
+   * The feature id for the '<em><b>Line</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int RULE__LINE = LOCATED_ELEMENT__LINE;
+
+  /**
+   * The feature id for the '<em><b>Endline</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int RULE__ENDLINE = LOCATED_ELEMENT__ENDLINE;
+
+  /**
+   * The feature id for the '<em><b>Offset</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int RULE__OFFSET = LOCATED_ELEMENT__OFFSET;
+
+  /**
+   * The feature id for the '<em><b>Endoffset</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int RULE__ENDOFFSET = LOCATED_ELEMENT__ENDOFFSET;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -261,7 +433,7 @@ public interface EmigPackage extends EPackage
    * @generated
    * @ordered
    */
-  int RULE__NAME = 0;
+  int RULE__NAME = LOCATED_ELEMENT_FEATURE_COUNT + 0;
 
   /**
    * The feature id for the '<em><b>Filter</b></em>' containment reference.
@@ -270,7 +442,7 @@ public interface EmigPackage extends EPackage
    * @generated
    * @ordered
    */
-  int RULE__FILTER = 1;
+  int RULE__FILTER = LOCATED_ELEMENT_FEATURE_COUNT + 1;
 
   /**
    * The feature id for the '<em><b>Rewriting Rules</b></em>' containment reference list.
@@ -279,7 +451,7 @@ public interface EmigPackage extends EPackage
    * @generated
    * @ordered
    */
-  int RULE__REWRITING_RULES = 2;
+  int RULE__REWRITING_RULES = LOCATED_ELEMENT_FEATURE_COUNT + 2;
 
   /**
    * The number of structural features of the '<em>Rule</em>' class.
@@ -288,7 +460,7 @@ public interface EmigPackage extends EPackage
    * @generated
    * @ordered
    */
-  int RULE_FEATURE_COUNT = 3;
+  int RULE_FEATURE_COUNT = LOCATED_ELEMENT_FEATURE_COUNT + 3;
 
   /**
    * The meta object id for the '{@link it.univaq.coevolution.emfmigrate.emig.impl.OpDefImpl <em>Op Def</em>}' class.
@@ -298,7 +470,43 @@ public interface EmigPackage extends EPackage
    * @see it.univaq.coevolution.emfmigrate.emig.impl.EmigPackageImpl#getOpDef()
    * @generated
    */
-  int OP_DEF = 5;
+  int OP_DEF = 6;
+
+  /**
+   * The feature id for the '<em><b>Line</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int OP_DEF__LINE = LOCATED_ELEMENT__LINE;
+
+  /**
+   * The feature id for the '<em><b>Endline</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int OP_DEF__ENDLINE = LOCATED_ELEMENT__ENDLINE;
+
+  /**
+   * The feature id for the '<em><b>Offset</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int OP_DEF__OFFSET = LOCATED_ELEMENT__OFFSET;
+
+  /**
+   * The feature id for the '<em><b>Endoffset</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int OP_DEF__ENDOFFSET = LOCATED_ELEMENT__ENDOFFSET;
 
   /**
    * The feature id for the '<em><b>Op</b></em>' attribute.
@@ -307,7 +515,7 @@ public interface EmigPackage extends EPackage
    * @generated
    * @ordered
    */
-  int OP_DEF__OP = 0;
+  int OP_DEF__OP = LOCATED_ELEMENT_FEATURE_COUNT + 0;
 
   /**
    * The feature id for the '<em><b>Setters</b></em>' containment reference list.
@@ -316,7 +524,7 @@ public interface EmigPackage extends EPackage
    * @generated
    * @ordered
    */
-  int OP_DEF__SETTERS = 1;
+  int OP_DEF__SETTERS = LOCATED_ELEMENT_FEATURE_COUNT + 1;
 
   /**
    * The number of structural features of the '<em>Op Def</em>' class.
@@ -325,7 +533,7 @@ public interface EmigPackage extends EPackage
    * @generated
    * @ordered
    */
-  int OP_DEF_FEATURE_COUNT = 2;
+  int OP_DEF_FEATURE_COUNT = LOCATED_ELEMENT_FEATURE_COUNT + 2;
 
   /**
    * The meta object id for the '{@link it.univaq.coevolution.emfmigrate.emig.impl.EPackageOpDefImpl <em>EPackage Op Def</em>}' class.
@@ -335,7 +543,43 @@ public interface EmigPackage extends EPackage
    * @see it.univaq.coevolution.emfmigrate.emig.impl.EmigPackageImpl#getEPackageOpDef()
    * @generated
    */
-  int EPACKAGE_OP_DEF = 6;
+  int EPACKAGE_OP_DEF = 7;
+
+  /**
+   * The feature id for the '<em><b>Line</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int EPACKAGE_OP_DEF__LINE = OP_DEF__LINE;
+
+  /**
+   * The feature id for the '<em><b>Endline</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int EPACKAGE_OP_DEF__ENDLINE = OP_DEF__ENDLINE;
+
+  /**
+   * The feature id for the '<em><b>Offset</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int EPACKAGE_OP_DEF__OFFSET = OP_DEF__OFFSET;
+
+  /**
+   * The feature id for the '<em><b>Endoffset</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int EPACKAGE_OP_DEF__ENDOFFSET = OP_DEF__ENDOFFSET;
 
   /**
    * The feature id for the '<em><b>Op</b></em>' attribute.
@@ -399,7 +643,43 @@ public interface EmigPackage extends EPackage
    * @see it.univaq.coevolution.emfmigrate.emig.impl.EmigPackageImpl#getEClassOpDef()
    * @generated
    */
-  int ECLASS_OP_DEF = 7;
+  int ECLASS_OP_DEF = 8;
+
+  /**
+   * The feature id for the '<em><b>Line</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int ECLASS_OP_DEF__LINE = OP_DEF__LINE;
+
+  /**
+   * The feature id for the '<em><b>Endline</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int ECLASS_OP_DEF__ENDLINE = OP_DEF__ENDLINE;
+
+  /**
+   * The feature id for the '<em><b>Offset</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int ECLASS_OP_DEF__OFFSET = OP_DEF__OFFSET;
+
+  /**
+   * The feature id for the '<em><b>Endoffset</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int ECLASS_OP_DEF__ENDOFFSET = OP_DEF__ENDOFFSET;
 
   /**
    * The feature id for the '<em><b>Op</b></em>' attribute.
@@ -472,7 +752,43 @@ public interface EmigPackage extends EPackage
    * @see it.univaq.coevolution.emfmigrate.emig.impl.EmigPackageImpl#getEAttributeOpDef()
    * @generated
    */
-  int EATTRIBUTE_OP_DEF = 8;
+  int EATTRIBUTE_OP_DEF = 9;
+
+  /**
+   * The feature id for the '<em><b>Line</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int EATTRIBUTE_OP_DEF__LINE = OP_DEF__LINE;
+
+  /**
+   * The feature id for the '<em><b>Endline</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int EATTRIBUTE_OP_DEF__ENDLINE = OP_DEF__ENDLINE;
+
+  /**
+   * The feature id for the '<em><b>Offset</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int EATTRIBUTE_OP_DEF__OFFSET = OP_DEF__OFFSET;
+
+  /**
+   * The feature id for the '<em><b>Endoffset</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int EATTRIBUTE_OP_DEF__ENDOFFSET = OP_DEF__ENDOFFSET;
 
   /**
    * The feature id for the '<em><b>Op</b></em>' attribute.
@@ -527,7 +843,43 @@ public interface EmigPackage extends EPackage
    * @see it.univaq.coevolution.emfmigrate.emig.impl.EmigPackageImpl#getEReferenceOpDef()
    * @generated
    */
-  int EREFERENCE_OP_DEF = 9;
+  int EREFERENCE_OP_DEF = 10;
+
+  /**
+   * The feature id for the '<em><b>Line</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int EREFERENCE_OP_DEF__LINE = OP_DEF__LINE;
+
+  /**
+   * The feature id for the '<em><b>Endline</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int EREFERENCE_OP_DEF__ENDLINE = OP_DEF__ENDLINE;
+
+  /**
+   * The feature id for the '<em><b>Offset</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int EREFERENCE_OP_DEF__OFFSET = OP_DEF__OFFSET;
+
+  /**
+   * The feature id for the '<em><b>Endoffset</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int EREFERENCE_OP_DEF__ENDOFFSET = OP_DEF__ENDOFFSET;
 
   /**
    * The feature id for the '<em><b>Op</b></em>' attribute.
@@ -582,7 +934,43 @@ public interface EmigPackage extends EPackage
    * @see it.univaq.coevolution.emfmigrate.emig.impl.EmigPackageImpl#getsetterDef()
    * @generated
    */
-  int SETTER_DEF = 10;
+  int SETTER_DEF = 11;
+
+  /**
+   * The feature id for the '<em><b>Line</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SETTER_DEF__LINE = LOCATED_ELEMENT__LINE;
+
+  /**
+   * The feature id for the '<em><b>Endline</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SETTER_DEF__ENDLINE = LOCATED_ELEMENT__ENDLINE;
+
+  /**
+   * The feature id for the '<em><b>Offset</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SETTER_DEF__OFFSET = LOCATED_ELEMENT__OFFSET;
+
+  /**
+   * The feature id for the '<em><b>Endoffset</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SETTER_DEF__ENDOFFSET = LOCATED_ELEMENT__ENDOFFSET;
 
   /**
    * The feature id for the '<em><b>Metafeature</b></em>' reference.
@@ -591,7 +979,7 @@ public interface EmigPackage extends EPackage
    * @generated
    * @ordered
    */
-  int SETTER_DEF__METAFEATURE = 0;
+  int SETTER_DEF__METAFEATURE = LOCATED_ELEMENT_FEATURE_COUNT + 0;
 
   /**
    * The feature id for the '<em><b>Operator</b></em>' attribute.
@@ -600,7 +988,7 @@ public interface EmigPackage extends EPackage
    * @generated
    * @ordered
    */
-  int SETTER_DEF__OPERATOR = 1;
+  int SETTER_DEF__OPERATOR = LOCATED_ELEMENT_FEATURE_COUNT + 1;
 
   /**
    * The feature id for the '<em><b>Par</b></em>' containment reference list.
@@ -609,7 +997,7 @@ public interface EmigPackage extends EPackage
    * @generated
    * @ordered
    */
-  int SETTER_DEF__PAR = 2;
+  int SETTER_DEF__PAR = LOCATED_ELEMENT_FEATURE_COUNT + 2;
 
   /**
    * The number of structural features of the '<em>setter Def</em>' class.
@@ -618,7 +1006,7 @@ public interface EmigPackage extends EPackage
    * @generated
    * @ordered
    */
-  int SETTER_DEF_FEATURE_COUNT = 3;
+  int SETTER_DEF_FEATURE_COUNT = LOCATED_ELEMENT_FEATURE_COUNT + 3;
 
   /**
    * The meta object id for the '{@link it.univaq.coevolution.emfmigrate.emig.impl.RewritingRuleImpl <em>Rewriting Rule</em>}' class.
@@ -628,25 +1016,43 @@ public interface EmigPackage extends EPackage
    * @see it.univaq.coevolution.emfmigrate.emig.impl.EmigPackageImpl#getRewritingRule()
    * @generated
    */
-  int REWRITING_RULE = 11;
+  int REWRITING_RULE = 12;
 
   /**
-   * The feature id for the '<em><b>Migrators SX</b></em>' containment reference list.
+   * The feature id for the '<em><b>Line</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int REWRITING_RULE__MIGRATORS_SX = 0;
+  int REWRITING_RULE__LINE = LOCATED_ELEMENT__LINE;
 
   /**
-   * The feature id for the '<em><b>Migrator DX</b></em>' containment reference list.
+   * The feature id for the '<em><b>Endline</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int REWRITING_RULE__MIGRATOR_DX = 1;
+  int REWRITING_RULE__ENDLINE = LOCATED_ELEMENT__ENDLINE;
+
+  /**
+   * The feature id for the '<em><b>Offset</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int REWRITING_RULE__OFFSET = LOCATED_ELEMENT__OFFSET;
+
+  /**
+   * The feature id for the '<em><b>Endoffset</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int REWRITING_RULE__ENDOFFSET = LOCATED_ELEMENT__ENDOFFSET;
 
   /**
    * The feature id for the '<em><b>Migrator SX</b></em>' containment reference list.
@@ -655,7 +1061,16 @@ public interface EmigPackage extends EPackage
    * @generated
    * @ordered
    */
-  int REWRITING_RULE__MIGRATOR_SX = 2;
+  int REWRITING_RULE__MIGRATOR_SX = LOCATED_ELEMENT_FEATURE_COUNT + 0;
+
+  /**
+   * The feature id for the '<em><b>Migrator DX</b></em>' containment reference list.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int REWRITING_RULE__MIGRATOR_DX = LOCATED_ELEMENT_FEATURE_COUNT + 1;
 
   /**
    * The number of structural features of the '<em>Rewriting Rule</em>' class.
@@ -664,7 +1079,7 @@ public interface EmigPackage extends EPackage
    * @generated
    * @ordered
    */
-  int REWRITING_RULE_FEATURE_COUNT = 3;
+  int REWRITING_RULE_FEATURE_COUNT = LOCATED_ELEMENT_FEATURE_COUNT + 2;
 
   /**
    * The meta object id for the '{@link it.univaq.coevolution.emfmigrate.emig.impl.MigratorImpl <em>Migrator</em>}' class.
@@ -674,7 +1089,43 @@ public interface EmigPackage extends EPackage
    * @see it.univaq.coevolution.emfmigrate.emig.impl.EmigPackageImpl#getMigrator()
    * @generated
    */
-  int MIGRATOR = 12;
+  int MIGRATOR = 13;
+
+  /**
+   * The feature id for the '<em><b>Line</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int MIGRATOR__LINE = LOCATED_ELEMENT__LINE;
+
+  /**
+   * The feature id for the '<em><b>Endline</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int MIGRATOR__ENDLINE = LOCATED_ELEMENT__ENDLINE;
+
+  /**
+   * The feature id for the '<em><b>Offset</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int MIGRATOR__OFFSET = LOCATED_ELEMENT__OFFSET;
+
+  /**
+   * The feature id for the '<em><b>Endoffset</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int MIGRATOR__ENDOFFSET = LOCATED_ELEMENT__ENDOFFSET;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -683,7 +1134,7 @@ public interface EmigPackage extends EPackage
    * @generated
    * @ordered
    */
-  int MIGRATOR__NAME = 0;
+  int MIGRATOR__NAME = LOCATED_ELEMENT_FEATURE_COUNT + 0;
 
   /**
    * The number of structural features of the '<em>Migrator</em>' class.
@@ -692,7 +1143,7 @@ public interface EmigPackage extends EPackage
    * @generated
    * @ordered
    */
-  int MIGRATOR_FEATURE_COUNT = 1;
+  int MIGRATOR_FEATURE_COUNT = LOCATED_ELEMENT_FEATURE_COUNT + 1;
 
   /**
    * The meta object id for the '{@link it.univaq.coevolution.emfmigrate.emig.impl.MigratorSXImpl <em>Migrator SX</em>}' class.
@@ -702,7 +1153,43 @@ public interface EmigPackage extends EPackage
    * @see it.univaq.coevolution.emfmigrate.emig.impl.EmigPackageImpl#getMigratorSX()
    * @generated
    */
-  int MIGRATOR_SX = 13;
+  int MIGRATOR_SX = 14;
+
+  /**
+   * The feature id for the '<em><b>Line</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int MIGRATOR_SX__LINE = MIGRATOR__LINE;
+
+  /**
+   * The feature id for the '<em><b>Endline</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int MIGRATOR_SX__ENDLINE = MIGRATOR__ENDLINE;
+
+  /**
+   * The feature id for the '<em><b>Offset</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int MIGRATOR_SX__OFFSET = MIGRATOR__OFFSET;
+
+  /**
+   * The feature id for the '<em><b>Endoffset</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int MIGRATOR_SX__ENDOFFSET = MIGRATOR__ENDOFFSET;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -732,13 +1219,22 @@ public interface EmigPackage extends EPackage
   int MIGRATOR_SX__FILTER_SX = MIGRATOR_FEATURE_COUNT + 1;
 
   /**
+   * The feature id for the '<em><b>Rewriting Rule</b></em>' container reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int MIGRATOR_SX__REWRITING_RULE = MIGRATOR_FEATURE_COUNT + 2;
+
+  /**
    * The number of structural features of the '<em>Migrator SX</em>' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int MIGRATOR_SX_FEATURE_COUNT = MIGRATOR_FEATURE_COUNT + 2;
+  int MIGRATOR_SX_FEATURE_COUNT = MIGRATOR_FEATURE_COUNT + 3;
 
   /**
    * The meta object id for the '{@link it.univaq.coevolution.emfmigrate.emig.impl.MigratorDXImpl <em>Migrator DX</em>}' class.
@@ -748,7 +1244,43 @@ public interface EmigPackage extends EPackage
    * @see it.univaq.coevolution.emfmigrate.emig.impl.EmigPackageImpl#getMigratorDX()
    * @generated
    */
-  int MIGRATOR_DX = 14;
+  int MIGRATOR_DX = 15;
+
+  /**
+   * The feature id for the '<em><b>Line</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int MIGRATOR_DX__LINE = MIGRATOR__LINE;
+
+  /**
+   * The feature id for the '<em><b>Endline</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int MIGRATOR_DX__ENDLINE = MIGRATOR__ENDLINE;
+
+  /**
+   * The feature id for the '<em><b>Offset</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int MIGRATOR_DX__OFFSET = MIGRATOR__OFFSET;
+
+  /**
+   * The feature id for the '<em><b>Endoffset</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int MIGRATOR_DX__ENDOFFSET = MIGRATOR__ENDOFFSET;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -778,13 +1310,22 @@ public interface EmigPackage extends EPackage
   int MIGRATOR_DX__FILTER_DX = MIGRATOR_FEATURE_COUNT + 1;
 
   /**
+   * The feature id for the '<em><b>Rewriting Rule</b></em>' container reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int MIGRATOR_DX__REWRITING_RULE = MIGRATOR_FEATURE_COUNT + 2;
+
+  /**
    * The number of structural features of the '<em>Migrator DX</em>' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int MIGRATOR_DX_FEATURE_COUNT = MIGRATOR_FEATURE_COUNT + 2;
+  int MIGRATOR_DX_FEATURE_COUNT = MIGRATOR_FEATURE_COUNT + 3;
 
   /**
    * The meta object id for the '{@link it.univaq.coevolution.emfmigrate.emig.impl.FilterMigratorImpl <em>Filter Migrator</em>}' class.
@@ -794,7 +1335,43 @@ public interface EmigPackage extends EPackage
    * @see it.univaq.coevolution.emfmigrate.emig.impl.EmigPackageImpl#getFilterMigrator()
    * @generated
    */
-  int FILTER_MIGRATOR = 15;
+  int FILTER_MIGRATOR = 16;
+
+  /**
+   * The feature id for the '<em><b>Line</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int FILTER_MIGRATOR__LINE = LOCATED_ELEMENT__LINE;
+
+  /**
+   * The feature id for the '<em><b>Endline</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int FILTER_MIGRATOR__ENDLINE = LOCATED_ELEMENT__ENDLINE;
+
+  /**
+   * The feature id for the '<em><b>Offset</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int FILTER_MIGRATOR__OFFSET = LOCATED_ELEMENT__OFFSET;
+
+  /**
+   * The feature id for the '<em><b>Endoffset</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int FILTER_MIGRATOR__ENDOFFSET = LOCATED_ELEMENT__ENDOFFSET;
 
   /**
    * The feature id for the '<em><b>Feature SX</b></em>' containment reference.
@@ -803,7 +1380,7 @@ public interface EmigPackage extends EPackage
    * @generated
    * @ordered
    */
-  int FILTER_MIGRATOR__FEATURE_SX = 0;
+  int FILTER_MIGRATOR__FEATURE_SX = LOCATED_ELEMENT_FEATURE_COUNT + 0;
 
   /**
    * The feature id for the '<em><b>Op</b></em>' attribute.
@@ -812,7 +1389,7 @@ public interface EmigPackage extends EPackage
    * @generated
    * @ordered
    */
-  int FILTER_MIGRATOR__OP = 1;
+  int FILTER_MIGRATOR__OP = LOCATED_ELEMENT_FEATURE_COUNT + 1;
 
   /**
    * The feature id for the '<em><b>Value</b></em>' containment reference.
@@ -821,7 +1398,7 @@ public interface EmigPackage extends EPackage
    * @generated
    * @ordered
    */
-  int FILTER_MIGRATOR__VALUE = 2;
+  int FILTER_MIGRATOR__VALUE = LOCATED_ELEMENT_FEATURE_COUNT + 2;
 
   /**
    * The number of structural features of the '<em>Filter Migrator</em>' class.
@@ -830,7 +1407,7 @@ public interface EmigPackage extends EPackage
    * @generated
    * @ordered
    */
-  int FILTER_MIGRATOR_FEATURE_COUNT = 3;
+  int FILTER_MIGRATOR_FEATURE_COUNT = LOCATED_ELEMENT_FEATURE_COUNT + 3;
 
   /**
    * The meta object id for the '{@link it.univaq.coevolution.emfmigrate.emig.impl.DotNavigationObjSXImpl <em>Dot Navigation Obj SX</em>}' class.
@@ -840,7 +1417,43 @@ public interface EmigPackage extends EPackage
    * @see it.univaq.coevolution.emfmigrate.emig.impl.EmigPackageImpl#getDotNavigationObjSX()
    * @generated
    */
-  int DOT_NAVIGATION_OBJ_SX = 16;
+  int DOT_NAVIGATION_OBJ_SX = 17;
+
+  /**
+   * The feature id for the '<em><b>Line</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int DOT_NAVIGATION_OBJ_SX__LINE = LOCATED_ELEMENT__LINE;
+
+  /**
+   * The feature id for the '<em><b>Endline</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int DOT_NAVIGATION_OBJ_SX__ENDLINE = LOCATED_ELEMENT__ENDLINE;
+
+  /**
+   * The feature id for the '<em><b>Offset</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int DOT_NAVIGATION_OBJ_SX__OFFSET = LOCATED_ELEMENT__OFFSET;
+
+  /**
+   * The feature id for the '<em><b>Endoffset</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int DOT_NAVIGATION_OBJ_SX__ENDOFFSET = LOCATED_ELEMENT__ENDOFFSET;
 
   /**
    * The feature id for the '<em><b>Obj</b></em>' reference.
@@ -849,7 +1462,7 @@ public interface EmigPackage extends EPackage
    * @generated
    * @ordered
    */
-  int DOT_NAVIGATION_OBJ_SX__OBJ = 0;
+  int DOT_NAVIGATION_OBJ_SX__OBJ = LOCATED_ELEMENT_FEATURE_COUNT + 0;
 
   /**
    * The feature id for the '<em><b>Ref</b></em>' reference.
@@ -858,7 +1471,7 @@ public interface EmigPackage extends EPackage
    * @generated
    * @ordered
    */
-  int DOT_NAVIGATION_OBJ_SX__REF = 1;
+  int DOT_NAVIGATION_OBJ_SX__REF = LOCATED_ELEMENT_FEATURE_COUNT + 1;
 
   /**
    * The number of structural features of the '<em>Dot Navigation Obj SX</em>' class.
@@ -867,7 +1480,7 @@ public interface EmigPackage extends EPackage
    * @generated
    * @ordered
    */
-  int DOT_NAVIGATION_OBJ_SX_FEATURE_COUNT = 2;
+  int DOT_NAVIGATION_OBJ_SX_FEATURE_COUNT = LOCATED_ELEMENT_FEATURE_COUNT + 2;
 
   /**
    * The meta object id for the '{@link it.univaq.coevolution.emfmigrate.emig.impl.DotNavigationObjDXImpl <em>Dot Navigation Obj DX</em>}' class.
@@ -877,7 +1490,43 @@ public interface EmigPackage extends EPackage
    * @see it.univaq.coevolution.emfmigrate.emig.impl.EmigPackageImpl#getDotNavigationObjDX()
    * @generated
    */
-  int DOT_NAVIGATION_OBJ_DX = 17;
+  int DOT_NAVIGATION_OBJ_DX = 18;
+
+  /**
+   * The feature id for the '<em><b>Line</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int DOT_NAVIGATION_OBJ_DX__LINE = LOCATED_ELEMENT__LINE;
+
+  /**
+   * The feature id for the '<em><b>Endline</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int DOT_NAVIGATION_OBJ_DX__ENDLINE = LOCATED_ELEMENT__ENDLINE;
+
+  /**
+   * The feature id for the '<em><b>Offset</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int DOT_NAVIGATION_OBJ_DX__OFFSET = LOCATED_ELEMENT__OFFSET;
+
+  /**
+   * The feature id for the '<em><b>Endoffset</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int DOT_NAVIGATION_OBJ_DX__ENDOFFSET = LOCATED_ELEMENT__ENDOFFSET;
 
   /**
    * The feature id for the '<em><b>Obj</b></em>' reference.
@@ -886,7 +1535,7 @@ public interface EmigPackage extends EPackage
    * @generated
    * @ordered
    */
-  int DOT_NAVIGATION_OBJ_DX__OBJ = 0;
+  int DOT_NAVIGATION_OBJ_DX__OBJ = LOCATED_ELEMENT_FEATURE_COUNT + 0;
 
   /**
    * The feature id for the '<em><b>Ref</b></em>' reference.
@@ -895,7 +1544,7 @@ public interface EmigPackage extends EPackage
    * @generated
    * @ordered
    */
-  int DOT_NAVIGATION_OBJ_DX__REF = 1;
+  int DOT_NAVIGATION_OBJ_DX__REF = LOCATED_ELEMENT_FEATURE_COUNT + 1;
 
   /**
    * The number of structural features of the '<em>Dot Navigation Obj DX</em>' class.
@@ -904,7 +1553,7 @@ public interface EmigPackage extends EPackage
    * @generated
    * @ordered
    */
-  int DOT_NAVIGATION_OBJ_DX_FEATURE_COUNT = 2;
+  int DOT_NAVIGATION_OBJ_DX_FEATURE_COUNT = LOCATED_ELEMENT_FEATURE_COUNT + 2;
 
   /**
    * The meta object id for the '{@link it.univaq.coevolution.emfmigrate.emig.impl.ParameterImpl <em>Parameter</em>}' class.
@@ -914,7 +1563,43 @@ public interface EmigPackage extends EPackage
    * @see it.univaq.coevolution.emfmigrate.emig.impl.EmigPackageImpl#getParameter()
    * @generated
    */
-  int PARAMETER = 18;
+  int PARAMETER = 19;
+
+  /**
+   * The feature id for the '<em><b>Line</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PARAMETER__LINE = LOCATED_ELEMENT__LINE;
+
+  /**
+   * The feature id for the '<em><b>Endline</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PARAMETER__ENDLINE = LOCATED_ELEMENT__ENDLINE;
+
+  /**
+   * The feature id for the '<em><b>Offset</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PARAMETER__OFFSET = LOCATED_ELEMENT__OFFSET;
+
+  /**
+   * The feature id for the '<em><b>Endoffset</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int PARAMETER__ENDOFFSET = LOCATED_ELEMENT__ENDOFFSET;
 
   /**
    * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -923,7 +1608,7 @@ public interface EmigPackage extends EPackage
    * @generated
    * @ordered
    */
-  int PARAMETER__NAME = 0;
+  int PARAMETER__NAME = LOCATED_ELEMENT_FEATURE_COUNT + 0;
 
   /**
    * The number of structural features of the '<em>Parameter</em>' class.
@@ -932,7 +1617,7 @@ public interface EmigPackage extends EPackage
    * @generated
    * @ordered
    */
-  int PARAMETER_FEATURE_COUNT = 1;
+  int PARAMETER_FEATURE_COUNT = LOCATED_ELEMENT_FEATURE_COUNT + 1;
 
   /**
    * The meta object id for the '{@link it.univaq.coevolution.emfmigrate.emig.impl.PackageImpl <em>Package</em>}' class.
@@ -942,7 +1627,7 @@ public interface EmigPackage extends EPackage
    * @see it.univaq.coevolution.emfmigrate.emig.impl.EmigPackageImpl#getPackage()
    * @generated
    */
-  int PACKAGE = 19;
+  int PACKAGE = 20;
 
   /**
    * The feature id for the '<em><b>EAnnotations</b></em>' containment reference list.
@@ -1033,7 +1718,7 @@ public interface EmigPackage extends EPackage
    * @see it.univaq.coevolution.emfmigrate.emig.impl.EmigPackageImpl#getClass_()
    * @generated
    */
-  int CLASS = 20;
+  int CLASS = 21;
 
   /**
    * The feature id for the '<em><b>EAnnotations</b></em>' containment reference list.
@@ -1268,7 +1953,7 @@ public interface EmigPackage extends EPackage
    * @see it.univaq.coevolution.emfmigrate.emig.impl.EmigPackageImpl#getAttribute()
    * @generated
    */
-  int ATTRIBUTE = 21;
+  int ATTRIBUTE = 22;
 
   /**
    * The feature id for the '<em><b>EAnnotations</b></em>' containment reference list.
@@ -1467,7 +2152,7 @@ public interface EmigPackage extends EPackage
    * @see it.univaq.coevolution.emfmigrate.emig.impl.EmigPackageImpl#getReference()
    * @generated
    */
-  int REFERENCE = 22;
+  int REFERENCE = 23;
 
   /**
    * The feature id for the '<em><b>EAnnotations</b></em>' containment reference list.
@@ -1738,15 +2423,15 @@ public interface EmigPackage extends EPackage
   EClass getMigrationLibrary();
 
   /**
-   * Returns the meta object for the attribute '{@link it.univaq.coevolution.emfmigrate.emig.MigrationLibrary#getTitle <em>Title</em>}'.
+   * Returns the meta object for the attribute '{@link it.univaq.coevolution.emfmigrate.emig.MigrationLibrary#getName <em>Name</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Title</em>'.
-   * @see it.univaq.coevolution.emfmigrate.emig.MigrationLibrary#getTitle()
+   * @return the meta object for the attribute '<em>Name</em>'.
+   * @see it.univaq.coevolution.emfmigrate.emig.MigrationLibrary#getName()
    * @see #getMigrationLibrary()
    * @generated
    */
-  EAttribute getMigrationLibrary_Title();
+  EAttribute getMigrationLibrary_Name();
 
   /**
    * Returns the meta object for the containment reference list '{@link it.univaq.coevolution.emfmigrate.emig.MigrationLibrary#getRules <em>Rules</em>}'.
@@ -1760,6 +2445,60 @@ public interface EmigPackage extends EPackage
   EReference getMigrationLibrary_Rules();
 
   /**
+   * Returns the meta object for class '{@link it.univaq.coevolution.emfmigrate.emig.LocatedElement <em>Located Element</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for class '<em>Located Element</em>'.
+   * @see it.univaq.coevolution.emfmigrate.emig.LocatedElement
+   * @generated
+   */
+  EClass getLocatedElement();
+
+  /**
+   * Returns the meta object for the attribute '{@link it.univaq.coevolution.emfmigrate.emig.LocatedElement#getLine <em>Line</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Line</em>'.
+   * @see it.univaq.coevolution.emfmigrate.emig.LocatedElement#getLine()
+   * @see #getLocatedElement()
+   * @generated
+   */
+  EAttribute getLocatedElement_Line();
+
+  /**
+   * Returns the meta object for the attribute '{@link it.univaq.coevolution.emfmigrate.emig.LocatedElement#getEndline <em>Endline</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Endline</em>'.
+   * @see it.univaq.coevolution.emfmigrate.emig.LocatedElement#getEndline()
+   * @see #getLocatedElement()
+   * @generated
+   */
+  EAttribute getLocatedElement_Endline();
+
+  /**
+   * Returns the meta object for the attribute '{@link it.univaq.coevolution.emfmigrate.emig.LocatedElement#getOffset <em>Offset</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Offset</em>'.
+   * @see it.univaq.coevolution.emfmigrate.emig.LocatedElement#getOffset()
+   * @see #getLocatedElement()
+   * @generated
+   */
+  EAttribute getLocatedElement_Offset();
+
+  /**
+   * Returns the meta object for the attribute '{@link it.univaq.coevolution.emfmigrate.emig.LocatedElement#getEndoffset <em>Endoffset</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Endoffset</em>'.
+   * @see it.univaq.coevolution.emfmigrate.emig.LocatedElement#getEndoffset()
+   * @see #getLocatedElement()
+   * @generated
+   */
+  EAttribute getLocatedElement_Endoffset();
+
+  /**
    * Returns the meta object for class '{@link it.univaq.coevolution.emfmigrate.emig.MigrationProgram <em>Migration Program</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -1768,6 +2507,17 @@ public interface EmigPackage extends EPackage
    * @generated
    */
   EClass getMigrationProgram();
+
+  /**
+   * Returns the meta object for the attribute '{@link it.univaq.coevolution.emfmigrate.emig.MigrationProgram#getName <em>Name</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Name</em>'.
+   * @see it.univaq.coevolution.emfmigrate.emig.MigrationProgram#getName()
+   * @see #getMigrationProgram()
+   * @generated
+   */
+  EAttribute getMigrationProgram_Name();
 
   /**
    * Returns the meta object for the attribute list '{@link it.univaq.coevolution.emfmigrate.emig.MigrationProgram#getLibs <em>Libs</em>}'.
@@ -1803,15 +2553,15 @@ public interface EmigPackage extends EPackage
   EReference getMigrationProgram_TypeArt();
 
   /**
-   * Returns the meta object for the attribute '{@link it.univaq.coevolution.emfmigrate.emig.MigrationProgram#getName <em>Name</em>}'.
+   * Returns the meta object for the attribute '{@link it.univaq.coevolution.emfmigrate.emig.MigrationProgram#getArtifact <em>Artifact</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Name</em>'.
-   * @see it.univaq.coevolution.emfmigrate.emig.MigrationProgram#getName()
+   * @return the meta object for the attribute '<em>Artifact</em>'.
+   * @see it.univaq.coevolution.emfmigrate.emig.MigrationProgram#getArtifact()
    * @see #getMigrationProgram()
    * @generated
    */
-  EAttribute getMigrationProgram_Name();
+  EAttribute getMigrationProgram_Artifact();
 
   /**
    * Returns the meta object for the reference list '{@link it.univaq.coevolution.emfmigrate.emig.MigrationProgram#getTransformationPackage <em>Transformation Package</em>}'.
@@ -2157,15 +2907,15 @@ public interface EmigPackage extends EPackage
   EClass getRewritingRule();
 
   /**
-   * Returns the meta object for the containment reference list '{@link it.univaq.coevolution.emfmigrate.emig.RewritingRule#getMigratorsSX <em>Migrators SX</em>}'.
+   * Returns the meta object for the containment reference list '{@link it.univaq.coevolution.emfmigrate.emig.RewritingRule#getMigratorSX <em>Migrator SX</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the containment reference list '<em>Migrators SX</em>'.
-   * @see it.univaq.coevolution.emfmigrate.emig.RewritingRule#getMigratorsSX()
+   * @return the meta object for the containment reference list '<em>Migrator SX</em>'.
+   * @see it.univaq.coevolution.emfmigrate.emig.RewritingRule#getMigratorSX()
    * @see #getRewritingRule()
    * @generated
    */
-  EReference getRewritingRule_MigratorsSX();
+  EReference getRewritingRule_MigratorSX();
 
   /**
    * Returns the meta object for the containment reference list '{@link it.univaq.coevolution.emfmigrate.emig.RewritingRule#getMigratorDX <em>Migrator DX</em>}'.
@@ -2177,17 +2927,6 @@ public interface EmigPackage extends EPackage
    * @generated
    */
   EReference getRewritingRule_MigratorDX();
-
-  /**
-   * Returns the meta object for the containment reference list '{@link it.univaq.coevolution.emfmigrate.emig.RewritingRule#getMigratorSX <em>Migrator SX</em>}'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return the meta object for the containment reference list '<em>Migrator SX</em>'.
-   * @see it.univaq.coevolution.emfmigrate.emig.RewritingRule#getMigratorSX()
-   * @see #getRewritingRule()
-   * @generated
-   */
-  EReference getRewritingRule_MigratorSX();
 
   /**
    * Returns the meta object for class '{@link it.univaq.coevolution.emfmigrate.emig.Migrator <em>Migrator</em>}'.
@@ -2243,6 +2982,17 @@ public interface EmigPackage extends EPackage
   EReference getMigratorSX_FilterSX();
 
   /**
+   * Returns the meta object for the container reference '{@link it.univaq.coevolution.emfmigrate.emig.MigratorSX#getRewritingRule <em>Rewriting Rule</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the container reference '<em>Rewriting Rule</em>'.
+   * @see it.univaq.coevolution.emfmigrate.emig.MigratorSX#getRewritingRule()
+   * @see #getMigratorSX()
+   * @generated
+   */
+  EReference getMigratorSX_RewritingRule();
+
+  /**
    * Returns the meta object for class '{@link it.univaq.coevolution.emfmigrate.emig.MigratorDX <em>Migrator DX</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -2273,6 +3023,17 @@ public interface EmigPackage extends EPackage
    * @generated
    */
   EReference getMigratorDX_FilterDX();
+
+  /**
+   * Returns the meta object for the container reference '{@link it.univaq.coevolution.emfmigrate.emig.MigratorDX#getRewritingRule <em>Rewriting Rule</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the container reference '<em>Rewriting Rule</em>'.
+   * @see it.univaq.coevolution.emfmigrate.emig.MigratorDX#getRewritingRule()
+   * @see #getMigratorDX()
+   * @generated
+   */
+  EReference getMigratorDX_RewritingRule();
 
   /**
    * Returns the meta object for class '{@link it.univaq.coevolution.emfmigrate.emig.FilterMigrator <em>Filter Migrator</em>}'.
@@ -2502,12 +3263,12 @@ public interface EmigPackage extends EPackage
     EClass MIGRATION_LIBRARY = eINSTANCE.getMigrationLibrary();
 
     /**
-     * The meta object literal for the '<em><b>Title</b></em>' attribute feature.
+     * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute MIGRATION_LIBRARY__TITLE = eINSTANCE.getMigrationLibrary_Title();
+    EAttribute MIGRATION_LIBRARY__NAME = eINSTANCE.getMigrationLibrary_Name();
 
     /**
      * The meta object literal for the '<em><b>Rules</b></em>' containment reference list feature.
@@ -2518,6 +3279,48 @@ public interface EmigPackage extends EPackage
     EReference MIGRATION_LIBRARY__RULES = eINSTANCE.getMigrationLibrary_Rules();
 
     /**
+     * The meta object literal for the '{@link it.univaq.coevolution.emfmigrate.emig.impl.LocatedElementImpl <em>Located Element</em>}' class.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @see it.univaq.coevolution.emfmigrate.emig.impl.LocatedElementImpl
+     * @see it.univaq.coevolution.emfmigrate.emig.impl.EmigPackageImpl#getLocatedElement()
+     * @generated
+     */
+    EClass LOCATED_ELEMENT = eINSTANCE.getLocatedElement();
+
+    /**
+     * The meta object literal for the '<em><b>Line</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute LOCATED_ELEMENT__LINE = eINSTANCE.getLocatedElement_Line();
+
+    /**
+     * The meta object literal for the '<em><b>Endline</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute LOCATED_ELEMENT__ENDLINE = eINSTANCE.getLocatedElement_Endline();
+
+    /**
+     * The meta object literal for the '<em><b>Offset</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute LOCATED_ELEMENT__OFFSET = eINSTANCE.getLocatedElement_Offset();
+
+    /**
+     * The meta object literal for the '<em><b>Endoffset</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute LOCATED_ELEMENT__ENDOFFSET = eINSTANCE.getLocatedElement_Endoffset();
+
+    /**
      * The meta object literal for the '{@link it.univaq.coevolution.emfmigrate.emig.impl.MigrationProgramImpl <em>Migration Program</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -2526,6 +3329,14 @@ public interface EmigPackage extends EPackage
      * @generated
      */
     EClass MIGRATION_PROGRAM = eINSTANCE.getMigrationProgram();
+
+    /**
+     * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute MIGRATION_PROGRAM__NAME = eINSTANCE.getMigrationProgram_Name();
 
     /**
      * The meta object literal for the '<em><b>Libs</b></em>' attribute list feature.
@@ -2552,12 +3363,12 @@ public interface EmigPackage extends EPackage
     EReference MIGRATION_PROGRAM__TYPE_ART = eINSTANCE.getMigrationProgram_TypeArt();
 
     /**
-     * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+     * The meta object literal for the '<em><b>Artifact</b></em>' attribute feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute MIGRATION_PROGRAM__NAME = eINSTANCE.getMigrationProgram_Name();
+    EAttribute MIGRATION_PROGRAM__ARTIFACT = eINSTANCE.getMigrationProgram_Artifact();
 
     /**
      * The meta object literal for the '<em><b>Transformation Package</b></em>' reference list feature.
@@ -2834,12 +3645,12 @@ public interface EmigPackage extends EPackage
     EClass REWRITING_RULE = eINSTANCE.getRewritingRule();
 
     /**
-     * The meta object literal for the '<em><b>Migrators SX</b></em>' containment reference list feature.
+     * The meta object literal for the '<em><b>Migrator SX</b></em>' containment reference list feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference REWRITING_RULE__MIGRATORS_SX = eINSTANCE.getRewritingRule_MigratorsSX();
+    EReference REWRITING_RULE__MIGRATOR_SX = eINSTANCE.getRewritingRule_MigratorSX();
 
     /**
      * The meta object literal for the '<em><b>Migrator DX</b></em>' containment reference list feature.
@@ -2848,14 +3659,6 @@ public interface EmigPackage extends EPackage
      * @generated
      */
     EReference REWRITING_RULE__MIGRATOR_DX = eINSTANCE.getRewritingRule_MigratorDX();
-
-    /**
-     * The meta object literal for the '<em><b>Migrator SX</b></em>' containment reference list feature.
-     * <!-- begin-user-doc -->
-     * <!-- end-user-doc -->
-     * @generated
-     */
-    EReference REWRITING_RULE__MIGRATOR_SX = eINSTANCE.getRewritingRule_MigratorSX();
 
     /**
      * The meta object literal for the '{@link it.univaq.coevolution.emfmigrate.emig.impl.MigratorImpl <em>Migrator</em>}' class.
@@ -2902,6 +3705,14 @@ public interface EmigPackage extends EPackage
     EReference MIGRATOR_SX__FILTER_SX = eINSTANCE.getMigratorSX_FilterSX();
 
     /**
+     * The meta object literal for the '<em><b>Rewriting Rule</b></em>' container reference feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference MIGRATOR_SX__REWRITING_RULE = eINSTANCE.getMigratorSX_RewritingRule();
+
+    /**
      * The meta object literal for the '{@link it.univaq.coevolution.emfmigrate.emig.impl.MigratorDXImpl <em>Migrator DX</em>}' class.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
@@ -2926,6 +3737,14 @@ public interface EmigPackage extends EPackage
      * @generated
      */
     EReference MIGRATOR_DX__FILTER_DX = eINSTANCE.getMigratorDX_FilterDX();
+
+    /**
+     * The meta object literal for the '<em><b>Rewriting Rule</b></em>' container reference feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EReference MIGRATOR_DX__REWRITING_RULE = eINSTANCE.getMigratorDX_RewritingRule();
 
     /**
      * The meta object literal for the '{@link it.univaq.coevolution.emfmigrate.emig.impl.FilterMigratorImpl <em>Filter Migrator</em>}' class.

@@ -15,6 +15,7 @@ import it.univaq.coevolution.emfmigrate.emig.EPackageOpDef;
 import it.univaq.coevolution.emfmigrate.emig.EReferenceOpDef;
 import it.univaq.coevolution.emfmigrate.emig.EmigPackage;
 import it.univaq.coevolution.emfmigrate.emig.FilterMigrator;
+import it.univaq.coevolution.emfmigrate.emig.LocatedElement;
 import it.univaq.coevolution.emfmigrate.emig.MigrationLibrary;
 import it.univaq.coevolution.emfmigrate.emig.MigrationProgram;
 import it.univaq.coevolution.emfmigrate.emig.Migrator;
@@ -116,6 +117,11 @@ public class EmigAdapterFactory extends AdapterFactoryImpl
       public Adapter caseMigrationLibrary(MigrationLibrary object)
       {
         return createMigrationLibraryAdapter();
+      }
+      @Override
+      public Adapter caseLocatedElement(LocatedElement object)
+      {
+        return createLocatedElementAdapter();
       }
       @Override
       public Adapter caseMigrationProgram(MigrationProgram object)
@@ -315,6 +321,21 @@ public class EmigAdapterFactory extends AdapterFactoryImpl
    * @generated
    */
   public Adapter createMigrationLibraryAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link it.univaq.coevolution.emfmigrate.emig.LocatedElement <em>Located Element</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see it.univaq.coevolution.emfmigrate.emig.LocatedElement
+   * @generated
+   */
+  public Adapter createLocatedElementAdapter()
   {
     return null;
   }

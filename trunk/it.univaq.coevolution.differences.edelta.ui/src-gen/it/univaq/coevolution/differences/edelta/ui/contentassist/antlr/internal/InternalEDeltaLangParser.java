@@ -23,7 +23,7 @@ import java.util.HashMap;
 @SuppressWarnings("all")
 public class InternalEDeltaLangParser extends AbstractInternalContentAssistParser {
     public static final String[] tokenNames = new String[] {
-        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_BOOL", "RULE_INT", "RULE_ID", "RULE_STRING", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'*'", "'package'", "'='", "'{'", "'}'", "'deletePackage'", "'('", "')'", "'addPackage'", "'changePackage'", "'class'", "'set'", "'<='", "';'", "','", "'attribute'", "'reference'", "'def change'", "':'", "'bool'", "'int'", "'string'", "'changeClass('", "'addClass('", "'deleteClass('", "'changeAttribute('", "'addAttribute('", "'deleteAttribute('", "'changeReference'", "'addReference'", "'deleteReference'"
+        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_BOOL", "RULE_INT", "RULE_ID", "RULE_STRING", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'*'", "'package'", "'='", "'{'", "'}'", "'deletePackage'", "'('", "')'", "'addPackage'", "'changePackage'", "'class'", "'set'", "';'", "','", "'attribute'", "'reference'", "'def change'", "':'", "'bool'", "'int'", "'string'", "'changeClass('", "'addClass('", "'deleteClass('", "'<='", "'changeAttribute('", "'addAttribute('", "'deleteAttribute('", "'changeReference'", "'addReference'", "'deleteReference'"
     };
     public static final int T__42=42;
     public static final int RULE_ID=6;
@@ -159,7 +159,7 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
                 int alt1=2;
                 int LA1_0 = input.LA(1);
 
-                if ( (LA1_0==RULE_ID||LA1_0==13||LA1_0==17||(LA1_0>=20 && LA1_0<=21)||LA1_0==29) ) {
+                if ( (LA1_0==RULE_ID||LA1_0==13||LA1_0==17||(LA1_0>=20 && LA1_0<=21)||LA1_0==28) ) {
                     alt1=1;
                 }
 
@@ -2600,7 +2600,7 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
             if ( (LA2_0==RULE_ID||LA2_0==13||LA2_0==17||(LA2_0>=20 && LA2_0<=21)) ) {
                 alt2=1;
             }
-            else if ( (LA2_0==29) ) {
+            else if ( (LA2_0==28) ) {
                 alt2=2;
             }
             else {
@@ -2908,7 +2908,7 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
             if ( (LA5_0==23) ) {
                 alt5=1;
             }
-            else if ( (LA5_0==22||(LA5_0>=34 && LA5_0<=36)) ) {
+            else if ( (LA5_0==22||(LA5_0>=33 && LA5_0<=35)) ) {
                 alt5=2;
             }
             else {
@@ -3104,17 +3104,17 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
             // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:993:1: ( ( ( rule__EClassOperation__OpAssignment_1_0_0 ) ) | ( ( rule__EClassOperation__OpAssignment_1_0_1 ) ) | ( ( rule__EClassOperation__OpAssignment_1_0_2 ) ) )
             int alt7=3;
             switch ( input.LA(1) ) {
-            case 34:
+            case 33:
                 {
                 alt7=1;
                 }
                 break;
-            case 35:
+            case 34:
                 {
                 alt7=2;
                 }
                 break;
-            case 36:
+            case 35:
                 {
                 alt7=3;
                 }
@@ -5762,7 +5762,7 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
                 int alt25=2;
                 int LA25_0 = input.LA(1);
 
-                if ( ((LA25_0>=22 && LA25_0<=23)||(LA25_0>=34 && LA25_0<=36)) ) {
+                if ( ((LA25_0>=22 && LA25_0<=23)||(LA25_0>=33 && LA25_0<=35)) ) {
                     alt25=1;
                 }
 
@@ -7747,7 +7747,7 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
                 int alt27=2;
                 int LA27_0 = input.LA(1);
 
-                if ( (LA27_0==RULE_ID||LA27_0==23||(LA27_0>=27 && LA27_0<=28)||(LA27_0>=37 && LA27_0<=42)) ) {
+                if ( (LA27_0==RULE_ID||LA27_0==23||(LA27_0>=26 && LA27_0<=27)||(LA27_0>=37 && LA27_0<=42)) ) {
                     alt27=1;
                 }
 
@@ -7907,34 +7907,28 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ChangeClass__Group__0__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2499:1: rule__ChangeClass__Group__0__Impl : ( ( rule__ChangeClass__OpAssignment_0 ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2499:1: rule__ChangeClass__Group__0__Impl : ( () ) ;
     public final void rule__ChangeClass__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2503:1: ( ( ( rule__ChangeClass__OpAssignment_0 ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2504:1: ( ( rule__ChangeClass__OpAssignment_0 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2503:1: ( ( () ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2504:1: ( () )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2504:1: ( ( rule__ChangeClass__OpAssignment_0 ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2505:1: ( rule__ChangeClass__OpAssignment_0 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2504:1: ( () )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2505:1: ()
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getChangeClassAccess().getOpAssignment_0()); 
+               before(grammarAccess.getChangeClassAccess().getChangeClassAction_0()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2506:1: ( rule__ChangeClass__OpAssignment_0 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2506:2: rule__ChangeClass__OpAssignment_0
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2506:1: ()
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2508:1: 
             {
-            pushFollow(FOLLOW_rule__ChangeClass__OpAssignment_0_in_rule__ChangeClass__Group__0__Impl5248);
-            rule__ChangeClass__OpAssignment_0();
-
-            state._fsp--;
-            if (state.failed) return ;
-
             }
 
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getChangeClassAccess().getOpAssignment_0()); 
+               after(grammarAccess.getChangeClassAccess().getChangeClassAction_0()); 
             }
 
             }
@@ -7942,10 +7936,6 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
             }
 
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
         }
         finally {
 
@@ -7958,21 +7948,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ChangeClass__Group__1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2516:1: rule__ChangeClass__Group__1 : rule__ChangeClass__Group__1__Impl rule__ChangeClass__Group__2 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2518:1: rule__ChangeClass__Group__1 : rule__ChangeClass__Group__1__Impl rule__ChangeClass__Group__2 ;
     public final void rule__ChangeClass__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2520:1: ( rule__ChangeClass__Group__1__Impl rule__ChangeClass__Group__2 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2521:2: rule__ChangeClass__Group__1__Impl rule__ChangeClass__Group__2
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2522:1: ( rule__ChangeClass__Group__1__Impl rule__ChangeClass__Group__2 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2523:2: rule__ChangeClass__Group__1__Impl rule__ChangeClass__Group__2
             {
-            pushFollow(FOLLOW_rule__ChangeClass__Group__1__Impl_in_rule__ChangeClass__Group__15278);
+            pushFollow(FOLLOW_rule__ChangeClass__Group__1__Impl_in_rule__ChangeClass__Group__15279);
             rule__ChangeClass__Group__1__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__ChangeClass__Group__2_in_rule__ChangeClass__Group__15281);
+            pushFollow(FOLLOW_rule__ChangeClass__Group__2_in_rule__ChangeClass__Group__15282);
             rule__ChangeClass__Group__2();
 
             state._fsp--;
@@ -7996,26 +7986,26 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ChangeClass__Group__1__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2528:1: rule__ChangeClass__Group__1__Impl : ( ( rule__ChangeClass__RefAssignment_1 ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2530:1: rule__ChangeClass__Group__1__Impl : ( ( rule__ChangeClass__OpAssignment_1 ) ) ;
     public final void rule__ChangeClass__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2532:1: ( ( ( rule__ChangeClass__RefAssignment_1 ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2533:1: ( ( rule__ChangeClass__RefAssignment_1 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2534:1: ( ( ( rule__ChangeClass__OpAssignment_1 ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2535:1: ( ( rule__ChangeClass__OpAssignment_1 ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2533:1: ( ( rule__ChangeClass__RefAssignment_1 ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2534:1: ( rule__ChangeClass__RefAssignment_1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2535:1: ( ( rule__ChangeClass__OpAssignment_1 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2536:1: ( rule__ChangeClass__OpAssignment_1 )
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getChangeClassAccess().getRefAssignment_1()); 
+               before(grammarAccess.getChangeClassAccess().getOpAssignment_1()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2535:1: ( rule__ChangeClass__RefAssignment_1 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2535:2: rule__ChangeClass__RefAssignment_1
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2537:1: ( rule__ChangeClass__OpAssignment_1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2537:2: rule__ChangeClass__OpAssignment_1
             {
-            pushFollow(FOLLOW_rule__ChangeClass__RefAssignment_1_in_rule__ChangeClass__Group__1__Impl5308);
-            rule__ChangeClass__RefAssignment_1();
+            pushFollow(FOLLOW_rule__ChangeClass__OpAssignment_1_in_rule__ChangeClass__Group__1__Impl5309);
+            rule__ChangeClass__OpAssignment_1();
 
             state._fsp--;
             if (state.failed) return ;
@@ -8023,7 +8013,7 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
             }
 
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getChangeClassAccess().getRefAssignment_1()); 
+               after(grammarAccess.getChangeClassAccess().getOpAssignment_1()); 
             }
 
             }
@@ -8047,17 +8037,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ChangeClass__Group__2"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2545:1: rule__ChangeClass__Group__2 : rule__ChangeClass__Group__2__Impl ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2547:1: rule__ChangeClass__Group__2 : rule__ChangeClass__Group__2__Impl rule__ChangeClass__Group__3 ;
     public final void rule__ChangeClass__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2549:1: ( rule__ChangeClass__Group__2__Impl )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2550:2: rule__ChangeClass__Group__2__Impl
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2551:1: ( rule__ChangeClass__Group__2__Impl rule__ChangeClass__Group__3 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2552:2: rule__ChangeClass__Group__2__Impl rule__ChangeClass__Group__3
             {
-            pushFollow(FOLLOW_rule__ChangeClass__Group__2__Impl_in_rule__ChangeClass__Group__25338);
+            pushFollow(FOLLOW_rule__ChangeClass__Group__2__Impl_in_rule__ChangeClass__Group__25339);
             rule__ChangeClass__Group__2__Impl();
+
+            state._fsp--;
+            if (state.failed) return ;
+            pushFollow(FOLLOW_rule__ChangeClass__Group__3_in_rule__ChangeClass__Group__25342);
+            rule__ChangeClass__Group__3();
 
             state._fsp--;
             if (state.failed) return ;
@@ -8080,24 +8075,34 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ChangeClass__Group__2__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2556:1: rule__ChangeClass__Group__2__Impl : ( ')' ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2559:1: rule__ChangeClass__Group__2__Impl : ( ( rule__ChangeClass__RefAssignment_2 ) ) ;
     public final void rule__ChangeClass__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2560:1: ( ( ')' ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2561:1: ( ')' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2563:1: ( ( ( rule__ChangeClass__RefAssignment_2 ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2564:1: ( ( rule__ChangeClass__RefAssignment_2 ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2561:1: ( ')' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2562:1: ')'
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2564:1: ( ( rule__ChangeClass__RefAssignment_2 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2565:1: ( rule__ChangeClass__RefAssignment_2 )
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getChangeClassAccess().getRightParenthesisKeyword_2()); 
+               before(grammarAccess.getChangeClassAccess().getRefAssignment_2()); 
             }
-            match(input,19,FOLLOW_19_in_rule__ChangeClass__Group__2__Impl5366); if (state.failed) return ;
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2566:1: ( rule__ChangeClass__RefAssignment_2 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2566:2: rule__ChangeClass__RefAssignment_2
+            {
+            pushFollow(FOLLOW_rule__ChangeClass__RefAssignment_2_in_rule__ChangeClass__Group__2__Impl5369);
+            rule__ChangeClass__RefAssignment_2();
+
+            state._fsp--;
+            if (state.failed) return ;
+
+            }
+
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getChangeClassAccess().getRightParenthesisKeyword_2()); 
+               after(grammarAccess.getChangeClassAccess().getRefAssignment_2()); 
             }
 
             }
@@ -8120,22 +8125,96 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
     // $ANTLR end "rule__ChangeClass__Group__2__Impl"
 
 
+    // $ANTLR start "rule__ChangeClass__Group__3"
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2576:1: rule__ChangeClass__Group__3 : rule__ChangeClass__Group__3__Impl ;
+    public final void rule__ChangeClass__Group__3() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2580:1: ( rule__ChangeClass__Group__3__Impl )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2581:2: rule__ChangeClass__Group__3__Impl
+            {
+            pushFollow(FOLLOW_rule__ChangeClass__Group__3__Impl_in_rule__ChangeClass__Group__35399);
+            rule__ChangeClass__Group__3__Impl();
+
+            state._fsp--;
+            if (state.failed) return ;
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__ChangeClass__Group__3"
+
+
+    // $ANTLR start "rule__ChangeClass__Group__3__Impl"
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2587:1: rule__ChangeClass__Group__3__Impl : ( ')' ) ;
+    public final void rule__ChangeClass__Group__3__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2591:1: ( ( ')' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2592:1: ( ')' )
+            {
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2592:1: ( ')' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2593:1: ')'
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getChangeClassAccess().getRightParenthesisKeyword_3()); 
+            }
+            match(input,19,FOLLOW_19_in_rule__ChangeClass__Group__3__Impl5427); if (state.failed) return ;
+            if ( state.backtracking==0 ) {
+               after(grammarAccess.getChangeClassAccess().getRightParenthesisKeyword_3()); 
+            }
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__ChangeClass__Group__3__Impl"
+
+
     // $ANTLR start "rule__AddClass__Group__0"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2581:1: rule__AddClass__Group__0 : rule__AddClass__Group__0__Impl rule__AddClass__Group__1 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2614:1: rule__AddClass__Group__0 : rule__AddClass__Group__0__Impl rule__AddClass__Group__1 ;
     public final void rule__AddClass__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2585:1: ( rule__AddClass__Group__0__Impl rule__AddClass__Group__1 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2586:2: rule__AddClass__Group__0__Impl rule__AddClass__Group__1
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2618:1: ( rule__AddClass__Group__0__Impl rule__AddClass__Group__1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2619:2: rule__AddClass__Group__0__Impl rule__AddClass__Group__1
             {
-            pushFollow(FOLLOW_rule__AddClass__Group__0__Impl_in_rule__AddClass__Group__05403);
+            pushFollow(FOLLOW_rule__AddClass__Group__0__Impl_in_rule__AddClass__Group__05466);
             rule__AddClass__Group__0__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__AddClass__Group__1_in_rule__AddClass__Group__05406);
+            pushFollow(FOLLOW_rule__AddClass__Group__1_in_rule__AddClass__Group__05469);
             rule__AddClass__Group__1();
 
             state._fsp--;
@@ -8159,25 +8238,25 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__AddClass__Group__0__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2593:1: rule__AddClass__Group__0__Impl : ( ( rule__AddClass__OpAssignment_0 ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2626:1: rule__AddClass__Group__0__Impl : ( ( rule__AddClass__OpAssignment_0 ) ) ;
     public final void rule__AddClass__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2597:1: ( ( ( rule__AddClass__OpAssignment_0 ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2598:1: ( ( rule__AddClass__OpAssignment_0 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2630:1: ( ( ( rule__AddClass__OpAssignment_0 ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2631:1: ( ( rule__AddClass__OpAssignment_0 ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2598:1: ( ( rule__AddClass__OpAssignment_0 ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2599:1: ( rule__AddClass__OpAssignment_0 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2631:1: ( ( rule__AddClass__OpAssignment_0 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2632:1: ( rule__AddClass__OpAssignment_0 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getAddClassAccess().getOpAssignment_0()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2600:1: ( rule__AddClass__OpAssignment_0 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2600:2: rule__AddClass__OpAssignment_0
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2633:1: ( rule__AddClass__OpAssignment_0 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2633:2: rule__AddClass__OpAssignment_0
             {
-            pushFollow(FOLLOW_rule__AddClass__OpAssignment_0_in_rule__AddClass__Group__0__Impl5433);
+            pushFollow(FOLLOW_rule__AddClass__OpAssignment_0_in_rule__AddClass__Group__0__Impl5496);
             rule__AddClass__OpAssignment_0();
 
             state._fsp--;
@@ -8210,21 +8289,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__AddClass__Group__1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2610:1: rule__AddClass__Group__1 : rule__AddClass__Group__1__Impl rule__AddClass__Group__2 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2643:1: rule__AddClass__Group__1 : rule__AddClass__Group__1__Impl rule__AddClass__Group__2 ;
     public final void rule__AddClass__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2614:1: ( rule__AddClass__Group__1__Impl rule__AddClass__Group__2 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2615:2: rule__AddClass__Group__1__Impl rule__AddClass__Group__2
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2647:1: ( rule__AddClass__Group__1__Impl rule__AddClass__Group__2 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2648:2: rule__AddClass__Group__1__Impl rule__AddClass__Group__2
             {
-            pushFollow(FOLLOW_rule__AddClass__Group__1__Impl_in_rule__AddClass__Group__15463);
+            pushFollow(FOLLOW_rule__AddClass__Group__1__Impl_in_rule__AddClass__Group__15526);
             rule__AddClass__Group__1__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__AddClass__Group__2_in_rule__AddClass__Group__15466);
+            pushFollow(FOLLOW_rule__AddClass__Group__2_in_rule__AddClass__Group__15529);
             rule__AddClass__Group__2();
 
             state._fsp--;
@@ -8248,25 +8327,25 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__AddClass__Group__1__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2622:1: rule__AddClass__Group__1__Impl : ( ( rule__AddClass__Alternatives_1 ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2655:1: rule__AddClass__Group__1__Impl : ( ( rule__AddClass__Alternatives_1 ) ) ;
     public final void rule__AddClass__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2626:1: ( ( ( rule__AddClass__Alternatives_1 ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2627:1: ( ( rule__AddClass__Alternatives_1 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2659:1: ( ( ( rule__AddClass__Alternatives_1 ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2660:1: ( ( rule__AddClass__Alternatives_1 ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2627:1: ( ( rule__AddClass__Alternatives_1 ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2628:1: ( rule__AddClass__Alternatives_1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2660:1: ( ( rule__AddClass__Alternatives_1 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2661:1: ( rule__AddClass__Alternatives_1 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getAddClassAccess().getAlternatives_1()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2629:1: ( rule__AddClass__Alternatives_1 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2629:2: rule__AddClass__Alternatives_1
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2662:1: ( rule__AddClass__Alternatives_1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2662:2: rule__AddClass__Alternatives_1
             {
-            pushFollow(FOLLOW_rule__AddClass__Alternatives_1_in_rule__AddClass__Group__1__Impl5493);
+            pushFollow(FOLLOW_rule__AddClass__Alternatives_1_in_rule__AddClass__Group__1__Impl5556);
             rule__AddClass__Alternatives_1();
 
             state._fsp--;
@@ -8299,16 +8378,16 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__AddClass__Group__2"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2639:1: rule__AddClass__Group__2 : rule__AddClass__Group__2__Impl ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2672:1: rule__AddClass__Group__2 : rule__AddClass__Group__2__Impl ;
     public final void rule__AddClass__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2643:1: ( rule__AddClass__Group__2__Impl )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2644:2: rule__AddClass__Group__2__Impl
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2676:1: ( rule__AddClass__Group__2__Impl )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2677:2: rule__AddClass__Group__2__Impl
             {
-            pushFollow(FOLLOW_rule__AddClass__Group__2__Impl_in_rule__AddClass__Group__25523);
+            pushFollow(FOLLOW_rule__AddClass__Group__2__Impl_in_rule__AddClass__Group__25586);
             rule__AddClass__Group__2__Impl();
 
             state._fsp--;
@@ -8332,22 +8411,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__AddClass__Group__2__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2650:1: rule__AddClass__Group__2__Impl : ( ')' ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2683:1: rule__AddClass__Group__2__Impl : ( ')' ) ;
     public final void rule__AddClass__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2654:1: ( ( ')' ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2655:1: ( ')' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2687:1: ( ( ')' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2688:1: ( ')' )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2655:1: ( ')' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2656:1: ')'
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2688:1: ( ')' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2689:1: ')'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getAddClassAccess().getRightParenthesisKeyword_2()); 
             }
-            match(input,19,FOLLOW_19_in_rule__AddClass__Group__2__Impl5551); if (state.failed) return ;
+            match(input,19,FOLLOW_19_in_rule__AddClass__Group__2__Impl5614); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getAddClassAccess().getRightParenthesisKeyword_2()); 
             }
@@ -8373,21 +8452,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__DeleteClass__Group__0"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2675:1: rule__DeleteClass__Group__0 : rule__DeleteClass__Group__0__Impl rule__DeleteClass__Group__1 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2708:1: rule__DeleteClass__Group__0 : rule__DeleteClass__Group__0__Impl rule__DeleteClass__Group__1 ;
     public final void rule__DeleteClass__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2679:1: ( rule__DeleteClass__Group__0__Impl rule__DeleteClass__Group__1 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2680:2: rule__DeleteClass__Group__0__Impl rule__DeleteClass__Group__1
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2712:1: ( rule__DeleteClass__Group__0__Impl rule__DeleteClass__Group__1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2713:2: rule__DeleteClass__Group__0__Impl rule__DeleteClass__Group__1
             {
-            pushFollow(FOLLOW_rule__DeleteClass__Group__0__Impl_in_rule__DeleteClass__Group__05588);
+            pushFollow(FOLLOW_rule__DeleteClass__Group__0__Impl_in_rule__DeleteClass__Group__05651);
             rule__DeleteClass__Group__0__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__DeleteClass__Group__1_in_rule__DeleteClass__Group__05591);
+            pushFollow(FOLLOW_rule__DeleteClass__Group__1_in_rule__DeleteClass__Group__05654);
             rule__DeleteClass__Group__1();
 
             state._fsp--;
@@ -8411,25 +8490,25 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__DeleteClass__Group__0__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2687:1: rule__DeleteClass__Group__0__Impl : ( ( rule__DeleteClass__OpAssignment_0 ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2720:1: rule__DeleteClass__Group__0__Impl : ( ( rule__DeleteClass__OpAssignment_0 ) ) ;
     public final void rule__DeleteClass__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2691:1: ( ( ( rule__DeleteClass__OpAssignment_0 ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2692:1: ( ( rule__DeleteClass__OpAssignment_0 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2724:1: ( ( ( rule__DeleteClass__OpAssignment_0 ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2725:1: ( ( rule__DeleteClass__OpAssignment_0 ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2692:1: ( ( rule__DeleteClass__OpAssignment_0 ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2693:1: ( rule__DeleteClass__OpAssignment_0 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2725:1: ( ( rule__DeleteClass__OpAssignment_0 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2726:1: ( rule__DeleteClass__OpAssignment_0 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getDeleteClassAccess().getOpAssignment_0()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2694:1: ( rule__DeleteClass__OpAssignment_0 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2694:2: rule__DeleteClass__OpAssignment_0
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2727:1: ( rule__DeleteClass__OpAssignment_0 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2727:2: rule__DeleteClass__OpAssignment_0
             {
-            pushFollow(FOLLOW_rule__DeleteClass__OpAssignment_0_in_rule__DeleteClass__Group__0__Impl5618);
+            pushFollow(FOLLOW_rule__DeleteClass__OpAssignment_0_in_rule__DeleteClass__Group__0__Impl5681);
             rule__DeleteClass__OpAssignment_0();
 
             state._fsp--;
@@ -8462,21 +8541,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__DeleteClass__Group__1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2704:1: rule__DeleteClass__Group__1 : rule__DeleteClass__Group__1__Impl rule__DeleteClass__Group__2 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2737:1: rule__DeleteClass__Group__1 : rule__DeleteClass__Group__1__Impl rule__DeleteClass__Group__2 ;
     public final void rule__DeleteClass__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2708:1: ( rule__DeleteClass__Group__1__Impl rule__DeleteClass__Group__2 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2709:2: rule__DeleteClass__Group__1__Impl rule__DeleteClass__Group__2
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2741:1: ( rule__DeleteClass__Group__1__Impl rule__DeleteClass__Group__2 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2742:2: rule__DeleteClass__Group__1__Impl rule__DeleteClass__Group__2
             {
-            pushFollow(FOLLOW_rule__DeleteClass__Group__1__Impl_in_rule__DeleteClass__Group__15648);
+            pushFollow(FOLLOW_rule__DeleteClass__Group__1__Impl_in_rule__DeleteClass__Group__15711);
             rule__DeleteClass__Group__1__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__DeleteClass__Group__2_in_rule__DeleteClass__Group__15651);
+            pushFollow(FOLLOW_rule__DeleteClass__Group__2_in_rule__DeleteClass__Group__15714);
             rule__DeleteClass__Group__2();
 
             state._fsp--;
@@ -8500,25 +8579,25 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__DeleteClass__Group__1__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2716:1: rule__DeleteClass__Group__1__Impl : ( ( rule__DeleteClass__RefAssignment_1 ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2749:1: rule__DeleteClass__Group__1__Impl : ( ( rule__DeleteClass__RefAssignment_1 ) ) ;
     public final void rule__DeleteClass__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2720:1: ( ( ( rule__DeleteClass__RefAssignment_1 ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2721:1: ( ( rule__DeleteClass__RefAssignment_1 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2753:1: ( ( ( rule__DeleteClass__RefAssignment_1 ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2754:1: ( ( rule__DeleteClass__RefAssignment_1 ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2721:1: ( ( rule__DeleteClass__RefAssignment_1 ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2722:1: ( rule__DeleteClass__RefAssignment_1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2754:1: ( ( rule__DeleteClass__RefAssignment_1 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2755:1: ( rule__DeleteClass__RefAssignment_1 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getDeleteClassAccess().getRefAssignment_1()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2723:1: ( rule__DeleteClass__RefAssignment_1 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2723:2: rule__DeleteClass__RefAssignment_1
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2756:1: ( rule__DeleteClass__RefAssignment_1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2756:2: rule__DeleteClass__RefAssignment_1
             {
-            pushFollow(FOLLOW_rule__DeleteClass__RefAssignment_1_in_rule__DeleteClass__Group__1__Impl5678);
+            pushFollow(FOLLOW_rule__DeleteClass__RefAssignment_1_in_rule__DeleteClass__Group__1__Impl5741);
             rule__DeleteClass__RefAssignment_1();
 
             state._fsp--;
@@ -8551,16 +8630,16 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__DeleteClass__Group__2"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2733:1: rule__DeleteClass__Group__2 : rule__DeleteClass__Group__2__Impl ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2766:1: rule__DeleteClass__Group__2 : rule__DeleteClass__Group__2__Impl ;
     public final void rule__DeleteClass__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2737:1: ( rule__DeleteClass__Group__2__Impl )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2738:2: rule__DeleteClass__Group__2__Impl
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2770:1: ( rule__DeleteClass__Group__2__Impl )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2771:2: rule__DeleteClass__Group__2__Impl
             {
-            pushFollow(FOLLOW_rule__DeleteClass__Group__2__Impl_in_rule__DeleteClass__Group__25708);
+            pushFollow(FOLLOW_rule__DeleteClass__Group__2__Impl_in_rule__DeleteClass__Group__25771);
             rule__DeleteClass__Group__2__Impl();
 
             state._fsp--;
@@ -8584,22 +8663,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__DeleteClass__Group__2__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2744:1: rule__DeleteClass__Group__2__Impl : ( ')' ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2777:1: rule__DeleteClass__Group__2__Impl : ( ')' ) ;
     public final void rule__DeleteClass__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2748:1: ( ( ')' ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2749:1: ( ')' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2781:1: ( ( ')' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2782:1: ( ')' )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2749:1: ( ')' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2750:1: ')'
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2782:1: ( ')' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2783:1: ')'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getDeleteClassAccess().getRightParenthesisKeyword_2()); 
             }
-            match(input,19,FOLLOW_19_in_rule__DeleteClass__Group__2__Impl5736); if (state.failed) return ;
+            match(input,19,FOLLOW_19_in_rule__DeleteClass__Group__2__Impl5799); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getDeleteClassAccess().getRightParenthesisKeyword_2()); 
             }
@@ -8625,21 +8704,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Class__Group__0"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2769:1: rule__Class__Group__0 : rule__Class__Group__0__Impl rule__Class__Group__1 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2802:1: rule__Class__Group__0 : rule__Class__Group__0__Impl rule__Class__Group__1 ;
     public final void rule__Class__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2773:1: ( rule__Class__Group__0__Impl rule__Class__Group__1 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2774:2: rule__Class__Group__0__Impl rule__Class__Group__1
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2806:1: ( rule__Class__Group__0__Impl rule__Class__Group__1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2807:2: rule__Class__Group__0__Impl rule__Class__Group__1
             {
-            pushFollow(FOLLOW_rule__Class__Group__0__Impl_in_rule__Class__Group__05773);
+            pushFollow(FOLLOW_rule__Class__Group__0__Impl_in_rule__Class__Group__05836);
             rule__Class__Group__0__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__Class__Group__1_in_rule__Class__Group__05776);
+            pushFollow(FOLLOW_rule__Class__Group__1_in_rule__Class__Group__05839);
             rule__Class__Group__1();
 
             state._fsp--;
@@ -8663,23 +8742,23 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Class__Group__0__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2781:1: rule__Class__Group__0__Impl : ( () ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2814:1: rule__Class__Group__0__Impl : ( () ) ;
     public final void rule__Class__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2785:1: ( ( () ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2786:1: ( () )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2818:1: ( ( () ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2819:1: ( () )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2786:1: ( () )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2787:1: ()
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2819:1: ( () )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2820:1: ()
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getClassAccess().getClassAction_0()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2788:1: ()
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2790:1: 
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2821:1: ()
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2823:1: 
             {
             }
 
@@ -8704,16 +8783,16 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Class__Group__1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2800:1: rule__Class__Group__1 : rule__Class__Group__1__Impl ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2833:1: rule__Class__Group__1 : rule__Class__Group__1__Impl ;
     public final void rule__Class__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2804:1: ( rule__Class__Group__1__Impl )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2805:2: rule__Class__Group__1__Impl
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2837:1: ( rule__Class__Group__1__Impl )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2838:2: rule__Class__Group__1__Impl
             {
-            pushFollow(FOLLOW_rule__Class__Group__1__Impl_in_rule__Class__Group__15834);
+            pushFollow(FOLLOW_rule__Class__Group__1__Impl_in_rule__Class__Group__15897);
             rule__Class__Group__1__Impl();
 
             state._fsp--;
@@ -8737,25 +8816,25 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Class__Group__1__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2811:1: rule__Class__Group__1__Impl : ( ( rule__Class__NameAssignment_1 ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2844:1: rule__Class__Group__1__Impl : ( ( rule__Class__NameAssignment_1 ) ) ;
     public final void rule__Class__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2815:1: ( ( ( rule__Class__NameAssignment_1 ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2816:1: ( ( rule__Class__NameAssignment_1 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2848:1: ( ( ( rule__Class__NameAssignment_1 ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2849:1: ( ( rule__Class__NameAssignment_1 ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2816:1: ( ( rule__Class__NameAssignment_1 ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2817:1: ( rule__Class__NameAssignment_1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2849:1: ( ( rule__Class__NameAssignment_1 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2850:1: ( rule__Class__NameAssignment_1 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getClassAccess().getNameAssignment_1()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2818:1: ( rule__Class__NameAssignment_1 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2818:2: rule__Class__NameAssignment_1
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2851:1: ( rule__Class__NameAssignment_1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2851:2: rule__Class__NameAssignment_1
             {
-            pushFollow(FOLLOW_rule__Class__NameAssignment_1_in_rule__Class__Group__1__Impl5861);
+            pushFollow(FOLLOW_rule__Class__NameAssignment_1_in_rule__Class__Group__1__Impl5924);
             rule__Class__NameAssignment_1();
 
             state._fsp--;
@@ -8788,21 +8867,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Setter__Group__0"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2832:1: rule__Setter__Group__0 : rule__Setter__Group__0__Impl rule__Setter__Group__1 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2865:1: rule__Setter__Group__0 : rule__Setter__Group__0__Impl rule__Setter__Group__1 ;
     public final void rule__Setter__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2836:1: ( rule__Setter__Group__0__Impl rule__Setter__Group__1 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2837:2: rule__Setter__Group__0__Impl rule__Setter__Group__1
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2869:1: ( rule__Setter__Group__0__Impl rule__Setter__Group__1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2870:2: rule__Setter__Group__0__Impl rule__Setter__Group__1
             {
-            pushFollow(FOLLOW_rule__Setter__Group__0__Impl_in_rule__Setter__Group__05895);
+            pushFollow(FOLLOW_rule__Setter__Group__0__Impl_in_rule__Setter__Group__05958);
             rule__Setter__Group__0__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__Setter__Group__1_in_rule__Setter__Group__05898);
+            pushFollow(FOLLOW_rule__Setter__Group__1_in_rule__Setter__Group__05961);
             rule__Setter__Group__1();
 
             state._fsp--;
@@ -8826,22 +8905,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Setter__Group__0__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2844:1: rule__Setter__Group__0__Impl : ( 'set' ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2877:1: rule__Setter__Group__0__Impl : ( 'set' ) ;
     public final void rule__Setter__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2848:1: ( ( 'set' ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2849:1: ( 'set' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2881:1: ( ( 'set' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2882:1: ( 'set' )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2849:1: ( 'set' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2850:1: 'set'
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2882:1: ( 'set' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2883:1: 'set'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getSetterAccess().getSetKeyword_0()); 
             }
-            match(input,23,FOLLOW_23_in_rule__Setter__Group__0__Impl5926); if (state.failed) return ;
+            match(input,23,FOLLOW_23_in_rule__Setter__Group__0__Impl5989); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getSetterAccess().getSetKeyword_0()); 
             }
@@ -8867,21 +8946,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Setter__Group__1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2863:1: rule__Setter__Group__1 : rule__Setter__Group__1__Impl rule__Setter__Group__2 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2896:1: rule__Setter__Group__1 : rule__Setter__Group__1__Impl rule__Setter__Group__2 ;
     public final void rule__Setter__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2867:1: ( rule__Setter__Group__1__Impl rule__Setter__Group__2 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2868:2: rule__Setter__Group__1__Impl rule__Setter__Group__2
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2900:1: ( rule__Setter__Group__1__Impl rule__Setter__Group__2 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2901:2: rule__Setter__Group__1__Impl rule__Setter__Group__2
             {
-            pushFollow(FOLLOW_rule__Setter__Group__1__Impl_in_rule__Setter__Group__15957);
+            pushFollow(FOLLOW_rule__Setter__Group__1__Impl_in_rule__Setter__Group__16020);
             rule__Setter__Group__1__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__Setter__Group__2_in_rule__Setter__Group__15960);
+            pushFollow(FOLLOW_rule__Setter__Group__2_in_rule__Setter__Group__16023);
             rule__Setter__Group__2();
 
             state._fsp--;
@@ -8905,25 +8984,25 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Setter__Group__1__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2875:1: rule__Setter__Group__1__Impl : ( ( rule__Setter__MetafeatureAssignment_1 ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2908:1: rule__Setter__Group__1__Impl : ( ( rule__Setter__MetafeatureAssignment_1 ) ) ;
     public final void rule__Setter__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2879:1: ( ( ( rule__Setter__MetafeatureAssignment_1 ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2880:1: ( ( rule__Setter__MetafeatureAssignment_1 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2912:1: ( ( ( rule__Setter__MetafeatureAssignment_1 ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2913:1: ( ( rule__Setter__MetafeatureAssignment_1 ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2880:1: ( ( rule__Setter__MetafeatureAssignment_1 ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2881:1: ( rule__Setter__MetafeatureAssignment_1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2913:1: ( ( rule__Setter__MetafeatureAssignment_1 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2914:1: ( rule__Setter__MetafeatureAssignment_1 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getSetterAccess().getMetafeatureAssignment_1()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2882:1: ( rule__Setter__MetafeatureAssignment_1 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2882:2: rule__Setter__MetafeatureAssignment_1
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2915:1: ( rule__Setter__MetafeatureAssignment_1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2915:2: rule__Setter__MetafeatureAssignment_1
             {
-            pushFollow(FOLLOW_rule__Setter__MetafeatureAssignment_1_in_rule__Setter__Group__1__Impl5987);
+            pushFollow(FOLLOW_rule__Setter__MetafeatureAssignment_1_in_rule__Setter__Group__1__Impl6050);
             rule__Setter__MetafeatureAssignment_1();
 
             state._fsp--;
@@ -8956,21 +9035,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Setter__Group__2"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2892:1: rule__Setter__Group__2 : rule__Setter__Group__2__Impl rule__Setter__Group__3 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2925:1: rule__Setter__Group__2 : rule__Setter__Group__2__Impl rule__Setter__Group__3 ;
     public final void rule__Setter__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2896:1: ( rule__Setter__Group__2__Impl rule__Setter__Group__3 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2897:2: rule__Setter__Group__2__Impl rule__Setter__Group__3
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2929:1: ( rule__Setter__Group__2__Impl rule__Setter__Group__3 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2930:2: rule__Setter__Group__2__Impl rule__Setter__Group__3
             {
-            pushFollow(FOLLOW_rule__Setter__Group__2__Impl_in_rule__Setter__Group__26017);
+            pushFollow(FOLLOW_rule__Setter__Group__2__Impl_in_rule__Setter__Group__26080);
             rule__Setter__Group__2__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__Setter__Group__3_in_rule__Setter__Group__26020);
+            pushFollow(FOLLOW_rule__Setter__Group__3_in_rule__Setter__Group__26083);
             rule__Setter__Group__3();
 
             state._fsp--;
@@ -8994,24 +9073,34 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Setter__Group__2__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2904:1: rule__Setter__Group__2__Impl : ( '<=' ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2937:1: rule__Setter__Group__2__Impl : ( ( rule__Setter__OperatorAssignment_2 ) ) ;
     public final void rule__Setter__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2908:1: ( ( '<=' ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2909:1: ( '<=' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2941:1: ( ( ( rule__Setter__OperatorAssignment_2 ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2942:1: ( ( rule__Setter__OperatorAssignment_2 ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2909:1: ( '<=' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2910:1: '<='
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2942:1: ( ( rule__Setter__OperatorAssignment_2 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2943:1: ( rule__Setter__OperatorAssignment_2 )
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getSetterAccess().getLessThanSignEqualsSignKeyword_2()); 
+               before(grammarAccess.getSetterAccess().getOperatorAssignment_2()); 
             }
-            match(input,24,FOLLOW_24_in_rule__Setter__Group__2__Impl6048); if (state.failed) return ;
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2944:1: ( rule__Setter__OperatorAssignment_2 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2944:2: rule__Setter__OperatorAssignment_2
+            {
+            pushFollow(FOLLOW_rule__Setter__OperatorAssignment_2_in_rule__Setter__Group__2__Impl6110);
+            rule__Setter__OperatorAssignment_2();
+
+            state._fsp--;
+            if (state.failed) return ;
+
+            }
+
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getSetterAccess().getLessThanSignEqualsSignKeyword_2()); 
+               after(grammarAccess.getSetterAccess().getOperatorAssignment_2()); 
             }
 
             }
@@ -9035,21 +9124,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Setter__Group__3"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2923:1: rule__Setter__Group__3 : rule__Setter__Group__3__Impl rule__Setter__Group__4 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2954:1: rule__Setter__Group__3 : rule__Setter__Group__3__Impl rule__Setter__Group__4 ;
     public final void rule__Setter__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2927:1: ( rule__Setter__Group__3__Impl rule__Setter__Group__4 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2928:2: rule__Setter__Group__3__Impl rule__Setter__Group__4
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2958:1: ( rule__Setter__Group__3__Impl rule__Setter__Group__4 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2959:2: rule__Setter__Group__3__Impl rule__Setter__Group__4
             {
-            pushFollow(FOLLOW_rule__Setter__Group__3__Impl_in_rule__Setter__Group__36079);
+            pushFollow(FOLLOW_rule__Setter__Group__3__Impl_in_rule__Setter__Group__36140);
             rule__Setter__Group__3__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__Setter__Group__4_in_rule__Setter__Group__36082);
+            pushFollow(FOLLOW_rule__Setter__Group__4_in_rule__Setter__Group__36143);
             rule__Setter__Group__4();
 
             state._fsp--;
@@ -9073,25 +9162,25 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Setter__Group__3__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2935:1: rule__Setter__Group__3__Impl : ( ( rule__Setter__Alternatives_3 ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2966:1: rule__Setter__Group__3__Impl : ( ( rule__Setter__Alternatives_3 ) ) ;
     public final void rule__Setter__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2939:1: ( ( ( rule__Setter__Alternatives_3 ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2940:1: ( ( rule__Setter__Alternatives_3 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2970:1: ( ( ( rule__Setter__Alternatives_3 ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2971:1: ( ( rule__Setter__Alternatives_3 ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2940:1: ( ( rule__Setter__Alternatives_3 ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2941:1: ( rule__Setter__Alternatives_3 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2971:1: ( ( rule__Setter__Alternatives_3 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2972:1: ( rule__Setter__Alternatives_3 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getSetterAccess().getAlternatives_3()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2942:1: ( rule__Setter__Alternatives_3 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2942:2: rule__Setter__Alternatives_3
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2973:1: ( rule__Setter__Alternatives_3 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2973:2: rule__Setter__Alternatives_3
             {
-            pushFollow(FOLLOW_rule__Setter__Alternatives_3_in_rule__Setter__Group__3__Impl6109);
+            pushFollow(FOLLOW_rule__Setter__Alternatives_3_in_rule__Setter__Group__3__Impl6170);
             rule__Setter__Alternatives_3();
 
             state._fsp--;
@@ -9124,21 +9213,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Setter__Group__4"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2952:1: rule__Setter__Group__4 : rule__Setter__Group__4__Impl rule__Setter__Group__5 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2983:1: rule__Setter__Group__4 : rule__Setter__Group__4__Impl rule__Setter__Group__5 ;
     public final void rule__Setter__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2956:1: ( rule__Setter__Group__4__Impl rule__Setter__Group__5 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2957:2: rule__Setter__Group__4__Impl rule__Setter__Group__5
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2987:1: ( rule__Setter__Group__4__Impl rule__Setter__Group__5 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2988:2: rule__Setter__Group__4__Impl rule__Setter__Group__5
             {
-            pushFollow(FOLLOW_rule__Setter__Group__4__Impl_in_rule__Setter__Group__46139);
+            pushFollow(FOLLOW_rule__Setter__Group__4__Impl_in_rule__Setter__Group__46200);
             rule__Setter__Group__4__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__Setter__Group__5_in_rule__Setter__Group__46142);
+            pushFollow(FOLLOW_rule__Setter__Group__5_in_rule__Setter__Group__46203);
             rule__Setter__Group__5();
 
             state._fsp--;
@@ -9162,37 +9251,37 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Setter__Group__4__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2964:1: rule__Setter__Group__4__Impl : ( ( rule__Setter__Group_4__0 )* ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2995:1: rule__Setter__Group__4__Impl : ( ( rule__Setter__Group_4__0 )* ) ;
     public final void rule__Setter__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2968:1: ( ( ( rule__Setter__Group_4__0 )* ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2969:1: ( ( rule__Setter__Group_4__0 )* )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2999:1: ( ( ( rule__Setter__Group_4__0 )* ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3000:1: ( ( rule__Setter__Group_4__0 )* )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2969:1: ( ( rule__Setter__Group_4__0 )* )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2970:1: ( rule__Setter__Group_4__0 )*
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3000:1: ( ( rule__Setter__Group_4__0 )* )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3001:1: ( rule__Setter__Group_4__0 )*
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getSetterAccess().getGroup_4()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2971:1: ( rule__Setter__Group_4__0 )*
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3002:1: ( rule__Setter__Group_4__0 )*
             loop28:
             do {
                 int alt28=2;
                 int LA28_0 = input.LA(1);
 
-                if ( (LA28_0==26) ) {
+                if ( (LA28_0==25) ) {
                     alt28=1;
                 }
 
 
                 switch (alt28) {
             	case 1 :
-            	    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2971:2: rule__Setter__Group_4__0
+            	    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3002:2: rule__Setter__Group_4__0
             	    {
-            	    pushFollow(FOLLOW_rule__Setter__Group_4__0_in_rule__Setter__Group__4__Impl6169);
+            	    pushFollow(FOLLOW_rule__Setter__Group_4__0_in_rule__Setter__Group__4__Impl6230);
             	    rule__Setter__Group_4__0();
 
             	    state._fsp--;
@@ -9231,16 +9320,16 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Setter__Group__5"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2981:1: rule__Setter__Group__5 : rule__Setter__Group__5__Impl ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3012:1: rule__Setter__Group__5 : rule__Setter__Group__5__Impl ;
     public final void rule__Setter__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2985:1: ( rule__Setter__Group__5__Impl )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2986:2: rule__Setter__Group__5__Impl
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3016:1: ( rule__Setter__Group__5__Impl )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3017:2: rule__Setter__Group__5__Impl
             {
-            pushFollow(FOLLOW_rule__Setter__Group__5__Impl_in_rule__Setter__Group__56200);
+            pushFollow(FOLLOW_rule__Setter__Group__5__Impl_in_rule__Setter__Group__56261);
             rule__Setter__Group__5__Impl();
 
             state._fsp--;
@@ -9264,22 +9353,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Setter__Group__5__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2992:1: rule__Setter__Group__5__Impl : ( ';' ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3023:1: rule__Setter__Group__5__Impl : ( ';' ) ;
     public final void rule__Setter__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2996:1: ( ( ';' ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2997:1: ( ';' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3027:1: ( ( ';' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3028:1: ( ';' )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2997:1: ( ';' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:2998:1: ';'
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3028:1: ( ';' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3029:1: ';'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getSetterAccess().getSemicolonKeyword_5()); 
             }
-            match(input,25,FOLLOW_25_in_rule__Setter__Group__5__Impl6228); if (state.failed) return ;
+            match(input,24,FOLLOW_24_in_rule__Setter__Group__5__Impl6289); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getSetterAccess().getSemicolonKeyword_5()); 
             }
@@ -9305,21 +9394,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Setter__Group_4__0"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3023:1: rule__Setter__Group_4__0 : rule__Setter__Group_4__0__Impl rule__Setter__Group_4__1 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3054:1: rule__Setter__Group_4__0 : rule__Setter__Group_4__0__Impl rule__Setter__Group_4__1 ;
     public final void rule__Setter__Group_4__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3027:1: ( rule__Setter__Group_4__0__Impl rule__Setter__Group_4__1 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3028:2: rule__Setter__Group_4__0__Impl rule__Setter__Group_4__1
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3058:1: ( rule__Setter__Group_4__0__Impl rule__Setter__Group_4__1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3059:2: rule__Setter__Group_4__0__Impl rule__Setter__Group_4__1
             {
-            pushFollow(FOLLOW_rule__Setter__Group_4__0__Impl_in_rule__Setter__Group_4__06271);
+            pushFollow(FOLLOW_rule__Setter__Group_4__0__Impl_in_rule__Setter__Group_4__06332);
             rule__Setter__Group_4__0__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__Setter__Group_4__1_in_rule__Setter__Group_4__06274);
+            pushFollow(FOLLOW_rule__Setter__Group_4__1_in_rule__Setter__Group_4__06335);
             rule__Setter__Group_4__1();
 
             state._fsp--;
@@ -9343,22 +9432,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Setter__Group_4__0__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3035:1: rule__Setter__Group_4__0__Impl : ( ',' ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3066:1: rule__Setter__Group_4__0__Impl : ( ',' ) ;
     public final void rule__Setter__Group_4__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3039:1: ( ( ',' ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3040:1: ( ',' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3070:1: ( ( ',' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3071:1: ( ',' )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3040:1: ( ',' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3041:1: ','
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3071:1: ( ',' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3072:1: ','
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getSetterAccess().getCommaKeyword_4_0()); 
             }
-            match(input,26,FOLLOW_26_in_rule__Setter__Group_4__0__Impl6302); if (state.failed) return ;
+            match(input,25,FOLLOW_25_in_rule__Setter__Group_4__0__Impl6363); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getSetterAccess().getCommaKeyword_4_0()); 
             }
@@ -9384,16 +9473,16 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Setter__Group_4__1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3054:1: rule__Setter__Group_4__1 : rule__Setter__Group_4__1__Impl ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3085:1: rule__Setter__Group_4__1 : rule__Setter__Group_4__1__Impl ;
     public final void rule__Setter__Group_4__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3058:1: ( rule__Setter__Group_4__1__Impl )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3059:2: rule__Setter__Group_4__1__Impl
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3089:1: ( rule__Setter__Group_4__1__Impl )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3090:2: rule__Setter__Group_4__1__Impl
             {
-            pushFollow(FOLLOW_rule__Setter__Group_4__1__Impl_in_rule__Setter__Group_4__16333);
+            pushFollow(FOLLOW_rule__Setter__Group_4__1__Impl_in_rule__Setter__Group_4__16394);
             rule__Setter__Group_4__1__Impl();
 
             state._fsp--;
@@ -9417,25 +9506,25 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Setter__Group_4__1__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3065:1: rule__Setter__Group_4__1__Impl : ( ( rule__Setter__ValueRefAssignment_4_1 ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3096:1: rule__Setter__Group_4__1__Impl : ( ( rule__Setter__ValueRefAssignment_4_1 ) ) ;
     public final void rule__Setter__Group_4__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3069:1: ( ( ( rule__Setter__ValueRefAssignment_4_1 ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3070:1: ( ( rule__Setter__ValueRefAssignment_4_1 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3100:1: ( ( ( rule__Setter__ValueRefAssignment_4_1 ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3101:1: ( ( rule__Setter__ValueRefAssignment_4_1 ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3070:1: ( ( rule__Setter__ValueRefAssignment_4_1 ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3071:1: ( rule__Setter__ValueRefAssignment_4_1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3101:1: ( ( rule__Setter__ValueRefAssignment_4_1 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3102:1: ( rule__Setter__ValueRefAssignment_4_1 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getSetterAccess().getValueRefAssignment_4_1()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3072:1: ( rule__Setter__ValueRefAssignment_4_1 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3072:2: rule__Setter__ValueRefAssignment_4_1
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3103:1: ( rule__Setter__ValueRefAssignment_4_1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3103:2: rule__Setter__ValueRefAssignment_4_1
             {
-            pushFollow(FOLLOW_rule__Setter__ValueRefAssignment_4_1_in_rule__Setter__Group_4__1__Impl6360);
+            pushFollow(FOLLOW_rule__Setter__ValueRefAssignment_4_1_in_rule__Setter__Group_4__1__Impl6421);
             rule__Setter__ValueRefAssignment_4_1();
 
             state._fsp--;
@@ -9468,21 +9557,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EAttributeOperation__Group__0"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3086:1: rule__EAttributeOperation__Group__0 : rule__EAttributeOperation__Group__0__Impl rule__EAttributeOperation__Group__1 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3117:1: rule__EAttributeOperation__Group__0 : rule__EAttributeOperation__Group__0__Impl rule__EAttributeOperation__Group__1 ;
     public final void rule__EAttributeOperation__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3090:1: ( rule__EAttributeOperation__Group__0__Impl rule__EAttributeOperation__Group__1 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3091:2: rule__EAttributeOperation__Group__0__Impl rule__EAttributeOperation__Group__1
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3121:1: ( rule__EAttributeOperation__Group__0__Impl rule__EAttributeOperation__Group__1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3122:2: rule__EAttributeOperation__Group__0__Impl rule__EAttributeOperation__Group__1
             {
-            pushFollow(FOLLOW_rule__EAttributeOperation__Group__0__Impl_in_rule__EAttributeOperation__Group__06394);
+            pushFollow(FOLLOW_rule__EAttributeOperation__Group__0__Impl_in_rule__EAttributeOperation__Group__06455);
             rule__EAttributeOperation__Group__0__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__EAttributeOperation__Group__1_in_rule__EAttributeOperation__Group__06397);
+            pushFollow(FOLLOW_rule__EAttributeOperation__Group__1_in_rule__EAttributeOperation__Group__06458);
             rule__EAttributeOperation__Group__1();
 
             state._fsp--;
@@ -9506,33 +9595,33 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EAttributeOperation__Group__0__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3098:1: rule__EAttributeOperation__Group__0__Impl : ( ( rule__EAttributeOperation__Group_0__0 )? ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3129:1: rule__EAttributeOperation__Group__0__Impl : ( ( rule__EAttributeOperation__Group_0__0 )? ) ;
     public final void rule__EAttributeOperation__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3102:1: ( ( ( rule__EAttributeOperation__Group_0__0 )? ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3103:1: ( ( rule__EAttributeOperation__Group_0__0 )? )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3133:1: ( ( ( rule__EAttributeOperation__Group_0__0 )? ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3134:1: ( ( rule__EAttributeOperation__Group_0__0 )? )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3103:1: ( ( rule__EAttributeOperation__Group_0__0 )? )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3104:1: ( rule__EAttributeOperation__Group_0__0 )?
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3134:1: ( ( rule__EAttributeOperation__Group_0__0 )? )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3135:1: ( rule__EAttributeOperation__Group_0__0 )?
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getEAttributeOperationAccess().getGroup_0()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3105:1: ( rule__EAttributeOperation__Group_0__0 )?
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3136:1: ( rule__EAttributeOperation__Group_0__0 )?
             int alt29=2;
             int LA29_0 = input.LA(1);
 
-            if ( (LA29_0==27) ) {
+            if ( (LA29_0==26) ) {
                 alt29=1;
             }
             switch (alt29) {
                 case 1 :
-                    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3105:2: rule__EAttributeOperation__Group_0__0
+                    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3136:2: rule__EAttributeOperation__Group_0__0
                     {
-                    pushFollow(FOLLOW_rule__EAttributeOperation__Group_0__0_in_rule__EAttributeOperation__Group__0__Impl6424);
+                    pushFollow(FOLLOW_rule__EAttributeOperation__Group_0__0_in_rule__EAttributeOperation__Group__0__Impl6485);
                     rule__EAttributeOperation__Group_0__0();
 
                     state._fsp--;
@@ -9568,16 +9657,16 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EAttributeOperation__Group__1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3115:1: rule__EAttributeOperation__Group__1 : rule__EAttributeOperation__Group__1__Impl ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3146:1: rule__EAttributeOperation__Group__1 : rule__EAttributeOperation__Group__1__Impl ;
     public final void rule__EAttributeOperation__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3119:1: ( rule__EAttributeOperation__Group__1__Impl )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3120:2: rule__EAttributeOperation__Group__1__Impl
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3150:1: ( rule__EAttributeOperation__Group__1__Impl )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3151:2: rule__EAttributeOperation__Group__1__Impl
             {
-            pushFollow(FOLLOW_rule__EAttributeOperation__Group__1__Impl_in_rule__EAttributeOperation__Group__16455);
+            pushFollow(FOLLOW_rule__EAttributeOperation__Group__1__Impl_in_rule__EAttributeOperation__Group__16516);
             rule__EAttributeOperation__Group__1__Impl();
 
             state._fsp--;
@@ -9601,25 +9690,25 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EAttributeOperation__Group__1__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3126:1: rule__EAttributeOperation__Group__1__Impl : ( ( rule__EAttributeOperation__Alternatives_1 ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3157:1: rule__EAttributeOperation__Group__1__Impl : ( ( rule__EAttributeOperation__Alternatives_1 ) ) ;
     public final void rule__EAttributeOperation__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3130:1: ( ( ( rule__EAttributeOperation__Alternatives_1 ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3131:1: ( ( rule__EAttributeOperation__Alternatives_1 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3161:1: ( ( ( rule__EAttributeOperation__Alternatives_1 ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3162:1: ( ( rule__EAttributeOperation__Alternatives_1 ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3131:1: ( ( rule__EAttributeOperation__Alternatives_1 ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3132:1: ( rule__EAttributeOperation__Alternatives_1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3162:1: ( ( rule__EAttributeOperation__Alternatives_1 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3163:1: ( rule__EAttributeOperation__Alternatives_1 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getEAttributeOperationAccess().getAlternatives_1()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3133:1: ( rule__EAttributeOperation__Alternatives_1 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3133:2: rule__EAttributeOperation__Alternatives_1
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3164:1: ( rule__EAttributeOperation__Alternatives_1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3164:2: rule__EAttributeOperation__Alternatives_1
             {
-            pushFollow(FOLLOW_rule__EAttributeOperation__Alternatives_1_in_rule__EAttributeOperation__Group__1__Impl6482);
+            pushFollow(FOLLOW_rule__EAttributeOperation__Alternatives_1_in_rule__EAttributeOperation__Group__1__Impl6543);
             rule__EAttributeOperation__Alternatives_1();
 
             state._fsp--;
@@ -9652,21 +9741,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EAttributeOperation__Group_0__0"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3147:1: rule__EAttributeOperation__Group_0__0 : rule__EAttributeOperation__Group_0__0__Impl rule__EAttributeOperation__Group_0__1 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3178:1: rule__EAttributeOperation__Group_0__0 : rule__EAttributeOperation__Group_0__0__Impl rule__EAttributeOperation__Group_0__1 ;
     public final void rule__EAttributeOperation__Group_0__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3151:1: ( rule__EAttributeOperation__Group_0__0__Impl rule__EAttributeOperation__Group_0__1 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3152:2: rule__EAttributeOperation__Group_0__0__Impl rule__EAttributeOperation__Group_0__1
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3182:1: ( rule__EAttributeOperation__Group_0__0__Impl rule__EAttributeOperation__Group_0__1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3183:2: rule__EAttributeOperation__Group_0__0__Impl rule__EAttributeOperation__Group_0__1
             {
-            pushFollow(FOLLOW_rule__EAttributeOperation__Group_0__0__Impl_in_rule__EAttributeOperation__Group_0__06516);
+            pushFollow(FOLLOW_rule__EAttributeOperation__Group_0__0__Impl_in_rule__EAttributeOperation__Group_0__06577);
             rule__EAttributeOperation__Group_0__0__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__EAttributeOperation__Group_0__1_in_rule__EAttributeOperation__Group_0__06519);
+            pushFollow(FOLLOW_rule__EAttributeOperation__Group_0__1_in_rule__EAttributeOperation__Group_0__06580);
             rule__EAttributeOperation__Group_0__1();
 
             state._fsp--;
@@ -9690,22 +9779,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EAttributeOperation__Group_0__0__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3159:1: rule__EAttributeOperation__Group_0__0__Impl : ( 'attribute' ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3190:1: rule__EAttributeOperation__Group_0__0__Impl : ( 'attribute' ) ;
     public final void rule__EAttributeOperation__Group_0__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3163:1: ( ( 'attribute' ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3164:1: ( 'attribute' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3194:1: ( ( 'attribute' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3195:1: ( 'attribute' )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3164:1: ( 'attribute' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3165:1: 'attribute'
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3195:1: ( 'attribute' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3196:1: 'attribute'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getEAttributeOperationAccess().getAttributeKeyword_0_0()); 
             }
-            match(input,27,FOLLOW_27_in_rule__EAttributeOperation__Group_0__0__Impl6547); if (state.failed) return ;
+            match(input,26,FOLLOW_26_in_rule__EAttributeOperation__Group_0__0__Impl6608); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getEAttributeOperationAccess().getAttributeKeyword_0_0()); 
             }
@@ -9731,21 +9820,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EAttributeOperation__Group_0__1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3178:1: rule__EAttributeOperation__Group_0__1 : rule__EAttributeOperation__Group_0__1__Impl rule__EAttributeOperation__Group_0__2 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3209:1: rule__EAttributeOperation__Group_0__1 : rule__EAttributeOperation__Group_0__1__Impl rule__EAttributeOperation__Group_0__2 ;
     public final void rule__EAttributeOperation__Group_0__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3182:1: ( rule__EAttributeOperation__Group_0__1__Impl rule__EAttributeOperation__Group_0__2 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3183:2: rule__EAttributeOperation__Group_0__1__Impl rule__EAttributeOperation__Group_0__2
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3213:1: ( rule__EAttributeOperation__Group_0__1__Impl rule__EAttributeOperation__Group_0__2 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3214:2: rule__EAttributeOperation__Group_0__1__Impl rule__EAttributeOperation__Group_0__2
             {
-            pushFollow(FOLLOW_rule__EAttributeOperation__Group_0__1__Impl_in_rule__EAttributeOperation__Group_0__16578);
+            pushFollow(FOLLOW_rule__EAttributeOperation__Group_0__1__Impl_in_rule__EAttributeOperation__Group_0__16639);
             rule__EAttributeOperation__Group_0__1__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__EAttributeOperation__Group_0__2_in_rule__EAttributeOperation__Group_0__16581);
+            pushFollow(FOLLOW_rule__EAttributeOperation__Group_0__2_in_rule__EAttributeOperation__Group_0__16642);
             rule__EAttributeOperation__Group_0__2();
 
             state._fsp--;
@@ -9769,25 +9858,25 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EAttributeOperation__Group_0__1__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3190:1: rule__EAttributeOperation__Group_0__1__Impl : ( ( rule__EAttributeOperation__VarAssignment_0_1 ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3221:1: rule__EAttributeOperation__Group_0__1__Impl : ( ( rule__EAttributeOperation__VarAssignment_0_1 ) ) ;
     public final void rule__EAttributeOperation__Group_0__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3194:1: ( ( ( rule__EAttributeOperation__VarAssignment_0_1 ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3195:1: ( ( rule__EAttributeOperation__VarAssignment_0_1 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3225:1: ( ( ( rule__EAttributeOperation__VarAssignment_0_1 ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3226:1: ( ( rule__EAttributeOperation__VarAssignment_0_1 ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3195:1: ( ( rule__EAttributeOperation__VarAssignment_0_1 ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3196:1: ( rule__EAttributeOperation__VarAssignment_0_1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3226:1: ( ( rule__EAttributeOperation__VarAssignment_0_1 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3227:1: ( rule__EAttributeOperation__VarAssignment_0_1 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getEAttributeOperationAccess().getVarAssignment_0_1()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3197:1: ( rule__EAttributeOperation__VarAssignment_0_1 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3197:2: rule__EAttributeOperation__VarAssignment_0_1
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3228:1: ( rule__EAttributeOperation__VarAssignment_0_1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3228:2: rule__EAttributeOperation__VarAssignment_0_1
             {
-            pushFollow(FOLLOW_rule__EAttributeOperation__VarAssignment_0_1_in_rule__EAttributeOperation__Group_0__1__Impl6608);
+            pushFollow(FOLLOW_rule__EAttributeOperation__VarAssignment_0_1_in_rule__EAttributeOperation__Group_0__1__Impl6669);
             rule__EAttributeOperation__VarAssignment_0_1();
 
             state._fsp--;
@@ -9820,16 +9909,16 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EAttributeOperation__Group_0__2"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3207:1: rule__EAttributeOperation__Group_0__2 : rule__EAttributeOperation__Group_0__2__Impl ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3238:1: rule__EAttributeOperation__Group_0__2 : rule__EAttributeOperation__Group_0__2__Impl ;
     public final void rule__EAttributeOperation__Group_0__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3211:1: ( rule__EAttributeOperation__Group_0__2__Impl )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3212:2: rule__EAttributeOperation__Group_0__2__Impl
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3242:1: ( rule__EAttributeOperation__Group_0__2__Impl )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3243:2: rule__EAttributeOperation__Group_0__2__Impl
             {
-            pushFollow(FOLLOW_rule__EAttributeOperation__Group_0__2__Impl_in_rule__EAttributeOperation__Group_0__26638);
+            pushFollow(FOLLOW_rule__EAttributeOperation__Group_0__2__Impl_in_rule__EAttributeOperation__Group_0__26699);
             rule__EAttributeOperation__Group_0__2__Impl();
 
             state._fsp--;
@@ -9853,22 +9942,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EAttributeOperation__Group_0__2__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3218:1: rule__EAttributeOperation__Group_0__2__Impl : ( '=' ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3249:1: rule__EAttributeOperation__Group_0__2__Impl : ( '=' ) ;
     public final void rule__EAttributeOperation__Group_0__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3222:1: ( ( '=' ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3223:1: ( '=' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3253:1: ( ( '=' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3254:1: ( '=' )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3223:1: ( '=' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3224:1: '='
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3254:1: ( '=' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3255:1: '='
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getEAttributeOperationAccess().getEqualsSignKeyword_0_2()); 
             }
-            match(input,14,FOLLOW_14_in_rule__EAttributeOperation__Group_0__2__Impl6666); if (state.failed) return ;
+            match(input,14,FOLLOW_14_in_rule__EAttributeOperation__Group_0__2__Impl6727); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getEAttributeOperationAccess().getEqualsSignKeyword_0_2()); 
             }
@@ -9894,21 +9983,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EAttributeOperation__Group_1_0__0"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3243:1: rule__EAttributeOperation__Group_1_0__0 : rule__EAttributeOperation__Group_1_0__0__Impl rule__EAttributeOperation__Group_1_0__1 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3274:1: rule__EAttributeOperation__Group_1_0__0 : rule__EAttributeOperation__Group_1_0__0__Impl rule__EAttributeOperation__Group_1_0__1 ;
     public final void rule__EAttributeOperation__Group_1_0__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3247:1: ( rule__EAttributeOperation__Group_1_0__0__Impl rule__EAttributeOperation__Group_1_0__1 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3248:2: rule__EAttributeOperation__Group_1_0__0__Impl rule__EAttributeOperation__Group_1_0__1
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3278:1: ( rule__EAttributeOperation__Group_1_0__0__Impl rule__EAttributeOperation__Group_1_0__1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3279:2: rule__EAttributeOperation__Group_1_0__0__Impl rule__EAttributeOperation__Group_1_0__1
             {
-            pushFollow(FOLLOW_rule__EAttributeOperation__Group_1_0__0__Impl_in_rule__EAttributeOperation__Group_1_0__06703);
+            pushFollow(FOLLOW_rule__EAttributeOperation__Group_1_0__0__Impl_in_rule__EAttributeOperation__Group_1_0__06764);
             rule__EAttributeOperation__Group_1_0__0__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__EAttributeOperation__Group_1_0__1_in_rule__EAttributeOperation__Group_1_0__06706);
+            pushFollow(FOLLOW_rule__EAttributeOperation__Group_1_0__1_in_rule__EAttributeOperation__Group_1_0__06767);
             rule__EAttributeOperation__Group_1_0__1();
 
             state._fsp--;
@@ -9932,25 +10021,25 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EAttributeOperation__Group_1_0__0__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3255:1: rule__EAttributeOperation__Group_1_0__0__Impl : ( ( rule__EAttributeOperation__Alternatives_1_0_0 ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3286:1: rule__EAttributeOperation__Group_1_0__0__Impl : ( ( rule__EAttributeOperation__Alternatives_1_0_0 ) ) ;
     public final void rule__EAttributeOperation__Group_1_0__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3259:1: ( ( ( rule__EAttributeOperation__Alternatives_1_0_0 ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3260:1: ( ( rule__EAttributeOperation__Alternatives_1_0_0 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3290:1: ( ( ( rule__EAttributeOperation__Alternatives_1_0_0 ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3291:1: ( ( rule__EAttributeOperation__Alternatives_1_0_0 ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3260:1: ( ( rule__EAttributeOperation__Alternatives_1_0_0 ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3261:1: ( rule__EAttributeOperation__Alternatives_1_0_0 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3291:1: ( ( rule__EAttributeOperation__Alternatives_1_0_0 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3292:1: ( rule__EAttributeOperation__Alternatives_1_0_0 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getEAttributeOperationAccess().getAlternatives_1_0_0()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3262:1: ( rule__EAttributeOperation__Alternatives_1_0_0 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3262:2: rule__EAttributeOperation__Alternatives_1_0_0
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3293:1: ( rule__EAttributeOperation__Alternatives_1_0_0 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3293:2: rule__EAttributeOperation__Alternatives_1_0_0
             {
-            pushFollow(FOLLOW_rule__EAttributeOperation__Alternatives_1_0_0_in_rule__EAttributeOperation__Group_1_0__0__Impl6733);
+            pushFollow(FOLLOW_rule__EAttributeOperation__Alternatives_1_0_0_in_rule__EAttributeOperation__Group_1_0__0__Impl6794);
             rule__EAttributeOperation__Alternatives_1_0_0();
 
             state._fsp--;
@@ -9983,16 +10072,16 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EAttributeOperation__Group_1_0__1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3272:1: rule__EAttributeOperation__Group_1_0__1 : rule__EAttributeOperation__Group_1_0__1__Impl ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3303:1: rule__EAttributeOperation__Group_1_0__1 : rule__EAttributeOperation__Group_1_0__1__Impl ;
     public final void rule__EAttributeOperation__Group_1_0__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3276:1: ( rule__EAttributeOperation__Group_1_0__1__Impl )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3277:2: rule__EAttributeOperation__Group_1_0__1__Impl
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3307:1: ( rule__EAttributeOperation__Group_1_0__1__Impl )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3308:2: rule__EAttributeOperation__Group_1_0__1__Impl
             {
-            pushFollow(FOLLOW_rule__EAttributeOperation__Group_1_0__1__Impl_in_rule__EAttributeOperation__Group_1_0__16763);
+            pushFollow(FOLLOW_rule__EAttributeOperation__Group_1_0__1__Impl_in_rule__EAttributeOperation__Group_1_0__16824);
             rule__EAttributeOperation__Group_1_0__1__Impl();
 
             state._fsp--;
@@ -10016,25 +10105,25 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EAttributeOperation__Group_1_0__1__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3283:1: rule__EAttributeOperation__Group_1_0__1__Impl : ( ( rule__EAttributeOperation__Group_1_0_1__0 ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3314:1: rule__EAttributeOperation__Group_1_0__1__Impl : ( ( rule__EAttributeOperation__Group_1_0_1__0 ) ) ;
     public final void rule__EAttributeOperation__Group_1_0__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3287:1: ( ( ( rule__EAttributeOperation__Group_1_0_1__0 ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3288:1: ( ( rule__EAttributeOperation__Group_1_0_1__0 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3318:1: ( ( ( rule__EAttributeOperation__Group_1_0_1__0 ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3319:1: ( ( rule__EAttributeOperation__Group_1_0_1__0 ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3288:1: ( ( rule__EAttributeOperation__Group_1_0_1__0 ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3289:1: ( rule__EAttributeOperation__Group_1_0_1__0 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3319:1: ( ( rule__EAttributeOperation__Group_1_0_1__0 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3320:1: ( rule__EAttributeOperation__Group_1_0_1__0 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getEAttributeOperationAccess().getGroup_1_0_1()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3290:1: ( rule__EAttributeOperation__Group_1_0_1__0 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3290:2: rule__EAttributeOperation__Group_1_0_1__0
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3321:1: ( rule__EAttributeOperation__Group_1_0_1__0 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3321:2: rule__EAttributeOperation__Group_1_0_1__0
             {
-            pushFollow(FOLLOW_rule__EAttributeOperation__Group_1_0_1__0_in_rule__EAttributeOperation__Group_1_0__1__Impl6790);
+            pushFollow(FOLLOW_rule__EAttributeOperation__Group_1_0_1__0_in_rule__EAttributeOperation__Group_1_0__1__Impl6851);
             rule__EAttributeOperation__Group_1_0_1__0();
 
             state._fsp--;
@@ -10067,21 +10156,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EAttributeOperation__Group_1_0_1__0"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3304:1: rule__EAttributeOperation__Group_1_0_1__0 : rule__EAttributeOperation__Group_1_0_1__0__Impl rule__EAttributeOperation__Group_1_0_1__1 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3335:1: rule__EAttributeOperation__Group_1_0_1__0 : rule__EAttributeOperation__Group_1_0_1__0__Impl rule__EAttributeOperation__Group_1_0_1__1 ;
     public final void rule__EAttributeOperation__Group_1_0_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3308:1: ( rule__EAttributeOperation__Group_1_0_1__0__Impl rule__EAttributeOperation__Group_1_0_1__1 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3309:2: rule__EAttributeOperation__Group_1_0_1__0__Impl rule__EAttributeOperation__Group_1_0_1__1
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3339:1: ( rule__EAttributeOperation__Group_1_0_1__0__Impl rule__EAttributeOperation__Group_1_0_1__1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3340:2: rule__EAttributeOperation__Group_1_0_1__0__Impl rule__EAttributeOperation__Group_1_0_1__1
             {
-            pushFollow(FOLLOW_rule__EAttributeOperation__Group_1_0_1__0__Impl_in_rule__EAttributeOperation__Group_1_0_1__06824);
+            pushFollow(FOLLOW_rule__EAttributeOperation__Group_1_0_1__0__Impl_in_rule__EAttributeOperation__Group_1_0_1__06885);
             rule__EAttributeOperation__Group_1_0_1__0__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__EAttributeOperation__Group_1_0_1__1_in_rule__EAttributeOperation__Group_1_0_1__06827);
+            pushFollow(FOLLOW_rule__EAttributeOperation__Group_1_0_1__1_in_rule__EAttributeOperation__Group_1_0_1__06888);
             rule__EAttributeOperation__Group_1_0_1__1();
 
             state._fsp--;
@@ -10105,22 +10194,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EAttributeOperation__Group_1_0_1__0__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3316:1: rule__EAttributeOperation__Group_1_0_1__0__Impl : ( '{' ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3347:1: rule__EAttributeOperation__Group_1_0_1__0__Impl : ( '{' ) ;
     public final void rule__EAttributeOperation__Group_1_0_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3320:1: ( ( '{' ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3321:1: ( '{' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3351:1: ( ( '{' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3352:1: ( '{' )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3321:1: ( '{' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3322:1: '{'
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3352:1: ( '{' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3353:1: '{'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getEAttributeOperationAccess().getLeftCurlyBracketKeyword_1_0_1_0()); 
             }
-            match(input,15,FOLLOW_15_in_rule__EAttributeOperation__Group_1_0_1__0__Impl6855); if (state.failed) return ;
+            match(input,15,FOLLOW_15_in_rule__EAttributeOperation__Group_1_0_1__0__Impl6916); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getEAttributeOperationAccess().getLeftCurlyBracketKeyword_1_0_1_0()); 
             }
@@ -10146,21 +10235,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EAttributeOperation__Group_1_0_1__1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3335:1: rule__EAttributeOperation__Group_1_0_1__1 : rule__EAttributeOperation__Group_1_0_1__1__Impl rule__EAttributeOperation__Group_1_0_1__2 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3366:1: rule__EAttributeOperation__Group_1_0_1__1 : rule__EAttributeOperation__Group_1_0_1__1__Impl rule__EAttributeOperation__Group_1_0_1__2 ;
     public final void rule__EAttributeOperation__Group_1_0_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3339:1: ( rule__EAttributeOperation__Group_1_0_1__1__Impl rule__EAttributeOperation__Group_1_0_1__2 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3340:2: rule__EAttributeOperation__Group_1_0_1__1__Impl rule__EAttributeOperation__Group_1_0_1__2
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3370:1: ( rule__EAttributeOperation__Group_1_0_1__1__Impl rule__EAttributeOperation__Group_1_0_1__2 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3371:2: rule__EAttributeOperation__Group_1_0_1__1__Impl rule__EAttributeOperation__Group_1_0_1__2
             {
-            pushFollow(FOLLOW_rule__EAttributeOperation__Group_1_0_1__1__Impl_in_rule__EAttributeOperation__Group_1_0_1__16886);
+            pushFollow(FOLLOW_rule__EAttributeOperation__Group_1_0_1__1__Impl_in_rule__EAttributeOperation__Group_1_0_1__16947);
             rule__EAttributeOperation__Group_1_0_1__1__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__EAttributeOperation__Group_1_0_1__2_in_rule__EAttributeOperation__Group_1_0_1__16889);
+            pushFollow(FOLLOW_rule__EAttributeOperation__Group_1_0_1__2_in_rule__EAttributeOperation__Group_1_0_1__16950);
             rule__EAttributeOperation__Group_1_0_1__2();
 
             state._fsp--;
@@ -10184,22 +10273,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EAttributeOperation__Group_1_0_1__1__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3347:1: rule__EAttributeOperation__Group_1_0_1__1__Impl : ( ( rule__EAttributeOperation__SettersAssignment_1_0_1_1 )* ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3378:1: rule__EAttributeOperation__Group_1_0_1__1__Impl : ( ( rule__EAttributeOperation__SettersAssignment_1_0_1_1 )* ) ;
     public final void rule__EAttributeOperation__Group_1_0_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3351:1: ( ( ( rule__EAttributeOperation__SettersAssignment_1_0_1_1 )* ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3352:1: ( ( rule__EAttributeOperation__SettersAssignment_1_0_1_1 )* )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3382:1: ( ( ( rule__EAttributeOperation__SettersAssignment_1_0_1_1 )* ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3383:1: ( ( rule__EAttributeOperation__SettersAssignment_1_0_1_1 )* )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3352:1: ( ( rule__EAttributeOperation__SettersAssignment_1_0_1_1 )* )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3353:1: ( rule__EAttributeOperation__SettersAssignment_1_0_1_1 )*
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3383:1: ( ( rule__EAttributeOperation__SettersAssignment_1_0_1_1 )* )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3384:1: ( rule__EAttributeOperation__SettersAssignment_1_0_1_1 )*
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getEAttributeOperationAccess().getSettersAssignment_1_0_1_1()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3354:1: ( rule__EAttributeOperation__SettersAssignment_1_0_1_1 )*
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3385:1: ( rule__EAttributeOperation__SettersAssignment_1_0_1_1 )*
             loop30:
             do {
                 int alt30=2;
@@ -10212,9 +10301,9 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
                 switch (alt30) {
             	case 1 :
-            	    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3354:2: rule__EAttributeOperation__SettersAssignment_1_0_1_1
+            	    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3385:2: rule__EAttributeOperation__SettersAssignment_1_0_1_1
             	    {
-            	    pushFollow(FOLLOW_rule__EAttributeOperation__SettersAssignment_1_0_1_1_in_rule__EAttributeOperation__Group_1_0_1__1__Impl6916);
+            	    pushFollow(FOLLOW_rule__EAttributeOperation__SettersAssignment_1_0_1_1_in_rule__EAttributeOperation__Group_1_0_1__1__Impl6977);
             	    rule__EAttributeOperation__SettersAssignment_1_0_1_1();
 
             	    state._fsp--;
@@ -10253,16 +10342,16 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EAttributeOperation__Group_1_0_1__2"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3364:1: rule__EAttributeOperation__Group_1_0_1__2 : rule__EAttributeOperation__Group_1_0_1__2__Impl ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3395:1: rule__EAttributeOperation__Group_1_0_1__2 : rule__EAttributeOperation__Group_1_0_1__2__Impl ;
     public final void rule__EAttributeOperation__Group_1_0_1__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3368:1: ( rule__EAttributeOperation__Group_1_0_1__2__Impl )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3369:2: rule__EAttributeOperation__Group_1_0_1__2__Impl
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3399:1: ( rule__EAttributeOperation__Group_1_0_1__2__Impl )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3400:2: rule__EAttributeOperation__Group_1_0_1__2__Impl
             {
-            pushFollow(FOLLOW_rule__EAttributeOperation__Group_1_0_1__2__Impl_in_rule__EAttributeOperation__Group_1_0_1__26947);
+            pushFollow(FOLLOW_rule__EAttributeOperation__Group_1_0_1__2__Impl_in_rule__EAttributeOperation__Group_1_0_1__27008);
             rule__EAttributeOperation__Group_1_0_1__2__Impl();
 
             state._fsp--;
@@ -10286,22 +10375,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EAttributeOperation__Group_1_0_1__2__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3375:1: rule__EAttributeOperation__Group_1_0_1__2__Impl : ( '}' ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3406:1: rule__EAttributeOperation__Group_1_0_1__2__Impl : ( '}' ) ;
     public final void rule__EAttributeOperation__Group_1_0_1__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3379:1: ( ( '}' ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3380:1: ( '}' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3410:1: ( ( '}' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3411:1: ( '}' )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3380:1: ( '}' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3381:1: '}'
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3411:1: ( '}' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3412:1: '}'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getEAttributeOperationAccess().getRightCurlyBracketKeyword_1_0_1_2()); 
             }
-            match(input,16,FOLLOW_16_in_rule__EAttributeOperation__Group_1_0_1__2__Impl6975); if (state.failed) return ;
+            match(input,16,FOLLOW_16_in_rule__EAttributeOperation__Group_1_0_1__2__Impl7036); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getEAttributeOperationAccess().getRightCurlyBracketKeyword_1_0_1_2()); 
             }
@@ -10327,21 +10416,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ChangeAttribute__Group__0"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3400:1: rule__ChangeAttribute__Group__0 : rule__ChangeAttribute__Group__0__Impl rule__ChangeAttribute__Group__1 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3431:1: rule__ChangeAttribute__Group__0 : rule__ChangeAttribute__Group__0__Impl rule__ChangeAttribute__Group__1 ;
     public final void rule__ChangeAttribute__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3404:1: ( rule__ChangeAttribute__Group__0__Impl rule__ChangeAttribute__Group__1 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3405:2: rule__ChangeAttribute__Group__0__Impl rule__ChangeAttribute__Group__1
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3435:1: ( rule__ChangeAttribute__Group__0__Impl rule__ChangeAttribute__Group__1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3436:2: rule__ChangeAttribute__Group__0__Impl rule__ChangeAttribute__Group__1
             {
-            pushFollow(FOLLOW_rule__ChangeAttribute__Group__0__Impl_in_rule__ChangeAttribute__Group__07012);
+            pushFollow(FOLLOW_rule__ChangeAttribute__Group__0__Impl_in_rule__ChangeAttribute__Group__07073);
             rule__ChangeAttribute__Group__0__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__ChangeAttribute__Group__1_in_rule__ChangeAttribute__Group__07015);
+            pushFollow(FOLLOW_rule__ChangeAttribute__Group__1_in_rule__ChangeAttribute__Group__07076);
             rule__ChangeAttribute__Group__1();
 
             state._fsp--;
@@ -10365,25 +10454,25 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ChangeAttribute__Group__0__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3412:1: rule__ChangeAttribute__Group__0__Impl : ( ( rule__ChangeAttribute__OpAssignment_0 ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3443:1: rule__ChangeAttribute__Group__0__Impl : ( ( rule__ChangeAttribute__OpAssignment_0 ) ) ;
     public final void rule__ChangeAttribute__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3416:1: ( ( ( rule__ChangeAttribute__OpAssignment_0 ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3417:1: ( ( rule__ChangeAttribute__OpAssignment_0 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3447:1: ( ( ( rule__ChangeAttribute__OpAssignment_0 ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3448:1: ( ( rule__ChangeAttribute__OpAssignment_0 ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3417:1: ( ( rule__ChangeAttribute__OpAssignment_0 ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3418:1: ( rule__ChangeAttribute__OpAssignment_0 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3448:1: ( ( rule__ChangeAttribute__OpAssignment_0 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3449:1: ( rule__ChangeAttribute__OpAssignment_0 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getChangeAttributeAccess().getOpAssignment_0()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3419:1: ( rule__ChangeAttribute__OpAssignment_0 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3419:2: rule__ChangeAttribute__OpAssignment_0
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3450:1: ( rule__ChangeAttribute__OpAssignment_0 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3450:2: rule__ChangeAttribute__OpAssignment_0
             {
-            pushFollow(FOLLOW_rule__ChangeAttribute__OpAssignment_0_in_rule__ChangeAttribute__Group__0__Impl7042);
+            pushFollow(FOLLOW_rule__ChangeAttribute__OpAssignment_0_in_rule__ChangeAttribute__Group__0__Impl7103);
             rule__ChangeAttribute__OpAssignment_0();
 
             state._fsp--;
@@ -10416,21 +10505,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ChangeAttribute__Group__1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3429:1: rule__ChangeAttribute__Group__1 : rule__ChangeAttribute__Group__1__Impl rule__ChangeAttribute__Group__2 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3460:1: rule__ChangeAttribute__Group__1 : rule__ChangeAttribute__Group__1__Impl rule__ChangeAttribute__Group__2 ;
     public final void rule__ChangeAttribute__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3433:1: ( rule__ChangeAttribute__Group__1__Impl rule__ChangeAttribute__Group__2 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3434:2: rule__ChangeAttribute__Group__1__Impl rule__ChangeAttribute__Group__2
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3464:1: ( rule__ChangeAttribute__Group__1__Impl rule__ChangeAttribute__Group__2 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3465:2: rule__ChangeAttribute__Group__1__Impl rule__ChangeAttribute__Group__2
             {
-            pushFollow(FOLLOW_rule__ChangeAttribute__Group__1__Impl_in_rule__ChangeAttribute__Group__17072);
+            pushFollow(FOLLOW_rule__ChangeAttribute__Group__1__Impl_in_rule__ChangeAttribute__Group__17133);
             rule__ChangeAttribute__Group__1__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__ChangeAttribute__Group__2_in_rule__ChangeAttribute__Group__17075);
+            pushFollow(FOLLOW_rule__ChangeAttribute__Group__2_in_rule__ChangeAttribute__Group__17136);
             rule__ChangeAttribute__Group__2();
 
             state._fsp--;
@@ -10454,25 +10543,25 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ChangeAttribute__Group__1__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3441:1: rule__ChangeAttribute__Group__1__Impl : ( ( rule__ChangeAttribute__RefAssignment_1 ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3472:1: rule__ChangeAttribute__Group__1__Impl : ( ( rule__ChangeAttribute__RefAssignment_1 ) ) ;
     public final void rule__ChangeAttribute__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3445:1: ( ( ( rule__ChangeAttribute__RefAssignment_1 ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3446:1: ( ( rule__ChangeAttribute__RefAssignment_1 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3476:1: ( ( ( rule__ChangeAttribute__RefAssignment_1 ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3477:1: ( ( rule__ChangeAttribute__RefAssignment_1 ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3446:1: ( ( rule__ChangeAttribute__RefAssignment_1 ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3447:1: ( rule__ChangeAttribute__RefAssignment_1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3477:1: ( ( rule__ChangeAttribute__RefAssignment_1 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3478:1: ( rule__ChangeAttribute__RefAssignment_1 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getChangeAttributeAccess().getRefAssignment_1()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3448:1: ( rule__ChangeAttribute__RefAssignment_1 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3448:2: rule__ChangeAttribute__RefAssignment_1
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3479:1: ( rule__ChangeAttribute__RefAssignment_1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3479:2: rule__ChangeAttribute__RefAssignment_1
             {
-            pushFollow(FOLLOW_rule__ChangeAttribute__RefAssignment_1_in_rule__ChangeAttribute__Group__1__Impl7102);
+            pushFollow(FOLLOW_rule__ChangeAttribute__RefAssignment_1_in_rule__ChangeAttribute__Group__1__Impl7163);
             rule__ChangeAttribute__RefAssignment_1();
 
             state._fsp--;
@@ -10505,16 +10594,16 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ChangeAttribute__Group__2"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3458:1: rule__ChangeAttribute__Group__2 : rule__ChangeAttribute__Group__2__Impl ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3489:1: rule__ChangeAttribute__Group__2 : rule__ChangeAttribute__Group__2__Impl ;
     public final void rule__ChangeAttribute__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3462:1: ( rule__ChangeAttribute__Group__2__Impl )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3463:2: rule__ChangeAttribute__Group__2__Impl
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3493:1: ( rule__ChangeAttribute__Group__2__Impl )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3494:2: rule__ChangeAttribute__Group__2__Impl
             {
-            pushFollow(FOLLOW_rule__ChangeAttribute__Group__2__Impl_in_rule__ChangeAttribute__Group__27132);
+            pushFollow(FOLLOW_rule__ChangeAttribute__Group__2__Impl_in_rule__ChangeAttribute__Group__27193);
             rule__ChangeAttribute__Group__2__Impl();
 
             state._fsp--;
@@ -10538,22 +10627,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ChangeAttribute__Group__2__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3469:1: rule__ChangeAttribute__Group__2__Impl : ( ')' ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3500:1: rule__ChangeAttribute__Group__2__Impl : ( ')' ) ;
     public final void rule__ChangeAttribute__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3473:1: ( ( ')' ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3474:1: ( ')' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3504:1: ( ( ')' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3505:1: ( ')' )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3474:1: ( ')' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3475:1: ')'
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3505:1: ( ')' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3506:1: ')'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getChangeAttributeAccess().getRightParenthesisKeyword_2()); 
             }
-            match(input,19,FOLLOW_19_in_rule__ChangeAttribute__Group__2__Impl7160); if (state.failed) return ;
+            match(input,19,FOLLOW_19_in_rule__ChangeAttribute__Group__2__Impl7221); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getChangeAttributeAccess().getRightParenthesisKeyword_2()); 
             }
@@ -10579,21 +10668,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__AddAttribute__Group__0"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3494:1: rule__AddAttribute__Group__0 : rule__AddAttribute__Group__0__Impl rule__AddAttribute__Group__1 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3525:1: rule__AddAttribute__Group__0 : rule__AddAttribute__Group__0__Impl rule__AddAttribute__Group__1 ;
     public final void rule__AddAttribute__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3498:1: ( rule__AddAttribute__Group__0__Impl rule__AddAttribute__Group__1 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3499:2: rule__AddAttribute__Group__0__Impl rule__AddAttribute__Group__1
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3529:1: ( rule__AddAttribute__Group__0__Impl rule__AddAttribute__Group__1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3530:2: rule__AddAttribute__Group__0__Impl rule__AddAttribute__Group__1
             {
-            pushFollow(FOLLOW_rule__AddAttribute__Group__0__Impl_in_rule__AddAttribute__Group__07197);
+            pushFollow(FOLLOW_rule__AddAttribute__Group__0__Impl_in_rule__AddAttribute__Group__07258);
             rule__AddAttribute__Group__0__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__AddAttribute__Group__1_in_rule__AddAttribute__Group__07200);
+            pushFollow(FOLLOW_rule__AddAttribute__Group__1_in_rule__AddAttribute__Group__07261);
             rule__AddAttribute__Group__1();
 
             state._fsp--;
@@ -10617,25 +10706,25 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__AddAttribute__Group__0__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3506:1: rule__AddAttribute__Group__0__Impl : ( ( rule__AddAttribute__OpAssignment_0 ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3537:1: rule__AddAttribute__Group__0__Impl : ( ( rule__AddAttribute__OpAssignment_0 ) ) ;
     public final void rule__AddAttribute__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3510:1: ( ( ( rule__AddAttribute__OpAssignment_0 ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3511:1: ( ( rule__AddAttribute__OpAssignment_0 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3541:1: ( ( ( rule__AddAttribute__OpAssignment_0 ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3542:1: ( ( rule__AddAttribute__OpAssignment_0 ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3511:1: ( ( rule__AddAttribute__OpAssignment_0 ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3512:1: ( rule__AddAttribute__OpAssignment_0 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3542:1: ( ( rule__AddAttribute__OpAssignment_0 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3543:1: ( rule__AddAttribute__OpAssignment_0 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getAddAttributeAccess().getOpAssignment_0()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3513:1: ( rule__AddAttribute__OpAssignment_0 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3513:2: rule__AddAttribute__OpAssignment_0
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3544:1: ( rule__AddAttribute__OpAssignment_0 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3544:2: rule__AddAttribute__OpAssignment_0
             {
-            pushFollow(FOLLOW_rule__AddAttribute__OpAssignment_0_in_rule__AddAttribute__Group__0__Impl7227);
+            pushFollow(FOLLOW_rule__AddAttribute__OpAssignment_0_in_rule__AddAttribute__Group__0__Impl7288);
             rule__AddAttribute__OpAssignment_0();
 
             state._fsp--;
@@ -10668,21 +10757,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__AddAttribute__Group__1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3523:1: rule__AddAttribute__Group__1 : rule__AddAttribute__Group__1__Impl rule__AddAttribute__Group__2 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3554:1: rule__AddAttribute__Group__1 : rule__AddAttribute__Group__1__Impl rule__AddAttribute__Group__2 ;
     public final void rule__AddAttribute__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3527:1: ( rule__AddAttribute__Group__1__Impl rule__AddAttribute__Group__2 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3528:2: rule__AddAttribute__Group__1__Impl rule__AddAttribute__Group__2
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3558:1: ( rule__AddAttribute__Group__1__Impl rule__AddAttribute__Group__2 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3559:2: rule__AddAttribute__Group__1__Impl rule__AddAttribute__Group__2
             {
-            pushFollow(FOLLOW_rule__AddAttribute__Group__1__Impl_in_rule__AddAttribute__Group__17257);
+            pushFollow(FOLLOW_rule__AddAttribute__Group__1__Impl_in_rule__AddAttribute__Group__17318);
             rule__AddAttribute__Group__1__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__AddAttribute__Group__2_in_rule__AddAttribute__Group__17260);
+            pushFollow(FOLLOW_rule__AddAttribute__Group__2_in_rule__AddAttribute__Group__17321);
             rule__AddAttribute__Group__2();
 
             state._fsp--;
@@ -10706,25 +10795,25 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__AddAttribute__Group__1__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3535:1: rule__AddAttribute__Group__1__Impl : ( ( rule__AddAttribute__Alternatives_1 ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3566:1: rule__AddAttribute__Group__1__Impl : ( ( rule__AddAttribute__Alternatives_1 ) ) ;
     public final void rule__AddAttribute__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3539:1: ( ( ( rule__AddAttribute__Alternatives_1 ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3540:1: ( ( rule__AddAttribute__Alternatives_1 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3570:1: ( ( ( rule__AddAttribute__Alternatives_1 ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3571:1: ( ( rule__AddAttribute__Alternatives_1 ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3540:1: ( ( rule__AddAttribute__Alternatives_1 ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3541:1: ( rule__AddAttribute__Alternatives_1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3571:1: ( ( rule__AddAttribute__Alternatives_1 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3572:1: ( rule__AddAttribute__Alternatives_1 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getAddAttributeAccess().getAlternatives_1()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3542:1: ( rule__AddAttribute__Alternatives_1 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3542:2: rule__AddAttribute__Alternatives_1
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3573:1: ( rule__AddAttribute__Alternatives_1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3573:2: rule__AddAttribute__Alternatives_1
             {
-            pushFollow(FOLLOW_rule__AddAttribute__Alternatives_1_in_rule__AddAttribute__Group__1__Impl7287);
+            pushFollow(FOLLOW_rule__AddAttribute__Alternatives_1_in_rule__AddAttribute__Group__1__Impl7348);
             rule__AddAttribute__Alternatives_1();
 
             state._fsp--;
@@ -10757,16 +10846,16 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__AddAttribute__Group__2"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3552:1: rule__AddAttribute__Group__2 : rule__AddAttribute__Group__2__Impl ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3583:1: rule__AddAttribute__Group__2 : rule__AddAttribute__Group__2__Impl ;
     public final void rule__AddAttribute__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3556:1: ( rule__AddAttribute__Group__2__Impl )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3557:2: rule__AddAttribute__Group__2__Impl
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3587:1: ( rule__AddAttribute__Group__2__Impl )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3588:2: rule__AddAttribute__Group__2__Impl
             {
-            pushFollow(FOLLOW_rule__AddAttribute__Group__2__Impl_in_rule__AddAttribute__Group__27317);
+            pushFollow(FOLLOW_rule__AddAttribute__Group__2__Impl_in_rule__AddAttribute__Group__27378);
             rule__AddAttribute__Group__2__Impl();
 
             state._fsp--;
@@ -10790,22 +10879,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__AddAttribute__Group__2__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3563:1: rule__AddAttribute__Group__2__Impl : ( ')' ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3594:1: rule__AddAttribute__Group__2__Impl : ( ')' ) ;
     public final void rule__AddAttribute__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3567:1: ( ( ')' ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3568:1: ( ')' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3598:1: ( ( ')' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3599:1: ( ')' )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3568:1: ( ')' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3569:1: ')'
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3599:1: ( ')' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3600:1: ')'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getAddAttributeAccess().getRightParenthesisKeyword_2()); 
             }
-            match(input,19,FOLLOW_19_in_rule__AddAttribute__Group__2__Impl7345); if (state.failed) return ;
+            match(input,19,FOLLOW_19_in_rule__AddAttribute__Group__2__Impl7406); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getAddAttributeAccess().getRightParenthesisKeyword_2()); 
             }
@@ -10831,21 +10920,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__DeleteAttribute__Group__0"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3588:1: rule__DeleteAttribute__Group__0 : rule__DeleteAttribute__Group__0__Impl rule__DeleteAttribute__Group__1 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3619:1: rule__DeleteAttribute__Group__0 : rule__DeleteAttribute__Group__0__Impl rule__DeleteAttribute__Group__1 ;
     public final void rule__DeleteAttribute__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3592:1: ( rule__DeleteAttribute__Group__0__Impl rule__DeleteAttribute__Group__1 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3593:2: rule__DeleteAttribute__Group__0__Impl rule__DeleteAttribute__Group__1
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3623:1: ( rule__DeleteAttribute__Group__0__Impl rule__DeleteAttribute__Group__1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3624:2: rule__DeleteAttribute__Group__0__Impl rule__DeleteAttribute__Group__1
             {
-            pushFollow(FOLLOW_rule__DeleteAttribute__Group__0__Impl_in_rule__DeleteAttribute__Group__07382);
+            pushFollow(FOLLOW_rule__DeleteAttribute__Group__0__Impl_in_rule__DeleteAttribute__Group__07443);
             rule__DeleteAttribute__Group__0__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__DeleteAttribute__Group__1_in_rule__DeleteAttribute__Group__07385);
+            pushFollow(FOLLOW_rule__DeleteAttribute__Group__1_in_rule__DeleteAttribute__Group__07446);
             rule__DeleteAttribute__Group__1();
 
             state._fsp--;
@@ -10869,25 +10958,25 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__DeleteAttribute__Group__0__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3600:1: rule__DeleteAttribute__Group__0__Impl : ( ( rule__DeleteAttribute__OpAssignment_0 ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3631:1: rule__DeleteAttribute__Group__0__Impl : ( ( rule__DeleteAttribute__OpAssignment_0 ) ) ;
     public final void rule__DeleteAttribute__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3604:1: ( ( ( rule__DeleteAttribute__OpAssignment_0 ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3605:1: ( ( rule__DeleteAttribute__OpAssignment_0 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3635:1: ( ( ( rule__DeleteAttribute__OpAssignment_0 ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3636:1: ( ( rule__DeleteAttribute__OpAssignment_0 ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3605:1: ( ( rule__DeleteAttribute__OpAssignment_0 ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3606:1: ( rule__DeleteAttribute__OpAssignment_0 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3636:1: ( ( rule__DeleteAttribute__OpAssignment_0 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3637:1: ( rule__DeleteAttribute__OpAssignment_0 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getDeleteAttributeAccess().getOpAssignment_0()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3607:1: ( rule__DeleteAttribute__OpAssignment_0 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3607:2: rule__DeleteAttribute__OpAssignment_0
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3638:1: ( rule__DeleteAttribute__OpAssignment_0 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3638:2: rule__DeleteAttribute__OpAssignment_0
             {
-            pushFollow(FOLLOW_rule__DeleteAttribute__OpAssignment_0_in_rule__DeleteAttribute__Group__0__Impl7412);
+            pushFollow(FOLLOW_rule__DeleteAttribute__OpAssignment_0_in_rule__DeleteAttribute__Group__0__Impl7473);
             rule__DeleteAttribute__OpAssignment_0();
 
             state._fsp--;
@@ -10920,21 +11009,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__DeleteAttribute__Group__1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3617:1: rule__DeleteAttribute__Group__1 : rule__DeleteAttribute__Group__1__Impl rule__DeleteAttribute__Group__2 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3648:1: rule__DeleteAttribute__Group__1 : rule__DeleteAttribute__Group__1__Impl rule__DeleteAttribute__Group__2 ;
     public final void rule__DeleteAttribute__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3621:1: ( rule__DeleteAttribute__Group__1__Impl rule__DeleteAttribute__Group__2 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3622:2: rule__DeleteAttribute__Group__1__Impl rule__DeleteAttribute__Group__2
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3652:1: ( rule__DeleteAttribute__Group__1__Impl rule__DeleteAttribute__Group__2 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3653:2: rule__DeleteAttribute__Group__1__Impl rule__DeleteAttribute__Group__2
             {
-            pushFollow(FOLLOW_rule__DeleteAttribute__Group__1__Impl_in_rule__DeleteAttribute__Group__17442);
+            pushFollow(FOLLOW_rule__DeleteAttribute__Group__1__Impl_in_rule__DeleteAttribute__Group__17503);
             rule__DeleteAttribute__Group__1__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__DeleteAttribute__Group__2_in_rule__DeleteAttribute__Group__17445);
+            pushFollow(FOLLOW_rule__DeleteAttribute__Group__2_in_rule__DeleteAttribute__Group__17506);
             rule__DeleteAttribute__Group__2();
 
             state._fsp--;
@@ -10958,25 +11047,25 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__DeleteAttribute__Group__1__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3629:1: rule__DeleteAttribute__Group__1__Impl : ( ( rule__DeleteAttribute__RefAssignment_1 ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3660:1: rule__DeleteAttribute__Group__1__Impl : ( ( rule__DeleteAttribute__RefAssignment_1 ) ) ;
     public final void rule__DeleteAttribute__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3633:1: ( ( ( rule__DeleteAttribute__RefAssignment_1 ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3634:1: ( ( rule__DeleteAttribute__RefAssignment_1 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3664:1: ( ( ( rule__DeleteAttribute__RefAssignment_1 ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3665:1: ( ( rule__DeleteAttribute__RefAssignment_1 ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3634:1: ( ( rule__DeleteAttribute__RefAssignment_1 ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3635:1: ( rule__DeleteAttribute__RefAssignment_1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3665:1: ( ( rule__DeleteAttribute__RefAssignment_1 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3666:1: ( rule__DeleteAttribute__RefAssignment_1 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getDeleteAttributeAccess().getRefAssignment_1()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3636:1: ( rule__DeleteAttribute__RefAssignment_1 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3636:2: rule__DeleteAttribute__RefAssignment_1
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3667:1: ( rule__DeleteAttribute__RefAssignment_1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3667:2: rule__DeleteAttribute__RefAssignment_1
             {
-            pushFollow(FOLLOW_rule__DeleteAttribute__RefAssignment_1_in_rule__DeleteAttribute__Group__1__Impl7472);
+            pushFollow(FOLLOW_rule__DeleteAttribute__RefAssignment_1_in_rule__DeleteAttribute__Group__1__Impl7533);
             rule__DeleteAttribute__RefAssignment_1();
 
             state._fsp--;
@@ -11009,16 +11098,16 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__DeleteAttribute__Group__2"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3646:1: rule__DeleteAttribute__Group__2 : rule__DeleteAttribute__Group__2__Impl ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3677:1: rule__DeleteAttribute__Group__2 : rule__DeleteAttribute__Group__2__Impl ;
     public final void rule__DeleteAttribute__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3650:1: ( rule__DeleteAttribute__Group__2__Impl )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3651:2: rule__DeleteAttribute__Group__2__Impl
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3681:1: ( rule__DeleteAttribute__Group__2__Impl )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3682:2: rule__DeleteAttribute__Group__2__Impl
             {
-            pushFollow(FOLLOW_rule__DeleteAttribute__Group__2__Impl_in_rule__DeleteAttribute__Group__27502);
+            pushFollow(FOLLOW_rule__DeleteAttribute__Group__2__Impl_in_rule__DeleteAttribute__Group__27563);
             rule__DeleteAttribute__Group__2__Impl();
 
             state._fsp--;
@@ -11042,22 +11131,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__DeleteAttribute__Group__2__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3657:1: rule__DeleteAttribute__Group__2__Impl : ( ')' ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3688:1: rule__DeleteAttribute__Group__2__Impl : ( ')' ) ;
     public final void rule__DeleteAttribute__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3661:1: ( ( ')' ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3662:1: ( ')' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3692:1: ( ( ')' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3693:1: ( ')' )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3662:1: ( ')' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3663:1: ')'
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3693:1: ( ')' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3694:1: ')'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getDeleteAttributeAccess().getRightParenthesisKeyword_2()); 
             }
-            match(input,19,FOLLOW_19_in_rule__DeleteAttribute__Group__2__Impl7530); if (state.failed) return ;
+            match(input,19,FOLLOW_19_in_rule__DeleteAttribute__Group__2__Impl7591); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getDeleteAttributeAccess().getRightParenthesisKeyword_2()); 
             }
@@ -11083,21 +11172,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EReferenceOperation__Group__0"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3682:1: rule__EReferenceOperation__Group__0 : rule__EReferenceOperation__Group__0__Impl rule__EReferenceOperation__Group__1 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3713:1: rule__EReferenceOperation__Group__0 : rule__EReferenceOperation__Group__0__Impl rule__EReferenceOperation__Group__1 ;
     public final void rule__EReferenceOperation__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3686:1: ( rule__EReferenceOperation__Group__0__Impl rule__EReferenceOperation__Group__1 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3687:2: rule__EReferenceOperation__Group__0__Impl rule__EReferenceOperation__Group__1
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3717:1: ( rule__EReferenceOperation__Group__0__Impl rule__EReferenceOperation__Group__1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3718:2: rule__EReferenceOperation__Group__0__Impl rule__EReferenceOperation__Group__1
             {
-            pushFollow(FOLLOW_rule__EReferenceOperation__Group__0__Impl_in_rule__EReferenceOperation__Group__07567);
+            pushFollow(FOLLOW_rule__EReferenceOperation__Group__0__Impl_in_rule__EReferenceOperation__Group__07628);
             rule__EReferenceOperation__Group__0__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__EReferenceOperation__Group__1_in_rule__EReferenceOperation__Group__07570);
+            pushFollow(FOLLOW_rule__EReferenceOperation__Group__1_in_rule__EReferenceOperation__Group__07631);
             rule__EReferenceOperation__Group__1();
 
             state._fsp--;
@@ -11121,33 +11210,33 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EReferenceOperation__Group__0__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3694:1: rule__EReferenceOperation__Group__0__Impl : ( ( rule__EReferenceOperation__Group_0__0 )? ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3725:1: rule__EReferenceOperation__Group__0__Impl : ( ( rule__EReferenceOperation__Group_0__0 )? ) ;
     public final void rule__EReferenceOperation__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3698:1: ( ( ( rule__EReferenceOperation__Group_0__0 )? ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3699:1: ( ( rule__EReferenceOperation__Group_0__0 )? )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3729:1: ( ( ( rule__EReferenceOperation__Group_0__0 )? ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3730:1: ( ( rule__EReferenceOperation__Group_0__0 )? )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3699:1: ( ( rule__EReferenceOperation__Group_0__0 )? )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3700:1: ( rule__EReferenceOperation__Group_0__0 )?
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3730:1: ( ( rule__EReferenceOperation__Group_0__0 )? )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3731:1: ( rule__EReferenceOperation__Group_0__0 )?
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getEReferenceOperationAccess().getGroup_0()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3701:1: ( rule__EReferenceOperation__Group_0__0 )?
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3732:1: ( rule__EReferenceOperation__Group_0__0 )?
             int alt31=2;
             int LA31_0 = input.LA(1);
 
-            if ( (LA31_0==28) ) {
+            if ( (LA31_0==27) ) {
                 alt31=1;
             }
             switch (alt31) {
                 case 1 :
-                    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3701:2: rule__EReferenceOperation__Group_0__0
+                    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3732:2: rule__EReferenceOperation__Group_0__0
                     {
-                    pushFollow(FOLLOW_rule__EReferenceOperation__Group_0__0_in_rule__EReferenceOperation__Group__0__Impl7597);
+                    pushFollow(FOLLOW_rule__EReferenceOperation__Group_0__0_in_rule__EReferenceOperation__Group__0__Impl7658);
                     rule__EReferenceOperation__Group_0__0();
 
                     state._fsp--;
@@ -11183,16 +11272,16 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EReferenceOperation__Group__1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3711:1: rule__EReferenceOperation__Group__1 : rule__EReferenceOperation__Group__1__Impl ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3742:1: rule__EReferenceOperation__Group__1 : rule__EReferenceOperation__Group__1__Impl ;
     public final void rule__EReferenceOperation__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3715:1: ( rule__EReferenceOperation__Group__1__Impl )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3716:2: rule__EReferenceOperation__Group__1__Impl
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3746:1: ( rule__EReferenceOperation__Group__1__Impl )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3747:2: rule__EReferenceOperation__Group__1__Impl
             {
-            pushFollow(FOLLOW_rule__EReferenceOperation__Group__1__Impl_in_rule__EReferenceOperation__Group__17628);
+            pushFollow(FOLLOW_rule__EReferenceOperation__Group__1__Impl_in_rule__EReferenceOperation__Group__17689);
             rule__EReferenceOperation__Group__1__Impl();
 
             state._fsp--;
@@ -11216,25 +11305,25 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EReferenceOperation__Group__1__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3722:1: rule__EReferenceOperation__Group__1__Impl : ( ( rule__EReferenceOperation__Alternatives_1 ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3753:1: rule__EReferenceOperation__Group__1__Impl : ( ( rule__EReferenceOperation__Alternatives_1 ) ) ;
     public final void rule__EReferenceOperation__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3726:1: ( ( ( rule__EReferenceOperation__Alternatives_1 ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3727:1: ( ( rule__EReferenceOperation__Alternatives_1 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3757:1: ( ( ( rule__EReferenceOperation__Alternatives_1 ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3758:1: ( ( rule__EReferenceOperation__Alternatives_1 ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3727:1: ( ( rule__EReferenceOperation__Alternatives_1 ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3728:1: ( rule__EReferenceOperation__Alternatives_1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3758:1: ( ( rule__EReferenceOperation__Alternatives_1 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3759:1: ( rule__EReferenceOperation__Alternatives_1 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getEReferenceOperationAccess().getAlternatives_1()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3729:1: ( rule__EReferenceOperation__Alternatives_1 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3729:2: rule__EReferenceOperation__Alternatives_1
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3760:1: ( rule__EReferenceOperation__Alternatives_1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3760:2: rule__EReferenceOperation__Alternatives_1
             {
-            pushFollow(FOLLOW_rule__EReferenceOperation__Alternatives_1_in_rule__EReferenceOperation__Group__1__Impl7655);
+            pushFollow(FOLLOW_rule__EReferenceOperation__Alternatives_1_in_rule__EReferenceOperation__Group__1__Impl7716);
             rule__EReferenceOperation__Alternatives_1();
 
             state._fsp--;
@@ -11267,21 +11356,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EReferenceOperation__Group_0__0"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3743:1: rule__EReferenceOperation__Group_0__0 : rule__EReferenceOperation__Group_0__0__Impl rule__EReferenceOperation__Group_0__1 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3774:1: rule__EReferenceOperation__Group_0__0 : rule__EReferenceOperation__Group_0__0__Impl rule__EReferenceOperation__Group_0__1 ;
     public final void rule__EReferenceOperation__Group_0__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3747:1: ( rule__EReferenceOperation__Group_0__0__Impl rule__EReferenceOperation__Group_0__1 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3748:2: rule__EReferenceOperation__Group_0__0__Impl rule__EReferenceOperation__Group_0__1
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3778:1: ( rule__EReferenceOperation__Group_0__0__Impl rule__EReferenceOperation__Group_0__1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3779:2: rule__EReferenceOperation__Group_0__0__Impl rule__EReferenceOperation__Group_0__1
             {
-            pushFollow(FOLLOW_rule__EReferenceOperation__Group_0__0__Impl_in_rule__EReferenceOperation__Group_0__07689);
+            pushFollow(FOLLOW_rule__EReferenceOperation__Group_0__0__Impl_in_rule__EReferenceOperation__Group_0__07750);
             rule__EReferenceOperation__Group_0__0__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__EReferenceOperation__Group_0__1_in_rule__EReferenceOperation__Group_0__07692);
+            pushFollow(FOLLOW_rule__EReferenceOperation__Group_0__1_in_rule__EReferenceOperation__Group_0__07753);
             rule__EReferenceOperation__Group_0__1();
 
             state._fsp--;
@@ -11305,22 +11394,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EReferenceOperation__Group_0__0__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3755:1: rule__EReferenceOperation__Group_0__0__Impl : ( 'reference' ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3786:1: rule__EReferenceOperation__Group_0__0__Impl : ( 'reference' ) ;
     public final void rule__EReferenceOperation__Group_0__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3759:1: ( ( 'reference' ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3760:1: ( 'reference' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3790:1: ( ( 'reference' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3791:1: ( 'reference' )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3760:1: ( 'reference' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3761:1: 'reference'
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3791:1: ( 'reference' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3792:1: 'reference'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getEReferenceOperationAccess().getReferenceKeyword_0_0()); 
             }
-            match(input,28,FOLLOW_28_in_rule__EReferenceOperation__Group_0__0__Impl7720); if (state.failed) return ;
+            match(input,27,FOLLOW_27_in_rule__EReferenceOperation__Group_0__0__Impl7781); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getEReferenceOperationAccess().getReferenceKeyword_0_0()); 
             }
@@ -11346,21 +11435,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EReferenceOperation__Group_0__1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3774:1: rule__EReferenceOperation__Group_0__1 : rule__EReferenceOperation__Group_0__1__Impl rule__EReferenceOperation__Group_0__2 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3805:1: rule__EReferenceOperation__Group_0__1 : rule__EReferenceOperation__Group_0__1__Impl rule__EReferenceOperation__Group_0__2 ;
     public final void rule__EReferenceOperation__Group_0__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3778:1: ( rule__EReferenceOperation__Group_0__1__Impl rule__EReferenceOperation__Group_0__2 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3779:2: rule__EReferenceOperation__Group_0__1__Impl rule__EReferenceOperation__Group_0__2
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3809:1: ( rule__EReferenceOperation__Group_0__1__Impl rule__EReferenceOperation__Group_0__2 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3810:2: rule__EReferenceOperation__Group_0__1__Impl rule__EReferenceOperation__Group_0__2
             {
-            pushFollow(FOLLOW_rule__EReferenceOperation__Group_0__1__Impl_in_rule__EReferenceOperation__Group_0__17751);
+            pushFollow(FOLLOW_rule__EReferenceOperation__Group_0__1__Impl_in_rule__EReferenceOperation__Group_0__17812);
             rule__EReferenceOperation__Group_0__1__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__EReferenceOperation__Group_0__2_in_rule__EReferenceOperation__Group_0__17754);
+            pushFollow(FOLLOW_rule__EReferenceOperation__Group_0__2_in_rule__EReferenceOperation__Group_0__17815);
             rule__EReferenceOperation__Group_0__2();
 
             state._fsp--;
@@ -11384,25 +11473,25 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EReferenceOperation__Group_0__1__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3786:1: rule__EReferenceOperation__Group_0__1__Impl : ( ( rule__EReferenceOperation__VarAssignment_0_1 ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3817:1: rule__EReferenceOperation__Group_0__1__Impl : ( ( rule__EReferenceOperation__VarAssignment_0_1 ) ) ;
     public final void rule__EReferenceOperation__Group_0__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3790:1: ( ( ( rule__EReferenceOperation__VarAssignment_0_1 ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3791:1: ( ( rule__EReferenceOperation__VarAssignment_0_1 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3821:1: ( ( ( rule__EReferenceOperation__VarAssignment_0_1 ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3822:1: ( ( rule__EReferenceOperation__VarAssignment_0_1 ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3791:1: ( ( rule__EReferenceOperation__VarAssignment_0_1 ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3792:1: ( rule__EReferenceOperation__VarAssignment_0_1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3822:1: ( ( rule__EReferenceOperation__VarAssignment_0_1 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3823:1: ( rule__EReferenceOperation__VarAssignment_0_1 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getEReferenceOperationAccess().getVarAssignment_0_1()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3793:1: ( rule__EReferenceOperation__VarAssignment_0_1 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3793:2: rule__EReferenceOperation__VarAssignment_0_1
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3824:1: ( rule__EReferenceOperation__VarAssignment_0_1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3824:2: rule__EReferenceOperation__VarAssignment_0_1
             {
-            pushFollow(FOLLOW_rule__EReferenceOperation__VarAssignment_0_1_in_rule__EReferenceOperation__Group_0__1__Impl7781);
+            pushFollow(FOLLOW_rule__EReferenceOperation__VarAssignment_0_1_in_rule__EReferenceOperation__Group_0__1__Impl7842);
             rule__EReferenceOperation__VarAssignment_0_1();
 
             state._fsp--;
@@ -11435,16 +11524,16 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EReferenceOperation__Group_0__2"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3803:1: rule__EReferenceOperation__Group_0__2 : rule__EReferenceOperation__Group_0__2__Impl ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3834:1: rule__EReferenceOperation__Group_0__2 : rule__EReferenceOperation__Group_0__2__Impl ;
     public final void rule__EReferenceOperation__Group_0__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3807:1: ( rule__EReferenceOperation__Group_0__2__Impl )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3808:2: rule__EReferenceOperation__Group_0__2__Impl
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3838:1: ( rule__EReferenceOperation__Group_0__2__Impl )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3839:2: rule__EReferenceOperation__Group_0__2__Impl
             {
-            pushFollow(FOLLOW_rule__EReferenceOperation__Group_0__2__Impl_in_rule__EReferenceOperation__Group_0__27811);
+            pushFollow(FOLLOW_rule__EReferenceOperation__Group_0__2__Impl_in_rule__EReferenceOperation__Group_0__27872);
             rule__EReferenceOperation__Group_0__2__Impl();
 
             state._fsp--;
@@ -11468,22 +11557,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EReferenceOperation__Group_0__2__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3814:1: rule__EReferenceOperation__Group_0__2__Impl : ( '=' ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3845:1: rule__EReferenceOperation__Group_0__2__Impl : ( '=' ) ;
     public final void rule__EReferenceOperation__Group_0__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3818:1: ( ( '=' ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3819:1: ( '=' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3849:1: ( ( '=' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3850:1: ( '=' )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3819:1: ( '=' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3820:1: '='
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3850:1: ( '=' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3851:1: '='
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getEReferenceOperationAccess().getEqualsSignKeyword_0_2()); 
             }
-            match(input,14,FOLLOW_14_in_rule__EReferenceOperation__Group_0__2__Impl7839); if (state.failed) return ;
+            match(input,14,FOLLOW_14_in_rule__EReferenceOperation__Group_0__2__Impl7900); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getEReferenceOperationAccess().getEqualsSignKeyword_0_2()); 
             }
@@ -11509,21 +11598,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EReferenceOperation__Group_1_0__0"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3839:1: rule__EReferenceOperation__Group_1_0__0 : rule__EReferenceOperation__Group_1_0__0__Impl rule__EReferenceOperation__Group_1_0__1 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3870:1: rule__EReferenceOperation__Group_1_0__0 : rule__EReferenceOperation__Group_1_0__0__Impl rule__EReferenceOperation__Group_1_0__1 ;
     public final void rule__EReferenceOperation__Group_1_0__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3843:1: ( rule__EReferenceOperation__Group_1_0__0__Impl rule__EReferenceOperation__Group_1_0__1 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3844:2: rule__EReferenceOperation__Group_1_0__0__Impl rule__EReferenceOperation__Group_1_0__1
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3874:1: ( rule__EReferenceOperation__Group_1_0__0__Impl rule__EReferenceOperation__Group_1_0__1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3875:2: rule__EReferenceOperation__Group_1_0__0__Impl rule__EReferenceOperation__Group_1_0__1
             {
-            pushFollow(FOLLOW_rule__EReferenceOperation__Group_1_0__0__Impl_in_rule__EReferenceOperation__Group_1_0__07876);
+            pushFollow(FOLLOW_rule__EReferenceOperation__Group_1_0__0__Impl_in_rule__EReferenceOperation__Group_1_0__07937);
             rule__EReferenceOperation__Group_1_0__0__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__EReferenceOperation__Group_1_0__1_in_rule__EReferenceOperation__Group_1_0__07879);
+            pushFollow(FOLLOW_rule__EReferenceOperation__Group_1_0__1_in_rule__EReferenceOperation__Group_1_0__07940);
             rule__EReferenceOperation__Group_1_0__1();
 
             state._fsp--;
@@ -11547,25 +11636,25 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EReferenceOperation__Group_1_0__0__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3851:1: rule__EReferenceOperation__Group_1_0__0__Impl : ( ( rule__EReferenceOperation__Alternatives_1_0_0 ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3882:1: rule__EReferenceOperation__Group_1_0__0__Impl : ( ( rule__EReferenceOperation__Alternatives_1_0_0 ) ) ;
     public final void rule__EReferenceOperation__Group_1_0__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3855:1: ( ( ( rule__EReferenceOperation__Alternatives_1_0_0 ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3856:1: ( ( rule__EReferenceOperation__Alternatives_1_0_0 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3886:1: ( ( ( rule__EReferenceOperation__Alternatives_1_0_0 ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3887:1: ( ( rule__EReferenceOperation__Alternatives_1_0_0 ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3856:1: ( ( rule__EReferenceOperation__Alternatives_1_0_0 ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3857:1: ( rule__EReferenceOperation__Alternatives_1_0_0 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3887:1: ( ( rule__EReferenceOperation__Alternatives_1_0_0 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3888:1: ( rule__EReferenceOperation__Alternatives_1_0_0 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getEReferenceOperationAccess().getAlternatives_1_0_0()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3858:1: ( rule__EReferenceOperation__Alternatives_1_0_0 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3858:2: rule__EReferenceOperation__Alternatives_1_0_0
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3889:1: ( rule__EReferenceOperation__Alternatives_1_0_0 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3889:2: rule__EReferenceOperation__Alternatives_1_0_0
             {
-            pushFollow(FOLLOW_rule__EReferenceOperation__Alternatives_1_0_0_in_rule__EReferenceOperation__Group_1_0__0__Impl7906);
+            pushFollow(FOLLOW_rule__EReferenceOperation__Alternatives_1_0_0_in_rule__EReferenceOperation__Group_1_0__0__Impl7967);
             rule__EReferenceOperation__Alternatives_1_0_0();
 
             state._fsp--;
@@ -11598,16 +11687,16 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EReferenceOperation__Group_1_0__1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3868:1: rule__EReferenceOperation__Group_1_0__1 : rule__EReferenceOperation__Group_1_0__1__Impl ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3899:1: rule__EReferenceOperation__Group_1_0__1 : rule__EReferenceOperation__Group_1_0__1__Impl ;
     public final void rule__EReferenceOperation__Group_1_0__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3872:1: ( rule__EReferenceOperation__Group_1_0__1__Impl )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3873:2: rule__EReferenceOperation__Group_1_0__1__Impl
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3903:1: ( rule__EReferenceOperation__Group_1_0__1__Impl )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3904:2: rule__EReferenceOperation__Group_1_0__1__Impl
             {
-            pushFollow(FOLLOW_rule__EReferenceOperation__Group_1_0__1__Impl_in_rule__EReferenceOperation__Group_1_0__17936);
+            pushFollow(FOLLOW_rule__EReferenceOperation__Group_1_0__1__Impl_in_rule__EReferenceOperation__Group_1_0__17997);
             rule__EReferenceOperation__Group_1_0__1__Impl();
 
             state._fsp--;
@@ -11631,25 +11720,25 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EReferenceOperation__Group_1_0__1__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3879:1: rule__EReferenceOperation__Group_1_0__1__Impl : ( ( rule__EReferenceOperation__Group_1_0_1__0 ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3910:1: rule__EReferenceOperation__Group_1_0__1__Impl : ( ( rule__EReferenceOperation__Group_1_0_1__0 ) ) ;
     public final void rule__EReferenceOperation__Group_1_0__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3883:1: ( ( ( rule__EReferenceOperation__Group_1_0_1__0 ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3884:1: ( ( rule__EReferenceOperation__Group_1_0_1__0 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3914:1: ( ( ( rule__EReferenceOperation__Group_1_0_1__0 ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3915:1: ( ( rule__EReferenceOperation__Group_1_0_1__0 ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3884:1: ( ( rule__EReferenceOperation__Group_1_0_1__0 ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3885:1: ( rule__EReferenceOperation__Group_1_0_1__0 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3915:1: ( ( rule__EReferenceOperation__Group_1_0_1__0 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3916:1: ( rule__EReferenceOperation__Group_1_0_1__0 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getEReferenceOperationAccess().getGroup_1_0_1()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3886:1: ( rule__EReferenceOperation__Group_1_0_1__0 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3886:2: rule__EReferenceOperation__Group_1_0_1__0
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3917:1: ( rule__EReferenceOperation__Group_1_0_1__0 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3917:2: rule__EReferenceOperation__Group_1_0_1__0
             {
-            pushFollow(FOLLOW_rule__EReferenceOperation__Group_1_0_1__0_in_rule__EReferenceOperation__Group_1_0__1__Impl7963);
+            pushFollow(FOLLOW_rule__EReferenceOperation__Group_1_0_1__0_in_rule__EReferenceOperation__Group_1_0__1__Impl8024);
             rule__EReferenceOperation__Group_1_0_1__0();
 
             state._fsp--;
@@ -11682,21 +11771,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EReferenceOperation__Group_1_0_1__0"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3900:1: rule__EReferenceOperation__Group_1_0_1__0 : rule__EReferenceOperation__Group_1_0_1__0__Impl rule__EReferenceOperation__Group_1_0_1__1 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3931:1: rule__EReferenceOperation__Group_1_0_1__0 : rule__EReferenceOperation__Group_1_0_1__0__Impl rule__EReferenceOperation__Group_1_0_1__1 ;
     public final void rule__EReferenceOperation__Group_1_0_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3904:1: ( rule__EReferenceOperation__Group_1_0_1__0__Impl rule__EReferenceOperation__Group_1_0_1__1 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3905:2: rule__EReferenceOperation__Group_1_0_1__0__Impl rule__EReferenceOperation__Group_1_0_1__1
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3935:1: ( rule__EReferenceOperation__Group_1_0_1__0__Impl rule__EReferenceOperation__Group_1_0_1__1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3936:2: rule__EReferenceOperation__Group_1_0_1__0__Impl rule__EReferenceOperation__Group_1_0_1__1
             {
-            pushFollow(FOLLOW_rule__EReferenceOperation__Group_1_0_1__0__Impl_in_rule__EReferenceOperation__Group_1_0_1__07997);
+            pushFollow(FOLLOW_rule__EReferenceOperation__Group_1_0_1__0__Impl_in_rule__EReferenceOperation__Group_1_0_1__08058);
             rule__EReferenceOperation__Group_1_0_1__0__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__EReferenceOperation__Group_1_0_1__1_in_rule__EReferenceOperation__Group_1_0_1__08000);
+            pushFollow(FOLLOW_rule__EReferenceOperation__Group_1_0_1__1_in_rule__EReferenceOperation__Group_1_0_1__08061);
             rule__EReferenceOperation__Group_1_0_1__1();
 
             state._fsp--;
@@ -11720,22 +11809,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EReferenceOperation__Group_1_0_1__0__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3912:1: rule__EReferenceOperation__Group_1_0_1__0__Impl : ( '{' ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3943:1: rule__EReferenceOperation__Group_1_0_1__0__Impl : ( '{' ) ;
     public final void rule__EReferenceOperation__Group_1_0_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3916:1: ( ( '{' ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3917:1: ( '{' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3947:1: ( ( '{' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3948:1: ( '{' )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3917:1: ( '{' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3918:1: '{'
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3948:1: ( '{' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3949:1: '{'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getEReferenceOperationAccess().getLeftCurlyBracketKeyword_1_0_1_0()); 
             }
-            match(input,15,FOLLOW_15_in_rule__EReferenceOperation__Group_1_0_1__0__Impl8028); if (state.failed) return ;
+            match(input,15,FOLLOW_15_in_rule__EReferenceOperation__Group_1_0_1__0__Impl8089); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getEReferenceOperationAccess().getLeftCurlyBracketKeyword_1_0_1_0()); 
             }
@@ -11761,21 +11850,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EReferenceOperation__Group_1_0_1__1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3931:1: rule__EReferenceOperation__Group_1_0_1__1 : rule__EReferenceOperation__Group_1_0_1__1__Impl rule__EReferenceOperation__Group_1_0_1__2 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3962:1: rule__EReferenceOperation__Group_1_0_1__1 : rule__EReferenceOperation__Group_1_0_1__1__Impl rule__EReferenceOperation__Group_1_0_1__2 ;
     public final void rule__EReferenceOperation__Group_1_0_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3935:1: ( rule__EReferenceOperation__Group_1_0_1__1__Impl rule__EReferenceOperation__Group_1_0_1__2 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3936:2: rule__EReferenceOperation__Group_1_0_1__1__Impl rule__EReferenceOperation__Group_1_0_1__2
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3966:1: ( rule__EReferenceOperation__Group_1_0_1__1__Impl rule__EReferenceOperation__Group_1_0_1__2 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3967:2: rule__EReferenceOperation__Group_1_0_1__1__Impl rule__EReferenceOperation__Group_1_0_1__2
             {
-            pushFollow(FOLLOW_rule__EReferenceOperation__Group_1_0_1__1__Impl_in_rule__EReferenceOperation__Group_1_0_1__18059);
+            pushFollow(FOLLOW_rule__EReferenceOperation__Group_1_0_1__1__Impl_in_rule__EReferenceOperation__Group_1_0_1__18120);
             rule__EReferenceOperation__Group_1_0_1__1__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__EReferenceOperation__Group_1_0_1__2_in_rule__EReferenceOperation__Group_1_0_1__18062);
+            pushFollow(FOLLOW_rule__EReferenceOperation__Group_1_0_1__2_in_rule__EReferenceOperation__Group_1_0_1__18123);
             rule__EReferenceOperation__Group_1_0_1__2();
 
             state._fsp--;
@@ -11799,22 +11888,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EReferenceOperation__Group_1_0_1__1__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3943:1: rule__EReferenceOperation__Group_1_0_1__1__Impl : ( ( rule__EReferenceOperation__SettersAssignment_1_0_1_1 )* ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3974:1: rule__EReferenceOperation__Group_1_0_1__1__Impl : ( ( rule__EReferenceOperation__SettersAssignment_1_0_1_1 )* ) ;
     public final void rule__EReferenceOperation__Group_1_0_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3947:1: ( ( ( rule__EReferenceOperation__SettersAssignment_1_0_1_1 )* ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3948:1: ( ( rule__EReferenceOperation__SettersAssignment_1_0_1_1 )* )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3978:1: ( ( ( rule__EReferenceOperation__SettersAssignment_1_0_1_1 )* ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3979:1: ( ( rule__EReferenceOperation__SettersAssignment_1_0_1_1 )* )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3948:1: ( ( rule__EReferenceOperation__SettersAssignment_1_0_1_1 )* )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3949:1: ( rule__EReferenceOperation__SettersAssignment_1_0_1_1 )*
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3979:1: ( ( rule__EReferenceOperation__SettersAssignment_1_0_1_1 )* )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3980:1: ( rule__EReferenceOperation__SettersAssignment_1_0_1_1 )*
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getEReferenceOperationAccess().getSettersAssignment_1_0_1_1()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3950:1: ( rule__EReferenceOperation__SettersAssignment_1_0_1_1 )*
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3981:1: ( rule__EReferenceOperation__SettersAssignment_1_0_1_1 )*
             loop32:
             do {
                 int alt32=2;
@@ -11827,9 +11916,9 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
                 switch (alt32) {
             	case 1 :
-            	    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3950:2: rule__EReferenceOperation__SettersAssignment_1_0_1_1
+            	    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3981:2: rule__EReferenceOperation__SettersAssignment_1_0_1_1
             	    {
-            	    pushFollow(FOLLOW_rule__EReferenceOperation__SettersAssignment_1_0_1_1_in_rule__EReferenceOperation__Group_1_0_1__1__Impl8089);
+            	    pushFollow(FOLLOW_rule__EReferenceOperation__SettersAssignment_1_0_1_1_in_rule__EReferenceOperation__Group_1_0_1__1__Impl8150);
             	    rule__EReferenceOperation__SettersAssignment_1_0_1_1();
 
             	    state._fsp--;
@@ -11868,16 +11957,16 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EReferenceOperation__Group_1_0_1__2"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3960:1: rule__EReferenceOperation__Group_1_0_1__2 : rule__EReferenceOperation__Group_1_0_1__2__Impl ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3991:1: rule__EReferenceOperation__Group_1_0_1__2 : rule__EReferenceOperation__Group_1_0_1__2__Impl ;
     public final void rule__EReferenceOperation__Group_1_0_1__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3964:1: ( rule__EReferenceOperation__Group_1_0_1__2__Impl )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3965:2: rule__EReferenceOperation__Group_1_0_1__2__Impl
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3995:1: ( rule__EReferenceOperation__Group_1_0_1__2__Impl )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3996:2: rule__EReferenceOperation__Group_1_0_1__2__Impl
             {
-            pushFollow(FOLLOW_rule__EReferenceOperation__Group_1_0_1__2__Impl_in_rule__EReferenceOperation__Group_1_0_1__28120);
+            pushFollow(FOLLOW_rule__EReferenceOperation__Group_1_0_1__2__Impl_in_rule__EReferenceOperation__Group_1_0_1__28181);
             rule__EReferenceOperation__Group_1_0_1__2__Impl();
 
             state._fsp--;
@@ -11901,22 +11990,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EReferenceOperation__Group_1_0_1__2__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3971:1: rule__EReferenceOperation__Group_1_0_1__2__Impl : ( '}' ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4002:1: rule__EReferenceOperation__Group_1_0_1__2__Impl : ( '}' ) ;
     public final void rule__EReferenceOperation__Group_1_0_1__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3975:1: ( ( '}' ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3976:1: ( '}' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4006:1: ( ( '}' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4007:1: ( '}' )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3976:1: ( '}' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3977:1: '}'
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4007:1: ( '}' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4008:1: '}'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getEReferenceOperationAccess().getRightCurlyBracketKeyword_1_0_1_2()); 
             }
-            match(input,16,FOLLOW_16_in_rule__EReferenceOperation__Group_1_0_1__2__Impl8148); if (state.failed) return ;
+            match(input,16,FOLLOW_16_in_rule__EReferenceOperation__Group_1_0_1__2__Impl8209); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getEReferenceOperationAccess().getRightCurlyBracketKeyword_1_0_1_2()); 
             }
@@ -11942,21 +12031,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ChangeReference__Group__0"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:3996:1: rule__ChangeReference__Group__0 : rule__ChangeReference__Group__0__Impl rule__ChangeReference__Group__1 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4027:1: rule__ChangeReference__Group__0 : rule__ChangeReference__Group__0__Impl rule__ChangeReference__Group__1 ;
     public final void rule__ChangeReference__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4000:1: ( rule__ChangeReference__Group__0__Impl rule__ChangeReference__Group__1 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4001:2: rule__ChangeReference__Group__0__Impl rule__ChangeReference__Group__1
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4031:1: ( rule__ChangeReference__Group__0__Impl rule__ChangeReference__Group__1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4032:2: rule__ChangeReference__Group__0__Impl rule__ChangeReference__Group__1
             {
-            pushFollow(FOLLOW_rule__ChangeReference__Group__0__Impl_in_rule__ChangeReference__Group__08185);
+            pushFollow(FOLLOW_rule__ChangeReference__Group__0__Impl_in_rule__ChangeReference__Group__08246);
             rule__ChangeReference__Group__0__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__ChangeReference__Group__1_in_rule__ChangeReference__Group__08188);
+            pushFollow(FOLLOW_rule__ChangeReference__Group__1_in_rule__ChangeReference__Group__08249);
             rule__ChangeReference__Group__1();
 
             state._fsp--;
@@ -11980,25 +12069,25 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ChangeReference__Group__0__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4008:1: rule__ChangeReference__Group__0__Impl : ( ( rule__ChangeReference__OpAssignment_0 ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4039:1: rule__ChangeReference__Group__0__Impl : ( ( rule__ChangeReference__OpAssignment_0 ) ) ;
     public final void rule__ChangeReference__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4012:1: ( ( ( rule__ChangeReference__OpAssignment_0 ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4013:1: ( ( rule__ChangeReference__OpAssignment_0 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4043:1: ( ( ( rule__ChangeReference__OpAssignment_0 ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4044:1: ( ( rule__ChangeReference__OpAssignment_0 ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4013:1: ( ( rule__ChangeReference__OpAssignment_0 ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4014:1: ( rule__ChangeReference__OpAssignment_0 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4044:1: ( ( rule__ChangeReference__OpAssignment_0 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4045:1: ( rule__ChangeReference__OpAssignment_0 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getChangeReferenceAccess().getOpAssignment_0()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4015:1: ( rule__ChangeReference__OpAssignment_0 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4015:2: rule__ChangeReference__OpAssignment_0
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4046:1: ( rule__ChangeReference__OpAssignment_0 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4046:2: rule__ChangeReference__OpAssignment_0
             {
-            pushFollow(FOLLOW_rule__ChangeReference__OpAssignment_0_in_rule__ChangeReference__Group__0__Impl8215);
+            pushFollow(FOLLOW_rule__ChangeReference__OpAssignment_0_in_rule__ChangeReference__Group__0__Impl8276);
             rule__ChangeReference__OpAssignment_0();
 
             state._fsp--;
@@ -12031,21 +12120,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ChangeReference__Group__1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4025:1: rule__ChangeReference__Group__1 : rule__ChangeReference__Group__1__Impl rule__ChangeReference__Group__2 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4056:1: rule__ChangeReference__Group__1 : rule__ChangeReference__Group__1__Impl rule__ChangeReference__Group__2 ;
     public final void rule__ChangeReference__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4029:1: ( rule__ChangeReference__Group__1__Impl rule__ChangeReference__Group__2 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4030:2: rule__ChangeReference__Group__1__Impl rule__ChangeReference__Group__2
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4060:1: ( rule__ChangeReference__Group__1__Impl rule__ChangeReference__Group__2 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4061:2: rule__ChangeReference__Group__1__Impl rule__ChangeReference__Group__2
             {
-            pushFollow(FOLLOW_rule__ChangeReference__Group__1__Impl_in_rule__ChangeReference__Group__18245);
+            pushFollow(FOLLOW_rule__ChangeReference__Group__1__Impl_in_rule__ChangeReference__Group__18306);
             rule__ChangeReference__Group__1__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__ChangeReference__Group__2_in_rule__ChangeReference__Group__18248);
+            pushFollow(FOLLOW_rule__ChangeReference__Group__2_in_rule__ChangeReference__Group__18309);
             rule__ChangeReference__Group__2();
 
             state._fsp--;
@@ -12069,22 +12158,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ChangeReference__Group__1__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4037:1: rule__ChangeReference__Group__1__Impl : ( '(' ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4068:1: rule__ChangeReference__Group__1__Impl : ( '(' ) ;
     public final void rule__ChangeReference__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4041:1: ( ( '(' ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4042:1: ( '(' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4072:1: ( ( '(' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4073:1: ( '(' )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4042:1: ( '(' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4043:1: '('
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4073:1: ( '(' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4074:1: '('
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getChangeReferenceAccess().getLeftParenthesisKeyword_1()); 
             }
-            match(input,18,FOLLOW_18_in_rule__ChangeReference__Group__1__Impl8276); if (state.failed) return ;
+            match(input,18,FOLLOW_18_in_rule__ChangeReference__Group__1__Impl8337); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getChangeReferenceAccess().getLeftParenthesisKeyword_1()); 
             }
@@ -12110,21 +12199,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ChangeReference__Group__2"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4056:1: rule__ChangeReference__Group__2 : rule__ChangeReference__Group__2__Impl rule__ChangeReference__Group__3 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4087:1: rule__ChangeReference__Group__2 : rule__ChangeReference__Group__2__Impl rule__ChangeReference__Group__3 ;
     public final void rule__ChangeReference__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4060:1: ( rule__ChangeReference__Group__2__Impl rule__ChangeReference__Group__3 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4061:2: rule__ChangeReference__Group__2__Impl rule__ChangeReference__Group__3
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4091:1: ( rule__ChangeReference__Group__2__Impl rule__ChangeReference__Group__3 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4092:2: rule__ChangeReference__Group__2__Impl rule__ChangeReference__Group__3
             {
-            pushFollow(FOLLOW_rule__ChangeReference__Group__2__Impl_in_rule__ChangeReference__Group__28307);
+            pushFollow(FOLLOW_rule__ChangeReference__Group__2__Impl_in_rule__ChangeReference__Group__28368);
             rule__ChangeReference__Group__2__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__ChangeReference__Group__3_in_rule__ChangeReference__Group__28310);
+            pushFollow(FOLLOW_rule__ChangeReference__Group__3_in_rule__ChangeReference__Group__28371);
             rule__ChangeReference__Group__3();
 
             state._fsp--;
@@ -12148,25 +12237,25 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ChangeReference__Group__2__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4068:1: rule__ChangeReference__Group__2__Impl : ( ( rule__ChangeReference__RefAssignment_2 ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4099:1: rule__ChangeReference__Group__2__Impl : ( ( rule__ChangeReference__RefAssignment_2 ) ) ;
     public final void rule__ChangeReference__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4072:1: ( ( ( rule__ChangeReference__RefAssignment_2 ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4073:1: ( ( rule__ChangeReference__RefAssignment_2 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4103:1: ( ( ( rule__ChangeReference__RefAssignment_2 ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4104:1: ( ( rule__ChangeReference__RefAssignment_2 ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4073:1: ( ( rule__ChangeReference__RefAssignment_2 ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4074:1: ( rule__ChangeReference__RefAssignment_2 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4104:1: ( ( rule__ChangeReference__RefAssignment_2 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4105:1: ( rule__ChangeReference__RefAssignment_2 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getChangeReferenceAccess().getRefAssignment_2()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4075:1: ( rule__ChangeReference__RefAssignment_2 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4075:2: rule__ChangeReference__RefAssignment_2
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4106:1: ( rule__ChangeReference__RefAssignment_2 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4106:2: rule__ChangeReference__RefAssignment_2
             {
-            pushFollow(FOLLOW_rule__ChangeReference__RefAssignment_2_in_rule__ChangeReference__Group__2__Impl8337);
+            pushFollow(FOLLOW_rule__ChangeReference__RefAssignment_2_in_rule__ChangeReference__Group__2__Impl8398);
             rule__ChangeReference__RefAssignment_2();
 
             state._fsp--;
@@ -12199,16 +12288,16 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ChangeReference__Group__3"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4085:1: rule__ChangeReference__Group__3 : rule__ChangeReference__Group__3__Impl ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4116:1: rule__ChangeReference__Group__3 : rule__ChangeReference__Group__3__Impl ;
     public final void rule__ChangeReference__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4089:1: ( rule__ChangeReference__Group__3__Impl )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4090:2: rule__ChangeReference__Group__3__Impl
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4120:1: ( rule__ChangeReference__Group__3__Impl )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4121:2: rule__ChangeReference__Group__3__Impl
             {
-            pushFollow(FOLLOW_rule__ChangeReference__Group__3__Impl_in_rule__ChangeReference__Group__38367);
+            pushFollow(FOLLOW_rule__ChangeReference__Group__3__Impl_in_rule__ChangeReference__Group__38428);
             rule__ChangeReference__Group__3__Impl();
 
             state._fsp--;
@@ -12232,22 +12321,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ChangeReference__Group__3__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4096:1: rule__ChangeReference__Group__3__Impl : ( ')' ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4127:1: rule__ChangeReference__Group__3__Impl : ( ')' ) ;
     public final void rule__ChangeReference__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4100:1: ( ( ')' ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4101:1: ( ')' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4131:1: ( ( ')' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4132:1: ( ')' )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4101:1: ( ')' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4102:1: ')'
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4132:1: ( ')' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4133:1: ')'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getChangeReferenceAccess().getRightParenthesisKeyword_3()); 
             }
-            match(input,19,FOLLOW_19_in_rule__ChangeReference__Group__3__Impl8395); if (state.failed) return ;
+            match(input,19,FOLLOW_19_in_rule__ChangeReference__Group__3__Impl8456); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getChangeReferenceAccess().getRightParenthesisKeyword_3()); 
             }
@@ -12273,21 +12362,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__AddReference__Group__0"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4123:1: rule__AddReference__Group__0 : rule__AddReference__Group__0__Impl rule__AddReference__Group__1 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4154:1: rule__AddReference__Group__0 : rule__AddReference__Group__0__Impl rule__AddReference__Group__1 ;
     public final void rule__AddReference__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4127:1: ( rule__AddReference__Group__0__Impl rule__AddReference__Group__1 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4128:2: rule__AddReference__Group__0__Impl rule__AddReference__Group__1
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4158:1: ( rule__AddReference__Group__0__Impl rule__AddReference__Group__1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4159:2: rule__AddReference__Group__0__Impl rule__AddReference__Group__1
             {
-            pushFollow(FOLLOW_rule__AddReference__Group__0__Impl_in_rule__AddReference__Group__08434);
+            pushFollow(FOLLOW_rule__AddReference__Group__0__Impl_in_rule__AddReference__Group__08495);
             rule__AddReference__Group__0__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__AddReference__Group__1_in_rule__AddReference__Group__08437);
+            pushFollow(FOLLOW_rule__AddReference__Group__1_in_rule__AddReference__Group__08498);
             rule__AddReference__Group__1();
 
             state._fsp--;
@@ -12311,25 +12400,25 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__AddReference__Group__0__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4135:1: rule__AddReference__Group__0__Impl : ( ( rule__AddReference__OpAssignment_0 ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4166:1: rule__AddReference__Group__0__Impl : ( ( rule__AddReference__OpAssignment_0 ) ) ;
     public final void rule__AddReference__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4139:1: ( ( ( rule__AddReference__OpAssignment_0 ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4140:1: ( ( rule__AddReference__OpAssignment_0 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4170:1: ( ( ( rule__AddReference__OpAssignment_0 ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4171:1: ( ( rule__AddReference__OpAssignment_0 ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4140:1: ( ( rule__AddReference__OpAssignment_0 ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4141:1: ( rule__AddReference__OpAssignment_0 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4171:1: ( ( rule__AddReference__OpAssignment_0 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4172:1: ( rule__AddReference__OpAssignment_0 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getAddReferenceAccess().getOpAssignment_0()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4142:1: ( rule__AddReference__OpAssignment_0 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4142:2: rule__AddReference__OpAssignment_0
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4173:1: ( rule__AddReference__OpAssignment_0 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4173:2: rule__AddReference__OpAssignment_0
             {
-            pushFollow(FOLLOW_rule__AddReference__OpAssignment_0_in_rule__AddReference__Group__0__Impl8464);
+            pushFollow(FOLLOW_rule__AddReference__OpAssignment_0_in_rule__AddReference__Group__0__Impl8525);
             rule__AddReference__OpAssignment_0();
 
             state._fsp--;
@@ -12362,21 +12451,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__AddReference__Group__1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4152:1: rule__AddReference__Group__1 : rule__AddReference__Group__1__Impl rule__AddReference__Group__2 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4183:1: rule__AddReference__Group__1 : rule__AddReference__Group__1__Impl rule__AddReference__Group__2 ;
     public final void rule__AddReference__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4156:1: ( rule__AddReference__Group__1__Impl rule__AddReference__Group__2 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4157:2: rule__AddReference__Group__1__Impl rule__AddReference__Group__2
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4187:1: ( rule__AddReference__Group__1__Impl rule__AddReference__Group__2 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4188:2: rule__AddReference__Group__1__Impl rule__AddReference__Group__2
             {
-            pushFollow(FOLLOW_rule__AddReference__Group__1__Impl_in_rule__AddReference__Group__18494);
+            pushFollow(FOLLOW_rule__AddReference__Group__1__Impl_in_rule__AddReference__Group__18555);
             rule__AddReference__Group__1__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__AddReference__Group__2_in_rule__AddReference__Group__18497);
+            pushFollow(FOLLOW_rule__AddReference__Group__2_in_rule__AddReference__Group__18558);
             rule__AddReference__Group__2();
 
             state._fsp--;
@@ -12400,22 +12489,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__AddReference__Group__1__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4164:1: rule__AddReference__Group__1__Impl : ( '(' ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4195:1: rule__AddReference__Group__1__Impl : ( '(' ) ;
     public final void rule__AddReference__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4168:1: ( ( '(' ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4169:1: ( '(' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4199:1: ( ( '(' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4200:1: ( '(' )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4169:1: ( '(' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4170:1: '('
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4200:1: ( '(' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4201:1: '('
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getAddReferenceAccess().getLeftParenthesisKeyword_1()); 
             }
-            match(input,18,FOLLOW_18_in_rule__AddReference__Group__1__Impl8525); if (state.failed) return ;
+            match(input,18,FOLLOW_18_in_rule__AddReference__Group__1__Impl8586); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getAddReferenceAccess().getLeftParenthesisKeyword_1()); 
             }
@@ -12441,21 +12530,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__AddReference__Group__2"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4183:1: rule__AddReference__Group__2 : rule__AddReference__Group__2__Impl rule__AddReference__Group__3 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4214:1: rule__AddReference__Group__2 : rule__AddReference__Group__2__Impl rule__AddReference__Group__3 ;
     public final void rule__AddReference__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4187:1: ( rule__AddReference__Group__2__Impl rule__AddReference__Group__3 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4188:2: rule__AddReference__Group__2__Impl rule__AddReference__Group__3
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4218:1: ( rule__AddReference__Group__2__Impl rule__AddReference__Group__3 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4219:2: rule__AddReference__Group__2__Impl rule__AddReference__Group__3
             {
-            pushFollow(FOLLOW_rule__AddReference__Group__2__Impl_in_rule__AddReference__Group__28556);
+            pushFollow(FOLLOW_rule__AddReference__Group__2__Impl_in_rule__AddReference__Group__28617);
             rule__AddReference__Group__2__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__AddReference__Group__3_in_rule__AddReference__Group__28559);
+            pushFollow(FOLLOW_rule__AddReference__Group__3_in_rule__AddReference__Group__28620);
             rule__AddReference__Group__3();
 
             state._fsp--;
@@ -12479,25 +12568,25 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__AddReference__Group__2__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4195:1: rule__AddReference__Group__2__Impl : ( ( rule__AddReference__Alternatives_2 ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4226:1: rule__AddReference__Group__2__Impl : ( ( rule__AddReference__Alternatives_2 ) ) ;
     public final void rule__AddReference__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4199:1: ( ( ( rule__AddReference__Alternatives_2 ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4200:1: ( ( rule__AddReference__Alternatives_2 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4230:1: ( ( ( rule__AddReference__Alternatives_2 ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4231:1: ( ( rule__AddReference__Alternatives_2 ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4200:1: ( ( rule__AddReference__Alternatives_2 ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4201:1: ( rule__AddReference__Alternatives_2 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4231:1: ( ( rule__AddReference__Alternatives_2 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4232:1: ( rule__AddReference__Alternatives_2 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getAddReferenceAccess().getAlternatives_2()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4202:1: ( rule__AddReference__Alternatives_2 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4202:2: rule__AddReference__Alternatives_2
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4233:1: ( rule__AddReference__Alternatives_2 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4233:2: rule__AddReference__Alternatives_2
             {
-            pushFollow(FOLLOW_rule__AddReference__Alternatives_2_in_rule__AddReference__Group__2__Impl8586);
+            pushFollow(FOLLOW_rule__AddReference__Alternatives_2_in_rule__AddReference__Group__2__Impl8647);
             rule__AddReference__Alternatives_2();
 
             state._fsp--;
@@ -12530,16 +12619,16 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__AddReference__Group__3"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4212:1: rule__AddReference__Group__3 : rule__AddReference__Group__3__Impl ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4243:1: rule__AddReference__Group__3 : rule__AddReference__Group__3__Impl ;
     public final void rule__AddReference__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4216:1: ( rule__AddReference__Group__3__Impl )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4217:2: rule__AddReference__Group__3__Impl
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4247:1: ( rule__AddReference__Group__3__Impl )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4248:2: rule__AddReference__Group__3__Impl
             {
-            pushFollow(FOLLOW_rule__AddReference__Group__3__Impl_in_rule__AddReference__Group__38616);
+            pushFollow(FOLLOW_rule__AddReference__Group__3__Impl_in_rule__AddReference__Group__38677);
             rule__AddReference__Group__3__Impl();
 
             state._fsp--;
@@ -12563,22 +12652,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__AddReference__Group__3__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4223:1: rule__AddReference__Group__3__Impl : ( ')' ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4254:1: rule__AddReference__Group__3__Impl : ( ')' ) ;
     public final void rule__AddReference__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4227:1: ( ( ')' ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4228:1: ( ')' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4258:1: ( ( ')' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4259:1: ( ')' )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4228:1: ( ')' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4229:1: ')'
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4259:1: ( ')' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4260:1: ')'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getAddReferenceAccess().getRightParenthesisKeyword_3()); 
             }
-            match(input,19,FOLLOW_19_in_rule__AddReference__Group__3__Impl8644); if (state.failed) return ;
+            match(input,19,FOLLOW_19_in_rule__AddReference__Group__3__Impl8705); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getAddReferenceAccess().getRightParenthesisKeyword_3()); 
             }
@@ -12604,21 +12693,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__DeleteReference__Group__0"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4250:1: rule__DeleteReference__Group__0 : rule__DeleteReference__Group__0__Impl rule__DeleteReference__Group__1 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4281:1: rule__DeleteReference__Group__0 : rule__DeleteReference__Group__0__Impl rule__DeleteReference__Group__1 ;
     public final void rule__DeleteReference__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4254:1: ( rule__DeleteReference__Group__0__Impl rule__DeleteReference__Group__1 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4255:2: rule__DeleteReference__Group__0__Impl rule__DeleteReference__Group__1
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4285:1: ( rule__DeleteReference__Group__0__Impl rule__DeleteReference__Group__1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4286:2: rule__DeleteReference__Group__0__Impl rule__DeleteReference__Group__1
             {
-            pushFollow(FOLLOW_rule__DeleteReference__Group__0__Impl_in_rule__DeleteReference__Group__08683);
+            pushFollow(FOLLOW_rule__DeleteReference__Group__0__Impl_in_rule__DeleteReference__Group__08744);
             rule__DeleteReference__Group__0__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__DeleteReference__Group__1_in_rule__DeleteReference__Group__08686);
+            pushFollow(FOLLOW_rule__DeleteReference__Group__1_in_rule__DeleteReference__Group__08747);
             rule__DeleteReference__Group__1();
 
             state._fsp--;
@@ -12642,25 +12731,25 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__DeleteReference__Group__0__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4262:1: rule__DeleteReference__Group__0__Impl : ( ( rule__DeleteReference__OpAssignment_0 ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4293:1: rule__DeleteReference__Group__0__Impl : ( ( rule__DeleteReference__OpAssignment_0 ) ) ;
     public final void rule__DeleteReference__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4266:1: ( ( ( rule__DeleteReference__OpAssignment_0 ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4267:1: ( ( rule__DeleteReference__OpAssignment_0 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4297:1: ( ( ( rule__DeleteReference__OpAssignment_0 ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4298:1: ( ( rule__DeleteReference__OpAssignment_0 ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4267:1: ( ( rule__DeleteReference__OpAssignment_0 ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4268:1: ( rule__DeleteReference__OpAssignment_0 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4298:1: ( ( rule__DeleteReference__OpAssignment_0 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4299:1: ( rule__DeleteReference__OpAssignment_0 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getDeleteReferenceAccess().getOpAssignment_0()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4269:1: ( rule__DeleteReference__OpAssignment_0 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4269:2: rule__DeleteReference__OpAssignment_0
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4300:1: ( rule__DeleteReference__OpAssignment_0 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4300:2: rule__DeleteReference__OpAssignment_0
             {
-            pushFollow(FOLLOW_rule__DeleteReference__OpAssignment_0_in_rule__DeleteReference__Group__0__Impl8713);
+            pushFollow(FOLLOW_rule__DeleteReference__OpAssignment_0_in_rule__DeleteReference__Group__0__Impl8774);
             rule__DeleteReference__OpAssignment_0();
 
             state._fsp--;
@@ -12693,21 +12782,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__DeleteReference__Group__1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4279:1: rule__DeleteReference__Group__1 : rule__DeleteReference__Group__1__Impl rule__DeleteReference__Group__2 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4310:1: rule__DeleteReference__Group__1 : rule__DeleteReference__Group__1__Impl rule__DeleteReference__Group__2 ;
     public final void rule__DeleteReference__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4283:1: ( rule__DeleteReference__Group__1__Impl rule__DeleteReference__Group__2 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4284:2: rule__DeleteReference__Group__1__Impl rule__DeleteReference__Group__2
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4314:1: ( rule__DeleteReference__Group__1__Impl rule__DeleteReference__Group__2 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4315:2: rule__DeleteReference__Group__1__Impl rule__DeleteReference__Group__2
             {
-            pushFollow(FOLLOW_rule__DeleteReference__Group__1__Impl_in_rule__DeleteReference__Group__18743);
+            pushFollow(FOLLOW_rule__DeleteReference__Group__1__Impl_in_rule__DeleteReference__Group__18804);
             rule__DeleteReference__Group__1__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__DeleteReference__Group__2_in_rule__DeleteReference__Group__18746);
+            pushFollow(FOLLOW_rule__DeleteReference__Group__2_in_rule__DeleteReference__Group__18807);
             rule__DeleteReference__Group__2();
 
             state._fsp--;
@@ -12731,22 +12820,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__DeleteReference__Group__1__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4291:1: rule__DeleteReference__Group__1__Impl : ( '(' ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4322:1: rule__DeleteReference__Group__1__Impl : ( '(' ) ;
     public final void rule__DeleteReference__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4295:1: ( ( '(' ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4296:1: ( '(' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4326:1: ( ( '(' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4327:1: ( '(' )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4296:1: ( '(' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4297:1: '('
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4327:1: ( '(' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4328:1: '('
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getDeleteReferenceAccess().getLeftParenthesisKeyword_1()); 
             }
-            match(input,18,FOLLOW_18_in_rule__DeleteReference__Group__1__Impl8774); if (state.failed) return ;
+            match(input,18,FOLLOW_18_in_rule__DeleteReference__Group__1__Impl8835); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getDeleteReferenceAccess().getLeftParenthesisKeyword_1()); 
             }
@@ -12772,21 +12861,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__DeleteReference__Group__2"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4310:1: rule__DeleteReference__Group__2 : rule__DeleteReference__Group__2__Impl rule__DeleteReference__Group__3 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4341:1: rule__DeleteReference__Group__2 : rule__DeleteReference__Group__2__Impl rule__DeleteReference__Group__3 ;
     public final void rule__DeleteReference__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4314:1: ( rule__DeleteReference__Group__2__Impl rule__DeleteReference__Group__3 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4315:2: rule__DeleteReference__Group__2__Impl rule__DeleteReference__Group__3
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4345:1: ( rule__DeleteReference__Group__2__Impl rule__DeleteReference__Group__3 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4346:2: rule__DeleteReference__Group__2__Impl rule__DeleteReference__Group__3
             {
-            pushFollow(FOLLOW_rule__DeleteReference__Group__2__Impl_in_rule__DeleteReference__Group__28805);
+            pushFollow(FOLLOW_rule__DeleteReference__Group__2__Impl_in_rule__DeleteReference__Group__28866);
             rule__DeleteReference__Group__2__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__DeleteReference__Group__3_in_rule__DeleteReference__Group__28808);
+            pushFollow(FOLLOW_rule__DeleteReference__Group__3_in_rule__DeleteReference__Group__28869);
             rule__DeleteReference__Group__3();
 
             state._fsp--;
@@ -12810,25 +12899,25 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__DeleteReference__Group__2__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4322:1: rule__DeleteReference__Group__2__Impl : ( ( rule__DeleteReference__RefAssignment_2 ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4353:1: rule__DeleteReference__Group__2__Impl : ( ( rule__DeleteReference__RefAssignment_2 ) ) ;
     public final void rule__DeleteReference__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4326:1: ( ( ( rule__DeleteReference__RefAssignment_2 ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4327:1: ( ( rule__DeleteReference__RefAssignment_2 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4357:1: ( ( ( rule__DeleteReference__RefAssignment_2 ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4358:1: ( ( rule__DeleteReference__RefAssignment_2 ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4327:1: ( ( rule__DeleteReference__RefAssignment_2 ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4328:1: ( rule__DeleteReference__RefAssignment_2 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4358:1: ( ( rule__DeleteReference__RefAssignment_2 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4359:1: ( rule__DeleteReference__RefAssignment_2 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getDeleteReferenceAccess().getRefAssignment_2()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4329:1: ( rule__DeleteReference__RefAssignment_2 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4329:2: rule__DeleteReference__RefAssignment_2
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4360:1: ( rule__DeleteReference__RefAssignment_2 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4360:2: rule__DeleteReference__RefAssignment_2
             {
-            pushFollow(FOLLOW_rule__DeleteReference__RefAssignment_2_in_rule__DeleteReference__Group__2__Impl8835);
+            pushFollow(FOLLOW_rule__DeleteReference__RefAssignment_2_in_rule__DeleteReference__Group__2__Impl8896);
             rule__DeleteReference__RefAssignment_2();
 
             state._fsp--;
@@ -12861,16 +12950,16 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__DeleteReference__Group__3"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4339:1: rule__DeleteReference__Group__3 : rule__DeleteReference__Group__3__Impl ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4370:1: rule__DeleteReference__Group__3 : rule__DeleteReference__Group__3__Impl ;
     public final void rule__DeleteReference__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4343:1: ( rule__DeleteReference__Group__3__Impl )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4344:2: rule__DeleteReference__Group__3__Impl
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4374:1: ( rule__DeleteReference__Group__3__Impl )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4375:2: rule__DeleteReference__Group__3__Impl
             {
-            pushFollow(FOLLOW_rule__DeleteReference__Group__3__Impl_in_rule__DeleteReference__Group__38865);
+            pushFollow(FOLLOW_rule__DeleteReference__Group__3__Impl_in_rule__DeleteReference__Group__38926);
             rule__DeleteReference__Group__3__Impl();
 
             state._fsp--;
@@ -12894,22 +12983,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__DeleteReference__Group__3__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4350:1: rule__DeleteReference__Group__3__Impl : ( ')' ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4381:1: rule__DeleteReference__Group__3__Impl : ( ')' ) ;
     public final void rule__DeleteReference__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4354:1: ( ( ')' ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4355:1: ( ')' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4385:1: ( ( ')' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4386:1: ( ')' )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4355:1: ( ')' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4356:1: ')'
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4386:1: ( ')' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4387:1: ')'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getDeleteReferenceAccess().getRightParenthesisKeyword_3()); 
             }
-            match(input,19,FOLLOW_19_in_rule__DeleteReference__Group__3__Impl8893); if (state.failed) return ;
+            match(input,19,FOLLOW_19_in_rule__DeleteReference__Group__3__Impl8954); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getDeleteReferenceAccess().getRightParenthesisKeyword_3()); 
             }
@@ -12935,21 +13024,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ComplexOperatorDef__Group__0"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4377:1: rule__ComplexOperatorDef__Group__0 : rule__ComplexOperatorDef__Group__0__Impl rule__ComplexOperatorDef__Group__1 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4408:1: rule__ComplexOperatorDef__Group__0 : rule__ComplexOperatorDef__Group__0__Impl rule__ComplexOperatorDef__Group__1 ;
     public final void rule__ComplexOperatorDef__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4381:1: ( rule__ComplexOperatorDef__Group__0__Impl rule__ComplexOperatorDef__Group__1 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4382:2: rule__ComplexOperatorDef__Group__0__Impl rule__ComplexOperatorDef__Group__1
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4412:1: ( rule__ComplexOperatorDef__Group__0__Impl rule__ComplexOperatorDef__Group__1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4413:2: rule__ComplexOperatorDef__Group__0__Impl rule__ComplexOperatorDef__Group__1
             {
-            pushFollow(FOLLOW_rule__ComplexOperatorDef__Group__0__Impl_in_rule__ComplexOperatorDef__Group__08932);
+            pushFollow(FOLLOW_rule__ComplexOperatorDef__Group__0__Impl_in_rule__ComplexOperatorDef__Group__08993);
             rule__ComplexOperatorDef__Group__0__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__ComplexOperatorDef__Group__1_in_rule__ComplexOperatorDef__Group__08935);
+            pushFollow(FOLLOW_rule__ComplexOperatorDef__Group__1_in_rule__ComplexOperatorDef__Group__08996);
             rule__ComplexOperatorDef__Group__1();
 
             state._fsp--;
@@ -12973,22 +13062,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ComplexOperatorDef__Group__0__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4389:1: rule__ComplexOperatorDef__Group__0__Impl : ( 'def change' ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4420:1: rule__ComplexOperatorDef__Group__0__Impl : ( 'def change' ) ;
     public final void rule__ComplexOperatorDef__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4393:1: ( ( 'def change' ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4394:1: ( 'def change' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4424:1: ( ( 'def change' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4425:1: ( 'def change' )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4394:1: ( 'def change' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4395:1: 'def change'
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4425:1: ( 'def change' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4426:1: 'def change'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getComplexOperatorDefAccess().getDefChangeKeyword_0()); 
             }
-            match(input,29,FOLLOW_29_in_rule__ComplexOperatorDef__Group__0__Impl8963); if (state.failed) return ;
+            match(input,28,FOLLOW_28_in_rule__ComplexOperatorDef__Group__0__Impl9024); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getComplexOperatorDefAccess().getDefChangeKeyword_0()); 
             }
@@ -13014,21 +13103,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ComplexOperatorDef__Group__1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4408:1: rule__ComplexOperatorDef__Group__1 : rule__ComplexOperatorDef__Group__1__Impl rule__ComplexOperatorDef__Group__2 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4439:1: rule__ComplexOperatorDef__Group__1 : rule__ComplexOperatorDef__Group__1__Impl rule__ComplexOperatorDef__Group__2 ;
     public final void rule__ComplexOperatorDef__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4412:1: ( rule__ComplexOperatorDef__Group__1__Impl rule__ComplexOperatorDef__Group__2 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4413:2: rule__ComplexOperatorDef__Group__1__Impl rule__ComplexOperatorDef__Group__2
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4443:1: ( rule__ComplexOperatorDef__Group__1__Impl rule__ComplexOperatorDef__Group__2 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4444:2: rule__ComplexOperatorDef__Group__1__Impl rule__ComplexOperatorDef__Group__2
             {
-            pushFollow(FOLLOW_rule__ComplexOperatorDef__Group__1__Impl_in_rule__ComplexOperatorDef__Group__18994);
+            pushFollow(FOLLOW_rule__ComplexOperatorDef__Group__1__Impl_in_rule__ComplexOperatorDef__Group__19055);
             rule__ComplexOperatorDef__Group__1__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__ComplexOperatorDef__Group__2_in_rule__ComplexOperatorDef__Group__18997);
+            pushFollow(FOLLOW_rule__ComplexOperatorDef__Group__2_in_rule__ComplexOperatorDef__Group__19058);
             rule__ComplexOperatorDef__Group__2();
 
             state._fsp--;
@@ -13052,25 +13141,25 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ComplexOperatorDef__Group__1__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4420:1: rule__ComplexOperatorDef__Group__1__Impl : ( ( rule__ComplexOperatorDef__NameAssignment_1 ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4451:1: rule__ComplexOperatorDef__Group__1__Impl : ( ( rule__ComplexOperatorDef__NameAssignment_1 ) ) ;
     public final void rule__ComplexOperatorDef__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4424:1: ( ( ( rule__ComplexOperatorDef__NameAssignment_1 ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4425:1: ( ( rule__ComplexOperatorDef__NameAssignment_1 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4455:1: ( ( ( rule__ComplexOperatorDef__NameAssignment_1 ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4456:1: ( ( rule__ComplexOperatorDef__NameAssignment_1 ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4425:1: ( ( rule__ComplexOperatorDef__NameAssignment_1 ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4426:1: ( rule__ComplexOperatorDef__NameAssignment_1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4456:1: ( ( rule__ComplexOperatorDef__NameAssignment_1 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4457:1: ( rule__ComplexOperatorDef__NameAssignment_1 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getComplexOperatorDefAccess().getNameAssignment_1()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4427:1: ( rule__ComplexOperatorDef__NameAssignment_1 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4427:2: rule__ComplexOperatorDef__NameAssignment_1
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4458:1: ( rule__ComplexOperatorDef__NameAssignment_1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4458:2: rule__ComplexOperatorDef__NameAssignment_1
             {
-            pushFollow(FOLLOW_rule__ComplexOperatorDef__NameAssignment_1_in_rule__ComplexOperatorDef__Group__1__Impl9024);
+            pushFollow(FOLLOW_rule__ComplexOperatorDef__NameAssignment_1_in_rule__ComplexOperatorDef__Group__1__Impl9085);
             rule__ComplexOperatorDef__NameAssignment_1();
 
             state._fsp--;
@@ -13103,21 +13192,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ComplexOperatorDef__Group__2"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4437:1: rule__ComplexOperatorDef__Group__2 : rule__ComplexOperatorDef__Group__2__Impl rule__ComplexOperatorDef__Group__3 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4468:1: rule__ComplexOperatorDef__Group__2 : rule__ComplexOperatorDef__Group__2__Impl rule__ComplexOperatorDef__Group__3 ;
     public final void rule__ComplexOperatorDef__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4441:1: ( rule__ComplexOperatorDef__Group__2__Impl rule__ComplexOperatorDef__Group__3 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4442:2: rule__ComplexOperatorDef__Group__2__Impl rule__ComplexOperatorDef__Group__3
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4472:1: ( rule__ComplexOperatorDef__Group__2__Impl rule__ComplexOperatorDef__Group__3 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4473:2: rule__ComplexOperatorDef__Group__2__Impl rule__ComplexOperatorDef__Group__3
             {
-            pushFollow(FOLLOW_rule__ComplexOperatorDef__Group__2__Impl_in_rule__ComplexOperatorDef__Group__29054);
+            pushFollow(FOLLOW_rule__ComplexOperatorDef__Group__2__Impl_in_rule__ComplexOperatorDef__Group__29115);
             rule__ComplexOperatorDef__Group__2__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__ComplexOperatorDef__Group__3_in_rule__ComplexOperatorDef__Group__29057);
+            pushFollow(FOLLOW_rule__ComplexOperatorDef__Group__3_in_rule__ComplexOperatorDef__Group__29118);
             rule__ComplexOperatorDef__Group__3();
 
             state._fsp--;
@@ -13141,25 +13230,25 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ComplexOperatorDef__Group__2__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4449:1: rule__ComplexOperatorDef__Group__2__Impl : ( ( rule__ComplexOperatorDef__Group_2__0 ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4480:1: rule__ComplexOperatorDef__Group__2__Impl : ( ( rule__ComplexOperatorDef__Group_2__0 ) ) ;
     public final void rule__ComplexOperatorDef__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4453:1: ( ( ( rule__ComplexOperatorDef__Group_2__0 ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4454:1: ( ( rule__ComplexOperatorDef__Group_2__0 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4484:1: ( ( ( rule__ComplexOperatorDef__Group_2__0 ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4485:1: ( ( rule__ComplexOperatorDef__Group_2__0 ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4454:1: ( ( rule__ComplexOperatorDef__Group_2__0 ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4455:1: ( rule__ComplexOperatorDef__Group_2__0 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4485:1: ( ( rule__ComplexOperatorDef__Group_2__0 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4486:1: ( rule__ComplexOperatorDef__Group_2__0 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getComplexOperatorDefAccess().getGroup_2()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4456:1: ( rule__ComplexOperatorDef__Group_2__0 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4456:2: rule__ComplexOperatorDef__Group_2__0
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4487:1: ( rule__ComplexOperatorDef__Group_2__0 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4487:2: rule__ComplexOperatorDef__Group_2__0
             {
-            pushFollow(FOLLOW_rule__ComplexOperatorDef__Group_2__0_in_rule__ComplexOperatorDef__Group__2__Impl9084);
+            pushFollow(FOLLOW_rule__ComplexOperatorDef__Group_2__0_in_rule__ComplexOperatorDef__Group__2__Impl9145);
             rule__ComplexOperatorDef__Group_2__0();
 
             state._fsp--;
@@ -13192,21 +13281,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ComplexOperatorDef__Group__3"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4466:1: rule__ComplexOperatorDef__Group__3 : rule__ComplexOperatorDef__Group__3__Impl rule__ComplexOperatorDef__Group__4 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4497:1: rule__ComplexOperatorDef__Group__3 : rule__ComplexOperatorDef__Group__3__Impl rule__ComplexOperatorDef__Group__4 ;
     public final void rule__ComplexOperatorDef__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4470:1: ( rule__ComplexOperatorDef__Group__3__Impl rule__ComplexOperatorDef__Group__4 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4471:2: rule__ComplexOperatorDef__Group__3__Impl rule__ComplexOperatorDef__Group__4
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4501:1: ( rule__ComplexOperatorDef__Group__3__Impl rule__ComplexOperatorDef__Group__4 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4502:2: rule__ComplexOperatorDef__Group__3__Impl rule__ComplexOperatorDef__Group__4
             {
-            pushFollow(FOLLOW_rule__ComplexOperatorDef__Group__3__Impl_in_rule__ComplexOperatorDef__Group__39114);
+            pushFollow(FOLLOW_rule__ComplexOperatorDef__Group__3__Impl_in_rule__ComplexOperatorDef__Group__39175);
             rule__ComplexOperatorDef__Group__3__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__ComplexOperatorDef__Group__4_in_rule__ComplexOperatorDef__Group__39117);
+            pushFollow(FOLLOW_rule__ComplexOperatorDef__Group__4_in_rule__ComplexOperatorDef__Group__39178);
             rule__ComplexOperatorDef__Group__4();
 
             state._fsp--;
@@ -13230,22 +13319,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ComplexOperatorDef__Group__3__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4478:1: rule__ComplexOperatorDef__Group__3__Impl : ( '{' ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4509:1: rule__ComplexOperatorDef__Group__3__Impl : ( '{' ) ;
     public final void rule__ComplexOperatorDef__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4482:1: ( ( '{' ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4483:1: ( '{' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4513:1: ( ( '{' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4514:1: ( '{' )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4483:1: ( '{' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4484:1: '{'
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4514:1: ( '{' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4515:1: '{'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getComplexOperatorDefAccess().getLeftCurlyBracketKeyword_3()); 
             }
-            match(input,15,FOLLOW_15_in_rule__ComplexOperatorDef__Group__3__Impl9145); if (state.failed) return ;
+            match(input,15,FOLLOW_15_in_rule__ComplexOperatorDef__Group__3__Impl9206); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getComplexOperatorDefAccess().getLeftCurlyBracketKeyword_3()); 
             }
@@ -13271,21 +13360,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ComplexOperatorDef__Group__4"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4497:1: rule__ComplexOperatorDef__Group__4 : rule__ComplexOperatorDef__Group__4__Impl rule__ComplexOperatorDef__Group__5 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4528:1: rule__ComplexOperatorDef__Group__4 : rule__ComplexOperatorDef__Group__4__Impl rule__ComplexOperatorDef__Group__5 ;
     public final void rule__ComplexOperatorDef__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4501:1: ( rule__ComplexOperatorDef__Group__4__Impl rule__ComplexOperatorDef__Group__5 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4502:2: rule__ComplexOperatorDef__Group__4__Impl rule__ComplexOperatorDef__Group__5
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4532:1: ( rule__ComplexOperatorDef__Group__4__Impl rule__ComplexOperatorDef__Group__5 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4533:2: rule__ComplexOperatorDef__Group__4__Impl rule__ComplexOperatorDef__Group__5
             {
-            pushFollow(FOLLOW_rule__ComplexOperatorDef__Group__4__Impl_in_rule__ComplexOperatorDef__Group__49176);
+            pushFollow(FOLLOW_rule__ComplexOperatorDef__Group__4__Impl_in_rule__ComplexOperatorDef__Group__49237);
             rule__ComplexOperatorDef__Group__4__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__ComplexOperatorDef__Group__5_in_rule__ComplexOperatorDef__Group__49179);
+            pushFollow(FOLLOW_rule__ComplexOperatorDef__Group__5_in_rule__ComplexOperatorDef__Group__49240);
             rule__ComplexOperatorDef__Group__5();
 
             state._fsp--;
@@ -13309,37 +13398,37 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ComplexOperatorDef__Group__4__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4509:1: rule__ComplexOperatorDef__Group__4__Impl : ( ( rule__ComplexOperatorDef__Alternatives_4 )* ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4540:1: rule__ComplexOperatorDef__Group__4__Impl : ( ( rule__ComplexOperatorDef__Alternatives_4 )* ) ;
     public final void rule__ComplexOperatorDef__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4513:1: ( ( ( rule__ComplexOperatorDef__Alternatives_4 )* ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4514:1: ( ( rule__ComplexOperatorDef__Alternatives_4 )* )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4544:1: ( ( ( rule__ComplexOperatorDef__Alternatives_4 )* ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4545:1: ( ( rule__ComplexOperatorDef__Alternatives_4 )* )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4514:1: ( ( rule__ComplexOperatorDef__Alternatives_4 )* )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4515:1: ( rule__ComplexOperatorDef__Alternatives_4 )*
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4545:1: ( ( rule__ComplexOperatorDef__Alternatives_4 )* )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4546:1: ( rule__ComplexOperatorDef__Alternatives_4 )*
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getComplexOperatorDefAccess().getAlternatives_4()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4516:1: ( rule__ComplexOperatorDef__Alternatives_4 )*
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4547:1: ( rule__ComplexOperatorDef__Alternatives_4 )*
             loop33:
             do {
                 int alt33=2;
                 int LA33_0 = input.LA(1);
 
-                if ( (LA33_0==RULE_ID||LA33_0==13||LA33_0==17||(LA33_0>=20 && LA33_0<=22)||(LA33_0>=27 && LA33_0<=28)||(LA33_0>=34 && LA33_0<=42)) ) {
+                if ( (LA33_0==RULE_ID||LA33_0==13||LA33_0==17||(LA33_0>=20 && LA33_0<=22)||(LA33_0>=26 && LA33_0<=27)||(LA33_0>=33 && LA33_0<=35)||(LA33_0>=37 && LA33_0<=42)) ) {
                     alt33=1;
                 }
 
 
                 switch (alt33) {
             	case 1 :
-            	    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4516:2: rule__ComplexOperatorDef__Alternatives_4
+            	    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4547:2: rule__ComplexOperatorDef__Alternatives_4
             	    {
-            	    pushFollow(FOLLOW_rule__ComplexOperatorDef__Alternatives_4_in_rule__ComplexOperatorDef__Group__4__Impl9206);
+            	    pushFollow(FOLLOW_rule__ComplexOperatorDef__Alternatives_4_in_rule__ComplexOperatorDef__Group__4__Impl9267);
             	    rule__ComplexOperatorDef__Alternatives_4();
 
             	    state._fsp--;
@@ -13378,16 +13467,16 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ComplexOperatorDef__Group__5"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4526:1: rule__ComplexOperatorDef__Group__5 : rule__ComplexOperatorDef__Group__5__Impl ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4557:1: rule__ComplexOperatorDef__Group__5 : rule__ComplexOperatorDef__Group__5__Impl ;
     public final void rule__ComplexOperatorDef__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4530:1: ( rule__ComplexOperatorDef__Group__5__Impl )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4531:2: rule__ComplexOperatorDef__Group__5__Impl
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4561:1: ( rule__ComplexOperatorDef__Group__5__Impl )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4562:2: rule__ComplexOperatorDef__Group__5__Impl
             {
-            pushFollow(FOLLOW_rule__ComplexOperatorDef__Group__5__Impl_in_rule__ComplexOperatorDef__Group__59237);
+            pushFollow(FOLLOW_rule__ComplexOperatorDef__Group__5__Impl_in_rule__ComplexOperatorDef__Group__59298);
             rule__ComplexOperatorDef__Group__5__Impl();
 
             state._fsp--;
@@ -13411,22 +13500,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ComplexOperatorDef__Group__5__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4537:1: rule__ComplexOperatorDef__Group__5__Impl : ( '}' ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4568:1: rule__ComplexOperatorDef__Group__5__Impl : ( '}' ) ;
     public final void rule__ComplexOperatorDef__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4541:1: ( ( '}' ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4542:1: ( '}' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4572:1: ( ( '}' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4573:1: ( '}' )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4542:1: ( '}' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4543:1: '}'
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4573:1: ( '}' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4574:1: '}'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getComplexOperatorDefAccess().getRightCurlyBracketKeyword_5()); 
             }
-            match(input,16,FOLLOW_16_in_rule__ComplexOperatorDef__Group__5__Impl9265); if (state.failed) return ;
+            match(input,16,FOLLOW_16_in_rule__ComplexOperatorDef__Group__5__Impl9326); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getComplexOperatorDefAccess().getRightCurlyBracketKeyword_5()); 
             }
@@ -13452,21 +13541,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ComplexOperatorDef__Group_2__0"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4568:1: rule__ComplexOperatorDef__Group_2__0 : rule__ComplexOperatorDef__Group_2__0__Impl rule__ComplexOperatorDef__Group_2__1 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4599:1: rule__ComplexOperatorDef__Group_2__0 : rule__ComplexOperatorDef__Group_2__0__Impl rule__ComplexOperatorDef__Group_2__1 ;
     public final void rule__ComplexOperatorDef__Group_2__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4572:1: ( rule__ComplexOperatorDef__Group_2__0__Impl rule__ComplexOperatorDef__Group_2__1 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4573:2: rule__ComplexOperatorDef__Group_2__0__Impl rule__ComplexOperatorDef__Group_2__1
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4603:1: ( rule__ComplexOperatorDef__Group_2__0__Impl rule__ComplexOperatorDef__Group_2__1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4604:2: rule__ComplexOperatorDef__Group_2__0__Impl rule__ComplexOperatorDef__Group_2__1
             {
-            pushFollow(FOLLOW_rule__ComplexOperatorDef__Group_2__0__Impl_in_rule__ComplexOperatorDef__Group_2__09308);
+            pushFollow(FOLLOW_rule__ComplexOperatorDef__Group_2__0__Impl_in_rule__ComplexOperatorDef__Group_2__09369);
             rule__ComplexOperatorDef__Group_2__0__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__ComplexOperatorDef__Group_2__1_in_rule__ComplexOperatorDef__Group_2__09311);
+            pushFollow(FOLLOW_rule__ComplexOperatorDef__Group_2__1_in_rule__ComplexOperatorDef__Group_2__09372);
             rule__ComplexOperatorDef__Group_2__1();
 
             state._fsp--;
@@ -13490,22 +13579,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ComplexOperatorDef__Group_2__0__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4580:1: rule__ComplexOperatorDef__Group_2__0__Impl : ( '(' ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4611:1: rule__ComplexOperatorDef__Group_2__0__Impl : ( '(' ) ;
     public final void rule__ComplexOperatorDef__Group_2__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4584:1: ( ( '(' ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4585:1: ( '(' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4615:1: ( ( '(' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4616:1: ( '(' )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4585:1: ( '(' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4586:1: '('
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4616:1: ( '(' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4617:1: '('
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getComplexOperatorDefAccess().getLeftParenthesisKeyword_2_0()); 
             }
-            match(input,18,FOLLOW_18_in_rule__ComplexOperatorDef__Group_2__0__Impl9339); if (state.failed) return ;
+            match(input,18,FOLLOW_18_in_rule__ComplexOperatorDef__Group_2__0__Impl9400); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getComplexOperatorDefAccess().getLeftParenthesisKeyword_2_0()); 
             }
@@ -13531,21 +13620,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ComplexOperatorDef__Group_2__1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4599:1: rule__ComplexOperatorDef__Group_2__1 : rule__ComplexOperatorDef__Group_2__1__Impl rule__ComplexOperatorDef__Group_2__2 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4630:1: rule__ComplexOperatorDef__Group_2__1 : rule__ComplexOperatorDef__Group_2__1__Impl rule__ComplexOperatorDef__Group_2__2 ;
     public final void rule__ComplexOperatorDef__Group_2__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4603:1: ( rule__ComplexOperatorDef__Group_2__1__Impl rule__ComplexOperatorDef__Group_2__2 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4604:2: rule__ComplexOperatorDef__Group_2__1__Impl rule__ComplexOperatorDef__Group_2__2
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4634:1: ( rule__ComplexOperatorDef__Group_2__1__Impl rule__ComplexOperatorDef__Group_2__2 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4635:2: rule__ComplexOperatorDef__Group_2__1__Impl rule__ComplexOperatorDef__Group_2__2
             {
-            pushFollow(FOLLOW_rule__ComplexOperatorDef__Group_2__1__Impl_in_rule__ComplexOperatorDef__Group_2__19370);
+            pushFollow(FOLLOW_rule__ComplexOperatorDef__Group_2__1__Impl_in_rule__ComplexOperatorDef__Group_2__19431);
             rule__ComplexOperatorDef__Group_2__1__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__ComplexOperatorDef__Group_2__2_in_rule__ComplexOperatorDef__Group_2__19373);
+            pushFollow(FOLLOW_rule__ComplexOperatorDef__Group_2__2_in_rule__ComplexOperatorDef__Group_2__19434);
             rule__ComplexOperatorDef__Group_2__2();
 
             state._fsp--;
@@ -13569,22 +13658,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ComplexOperatorDef__Group_2__1__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4611:1: rule__ComplexOperatorDef__Group_2__1__Impl : ( ( rule__ComplexOperatorDef__ParamsAssignment_2_1 )? ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4642:1: rule__ComplexOperatorDef__Group_2__1__Impl : ( ( rule__ComplexOperatorDef__ParamsAssignment_2_1 )? ) ;
     public final void rule__ComplexOperatorDef__Group_2__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4615:1: ( ( ( rule__ComplexOperatorDef__ParamsAssignment_2_1 )? ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4616:1: ( ( rule__ComplexOperatorDef__ParamsAssignment_2_1 )? )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4646:1: ( ( ( rule__ComplexOperatorDef__ParamsAssignment_2_1 )? ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4647:1: ( ( rule__ComplexOperatorDef__ParamsAssignment_2_1 )? )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4616:1: ( ( rule__ComplexOperatorDef__ParamsAssignment_2_1 )? )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4617:1: ( rule__ComplexOperatorDef__ParamsAssignment_2_1 )?
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4647:1: ( ( rule__ComplexOperatorDef__ParamsAssignment_2_1 )? )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4648:1: ( rule__ComplexOperatorDef__ParamsAssignment_2_1 )?
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getComplexOperatorDefAccess().getParamsAssignment_2_1()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4618:1: ( rule__ComplexOperatorDef__ParamsAssignment_2_1 )?
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4649:1: ( rule__ComplexOperatorDef__ParamsAssignment_2_1 )?
             int alt34=2;
             int LA34_0 = input.LA(1);
 
@@ -13593,9 +13682,9 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
             }
             switch (alt34) {
                 case 1 :
-                    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4618:2: rule__ComplexOperatorDef__ParamsAssignment_2_1
+                    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4649:2: rule__ComplexOperatorDef__ParamsAssignment_2_1
                     {
-                    pushFollow(FOLLOW_rule__ComplexOperatorDef__ParamsAssignment_2_1_in_rule__ComplexOperatorDef__Group_2__1__Impl9400);
+                    pushFollow(FOLLOW_rule__ComplexOperatorDef__ParamsAssignment_2_1_in_rule__ComplexOperatorDef__Group_2__1__Impl9461);
                     rule__ComplexOperatorDef__ParamsAssignment_2_1();
 
                     state._fsp--;
@@ -13631,21 +13720,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ComplexOperatorDef__Group_2__2"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4628:1: rule__ComplexOperatorDef__Group_2__2 : rule__ComplexOperatorDef__Group_2__2__Impl rule__ComplexOperatorDef__Group_2__3 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4659:1: rule__ComplexOperatorDef__Group_2__2 : rule__ComplexOperatorDef__Group_2__2__Impl rule__ComplexOperatorDef__Group_2__3 ;
     public final void rule__ComplexOperatorDef__Group_2__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4632:1: ( rule__ComplexOperatorDef__Group_2__2__Impl rule__ComplexOperatorDef__Group_2__3 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4633:2: rule__ComplexOperatorDef__Group_2__2__Impl rule__ComplexOperatorDef__Group_2__3
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4663:1: ( rule__ComplexOperatorDef__Group_2__2__Impl rule__ComplexOperatorDef__Group_2__3 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4664:2: rule__ComplexOperatorDef__Group_2__2__Impl rule__ComplexOperatorDef__Group_2__3
             {
-            pushFollow(FOLLOW_rule__ComplexOperatorDef__Group_2__2__Impl_in_rule__ComplexOperatorDef__Group_2__29431);
+            pushFollow(FOLLOW_rule__ComplexOperatorDef__Group_2__2__Impl_in_rule__ComplexOperatorDef__Group_2__29492);
             rule__ComplexOperatorDef__Group_2__2__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__ComplexOperatorDef__Group_2__3_in_rule__ComplexOperatorDef__Group_2__29434);
+            pushFollow(FOLLOW_rule__ComplexOperatorDef__Group_2__3_in_rule__ComplexOperatorDef__Group_2__29495);
             rule__ComplexOperatorDef__Group_2__3();
 
             state._fsp--;
@@ -13669,37 +13758,37 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ComplexOperatorDef__Group_2__2__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4640:1: rule__ComplexOperatorDef__Group_2__2__Impl : ( ( rule__ComplexOperatorDef__Group_2_2__0 )* ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4671:1: rule__ComplexOperatorDef__Group_2__2__Impl : ( ( rule__ComplexOperatorDef__Group_2_2__0 )* ) ;
     public final void rule__ComplexOperatorDef__Group_2__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4644:1: ( ( ( rule__ComplexOperatorDef__Group_2_2__0 )* ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4645:1: ( ( rule__ComplexOperatorDef__Group_2_2__0 )* )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4675:1: ( ( ( rule__ComplexOperatorDef__Group_2_2__0 )* ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4676:1: ( ( rule__ComplexOperatorDef__Group_2_2__0 )* )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4645:1: ( ( rule__ComplexOperatorDef__Group_2_2__0 )* )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4646:1: ( rule__ComplexOperatorDef__Group_2_2__0 )*
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4676:1: ( ( rule__ComplexOperatorDef__Group_2_2__0 )* )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4677:1: ( rule__ComplexOperatorDef__Group_2_2__0 )*
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getComplexOperatorDefAccess().getGroup_2_2()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4647:1: ( rule__ComplexOperatorDef__Group_2_2__0 )*
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4678:1: ( rule__ComplexOperatorDef__Group_2_2__0 )*
             loop35:
             do {
                 int alt35=2;
                 int LA35_0 = input.LA(1);
 
-                if ( (LA35_0==26) ) {
+                if ( (LA35_0==25) ) {
                     alt35=1;
                 }
 
 
                 switch (alt35) {
             	case 1 :
-            	    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4647:2: rule__ComplexOperatorDef__Group_2_2__0
+            	    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4678:2: rule__ComplexOperatorDef__Group_2_2__0
             	    {
-            	    pushFollow(FOLLOW_rule__ComplexOperatorDef__Group_2_2__0_in_rule__ComplexOperatorDef__Group_2__2__Impl9461);
+            	    pushFollow(FOLLOW_rule__ComplexOperatorDef__Group_2_2__0_in_rule__ComplexOperatorDef__Group_2__2__Impl9522);
             	    rule__ComplexOperatorDef__Group_2_2__0();
 
             	    state._fsp--;
@@ -13738,16 +13827,16 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ComplexOperatorDef__Group_2__3"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4657:1: rule__ComplexOperatorDef__Group_2__3 : rule__ComplexOperatorDef__Group_2__3__Impl ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4688:1: rule__ComplexOperatorDef__Group_2__3 : rule__ComplexOperatorDef__Group_2__3__Impl ;
     public final void rule__ComplexOperatorDef__Group_2__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4661:1: ( rule__ComplexOperatorDef__Group_2__3__Impl )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4662:2: rule__ComplexOperatorDef__Group_2__3__Impl
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4692:1: ( rule__ComplexOperatorDef__Group_2__3__Impl )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4693:2: rule__ComplexOperatorDef__Group_2__3__Impl
             {
-            pushFollow(FOLLOW_rule__ComplexOperatorDef__Group_2__3__Impl_in_rule__ComplexOperatorDef__Group_2__39492);
+            pushFollow(FOLLOW_rule__ComplexOperatorDef__Group_2__3__Impl_in_rule__ComplexOperatorDef__Group_2__39553);
             rule__ComplexOperatorDef__Group_2__3__Impl();
 
             state._fsp--;
@@ -13771,22 +13860,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ComplexOperatorDef__Group_2__3__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4668:1: rule__ComplexOperatorDef__Group_2__3__Impl : ( ')' ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4699:1: rule__ComplexOperatorDef__Group_2__3__Impl : ( ')' ) ;
     public final void rule__ComplexOperatorDef__Group_2__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4672:1: ( ( ')' ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4673:1: ( ')' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4703:1: ( ( ')' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4704:1: ( ')' )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4673:1: ( ')' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4674:1: ')'
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4704:1: ( ')' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4705:1: ')'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getComplexOperatorDefAccess().getRightParenthesisKeyword_2_3()); 
             }
-            match(input,19,FOLLOW_19_in_rule__ComplexOperatorDef__Group_2__3__Impl9520); if (state.failed) return ;
+            match(input,19,FOLLOW_19_in_rule__ComplexOperatorDef__Group_2__3__Impl9581); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getComplexOperatorDefAccess().getRightParenthesisKeyword_2_3()); 
             }
@@ -13812,21 +13901,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ComplexOperatorDef__Group_2_2__0"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4695:1: rule__ComplexOperatorDef__Group_2_2__0 : rule__ComplexOperatorDef__Group_2_2__0__Impl rule__ComplexOperatorDef__Group_2_2__1 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4726:1: rule__ComplexOperatorDef__Group_2_2__0 : rule__ComplexOperatorDef__Group_2_2__0__Impl rule__ComplexOperatorDef__Group_2_2__1 ;
     public final void rule__ComplexOperatorDef__Group_2_2__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4699:1: ( rule__ComplexOperatorDef__Group_2_2__0__Impl rule__ComplexOperatorDef__Group_2_2__1 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4700:2: rule__ComplexOperatorDef__Group_2_2__0__Impl rule__ComplexOperatorDef__Group_2_2__1
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4730:1: ( rule__ComplexOperatorDef__Group_2_2__0__Impl rule__ComplexOperatorDef__Group_2_2__1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4731:2: rule__ComplexOperatorDef__Group_2_2__0__Impl rule__ComplexOperatorDef__Group_2_2__1
             {
-            pushFollow(FOLLOW_rule__ComplexOperatorDef__Group_2_2__0__Impl_in_rule__ComplexOperatorDef__Group_2_2__09559);
+            pushFollow(FOLLOW_rule__ComplexOperatorDef__Group_2_2__0__Impl_in_rule__ComplexOperatorDef__Group_2_2__09620);
             rule__ComplexOperatorDef__Group_2_2__0__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__ComplexOperatorDef__Group_2_2__1_in_rule__ComplexOperatorDef__Group_2_2__09562);
+            pushFollow(FOLLOW_rule__ComplexOperatorDef__Group_2_2__1_in_rule__ComplexOperatorDef__Group_2_2__09623);
             rule__ComplexOperatorDef__Group_2_2__1();
 
             state._fsp--;
@@ -13850,22 +13939,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ComplexOperatorDef__Group_2_2__0__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4707:1: rule__ComplexOperatorDef__Group_2_2__0__Impl : ( ',' ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4738:1: rule__ComplexOperatorDef__Group_2_2__0__Impl : ( ',' ) ;
     public final void rule__ComplexOperatorDef__Group_2_2__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4711:1: ( ( ',' ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4712:1: ( ',' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4742:1: ( ( ',' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4743:1: ( ',' )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4712:1: ( ',' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4713:1: ','
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4743:1: ( ',' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4744:1: ','
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getComplexOperatorDefAccess().getCommaKeyword_2_2_0()); 
             }
-            match(input,26,FOLLOW_26_in_rule__ComplexOperatorDef__Group_2_2__0__Impl9590); if (state.failed) return ;
+            match(input,25,FOLLOW_25_in_rule__ComplexOperatorDef__Group_2_2__0__Impl9651); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getComplexOperatorDefAccess().getCommaKeyword_2_2_0()); 
             }
@@ -13891,16 +13980,16 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ComplexOperatorDef__Group_2_2__1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4726:1: rule__ComplexOperatorDef__Group_2_2__1 : rule__ComplexOperatorDef__Group_2_2__1__Impl ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4757:1: rule__ComplexOperatorDef__Group_2_2__1 : rule__ComplexOperatorDef__Group_2_2__1__Impl ;
     public final void rule__ComplexOperatorDef__Group_2_2__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4730:1: ( rule__ComplexOperatorDef__Group_2_2__1__Impl )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4731:2: rule__ComplexOperatorDef__Group_2_2__1__Impl
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4761:1: ( rule__ComplexOperatorDef__Group_2_2__1__Impl )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4762:2: rule__ComplexOperatorDef__Group_2_2__1__Impl
             {
-            pushFollow(FOLLOW_rule__ComplexOperatorDef__Group_2_2__1__Impl_in_rule__ComplexOperatorDef__Group_2_2__19621);
+            pushFollow(FOLLOW_rule__ComplexOperatorDef__Group_2_2__1__Impl_in_rule__ComplexOperatorDef__Group_2_2__19682);
             rule__ComplexOperatorDef__Group_2_2__1__Impl();
 
             state._fsp--;
@@ -13924,25 +14013,25 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ComplexOperatorDef__Group_2_2__1__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4737:1: rule__ComplexOperatorDef__Group_2_2__1__Impl : ( ( rule__ComplexOperatorDef__ParamsAssignment_2_2_1 ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4768:1: rule__ComplexOperatorDef__Group_2_2__1__Impl : ( ( rule__ComplexOperatorDef__ParamsAssignment_2_2_1 ) ) ;
     public final void rule__ComplexOperatorDef__Group_2_2__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4741:1: ( ( ( rule__ComplexOperatorDef__ParamsAssignment_2_2_1 ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4742:1: ( ( rule__ComplexOperatorDef__ParamsAssignment_2_2_1 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4772:1: ( ( ( rule__ComplexOperatorDef__ParamsAssignment_2_2_1 ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4773:1: ( ( rule__ComplexOperatorDef__ParamsAssignment_2_2_1 ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4742:1: ( ( rule__ComplexOperatorDef__ParamsAssignment_2_2_1 ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4743:1: ( rule__ComplexOperatorDef__ParamsAssignment_2_2_1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4773:1: ( ( rule__ComplexOperatorDef__ParamsAssignment_2_2_1 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4774:1: ( rule__ComplexOperatorDef__ParamsAssignment_2_2_1 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getComplexOperatorDefAccess().getParamsAssignment_2_2_1()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4744:1: ( rule__ComplexOperatorDef__ParamsAssignment_2_2_1 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4744:2: rule__ComplexOperatorDef__ParamsAssignment_2_2_1
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4775:1: ( rule__ComplexOperatorDef__ParamsAssignment_2_2_1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4775:2: rule__ComplexOperatorDef__ParamsAssignment_2_2_1
             {
-            pushFollow(FOLLOW_rule__ComplexOperatorDef__ParamsAssignment_2_2_1_in_rule__ComplexOperatorDef__Group_2_2__1__Impl9648);
+            pushFollow(FOLLOW_rule__ComplexOperatorDef__ParamsAssignment_2_2_1_in_rule__ComplexOperatorDef__Group_2_2__1__Impl9709);
             rule__ComplexOperatorDef__ParamsAssignment_2_2_1();
 
             state._fsp--;
@@ -13975,21 +14064,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ComplexOperator__Group__0"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4758:1: rule__ComplexOperator__Group__0 : rule__ComplexOperator__Group__0__Impl rule__ComplexOperator__Group__1 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4789:1: rule__ComplexOperator__Group__0 : rule__ComplexOperator__Group__0__Impl rule__ComplexOperator__Group__1 ;
     public final void rule__ComplexOperator__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4762:1: ( rule__ComplexOperator__Group__0__Impl rule__ComplexOperator__Group__1 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4763:2: rule__ComplexOperator__Group__0__Impl rule__ComplexOperator__Group__1
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4793:1: ( rule__ComplexOperator__Group__0__Impl rule__ComplexOperator__Group__1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4794:2: rule__ComplexOperator__Group__0__Impl rule__ComplexOperator__Group__1
             {
-            pushFollow(FOLLOW_rule__ComplexOperator__Group__0__Impl_in_rule__ComplexOperator__Group__09682);
+            pushFollow(FOLLOW_rule__ComplexOperator__Group__0__Impl_in_rule__ComplexOperator__Group__09743);
             rule__ComplexOperator__Group__0__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__ComplexOperator__Group__1_in_rule__ComplexOperator__Group__09685);
+            pushFollow(FOLLOW_rule__ComplexOperator__Group__1_in_rule__ComplexOperator__Group__09746);
             rule__ComplexOperator__Group__1();
 
             state._fsp--;
@@ -14013,25 +14102,25 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ComplexOperator__Group__0__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4770:1: rule__ComplexOperator__Group__0__Impl : ( ( rule__ComplexOperator__RefAssignment_0 ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4801:1: rule__ComplexOperator__Group__0__Impl : ( ( rule__ComplexOperator__RefAssignment_0 ) ) ;
     public final void rule__ComplexOperator__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4774:1: ( ( ( rule__ComplexOperator__RefAssignment_0 ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4775:1: ( ( rule__ComplexOperator__RefAssignment_0 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4805:1: ( ( ( rule__ComplexOperator__RefAssignment_0 ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4806:1: ( ( rule__ComplexOperator__RefAssignment_0 ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4775:1: ( ( rule__ComplexOperator__RefAssignment_0 ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4776:1: ( rule__ComplexOperator__RefAssignment_0 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4806:1: ( ( rule__ComplexOperator__RefAssignment_0 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4807:1: ( rule__ComplexOperator__RefAssignment_0 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getComplexOperatorAccess().getRefAssignment_0()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4777:1: ( rule__ComplexOperator__RefAssignment_0 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4777:2: rule__ComplexOperator__RefAssignment_0
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4808:1: ( rule__ComplexOperator__RefAssignment_0 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4808:2: rule__ComplexOperator__RefAssignment_0
             {
-            pushFollow(FOLLOW_rule__ComplexOperator__RefAssignment_0_in_rule__ComplexOperator__Group__0__Impl9712);
+            pushFollow(FOLLOW_rule__ComplexOperator__RefAssignment_0_in_rule__ComplexOperator__Group__0__Impl9773);
             rule__ComplexOperator__RefAssignment_0();
 
             state._fsp--;
@@ -14064,21 +14153,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ComplexOperator__Group__1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4787:1: rule__ComplexOperator__Group__1 : rule__ComplexOperator__Group__1__Impl rule__ComplexOperator__Group__2 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4818:1: rule__ComplexOperator__Group__1 : rule__ComplexOperator__Group__1__Impl rule__ComplexOperator__Group__2 ;
     public final void rule__ComplexOperator__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4791:1: ( rule__ComplexOperator__Group__1__Impl rule__ComplexOperator__Group__2 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4792:2: rule__ComplexOperator__Group__1__Impl rule__ComplexOperator__Group__2
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4822:1: ( rule__ComplexOperator__Group__1__Impl rule__ComplexOperator__Group__2 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4823:2: rule__ComplexOperator__Group__1__Impl rule__ComplexOperator__Group__2
             {
-            pushFollow(FOLLOW_rule__ComplexOperator__Group__1__Impl_in_rule__ComplexOperator__Group__19742);
+            pushFollow(FOLLOW_rule__ComplexOperator__Group__1__Impl_in_rule__ComplexOperator__Group__19803);
             rule__ComplexOperator__Group__1__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__ComplexOperator__Group__2_in_rule__ComplexOperator__Group__19745);
+            pushFollow(FOLLOW_rule__ComplexOperator__Group__2_in_rule__ComplexOperator__Group__19806);
             rule__ComplexOperator__Group__2();
 
             state._fsp--;
@@ -14102,22 +14191,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ComplexOperator__Group__1__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4799:1: rule__ComplexOperator__Group__1__Impl : ( '(' ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4830:1: rule__ComplexOperator__Group__1__Impl : ( '(' ) ;
     public final void rule__ComplexOperator__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4803:1: ( ( '(' ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4804:1: ( '(' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4834:1: ( ( '(' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4835:1: ( '(' )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4804:1: ( '(' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4805:1: '('
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4835:1: ( '(' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4836:1: '('
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getComplexOperatorAccess().getLeftParenthesisKeyword_1()); 
             }
-            match(input,18,FOLLOW_18_in_rule__ComplexOperator__Group__1__Impl9773); if (state.failed) return ;
+            match(input,18,FOLLOW_18_in_rule__ComplexOperator__Group__1__Impl9834); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getComplexOperatorAccess().getLeftParenthesisKeyword_1()); 
             }
@@ -14143,21 +14232,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ComplexOperator__Group__2"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4818:1: rule__ComplexOperator__Group__2 : rule__ComplexOperator__Group__2__Impl rule__ComplexOperator__Group__3 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4849:1: rule__ComplexOperator__Group__2 : rule__ComplexOperator__Group__2__Impl rule__ComplexOperator__Group__3 ;
     public final void rule__ComplexOperator__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4822:1: ( rule__ComplexOperator__Group__2__Impl rule__ComplexOperator__Group__3 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4823:2: rule__ComplexOperator__Group__2__Impl rule__ComplexOperator__Group__3
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4853:1: ( rule__ComplexOperator__Group__2__Impl rule__ComplexOperator__Group__3 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4854:2: rule__ComplexOperator__Group__2__Impl rule__ComplexOperator__Group__3
             {
-            pushFollow(FOLLOW_rule__ComplexOperator__Group__2__Impl_in_rule__ComplexOperator__Group__29804);
+            pushFollow(FOLLOW_rule__ComplexOperator__Group__2__Impl_in_rule__ComplexOperator__Group__29865);
             rule__ComplexOperator__Group__2__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__ComplexOperator__Group__3_in_rule__ComplexOperator__Group__29807);
+            pushFollow(FOLLOW_rule__ComplexOperator__Group__3_in_rule__ComplexOperator__Group__29868);
             rule__ComplexOperator__Group__3();
 
             state._fsp--;
@@ -14181,22 +14270,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ComplexOperator__Group__2__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4830:1: rule__ComplexOperator__Group__2__Impl : ( ( rule__ComplexOperator__Alternatives_2 )? ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4861:1: rule__ComplexOperator__Group__2__Impl : ( ( rule__ComplexOperator__Alternatives_2 )? ) ;
     public final void rule__ComplexOperator__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4834:1: ( ( ( rule__ComplexOperator__Alternatives_2 )? ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4835:1: ( ( rule__ComplexOperator__Alternatives_2 )? )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4865:1: ( ( ( rule__ComplexOperator__Alternatives_2 )? ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4866:1: ( ( rule__ComplexOperator__Alternatives_2 )? )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4835:1: ( ( rule__ComplexOperator__Alternatives_2 )? )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4836:1: ( rule__ComplexOperator__Alternatives_2 )?
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4866:1: ( ( rule__ComplexOperator__Alternatives_2 )? )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4867:1: ( rule__ComplexOperator__Alternatives_2 )?
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getComplexOperatorAccess().getAlternatives_2()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4837:1: ( rule__ComplexOperator__Alternatives_2 )?
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4868:1: ( rule__ComplexOperator__Alternatives_2 )?
             int alt36=2;
             int LA36_0 = input.LA(1);
 
@@ -14205,9 +14294,9 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
             }
             switch (alt36) {
                 case 1 :
-                    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4837:2: rule__ComplexOperator__Alternatives_2
+                    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4868:2: rule__ComplexOperator__Alternatives_2
                     {
-                    pushFollow(FOLLOW_rule__ComplexOperator__Alternatives_2_in_rule__ComplexOperator__Group__2__Impl9834);
+                    pushFollow(FOLLOW_rule__ComplexOperator__Alternatives_2_in_rule__ComplexOperator__Group__2__Impl9895);
                     rule__ComplexOperator__Alternatives_2();
 
                     state._fsp--;
@@ -14243,21 +14332,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ComplexOperator__Group__3"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4847:1: rule__ComplexOperator__Group__3 : rule__ComplexOperator__Group__3__Impl rule__ComplexOperator__Group__4 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4878:1: rule__ComplexOperator__Group__3 : rule__ComplexOperator__Group__3__Impl rule__ComplexOperator__Group__4 ;
     public final void rule__ComplexOperator__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4851:1: ( rule__ComplexOperator__Group__3__Impl rule__ComplexOperator__Group__4 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4852:2: rule__ComplexOperator__Group__3__Impl rule__ComplexOperator__Group__4
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4882:1: ( rule__ComplexOperator__Group__3__Impl rule__ComplexOperator__Group__4 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4883:2: rule__ComplexOperator__Group__3__Impl rule__ComplexOperator__Group__4
             {
-            pushFollow(FOLLOW_rule__ComplexOperator__Group__3__Impl_in_rule__ComplexOperator__Group__39865);
+            pushFollow(FOLLOW_rule__ComplexOperator__Group__3__Impl_in_rule__ComplexOperator__Group__39926);
             rule__ComplexOperator__Group__3__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__ComplexOperator__Group__4_in_rule__ComplexOperator__Group__39868);
+            pushFollow(FOLLOW_rule__ComplexOperator__Group__4_in_rule__ComplexOperator__Group__39929);
             rule__ComplexOperator__Group__4();
 
             state._fsp--;
@@ -14281,37 +14370,37 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ComplexOperator__Group__3__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4859:1: rule__ComplexOperator__Group__3__Impl : ( ( rule__ComplexOperator__Group_3__0 )* ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4890:1: rule__ComplexOperator__Group__3__Impl : ( ( rule__ComplexOperator__Group_3__0 )* ) ;
     public final void rule__ComplexOperator__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4863:1: ( ( ( rule__ComplexOperator__Group_3__0 )* ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4864:1: ( ( rule__ComplexOperator__Group_3__0 )* )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4894:1: ( ( ( rule__ComplexOperator__Group_3__0 )* ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4895:1: ( ( rule__ComplexOperator__Group_3__0 )* )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4864:1: ( ( rule__ComplexOperator__Group_3__0 )* )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4865:1: ( rule__ComplexOperator__Group_3__0 )*
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4895:1: ( ( rule__ComplexOperator__Group_3__0 )* )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4896:1: ( rule__ComplexOperator__Group_3__0 )*
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getComplexOperatorAccess().getGroup_3()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4866:1: ( rule__ComplexOperator__Group_3__0 )*
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4897:1: ( rule__ComplexOperator__Group_3__0 )*
             loop37:
             do {
                 int alt37=2;
                 int LA37_0 = input.LA(1);
 
-                if ( (LA37_0==26) ) {
+                if ( (LA37_0==25) ) {
                     alt37=1;
                 }
 
 
                 switch (alt37) {
             	case 1 :
-            	    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4866:2: rule__ComplexOperator__Group_3__0
+            	    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4897:2: rule__ComplexOperator__Group_3__0
             	    {
-            	    pushFollow(FOLLOW_rule__ComplexOperator__Group_3__0_in_rule__ComplexOperator__Group__3__Impl9895);
+            	    pushFollow(FOLLOW_rule__ComplexOperator__Group_3__0_in_rule__ComplexOperator__Group__3__Impl9956);
             	    rule__ComplexOperator__Group_3__0();
 
             	    state._fsp--;
@@ -14350,21 +14439,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ComplexOperator__Group__4"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4876:1: rule__ComplexOperator__Group__4 : rule__ComplexOperator__Group__4__Impl rule__ComplexOperator__Group__5 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4907:1: rule__ComplexOperator__Group__4 : rule__ComplexOperator__Group__4__Impl rule__ComplexOperator__Group__5 ;
     public final void rule__ComplexOperator__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4880:1: ( rule__ComplexOperator__Group__4__Impl rule__ComplexOperator__Group__5 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4881:2: rule__ComplexOperator__Group__4__Impl rule__ComplexOperator__Group__5
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4911:1: ( rule__ComplexOperator__Group__4__Impl rule__ComplexOperator__Group__5 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4912:2: rule__ComplexOperator__Group__4__Impl rule__ComplexOperator__Group__5
             {
-            pushFollow(FOLLOW_rule__ComplexOperator__Group__4__Impl_in_rule__ComplexOperator__Group__49926);
+            pushFollow(FOLLOW_rule__ComplexOperator__Group__4__Impl_in_rule__ComplexOperator__Group__49987);
             rule__ComplexOperator__Group__4__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__ComplexOperator__Group__5_in_rule__ComplexOperator__Group__49929);
+            pushFollow(FOLLOW_rule__ComplexOperator__Group__5_in_rule__ComplexOperator__Group__49990);
             rule__ComplexOperator__Group__5();
 
             state._fsp--;
@@ -14388,22 +14477,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ComplexOperator__Group__4__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4888:1: rule__ComplexOperator__Group__4__Impl : ( ')' ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4919:1: rule__ComplexOperator__Group__4__Impl : ( ')' ) ;
     public final void rule__ComplexOperator__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4892:1: ( ( ')' ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4893:1: ( ')' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4923:1: ( ( ')' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4924:1: ( ')' )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4893:1: ( ')' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4894:1: ')'
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4924:1: ( ')' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4925:1: ')'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getComplexOperatorAccess().getRightParenthesisKeyword_4()); 
             }
-            match(input,19,FOLLOW_19_in_rule__ComplexOperator__Group__4__Impl9957); if (state.failed) return ;
+            match(input,19,FOLLOW_19_in_rule__ComplexOperator__Group__4__Impl10018); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getComplexOperatorAccess().getRightParenthesisKeyword_4()); 
             }
@@ -14429,16 +14518,16 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ComplexOperator__Group__5"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4907:1: rule__ComplexOperator__Group__5 : rule__ComplexOperator__Group__5__Impl ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4938:1: rule__ComplexOperator__Group__5 : rule__ComplexOperator__Group__5__Impl ;
     public final void rule__ComplexOperator__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4911:1: ( rule__ComplexOperator__Group__5__Impl )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4912:2: rule__ComplexOperator__Group__5__Impl
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4942:1: ( rule__ComplexOperator__Group__5__Impl )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4943:2: rule__ComplexOperator__Group__5__Impl
             {
-            pushFollow(FOLLOW_rule__ComplexOperator__Group__5__Impl_in_rule__ComplexOperator__Group__59988);
+            pushFollow(FOLLOW_rule__ComplexOperator__Group__5__Impl_in_rule__ComplexOperator__Group__510049);
             rule__ComplexOperator__Group__5__Impl();
 
             state._fsp--;
@@ -14462,22 +14551,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ComplexOperator__Group__5__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4918:1: rule__ComplexOperator__Group__5__Impl : ( ';' ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4949:1: rule__ComplexOperator__Group__5__Impl : ( ';' ) ;
     public final void rule__ComplexOperator__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4922:1: ( ( ';' ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4923:1: ( ';' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4953:1: ( ( ';' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4954:1: ( ';' )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4923:1: ( ';' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4924:1: ';'
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4954:1: ( ';' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4955:1: ';'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getComplexOperatorAccess().getSemicolonKeyword_5()); 
             }
-            match(input,25,FOLLOW_25_in_rule__ComplexOperator__Group__5__Impl10016); if (state.failed) return ;
+            match(input,24,FOLLOW_24_in_rule__ComplexOperator__Group__5__Impl10077); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getComplexOperatorAccess().getSemicolonKeyword_5()); 
             }
@@ -14503,21 +14592,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ComplexOperator__Group_3__0"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4949:1: rule__ComplexOperator__Group_3__0 : rule__ComplexOperator__Group_3__0__Impl rule__ComplexOperator__Group_3__1 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4980:1: rule__ComplexOperator__Group_3__0 : rule__ComplexOperator__Group_3__0__Impl rule__ComplexOperator__Group_3__1 ;
     public final void rule__ComplexOperator__Group_3__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4953:1: ( rule__ComplexOperator__Group_3__0__Impl rule__ComplexOperator__Group_3__1 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4954:2: rule__ComplexOperator__Group_3__0__Impl rule__ComplexOperator__Group_3__1
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4984:1: ( rule__ComplexOperator__Group_3__0__Impl rule__ComplexOperator__Group_3__1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4985:2: rule__ComplexOperator__Group_3__0__Impl rule__ComplexOperator__Group_3__1
             {
-            pushFollow(FOLLOW_rule__ComplexOperator__Group_3__0__Impl_in_rule__ComplexOperator__Group_3__010059);
+            pushFollow(FOLLOW_rule__ComplexOperator__Group_3__0__Impl_in_rule__ComplexOperator__Group_3__010120);
             rule__ComplexOperator__Group_3__0__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__ComplexOperator__Group_3__1_in_rule__ComplexOperator__Group_3__010062);
+            pushFollow(FOLLOW_rule__ComplexOperator__Group_3__1_in_rule__ComplexOperator__Group_3__010123);
             rule__ComplexOperator__Group_3__1();
 
             state._fsp--;
@@ -14541,22 +14630,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ComplexOperator__Group_3__0__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4961:1: rule__ComplexOperator__Group_3__0__Impl : ( ',' ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4992:1: rule__ComplexOperator__Group_3__0__Impl : ( ',' ) ;
     public final void rule__ComplexOperator__Group_3__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4965:1: ( ( ',' ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4966:1: ( ',' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4996:1: ( ( ',' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4997:1: ( ',' )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4966:1: ( ',' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4967:1: ','
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4997:1: ( ',' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4998:1: ','
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getComplexOperatorAccess().getCommaKeyword_3_0()); 
             }
-            match(input,26,FOLLOW_26_in_rule__ComplexOperator__Group_3__0__Impl10090); if (state.failed) return ;
+            match(input,25,FOLLOW_25_in_rule__ComplexOperator__Group_3__0__Impl10151); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getComplexOperatorAccess().getCommaKeyword_3_0()); 
             }
@@ -14582,16 +14671,16 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ComplexOperator__Group_3__1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4980:1: rule__ComplexOperator__Group_3__1 : rule__ComplexOperator__Group_3__1__Impl ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5011:1: rule__ComplexOperator__Group_3__1 : rule__ComplexOperator__Group_3__1__Impl ;
     public final void rule__ComplexOperator__Group_3__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4984:1: ( rule__ComplexOperator__Group_3__1__Impl )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4985:2: rule__ComplexOperator__Group_3__1__Impl
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5015:1: ( rule__ComplexOperator__Group_3__1__Impl )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5016:2: rule__ComplexOperator__Group_3__1__Impl
             {
-            pushFollow(FOLLOW_rule__ComplexOperator__Group_3__1__Impl_in_rule__ComplexOperator__Group_3__110121);
+            pushFollow(FOLLOW_rule__ComplexOperator__Group_3__1__Impl_in_rule__ComplexOperator__Group_3__110182);
             rule__ComplexOperator__Group_3__1__Impl();
 
             state._fsp--;
@@ -14615,25 +14704,25 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ComplexOperator__Group_3__1__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4991:1: rule__ComplexOperator__Group_3__1__Impl : ( ( rule__ComplexOperator__Alternatives_3_1 ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5022:1: rule__ComplexOperator__Group_3__1__Impl : ( ( rule__ComplexOperator__Alternatives_3_1 ) ) ;
     public final void rule__ComplexOperator__Group_3__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4995:1: ( ( ( rule__ComplexOperator__Alternatives_3_1 ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4996:1: ( ( rule__ComplexOperator__Alternatives_3_1 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5026:1: ( ( ( rule__ComplexOperator__Alternatives_3_1 ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5027:1: ( ( rule__ComplexOperator__Alternatives_3_1 ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4996:1: ( ( rule__ComplexOperator__Alternatives_3_1 ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4997:1: ( rule__ComplexOperator__Alternatives_3_1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5027:1: ( ( rule__ComplexOperator__Alternatives_3_1 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5028:1: ( rule__ComplexOperator__Alternatives_3_1 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getComplexOperatorAccess().getAlternatives_3_1()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4998:1: ( rule__ComplexOperator__Alternatives_3_1 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:4998:2: rule__ComplexOperator__Alternatives_3_1
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5029:1: ( rule__ComplexOperator__Alternatives_3_1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5029:2: rule__ComplexOperator__Alternatives_3_1
             {
-            pushFollow(FOLLOW_rule__ComplexOperator__Alternatives_3_1_in_rule__ComplexOperator__Group_3__1__Impl10148);
+            pushFollow(FOLLOW_rule__ComplexOperator__Alternatives_3_1_in_rule__ComplexOperator__Group_3__1__Impl10209);
             rule__ComplexOperator__Alternatives_3_1();
 
             state._fsp--;
@@ -14666,21 +14755,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Parameter__Group_0__0"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5012:1: rule__Parameter__Group_0__0 : rule__Parameter__Group_0__0__Impl rule__Parameter__Group_0__1 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5043:1: rule__Parameter__Group_0__0 : rule__Parameter__Group_0__0__Impl rule__Parameter__Group_0__1 ;
     public final void rule__Parameter__Group_0__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5016:1: ( rule__Parameter__Group_0__0__Impl rule__Parameter__Group_0__1 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5017:2: rule__Parameter__Group_0__0__Impl rule__Parameter__Group_0__1
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5047:1: ( rule__Parameter__Group_0__0__Impl rule__Parameter__Group_0__1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5048:2: rule__Parameter__Group_0__0__Impl rule__Parameter__Group_0__1
             {
-            pushFollow(FOLLOW_rule__Parameter__Group_0__0__Impl_in_rule__Parameter__Group_0__010182);
+            pushFollow(FOLLOW_rule__Parameter__Group_0__0__Impl_in_rule__Parameter__Group_0__010243);
             rule__Parameter__Group_0__0__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__Parameter__Group_0__1_in_rule__Parameter__Group_0__010185);
+            pushFollow(FOLLOW_rule__Parameter__Group_0__1_in_rule__Parameter__Group_0__010246);
             rule__Parameter__Group_0__1();
 
             state._fsp--;
@@ -14704,22 +14793,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Parameter__Group_0__0__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5024:1: rule__Parameter__Group_0__0__Impl : ( ruleClass ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5055:1: rule__Parameter__Group_0__0__Impl : ( ruleClass ) ;
     public final void rule__Parameter__Group_0__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5028:1: ( ( ruleClass ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5029:1: ( ruleClass )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5059:1: ( ( ruleClass ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5060:1: ( ruleClass )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5029:1: ( ruleClass )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5030:1: ruleClass
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5060:1: ( ruleClass )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5061:1: ruleClass
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getParameterAccess().getClassParserRuleCall_0_0()); 
             }
-            pushFollow(FOLLOW_ruleClass_in_rule__Parameter__Group_0__0__Impl10212);
+            pushFollow(FOLLOW_ruleClass_in_rule__Parameter__Group_0__0__Impl10273);
             ruleClass();
 
             state._fsp--;
@@ -14749,21 +14838,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Parameter__Group_0__1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5041:1: rule__Parameter__Group_0__1 : rule__Parameter__Group_0__1__Impl rule__Parameter__Group_0__2 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5072:1: rule__Parameter__Group_0__1 : rule__Parameter__Group_0__1__Impl rule__Parameter__Group_0__2 ;
     public final void rule__Parameter__Group_0__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5045:1: ( rule__Parameter__Group_0__1__Impl rule__Parameter__Group_0__2 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5046:2: rule__Parameter__Group_0__1__Impl rule__Parameter__Group_0__2
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5076:1: ( rule__Parameter__Group_0__1__Impl rule__Parameter__Group_0__2 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5077:2: rule__Parameter__Group_0__1__Impl rule__Parameter__Group_0__2
             {
-            pushFollow(FOLLOW_rule__Parameter__Group_0__1__Impl_in_rule__Parameter__Group_0__110241);
+            pushFollow(FOLLOW_rule__Parameter__Group_0__1__Impl_in_rule__Parameter__Group_0__110302);
             rule__Parameter__Group_0__1__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__Parameter__Group_0__2_in_rule__Parameter__Group_0__110244);
+            pushFollow(FOLLOW_rule__Parameter__Group_0__2_in_rule__Parameter__Group_0__110305);
             rule__Parameter__Group_0__2();
 
             state._fsp--;
@@ -14787,22 +14876,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Parameter__Group_0__1__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5053:1: rule__Parameter__Group_0__1__Impl : ( ':' ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5084:1: rule__Parameter__Group_0__1__Impl : ( ':' ) ;
     public final void rule__Parameter__Group_0__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5057:1: ( ( ':' ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5058:1: ( ':' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5088:1: ( ( ':' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5089:1: ( ':' )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5058:1: ( ':' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5059:1: ':'
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5089:1: ( ':' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5090:1: ':'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getParameterAccess().getColonKeyword_0_1()); 
             }
-            match(input,30,FOLLOW_30_in_rule__Parameter__Group_0__1__Impl10272); if (state.failed) return ;
+            match(input,29,FOLLOW_29_in_rule__Parameter__Group_0__1__Impl10333); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getParameterAccess().getColonKeyword_0_1()); 
             }
@@ -14828,16 +14917,16 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Parameter__Group_0__2"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5072:1: rule__Parameter__Group_0__2 : rule__Parameter__Group_0__2__Impl ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5103:1: rule__Parameter__Group_0__2 : rule__Parameter__Group_0__2__Impl ;
     public final void rule__Parameter__Group_0__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5076:1: ( rule__Parameter__Group_0__2__Impl )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5077:2: rule__Parameter__Group_0__2__Impl
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5107:1: ( rule__Parameter__Group_0__2__Impl )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5108:2: rule__Parameter__Group_0__2__Impl
             {
-            pushFollow(FOLLOW_rule__Parameter__Group_0__2__Impl_in_rule__Parameter__Group_0__210303);
+            pushFollow(FOLLOW_rule__Parameter__Group_0__2__Impl_in_rule__Parameter__Group_0__210364);
             rule__Parameter__Group_0__2__Impl();
 
             state._fsp--;
@@ -14861,22 +14950,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Parameter__Group_0__2__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5083:1: rule__Parameter__Group_0__2__Impl : ( 'class' ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5114:1: rule__Parameter__Group_0__2__Impl : ( 'class' ) ;
     public final void rule__Parameter__Group_0__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5087:1: ( ( 'class' ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5088:1: ( 'class' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5118:1: ( ( 'class' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5119:1: ( 'class' )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5088:1: ( 'class' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5089:1: 'class'
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5119:1: ( 'class' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5120:1: 'class'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getParameterAccess().getClassKeyword_0_2()); 
             }
-            match(input,22,FOLLOW_22_in_rule__Parameter__Group_0__2__Impl10331); if (state.failed) return ;
+            match(input,22,FOLLOW_22_in_rule__Parameter__Group_0__2__Impl10392); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getParameterAccess().getClassKeyword_0_2()); 
             }
@@ -14902,21 +14991,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Parameter__Group_1__0"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5108:1: rule__Parameter__Group_1__0 : rule__Parameter__Group_1__0__Impl rule__Parameter__Group_1__1 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5139:1: rule__Parameter__Group_1__0 : rule__Parameter__Group_1__0__Impl rule__Parameter__Group_1__1 ;
     public final void rule__Parameter__Group_1__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5112:1: ( rule__Parameter__Group_1__0__Impl rule__Parameter__Group_1__1 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5113:2: rule__Parameter__Group_1__0__Impl rule__Parameter__Group_1__1
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5143:1: ( rule__Parameter__Group_1__0__Impl rule__Parameter__Group_1__1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5144:2: rule__Parameter__Group_1__0__Impl rule__Parameter__Group_1__1
             {
-            pushFollow(FOLLOW_rule__Parameter__Group_1__0__Impl_in_rule__Parameter__Group_1__010368);
+            pushFollow(FOLLOW_rule__Parameter__Group_1__0__Impl_in_rule__Parameter__Group_1__010429);
             rule__Parameter__Group_1__0__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__Parameter__Group_1__1_in_rule__Parameter__Group_1__010371);
+            pushFollow(FOLLOW_rule__Parameter__Group_1__1_in_rule__Parameter__Group_1__010432);
             rule__Parameter__Group_1__1();
 
             state._fsp--;
@@ -14940,22 +15029,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Parameter__Group_1__0__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5120:1: rule__Parameter__Group_1__0__Impl : ( ruleReference ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5151:1: rule__Parameter__Group_1__0__Impl : ( ruleReference ) ;
     public final void rule__Parameter__Group_1__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5124:1: ( ( ruleReference ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5125:1: ( ruleReference )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5155:1: ( ( ruleReference ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5156:1: ( ruleReference )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5125:1: ( ruleReference )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5126:1: ruleReference
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5156:1: ( ruleReference )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5157:1: ruleReference
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getParameterAccess().getReferenceParserRuleCall_1_0()); 
             }
-            pushFollow(FOLLOW_ruleReference_in_rule__Parameter__Group_1__0__Impl10398);
+            pushFollow(FOLLOW_ruleReference_in_rule__Parameter__Group_1__0__Impl10459);
             ruleReference();
 
             state._fsp--;
@@ -14985,21 +15074,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Parameter__Group_1__1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5137:1: rule__Parameter__Group_1__1 : rule__Parameter__Group_1__1__Impl rule__Parameter__Group_1__2 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5168:1: rule__Parameter__Group_1__1 : rule__Parameter__Group_1__1__Impl rule__Parameter__Group_1__2 ;
     public final void rule__Parameter__Group_1__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5141:1: ( rule__Parameter__Group_1__1__Impl rule__Parameter__Group_1__2 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5142:2: rule__Parameter__Group_1__1__Impl rule__Parameter__Group_1__2
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5172:1: ( rule__Parameter__Group_1__1__Impl rule__Parameter__Group_1__2 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5173:2: rule__Parameter__Group_1__1__Impl rule__Parameter__Group_1__2
             {
-            pushFollow(FOLLOW_rule__Parameter__Group_1__1__Impl_in_rule__Parameter__Group_1__110427);
+            pushFollow(FOLLOW_rule__Parameter__Group_1__1__Impl_in_rule__Parameter__Group_1__110488);
             rule__Parameter__Group_1__1__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__Parameter__Group_1__2_in_rule__Parameter__Group_1__110430);
+            pushFollow(FOLLOW_rule__Parameter__Group_1__2_in_rule__Parameter__Group_1__110491);
             rule__Parameter__Group_1__2();
 
             state._fsp--;
@@ -15023,22 +15112,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Parameter__Group_1__1__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5149:1: rule__Parameter__Group_1__1__Impl : ( ':' ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5180:1: rule__Parameter__Group_1__1__Impl : ( ':' ) ;
     public final void rule__Parameter__Group_1__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5153:1: ( ( ':' ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5154:1: ( ':' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5184:1: ( ( ':' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5185:1: ( ':' )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5154:1: ( ':' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5155:1: ':'
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5185:1: ( ':' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5186:1: ':'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getParameterAccess().getColonKeyword_1_1()); 
             }
-            match(input,30,FOLLOW_30_in_rule__Parameter__Group_1__1__Impl10458); if (state.failed) return ;
+            match(input,29,FOLLOW_29_in_rule__Parameter__Group_1__1__Impl10519); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getParameterAccess().getColonKeyword_1_1()); 
             }
@@ -15064,16 +15153,16 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Parameter__Group_1__2"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5168:1: rule__Parameter__Group_1__2 : rule__Parameter__Group_1__2__Impl ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5199:1: rule__Parameter__Group_1__2 : rule__Parameter__Group_1__2__Impl ;
     public final void rule__Parameter__Group_1__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5172:1: ( rule__Parameter__Group_1__2__Impl )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5173:2: rule__Parameter__Group_1__2__Impl
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5203:1: ( rule__Parameter__Group_1__2__Impl )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5204:2: rule__Parameter__Group_1__2__Impl
             {
-            pushFollow(FOLLOW_rule__Parameter__Group_1__2__Impl_in_rule__Parameter__Group_1__210489);
+            pushFollow(FOLLOW_rule__Parameter__Group_1__2__Impl_in_rule__Parameter__Group_1__210550);
             rule__Parameter__Group_1__2__Impl();
 
             state._fsp--;
@@ -15097,22 +15186,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Parameter__Group_1__2__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5179:1: rule__Parameter__Group_1__2__Impl : ( 'reference' ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5210:1: rule__Parameter__Group_1__2__Impl : ( 'reference' ) ;
     public final void rule__Parameter__Group_1__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5183:1: ( ( 'reference' ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5184:1: ( 'reference' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5214:1: ( ( 'reference' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5215:1: ( 'reference' )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5184:1: ( 'reference' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5185:1: 'reference'
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5215:1: ( 'reference' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5216:1: 'reference'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getParameterAccess().getReferenceKeyword_1_2()); 
             }
-            match(input,28,FOLLOW_28_in_rule__Parameter__Group_1__2__Impl10517); if (state.failed) return ;
+            match(input,27,FOLLOW_27_in_rule__Parameter__Group_1__2__Impl10578); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getParameterAccess().getReferenceKeyword_1_2()); 
             }
@@ -15138,21 +15227,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Parameter__Group_2__0"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5204:1: rule__Parameter__Group_2__0 : rule__Parameter__Group_2__0__Impl rule__Parameter__Group_2__1 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5235:1: rule__Parameter__Group_2__0 : rule__Parameter__Group_2__0__Impl rule__Parameter__Group_2__1 ;
     public final void rule__Parameter__Group_2__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5208:1: ( rule__Parameter__Group_2__0__Impl rule__Parameter__Group_2__1 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5209:2: rule__Parameter__Group_2__0__Impl rule__Parameter__Group_2__1
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5239:1: ( rule__Parameter__Group_2__0__Impl rule__Parameter__Group_2__1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5240:2: rule__Parameter__Group_2__0__Impl rule__Parameter__Group_2__1
             {
-            pushFollow(FOLLOW_rule__Parameter__Group_2__0__Impl_in_rule__Parameter__Group_2__010554);
+            pushFollow(FOLLOW_rule__Parameter__Group_2__0__Impl_in_rule__Parameter__Group_2__010615);
             rule__Parameter__Group_2__0__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__Parameter__Group_2__1_in_rule__Parameter__Group_2__010557);
+            pushFollow(FOLLOW_rule__Parameter__Group_2__1_in_rule__Parameter__Group_2__010618);
             rule__Parameter__Group_2__1();
 
             state._fsp--;
@@ -15176,22 +15265,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Parameter__Group_2__0__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5216:1: rule__Parameter__Group_2__0__Impl : ( rulePackage ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5247:1: rule__Parameter__Group_2__0__Impl : ( rulePackage ) ;
     public final void rule__Parameter__Group_2__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5220:1: ( ( rulePackage ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5221:1: ( rulePackage )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5251:1: ( ( rulePackage ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5252:1: ( rulePackage )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5221:1: ( rulePackage )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5222:1: rulePackage
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5252:1: ( rulePackage )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5253:1: rulePackage
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getParameterAccess().getPackageParserRuleCall_2_0()); 
             }
-            pushFollow(FOLLOW_rulePackage_in_rule__Parameter__Group_2__0__Impl10584);
+            pushFollow(FOLLOW_rulePackage_in_rule__Parameter__Group_2__0__Impl10645);
             rulePackage();
 
             state._fsp--;
@@ -15221,21 +15310,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Parameter__Group_2__1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5233:1: rule__Parameter__Group_2__1 : rule__Parameter__Group_2__1__Impl rule__Parameter__Group_2__2 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5264:1: rule__Parameter__Group_2__1 : rule__Parameter__Group_2__1__Impl rule__Parameter__Group_2__2 ;
     public final void rule__Parameter__Group_2__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5237:1: ( rule__Parameter__Group_2__1__Impl rule__Parameter__Group_2__2 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5238:2: rule__Parameter__Group_2__1__Impl rule__Parameter__Group_2__2
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5268:1: ( rule__Parameter__Group_2__1__Impl rule__Parameter__Group_2__2 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5269:2: rule__Parameter__Group_2__1__Impl rule__Parameter__Group_2__2
             {
-            pushFollow(FOLLOW_rule__Parameter__Group_2__1__Impl_in_rule__Parameter__Group_2__110613);
+            pushFollow(FOLLOW_rule__Parameter__Group_2__1__Impl_in_rule__Parameter__Group_2__110674);
             rule__Parameter__Group_2__1__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__Parameter__Group_2__2_in_rule__Parameter__Group_2__110616);
+            pushFollow(FOLLOW_rule__Parameter__Group_2__2_in_rule__Parameter__Group_2__110677);
             rule__Parameter__Group_2__2();
 
             state._fsp--;
@@ -15259,22 +15348,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Parameter__Group_2__1__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5245:1: rule__Parameter__Group_2__1__Impl : ( ':' ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5276:1: rule__Parameter__Group_2__1__Impl : ( ':' ) ;
     public final void rule__Parameter__Group_2__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5249:1: ( ( ':' ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5250:1: ( ':' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5280:1: ( ( ':' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5281:1: ( ':' )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5250:1: ( ':' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5251:1: ':'
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5281:1: ( ':' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5282:1: ':'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getParameterAccess().getColonKeyword_2_1()); 
             }
-            match(input,30,FOLLOW_30_in_rule__Parameter__Group_2__1__Impl10644); if (state.failed) return ;
+            match(input,29,FOLLOW_29_in_rule__Parameter__Group_2__1__Impl10705); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getParameterAccess().getColonKeyword_2_1()); 
             }
@@ -15300,16 +15389,16 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Parameter__Group_2__2"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5264:1: rule__Parameter__Group_2__2 : rule__Parameter__Group_2__2__Impl ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5295:1: rule__Parameter__Group_2__2 : rule__Parameter__Group_2__2__Impl ;
     public final void rule__Parameter__Group_2__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5268:1: ( rule__Parameter__Group_2__2__Impl )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5269:2: rule__Parameter__Group_2__2__Impl
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5299:1: ( rule__Parameter__Group_2__2__Impl )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5300:2: rule__Parameter__Group_2__2__Impl
             {
-            pushFollow(FOLLOW_rule__Parameter__Group_2__2__Impl_in_rule__Parameter__Group_2__210675);
+            pushFollow(FOLLOW_rule__Parameter__Group_2__2__Impl_in_rule__Parameter__Group_2__210736);
             rule__Parameter__Group_2__2__Impl();
 
             state._fsp--;
@@ -15333,22 +15422,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Parameter__Group_2__2__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5275:1: rule__Parameter__Group_2__2__Impl : ( 'package' ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5306:1: rule__Parameter__Group_2__2__Impl : ( 'package' ) ;
     public final void rule__Parameter__Group_2__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5279:1: ( ( 'package' ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5280:1: ( 'package' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5310:1: ( ( 'package' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5311:1: ( 'package' )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5280:1: ( 'package' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5281:1: 'package'
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5311:1: ( 'package' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5312:1: 'package'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getParameterAccess().getPackageKeyword_2_2()); 
             }
-            match(input,13,FOLLOW_13_in_rule__Parameter__Group_2__2__Impl10703); if (state.failed) return ;
+            match(input,13,FOLLOW_13_in_rule__Parameter__Group_2__2__Impl10764); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getParameterAccess().getPackageKeyword_2_2()); 
             }
@@ -15374,21 +15463,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Parameter__Group_3__0"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5300:1: rule__Parameter__Group_3__0 : rule__Parameter__Group_3__0__Impl rule__Parameter__Group_3__1 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5331:1: rule__Parameter__Group_3__0 : rule__Parameter__Group_3__0__Impl rule__Parameter__Group_3__1 ;
     public final void rule__Parameter__Group_3__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5304:1: ( rule__Parameter__Group_3__0__Impl rule__Parameter__Group_3__1 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5305:2: rule__Parameter__Group_3__0__Impl rule__Parameter__Group_3__1
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5335:1: ( rule__Parameter__Group_3__0__Impl rule__Parameter__Group_3__1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5336:2: rule__Parameter__Group_3__0__Impl rule__Parameter__Group_3__1
             {
-            pushFollow(FOLLOW_rule__Parameter__Group_3__0__Impl_in_rule__Parameter__Group_3__010740);
+            pushFollow(FOLLOW_rule__Parameter__Group_3__0__Impl_in_rule__Parameter__Group_3__010801);
             rule__Parameter__Group_3__0__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__Parameter__Group_3__1_in_rule__Parameter__Group_3__010743);
+            pushFollow(FOLLOW_rule__Parameter__Group_3__1_in_rule__Parameter__Group_3__010804);
             rule__Parameter__Group_3__1();
 
             state._fsp--;
@@ -15412,22 +15501,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Parameter__Group_3__0__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5312:1: rule__Parameter__Group_3__0__Impl : ( ruleAttribute ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5343:1: rule__Parameter__Group_3__0__Impl : ( ruleAttribute ) ;
     public final void rule__Parameter__Group_3__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5316:1: ( ( ruleAttribute ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5317:1: ( ruleAttribute )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5347:1: ( ( ruleAttribute ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5348:1: ( ruleAttribute )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5317:1: ( ruleAttribute )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5318:1: ruleAttribute
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5348:1: ( ruleAttribute )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5349:1: ruleAttribute
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getParameterAccess().getAttributeParserRuleCall_3_0()); 
             }
-            pushFollow(FOLLOW_ruleAttribute_in_rule__Parameter__Group_3__0__Impl10770);
+            pushFollow(FOLLOW_ruleAttribute_in_rule__Parameter__Group_3__0__Impl10831);
             ruleAttribute();
 
             state._fsp--;
@@ -15457,21 +15546,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Parameter__Group_3__1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5329:1: rule__Parameter__Group_3__1 : rule__Parameter__Group_3__1__Impl rule__Parameter__Group_3__2 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5360:1: rule__Parameter__Group_3__1 : rule__Parameter__Group_3__1__Impl rule__Parameter__Group_3__2 ;
     public final void rule__Parameter__Group_3__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5333:1: ( rule__Parameter__Group_3__1__Impl rule__Parameter__Group_3__2 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5334:2: rule__Parameter__Group_3__1__Impl rule__Parameter__Group_3__2
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5364:1: ( rule__Parameter__Group_3__1__Impl rule__Parameter__Group_3__2 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5365:2: rule__Parameter__Group_3__1__Impl rule__Parameter__Group_3__2
             {
-            pushFollow(FOLLOW_rule__Parameter__Group_3__1__Impl_in_rule__Parameter__Group_3__110799);
+            pushFollow(FOLLOW_rule__Parameter__Group_3__1__Impl_in_rule__Parameter__Group_3__110860);
             rule__Parameter__Group_3__1__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__Parameter__Group_3__2_in_rule__Parameter__Group_3__110802);
+            pushFollow(FOLLOW_rule__Parameter__Group_3__2_in_rule__Parameter__Group_3__110863);
             rule__Parameter__Group_3__2();
 
             state._fsp--;
@@ -15495,22 +15584,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Parameter__Group_3__1__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5341:1: rule__Parameter__Group_3__1__Impl : ( ':' ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5372:1: rule__Parameter__Group_3__1__Impl : ( ':' ) ;
     public final void rule__Parameter__Group_3__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5345:1: ( ( ':' ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5346:1: ( ':' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5376:1: ( ( ':' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5377:1: ( ':' )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5346:1: ( ':' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5347:1: ':'
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5377:1: ( ':' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5378:1: ':'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getParameterAccess().getColonKeyword_3_1()); 
             }
-            match(input,30,FOLLOW_30_in_rule__Parameter__Group_3__1__Impl10830); if (state.failed) return ;
+            match(input,29,FOLLOW_29_in_rule__Parameter__Group_3__1__Impl10891); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getParameterAccess().getColonKeyword_3_1()); 
             }
@@ -15536,16 +15625,16 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Parameter__Group_3__2"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5360:1: rule__Parameter__Group_3__2 : rule__Parameter__Group_3__2__Impl ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5391:1: rule__Parameter__Group_3__2 : rule__Parameter__Group_3__2__Impl ;
     public final void rule__Parameter__Group_3__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5364:1: ( rule__Parameter__Group_3__2__Impl )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5365:2: rule__Parameter__Group_3__2__Impl
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5395:1: ( rule__Parameter__Group_3__2__Impl )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5396:2: rule__Parameter__Group_3__2__Impl
             {
-            pushFollow(FOLLOW_rule__Parameter__Group_3__2__Impl_in_rule__Parameter__Group_3__210861);
+            pushFollow(FOLLOW_rule__Parameter__Group_3__2__Impl_in_rule__Parameter__Group_3__210922);
             rule__Parameter__Group_3__2__Impl();
 
             state._fsp--;
@@ -15569,22 +15658,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Parameter__Group_3__2__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5371:1: rule__Parameter__Group_3__2__Impl : ( 'attribute' ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5402:1: rule__Parameter__Group_3__2__Impl : ( 'attribute' ) ;
     public final void rule__Parameter__Group_3__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5375:1: ( ( 'attribute' ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5376:1: ( 'attribute' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5406:1: ( ( 'attribute' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5407:1: ( 'attribute' )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5376:1: ( 'attribute' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5377:1: 'attribute'
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5407:1: ( 'attribute' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5408:1: 'attribute'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getParameterAccess().getAttributeKeyword_3_2()); 
             }
-            match(input,27,FOLLOW_27_in_rule__Parameter__Group_3__2__Impl10889); if (state.failed) return ;
+            match(input,26,FOLLOW_26_in_rule__Parameter__Group_3__2__Impl10950); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getParameterAccess().getAttributeKeyword_3_2()); 
             }
@@ -15610,21 +15699,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Parameter__Group_4__0"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5396:1: rule__Parameter__Group_4__0 : rule__Parameter__Group_4__0__Impl rule__Parameter__Group_4__1 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5427:1: rule__Parameter__Group_4__0 : rule__Parameter__Group_4__0__Impl rule__Parameter__Group_4__1 ;
     public final void rule__Parameter__Group_4__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5400:1: ( rule__Parameter__Group_4__0__Impl rule__Parameter__Group_4__1 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5401:2: rule__Parameter__Group_4__0__Impl rule__Parameter__Group_4__1
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5431:1: ( rule__Parameter__Group_4__0__Impl rule__Parameter__Group_4__1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5432:2: rule__Parameter__Group_4__0__Impl rule__Parameter__Group_4__1
             {
-            pushFollow(FOLLOW_rule__Parameter__Group_4__0__Impl_in_rule__Parameter__Group_4__010926);
+            pushFollow(FOLLOW_rule__Parameter__Group_4__0__Impl_in_rule__Parameter__Group_4__010987);
             rule__Parameter__Group_4__0__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__Parameter__Group_4__1_in_rule__Parameter__Group_4__010929);
+            pushFollow(FOLLOW_rule__Parameter__Group_4__1_in_rule__Parameter__Group_4__010990);
             rule__Parameter__Group_4__1();
 
             state._fsp--;
@@ -15648,22 +15737,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Parameter__Group_4__0__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5408:1: rule__Parameter__Group_4__0__Impl : ( ruleBooleanDef ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5439:1: rule__Parameter__Group_4__0__Impl : ( ruleBooleanDef ) ;
     public final void rule__Parameter__Group_4__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5412:1: ( ( ruleBooleanDef ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5413:1: ( ruleBooleanDef )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5443:1: ( ( ruleBooleanDef ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5444:1: ( ruleBooleanDef )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5413:1: ( ruleBooleanDef )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5414:1: ruleBooleanDef
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5444:1: ( ruleBooleanDef )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5445:1: ruleBooleanDef
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getParameterAccess().getBooleanDefParserRuleCall_4_0()); 
             }
-            pushFollow(FOLLOW_ruleBooleanDef_in_rule__Parameter__Group_4__0__Impl10956);
+            pushFollow(FOLLOW_ruleBooleanDef_in_rule__Parameter__Group_4__0__Impl11017);
             ruleBooleanDef();
 
             state._fsp--;
@@ -15693,21 +15782,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Parameter__Group_4__1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5425:1: rule__Parameter__Group_4__1 : rule__Parameter__Group_4__1__Impl rule__Parameter__Group_4__2 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5456:1: rule__Parameter__Group_4__1 : rule__Parameter__Group_4__1__Impl rule__Parameter__Group_4__2 ;
     public final void rule__Parameter__Group_4__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5429:1: ( rule__Parameter__Group_4__1__Impl rule__Parameter__Group_4__2 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5430:2: rule__Parameter__Group_4__1__Impl rule__Parameter__Group_4__2
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5460:1: ( rule__Parameter__Group_4__1__Impl rule__Parameter__Group_4__2 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5461:2: rule__Parameter__Group_4__1__Impl rule__Parameter__Group_4__2
             {
-            pushFollow(FOLLOW_rule__Parameter__Group_4__1__Impl_in_rule__Parameter__Group_4__110985);
+            pushFollow(FOLLOW_rule__Parameter__Group_4__1__Impl_in_rule__Parameter__Group_4__111046);
             rule__Parameter__Group_4__1__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__Parameter__Group_4__2_in_rule__Parameter__Group_4__110988);
+            pushFollow(FOLLOW_rule__Parameter__Group_4__2_in_rule__Parameter__Group_4__111049);
             rule__Parameter__Group_4__2();
 
             state._fsp--;
@@ -15731,22 +15820,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Parameter__Group_4__1__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5437:1: rule__Parameter__Group_4__1__Impl : ( ':' ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5468:1: rule__Parameter__Group_4__1__Impl : ( ':' ) ;
     public final void rule__Parameter__Group_4__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5441:1: ( ( ':' ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5442:1: ( ':' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5472:1: ( ( ':' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5473:1: ( ':' )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5442:1: ( ':' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5443:1: ':'
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5473:1: ( ':' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5474:1: ':'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getParameterAccess().getColonKeyword_4_1()); 
             }
-            match(input,30,FOLLOW_30_in_rule__Parameter__Group_4__1__Impl11016); if (state.failed) return ;
+            match(input,29,FOLLOW_29_in_rule__Parameter__Group_4__1__Impl11077); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getParameterAccess().getColonKeyword_4_1()); 
             }
@@ -15772,16 +15861,16 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Parameter__Group_4__2"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5456:1: rule__Parameter__Group_4__2 : rule__Parameter__Group_4__2__Impl ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5487:1: rule__Parameter__Group_4__2 : rule__Parameter__Group_4__2__Impl ;
     public final void rule__Parameter__Group_4__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5460:1: ( rule__Parameter__Group_4__2__Impl )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5461:2: rule__Parameter__Group_4__2__Impl
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5491:1: ( rule__Parameter__Group_4__2__Impl )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5492:2: rule__Parameter__Group_4__2__Impl
             {
-            pushFollow(FOLLOW_rule__Parameter__Group_4__2__Impl_in_rule__Parameter__Group_4__211047);
+            pushFollow(FOLLOW_rule__Parameter__Group_4__2__Impl_in_rule__Parameter__Group_4__211108);
             rule__Parameter__Group_4__2__Impl();
 
             state._fsp--;
@@ -15805,22 +15894,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Parameter__Group_4__2__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5467:1: rule__Parameter__Group_4__2__Impl : ( 'bool' ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5498:1: rule__Parameter__Group_4__2__Impl : ( 'bool' ) ;
     public final void rule__Parameter__Group_4__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5471:1: ( ( 'bool' ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5472:1: ( 'bool' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5502:1: ( ( 'bool' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5503:1: ( 'bool' )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5472:1: ( 'bool' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5473:1: 'bool'
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5503:1: ( 'bool' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5504:1: 'bool'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getParameterAccess().getBoolKeyword_4_2()); 
             }
-            match(input,31,FOLLOW_31_in_rule__Parameter__Group_4__2__Impl11075); if (state.failed) return ;
+            match(input,30,FOLLOW_30_in_rule__Parameter__Group_4__2__Impl11136); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getParameterAccess().getBoolKeyword_4_2()); 
             }
@@ -15846,21 +15935,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Parameter__Group_5__0"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5492:1: rule__Parameter__Group_5__0 : rule__Parameter__Group_5__0__Impl rule__Parameter__Group_5__1 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5523:1: rule__Parameter__Group_5__0 : rule__Parameter__Group_5__0__Impl rule__Parameter__Group_5__1 ;
     public final void rule__Parameter__Group_5__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5496:1: ( rule__Parameter__Group_5__0__Impl rule__Parameter__Group_5__1 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5497:2: rule__Parameter__Group_5__0__Impl rule__Parameter__Group_5__1
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5527:1: ( rule__Parameter__Group_5__0__Impl rule__Parameter__Group_5__1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5528:2: rule__Parameter__Group_5__0__Impl rule__Parameter__Group_5__1
             {
-            pushFollow(FOLLOW_rule__Parameter__Group_5__0__Impl_in_rule__Parameter__Group_5__011112);
+            pushFollow(FOLLOW_rule__Parameter__Group_5__0__Impl_in_rule__Parameter__Group_5__011173);
             rule__Parameter__Group_5__0__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__Parameter__Group_5__1_in_rule__Parameter__Group_5__011115);
+            pushFollow(FOLLOW_rule__Parameter__Group_5__1_in_rule__Parameter__Group_5__011176);
             rule__Parameter__Group_5__1();
 
             state._fsp--;
@@ -15884,22 +15973,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Parameter__Group_5__0__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5504:1: rule__Parameter__Group_5__0__Impl : ( ruleIntDef ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5535:1: rule__Parameter__Group_5__0__Impl : ( ruleIntDef ) ;
     public final void rule__Parameter__Group_5__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5508:1: ( ( ruleIntDef ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5509:1: ( ruleIntDef )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5539:1: ( ( ruleIntDef ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5540:1: ( ruleIntDef )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5509:1: ( ruleIntDef )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5510:1: ruleIntDef
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5540:1: ( ruleIntDef )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5541:1: ruleIntDef
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getParameterAccess().getIntDefParserRuleCall_5_0()); 
             }
-            pushFollow(FOLLOW_ruleIntDef_in_rule__Parameter__Group_5__0__Impl11142);
+            pushFollow(FOLLOW_ruleIntDef_in_rule__Parameter__Group_5__0__Impl11203);
             ruleIntDef();
 
             state._fsp--;
@@ -15929,21 +16018,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Parameter__Group_5__1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5521:1: rule__Parameter__Group_5__1 : rule__Parameter__Group_5__1__Impl rule__Parameter__Group_5__2 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5552:1: rule__Parameter__Group_5__1 : rule__Parameter__Group_5__1__Impl rule__Parameter__Group_5__2 ;
     public final void rule__Parameter__Group_5__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5525:1: ( rule__Parameter__Group_5__1__Impl rule__Parameter__Group_5__2 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5526:2: rule__Parameter__Group_5__1__Impl rule__Parameter__Group_5__2
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5556:1: ( rule__Parameter__Group_5__1__Impl rule__Parameter__Group_5__2 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5557:2: rule__Parameter__Group_5__1__Impl rule__Parameter__Group_5__2
             {
-            pushFollow(FOLLOW_rule__Parameter__Group_5__1__Impl_in_rule__Parameter__Group_5__111171);
+            pushFollow(FOLLOW_rule__Parameter__Group_5__1__Impl_in_rule__Parameter__Group_5__111232);
             rule__Parameter__Group_5__1__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__Parameter__Group_5__2_in_rule__Parameter__Group_5__111174);
+            pushFollow(FOLLOW_rule__Parameter__Group_5__2_in_rule__Parameter__Group_5__111235);
             rule__Parameter__Group_5__2();
 
             state._fsp--;
@@ -15967,22 +16056,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Parameter__Group_5__1__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5533:1: rule__Parameter__Group_5__1__Impl : ( ':' ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5564:1: rule__Parameter__Group_5__1__Impl : ( ':' ) ;
     public final void rule__Parameter__Group_5__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5537:1: ( ( ':' ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5538:1: ( ':' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5568:1: ( ( ':' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5569:1: ( ':' )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5538:1: ( ':' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5539:1: ':'
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5569:1: ( ':' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5570:1: ':'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getParameterAccess().getColonKeyword_5_1()); 
             }
-            match(input,30,FOLLOW_30_in_rule__Parameter__Group_5__1__Impl11202); if (state.failed) return ;
+            match(input,29,FOLLOW_29_in_rule__Parameter__Group_5__1__Impl11263); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getParameterAccess().getColonKeyword_5_1()); 
             }
@@ -16008,16 +16097,16 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Parameter__Group_5__2"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5552:1: rule__Parameter__Group_5__2 : rule__Parameter__Group_5__2__Impl ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5583:1: rule__Parameter__Group_5__2 : rule__Parameter__Group_5__2__Impl ;
     public final void rule__Parameter__Group_5__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5556:1: ( rule__Parameter__Group_5__2__Impl )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5557:2: rule__Parameter__Group_5__2__Impl
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5587:1: ( rule__Parameter__Group_5__2__Impl )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5588:2: rule__Parameter__Group_5__2__Impl
             {
-            pushFollow(FOLLOW_rule__Parameter__Group_5__2__Impl_in_rule__Parameter__Group_5__211233);
+            pushFollow(FOLLOW_rule__Parameter__Group_5__2__Impl_in_rule__Parameter__Group_5__211294);
             rule__Parameter__Group_5__2__Impl();
 
             state._fsp--;
@@ -16041,22 +16130,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Parameter__Group_5__2__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5563:1: rule__Parameter__Group_5__2__Impl : ( 'int' ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5594:1: rule__Parameter__Group_5__2__Impl : ( 'int' ) ;
     public final void rule__Parameter__Group_5__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5567:1: ( ( 'int' ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5568:1: ( 'int' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5598:1: ( ( 'int' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5599:1: ( 'int' )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5568:1: ( 'int' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5569:1: 'int'
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5599:1: ( 'int' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5600:1: 'int'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getParameterAccess().getIntKeyword_5_2()); 
             }
-            match(input,32,FOLLOW_32_in_rule__Parameter__Group_5__2__Impl11261); if (state.failed) return ;
+            match(input,31,FOLLOW_31_in_rule__Parameter__Group_5__2__Impl11322); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getParameterAccess().getIntKeyword_5_2()); 
             }
@@ -16082,21 +16171,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Parameter__Group_6__0"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5588:1: rule__Parameter__Group_6__0 : rule__Parameter__Group_6__0__Impl rule__Parameter__Group_6__1 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5619:1: rule__Parameter__Group_6__0 : rule__Parameter__Group_6__0__Impl rule__Parameter__Group_6__1 ;
     public final void rule__Parameter__Group_6__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5592:1: ( rule__Parameter__Group_6__0__Impl rule__Parameter__Group_6__1 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5593:2: rule__Parameter__Group_6__0__Impl rule__Parameter__Group_6__1
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5623:1: ( rule__Parameter__Group_6__0__Impl rule__Parameter__Group_6__1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5624:2: rule__Parameter__Group_6__0__Impl rule__Parameter__Group_6__1
             {
-            pushFollow(FOLLOW_rule__Parameter__Group_6__0__Impl_in_rule__Parameter__Group_6__011298);
+            pushFollow(FOLLOW_rule__Parameter__Group_6__0__Impl_in_rule__Parameter__Group_6__011359);
             rule__Parameter__Group_6__0__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__Parameter__Group_6__1_in_rule__Parameter__Group_6__011301);
+            pushFollow(FOLLOW_rule__Parameter__Group_6__1_in_rule__Parameter__Group_6__011362);
             rule__Parameter__Group_6__1();
 
             state._fsp--;
@@ -16120,22 +16209,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Parameter__Group_6__0__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5600:1: rule__Parameter__Group_6__0__Impl : ( ruleStringDef ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5631:1: rule__Parameter__Group_6__0__Impl : ( ruleStringDef ) ;
     public final void rule__Parameter__Group_6__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5604:1: ( ( ruleStringDef ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5605:1: ( ruleStringDef )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5635:1: ( ( ruleStringDef ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5636:1: ( ruleStringDef )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5605:1: ( ruleStringDef )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5606:1: ruleStringDef
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5636:1: ( ruleStringDef )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5637:1: ruleStringDef
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getParameterAccess().getStringDefParserRuleCall_6_0()); 
             }
-            pushFollow(FOLLOW_ruleStringDef_in_rule__Parameter__Group_6__0__Impl11328);
+            pushFollow(FOLLOW_ruleStringDef_in_rule__Parameter__Group_6__0__Impl11389);
             ruleStringDef();
 
             state._fsp--;
@@ -16165,21 +16254,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Parameter__Group_6__1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5617:1: rule__Parameter__Group_6__1 : rule__Parameter__Group_6__1__Impl rule__Parameter__Group_6__2 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5648:1: rule__Parameter__Group_6__1 : rule__Parameter__Group_6__1__Impl rule__Parameter__Group_6__2 ;
     public final void rule__Parameter__Group_6__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5621:1: ( rule__Parameter__Group_6__1__Impl rule__Parameter__Group_6__2 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5622:2: rule__Parameter__Group_6__1__Impl rule__Parameter__Group_6__2
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5652:1: ( rule__Parameter__Group_6__1__Impl rule__Parameter__Group_6__2 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5653:2: rule__Parameter__Group_6__1__Impl rule__Parameter__Group_6__2
             {
-            pushFollow(FOLLOW_rule__Parameter__Group_6__1__Impl_in_rule__Parameter__Group_6__111357);
+            pushFollow(FOLLOW_rule__Parameter__Group_6__1__Impl_in_rule__Parameter__Group_6__111418);
             rule__Parameter__Group_6__1__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__Parameter__Group_6__2_in_rule__Parameter__Group_6__111360);
+            pushFollow(FOLLOW_rule__Parameter__Group_6__2_in_rule__Parameter__Group_6__111421);
             rule__Parameter__Group_6__2();
 
             state._fsp--;
@@ -16203,22 +16292,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Parameter__Group_6__1__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5629:1: rule__Parameter__Group_6__1__Impl : ( ':' ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5660:1: rule__Parameter__Group_6__1__Impl : ( ':' ) ;
     public final void rule__Parameter__Group_6__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5633:1: ( ( ':' ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5634:1: ( ':' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5664:1: ( ( ':' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5665:1: ( ':' )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5634:1: ( ':' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5635:1: ':'
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5665:1: ( ':' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5666:1: ':'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getParameterAccess().getColonKeyword_6_1()); 
             }
-            match(input,30,FOLLOW_30_in_rule__Parameter__Group_6__1__Impl11388); if (state.failed) return ;
+            match(input,29,FOLLOW_29_in_rule__Parameter__Group_6__1__Impl11449); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getParameterAccess().getColonKeyword_6_1()); 
             }
@@ -16244,16 +16333,16 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Parameter__Group_6__2"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5648:1: rule__Parameter__Group_6__2 : rule__Parameter__Group_6__2__Impl ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5679:1: rule__Parameter__Group_6__2 : rule__Parameter__Group_6__2__Impl ;
     public final void rule__Parameter__Group_6__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5652:1: ( rule__Parameter__Group_6__2__Impl )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5653:2: rule__Parameter__Group_6__2__Impl
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5683:1: ( rule__Parameter__Group_6__2__Impl )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5684:2: rule__Parameter__Group_6__2__Impl
             {
-            pushFollow(FOLLOW_rule__Parameter__Group_6__2__Impl_in_rule__Parameter__Group_6__211419);
+            pushFollow(FOLLOW_rule__Parameter__Group_6__2__Impl_in_rule__Parameter__Group_6__211480);
             rule__Parameter__Group_6__2__Impl();
 
             state._fsp--;
@@ -16277,22 +16366,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Parameter__Group_6__2__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5659:1: rule__Parameter__Group_6__2__Impl : ( 'string' ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5690:1: rule__Parameter__Group_6__2__Impl : ( 'string' ) ;
     public final void rule__Parameter__Group_6__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5663:1: ( ( 'string' ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5664:1: ( 'string' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5694:1: ( ( 'string' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5695:1: ( 'string' )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5664:1: ( 'string' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5665:1: 'string'
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5695:1: ( 'string' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5696:1: 'string'
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getParameterAccess().getStringKeyword_6_2()); 
             }
-            match(input,33,FOLLOW_33_in_rule__Parameter__Group_6__2__Impl11447); if (state.failed) return ;
+            match(input,32,FOLLOW_32_in_rule__Parameter__Group_6__2__Impl11508); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getParameterAccess().getStringKeyword_6_2()); 
             }
@@ -16318,21 +16407,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Attribute__Group__0"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5684:1: rule__Attribute__Group__0 : rule__Attribute__Group__0__Impl rule__Attribute__Group__1 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5715:1: rule__Attribute__Group__0 : rule__Attribute__Group__0__Impl rule__Attribute__Group__1 ;
     public final void rule__Attribute__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5688:1: ( rule__Attribute__Group__0__Impl rule__Attribute__Group__1 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5689:2: rule__Attribute__Group__0__Impl rule__Attribute__Group__1
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5719:1: ( rule__Attribute__Group__0__Impl rule__Attribute__Group__1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5720:2: rule__Attribute__Group__0__Impl rule__Attribute__Group__1
             {
-            pushFollow(FOLLOW_rule__Attribute__Group__0__Impl_in_rule__Attribute__Group__011484);
+            pushFollow(FOLLOW_rule__Attribute__Group__0__Impl_in_rule__Attribute__Group__011545);
             rule__Attribute__Group__0__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__Attribute__Group__1_in_rule__Attribute__Group__011487);
+            pushFollow(FOLLOW_rule__Attribute__Group__1_in_rule__Attribute__Group__011548);
             rule__Attribute__Group__1();
 
             state._fsp--;
@@ -16356,23 +16445,23 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Attribute__Group__0__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5696:1: rule__Attribute__Group__0__Impl : ( () ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5727:1: rule__Attribute__Group__0__Impl : ( () ) ;
     public final void rule__Attribute__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5700:1: ( ( () ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5701:1: ( () )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5731:1: ( ( () ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5732:1: ( () )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5701:1: ( () )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5702:1: ()
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5732:1: ( () )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5733:1: ()
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getAttributeAccess().getAttributeAction_0()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5703:1: ()
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5705:1: 
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5734:1: ()
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5736:1: 
             {
             }
 
@@ -16397,16 +16486,16 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Attribute__Group__1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5715:1: rule__Attribute__Group__1 : rule__Attribute__Group__1__Impl ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5746:1: rule__Attribute__Group__1 : rule__Attribute__Group__1__Impl ;
     public final void rule__Attribute__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5719:1: ( rule__Attribute__Group__1__Impl )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5720:2: rule__Attribute__Group__1__Impl
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5750:1: ( rule__Attribute__Group__1__Impl )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5751:2: rule__Attribute__Group__1__Impl
             {
-            pushFollow(FOLLOW_rule__Attribute__Group__1__Impl_in_rule__Attribute__Group__111545);
+            pushFollow(FOLLOW_rule__Attribute__Group__1__Impl_in_rule__Attribute__Group__111606);
             rule__Attribute__Group__1__Impl();
 
             state._fsp--;
@@ -16430,25 +16519,25 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Attribute__Group__1__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5726:1: rule__Attribute__Group__1__Impl : ( ( rule__Attribute__NameAssignment_1 ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5757:1: rule__Attribute__Group__1__Impl : ( ( rule__Attribute__NameAssignment_1 ) ) ;
     public final void rule__Attribute__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5730:1: ( ( ( rule__Attribute__NameAssignment_1 ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5731:1: ( ( rule__Attribute__NameAssignment_1 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5761:1: ( ( ( rule__Attribute__NameAssignment_1 ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5762:1: ( ( rule__Attribute__NameAssignment_1 ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5731:1: ( ( rule__Attribute__NameAssignment_1 ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5732:1: ( rule__Attribute__NameAssignment_1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5762:1: ( ( rule__Attribute__NameAssignment_1 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5763:1: ( rule__Attribute__NameAssignment_1 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getAttributeAccess().getNameAssignment_1()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5733:1: ( rule__Attribute__NameAssignment_1 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5733:2: rule__Attribute__NameAssignment_1
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5764:1: ( rule__Attribute__NameAssignment_1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5764:2: rule__Attribute__NameAssignment_1
             {
-            pushFollow(FOLLOW_rule__Attribute__NameAssignment_1_in_rule__Attribute__Group__1__Impl11572);
+            pushFollow(FOLLOW_rule__Attribute__NameAssignment_1_in_rule__Attribute__Group__1__Impl11633);
             rule__Attribute__NameAssignment_1();
 
             state._fsp--;
@@ -16481,21 +16570,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Reference__Group__0"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5747:1: rule__Reference__Group__0 : rule__Reference__Group__0__Impl rule__Reference__Group__1 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5778:1: rule__Reference__Group__0 : rule__Reference__Group__0__Impl rule__Reference__Group__1 ;
     public final void rule__Reference__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5751:1: ( rule__Reference__Group__0__Impl rule__Reference__Group__1 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5752:2: rule__Reference__Group__0__Impl rule__Reference__Group__1
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5782:1: ( rule__Reference__Group__0__Impl rule__Reference__Group__1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5783:2: rule__Reference__Group__0__Impl rule__Reference__Group__1
             {
-            pushFollow(FOLLOW_rule__Reference__Group__0__Impl_in_rule__Reference__Group__011606);
+            pushFollow(FOLLOW_rule__Reference__Group__0__Impl_in_rule__Reference__Group__011667);
             rule__Reference__Group__0__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__Reference__Group__1_in_rule__Reference__Group__011609);
+            pushFollow(FOLLOW_rule__Reference__Group__1_in_rule__Reference__Group__011670);
             rule__Reference__Group__1();
 
             state._fsp--;
@@ -16519,23 +16608,23 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Reference__Group__0__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5759:1: rule__Reference__Group__0__Impl : ( () ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5790:1: rule__Reference__Group__0__Impl : ( () ) ;
     public final void rule__Reference__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5763:1: ( ( () ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5764:1: ( () )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5794:1: ( ( () ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5795:1: ( () )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5764:1: ( () )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5765:1: ()
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5795:1: ( () )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5796:1: ()
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getReferenceAccess().getReferenceAction_0()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5766:1: ()
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5768:1: 
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5797:1: ()
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5799:1: 
             {
             }
 
@@ -16560,16 +16649,16 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Reference__Group__1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5778:1: rule__Reference__Group__1 : rule__Reference__Group__1__Impl ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5809:1: rule__Reference__Group__1 : rule__Reference__Group__1__Impl ;
     public final void rule__Reference__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5782:1: ( rule__Reference__Group__1__Impl )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5783:2: rule__Reference__Group__1__Impl
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5813:1: ( rule__Reference__Group__1__Impl )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5814:2: rule__Reference__Group__1__Impl
             {
-            pushFollow(FOLLOW_rule__Reference__Group__1__Impl_in_rule__Reference__Group__111667);
+            pushFollow(FOLLOW_rule__Reference__Group__1__Impl_in_rule__Reference__Group__111728);
             rule__Reference__Group__1__Impl();
 
             state._fsp--;
@@ -16593,25 +16682,25 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Reference__Group__1__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5789:1: rule__Reference__Group__1__Impl : ( ( rule__Reference__NameAssignment_1 ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5820:1: rule__Reference__Group__1__Impl : ( ( rule__Reference__NameAssignment_1 ) ) ;
     public final void rule__Reference__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5793:1: ( ( ( rule__Reference__NameAssignment_1 ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5794:1: ( ( rule__Reference__NameAssignment_1 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5824:1: ( ( ( rule__Reference__NameAssignment_1 ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5825:1: ( ( rule__Reference__NameAssignment_1 ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5794:1: ( ( rule__Reference__NameAssignment_1 ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5795:1: ( rule__Reference__NameAssignment_1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5825:1: ( ( rule__Reference__NameAssignment_1 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5826:1: ( rule__Reference__NameAssignment_1 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getReferenceAccess().getNameAssignment_1()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5796:1: ( rule__Reference__NameAssignment_1 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5796:2: rule__Reference__NameAssignment_1
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5827:1: ( rule__Reference__NameAssignment_1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5827:2: rule__Reference__NameAssignment_1
             {
-            pushFollow(FOLLOW_rule__Reference__NameAssignment_1_in_rule__Reference__Group__1__Impl11694);
+            pushFollow(FOLLOW_rule__Reference__NameAssignment_1_in_rule__Reference__Group__1__Impl11755);
             rule__Reference__NameAssignment_1();
 
             state._fsp--;
@@ -16644,21 +16733,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__BooleanDef__Group__0"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5810:1: rule__BooleanDef__Group__0 : rule__BooleanDef__Group__0__Impl rule__BooleanDef__Group__1 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5841:1: rule__BooleanDef__Group__0 : rule__BooleanDef__Group__0__Impl rule__BooleanDef__Group__1 ;
     public final void rule__BooleanDef__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5814:1: ( rule__BooleanDef__Group__0__Impl rule__BooleanDef__Group__1 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5815:2: rule__BooleanDef__Group__0__Impl rule__BooleanDef__Group__1
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5845:1: ( rule__BooleanDef__Group__0__Impl rule__BooleanDef__Group__1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5846:2: rule__BooleanDef__Group__0__Impl rule__BooleanDef__Group__1
             {
-            pushFollow(FOLLOW_rule__BooleanDef__Group__0__Impl_in_rule__BooleanDef__Group__011728);
+            pushFollow(FOLLOW_rule__BooleanDef__Group__0__Impl_in_rule__BooleanDef__Group__011789);
             rule__BooleanDef__Group__0__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__BooleanDef__Group__1_in_rule__BooleanDef__Group__011731);
+            pushFollow(FOLLOW_rule__BooleanDef__Group__1_in_rule__BooleanDef__Group__011792);
             rule__BooleanDef__Group__1();
 
             state._fsp--;
@@ -16682,23 +16771,23 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__BooleanDef__Group__0__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5822:1: rule__BooleanDef__Group__0__Impl : ( () ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5853:1: rule__BooleanDef__Group__0__Impl : ( () ) ;
     public final void rule__BooleanDef__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5826:1: ( ( () ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5827:1: ( () )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5857:1: ( ( () ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5858:1: ( () )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5827:1: ( () )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5828:1: ()
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5858:1: ( () )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5859:1: ()
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getBooleanDefAccess().getBooleanDefAction_0()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5829:1: ()
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5831:1: 
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5860:1: ()
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5862:1: 
             {
             }
 
@@ -16723,16 +16812,16 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__BooleanDef__Group__1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5841:1: rule__BooleanDef__Group__1 : rule__BooleanDef__Group__1__Impl ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5872:1: rule__BooleanDef__Group__1 : rule__BooleanDef__Group__1__Impl ;
     public final void rule__BooleanDef__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5845:1: ( rule__BooleanDef__Group__1__Impl )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5846:2: rule__BooleanDef__Group__1__Impl
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5876:1: ( rule__BooleanDef__Group__1__Impl )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5877:2: rule__BooleanDef__Group__1__Impl
             {
-            pushFollow(FOLLOW_rule__BooleanDef__Group__1__Impl_in_rule__BooleanDef__Group__111789);
+            pushFollow(FOLLOW_rule__BooleanDef__Group__1__Impl_in_rule__BooleanDef__Group__111850);
             rule__BooleanDef__Group__1__Impl();
 
             state._fsp--;
@@ -16756,25 +16845,25 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__BooleanDef__Group__1__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5852:1: rule__BooleanDef__Group__1__Impl : ( ( rule__BooleanDef__NameAssignment_1 ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5883:1: rule__BooleanDef__Group__1__Impl : ( ( rule__BooleanDef__NameAssignment_1 ) ) ;
     public final void rule__BooleanDef__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5856:1: ( ( ( rule__BooleanDef__NameAssignment_1 ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5857:1: ( ( rule__BooleanDef__NameAssignment_1 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5887:1: ( ( ( rule__BooleanDef__NameAssignment_1 ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5888:1: ( ( rule__BooleanDef__NameAssignment_1 ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5857:1: ( ( rule__BooleanDef__NameAssignment_1 ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5858:1: ( rule__BooleanDef__NameAssignment_1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5888:1: ( ( rule__BooleanDef__NameAssignment_1 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5889:1: ( rule__BooleanDef__NameAssignment_1 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getBooleanDefAccess().getNameAssignment_1()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5859:1: ( rule__BooleanDef__NameAssignment_1 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5859:2: rule__BooleanDef__NameAssignment_1
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5890:1: ( rule__BooleanDef__NameAssignment_1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5890:2: rule__BooleanDef__NameAssignment_1
             {
-            pushFollow(FOLLOW_rule__BooleanDef__NameAssignment_1_in_rule__BooleanDef__Group__1__Impl11816);
+            pushFollow(FOLLOW_rule__BooleanDef__NameAssignment_1_in_rule__BooleanDef__Group__1__Impl11877);
             rule__BooleanDef__NameAssignment_1();
 
             state._fsp--;
@@ -16807,21 +16896,21 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__IntDef__Group__0"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5873:1: rule__IntDef__Group__0 : rule__IntDef__Group__0__Impl rule__IntDef__Group__1 ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5904:1: rule__IntDef__Group__0 : rule__IntDef__Group__0__Impl rule__IntDef__Group__1 ;
     public final void rule__IntDef__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5877:1: ( rule__IntDef__Group__0__Impl rule__IntDef__Group__1 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5878:2: rule__IntDef__Group__0__Impl rule__IntDef__Group__1
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5908:1: ( rule__IntDef__Group__0__Impl rule__IntDef__Group__1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5909:2: rule__IntDef__Group__0__Impl rule__IntDef__Group__1
             {
-            pushFollow(FOLLOW_rule__IntDef__Group__0__Impl_in_rule__IntDef__Group__011850);
+            pushFollow(FOLLOW_rule__IntDef__Group__0__Impl_in_rule__IntDef__Group__011911);
             rule__IntDef__Group__0__Impl();
 
             state._fsp--;
             if (state.failed) return ;
-            pushFollow(FOLLOW_rule__IntDef__Group__1_in_rule__IntDef__Group__011853);
+            pushFollow(FOLLOW_rule__IntDef__Group__1_in_rule__IntDef__Group__011914);
             rule__IntDef__Group__1();
 
             state._fsp--;
@@ -16845,23 +16934,23 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__IntDef__Group__0__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5885:1: rule__IntDef__Group__0__Impl : ( () ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5916:1: rule__IntDef__Group__0__Impl : ( () ) ;
     public final void rule__IntDef__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5889:1: ( ( () ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5890:1: ( () )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5920:1: ( ( () ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5921:1: ( () )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5890:1: ( () )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5891:1: ()
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5921:1: ( () )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5922:1: ()
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getIntDefAccess().getIntDefAction_0()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5892:1: ()
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5894:1: 
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5923:1: ()
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5925:1: 
             {
             }
 
@@ -16886,16 +16975,16 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__IntDef__Group__1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5904:1: rule__IntDef__Group__1 : rule__IntDef__Group__1__Impl ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5935:1: rule__IntDef__Group__1 : rule__IntDef__Group__1__Impl ;
     public final void rule__IntDef__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5908:1: ( rule__IntDef__Group__1__Impl )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5909:2: rule__IntDef__Group__1__Impl
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5939:1: ( rule__IntDef__Group__1__Impl )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5940:2: rule__IntDef__Group__1__Impl
             {
-            pushFollow(FOLLOW_rule__IntDef__Group__1__Impl_in_rule__IntDef__Group__111911);
+            pushFollow(FOLLOW_rule__IntDef__Group__1__Impl_in_rule__IntDef__Group__111972);
             rule__IntDef__Group__1__Impl();
 
             state._fsp--;
@@ -16919,25 +17008,25 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__IntDef__Group__1__Impl"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5915:1: rule__IntDef__Group__1__Impl : ( ( rule__IntDef__NameAssignment_1 ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5946:1: rule__IntDef__Group__1__Impl : ( ( rule__IntDef__NameAssignment_1 ) ) ;
     public final void rule__IntDef__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5919:1: ( ( ( rule__IntDef__NameAssignment_1 ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5920:1: ( ( rule__IntDef__NameAssignment_1 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5950:1: ( ( ( rule__IntDef__NameAssignment_1 ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5951:1: ( ( rule__IntDef__NameAssignment_1 ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5920:1: ( ( rule__IntDef__NameAssignment_1 ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5921:1: ( rule__IntDef__NameAssignment_1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5951:1: ( ( rule__IntDef__NameAssignment_1 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5952:1: ( rule__IntDef__NameAssignment_1 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getIntDefAccess().getNameAssignment_1()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5922:1: ( rule__IntDef__NameAssignment_1 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5922:2: rule__IntDef__NameAssignment_1
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5953:1: ( rule__IntDef__NameAssignment_1 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5953:2: rule__IntDef__NameAssignment_1
             {
-            pushFollow(FOLLOW_rule__IntDef__NameAssignment_1_in_rule__IntDef__Group__1__Impl11938);
+            pushFollow(FOLLOW_rule__IntDef__NameAssignment_1_in_rule__IntDef__Group__1__Impl11999);
             rule__IntDef__NameAssignment_1();
 
             state._fsp--;
@@ -16970,25 +17059,25 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Model__PackagesAssignment"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5937:1: rule__Model__PackagesAssignment : ( ( rule__Model__PackagesAlternatives_0 ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5968:1: rule__Model__PackagesAssignment : ( ( rule__Model__PackagesAlternatives_0 ) ) ;
     public final void rule__Model__PackagesAssignment() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5941:1: ( ( ( rule__Model__PackagesAlternatives_0 ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5942:1: ( ( rule__Model__PackagesAlternatives_0 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5972:1: ( ( ( rule__Model__PackagesAlternatives_0 ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5973:1: ( ( rule__Model__PackagesAlternatives_0 ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5942:1: ( ( rule__Model__PackagesAlternatives_0 ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5943:1: ( rule__Model__PackagesAlternatives_0 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5973:1: ( ( rule__Model__PackagesAlternatives_0 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5974:1: ( rule__Model__PackagesAlternatives_0 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getModelAccess().getPackagesAlternatives_0()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5944:1: ( rule__Model__PackagesAlternatives_0 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5944:2: rule__Model__PackagesAlternatives_0
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5975:1: ( rule__Model__PackagesAlternatives_0 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5975:2: rule__Model__PackagesAlternatives_0
             {
-            pushFollow(FOLLOW_rule__Model__PackagesAlternatives_0_in_rule__Model__PackagesAssignment11977);
+            pushFollow(FOLLOW_rule__Model__PackagesAlternatives_0_in_rule__Model__PackagesAssignment12038);
             rule__Model__PackagesAlternatives_0();
 
             state._fsp--;
@@ -17021,22 +17110,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EPackageOperation__VarAssignment_0_1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5953:1: rule__EPackageOperation__VarAssignment_0_1 : ( rulePackage ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5984:1: rule__EPackageOperation__VarAssignment_0_1 : ( rulePackage ) ;
     public final void rule__EPackageOperation__VarAssignment_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5957:1: ( ( rulePackage ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5958:1: ( rulePackage )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5988:1: ( ( rulePackage ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5989:1: ( rulePackage )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5958:1: ( rulePackage )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5959:1: rulePackage
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5989:1: ( rulePackage )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5990:1: rulePackage
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getEPackageOperationAccess().getVarPackageParserRuleCall_0_1_0()); 
             }
-            pushFollow(FOLLOW_rulePackage_in_rule__EPackageOperation__VarAssignment_0_112010);
+            pushFollow(FOLLOW_rulePackage_in_rule__EPackageOperation__VarAssignment_0_112071);
             rulePackage();
 
             state._fsp--;
@@ -17066,25 +17155,25 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EPackageOperation__OpAssignment_1_0_0"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5968:1: rule__EPackageOperation__OpAssignment_1_0_0 : ( ( rule__EPackageOperation__OpAlternatives_1_0_0_0 ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5999:1: rule__EPackageOperation__OpAssignment_1_0_0 : ( ( rule__EPackageOperation__OpAlternatives_1_0_0_0 ) ) ;
     public final void rule__EPackageOperation__OpAssignment_1_0_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5972:1: ( ( ( rule__EPackageOperation__OpAlternatives_1_0_0_0 ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5973:1: ( ( rule__EPackageOperation__OpAlternatives_1_0_0_0 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6003:1: ( ( ( rule__EPackageOperation__OpAlternatives_1_0_0_0 ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6004:1: ( ( rule__EPackageOperation__OpAlternatives_1_0_0_0 ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5973:1: ( ( rule__EPackageOperation__OpAlternatives_1_0_0_0 ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5974:1: ( rule__EPackageOperation__OpAlternatives_1_0_0_0 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6004:1: ( ( rule__EPackageOperation__OpAlternatives_1_0_0_0 ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6005:1: ( rule__EPackageOperation__OpAlternatives_1_0_0_0 )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getEPackageOperationAccess().getOpAlternatives_1_0_0_0()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5975:1: ( rule__EPackageOperation__OpAlternatives_1_0_0_0 )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5975:2: rule__EPackageOperation__OpAlternatives_1_0_0_0
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6006:1: ( rule__EPackageOperation__OpAlternatives_1_0_0_0 )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6006:2: rule__EPackageOperation__OpAlternatives_1_0_0_0
             {
-            pushFollow(FOLLOW_rule__EPackageOperation__OpAlternatives_1_0_0_0_in_rule__EPackageOperation__OpAssignment_1_0_012041);
+            pushFollow(FOLLOW_rule__EPackageOperation__OpAlternatives_1_0_0_0_in_rule__EPackageOperation__OpAssignment_1_0_012102);
             rule__EPackageOperation__OpAlternatives_1_0_0_0();
 
             state._fsp--;
@@ -17117,22 +17206,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EPackageOperation__SettersAssignment_1_0_2_0"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5984:1: rule__EPackageOperation__SettersAssignment_1_0_2_0 : ( rulesetter ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6015:1: rule__EPackageOperation__SettersAssignment_1_0_2_0 : ( rulesetter ) ;
     public final void rule__EPackageOperation__SettersAssignment_1_0_2_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5988:1: ( ( rulesetter ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5989:1: ( rulesetter )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6019:1: ( ( rulesetter ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6020:1: ( rulesetter )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5989:1: ( rulesetter )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5990:1: rulesetter
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6020:1: ( rulesetter )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6021:1: rulesetter
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getEPackageOperationAccess().getSettersSetterParserRuleCall_1_0_2_0_0()); 
             }
-            pushFollow(FOLLOW_rulesetter_in_rule__EPackageOperation__SettersAssignment_1_0_2_012074);
+            pushFollow(FOLLOW_rulesetter_in_rule__EPackageOperation__SettersAssignment_1_0_2_012135);
             rulesetter();
 
             state._fsp--;
@@ -17162,22 +17251,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EPackageOperation__ClassesAssignment_1_0_2_1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:5999:1: rule__EPackageOperation__ClassesAssignment_1_0_2_1 : ( ruleEClassOperation ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6030:1: rule__EPackageOperation__ClassesAssignment_1_0_2_1 : ( ruleEClassOperation ) ;
     public final void rule__EPackageOperation__ClassesAssignment_1_0_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6003:1: ( ( ruleEClassOperation ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6004:1: ( ruleEClassOperation )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6034:1: ( ( ruleEClassOperation ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6035:1: ( ruleEClassOperation )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6004:1: ( ruleEClassOperation )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6005:1: ruleEClassOperation
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6035:1: ( ruleEClassOperation )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6036:1: ruleEClassOperation
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getEPackageOperationAccess().getClassesEClassOperationParserRuleCall_1_0_2_1_0()); 
             }
-            pushFollow(FOLLOW_ruleEClassOperation_in_rule__EPackageOperation__ClassesAssignment_1_0_2_112105);
+            pushFollow(FOLLOW_ruleEClassOperation_in_rule__EPackageOperation__ClassesAssignment_1_0_2_112166);
             ruleEClassOperation();
 
             state._fsp--;
@@ -17207,22 +17296,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EPackageOperation__ComplexAssignment_1_1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6014:1: rule__EPackageOperation__ComplexAssignment_1_1 : ( ruleComplexOperator ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6045:1: rule__EPackageOperation__ComplexAssignment_1_1 : ( ruleComplexOperator ) ;
     public final void rule__EPackageOperation__ComplexAssignment_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6018:1: ( ( ruleComplexOperator ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6019:1: ( ruleComplexOperator )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6049:1: ( ( ruleComplexOperator ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6050:1: ( ruleComplexOperator )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6019:1: ( ruleComplexOperator )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6020:1: ruleComplexOperator
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6050:1: ( ruleComplexOperator )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6051:1: ruleComplexOperator
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getEPackageOperationAccess().getComplexComplexOperatorParserRuleCall_1_1_0()); 
             }
-            pushFollow(FOLLOW_ruleComplexOperator_in_rule__EPackageOperation__ComplexAssignment_1_112136);
+            pushFollow(FOLLOW_ruleComplexOperator_in_rule__EPackageOperation__ComplexAssignment_1_112197);
             ruleComplexOperator();
 
             state._fsp--;
@@ -17252,28 +17341,28 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__DeletePackage__RefAssignment_2"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6029:1: rule__DeletePackage__RefAssignment_2 : ( ( RULE_ID ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6060:1: rule__DeletePackage__RefAssignment_2 : ( ( RULE_ID ) ) ;
     public final void rule__DeletePackage__RefAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6033:1: ( ( ( RULE_ID ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6034:1: ( ( RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6064:1: ( ( ( RULE_ID ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6065:1: ( ( RULE_ID ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6034:1: ( ( RULE_ID ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6035:1: ( RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6065:1: ( ( RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6066:1: ( RULE_ID )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getDeletePackageAccess().getRefEPackageCrossReference_2_0()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6036:1: ( RULE_ID )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6037:1: RULE_ID
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6067:1: ( RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6068:1: RULE_ID
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getDeletePackageAccess().getRefEPackageIDTerminalRuleCall_2_0_1()); 
             }
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__DeletePackage__RefAssignment_212171); if (state.failed) return ;
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__DeletePackage__RefAssignment_212232); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getDeletePackageAccess().getRefEPackageIDTerminalRuleCall_2_0_1()); 
             }
@@ -17305,22 +17394,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__AddPackage__NewAssignment_2_0"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6048:1: rule__AddPackage__NewAssignment_2_0 : ( RULE_STRING ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6079:1: rule__AddPackage__NewAssignment_2_0 : ( RULE_STRING ) ;
     public final void rule__AddPackage__NewAssignment_2_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6052:1: ( ( RULE_STRING ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6053:1: ( RULE_STRING )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6083:1: ( ( RULE_STRING ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6084:1: ( RULE_STRING )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6053:1: ( RULE_STRING )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6054:1: RULE_STRING
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6084:1: ( RULE_STRING )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6085:1: RULE_STRING
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getAddPackageAccess().getNewSTRINGTerminalRuleCall_2_0_0()); 
             }
-            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__AddPackage__NewAssignment_2_012206); if (state.failed) return ;
+            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__AddPackage__NewAssignment_2_012267); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getAddPackageAccess().getNewSTRINGTerminalRuleCall_2_0_0()); 
             }
@@ -17346,28 +17435,28 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__AddPackage__RefAssignment_2_1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6063:1: rule__AddPackage__RefAssignment_2_1 : ( ( RULE_ID ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6094:1: rule__AddPackage__RefAssignment_2_1 : ( ( RULE_ID ) ) ;
     public final void rule__AddPackage__RefAssignment_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6067:1: ( ( ( RULE_ID ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6068:1: ( ( RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6098:1: ( ( ( RULE_ID ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6099:1: ( ( RULE_ID ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6068:1: ( ( RULE_ID ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6069:1: ( RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6099:1: ( ( RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6100:1: ( RULE_ID )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getAddPackageAccess().getRefSTRINGCrossReference_2_1_0()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6070:1: ( RULE_ID )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6071:1: RULE_ID
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6101:1: ( RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6102:1: RULE_ID
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getAddPackageAccess().getRefSTRINGIDTerminalRuleCall_2_1_0_1()); 
             }
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__AddPackage__RefAssignment_2_112241); if (state.failed) return ;
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__AddPackage__RefAssignment_2_112302); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getAddPackageAccess().getRefSTRINGIDTerminalRuleCall_2_1_0_1()); 
             }
@@ -17399,28 +17488,28 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ChangePackage__RefAssignment_2"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6082:1: rule__ChangePackage__RefAssignment_2 : ( ( RULE_ID ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6113:1: rule__ChangePackage__RefAssignment_2 : ( ( RULE_ID ) ) ;
     public final void rule__ChangePackage__RefAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6086:1: ( ( ( RULE_ID ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6087:1: ( ( RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6117:1: ( ( ( RULE_ID ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6118:1: ( ( RULE_ID ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6087:1: ( ( RULE_ID ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6088:1: ( RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6118:1: ( ( RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6119:1: ( RULE_ID )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getChangePackageAccess().getRefEPackageCrossReference_2_0()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6089:1: ( RULE_ID )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6090:1: RULE_ID
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6120:1: ( RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6121:1: RULE_ID
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getChangePackageAccess().getRefEPackageIDTerminalRuleCall_2_0_1()); 
             }
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__ChangePackage__RefAssignment_212280); if (state.failed) return ;
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__ChangePackage__RefAssignment_212341); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getChangePackageAccess().getRefEPackageIDTerminalRuleCall_2_0_1()); 
             }
@@ -17452,22 +17541,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Package__NameAssignment_1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6101:1: rule__Package__NameAssignment_1 : ( RULE_ID ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6132:1: rule__Package__NameAssignment_1 : ( RULE_ID ) ;
     public final void rule__Package__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6105:1: ( ( RULE_ID ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6106:1: ( RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6136:1: ( ( RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6137:1: ( RULE_ID )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6106:1: ( RULE_ID )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6107:1: RULE_ID
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6137:1: ( RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6138:1: RULE_ID
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getPackageAccess().getNameIDTerminalRuleCall_1_0()); 
             }
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Package__NameAssignment_112315); if (state.failed) return ;
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Package__NameAssignment_112376); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getPackageAccess().getNameIDTerminalRuleCall_1_0()); 
             }
@@ -17493,22 +17582,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EClassOperation__VarAssignment_0_1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6116:1: rule__EClassOperation__VarAssignment_0_1 : ( ruleClass ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6147:1: rule__EClassOperation__VarAssignment_0_1 : ( ruleClass ) ;
     public final void rule__EClassOperation__VarAssignment_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6120:1: ( ( ruleClass ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6121:1: ( ruleClass )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6151:1: ( ( ruleClass ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6152:1: ( ruleClass )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6121:1: ( ruleClass )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6122:1: ruleClass
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6152:1: ( ruleClass )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6153:1: ruleClass
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getEClassOperationAccess().getVarClassParserRuleCall_0_1_0()); 
             }
-            pushFollow(FOLLOW_ruleClass_in_rule__EClassOperation__VarAssignment_0_112346);
+            pushFollow(FOLLOW_ruleClass_in_rule__EClassOperation__VarAssignment_0_112407);
             ruleClass();
 
             state._fsp--;
@@ -17538,22 +17627,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EClassOperation__OpAssignment_1_0_0"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6131:1: rule__EClassOperation__OpAssignment_1_0_0 : ( ruleChangeClass ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6162:1: rule__EClassOperation__OpAssignment_1_0_0 : ( ruleChangeClass ) ;
     public final void rule__EClassOperation__OpAssignment_1_0_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6135:1: ( ( ruleChangeClass ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6136:1: ( ruleChangeClass )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6166:1: ( ( ruleChangeClass ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6167:1: ( ruleChangeClass )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6136:1: ( ruleChangeClass )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6137:1: ruleChangeClass
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6167:1: ( ruleChangeClass )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6168:1: ruleChangeClass
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getEClassOperationAccess().getOpChangeClassParserRuleCall_1_0_0_0()); 
             }
-            pushFollow(FOLLOW_ruleChangeClass_in_rule__EClassOperation__OpAssignment_1_0_012377);
+            pushFollow(FOLLOW_ruleChangeClass_in_rule__EClassOperation__OpAssignment_1_0_012438);
             ruleChangeClass();
 
             state._fsp--;
@@ -17583,22 +17672,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EClassOperation__OpAssignment_1_0_1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6146:1: rule__EClassOperation__OpAssignment_1_0_1 : ( ruleAddClass ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6177:1: rule__EClassOperation__OpAssignment_1_0_1 : ( ruleAddClass ) ;
     public final void rule__EClassOperation__OpAssignment_1_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6150:1: ( ( ruleAddClass ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6151:1: ( ruleAddClass )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6181:1: ( ( ruleAddClass ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6182:1: ( ruleAddClass )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6151:1: ( ruleAddClass )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6152:1: ruleAddClass
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6182:1: ( ruleAddClass )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6183:1: ruleAddClass
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getEClassOperationAccess().getOpAddClassParserRuleCall_1_0_1_0()); 
             }
-            pushFollow(FOLLOW_ruleAddClass_in_rule__EClassOperation__OpAssignment_1_0_112408);
+            pushFollow(FOLLOW_ruleAddClass_in_rule__EClassOperation__OpAssignment_1_0_112469);
             ruleAddClass();
 
             state._fsp--;
@@ -17628,22 +17717,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EClassOperation__OpAssignment_1_0_2"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6161:1: rule__EClassOperation__OpAssignment_1_0_2 : ( ruleDeleteClass ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6192:1: rule__EClassOperation__OpAssignment_1_0_2 : ( ruleDeleteClass ) ;
     public final void rule__EClassOperation__OpAssignment_1_0_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6165:1: ( ( ruleDeleteClass ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6166:1: ( ruleDeleteClass )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6196:1: ( ( ruleDeleteClass ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6197:1: ( ruleDeleteClass )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6166:1: ( ruleDeleteClass )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6167:1: ruleDeleteClass
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6197:1: ( ruleDeleteClass )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6198:1: ruleDeleteClass
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getEClassOperationAccess().getOpDeleteClassParserRuleCall_1_0_2_0()); 
             }
-            pushFollow(FOLLOW_ruleDeleteClass_in_rule__EClassOperation__OpAssignment_1_0_212439);
+            pushFollow(FOLLOW_ruleDeleteClass_in_rule__EClassOperation__OpAssignment_1_0_212500);
             ruleDeleteClass();
 
             state._fsp--;
@@ -17673,22 +17762,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EClassOperation__SettersAssignment_1_1_0_1_0"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6176:1: rule__EClassOperation__SettersAssignment_1_1_0_1_0 : ( rulesetter ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6207:1: rule__EClassOperation__SettersAssignment_1_1_0_1_0 : ( rulesetter ) ;
     public final void rule__EClassOperation__SettersAssignment_1_1_0_1_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6180:1: ( ( rulesetter ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6181:1: ( rulesetter )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6211:1: ( ( rulesetter ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6212:1: ( rulesetter )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6181:1: ( rulesetter )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6182:1: rulesetter
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6212:1: ( rulesetter )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6213:1: rulesetter
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getEClassOperationAccess().getSettersSetterParserRuleCall_1_1_0_1_0_0()); 
             }
-            pushFollow(FOLLOW_rulesetter_in_rule__EClassOperation__SettersAssignment_1_1_0_1_012470);
+            pushFollow(FOLLOW_rulesetter_in_rule__EClassOperation__SettersAssignment_1_1_0_1_012531);
             rulesetter();
 
             state._fsp--;
@@ -17718,22 +17807,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EClassOperation__AttributesAssignment_1_1_0_1_1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6191:1: rule__EClassOperation__AttributesAssignment_1_1_0_1_1 : ( ruleEAttributeOperation ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6222:1: rule__EClassOperation__AttributesAssignment_1_1_0_1_1 : ( ruleEAttributeOperation ) ;
     public final void rule__EClassOperation__AttributesAssignment_1_1_0_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6195:1: ( ( ruleEAttributeOperation ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6196:1: ( ruleEAttributeOperation )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6226:1: ( ( ruleEAttributeOperation ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6227:1: ( ruleEAttributeOperation )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6196:1: ( ruleEAttributeOperation )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6197:1: ruleEAttributeOperation
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6227:1: ( ruleEAttributeOperation )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6228:1: ruleEAttributeOperation
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getEClassOperationAccess().getAttributesEAttributeOperationParserRuleCall_1_1_0_1_1_0()); 
             }
-            pushFollow(FOLLOW_ruleEAttributeOperation_in_rule__EClassOperation__AttributesAssignment_1_1_0_1_112501);
+            pushFollow(FOLLOW_ruleEAttributeOperation_in_rule__EClassOperation__AttributesAssignment_1_1_0_1_112562);
             ruleEAttributeOperation();
 
             state._fsp--;
@@ -17763,22 +17852,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EClassOperation__ReferencesAssignment_1_1_0_1_2"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6206:1: rule__EClassOperation__ReferencesAssignment_1_1_0_1_2 : ( ruleEReferenceOperation ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6237:1: rule__EClassOperation__ReferencesAssignment_1_1_0_1_2 : ( ruleEReferenceOperation ) ;
     public final void rule__EClassOperation__ReferencesAssignment_1_1_0_1_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6210:1: ( ( ruleEReferenceOperation ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6211:1: ( ruleEReferenceOperation )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6241:1: ( ( ruleEReferenceOperation ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6242:1: ( ruleEReferenceOperation )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6211:1: ( ruleEReferenceOperation )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6212:1: ruleEReferenceOperation
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6242:1: ( ruleEReferenceOperation )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6243:1: ruleEReferenceOperation
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getEClassOperationAccess().getReferencesEReferenceOperationParserRuleCall_1_1_0_1_2_0()); 
             }
-            pushFollow(FOLLOW_ruleEReferenceOperation_in_rule__EClassOperation__ReferencesAssignment_1_1_0_1_212532);
+            pushFollow(FOLLOW_ruleEReferenceOperation_in_rule__EClassOperation__ReferencesAssignment_1_1_0_1_212593);
             ruleEReferenceOperation();
 
             state._fsp--;
@@ -17808,22 +17897,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EClassOperation__ComplexAssignment_1_1_1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6221:1: rule__EClassOperation__ComplexAssignment_1_1_1 : ( ruleComplexOperator ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6252:1: rule__EClassOperation__ComplexAssignment_1_1_1 : ( ruleComplexOperator ) ;
     public final void rule__EClassOperation__ComplexAssignment_1_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6225:1: ( ( ruleComplexOperator ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6226:1: ( ruleComplexOperator )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6256:1: ( ( ruleComplexOperator ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6257:1: ( ruleComplexOperator )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6226:1: ( ruleComplexOperator )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6227:1: ruleComplexOperator
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6257:1: ( ruleComplexOperator )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6258:1: ruleComplexOperator
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getEClassOperationAccess().getComplexComplexOperatorParserRuleCall_1_1_1_0()); 
             }
-            pushFollow(FOLLOW_ruleComplexOperator_in_rule__EClassOperation__ComplexAssignment_1_1_112563);
+            pushFollow(FOLLOW_ruleComplexOperator_in_rule__EClassOperation__ComplexAssignment_1_1_112624);
             ruleComplexOperator();
 
             state._fsp--;
@@ -17852,37 +17941,37 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
     // $ANTLR end "rule__EClassOperation__ComplexAssignment_1_1_1"
 
 
-    // $ANTLR start "rule__ChangeClass__OpAssignment_0"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6236:1: rule__ChangeClass__OpAssignment_0 : ( ( 'changeClass(' ) ) ;
-    public final void rule__ChangeClass__OpAssignment_0() throws RecognitionException {
+    // $ANTLR start "rule__ChangeClass__OpAssignment_1"
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6267:1: rule__ChangeClass__OpAssignment_1 : ( ( 'changeClass(' ) ) ;
+    public final void rule__ChangeClass__OpAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6240:1: ( ( ( 'changeClass(' ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6241:1: ( ( 'changeClass(' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6271:1: ( ( ( 'changeClass(' ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6272:1: ( ( 'changeClass(' ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6241:1: ( ( 'changeClass(' ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6242:1: ( 'changeClass(' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6272:1: ( ( 'changeClass(' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6273:1: ( 'changeClass(' )
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getChangeClassAccess().getOpChangeClassKeyword_0_0()); 
+               before(grammarAccess.getChangeClassAccess().getOpChangeClassKeyword_1_0()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6243:1: ( 'changeClass(' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6244:1: 'changeClass('
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6274:1: ( 'changeClass(' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6275:1: 'changeClass('
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getChangeClassAccess().getOpChangeClassKeyword_0_0()); 
+               before(grammarAccess.getChangeClassAccess().getOpChangeClassKeyword_1_0()); 
             }
-            match(input,34,FOLLOW_34_in_rule__ChangeClass__OpAssignment_012599); if (state.failed) return ;
+            match(input,33,FOLLOW_33_in_rule__ChangeClass__OpAssignment_112660); if (state.failed) return ;
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getChangeClassAccess().getOpChangeClassKeyword_0_0()); 
+               after(grammarAccess.getChangeClassAccess().getOpChangeClassKeyword_1_0()); 
             }
 
             }
 
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getChangeClassAccess().getOpChangeClassKeyword_0_0()); 
+               after(grammarAccess.getChangeClassAccess().getOpChangeClassKeyword_1_0()); 
             }
 
             }
@@ -17902,40 +17991,40 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
         }
         return ;
     }
-    // $ANTLR end "rule__ChangeClass__OpAssignment_0"
+    // $ANTLR end "rule__ChangeClass__OpAssignment_1"
 
 
-    // $ANTLR start "rule__ChangeClass__RefAssignment_1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6259:1: rule__ChangeClass__RefAssignment_1 : ( ( RULE_ID ) ) ;
-    public final void rule__ChangeClass__RefAssignment_1() throws RecognitionException {
+    // $ANTLR start "rule__ChangeClass__RefAssignment_2"
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6290:1: rule__ChangeClass__RefAssignment_2 : ( ( RULE_ID ) ) ;
+    public final void rule__ChangeClass__RefAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6263:1: ( ( ( RULE_ID ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6264:1: ( ( RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6294:1: ( ( ( RULE_ID ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6295:1: ( ( RULE_ID ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6264:1: ( ( RULE_ID ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6265:1: ( RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6295:1: ( ( RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6296:1: ( RULE_ID )
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getChangeClassAccess().getRefEClassCrossReference_1_0()); 
+               before(grammarAccess.getChangeClassAccess().getRefEClassCrossReference_2_0()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6266:1: ( RULE_ID )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6267:1: RULE_ID
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6297:1: ( RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6298:1: RULE_ID
             {
             if ( state.backtracking==0 ) {
-               before(grammarAccess.getChangeClassAccess().getRefEClassIDTerminalRuleCall_1_0_1()); 
+               before(grammarAccess.getChangeClassAccess().getRefEClassIDTerminalRuleCall_2_0_1()); 
             }
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__ChangeClass__RefAssignment_112642); if (state.failed) return ;
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__ChangeClass__RefAssignment_212703); if (state.failed) return ;
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getChangeClassAccess().getRefEClassIDTerminalRuleCall_1_0_1()); 
+               after(grammarAccess.getChangeClassAccess().getRefEClassIDTerminalRuleCall_2_0_1()); 
             }
 
             }
 
             if ( state.backtracking==0 ) {
-               after(grammarAccess.getChangeClassAccess().getRefEClassCrossReference_1_0()); 
+               after(grammarAccess.getChangeClassAccess().getRefEClassCrossReference_2_0()); 
             }
 
             }
@@ -17955,32 +18044,32 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
         }
         return ;
     }
-    // $ANTLR end "rule__ChangeClass__RefAssignment_1"
+    // $ANTLR end "rule__ChangeClass__RefAssignment_2"
 
 
     // $ANTLR start "rule__AddClass__OpAssignment_0"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6278:1: rule__AddClass__OpAssignment_0 : ( ( 'addClass(' ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6309:1: rule__AddClass__OpAssignment_0 : ( ( 'addClass(' ) ) ;
     public final void rule__AddClass__OpAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6282:1: ( ( ( 'addClass(' ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6283:1: ( ( 'addClass(' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6313:1: ( ( ( 'addClass(' ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6314:1: ( ( 'addClass(' ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6283:1: ( ( 'addClass(' ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6284:1: ( 'addClass(' )
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getAddClassAccess().getOpAddClassKeyword_0_0()); 
-            }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6285:1: ( 'addClass(' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6286:1: 'addClass('
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6314:1: ( ( 'addClass(' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6315:1: ( 'addClass(' )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getAddClassAccess().getOpAddClassKeyword_0_0()); 
             }
-            match(input,35,FOLLOW_35_in_rule__AddClass__OpAssignment_012682); if (state.failed) return ;
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6316:1: ( 'addClass(' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6317:1: 'addClass('
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getAddClassAccess().getOpAddClassKeyword_0_0()); 
+            }
+            match(input,34,FOLLOW_34_in_rule__AddClass__OpAssignment_012743); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getAddClassAccess().getOpAddClassKeyword_0_0()); 
             }
@@ -18012,22 +18101,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__AddClass__NewAssignment_1_0"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6301:1: rule__AddClass__NewAssignment_1_0 : ( RULE_STRING ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6332:1: rule__AddClass__NewAssignment_1_0 : ( RULE_STRING ) ;
     public final void rule__AddClass__NewAssignment_1_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6305:1: ( ( RULE_STRING ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6306:1: ( RULE_STRING )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6336:1: ( ( RULE_STRING ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6337:1: ( RULE_STRING )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6306:1: ( RULE_STRING )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6307:1: RULE_STRING
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6337:1: ( RULE_STRING )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6338:1: RULE_STRING
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getAddClassAccess().getNewSTRINGTerminalRuleCall_1_0_0()); 
             }
-            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__AddClass__NewAssignment_1_012721); if (state.failed) return ;
+            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__AddClass__NewAssignment_1_012782); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getAddClassAccess().getNewSTRINGTerminalRuleCall_1_0_0()); 
             }
@@ -18053,28 +18142,28 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__AddClass__RefAssignment_1_1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6316:1: rule__AddClass__RefAssignment_1_1 : ( ( RULE_ID ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6347:1: rule__AddClass__RefAssignment_1_1 : ( ( RULE_ID ) ) ;
     public final void rule__AddClass__RefAssignment_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6320:1: ( ( ( RULE_ID ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6321:1: ( ( RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6351:1: ( ( ( RULE_ID ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6352:1: ( ( RULE_ID ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6321:1: ( ( RULE_ID ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6322:1: ( RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6352:1: ( ( RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6353:1: ( RULE_ID )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getAddClassAccess().getRefSTRINGCrossReference_1_1_0()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6323:1: ( RULE_ID )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6324:1: RULE_ID
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6354:1: ( RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6355:1: RULE_ID
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getAddClassAccess().getRefSTRINGIDTerminalRuleCall_1_1_0_1()); 
             }
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__AddClass__RefAssignment_1_112756); if (state.failed) return ;
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__AddClass__RefAssignment_1_112817); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getAddClassAccess().getRefSTRINGIDTerminalRuleCall_1_1_0_1()); 
             }
@@ -18106,28 +18195,28 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__DeleteClass__OpAssignment_0"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6335:1: rule__DeleteClass__OpAssignment_0 : ( ( 'deleteClass(' ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6366:1: rule__DeleteClass__OpAssignment_0 : ( ( 'deleteClass(' ) ) ;
     public final void rule__DeleteClass__OpAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6339:1: ( ( ( 'deleteClass(' ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6340:1: ( ( 'deleteClass(' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6370:1: ( ( ( 'deleteClass(' ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6371:1: ( ( 'deleteClass(' ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6340:1: ( ( 'deleteClass(' ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6341:1: ( 'deleteClass(' )
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getDeleteClassAccess().getOpDeleteClassKeyword_0_0()); 
-            }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6342:1: ( 'deleteClass(' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6343:1: 'deleteClass('
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6371:1: ( ( 'deleteClass(' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6372:1: ( 'deleteClass(' )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getDeleteClassAccess().getOpDeleteClassKeyword_0_0()); 
             }
-            match(input,36,FOLLOW_36_in_rule__DeleteClass__OpAssignment_012796); if (state.failed) return ;
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6373:1: ( 'deleteClass(' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6374:1: 'deleteClass('
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getDeleteClassAccess().getOpDeleteClassKeyword_0_0()); 
+            }
+            match(input,35,FOLLOW_35_in_rule__DeleteClass__OpAssignment_012857); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getDeleteClassAccess().getOpDeleteClassKeyword_0_0()); 
             }
@@ -18159,28 +18248,28 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__DeleteClass__RefAssignment_1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6358:1: rule__DeleteClass__RefAssignment_1 : ( ( RULE_ID ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6389:1: rule__DeleteClass__RefAssignment_1 : ( ( RULE_ID ) ) ;
     public final void rule__DeleteClass__RefAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6362:1: ( ( ( RULE_ID ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6363:1: ( ( RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6393:1: ( ( ( RULE_ID ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6394:1: ( ( RULE_ID ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6363:1: ( ( RULE_ID ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6364:1: ( RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6394:1: ( ( RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6395:1: ( RULE_ID )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getDeleteClassAccess().getRefEClassCrossReference_1_0()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6365:1: ( RULE_ID )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6366:1: RULE_ID
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6396:1: ( RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6397:1: RULE_ID
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getDeleteClassAccess().getRefEClassIDTerminalRuleCall_1_0_1()); 
             }
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__DeleteClass__RefAssignment_112839); if (state.failed) return ;
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__DeleteClass__RefAssignment_112900); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getDeleteClassAccess().getRefEClassIDTerminalRuleCall_1_0_1()); 
             }
@@ -18212,22 +18301,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Class__NameAssignment_1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6377:1: rule__Class__NameAssignment_1 : ( RULE_ID ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6408:1: rule__Class__NameAssignment_1 : ( RULE_ID ) ;
     public final void rule__Class__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6381:1: ( ( RULE_ID ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6382:1: ( RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6412:1: ( ( RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6413:1: ( RULE_ID )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6382:1: ( RULE_ID )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6383:1: RULE_ID
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6413:1: ( RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6414:1: RULE_ID
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getClassAccess().getNameIDTerminalRuleCall_1_0()); 
             }
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Class__NameAssignment_112874); if (state.failed) return ;
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Class__NameAssignment_112935); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getClassAccess().getNameIDTerminalRuleCall_1_0()); 
             }
@@ -18253,28 +18342,28 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Setter__MetafeatureAssignment_1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6392:1: rule__Setter__MetafeatureAssignment_1 : ( ( RULE_ID ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6423:1: rule__Setter__MetafeatureAssignment_1 : ( ( RULE_ID ) ) ;
     public final void rule__Setter__MetafeatureAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6396:1: ( ( ( RULE_ID ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6397:1: ( ( RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6427:1: ( ( ( RULE_ID ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6428:1: ( ( RULE_ID ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6397:1: ( ( RULE_ID ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6398:1: ( RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6428:1: ( ( RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6429:1: ( RULE_ID )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getSetterAccess().getMetafeatureEStructuralFeatureCrossReference_1_0()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6399:1: ( RULE_ID )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6400:1: RULE_ID
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6430:1: ( RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6431:1: RULE_ID
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getSetterAccess().getMetafeatureEStructuralFeatureIDTerminalRuleCall_1_0_1()); 
             }
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Setter__MetafeatureAssignment_112909); if (state.failed) return ;
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Setter__MetafeatureAssignment_112970); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getSetterAccess().getMetafeatureEStructuralFeatureIDTerminalRuleCall_1_0_1()); 
             }
@@ -18305,23 +18394,76 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
     // $ANTLR end "rule__Setter__MetafeatureAssignment_1"
 
 
+    // $ANTLR start "rule__Setter__OperatorAssignment_2"
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6442:1: rule__Setter__OperatorAssignment_2 : ( ( '<=' ) ) ;
+    public final void rule__Setter__OperatorAssignment_2() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+            
+        try {
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6446:1: ( ( ( '<=' ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6447:1: ( ( '<=' ) )
+            {
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6447:1: ( ( '<=' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6448:1: ( '<=' )
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getSetterAccess().getOperatorLessThanSignEqualsSignKeyword_2_0()); 
+            }
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6449:1: ( '<=' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6450:1: '<='
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getSetterAccess().getOperatorLessThanSignEqualsSignKeyword_2_0()); 
+            }
+            match(input,36,FOLLOW_36_in_rule__Setter__OperatorAssignment_213010); if (state.failed) return ;
+            if ( state.backtracking==0 ) {
+               after(grammarAccess.getSetterAccess().getOperatorLessThanSignEqualsSignKeyword_2_0()); 
+            }
+
+            }
+
+            if ( state.backtracking==0 ) {
+               after(grammarAccess.getSetterAccess().getOperatorLessThanSignEqualsSignKeyword_2_0()); 
+            }
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__Setter__OperatorAssignment_2"
+
+
     // $ANTLR start "rule__Setter__ValueAssignment_3_0_0"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6411:1: rule__Setter__ValueAssignment_3_0_0 : ( RULE_STRING ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6465:1: rule__Setter__ValueAssignment_3_0_0 : ( RULE_STRING ) ;
     public final void rule__Setter__ValueAssignment_3_0_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6415:1: ( ( RULE_STRING ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6416:1: ( RULE_STRING )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6469:1: ( ( RULE_STRING ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6470:1: ( RULE_STRING )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6416:1: ( RULE_STRING )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6417:1: RULE_STRING
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6470:1: ( RULE_STRING )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6471:1: RULE_STRING
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getSetterAccess().getValueSTRINGTerminalRuleCall_3_0_0_0()); 
             }
-            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__Setter__ValueAssignment_3_0_012944); if (state.failed) return ;
+            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__Setter__ValueAssignment_3_0_013049); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getSetterAccess().getValueSTRINGTerminalRuleCall_3_0_0_0()); 
             }
@@ -18347,22 +18489,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Setter__CardAssignment_3_1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6426:1: rule__Setter__CardAssignment_3_1 : ( ruleCardinality ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6480:1: rule__Setter__CardAssignment_3_1 : ( ruleCardinality ) ;
     public final void rule__Setter__CardAssignment_3_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6430:1: ( ( ruleCardinality ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6431:1: ( ruleCardinality )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6484:1: ( ( ruleCardinality ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6485:1: ( ruleCardinality )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6431:1: ( ruleCardinality )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6432:1: ruleCardinality
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6485:1: ( ruleCardinality )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6486:1: ruleCardinality
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getSetterAccess().getCardCardinalityParserRuleCall_3_1_0()); 
             }
-            pushFollow(FOLLOW_ruleCardinality_in_rule__Setter__CardAssignment_3_112975);
+            pushFollow(FOLLOW_ruleCardinality_in_rule__Setter__CardAssignment_3_113080);
             ruleCardinality();
 
             state._fsp--;
@@ -18392,28 +18534,28 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Setter__ValueRefAssignment_3_2"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6441:1: rule__Setter__ValueRefAssignment_3_2 : ( ( RULE_ID ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6495:1: rule__Setter__ValueRefAssignment_3_2 : ( ( RULE_ID ) ) ;
     public final void rule__Setter__ValueRefAssignment_3_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6445:1: ( ( ( RULE_ID ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6446:1: ( ( RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6499:1: ( ( ( RULE_ID ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6500:1: ( ( RULE_ID ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6446:1: ( ( RULE_ID ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6447:1: ( RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6500:1: ( ( RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6501:1: ( RULE_ID )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getSetterAccess().getValueRefEObjectCrossReference_3_2_0()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6448:1: ( RULE_ID )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6449:1: RULE_ID
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6502:1: ( RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6503:1: RULE_ID
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getSetterAccess().getValueRefEObjectIDTerminalRuleCall_3_2_0_1()); 
             }
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Setter__ValueRefAssignment_3_213010); if (state.failed) return ;
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Setter__ValueRefAssignment_3_213115); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getSetterAccess().getValueRefEObjectIDTerminalRuleCall_3_2_0_1()); 
             }
@@ -18445,28 +18587,28 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Setter__ValueRefAssignment_4_1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6460:1: rule__Setter__ValueRefAssignment_4_1 : ( ( RULE_ID ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6514:1: rule__Setter__ValueRefAssignment_4_1 : ( ( RULE_ID ) ) ;
     public final void rule__Setter__ValueRefAssignment_4_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6464:1: ( ( ( RULE_ID ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6465:1: ( ( RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6518:1: ( ( ( RULE_ID ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6519:1: ( ( RULE_ID ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6465:1: ( ( RULE_ID ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6466:1: ( RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6519:1: ( ( RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6520:1: ( RULE_ID )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getSetterAccess().getValueRefEObjectCrossReference_4_1_0()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6467:1: ( RULE_ID )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6468:1: RULE_ID
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6521:1: ( RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6522:1: RULE_ID
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getSetterAccess().getValueRefEObjectIDTerminalRuleCall_4_1_0_1()); 
             }
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Setter__ValueRefAssignment_4_113049); if (state.failed) return ;
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Setter__ValueRefAssignment_4_113154); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getSetterAccess().getValueRefEObjectIDTerminalRuleCall_4_1_0_1()); 
             }
@@ -18498,22 +18640,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EAttributeOperation__VarAssignment_0_1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6479:1: rule__EAttributeOperation__VarAssignment_0_1 : ( ruleAttribute ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6533:1: rule__EAttributeOperation__VarAssignment_0_1 : ( ruleAttribute ) ;
     public final void rule__EAttributeOperation__VarAssignment_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6483:1: ( ( ruleAttribute ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6484:1: ( ruleAttribute )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6537:1: ( ( ruleAttribute ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6538:1: ( ruleAttribute )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6484:1: ( ruleAttribute )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6485:1: ruleAttribute
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6538:1: ( ruleAttribute )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6539:1: ruleAttribute
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getEAttributeOperationAccess().getVarAttributeParserRuleCall_0_1_0()); 
             }
-            pushFollow(FOLLOW_ruleAttribute_in_rule__EAttributeOperation__VarAssignment_0_113084);
+            pushFollow(FOLLOW_ruleAttribute_in_rule__EAttributeOperation__VarAssignment_0_113189);
             ruleAttribute();
 
             state._fsp--;
@@ -18543,22 +18685,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EAttributeOperation__OpAssignment_1_0_0_0"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6494:1: rule__EAttributeOperation__OpAssignment_1_0_0_0 : ( ruleChangeAttribute ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6548:1: rule__EAttributeOperation__OpAssignment_1_0_0_0 : ( ruleChangeAttribute ) ;
     public final void rule__EAttributeOperation__OpAssignment_1_0_0_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6498:1: ( ( ruleChangeAttribute ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6499:1: ( ruleChangeAttribute )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6552:1: ( ( ruleChangeAttribute ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6553:1: ( ruleChangeAttribute )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6499:1: ( ruleChangeAttribute )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6500:1: ruleChangeAttribute
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6553:1: ( ruleChangeAttribute )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6554:1: ruleChangeAttribute
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getEAttributeOperationAccess().getOpChangeAttributeParserRuleCall_1_0_0_0_0()); 
             }
-            pushFollow(FOLLOW_ruleChangeAttribute_in_rule__EAttributeOperation__OpAssignment_1_0_0_013115);
+            pushFollow(FOLLOW_ruleChangeAttribute_in_rule__EAttributeOperation__OpAssignment_1_0_0_013220);
             ruleChangeAttribute();
 
             state._fsp--;
@@ -18588,22 +18730,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EAttributeOperation__OpAssignment_1_0_0_1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6509:1: rule__EAttributeOperation__OpAssignment_1_0_0_1 : ( ruleAddAttribute ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6563:1: rule__EAttributeOperation__OpAssignment_1_0_0_1 : ( ruleAddAttribute ) ;
     public final void rule__EAttributeOperation__OpAssignment_1_0_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6513:1: ( ( ruleAddAttribute ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6514:1: ( ruleAddAttribute )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6567:1: ( ( ruleAddAttribute ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6568:1: ( ruleAddAttribute )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6514:1: ( ruleAddAttribute )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6515:1: ruleAddAttribute
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6568:1: ( ruleAddAttribute )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6569:1: ruleAddAttribute
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getEAttributeOperationAccess().getOpAddAttributeParserRuleCall_1_0_0_1_0()); 
             }
-            pushFollow(FOLLOW_ruleAddAttribute_in_rule__EAttributeOperation__OpAssignment_1_0_0_113146);
+            pushFollow(FOLLOW_ruleAddAttribute_in_rule__EAttributeOperation__OpAssignment_1_0_0_113251);
             ruleAddAttribute();
 
             state._fsp--;
@@ -18633,22 +18775,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EAttributeOperation__OpAssignment_1_0_0_2"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6524:1: rule__EAttributeOperation__OpAssignment_1_0_0_2 : ( ruleDeleteAttribute ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6578:1: rule__EAttributeOperation__OpAssignment_1_0_0_2 : ( ruleDeleteAttribute ) ;
     public final void rule__EAttributeOperation__OpAssignment_1_0_0_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6528:1: ( ( ruleDeleteAttribute ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6529:1: ( ruleDeleteAttribute )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6582:1: ( ( ruleDeleteAttribute ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6583:1: ( ruleDeleteAttribute )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6529:1: ( ruleDeleteAttribute )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6530:1: ruleDeleteAttribute
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6583:1: ( ruleDeleteAttribute )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6584:1: ruleDeleteAttribute
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getEAttributeOperationAccess().getOpDeleteAttributeParserRuleCall_1_0_0_2_0()); 
             }
-            pushFollow(FOLLOW_ruleDeleteAttribute_in_rule__EAttributeOperation__OpAssignment_1_0_0_213177);
+            pushFollow(FOLLOW_ruleDeleteAttribute_in_rule__EAttributeOperation__OpAssignment_1_0_0_213282);
             ruleDeleteAttribute();
 
             state._fsp--;
@@ -18678,22 +18820,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EAttributeOperation__SettersAssignment_1_0_1_1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6539:1: rule__EAttributeOperation__SettersAssignment_1_0_1_1 : ( rulesetter ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6593:1: rule__EAttributeOperation__SettersAssignment_1_0_1_1 : ( rulesetter ) ;
     public final void rule__EAttributeOperation__SettersAssignment_1_0_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6543:1: ( ( rulesetter ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6544:1: ( rulesetter )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6597:1: ( ( rulesetter ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6598:1: ( rulesetter )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6544:1: ( rulesetter )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6545:1: rulesetter
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6598:1: ( rulesetter )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6599:1: rulesetter
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getEAttributeOperationAccess().getSettersSetterParserRuleCall_1_0_1_1_0()); 
             }
-            pushFollow(FOLLOW_rulesetter_in_rule__EAttributeOperation__SettersAssignment_1_0_1_113208);
+            pushFollow(FOLLOW_rulesetter_in_rule__EAttributeOperation__SettersAssignment_1_0_1_113313);
             rulesetter();
 
             state._fsp--;
@@ -18723,22 +18865,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EAttributeOperation__ComplexAssignment_1_1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6554:1: rule__EAttributeOperation__ComplexAssignment_1_1 : ( ruleComplexOperator ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6608:1: rule__EAttributeOperation__ComplexAssignment_1_1 : ( ruleComplexOperator ) ;
     public final void rule__EAttributeOperation__ComplexAssignment_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6558:1: ( ( ruleComplexOperator ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6559:1: ( ruleComplexOperator )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6612:1: ( ( ruleComplexOperator ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6613:1: ( ruleComplexOperator )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6559:1: ( ruleComplexOperator )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6560:1: ruleComplexOperator
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6613:1: ( ruleComplexOperator )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6614:1: ruleComplexOperator
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getEAttributeOperationAccess().getComplexComplexOperatorParserRuleCall_1_1_0()); 
             }
-            pushFollow(FOLLOW_ruleComplexOperator_in_rule__EAttributeOperation__ComplexAssignment_1_113239);
+            pushFollow(FOLLOW_ruleComplexOperator_in_rule__EAttributeOperation__ComplexAssignment_1_113344);
             ruleComplexOperator();
 
             state._fsp--;
@@ -18768,28 +18910,28 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ChangeAttribute__OpAssignment_0"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6569:1: rule__ChangeAttribute__OpAssignment_0 : ( ( 'changeAttribute(' ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6623:1: rule__ChangeAttribute__OpAssignment_0 : ( ( 'changeAttribute(' ) ) ;
     public final void rule__ChangeAttribute__OpAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6573:1: ( ( ( 'changeAttribute(' ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6574:1: ( ( 'changeAttribute(' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6627:1: ( ( ( 'changeAttribute(' ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6628:1: ( ( 'changeAttribute(' ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6574:1: ( ( 'changeAttribute(' ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6575:1: ( 'changeAttribute(' )
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getChangeAttributeAccess().getOpChangeAttributeKeyword_0_0()); 
-            }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6576:1: ( 'changeAttribute(' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6577:1: 'changeAttribute('
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6628:1: ( ( 'changeAttribute(' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6629:1: ( 'changeAttribute(' )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getChangeAttributeAccess().getOpChangeAttributeKeyword_0_0()); 
             }
-            match(input,37,FOLLOW_37_in_rule__ChangeAttribute__OpAssignment_013275); if (state.failed) return ;
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6630:1: ( 'changeAttribute(' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6631:1: 'changeAttribute('
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getChangeAttributeAccess().getOpChangeAttributeKeyword_0_0()); 
+            }
+            match(input,37,FOLLOW_37_in_rule__ChangeAttribute__OpAssignment_013380); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getChangeAttributeAccess().getOpChangeAttributeKeyword_0_0()); 
             }
@@ -18821,28 +18963,28 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ChangeAttribute__RefAssignment_1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6592:1: rule__ChangeAttribute__RefAssignment_1 : ( ( RULE_ID ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6646:1: rule__ChangeAttribute__RefAssignment_1 : ( ( RULE_ID ) ) ;
     public final void rule__ChangeAttribute__RefAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6596:1: ( ( ( RULE_ID ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6597:1: ( ( RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6650:1: ( ( ( RULE_ID ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6651:1: ( ( RULE_ID ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6597:1: ( ( RULE_ID ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6598:1: ( RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6651:1: ( ( RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6652:1: ( RULE_ID )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getChangeAttributeAccess().getRefEAttributeCrossReference_1_0()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6599:1: ( RULE_ID )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6600:1: RULE_ID
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6653:1: ( RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6654:1: RULE_ID
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getChangeAttributeAccess().getRefEAttributeIDTerminalRuleCall_1_0_1()); 
             }
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__ChangeAttribute__RefAssignment_113318); if (state.failed) return ;
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__ChangeAttribute__RefAssignment_113423); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getChangeAttributeAccess().getRefEAttributeIDTerminalRuleCall_1_0_1()); 
             }
@@ -18874,28 +19016,28 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__AddAttribute__OpAssignment_0"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6611:1: rule__AddAttribute__OpAssignment_0 : ( ( 'addAttribute(' ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6665:1: rule__AddAttribute__OpAssignment_0 : ( ( 'addAttribute(' ) ) ;
     public final void rule__AddAttribute__OpAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6615:1: ( ( ( 'addAttribute(' ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6616:1: ( ( 'addAttribute(' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6669:1: ( ( ( 'addAttribute(' ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6670:1: ( ( 'addAttribute(' ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6616:1: ( ( 'addAttribute(' ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6617:1: ( 'addAttribute(' )
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getAddAttributeAccess().getOpAddAttributeKeyword_0_0()); 
-            }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6618:1: ( 'addAttribute(' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6619:1: 'addAttribute('
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6670:1: ( ( 'addAttribute(' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6671:1: ( 'addAttribute(' )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getAddAttributeAccess().getOpAddAttributeKeyword_0_0()); 
             }
-            match(input,38,FOLLOW_38_in_rule__AddAttribute__OpAssignment_013358); if (state.failed) return ;
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6672:1: ( 'addAttribute(' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6673:1: 'addAttribute('
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getAddAttributeAccess().getOpAddAttributeKeyword_0_0()); 
+            }
+            match(input,38,FOLLOW_38_in_rule__AddAttribute__OpAssignment_013463); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getAddAttributeAccess().getOpAddAttributeKeyword_0_0()); 
             }
@@ -18927,22 +19069,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__AddAttribute__NewAssignment_1_0"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6634:1: rule__AddAttribute__NewAssignment_1_0 : ( RULE_STRING ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6688:1: rule__AddAttribute__NewAssignment_1_0 : ( RULE_STRING ) ;
     public final void rule__AddAttribute__NewAssignment_1_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6638:1: ( ( RULE_STRING ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6639:1: ( RULE_STRING )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6692:1: ( ( RULE_STRING ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6693:1: ( RULE_STRING )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6639:1: ( RULE_STRING )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6640:1: RULE_STRING
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6693:1: ( RULE_STRING )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6694:1: RULE_STRING
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getAddAttributeAccess().getNewSTRINGTerminalRuleCall_1_0_0()); 
             }
-            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__AddAttribute__NewAssignment_1_013397); if (state.failed) return ;
+            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__AddAttribute__NewAssignment_1_013502); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getAddAttributeAccess().getNewSTRINGTerminalRuleCall_1_0_0()); 
             }
@@ -18968,28 +19110,28 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__AddAttribute__RefAssignment_1_1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6649:1: rule__AddAttribute__RefAssignment_1_1 : ( ( RULE_ID ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6703:1: rule__AddAttribute__RefAssignment_1_1 : ( ( RULE_ID ) ) ;
     public final void rule__AddAttribute__RefAssignment_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6653:1: ( ( ( RULE_ID ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6654:1: ( ( RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6707:1: ( ( ( RULE_ID ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6708:1: ( ( RULE_ID ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6654:1: ( ( RULE_ID ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6655:1: ( RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6708:1: ( ( RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6709:1: ( RULE_ID )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getAddAttributeAccess().getRefSTRINGCrossReference_1_1_0()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6656:1: ( RULE_ID )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6657:1: RULE_ID
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6710:1: ( RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6711:1: RULE_ID
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getAddAttributeAccess().getRefSTRINGIDTerminalRuleCall_1_1_0_1()); 
             }
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__AddAttribute__RefAssignment_1_113432); if (state.failed) return ;
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__AddAttribute__RefAssignment_1_113537); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getAddAttributeAccess().getRefSTRINGIDTerminalRuleCall_1_1_0_1()); 
             }
@@ -19021,28 +19163,28 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__DeleteAttribute__OpAssignment_0"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6668:1: rule__DeleteAttribute__OpAssignment_0 : ( ( 'deleteAttribute(' ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6722:1: rule__DeleteAttribute__OpAssignment_0 : ( ( 'deleteAttribute(' ) ) ;
     public final void rule__DeleteAttribute__OpAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6672:1: ( ( ( 'deleteAttribute(' ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6673:1: ( ( 'deleteAttribute(' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6726:1: ( ( ( 'deleteAttribute(' ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6727:1: ( ( 'deleteAttribute(' ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6673:1: ( ( 'deleteAttribute(' ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6674:1: ( 'deleteAttribute(' )
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getDeleteAttributeAccess().getOpDeleteAttributeKeyword_0_0()); 
-            }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6675:1: ( 'deleteAttribute(' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6676:1: 'deleteAttribute('
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6727:1: ( ( 'deleteAttribute(' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6728:1: ( 'deleteAttribute(' )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getDeleteAttributeAccess().getOpDeleteAttributeKeyword_0_0()); 
             }
-            match(input,39,FOLLOW_39_in_rule__DeleteAttribute__OpAssignment_013472); if (state.failed) return ;
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6729:1: ( 'deleteAttribute(' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6730:1: 'deleteAttribute('
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getDeleteAttributeAccess().getOpDeleteAttributeKeyword_0_0()); 
+            }
+            match(input,39,FOLLOW_39_in_rule__DeleteAttribute__OpAssignment_013577); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getDeleteAttributeAccess().getOpDeleteAttributeKeyword_0_0()); 
             }
@@ -19074,28 +19216,28 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__DeleteAttribute__RefAssignment_1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6691:1: rule__DeleteAttribute__RefAssignment_1 : ( ( RULE_ID ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6745:1: rule__DeleteAttribute__RefAssignment_1 : ( ( RULE_ID ) ) ;
     public final void rule__DeleteAttribute__RefAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6695:1: ( ( ( RULE_ID ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6696:1: ( ( RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6749:1: ( ( ( RULE_ID ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6750:1: ( ( RULE_ID ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6696:1: ( ( RULE_ID ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6697:1: ( RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6750:1: ( ( RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6751:1: ( RULE_ID )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getDeleteAttributeAccess().getRefEAttributeCrossReference_1_0()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6698:1: ( RULE_ID )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6699:1: RULE_ID
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6752:1: ( RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6753:1: RULE_ID
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getDeleteAttributeAccess().getRefEAttributeIDTerminalRuleCall_1_0_1()); 
             }
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__DeleteAttribute__RefAssignment_113515); if (state.failed) return ;
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__DeleteAttribute__RefAssignment_113620); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getDeleteAttributeAccess().getRefEAttributeIDTerminalRuleCall_1_0_1()); 
             }
@@ -19127,22 +19269,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EReferenceOperation__VarAssignment_0_1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6710:1: rule__EReferenceOperation__VarAssignment_0_1 : ( ruleReference ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6764:1: rule__EReferenceOperation__VarAssignment_0_1 : ( ruleReference ) ;
     public final void rule__EReferenceOperation__VarAssignment_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6714:1: ( ( ruleReference ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6715:1: ( ruleReference )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6768:1: ( ( ruleReference ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6769:1: ( ruleReference )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6715:1: ( ruleReference )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6716:1: ruleReference
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6769:1: ( ruleReference )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6770:1: ruleReference
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getEReferenceOperationAccess().getVarReferenceParserRuleCall_0_1_0()); 
             }
-            pushFollow(FOLLOW_ruleReference_in_rule__EReferenceOperation__VarAssignment_0_113550);
+            pushFollow(FOLLOW_ruleReference_in_rule__EReferenceOperation__VarAssignment_0_113655);
             ruleReference();
 
             state._fsp--;
@@ -19172,22 +19314,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EReferenceOperation__OpAssignment_1_0_0_0"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6725:1: rule__EReferenceOperation__OpAssignment_1_0_0_0 : ( ruleChangeReference ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6779:1: rule__EReferenceOperation__OpAssignment_1_0_0_0 : ( ruleChangeReference ) ;
     public final void rule__EReferenceOperation__OpAssignment_1_0_0_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6729:1: ( ( ruleChangeReference ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6730:1: ( ruleChangeReference )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6783:1: ( ( ruleChangeReference ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6784:1: ( ruleChangeReference )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6730:1: ( ruleChangeReference )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6731:1: ruleChangeReference
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6784:1: ( ruleChangeReference )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6785:1: ruleChangeReference
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getEReferenceOperationAccess().getOpChangeReferenceParserRuleCall_1_0_0_0_0()); 
             }
-            pushFollow(FOLLOW_ruleChangeReference_in_rule__EReferenceOperation__OpAssignment_1_0_0_013581);
+            pushFollow(FOLLOW_ruleChangeReference_in_rule__EReferenceOperation__OpAssignment_1_0_0_013686);
             ruleChangeReference();
 
             state._fsp--;
@@ -19217,22 +19359,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EReferenceOperation__OpAssignment_1_0_0_1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6740:1: rule__EReferenceOperation__OpAssignment_1_0_0_1 : ( ruleAddReference ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6794:1: rule__EReferenceOperation__OpAssignment_1_0_0_1 : ( ruleAddReference ) ;
     public final void rule__EReferenceOperation__OpAssignment_1_0_0_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6744:1: ( ( ruleAddReference ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6745:1: ( ruleAddReference )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6798:1: ( ( ruleAddReference ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6799:1: ( ruleAddReference )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6745:1: ( ruleAddReference )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6746:1: ruleAddReference
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6799:1: ( ruleAddReference )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6800:1: ruleAddReference
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getEReferenceOperationAccess().getOpAddReferenceParserRuleCall_1_0_0_1_0()); 
             }
-            pushFollow(FOLLOW_ruleAddReference_in_rule__EReferenceOperation__OpAssignment_1_0_0_113612);
+            pushFollow(FOLLOW_ruleAddReference_in_rule__EReferenceOperation__OpAssignment_1_0_0_113717);
             ruleAddReference();
 
             state._fsp--;
@@ -19262,22 +19404,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EReferenceOperation__OpAssignment_1_0_0_2"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6755:1: rule__EReferenceOperation__OpAssignment_1_0_0_2 : ( ruleDeleteReference ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6809:1: rule__EReferenceOperation__OpAssignment_1_0_0_2 : ( ruleDeleteReference ) ;
     public final void rule__EReferenceOperation__OpAssignment_1_0_0_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6759:1: ( ( ruleDeleteReference ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6760:1: ( ruleDeleteReference )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6813:1: ( ( ruleDeleteReference ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6814:1: ( ruleDeleteReference )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6760:1: ( ruleDeleteReference )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6761:1: ruleDeleteReference
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6814:1: ( ruleDeleteReference )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6815:1: ruleDeleteReference
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getEReferenceOperationAccess().getOpDeleteReferenceParserRuleCall_1_0_0_2_0()); 
             }
-            pushFollow(FOLLOW_ruleDeleteReference_in_rule__EReferenceOperation__OpAssignment_1_0_0_213643);
+            pushFollow(FOLLOW_ruleDeleteReference_in_rule__EReferenceOperation__OpAssignment_1_0_0_213748);
             ruleDeleteReference();
 
             state._fsp--;
@@ -19307,22 +19449,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EReferenceOperation__SettersAssignment_1_0_1_1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6770:1: rule__EReferenceOperation__SettersAssignment_1_0_1_1 : ( rulesetter ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6824:1: rule__EReferenceOperation__SettersAssignment_1_0_1_1 : ( rulesetter ) ;
     public final void rule__EReferenceOperation__SettersAssignment_1_0_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6774:1: ( ( rulesetter ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6775:1: ( rulesetter )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6828:1: ( ( rulesetter ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6829:1: ( rulesetter )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6775:1: ( rulesetter )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6776:1: rulesetter
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6829:1: ( rulesetter )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6830:1: rulesetter
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getEReferenceOperationAccess().getSettersSetterParserRuleCall_1_0_1_1_0()); 
             }
-            pushFollow(FOLLOW_rulesetter_in_rule__EReferenceOperation__SettersAssignment_1_0_1_113674);
+            pushFollow(FOLLOW_rulesetter_in_rule__EReferenceOperation__SettersAssignment_1_0_1_113779);
             rulesetter();
 
             state._fsp--;
@@ -19352,22 +19494,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__EReferenceOperation__ComplexAssignment_1_1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6785:1: rule__EReferenceOperation__ComplexAssignment_1_1 : ( ruleComplexOperator ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6839:1: rule__EReferenceOperation__ComplexAssignment_1_1 : ( ruleComplexOperator ) ;
     public final void rule__EReferenceOperation__ComplexAssignment_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6789:1: ( ( ruleComplexOperator ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6790:1: ( ruleComplexOperator )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6843:1: ( ( ruleComplexOperator ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6844:1: ( ruleComplexOperator )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6790:1: ( ruleComplexOperator )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6791:1: ruleComplexOperator
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6844:1: ( ruleComplexOperator )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6845:1: ruleComplexOperator
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getEReferenceOperationAccess().getComplexComplexOperatorParserRuleCall_1_1_0()); 
             }
-            pushFollow(FOLLOW_ruleComplexOperator_in_rule__EReferenceOperation__ComplexAssignment_1_113705);
+            pushFollow(FOLLOW_ruleComplexOperator_in_rule__EReferenceOperation__ComplexAssignment_1_113810);
             ruleComplexOperator();
 
             state._fsp--;
@@ -19397,28 +19539,28 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ChangeReference__OpAssignment_0"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6800:1: rule__ChangeReference__OpAssignment_0 : ( ( 'changeReference' ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6854:1: rule__ChangeReference__OpAssignment_0 : ( ( 'changeReference' ) ) ;
     public final void rule__ChangeReference__OpAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6804:1: ( ( ( 'changeReference' ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6805:1: ( ( 'changeReference' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6858:1: ( ( ( 'changeReference' ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6859:1: ( ( 'changeReference' ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6805:1: ( ( 'changeReference' ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6806:1: ( 'changeReference' )
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getChangeReferenceAccess().getOpChangeReferenceKeyword_0_0()); 
-            }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6807:1: ( 'changeReference' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6808:1: 'changeReference'
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6859:1: ( ( 'changeReference' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6860:1: ( 'changeReference' )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getChangeReferenceAccess().getOpChangeReferenceKeyword_0_0()); 
             }
-            match(input,40,FOLLOW_40_in_rule__ChangeReference__OpAssignment_013741); if (state.failed) return ;
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6861:1: ( 'changeReference' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6862:1: 'changeReference'
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getChangeReferenceAccess().getOpChangeReferenceKeyword_0_0()); 
+            }
+            match(input,40,FOLLOW_40_in_rule__ChangeReference__OpAssignment_013846); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getChangeReferenceAccess().getOpChangeReferenceKeyword_0_0()); 
             }
@@ -19450,28 +19592,28 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ChangeReference__RefAssignment_2"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6823:1: rule__ChangeReference__RefAssignment_2 : ( ( RULE_ID ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6877:1: rule__ChangeReference__RefAssignment_2 : ( ( RULE_ID ) ) ;
     public final void rule__ChangeReference__RefAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6827:1: ( ( ( RULE_ID ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6828:1: ( ( RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6881:1: ( ( ( RULE_ID ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6882:1: ( ( RULE_ID ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6828:1: ( ( RULE_ID ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6829:1: ( RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6882:1: ( ( RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6883:1: ( RULE_ID )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getChangeReferenceAccess().getRefEReferenceCrossReference_2_0()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6830:1: ( RULE_ID )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6831:1: RULE_ID
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6884:1: ( RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6885:1: RULE_ID
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getChangeReferenceAccess().getRefEReferenceIDTerminalRuleCall_2_0_1()); 
             }
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__ChangeReference__RefAssignment_213784); if (state.failed) return ;
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__ChangeReference__RefAssignment_213889); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getChangeReferenceAccess().getRefEReferenceIDTerminalRuleCall_2_0_1()); 
             }
@@ -19503,28 +19645,28 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__AddReference__OpAssignment_0"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6842:1: rule__AddReference__OpAssignment_0 : ( ( 'addReference' ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6896:1: rule__AddReference__OpAssignment_0 : ( ( 'addReference' ) ) ;
     public final void rule__AddReference__OpAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6846:1: ( ( ( 'addReference' ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6847:1: ( ( 'addReference' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6900:1: ( ( ( 'addReference' ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6901:1: ( ( 'addReference' ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6847:1: ( ( 'addReference' ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6848:1: ( 'addReference' )
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getAddReferenceAccess().getOpAddReferenceKeyword_0_0()); 
-            }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6849:1: ( 'addReference' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6850:1: 'addReference'
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6901:1: ( ( 'addReference' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6902:1: ( 'addReference' )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getAddReferenceAccess().getOpAddReferenceKeyword_0_0()); 
             }
-            match(input,41,FOLLOW_41_in_rule__AddReference__OpAssignment_013824); if (state.failed) return ;
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6903:1: ( 'addReference' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6904:1: 'addReference'
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getAddReferenceAccess().getOpAddReferenceKeyword_0_0()); 
+            }
+            match(input,41,FOLLOW_41_in_rule__AddReference__OpAssignment_013929); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getAddReferenceAccess().getOpAddReferenceKeyword_0_0()); 
             }
@@ -19556,22 +19698,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__AddReference__NewAssignment_2_0"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6865:1: rule__AddReference__NewAssignment_2_0 : ( RULE_STRING ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6919:1: rule__AddReference__NewAssignment_2_0 : ( RULE_STRING ) ;
     public final void rule__AddReference__NewAssignment_2_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6869:1: ( ( RULE_STRING ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6870:1: ( RULE_STRING )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6923:1: ( ( RULE_STRING ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6924:1: ( RULE_STRING )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6870:1: ( RULE_STRING )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6871:1: RULE_STRING
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6924:1: ( RULE_STRING )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6925:1: RULE_STRING
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getAddReferenceAccess().getNewSTRINGTerminalRuleCall_2_0_0()); 
             }
-            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__AddReference__NewAssignment_2_013863); if (state.failed) return ;
+            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__AddReference__NewAssignment_2_013968); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getAddReferenceAccess().getNewSTRINGTerminalRuleCall_2_0_0()); 
             }
@@ -19597,28 +19739,28 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__AddReference__RefAssignment_2_1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6880:1: rule__AddReference__RefAssignment_2_1 : ( ( RULE_ID ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6934:1: rule__AddReference__RefAssignment_2_1 : ( ( RULE_ID ) ) ;
     public final void rule__AddReference__RefAssignment_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6884:1: ( ( ( RULE_ID ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6885:1: ( ( RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6938:1: ( ( ( RULE_ID ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6939:1: ( ( RULE_ID ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6885:1: ( ( RULE_ID ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6886:1: ( RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6939:1: ( ( RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6940:1: ( RULE_ID )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getAddReferenceAccess().getRefSTRINGCrossReference_2_1_0()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6887:1: ( RULE_ID )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6888:1: RULE_ID
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6941:1: ( RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6942:1: RULE_ID
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getAddReferenceAccess().getRefSTRINGIDTerminalRuleCall_2_1_0_1()); 
             }
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__AddReference__RefAssignment_2_113898); if (state.failed) return ;
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__AddReference__RefAssignment_2_114003); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getAddReferenceAccess().getRefSTRINGIDTerminalRuleCall_2_1_0_1()); 
             }
@@ -19650,28 +19792,28 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__DeleteReference__OpAssignment_0"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6899:1: rule__DeleteReference__OpAssignment_0 : ( ( 'deleteReference' ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6953:1: rule__DeleteReference__OpAssignment_0 : ( ( 'deleteReference' ) ) ;
     public final void rule__DeleteReference__OpAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6903:1: ( ( ( 'deleteReference' ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6904:1: ( ( 'deleteReference' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6957:1: ( ( ( 'deleteReference' ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6958:1: ( ( 'deleteReference' ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6904:1: ( ( 'deleteReference' ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6905:1: ( 'deleteReference' )
-            {
-            if ( state.backtracking==0 ) {
-               before(grammarAccess.getDeleteReferenceAccess().getOpDeleteReferenceKeyword_0_0()); 
-            }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6906:1: ( 'deleteReference' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6907:1: 'deleteReference'
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6958:1: ( ( 'deleteReference' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6959:1: ( 'deleteReference' )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getDeleteReferenceAccess().getOpDeleteReferenceKeyword_0_0()); 
             }
-            match(input,42,FOLLOW_42_in_rule__DeleteReference__OpAssignment_013938); if (state.failed) return ;
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6960:1: ( 'deleteReference' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6961:1: 'deleteReference'
+            {
+            if ( state.backtracking==0 ) {
+               before(grammarAccess.getDeleteReferenceAccess().getOpDeleteReferenceKeyword_0_0()); 
+            }
+            match(input,42,FOLLOW_42_in_rule__DeleteReference__OpAssignment_014043); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getDeleteReferenceAccess().getOpDeleteReferenceKeyword_0_0()); 
             }
@@ -19703,28 +19845,28 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__DeleteReference__RefAssignment_2"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6922:1: rule__DeleteReference__RefAssignment_2 : ( ( RULE_ID ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6976:1: rule__DeleteReference__RefAssignment_2 : ( ( RULE_ID ) ) ;
     public final void rule__DeleteReference__RefAssignment_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6926:1: ( ( ( RULE_ID ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6927:1: ( ( RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6980:1: ( ( ( RULE_ID ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6981:1: ( ( RULE_ID ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6927:1: ( ( RULE_ID ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6928:1: ( RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6981:1: ( ( RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6982:1: ( RULE_ID )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getDeleteReferenceAccess().getRefEReferenceCrossReference_2_0()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6929:1: ( RULE_ID )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6930:1: RULE_ID
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6983:1: ( RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6984:1: RULE_ID
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getDeleteReferenceAccess().getRefEReferenceIDTerminalRuleCall_2_0_1()); 
             }
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__DeleteReference__RefAssignment_213981); if (state.failed) return ;
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__DeleteReference__RefAssignment_214086); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getDeleteReferenceAccess().getRefEReferenceIDTerminalRuleCall_2_0_1()); 
             }
@@ -19756,22 +19898,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ComplexOperatorDef__NameAssignment_1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6941:1: rule__ComplexOperatorDef__NameAssignment_1 : ( RULE_ID ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6995:1: rule__ComplexOperatorDef__NameAssignment_1 : ( RULE_ID ) ;
     public final void rule__ComplexOperatorDef__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6945:1: ( ( RULE_ID ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6946:1: ( RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6999:1: ( ( RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7000:1: ( RULE_ID )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6946:1: ( RULE_ID )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6947:1: RULE_ID
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7000:1: ( RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7001:1: RULE_ID
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getComplexOperatorDefAccess().getNameIDTerminalRuleCall_1_0()); 
             }
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__ComplexOperatorDef__NameAssignment_114016); if (state.failed) return ;
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__ComplexOperatorDef__NameAssignment_114121); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getComplexOperatorDefAccess().getNameIDTerminalRuleCall_1_0()); 
             }
@@ -19797,22 +19939,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ComplexOperatorDef__ParamsAssignment_2_1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6956:1: rule__ComplexOperatorDef__ParamsAssignment_2_1 : ( ruleParameter ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7010:1: rule__ComplexOperatorDef__ParamsAssignment_2_1 : ( ruleParameter ) ;
     public final void rule__ComplexOperatorDef__ParamsAssignment_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6960:1: ( ( ruleParameter ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6961:1: ( ruleParameter )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7014:1: ( ( ruleParameter ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7015:1: ( ruleParameter )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6961:1: ( ruleParameter )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6962:1: ruleParameter
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7015:1: ( ruleParameter )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7016:1: ruleParameter
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getComplexOperatorDefAccess().getParamsParameterParserRuleCall_2_1_0()); 
             }
-            pushFollow(FOLLOW_ruleParameter_in_rule__ComplexOperatorDef__ParamsAssignment_2_114047);
+            pushFollow(FOLLOW_ruleParameter_in_rule__ComplexOperatorDef__ParamsAssignment_2_114152);
             ruleParameter();
 
             state._fsp--;
@@ -19842,22 +19984,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ComplexOperatorDef__ParamsAssignment_2_2_1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6971:1: rule__ComplexOperatorDef__ParamsAssignment_2_2_1 : ( ruleParameter ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7025:1: rule__ComplexOperatorDef__ParamsAssignment_2_2_1 : ( ruleParameter ) ;
     public final void rule__ComplexOperatorDef__ParamsAssignment_2_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6975:1: ( ( ruleParameter ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6976:1: ( ruleParameter )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7029:1: ( ( ruleParameter ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7030:1: ( ruleParameter )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6976:1: ( ruleParameter )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6977:1: ruleParameter
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7030:1: ( ruleParameter )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7031:1: ruleParameter
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getComplexOperatorDefAccess().getParamsParameterParserRuleCall_2_2_1_0()); 
             }
-            pushFollow(FOLLOW_ruleParameter_in_rule__ComplexOperatorDef__ParamsAssignment_2_2_114078);
+            pushFollow(FOLLOW_ruleParameter_in_rule__ComplexOperatorDef__ParamsAssignment_2_2_114183);
             ruleParameter();
 
             state._fsp--;
@@ -19887,22 +20029,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ComplexOperatorDef__PackageOperationsAssignment_4_0"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6986:1: rule__ComplexOperatorDef__PackageOperationsAssignment_4_0 : ( ruleEPackageOperation ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7040:1: rule__ComplexOperatorDef__PackageOperationsAssignment_4_0 : ( ruleEPackageOperation ) ;
     public final void rule__ComplexOperatorDef__PackageOperationsAssignment_4_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6990:1: ( ( ruleEPackageOperation ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6991:1: ( ruleEPackageOperation )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7044:1: ( ( ruleEPackageOperation ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7045:1: ( ruleEPackageOperation )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6991:1: ( ruleEPackageOperation )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:6992:1: ruleEPackageOperation
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7045:1: ( ruleEPackageOperation )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7046:1: ruleEPackageOperation
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getComplexOperatorDefAccess().getPackageOperationsEPackageOperationParserRuleCall_4_0_0()); 
             }
-            pushFollow(FOLLOW_ruleEPackageOperation_in_rule__ComplexOperatorDef__PackageOperationsAssignment_4_014109);
+            pushFollow(FOLLOW_ruleEPackageOperation_in_rule__ComplexOperatorDef__PackageOperationsAssignment_4_014214);
             ruleEPackageOperation();
 
             state._fsp--;
@@ -19932,22 +20074,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ComplexOperatorDef__ClassOperationsAssignment_4_1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7001:1: rule__ComplexOperatorDef__ClassOperationsAssignment_4_1 : ( ruleEClassOperation ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7055:1: rule__ComplexOperatorDef__ClassOperationsAssignment_4_1 : ( ruleEClassOperation ) ;
     public final void rule__ComplexOperatorDef__ClassOperationsAssignment_4_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7005:1: ( ( ruleEClassOperation ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7006:1: ( ruleEClassOperation )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7059:1: ( ( ruleEClassOperation ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7060:1: ( ruleEClassOperation )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7006:1: ( ruleEClassOperation )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7007:1: ruleEClassOperation
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7060:1: ( ruleEClassOperation )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7061:1: ruleEClassOperation
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getComplexOperatorDefAccess().getClassOperationsEClassOperationParserRuleCall_4_1_0()); 
             }
-            pushFollow(FOLLOW_ruleEClassOperation_in_rule__ComplexOperatorDef__ClassOperationsAssignment_4_114140);
+            pushFollow(FOLLOW_ruleEClassOperation_in_rule__ComplexOperatorDef__ClassOperationsAssignment_4_114245);
             ruleEClassOperation();
 
             state._fsp--;
@@ -19977,22 +20119,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ComplexOperatorDef__AttributeOperationsAssignment_4_2"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7016:1: rule__ComplexOperatorDef__AttributeOperationsAssignment_4_2 : ( ruleEAttributeOperation ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7070:1: rule__ComplexOperatorDef__AttributeOperationsAssignment_4_2 : ( ruleEAttributeOperation ) ;
     public final void rule__ComplexOperatorDef__AttributeOperationsAssignment_4_2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7020:1: ( ( ruleEAttributeOperation ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7021:1: ( ruleEAttributeOperation )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7074:1: ( ( ruleEAttributeOperation ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7075:1: ( ruleEAttributeOperation )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7021:1: ( ruleEAttributeOperation )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7022:1: ruleEAttributeOperation
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7075:1: ( ruleEAttributeOperation )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7076:1: ruleEAttributeOperation
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getComplexOperatorDefAccess().getAttributeOperationsEAttributeOperationParserRuleCall_4_2_0()); 
             }
-            pushFollow(FOLLOW_ruleEAttributeOperation_in_rule__ComplexOperatorDef__AttributeOperationsAssignment_4_214171);
+            pushFollow(FOLLOW_ruleEAttributeOperation_in_rule__ComplexOperatorDef__AttributeOperationsAssignment_4_214276);
             ruleEAttributeOperation();
 
             state._fsp--;
@@ -20022,22 +20164,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ComplexOperatorDef__ReferenceOperationsAssignment_4_3"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7031:1: rule__ComplexOperatorDef__ReferenceOperationsAssignment_4_3 : ( ruleEReferenceOperation ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7085:1: rule__ComplexOperatorDef__ReferenceOperationsAssignment_4_3 : ( ruleEReferenceOperation ) ;
     public final void rule__ComplexOperatorDef__ReferenceOperationsAssignment_4_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7035:1: ( ( ruleEReferenceOperation ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7036:1: ( ruleEReferenceOperation )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7089:1: ( ( ruleEReferenceOperation ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7090:1: ( ruleEReferenceOperation )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7036:1: ( ruleEReferenceOperation )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7037:1: ruleEReferenceOperation
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7090:1: ( ruleEReferenceOperation )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7091:1: ruleEReferenceOperation
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getComplexOperatorDefAccess().getReferenceOperationsEReferenceOperationParserRuleCall_4_3_0()); 
             }
-            pushFollow(FOLLOW_ruleEReferenceOperation_in_rule__ComplexOperatorDef__ReferenceOperationsAssignment_4_314202);
+            pushFollow(FOLLOW_ruleEReferenceOperation_in_rule__ComplexOperatorDef__ReferenceOperationsAssignment_4_314307);
             ruleEReferenceOperation();
 
             state._fsp--;
@@ -20067,28 +20209,28 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ComplexOperator__RefAssignment_0"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7046:1: rule__ComplexOperator__RefAssignment_0 : ( ( RULE_ID ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7100:1: rule__ComplexOperator__RefAssignment_0 : ( ( RULE_ID ) ) ;
     public final void rule__ComplexOperator__RefAssignment_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7050:1: ( ( ( RULE_ID ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7051:1: ( ( RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7104:1: ( ( ( RULE_ID ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7105:1: ( ( RULE_ID ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7051:1: ( ( RULE_ID ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7052:1: ( RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7105:1: ( ( RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7106:1: ( RULE_ID )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getComplexOperatorAccess().getRefComplexOperatorDefCrossReference_0_0()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7053:1: ( RULE_ID )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7054:1: RULE_ID
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7107:1: ( RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7108:1: RULE_ID
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getComplexOperatorAccess().getRefComplexOperatorDefIDTerminalRuleCall_0_0_1()); 
             }
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__ComplexOperator__RefAssignment_014237); if (state.failed) return ;
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__ComplexOperator__RefAssignment_014342); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getComplexOperatorAccess().getRefComplexOperatorDefIDTerminalRuleCall_0_0_1()); 
             }
@@ -20120,28 +20262,28 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ComplexOperator__ArgsAssignment_2_0"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7065:1: rule__ComplexOperator__ArgsAssignment_2_0 : ( ( RULE_ID ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7119:1: rule__ComplexOperator__ArgsAssignment_2_0 : ( ( RULE_ID ) ) ;
     public final void rule__ComplexOperator__ArgsAssignment_2_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7069:1: ( ( ( RULE_ID ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7070:1: ( ( RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7123:1: ( ( ( RULE_ID ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7124:1: ( ( RULE_ID ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7070:1: ( ( RULE_ID ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7071:1: ( RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7124:1: ( ( RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7125:1: ( RULE_ID )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getComplexOperatorAccess().getArgsEObjectCrossReference_2_0_0()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7072:1: ( RULE_ID )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7073:1: RULE_ID
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7126:1: ( RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7127:1: RULE_ID
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getComplexOperatorAccess().getArgsEObjectIDTerminalRuleCall_2_0_0_1()); 
             }
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__ComplexOperator__ArgsAssignment_2_014276); if (state.failed) return ;
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__ComplexOperator__ArgsAssignment_2_014381); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getComplexOperatorAccess().getArgsEObjectIDTerminalRuleCall_2_0_0_1()); 
             }
@@ -20173,22 +20315,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ComplexOperator__NewAssignment_2_1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7084:1: rule__ComplexOperator__NewAssignment_2_1 : ( RULE_STRING ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7138:1: rule__ComplexOperator__NewAssignment_2_1 : ( RULE_STRING ) ;
     public final void rule__ComplexOperator__NewAssignment_2_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7088:1: ( ( RULE_STRING ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7089:1: ( RULE_STRING )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7142:1: ( ( RULE_STRING ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7143:1: ( RULE_STRING )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7089:1: ( RULE_STRING )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7090:1: RULE_STRING
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7143:1: ( RULE_STRING )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7144:1: RULE_STRING
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getComplexOperatorAccess().getNewSTRINGTerminalRuleCall_2_1_0()); 
             }
-            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__ComplexOperator__NewAssignment_2_114311); if (state.failed) return ;
+            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__ComplexOperator__NewAssignment_2_114416); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getComplexOperatorAccess().getNewSTRINGTerminalRuleCall_2_1_0()); 
             }
@@ -20214,28 +20356,28 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ComplexOperator__ArgsAssignment_3_1_0"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7099:1: rule__ComplexOperator__ArgsAssignment_3_1_0 : ( ( RULE_ID ) ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7153:1: rule__ComplexOperator__ArgsAssignment_3_1_0 : ( ( RULE_ID ) ) ;
     public final void rule__ComplexOperator__ArgsAssignment_3_1_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7103:1: ( ( ( RULE_ID ) ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7104:1: ( ( RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7157:1: ( ( ( RULE_ID ) ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7158:1: ( ( RULE_ID ) )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7104:1: ( ( RULE_ID ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7105:1: ( RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7158:1: ( ( RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7159:1: ( RULE_ID )
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getComplexOperatorAccess().getArgsEObjectCrossReference_3_1_0_0()); 
             }
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7106:1: ( RULE_ID )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7107:1: RULE_ID
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7160:1: ( RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7161:1: RULE_ID
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getComplexOperatorAccess().getArgsEObjectIDTerminalRuleCall_3_1_0_0_1()); 
             }
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__ComplexOperator__ArgsAssignment_3_1_014346); if (state.failed) return ;
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__ComplexOperator__ArgsAssignment_3_1_014451); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getComplexOperatorAccess().getArgsEObjectIDTerminalRuleCall_3_1_0_0_1()); 
             }
@@ -20267,22 +20409,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__ComplexOperator__NewAssignment_3_1_1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7118:1: rule__ComplexOperator__NewAssignment_3_1_1 : ( RULE_STRING ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7172:1: rule__ComplexOperator__NewAssignment_3_1_1 : ( RULE_STRING ) ;
     public final void rule__ComplexOperator__NewAssignment_3_1_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7122:1: ( ( RULE_STRING ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7123:1: ( RULE_STRING )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7176:1: ( ( RULE_STRING ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7177:1: ( RULE_STRING )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7123:1: ( RULE_STRING )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7124:1: RULE_STRING
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7177:1: ( RULE_STRING )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7178:1: RULE_STRING
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getComplexOperatorAccess().getNewSTRINGTerminalRuleCall_3_1_1_0()); 
             }
-            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__ComplexOperator__NewAssignment_3_1_114381); if (state.failed) return ;
+            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__ComplexOperator__NewAssignment_3_1_114486); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getComplexOperatorAccess().getNewSTRINGTerminalRuleCall_3_1_1_0()); 
             }
@@ -20308,22 +20450,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Attribute__NameAssignment_1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7133:1: rule__Attribute__NameAssignment_1 : ( RULE_ID ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7187:1: rule__Attribute__NameAssignment_1 : ( RULE_ID ) ;
     public final void rule__Attribute__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7137:1: ( ( RULE_ID ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7138:1: ( RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7191:1: ( ( RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7192:1: ( RULE_ID )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7138:1: ( RULE_ID )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7139:1: RULE_ID
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7192:1: ( RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7193:1: RULE_ID
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getAttributeAccess().getNameIDTerminalRuleCall_1_0()); 
             }
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Attribute__NameAssignment_114412); if (state.failed) return ;
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Attribute__NameAssignment_114517); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getAttributeAccess().getNameIDTerminalRuleCall_1_0()); 
             }
@@ -20349,22 +20491,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__Reference__NameAssignment_1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7148:1: rule__Reference__NameAssignment_1 : ( RULE_ID ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7202:1: rule__Reference__NameAssignment_1 : ( RULE_ID ) ;
     public final void rule__Reference__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7152:1: ( ( RULE_ID ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7153:1: ( RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7206:1: ( ( RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7207:1: ( RULE_ID )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7153:1: ( RULE_ID )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7154:1: RULE_ID
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7207:1: ( RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7208:1: RULE_ID
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getReferenceAccess().getNameIDTerminalRuleCall_1_0()); 
             }
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Reference__NameAssignment_114443); if (state.failed) return ;
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__Reference__NameAssignment_114548); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getReferenceAccess().getNameIDTerminalRuleCall_1_0()); 
             }
@@ -20390,22 +20532,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__BooleanDef__NameAssignment_1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7163:1: rule__BooleanDef__NameAssignment_1 : ( RULE_ID ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7217:1: rule__BooleanDef__NameAssignment_1 : ( RULE_ID ) ;
     public final void rule__BooleanDef__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7167:1: ( ( RULE_ID ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7168:1: ( RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7221:1: ( ( RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7222:1: ( RULE_ID )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7168:1: ( RULE_ID )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7169:1: RULE_ID
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7222:1: ( RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7223:1: RULE_ID
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getBooleanDefAccess().getNameIDTerminalRuleCall_1_0()); 
             }
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__BooleanDef__NameAssignment_114474); if (state.failed) return ;
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__BooleanDef__NameAssignment_114579); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getBooleanDefAccess().getNameIDTerminalRuleCall_1_0()); 
             }
@@ -20431,22 +20573,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__StringDef__NameAssignment"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7178:1: rule__StringDef__NameAssignment : ( RULE_ID ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7232:1: rule__StringDef__NameAssignment : ( RULE_ID ) ;
     public final void rule__StringDef__NameAssignment() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7182:1: ( ( RULE_ID ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7183:1: ( RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7236:1: ( ( RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7237:1: ( RULE_ID )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7183:1: ( RULE_ID )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7184:1: RULE_ID
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7237:1: ( RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7238:1: RULE_ID
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getStringDefAccess().getNameIDTerminalRuleCall_0()); 
             }
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__StringDef__NameAssignment14505); if (state.failed) return ;
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__StringDef__NameAssignment14610); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getStringDefAccess().getNameIDTerminalRuleCall_0()); 
             }
@@ -20472,22 +20614,22 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
 
     // $ANTLR start "rule__IntDef__NameAssignment_1"
-    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7193:1: rule__IntDef__NameAssignment_1 : ( RULE_ID ) ;
+    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7247:1: rule__IntDef__NameAssignment_1 : ( RULE_ID ) ;
     public final void rule__IntDef__NameAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7197:1: ( ( RULE_ID ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7198:1: ( RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7251:1: ( ( RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7252:1: ( RULE_ID )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7198:1: ( RULE_ID )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7199:1: RULE_ID
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7252:1: ( RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7253:1: RULE_ID
             {
             if ( state.backtracking==0 ) {
                before(grammarAccess.getIntDefAccess().getNameIDTerminalRuleCall_1_0()); 
             }
-            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__IntDef__NameAssignment_114536); if (state.failed) return ;
+            match(input,RULE_ID,FOLLOW_RULE_ID_in_rule__IntDef__NameAssignment_114641); if (state.failed) return ;
             if ( state.backtracking==0 ) {
                after(grammarAccess.getIntDefAccess().getNameIDTerminalRuleCall_1_0()); 
             }
@@ -20655,26 +20797,26 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
     static final String DFA9_eofS =
         "\15\uffff";
     static final String DFA9_minS =
-        "\1\6\2\uffff\1\22\1\uffff\1\6\2\23\1\6\1\31\2\23\1\0";
+        "\1\6\2\uffff\1\22\1\uffff\1\6\2\23\1\6\1\30\2\23\1\0";
     static final String DFA9_maxS =
-        "\1\52\2\uffff\1\22\1\uffff\3\32\1\7\1\31\2\32\1\0";
+        "\1\52\2\uffff\1\22\1\uffff\3\31\1\7\1\30\2\31\1\0";
     static final String DFA9_acceptS =
         "\1\uffff\1\1\1\2\1\uffff\1\3\10\uffff";
     static final String DFA9_specialS =
         "\14\uffff\1\0}>";
     static final String[] DFA9_transitionS = {
-            "\1\3\20\uffff\1\1\3\uffff\1\2\1\4\10\uffff\3\2\3\4",
+            "\1\3\20\uffff\1\1\2\uffff\1\2\1\4\11\uffff\3\2\3\4",
             "",
             "",
             "\1\5",
             "",
-            "\1\6\1\7\13\uffff\1\11\6\uffff\1\10",
-            "\1\11\6\uffff\1\10",
-            "\1\11\6\uffff\1\10",
+            "\1\6\1\7\13\uffff\1\11\5\uffff\1\10",
+            "\1\11\5\uffff\1\10",
+            "\1\11\5\uffff\1\10",
             "\1\12\1\13",
             "\1\14",
-            "\1\11\6\uffff\1\10",
-            "\1\11\6\uffff\1\10",
+            "\1\11\5\uffff\1\10",
+            "\1\11\5\uffff\1\10",
             "\1\uffff"
     };
 
@@ -20742,28 +20884,28 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
     static final String DFA20_eofS =
         "\16\uffff";
     static final String DFA20_minS =
-        "\1\6\1\uffff\1\22\3\uffff\1\6\2\23\1\6\1\31\2\23\1\0";
+        "\1\6\1\uffff\1\22\3\uffff\1\6\2\23\1\6\1\30\2\23\1\0";
     static final String DFA20_maxS =
-        "\1\52\1\uffff\1\22\3\uffff\3\32\1\7\1\31\2\32\1\0";
+        "\1\52\1\uffff\1\22\3\uffff\3\31\1\7\1\30\2\31\1\0";
     static final String DFA20_acceptS =
         "\1\uffff\1\1\1\uffff\1\2\1\3\1\4\10\uffff";
     static final String DFA20_specialS =
         "\15\uffff\1\0}>";
     static final String[] DFA20_transitionS = {
-            "\1\2\6\uffff\1\1\3\uffff\1\1\2\uffff\2\1\1\3\4\uffff\1\4\1\5"+
-            "\5\uffff\3\3\3\4\3\5",
+            "\1\2\6\uffff\1\1\3\uffff\1\1\2\uffff\2\1\1\3\3\uffff\1\4\1\5"+
+            "\5\uffff\3\3\1\uffff\3\4\3\5",
             "",
             "\1\6",
             "",
             "",
             "",
-            "\1\7\1\10\13\uffff\1\12\6\uffff\1\11",
-            "\1\12\6\uffff\1\11",
-            "\1\12\6\uffff\1\11",
+            "\1\7\1\10\13\uffff\1\12\5\uffff\1\11",
+            "\1\12\5\uffff\1\11",
+            "\1\12\5\uffff\1\11",
             "\1\13\1\14",
             "\1\15",
-            "\1\12\6\uffff\1\11",
-            "\1\12\6\uffff\1\11",
+            "\1\12\5\uffff\1\11",
+            "\1\12\5\uffff\1\11",
             "\1\uffff"
     };
 
@@ -20833,17 +20975,17 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
     static final String DFA23_eofS =
         "\12\uffff";
     static final String DFA23_minS =
-        "\1\6\1\36\1\15\7\uffff";
+        "\1\6\1\35\1\15\7\uffff";
     static final String DFA23_maxS =
-        "\1\6\1\36\1\41\7\uffff";
+        "\1\6\1\35\1\40\7\uffff";
     static final String DFA23_acceptS =
-        "\3\uffff\1\3\1\4\1\5\1\2\1\6\1\1\1\7";
+        "\3\uffff\1\4\1\6\1\7\1\2\1\3\1\5\1\1";
     static final String DFA23_specialS =
         "\12\uffff}>";
     static final String[] DFA23_transitionS = {
             "\1\1",
             "\1\2",
-            "\1\3\10\uffff\1\10\4\uffff\1\4\1\6\2\uffff\1\5\1\7\1\11",
+            "\1\7\10\uffff\1\11\3\uffff\1\3\1\6\2\uffff\1\10\1\4\1\5",
             "",
             "",
             "",
@@ -20890,7 +21032,7 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
 
     public static final BitSet FOLLOW_ruleModel_in_entryRuleModel67 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRuleModel74 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Model__PackagesAssignment_in_ruleModel100 = new BitSet(new long[]{0x0000000020322042L});
+    public static final BitSet FOLLOW_rule__Model__PackagesAssignment_in_ruleModel100 = new BitSet(new long[]{0x0000000010322042L});
     public static final BitSet FOLLOW_ruleEPackageOperation_in_entryRuleEPackageOperation128 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRuleEPackageOperation135 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__EPackageOperation__Group__0_in_ruleEPackageOperation161 = new BitSet(new long[]{0x0000000000000002L});
@@ -21048,12 +21190,12 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
     public static final BitSet FOLLOW_rule__EPackageOperation__Group_1_0__0__Impl_in_rule__EPackageOperation__Group_1_0__03475 = new BitSet(new long[]{0x0000000000008000L});
     public static final BitSet FOLLOW_rule__EPackageOperation__Group_1_0__1_in_rule__EPackageOperation__Group_1_0__03478 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__EPackageOperation__OpAssignment_1_0_0_in_rule__EPackageOperation__Group_1_0__0__Impl3505 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EPackageOperation__Group_1_0__1__Impl_in_rule__EPackageOperation__Group_1_0__13535 = new BitSet(new long[]{0x0000001C00C10000L});
+    public static final BitSet FOLLOW_rule__EPackageOperation__Group_1_0__1__Impl_in_rule__EPackageOperation__Group_1_0__13535 = new BitSet(new long[]{0x0000000E00C10000L});
     public static final BitSet FOLLOW_rule__EPackageOperation__Group_1_0__2_in_rule__EPackageOperation__Group_1_0__13538 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_15_in_rule__EPackageOperation__Group_1_0__1__Impl3566 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EPackageOperation__Group_1_0__2__Impl_in_rule__EPackageOperation__Group_1_0__23597 = new BitSet(new long[]{0x0000001C00C10000L});
+    public static final BitSet FOLLOW_rule__EPackageOperation__Group_1_0__2__Impl_in_rule__EPackageOperation__Group_1_0__23597 = new BitSet(new long[]{0x0000000E00C10000L});
     public static final BitSet FOLLOW_rule__EPackageOperation__Group_1_0__3_in_rule__EPackageOperation__Group_1_0__23600 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EPackageOperation__Alternatives_1_0_2_in_rule__EPackageOperation__Group_1_0__2__Impl3627 = new BitSet(new long[]{0x0000001C00C00002L});
+    public static final BitSet FOLLOW_rule__EPackageOperation__Alternatives_1_0_2_in_rule__EPackageOperation__Group_1_0__2__Impl3627 = new BitSet(new long[]{0x0000000E00C00002L});
     public static final BitSet FOLLOW_rule__EPackageOperation__Group_1_0__3__Impl_in_rule__EPackageOperation__Group_1_0__33658 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_16_in_rule__EPackageOperation__Group_1_0__3__Impl3686 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__DeletePackage__Group__0__Impl_in_rule__DeletePackage__Group__03725 = new BitSet(new long[]{0x0000000000040000L});
@@ -21093,7 +21235,7 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
     public static final BitSet FOLLOW_rule__Package__Group__1_in_rule__Package__Group__04481 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__Package__Group__1__Impl_in_rule__Package__Group__14539 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__Package__NameAssignment_1_in_rule__Package__Group__1__Impl4566 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EClassOperation__Group__0__Impl_in_rule__EClassOperation__Group__04600 = new BitSet(new long[]{0x0000001C00C00000L});
+    public static final BitSet FOLLOW_rule__EClassOperation__Group__0__Impl_in_rule__EClassOperation__Group__04600 = new BitSet(new long[]{0x0000000E00C00000L});
     public static final BitSet FOLLOW_rule__EClassOperation__Group__1_in_rule__EClassOperation__Group__04603 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__EClassOperation__Group_0__0_in_rule__EClassOperation__Group__0__Impl4630 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__EClassOperation__Group__1__Impl_in_rule__EClassOperation__Group__14661 = new BitSet(new long[]{0x0000000000000002L});
@@ -21111,375 +21253,378 @@ public class InternalEDeltaLangParser extends AbstractInternalContentAssistParse
     public static final BitSet FOLLOW_rule__EClassOperation__Alternatives_1_0_in_rule__EClassOperation__Group_1__0__Impl4939 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__EClassOperation__Group_1__1__Impl_in_rule__EClassOperation__Group_1__14969 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__EClassOperation__Alternatives_1_1_in_rule__EClassOperation__Group_1__1__Impl4996 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EClassOperation__Group_1_1_0__0__Impl_in_rule__EClassOperation__Group_1_1_0__05030 = new BitSet(new long[]{0x000007E018B32040L});
+    public static final BitSet FOLLOW_rule__EClassOperation__Group_1_1_0__0__Impl_in_rule__EClassOperation__Group_1_1_0__05030 = new BitSet(new long[]{0x000007E00CB32040L});
     public static final BitSet FOLLOW_rule__EClassOperation__Group_1_1_0__1_in_rule__EClassOperation__Group_1_1_0__05033 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_15_in_rule__EClassOperation__Group_1_1_0__0__Impl5061 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EClassOperation__Group_1_1_0__1__Impl_in_rule__EClassOperation__Group_1_1_0__15092 = new BitSet(new long[]{0x000007E018B32040L});
+    public static final BitSet FOLLOW_rule__EClassOperation__Group_1_1_0__1__Impl_in_rule__EClassOperation__Group_1_1_0__15092 = new BitSet(new long[]{0x000007E00CB32040L});
     public static final BitSet FOLLOW_rule__EClassOperation__Group_1_1_0__2_in_rule__EClassOperation__Group_1_1_0__15095 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EClassOperation__Alternatives_1_1_0_1_in_rule__EClassOperation__Group_1_1_0__1__Impl5122 = new BitSet(new long[]{0x000007E018B22042L});
+    public static final BitSet FOLLOW_rule__EClassOperation__Alternatives_1_1_0_1_in_rule__EClassOperation__Group_1_1_0__1__Impl5122 = new BitSet(new long[]{0x000007E00CB22042L});
     public static final BitSet FOLLOW_rule__EClassOperation__Group_1_1_0__2__Impl_in_rule__EClassOperation__Group_1_1_0__25153 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_16_in_rule__EClassOperation__Group_1_1_0__2__Impl5181 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ChangeClass__Group__0__Impl_in_rule__ChangeClass__Group__05218 = new BitSet(new long[]{0x0000000000000040L});
+    public static final BitSet FOLLOW_rule__ChangeClass__Group__0__Impl_in_rule__ChangeClass__Group__05218 = new BitSet(new long[]{0x0000000200000000L});
     public static final BitSet FOLLOW_rule__ChangeClass__Group__1_in_rule__ChangeClass__Group__05221 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ChangeClass__OpAssignment_0_in_rule__ChangeClass__Group__0__Impl5248 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ChangeClass__Group__1__Impl_in_rule__ChangeClass__Group__15278 = new BitSet(new long[]{0x0000000000080000L});
-    public static final BitSet FOLLOW_rule__ChangeClass__Group__2_in_rule__ChangeClass__Group__15281 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ChangeClass__RefAssignment_1_in_rule__ChangeClass__Group__1__Impl5308 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ChangeClass__Group__2__Impl_in_rule__ChangeClass__Group__25338 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_19_in_rule__ChangeClass__Group__2__Impl5366 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__AddClass__Group__0__Impl_in_rule__AddClass__Group__05403 = new BitSet(new long[]{0x00000000000000C0L});
-    public static final BitSet FOLLOW_rule__AddClass__Group__1_in_rule__AddClass__Group__05406 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__AddClass__OpAssignment_0_in_rule__AddClass__Group__0__Impl5433 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__AddClass__Group__1__Impl_in_rule__AddClass__Group__15463 = new BitSet(new long[]{0x0000000000080000L});
-    public static final BitSet FOLLOW_rule__AddClass__Group__2_in_rule__AddClass__Group__15466 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__AddClass__Alternatives_1_in_rule__AddClass__Group__1__Impl5493 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__AddClass__Group__2__Impl_in_rule__AddClass__Group__25523 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_19_in_rule__AddClass__Group__2__Impl5551 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__DeleteClass__Group__0__Impl_in_rule__DeleteClass__Group__05588 = new BitSet(new long[]{0x0000000000000040L});
-    public static final BitSet FOLLOW_rule__DeleteClass__Group__1_in_rule__DeleteClass__Group__05591 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__DeleteClass__OpAssignment_0_in_rule__DeleteClass__Group__0__Impl5618 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__DeleteClass__Group__1__Impl_in_rule__DeleteClass__Group__15648 = new BitSet(new long[]{0x0000000000080000L});
-    public static final BitSet FOLLOW_rule__DeleteClass__Group__2_in_rule__DeleteClass__Group__15651 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__DeleteClass__RefAssignment_1_in_rule__DeleteClass__Group__1__Impl5678 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__DeleteClass__Group__2__Impl_in_rule__DeleteClass__Group__25708 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_19_in_rule__DeleteClass__Group__2__Impl5736 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Class__Group__0__Impl_in_rule__Class__Group__05773 = new BitSet(new long[]{0x0000000000000040L});
-    public static final BitSet FOLLOW_rule__Class__Group__1_in_rule__Class__Group__05776 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Class__Group__1__Impl_in_rule__Class__Group__15834 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Class__NameAssignment_1_in_rule__Class__Group__1__Impl5861 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Setter__Group__0__Impl_in_rule__Setter__Group__05895 = new BitSet(new long[]{0x0000000000000040L});
-    public static final BitSet FOLLOW_rule__Setter__Group__1_in_rule__Setter__Group__05898 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_23_in_rule__Setter__Group__0__Impl5926 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Setter__Group__1__Impl_in_rule__Setter__Group__15957 = new BitSet(new long[]{0x0000000001000000L});
-    public static final BitSet FOLLOW_rule__Setter__Group__2_in_rule__Setter__Group__15960 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Setter__MetafeatureAssignment_1_in_rule__Setter__Group__1__Impl5987 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Setter__Group__2__Impl_in_rule__Setter__Group__26017 = new BitSet(new long[]{0x00000000000010F0L});
-    public static final BitSet FOLLOW_rule__Setter__Group__3_in_rule__Setter__Group__26020 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_24_in_rule__Setter__Group__2__Impl6048 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Setter__Group__3__Impl_in_rule__Setter__Group__36079 = new BitSet(new long[]{0x0000000006000000L});
-    public static final BitSet FOLLOW_rule__Setter__Group__4_in_rule__Setter__Group__36082 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Setter__Alternatives_3_in_rule__Setter__Group__3__Impl6109 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Setter__Group__4__Impl_in_rule__Setter__Group__46139 = new BitSet(new long[]{0x0000000006000000L});
-    public static final BitSet FOLLOW_rule__Setter__Group__5_in_rule__Setter__Group__46142 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Setter__Group_4__0_in_rule__Setter__Group__4__Impl6169 = new BitSet(new long[]{0x0000000004000002L});
-    public static final BitSet FOLLOW_rule__Setter__Group__5__Impl_in_rule__Setter__Group__56200 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_25_in_rule__Setter__Group__5__Impl6228 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Setter__Group_4__0__Impl_in_rule__Setter__Group_4__06271 = new BitSet(new long[]{0x0000000000000040L});
-    public static final BitSet FOLLOW_rule__Setter__Group_4__1_in_rule__Setter__Group_4__06274 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_26_in_rule__Setter__Group_4__0__Impl6302 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Setter__Group_4__1__Impl_in_rule__Setter__Group_4__16333 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Setter__ValueRefAssignment_4_1_in_rule__Setter__Group_4__1__Impl6360 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EAttributeOperation__Group__0__Impl_in_rule__EAttributeOperation__Group__06394 = new BitSet(new long[]{0x000000E008322040L});
-    public static final BitSet FOLLOW_rule__EAttributeOperation__Group__1_in_rule__EAttributeOperation__Group__06397 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EAttributeOperation__Group_0__0_in_rule__EAttributeOperation__Group__0__Impl6424 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EAttributeOperation__Group__1__Impl_in_rule__EAttributeOperation__Group__16455 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EAttributeOperation__Alternatives_1_in_rule__EAttributeOperation__Group__1__Impl6482 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EAttributeOperation__Group_0__0__Impl_in_rule__EAttributeOperation__Group_0__06516 = new BitSet(new long[]{0x0000000000000040L});
-    public static final BitSet FOLLOW_rule__EAttributeOperation__Group_0__1_in_rule__EAttributeOperation__Group_0__06519 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_27_in_rule__EAttributeOperation__Group_0__0__Impl6547 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EAttributeOperation__Group_0__1__Impl_in_rule__EAttributeOperation__Group_0__16578 = new BitSet(new long[]{0x0000000000004000L});
-    public static final BitSet FOLLOW_rule__EAttributeOperation__Group_0__2_in_rule__EAttributeOperation__Group_0__16581 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EAttributeOperation__VarAssignment_0_1_in_rule__EAttributeOperation__Group_0__1__Impl6608 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EAttributeOperation__Group_0__2__Impl_in_rule__EAttributeOperation__Group_0__26638 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_14_in_rule__EAttributeOperation__Group_0__2__Impl6666 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EAttributeOperation__Group_1_0__0__Impl_in_rule__EAttributeOperation__Group_1_0__06703 = new BitSet(new long[]{0x0000000000008000L});
-    public static final BitSet FOLLOW_rule__EAttributeOperation__Group_1_0__1_in_rule__EAttributeOperation__Group_1_0__06706 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EAttributeOperation__Alternatives_1_0_0_in_rule__EAttributeOperation__Group_1_0__0__Impl6733 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EAttributeOperation__Group_1_0__1__Impl_in_rule__EAttributeOperation__Group_1_0__16763 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EAttributeOperation__Group_1_0_1__0_in_rule__EAttributeOperation__Group_1_0__1__Impl6790 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EAttributeOperation__Group_1_0_1__0__Impl_in_rule__EAttributeOperation__Group_1_0_1__06824 = new BitSet(new long[]{0x0000000000810000L});
-    public static final BitSet FOLLOW_rule__EAttributeOperation__Group_1_0_1__1_in_rule__EAttributeOperation__Group_1_0_1__06827 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_15_in_rule__EAttributeOperation__Group_1_0_1__0__Impl6855 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EAttributeOperation__Group_1_0_1__1__Impl_in_rule__EAttributeOperation__Group_1_0_1__16886 = new BitSet(new long[]{0x0000000000810000L});
-    public static final BitSet FOLLOW_rule__EAttributeOperation__Group_1_0_1__2_in_rule__EAttributeOperation__Group_1_0_1__16889 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EAttributeOperation__SettersAssignment_1_0_1_1_in_rule__EAttributeOperation__Group_1_0_1__1__Impl6916 = new BitSet(new long[]{0x0000000000800002L});
-    public static final BitSet FOLLOW_rule__EAttributeOperation__Group_1_0_1__2__Impl_in_rule__EAttributeOperation__Group_1_0_1__26947 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_16_in_rule__EAttributeOperation__Group_1_0_1__2__Impl6975 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ChangeAttribute__Group__0__Impl_in_rule__ChangeAttribute__Group__07012 = new BitSet(new long[]{0x0000000000000040L});
-    public static final BitSet FOLLOW_rule__ChangeAttribute__Group__1_in_rule__ChangeAttribute__Group__07015 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ChangeAttribute__OpAssignment_0_in_rule__ChangeAttribute__Group__0__Impl7042 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ChangeAttribute__Group__1__Impl_in_rule__ChangeAttribute__Group__17072 = new BitSet(new long[]{0x0000000000080000L});
-    public static final BitSet FOLLOW_rule__ChangeAttribute__Group__2_in_rule__ChangeAttribute__Group__17075 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ChangeAttribute__RefAssignment_1_in_rule__ChangeAttribute__Group__1__Impl7102 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ChangeAttribute__Group__2__Impl_in_rule__ChangeAttribute__Group__27132 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_19_in_rule__ChangeAttribute__Group__2__Impl7160 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__AddAttribute__Group__0__Impl_in_rule__AddAttribute__Group__07197 = new BitSet(new long[]{0x00000000000000C0L});
-    public static final BitSet FOLLOW_rule__AddAttribute__Group__1_in_rule__AddAttribute__Group__07200 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__AddAttribute__OpAssignment_0_in_rule__AddAttribute__Group__0__Impl7227 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__AddAttribute__Group__1__Impl_in_rule__AddAttribute__Group__17257 = new BitSet(new long[]{0x0000000000080000L});
-    public static final BitSet FOLLOW_rule__AddAttribute__Group__2_in_rule__AddAttribute__Group__17260 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__AddAttribute__Alternatives_1_in_rule__AddAttribute__Group__1__Impl7287 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__AddAttribute__Group__2__Impl_in_rule__AddAttribute__Group__27317 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_19_in_rule__AddAttribute__Group__2__Impl7345 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__DeleteAttribute__Group__0__Impl_in_rule__DeleteAttribute__Group__07382 = new BitSet(new long[]{0x0000000000000040L});
-    public static final BitSet FOLLOW_rule__DeleteAttribute__Group__1_in_rule__DeleteAttribute__Group__07385 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__DeleteAttribute__OpAssignment_0_in_rule__DeleteAttribute__Group__0__Impl7412 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__DeleteAttribute__Group__1__Impl_in_rule__DeleteAttribute__Group__17442 = new BitSet(new long[]{0x0000000000080000L});
-    public static final BitSet FOLLOW_rule__DeleteAttribute__Group__2_in_rule__DeleteAttribute__Group__17445 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__DeleteAttribute__RefAssignment_1_in_rule__DeleteAttribute__Group__1__Impl7472 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__DeleteAttribute__Group__2__Impl_in_rule__DeleteAttribute__Group__27502 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_19_in_rule__DeleteAttribute__Group__2__Impl7530 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EReferenceOperation__Group__0__Impl_in_rule__EReferenceOperation__Group__07567 = new BitSet(new long[]{0x000007E018B22040L});
-    public static final BitSet FOLLOW_rule__EReferenceOperation__Group__1_in_rule__EReferenceOperation__Group__07570 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EReferenceOperation__Group_0__0_in_rule__EReferenceOperation__Group__0__Impl7597 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EReferenceOperation__Group__1__Impl_in_rule__EReferenceOperation__Group__17628 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EReferenceOperation__Alternatives_1_in_rule__EReferenceOperation__Group__1__Impl7655 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EReferenceOperation__Group_0__0__Impl_in_rule__EReferenceOperation__Group_0__07689 = new BitSet(new long[]{0x0000000000000040L});
-    public static final BitSet FOLLOW_rule__EReferenceOperation__Group_0__1_in_rule__EReferenceOperation__Group_0__07692 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_28_in_rule__EReferenceOperation__Group_0__0__Impl7720 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EReferenceOperation__Group_0__1__Impl_in_rule__EReferenceOperation__Group_0__17751 = new BitSet(new long[]{0x0000000000004000L});
-    public static final BitSet FOLLOW_rule__EReferenceOperation__Group_0__2_in_rule__EReferenceOperation__Group_0__17754 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EReferenceOperation__VarAssignment_0_1_in_rule__EReferenceOperation__Group_0__1__Impl7781 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EReferenceOperation__Group_0__2__Impl_in_rule__EReferenceOperation__Group_0__27811 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_14_in_rule__EReferenceOperation__Group_0__2__Impl7839 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EReferenceOperation__Group_1_0__0__Impl_in_rule__EReferenceOperation__Group_1_0__07876 = new BitSet(new long[]{0x0000000000008000L});
-    public static final BitSet FOLLOW_rule__EReferenceOperation__Group_1_0__1_in_rule__EReferenceOperation__Group_1_0__07879 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EReferenceOperation__Alternatives_1_0_0_in_rule__EReferenceOperation__Group_1_0__0__Impl7906 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EReferenceOperation__Group_1_0__1__Impl_in_rule__EReferenceOperation__Group_1_0__17936 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EReferenceOperation__Group_1_0_1__0_in_rule__EReferenceOperation__Group_1_0__1__Impl7963 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EReferenceOperation__Group_1_0_1__0__Impl_in_rule__EReferenceOperation__Group_1_0_1__07997 = new BitSet(new long[]{0x0000000000810000L});
-    public static final BitSet FOLLOW_rule__EReferenceOperation__Group_1_0_1__1_in_rule__EReferenceOperation__Group_1_0_1__08000 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_15_in_rule__EReferenceOperation__Group_1_0_1__0__Impl8028 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EReferenceOperation__Group_1_0_1__1__Impl_in_rule__EReferenceOperation__Group_1_0_1__18059 = new BitSet(new long[]{0x0000000000810000L});
-    public static final BitSet FOLLOW_rule__EReferenceOperation__Group_1_0_1__2_in_rule__EReferenceOperation__Group_1_0_1__18062 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EReferenceOperation__SettersAssignment_1_0_1_1_in_rule__EReferenceOperation__Group_1_0_1__1__Impl8089 = new BitSet(new long[]{0x0000000000800002L});
-    public static final BitSet FOLLOW_rule__EReferenceOperation__Group_1_0_1__2__Impl_in_rule__EReferenceOperation__Group_1_0_1__28120 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_16_in_rule__EReferenceOperation__Group_1_0_1__2__Impl8148 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ChangeReference__Group__0__Impl_in_rule__ChangeReference__Group__08185 = new BitSet(new long[]{0x0000000000040000L});
-    public static final BitSet FOLLOW_rule__ChangeReference__Group__1_in_rule__ChangeReference__Group__08188 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ChangeReference__OpAssignment_0_in_rule__ChangeReference__Group__0__Impl8215 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ChangeReference__Group__1__Impl_in_rule__ChangeReference__Group__18245 = new BitSet(new long[]{0x0000000000000040L});
-    public static final BitSet FOLLOW_rule__ChangeReference__Group__2_in_rule__ChangeReference__Group__18248 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_18_in_rule__ChangeReference__Group__1__Impl8276 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ChangeReference__Group__2__Impl_in_rule__ChangeReference__Group__28307 = new BitSet(new long[]{0x0000000000080000L});
-    public static final BitSet FOLLOW_rule__ChangeReference__Group__3_in_rule__ChangeReference__Group__28310 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ChangeReference__RefAssignment_2_in_rule__ChangeReference__Group__2__Impl8337 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ChangeReference__Group__3__Impl_in_rule__ChangeReference__Group__38367 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_19_in_rule__ChangeReference__Group__3__Impl8395 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__AddReference__Group__0__Impl_in_rule__AddReference__Group__08434 = new BitSet(new long[]{0x0000000000040000L});
-    public static final BitSet FOLLOW_rule__AddReference__Group__1_in_rule__AddReference__Group__08437 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__AddReference__OpAssignment_0_in_rule__AddReference__Group__0__Impl8464 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__AddReference__Group__1__Impl_in_rule__AddReference__Group__18494 = new BitSet(new long[]{0x00000000000000C0L});
-    public static final BitSet FOLLOW_rule__AddReference__Group__2_in_rule__AddReference__Group__18497 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_18_in_rule__AddReference__Group__1__Impl8525 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__AddReference__Group__2__Impl_in_rule__AddReference__Group__28556 = new BitSet(new long[]{0x0000000000080000L});
-    public static final BitSet FOLLOW_rule__AddReference__Group__3_in_rule__AddReference__Group__28559 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__AddReference__Alternatives_2_in_rule__AddReference__Group__2__Impl8586 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__AddReference__Group__3__Impl_in_rule__AddReference__Group__38616 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_19_in_rule__AddReference__Group__3__Impl8644 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__DeleteReference__Group__0__Impl_in_rule__DeleteReference__Group__08683 = new BitSet(new long[]{0x0000000000040000L});
-    public static final BitSet FOLLOW_rule__DeleteReference__Group__1_in_rule__DeleteReference__Group__08686 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__DeleteReference__OpAssignment_0_in_rule__DeleteReference__Group__0__Impl8713 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__DeleteReference__Group__1__Impl_in_rule__DeleteReference__Group__18743 = new BitSet(new long[]{0x0000000000000040L});
-    public static final BitSet FOLLOW_rule__DeleteReference__Group__2_in_rule__DeleteReference__Group__18746 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_18_in_rule__DeleteReference__Group__1__Impl8774 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__DeleteReference__Group__2__Impl_in_rule__DeleteReference__Group__28805 = new BitSet(new long[]{0x0000000000080000L});
-    public static final BitSet FOLLOW_rule__DeleteReference__Group__3_in_rule__DeleteReference__Group__28808 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__DeleteReference__RefAssignment_2_in_rule__DeleteReference__Group__2__Impl8835 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__DeleteReference__Group__3__Impl_in_rule__DeleteReference__Group__38865 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_19_in_rule__DeleteReference__Group__3__Impl8893 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ComplexOperatorDef__Group__0__Impl_in_rule__ComplexOperatorDef__Group__08932 = new BitSet(new long[]{0x0000000000000040L});
-    public static final BitSet FOLLOW_rule__ComplexOperatorDef__Group__1_in_rule__ComplexOperatorDef__Group__08935 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_29_in_rule__ComplexOperatorDef__Group__0__Impl8963 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ComplexOperatorDef__Group__1__Impl_in_rule__ComplexOperatorDef__Group__18994 = new BitSet(new long[]{0x0000000000040000L});
-    public static final BitSet FOLLOW_rule__ComplexOperatorDef__Group__2_in_rule__ComplexOperatorDef__Group__18997 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ComplexOperatorDef__NameAssignment_1_in_rule__ComplexOperatorDef__Group__1__Impl9024 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ComplexOperatorDef__Group__2__Impl_in_rule__ComplexOperatorDef__Group__29054 = new BitSet(new long[]{0x0000000000008000L});
-    public static final BitSet FOLLOW_rule__ComplexOperatorDef__Group__3_in_rule__ComplexOperatorDef__Group__29057 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ComplexOperatorDef__Group_2__0_in_rule__ComplexOperatorDef__Group__2__Impl9084 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ComplexOperatorDef__Group__3__Impl_in_rule__ComplexOperatorDef__Group__39114 = new BitSet(new long[]{0x000007FC18F32040L});
-    public static final BitSet FOLLOW_rule__ComplexOperatorDef__Group__4_in_rule__ComplexOperatorDef__Group__39117 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_15_in_rule__ComplexOperatorDef__Group__3__Impl9145 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ComplexOperatorDef__Group__4__Impl_in_rule__ComplexOperatorDef__Group__49176 = new BitSet(new long[]{0x000007FC18F32040L});
-    public static final BitSet FOLLOW_rule__ComplexOperatorDef__Group__5_in_rule__ComplexOperatorDef__Group__49179 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ComplexOperatorDef__Alternatives_4_in_rule__ComplexOperatorDef__Group__4__Impl9206 = new BitSet(new long[]{0x000007FC18F22042L});
-    public static final BitSet FOLLOW_rule__ComplexOperatorDef__Group__5__Impl_in_rule__ComplexOperatorDef__Group__59237 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_16_in_rule__ComplexOperatorDef__Group__5__Impl9265 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ComplexOperatorDef__Group_2__0__Impl_in_rule__ComplexOperatorDef__Group_2__09308 = new BitSet(new long[]{0x0000000004080040L});
-    public static final BitSet FOLLOW_rule__ComplexOperatorDef__Group_2__1_in_rule__ComplexOperatorDef__Group_2__09311 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_18_in_rule__ComplexOperatorDef__Group_2__0__Impl9339 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ComplexOperatorDef__Group_2__1__Impl_in_rule__ComplexOperatorDef__Group_2__19370 = new BitSet(new long[]{0x0000000004080040L});
-    public static final BitSet FOLLOW_rule__ComplexOperatorDef__Group_2__2_in_rule__ComplexOperatorDef__Group_2__19373 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ComplexOperatorDef__ParamsAssignment_2_1_in_rule__ComplexOperatorDef__Group_2__1__Impl9400 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ComplexOperatorDef__Group_2__2__Impl_in_rule__ComplexOperatorDef__Group_2__29431 = new BitSet(new long[]{0x0000000004080040L});
-    public static final BitSet FOLLOW_rule__ComplexOperatorDef__Group_2__3_in_rule__ComplexOperatorDef__Group_2__29434 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ComplexOperatorDef__Group_2_2__0_in_rule__ComplexOperatorDef__Group_2__2__Impl9461 = new BitSet(new long[]{0x0000000004000002L});
-    public static final BitSet FOLLOW_rule__ComplexOperatorDef__Group_2__3__Impl_in_rule__ComplexOperatorDef__Group_2__39492 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_19_in_rule__ComplexOperatorDef__Group_2__3__Impl9520 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ComplexOperatorDef__Group_2_2__0__Impl_in_rule__ComplexOperatorDef__Group_2_2__09559 = new BitSet(new long[]{0x0000000000000040L});
-    public static final BitSet FOLLOW_rule__ComplexOperatorDef__Group_2_2__1_in_rule__ComplexOperatorDef__Group_2_2__09562 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_26_in_rule__ComplexOperatorDef__Group_2_2__0__Impl9590 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ComplexOperatorDef__Group_2_2__1__Impl_in_rule__ComplexOperatorDef__Group_2_2__19621 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ComplexOperatorDef__ParamsAssignment_2_2_1_in_rule__ComplexOperatorDef__Group_2_2__1__Impl9648 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ComplexOperator__Group__0__Impl_in_rule__ComplexOperator__Group__09682 = new BitSet(new long[]{0x0000000000040000L});
-    public static final BitSet FOLLOW_rule__ComplexOperator__Group__1_in_rule__ComplexOperator__Group__09685 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ComplexOperator__RefAssignment_0_in_rule__ComplexOperator__Group__0__Impl9712 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ComplexOperator__Group__1__Impl_in_rule__ComplexOperator__Group__19742 = new BitSet(new long[]{0x00000000040800C0L});
-    public static final BitSet FOLLOW_rule__ComplexOperator__Group__2_in_rule__ComplexOperator__Group__19745 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_18_in_rule__ComplexOperator__Group__1__Impl9773 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ComplexOperator__Group__2__Impl_in_rule__ComplexOperator__Group__29804 = new BitSet(new long[]{0x00000000040800C0L});
-    public static final BitSet FOLLOW_rule__ComplexOperator__Group__3_in_rule__ComplexOperator__Group__29807 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ComplexOperator__Alternatives_2_in_rule__ComplexOperator__Group__2__Impl9834 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ComplexOperator__Group__3__Impl_in_rule__ComplexOperator__Group__39865 = new BitSet(new long[]{0x00000000040800C0L});
-    public static final BitSet FOLLOW_rule__ComplexOperator__Group__4_in_rule__ComplexOperator__Group__39868 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ComplexOperator__Group_3__0_in_rule__ComplexOperator__Group__3__Impl9895 = new BitSet(new long[]{0x0000000004000002L});
-    public static final BitSet FOLLOW_rule__ComplexOperator__Group__4__Impl_in_rule__ComplexOperator__Group__49926 = new BitSet(new long[]{0x0000000002000000L});
-    public static final BitSet FOLLOW_rule__ComplexOperator__Group__5_in_rule__ComplexOperator__Group__49929 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_19_in_rule__ComplexOperator__Group__4__Impl9957 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ComplexOperator__Group__5__Impl_in_rule__ComplexOperator__Group__59988 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_25_in_rule__ComplexOperator__Group__5__Impl10016 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ComplexOperator__Group_3__0__Impl_in_rule__ComplexOperator__Group_3__010059 = new BitSet(new long[]{0x00000000000000C0L});
-    public static final BitSet FOLLOW_rule__ComplexOperator__Group_3__1_in_rule__ComplexOperator__Group_3__010062 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_26_in_rule__ComplexOperator__Group_3__0__Impl10090 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ComplexOperator__Group_3__1__Impl_in_rule__ComplexOperator__Group_3__110121 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ComplexOperator__Alternatives_3_1_in_rule__ComplexOperator__Group_3__1__Impl10148 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Parameter__Group_0__0__Impl_in_rule__Parameter__Group_0__010182 = new BitSet(new long[]{0x0000000040000000L});
-    public static final BitSet FOLLOW_rule__Parameter__Group_0__1_in_rule__Parameter__Group_0__010185 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleClass_in_rule__Parameter__Group_0__0__Impl10212 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Parameter__Group_0__1__Impl_in_rule__Parameter__Group_0__110241 = new BitSet(new long[]{0x0000000000400000L});
-    public static final BitSet FOLLOW_rule__Parameter__Group_0__2_in_rule__Parameter__Group_0__110244 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_30_in_rule__Parameter__Group_0__1__Impl10272 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Parameter__Group_0__2__Impl_in_rule__Parameter__Group_0__210303 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_22_in_rule__Parameter__Group_0__2__Impl10331 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Parameter__Group_1__0__Impl_in_rule__Parameter__Group_1__010368 = new BitSet(new long[]{0x0000000040000000L});
-    public static final BitSet FOLLOW_rule__Parameter__Group_1__1_in_rule__Parameter__Group_1__010371 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleReference_in_rule__Parameter__Group_1__0__Impl10398 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Parameter__Group_1__1__Impl_in_rule__Parameter__Group_1__110427 = new BitSet(new long[]{0x0000000010000000L});
-    public static final BitSet FOLLOW_rule__Parameter__Group_1__2_in_rule__Parameter__Group_1__110430 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_30_in_rule__Parameter__Group_1__1__Impl10458 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Parameter__Group_1__2__Impl_in_rule__Parameter__Group_1__210489 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_28_in_rule__Parameter__Group_1__2__Impl10517 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Parameter__Group_2__0__Impl_in_rule__Parameter__Group_2__010554 = new BitSet(new long[]{0x0000000040000000L});
-    public static final BitSet FOLLOW_rule__Parameter__Group_2__1_in_rule__Parameter__Group_2__010557 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rulePackage_in_rule__Parameter__Group_2__0__Impl10584 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Parameter__Group_2__1__Impl_in_rule__Parameter__Group_2__110613 = new BitSet(new long[]{0x0000000000002000L});
-    public static final BitSet FOLLOW_rule__Parameter__Group_2__2_in_rule__Parameter__Group_2__110616 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_30_in_rule__Parameter__Group_2__1__Impl10644 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Parameter__Group_2__2__Impl_in_rule__Parameter__Group_2__210675 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_13_in_rule__Parameter__Group_2__2__Impl10703 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Parameter__Group_3__0__Impl_in_rule__Parameter__Group_3__010740 = new BitSet(new long[]{0x0000000040000000L});
-    public static final BitSet FOLLOW_rule__Parameter__Group_3__1_in_rule__Parameter__Group_3__010743 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleAttribute_in_rule__Parameter__Group_3__0__Impl10770 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Parameter__Group_3__1__Impl_in_rule__Parameter__Group_3__110799 = new BitSet(new long[]{0x0000000008000000L});
-    public static final BitSet FOLLOW_rule__Parameter__Group_3__2_in_rule__Parameter__Group_3__110802 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_30_in_rule__Parameter__Group_3__1__Impl10830 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Parameter__Group_3__2__Impl_in_rule__Parameter__Group_3__210861 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_27_in_rule__Parameter__Group_3__2__Impl10889 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Parameter__Group_4__0__Impl_in_rule__Parameter__Group_4__010926 = new BitSet(new long[]{0x0000000040000000L});
-    public static final BitSet FOLLOW_rule__Parameter__Group_4__1_in_rule__Parameter__Group_4__010929 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleBooleanDef_in_rule__Parameter__Group_4__0__Impl10956 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Parameter__Group_4__1__Impl_in_rule__Parameter__Group_4__110985 = new BitSet(new long[]{0x0000000080000000L});
-    public static final BitSet FOLLOW_rule__Parameter__Group_4__2_in_rule__Parameter__Group_4__110988 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_30_in_rule__Parameter__Group_4__1__Impl11016 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Parameter__Group_4__2__Impl_in_rule__Parameter__Group_4__211047 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_31_in_rule__Parameter__Group_4__2__Impl11075 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Parameter__Group_5__0__Impl_in_rule__Parameter__Group_5__011112 = new BitSet(new long[]{0x0000000040000000L});
-    public static final BitSet FOLLOW_rule__Parameter__Group_5__1_in_rule__Parameter__Group_5__011115 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleIntDef_in_rule__Parameter__Group_5__0__Impl11142 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Parameter__Group_5__1__Impl_in_rule__Parameter__Group_5__111171 = new BitSet(new long[]{0x0000000100000000L});
-    public static final BitSet FOLLOW_rule__Parameter__Group_5__2_in_rule__Parameter__Group_5__111174 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_30_in_rule__Parameter__Group_5__1__Impl11202 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Parameter__Group_5__2__Impl_in_rule__Parameter__Group_5__211233 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_32_in_rule__Parameter__Group_5__2__Impl11261 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Parameter__Group_6__0__Impl_in_rule__Parameter__Group_6__011298 = new BitSet(new long[]{0x0000000040000000L});
-    public static final BitSet FOLLOW_rule__Parameter__Group_6__1_in_rule__Parameter__Group_6__011301 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleStringDef_in_rule__Parameter__Group_6__0__Impl11328 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Parameter__Group_6__1__Impl_in_rule__Parameter__Group_6__111357 = new BitSet(new long[]{0x0000000200000000L});
-    public static final BitSet FOLLOW_rule__Parameter__Group_6__2_in_rule__Parameter__Group_6__111360 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_30_in_rule__Parameter__Group_6__1__Impl11388 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Parameter__Group_6__2__Impl_in_rule__Parameter__Group_6__211419 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_33_in_rule__Parameter__Group_6__2__Impl11447 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Attribute__Group__0__Impl_in_rule__Attribute__Group__011484 = new BitSet(new long[]{0x0000000000000040L});
-    public static final BitSet FOLLOW_rule__Attribute__Group__1_in_rule__Attribute__Group__011487 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Attribute__Group__1__Impl_in_rule__Attribute__Group__111545 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Attribute__NameAssignment_1_in_rule__Attribute__Group__1__Impl11572 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Reference__Group__0__Impl_in_rule__Reference__Group__011606 = new BitSet(new long[]{0x0000000000000040L});
-    public static final BitSet FOLLOW_rule__Reference__Group__1_in_rule__Reference__Group__011609 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Reference__Group__1__Impl_in_rule__Reference__Group__111667 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Reference__NameAssignment_1_in_rule__Reference__Group__1__Impl11694 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__BooleanDef__Group__0__Impl_in_rule__BooleanDef__Group__011728 = new BitSet(new long[]{0x0000000000000040L});
-    public static final BitSet FOLLOW_rule__BooleanDef__Group__1_in_rule__BooleanDef__Group__011731 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__BooleanDef__Group__1__Impl_in_rule__BooleanDef__Group__111789 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__BooleanDef__NameAssignment_1_in_rule__BooleanDef__Group__1__Impl11816 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__IntDef__Group__0__Impl_in_rule__IntDef__Group__011850 = new BitSet(new long[]{0x0000000000000040L});
-    public static final BitSet FOLLOW_rule__IntDef__Group__1_in_rule__IntDef__Group__011853 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__IntDef__Group__1__Impl_in_rule__IntDef__Group__111911 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__IntDef__NameAssignment_1_in_rule__IntDef__Group__1__Impl11938 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Model__PackagesAlternatives_0_in_rule__Model__PackagesAssignment11977 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rulePackage_in_rule__EPackageOperation__VarAssignment_0_112010 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__EPackageOperation__OpAlternatives_1_0_0_0_in_rule__EPackageOperation__OpAssignment_1_0_012041 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rulesetter_in_rule__EPackageOperation__SettersAssignment_1_0_2_012074 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleEClassOperation_in_rule__EPackageOperation__ClassesAssignment_1_0_2_112105 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleComplexOperator_in_rule__EPackageOperation__ComplexAssignment_1_112136 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__DeletePackage__RefAssignment_212171 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_STRING_in_rule__AddPackage__NewAssignment_2_012206 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__AddPackage__RefAssignment_2_112241 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__ChangePackage__RefAssignment_212280 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__Package__NameAssignment_112315 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleClass_in_rule__EClassOperation__VarAssignment_0_112346 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleChangeClass_in_rule__EClassOperation__OpAssignment_1_0_012377 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleAddClass_in_rule__EClassOperation__OpAssignment_1_0_112408 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleDeleteClass_in_rule__EClassOperation__OpAssignment_1_0_212439 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rulesetter_in_rule__EClassOperation__SettersAssignment_1_1_0_1_012470 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleEAttributeOperation_in_rule__EClassOperation__AttributesAssignment_1_1_0_1_112501 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleEReferenceOperation_in_rule__EClassOperation__ReferencesAssignment_1_1_0_1_212532 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleComplexOperator_in_rule__EClassOperation__ComplexAssignment_1_1_112563 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_34_in_rule__ChangeClass__OpAssignment_012599 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__ChangeClass__RefAssignment_112642 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_35_in_rule__AddClass__OpAssignment_012682 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_STRING_in_rule__AddClass__NewAssignment_1_012721 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__AddClass__RefAssignment_1_112756 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_36_in_rule__DeleteClass__OpAssignment_012796 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__DeleteClass__RefAssignment_112839 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__Class__NameAssignment_112874 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__Setter__MetafeatureAssignment_112909 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_STRING_in_rule__Setter__ValueAssignment_3_0_012944 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleCardinality_in_rule__Setter__CardAssignment_3_112975 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__Setter__ValueRefAssignment_3_213010 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__Setter__ValueRefAssignment_4_113049 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleAttribute_in_rule__EAttributeOperation__VarAssignment_0_113084 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleChangeAttribute_in_rule__EAttributeOperation__OpAssignment_1_0_0_013115 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleAddAttribute_in_rule__EAttributeOperation__OpAssignment_1_0_0_113146 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleDeleteAttribute_in_rule__EAttributeOperation__OpAssignment_1_0_0_213177 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rulesetter_in_rule__EAttributeOperation__SettersAssignment_1_0_1_113208 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleComplexOperator_in_rule__EAttributeOperation__ComplexAssignment_1_113239 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_37_in_rule__ChangeAttribute__OpAssignment_013275 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__ChangeAttribute__RefAssignment_113318 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_38_in_rule__AddAttribute__OpAssignment_013358 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_STRING_in_rule__AddAttribute__NewAssignment_1_013397 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__AddAttribute__RefAssignment_1_113432 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_39_in_rule__DeleteAttribute__OpAssignment_013472 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__DeleteAttribute__RefAssignment_113515 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleReference_in_rule__EReferenceOperation__VarAssignment_0_113550 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleChangeReference_in_rule__EReferenceOperation__OpAssignment_1_0_0_013581 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleAddReference_in_rule__EReferenceOperation__OpAssignment_1_0_0_113612 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleDeleteReference_in_rule__EReferenceOperation__OpAssignment_1_0_0_213643 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rulesetter_in_rule__EReferenceOperation__SettersAssignment_1_0_1_113674 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleComplexOperator_in_rule__EReferenceOperation__ComplexAssignment_1_113705 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_40_in_rule__ChangeReference__OpAssignment_013741 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__ChangeReference__RefAssignment_213784 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_41_in_rule__AddReference__OpAssignment_013824 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_STRING_in_rule__AddReference__NewAssignment_2_013863 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__AddReference__RefAssignment_2_113898 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_42_in_rule__DeleteReference__OpAssignment_013938 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__DeleteReference__RefAssignment_213981 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__ComplexOperatorDef__NameAssignment_114016 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleParameter_in_rule__ComplexOperatorDef__ParamsAssignment_2_114047 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleParameter_in_rule__ComplexOperatorDef__ParamsAssignment_2_2_114078 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleEPackageOperation_in_rule__ComplexOperatorDef__PackageOperationsAssignment_4_014109 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleEClassOperation_in_rule__ComplexOperatorDef__ClassOperationsAssignment_4_114140 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleEAttributeOperation_in_rule__ComplexOperatorDef__AttributeOperationsAssignment_4_214171 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleEReferenceOperation_in_rule__ComplexOperatorDef__ReferenceOperationsAssignment_4_314202 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__ComplexOperator__RefAssignment_014237 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__ComplexOperator__ArgsAssignment_2_014276 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_STRING_in_rule__ComplexOperator__NewAssignment_2_114311 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__ComplexOperator__ArgsAssignment_3_1_014346 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_STRING_in_rule__ComplexOperator__NewAssignment_3_1_114381 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__Attribute__NameAssignment_114412 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__Reference__NameAssignment_114443 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__BooleanDef__NameAssignment_114474 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__StringDef__NameAssignment14505 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rule__IntDef__NameAssignment_114536 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ChangeClass__Group__1__Impl_in_rule__ChangeClass__Group__15279 = new BitSet(new long[]{0x0000000000000040L});
+    public static final BitSet FOLLOW_rule__ChangeClass__Group__2_in_rule__ChangeClass__Group__15282 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ChangeClass__OpAssignment_1_in_rule__ChangeClass__Group__1__Impl5309 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ChangeClass__Group__2__Impl_in_rule__ChangeClass__Group__25339 = new BitSet(new long[]{0x0000000000080000L});
+    public static final BitSet FOLLOW_rule__ChangeClass__Group__3_in_rule__ChangeClass__Group__25342 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ChangeClass__RefAssignment_2_in_rule__ChangeClass__Group__2__Impl5369 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ChangeClass__Group__3__Impl_in_rule__ChangeClass__Group__35399 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_19_in_rule__ChangeClass__Group__3__Impl5427 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddClass__Group__0__Impl_in_rule__AddClass__Group__05466 = new BitSet(new long[]{0x00000000000000C0L});
+    public static final BitSet FOLLOW_rule__AddClass__Group__1_in_rule__AddClass__Group__05469 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddClass__OpAssignment_0_in_rule__AddClass__Group__0__Impl5496 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddClass__Group__1__Impl_in_rule__AddClass__Group__15526 = new BitSet(new long[]{0x0000000000080000L});
+    public static final BitSet FOLLOW_rule__AddClass__Group__2_in_rule__AddClass__Group__15529 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddClass__Alternatives_1_in_rule__AddClass__Group__1__Impl5556 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddClass__Group__2__Impl_in_rule__AddClass__Group__25586 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_19_in_rule__AddClass__Group__2__Impl5614 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__DeleteClass__Group__0__Impl_in_rule__DeleteClass__Group__05651 = new BitSet(new long[]{0x0000000000000040L});
+    public static final BitSet FOLLOW_rule__DeleteClass__Group__1_in_rule__DeleteClass__Group__05654 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__DeleteClass__OpAssignment_0_in_rule__DeleteClass__Group__0__Impl5681 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__DeleteClass__Group__1__Impl_in_rule__DeleteClass__Group__15711 = new BitSet(new long[]{0x0000000000080000L});
+    public static final BitSet FOLLOW_rule__DeleteClass__Group__2_in_rule__DeleteClass__Group__15714 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__DeleteClass__RefAssignment_1_in_rule__DeleteClass__Group__1__Impl5741 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__DeleteClass__Group__2__Impl_in_rule__DeleteClass__Group__25771 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_19_in_rule__DeleteClass__Group__2__Impl5799 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Class__Group__0__Impl_in_rule__Class__Group__05836 = new BitSet(new long[]{0x0000000000000040L});
+    public static final BitSet FOLLOW_rule__Class__Group__1_in_rule__Class__Group__05839 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Class__Group__1__Impl_in_rule__Class__Group__15897 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Class__NameAssignment_1_in_rule__Class__Group__1__Impl5924 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Setter__Group__0__Impl_in_rule__Setter__Group__05958 = new BitSet(new long[]{0x0000000000000040L});
+    public static final BitSet FOLLOW_rule__Setter__Group__1_in_rule__Setter__Group__05961 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_23_in_rule__Setter__Group__0__Impl5989 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Setter__Group__1__Impl_in_rule__Setter__Group__16020 = new BitSet(new long[]{0x0000001000000000L});
+    public static final BitSet FOLLOW_rule__Setter__Group__2_in_rule__Setter__Group__16023 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Setter__MetafeatureAssignment_1_in_rule__Setter__Group__1__Impl6050 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Setter__Group__2__Impl_in_rule__Setter__Group__26080 = new BitSet(new long[]{0x00000000000010F0L});
+    public static final BitSet FOLLOW_rule__Setter__Group__3_in_rule__Setter__Group__26083 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Setter__OperatorAssignment_2_in_rule__Setter__Group__2__Impl6110 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Setter__Group__3__Impl_in_rule__Setter__Group__36140 = new BitSet(new long[]{0x0000000003000000L});
+    public static final BitSet FOLLOW_rule__Setter__Group__4_in_rule__Setter__Group__36143 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Setter__Alternatives_3_in_rule__Setter__Group__3__Impl6170 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Setter__Group__4__Impl_in_rule__Setter__Group__46200 = new BitSet(new long[]{0x0000000003000000L});
+    public static final BitSet FOLLOW_rule__Setter__Group__5_in_rule__Setter__Group__46203 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Setter__Group_4__0_in_rule__Setter__Group__4__Impl6230 = new BitSet(new long[]{0x0000000002000002L});
+    public static final BitSet FOLLOW_rule__Setter__Group__5__Impl_in_rule__Setter__Group__56261 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_24_in_rule__Setter__Group__5__Impl6289 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Setter__Group_4__0__Impl_in_rule__Setter__Group_4__06332 = new BitSet(new long[]{0x0000000000000040L});
+    public static final BitSet FOLLOW_rule__Setter__Group_4__1_in_rule__Setter__Group_4__06335 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_25_in_rule__Setter__Group_4__0__Impl6363 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Setter__Group_4__1__Impl_in_rule__Setter__Group_4__16394 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Setter__ValueRefAssignment_4_1_in_rule__Setter__Group_4__1__Impl6421 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__EAttributeOperation__Group__0__Impl_in_rule__EAttributeOperation__Group__06455 = new BitSet(new long[]{0x000000E004322040L});
+    public static final BitSet FOLLOW_rule__EAttributeOperation__Group__1_in_rule__EAttributeOperation__Group__06458 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__EAttributeOperation__Group_0__0_in_rule__EAttributeOperation__Group__0__Impl6485 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__EAttributeOperation__Group__1__Impl_in_rule__EAttributeOperation__Group__16516 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__EAttributeOperation__Alternatives_1_in_rule__EAttributeOperation__Group__1__Impl6543 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__EAttributeOperation__Group_0__0__Impl_in_rule__EAttributeOperation__Group_0__06577 = new BitSet(new long[]{0x0000000000000040L});
+    public static final BitSet FOLLOW_rule__EAttributeOperation__Group_0__1_in_rule__EAttributeOperation__Group_0__06580 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_26_in_rule__EAttributeOperation__Group_0__0__Impl6608 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__EAttributeOperation__Group_0__1__Impl_in_rule__EAttributeOperation__Group_0__16639 = new BitSet(new long[]{0x0000000000004000L});
+    public static final BitSet FOLLOW_rule__EAttributeOperation__Group_0__2_in_rule__EAttributeOperation__Group_0__16642 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__EAttributeOperation__VarAssignment_0_1_in_rule__EAttributeOperation__Group_0__1__Impl6669 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__EAttributeOperation__Group_0__2__Impl_in_rule__EAttributeOperation__Group_0__26699 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_14_in_rule__EAttributeOperation__Group_0__2__Impl6727 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__EAttributeOperation__Group_1_0__0__Impl_in_rule__EAttributeOperation__Group_1_0__06764 = new BitSet(new long[]{0x0000000000008000L});
+    public static final BitSet FOLLOW_rule__EAttributeOperation__Group_1_0__1_in_rule__EAttributeOperation__Group_1_0__06767 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__EAttributeOperation__Alternatives_1_0_0_in_rule__EAttributeOperation__Group_1_0__0__Impl6794 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__EAttributeOperation__Group_1_0__1__Impl_in_rule__EAttributeOperation__Group_1_0__16824 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__EAttributeOperation__Group_1_0_1__0_in_rule__EAttributeOperation__Group_1_0__1__Impl6851 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__EAttributeOperation__Group_1_0_1__0__Impl_in_rule__EAttributeOperation__Group_1_0_1__06885 = new BitSet(new long[]{0x0000000000810000L});
+    public static final BitSet FOLLOW_rule__EAttributeOperation__Group_1_0_1__1_in_rule__EAttributeOperation__Group_1_0_1__06888 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_15_in_rule__EAttributeOperation__Group_1_0_1__0__Impl6916 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__EAttributeOperation__Group_1_0_1__1__Impl_in_rule__EAttributeOperation__Group_1_0_1__16947 = new BitSet(new long[]{0x0000000000810000L});
+    public static final BitSet FOLLOW_rule__EAttributeOperation__Group_1_0_1__2_in_rule__EAttributeOperation__Group_1_0_1__16950 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__EAttributeOperation__SettersAssignment_1_0_1_1_in_rule__EAttributeOperation__Group_1_0_1__1__Impl6977 = new BitSet(new long[]{0x0000000000800002L});
+    public static final BitSet FOLLOW_rule__EAttributeOperation__Group_1_0_1__2__Impl_in_rule__EAttributeOperation__Group_1_0_1__27008 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_16_in_rule__EAttributeOperation__Group_1_0_1__2__Impl7036 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ChangeAttribute__Group__0__Impl_in_rule__ChangeAttribute__Group__07073 = new BitSet(new long[]{0x0000000000000040L});
+    public static final BitSet FOLLOW_rule__ChangeAttribute__Group__1_in_rule__ChangeAttribute__Group__07076 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ChangeAttribute__OpAssignment_0_in_rule__ChangeAttribute__Group__0__Impl7103 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ChangeAttribute__Group__1__Impl_in_rule__ChangeAttribute__Group__17133 = new BitSet(new long[]{0x0000000000080000L});
+    public static final BitSet FOLLOW_rule__ChangeAttribute__Group__2_in_rule__ChangeAttribute__Group__17136 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ChangeAttribute__RefAssignment_1_in_rule__ChangeAttribute__Group__1__Impl7163 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ChangeAttribute__Group__2__Impl_in_rule__ChangeAttribute__Group__27193 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_19_in_rule__ChangeAttribute__Group__2__Impl7221 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddAttribute__Group__0__Impl_in_rule__AddAttribute__Group__07258 = new BitSet(new long[]{0x00000000000000C0L});
+    public static final BitSet FOLLOW_rule__AddAttribute__Group__1_in_rule__AddAttribute__Group__07261 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddAttribute__OpAssignment_0_in_rule__AddAttribute__Group__0__Impl7288 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddAttribute__Group__1__Impl_in_rule__AddAttribute__Group__17318 = new BitSet(new long[]{0x0000000000080000L});
+    public static final BitSet FOLLOW_rule__AddAttribute__Group__2_in_rule__AddAttribute__Group__17321 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddAttribute__Alternatives_1_in_rule__AddAttribute__Group__1__Impl7348 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddAttribute__Group__2__Impl_in_rule__AddAttribute__Group__27378 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_19_in_rule__AddAttribute__Group__2__Impl7406 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__DeleteAttribute__Group__0__Impl_in_rule__DeleteAttribute__Group__07443 = new BitSet(new long[]{0x0000000000000040L});
+    public static final BitSet FOLLOW_rule__DeleteAttribute__Group__1_in_rule__DeleteAttribute__Group__07446 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__DeleteAttribute__OpAssignment_0_in_rule__DeleteAttribute__Group__0__Impl7473 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__DeleteAttribute__Group__1__Impl_in_rule__DeleteAttribute__Group__17503 = new BitSet(new long[]{0x0000000000080000L});
+    public static final BitSet FOLLOW_rule__DeleteAttribute__Group__2_in_rule__DeleteAttribute__Group__17506 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__DeleteAttribute__RefAssignment_1_in_rule__DeleteAttribute__Group__1__Impl7533 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__DeleteAttribute__Group__2__Impl_in_rule__DeleteAttribute__Group__27563 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_19_in_rule__DeleteAttribute__Group__2__Impl7591 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__EReferenceOperation__Group__0__Impl_in_rule__EReferenceOperation__Group__07628 = new BitSet(new long[]{0x000007E00CB22040L});
+    public static final BitSet FOLLOW_rule__EReferenceOperation__Group__1_in_rule__EReferenceOperation__Group__07631 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__EReferenceOperation__Group_0__0_in_rule__EReferenceOperation__Group__0__Impl7658 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__EReferenceOperation__Group__1__Impl_in_rule__EReferenceOperation__Group__17689 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__EReferenceOperation__Alternatives_1_in_rule__EReferenceOperation__Group__1__Impl7716 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__EReferenceOperation__Group_0__0__Impl_in_rule__EReferenceOperation__Group_0__07750 = new BitSet(new long[]{0x0000000000000040L});
+    public static final BitSet FOLLOW_rule__EReferenceOperation__Group_0__1_in_rule__EReferenceOperation__Group_0__07753 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_27_in_rule__EReferenceOperation__Group_0__0__Impl7781 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__EReferenceOperation__Group_0__1__Impl_in_rule__EReferenceOperation__Group_0__17812 = new BitSet(new long[]{0x0000000000004000L});
+    public static final BitSet FOLLOW_rule__EReferenceOperation__Group_0__2_in_rule__EReferenceOperation__Group_0__17815 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__EReferenceOperation__VarAssignment_0_1_in_rule__EReferenceOperation__Group_0__1__Impl7842 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__EReferenceOperation__Group_0__2__Impl_in_rule__EReferenceOperation__Group_0__27872 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_14_in_rule__EReferenceOperation__Group_0__2__Impl7900 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__EReferenceOperation__Group_1_0__0__Impl_in_rule__EReferenceOperation__Group_1_0__07937 = new BitSet(new long[]{0x0000000000008000L});
+    public static final BitSet FOLLOW_rule__EReferenceOperation__Group_1_0__1_in_rule__EReferenceOperation__Group_1_0__07940 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__EReferenceOperation__Alternatives_1_0_0_in_rule__EReferenceOperation__Group_1_0__0__Impl7967 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__EReferenceOperation__Group_1_0__1__Impl_in_rule__EReferenceOperation__Group_1_0__17997 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__EReferenceOperation__Group_1_0_1__0_in_rule__EReferenceOperation__Group_1_0__1__Impl8024 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__EReferenceOperation__Group_1_0_1__0__Impl_in_rule__EReferenceOperation__Group_1_0_1__08058 = new BitSet(new long[]{0x0000000000810000L});
+    public static final BitSet FOLLOW_rule__EReferenceOperation__Group_1_0_1__1_in_rule__EReferenceOperation__Group_1_0_1__08061 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_15_in_rule__EReferenceOperation__Group_1_0_1__0__Impl8089 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__EReferenceOperation__Group_1_0_1__1__Impl_in_rule__EReferenceOperation__Group_1_0_1__18120 = new BitSet(new long[]{0x0000000000810000L});
+    public static final BitSet FOLLOW_rule__EReferenceOperation__Group_1_0_1__2_in_rule__EReferenceOperation__Group_1_0_1__18123 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__EReferenceOperation__SettersAssignment_1_0_1_1_in_rule__EReferenceOperation__Group_1_0_1__1__Impl8150 = new BitSet(new long[]{0x0000000000800002L});
+    public static final BitSet FOLLOW_rule__EReferenceOperation__Group_1_0_1__2__Impl_in_rule__EReferenceOperation__Group_1_0_1__28181 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_16_in_rule__EReferenceOperation__Group_1_0_1__2__Impl8209 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ChangeReference__Group__0__Impl_in_rule__ChangeReference__Group__08246 = new BitSet(new long[]{0x0000000000040000L});
+    public static final BitSet FOLLOW_rule__ChangeReference__Group__1_in_rule__ChangeReference__Group__08249 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ChangeReference__OpAssignment_0_in_rule__ChangeReference__Group__0__Impl8276 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ChangeReference__Group__1__Impl_in_rule__ChangeReference__Group__18306 = new BitSet(new long[]{0x0000000000000040L});
+    public static final BitSet FOLLOW_rule__ChangeReference__Group__2_in_rule__ChangeReference__Group__18309 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_18_in_rule__ChangeReference__Group__1__Impl8337 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ChangeReference__Group__2__Impl_in_rule__ChangeReference__Group__28368 = new BitSet(new long[]{0x0000000000080000L});
+    public static final BitSet FOLLOW_rule__ChangeReference__Group__3_in_rule__ChangeReference__Group__28371 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ChangeReference__RefAssignment_2_in_rule__ChangeReference__Group__2__Impl8398 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ChangeReference__Group__3__Impl_in_rule__ChangeReference__Group__38428 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_19_in_rule__ChangeReference__Group__3__Impl8456 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddReference__Group__0__Impl_in_rule__AddReference__Group__08495 = new BitSet(new long[]{0x0000000000040000L});
+    public static final BitSet FOLLOW_rule__AddReference__Group__1_in_rule__AddReference__Group__08498 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddReference__OpAssignment_0_in_rule__AddReference__Group__0__Impl8525 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddReference__Group__1__Impl_in_rule__AddReference__Group__18555 = new BitSet(new long[]{0x00000000000000C0L});
+    public static final BitSet FOLLOW_rule__AddReference__Group__2_in_rule__AddReference__Group__18558 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_18_in_rule__AddReference__Group__1__Impl8586 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddReference__Group__2__Impl_in_rule__AddReference__Group__28617 = new BitSet(new long[]{0x0000000000080000L});
+    public static final BitSet FOLLOW_rule__AddReference__Group__3_in_rule__AddReference__Group__28620 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddReference__Alternatives_2_in_rule__AddReference__Group__2__Impl8647 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__AddReference__Group__3__Impl_in_rule__AddReference__Group__38677 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_19_in_rule__AddReference__Group__3__Impl8705 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__DeleteReference__Group__0__Impl_in_rule__DeleteReference__Group__08744 = new BitSet(new long[]{0x0000000000040000L});
+    public static final BitSet FOLLOW_rule__DeleteReference__Group__1_in_rule__DeleteReference__Group__08747 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__DeleteReference__OpAssignment_0_in_rule__DeleteReference__Group__0__Impl8774 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__DeleteReference__Group__1__Impl_in_rule__DeleteReference__Group__18804 = new BitSet(new long[]{0x0000000000000040L});
+    public static final BitSet FOLLOW_rule__DeleteReference__Group__2_in_rule__DeleteReference__Group__18807 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_18_in_rule__DeleteReference__Group__1__Impl8835 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__DeleteReference__Group__2__Impl_in_rule__DeleteReference__Group__28866 = new BitSet(new long[]{0x0000000000080000L});
+    public static final BitSet FOLLOW_rule__DeleteReference__Group__3_in_rule__DeleteReference__Group__28869 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__DeleteReference__RefAssignment_2_in_rule__DeleteReference__Group__2__Impl8896 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__DeleteReference__Group__3__Impl_in_rule__DeleteReference__Group__38926 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_19_in_rule__DeleteReference__Group__3__Impl8954 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ComplexOperatorDef__Group__0__Impl_in_rule__ComplexOperatorDef__Group__08993 = new BitSet(new long[]{0x0000000000000040L});
+    public static final BitSet FOLLOW_rule__ComplexOperatorDef__Group__1_in_rule__ComplexOperatorDef__Group__08996 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_28_in_rule__ComplexOperatorDef__Group__0__Impl9024 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ComplexOperatorDef__Group__1__Impl_in_rule__ComplexOperatorDef__Group__19055 = new BitSet(new long[]{0x0000000000040000L});
+    public static final BitSet FOLLOW_rule__ComplexOperatorDef__Group__2_in_rule__ComplexOperatorDef__Group__19058 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ComplexOperatorDef__NameAssignment_1_in_rule__ComplexOperatorDef__Group__1__Impl9085 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ComplexOperatorDef__Group__2__Impl_in_rule__ComplexOperatorDef__Group__29115 = new BitSet(new long[]{0x0000000000008000L});
+    public static final BitSet FOLLOW_rule__ComplexOperatorDef__Group__3_in_rule__ComplexOperatorDef__Group__29118 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ComplexOperatorDef__Group_2__0_in_rule__ComplexOperatorDef__Group__2__Impl9145 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ComplexOperatorDef__Group__3__Impl_in_rule__ComplexOperatorDef__Group__39175 = new BitSet(new long[]{0x000007EE0CF32040L});
+    public static final BitSet FOLLOW_rule__ComplexOperatorDef__Group__4_in_rule__ComplexOperatorDef__Group__39178 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_15_in_rule__ComplexOperatorDef__Group__3__Impl9206 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ComplexOperatorDef__Group__4__Impl_in_rule__ComplexOperatorDef__Group__49237 = new BitSet(new long[]{0x000007EE0CF32040L});
+    public static final BitSet FOLLOW_rule__ComplexOperatorDef__Group__5_in_rule__ComplexOperatorDef__Group__49240 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ComplexOperatorDef__Alternatives_4_in_rule__ComplexOperatorDef__Group__4__Impl9267 = new BitSet(new long[]{0x000007EE0CF22042L});
+    public static final BitSet FOLLOW_rule__ComplexOperatorDef__Group__5__Impl_in_rule__ComplexOperatorDef__Group__59298 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_16_in_rule__ComplexOperatorDef__Group__5__Impl9326 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ComplexOperatorDef__Group_2__0__Impl_in_rule__ComplexOperatorDef__Group_2__09369 = new BitSet(new long[]{0x0000000002080040L});
+    public static final BitSet FOLLOW_rule__ComplexOperatorDef__Group_2__1_in_rule__ComplexOperatorDef__Group_2__09372 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_18_in_rule__ComplexOperatorDef__Group_2__0__Impl9400 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ComplexOperatorDef__Group_2__1__Impl_in_rule__ComplexOperatorDef__Group_2__19431 = new BitSet(new long[]{0x0000000002080040L});
+    public static final BitSet FOLLOW_rule__ComplexOperatorDef__Group_2__2_in_rule__ComplexOperatorDef__Group_2__19434 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ComplexOperatorDef__ParamsAssignment_2_1_in_rule__ComplexOperatorDef__Group_2__1__Impl9461 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ComplexOperatorDef__Group_2__2__Impl_in_rule__ComplexOperatorDef__Group_2__29492 = new BitSet(new long[]{0x0000000002080040L});
+    public static final BitSet FOLLOW_rule__ComplexOperatorDef__Group_2__3_in_rule__ComplexOperatorDef__Group_2__29495 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ComplexOperatorDef__Group_2_2__0_in_rule__ComplexOperatorDef__Group_2__2__Impl9522 = new BitSet(new long[]{0x0000000002000002L});
+    public static final BitSet FOLLOW_rule__ComplexOperatorDef__Group_2__3__Impl_in_rule__ComplexOperatorDef__Group_2__39553 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_19_in_rule__ComplexOperatorDef__Group_2__3__Impl9581 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ComplexOperatorDef__Group_2_2__0__Impl_in_rule__ComplexOperatorDef__Group_2_2__09620 = new BitSet(new long[]{0x0000000000000040L});
+    public static final BitSet FOLLOW_rule__ComplexOperatorDef__Group_2_2__1_in_rule__ComplexOperatorDef__Group_2_2__09623 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_25_in_rule__ComplexOperatorDef__Group_2_2__0__Impl9651 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ComplexOperatorDef__Group_2_2__1__Impl_in_rule__ComplexOperatorDef__Group_2_2__19682 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ComplexOperatorDef__ParamsAssignment_2_2_1_in_rule__ComplexOperatorDef__Group_2_2__1__Impl9709 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ComplexOperator__Group__0__Impl_in_rule__ComplexOperator__Group__09743 = new BitSet(new long[]{0x0000000000040000L});
+    public static final BitSet FOLLOW_rule__ComplexOperator__Group__1_in_rule__ComplexOperator__Group__09746 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ComplexOperator__RefAssignment_0_in_rule__ComplexOperator__Group__0__Impl9773 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ComplexOperator__Group__1__Impl_in_rule__ComplexOperator__Group__19803 = new BitSet(new long[]{0x00000000020800C0L});
+    public static final BitSet FOLLOW_rule__ComplexOperator__Group__2_in_rule__ComplexOperator__Group__19806 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_18_in_rule__ComplexOperator__Group__1__Impl9834 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ComplexOperator__Group__2__Impl_in_rule__ComplexOperator__Group__29865 = new BitSet(new long[]{0x00000000020800C0L});
+    public static final BitSet FOLLOW_rule__ComplexOperator__Group__3_in_rule__ComplexOperator__Group__29868 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ComplexOperator__Alternatives_2_in_rule__ComplexOperator__Group__2__Impl9895 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ComplexOperator__Group__3__Impl_in_rule__ComplexOperator__Group__39926 = new BitSet(new long[]{0x00000000020800C0L});
+    public static final BitSet FOLLOW_rule__ComplexOperator__Group__4_in_rule__ComplexOperator__Group__39929 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ComplexOperator__Group_3__0_in_rule__ComplexOperator__Group__3__Impl9956 = new BitSet(new long[]{0x0000000002000002L});
+    public static final BitSet FOLLOW_rule__ComplexOperator__Group__4__Impl_in_rule__ComplexOperator__Group__49987 = new BitSet(new long[]{0x0000000001000000L});
+    public static final BitSet FOLLOW_rule__ComplexOperator__Group__5_in_rule__ComplexOperator__Group__49990 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_19_in_rule__ComplexOperator__Group__4__Impl10018 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ComplexOperator__Group__5__Impl_in_rule__ComplexOperator__Group__510049 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_24_in_rule__ComplexOperator__Group__5__Impl10077 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ComplexOperator__Group_3__0__Impl_in_rule__ComplexOperator__Group_3__010120 = new BitSet(new long[]{0x00000000000000C0L});
+    public static final BitSet FOLLOW_rule__ComplexOperator__Group_3__1_in_rule__ComplexOperator__Group_3__010123 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_25_in_rule__ComplexOperator__Group_3__0__Impl10151 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ComplexOperator__Group_3__1__Impl_in_rule__ComplexOperator__Group_3__110182 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ComplexOperator__Alternatives_3_1_in_rule__ComplexOperator__Group_3__1__Impl10209 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Parameter__Group_0__0__Impl_in_rule__Parameter__Group_0__010243 = new BitSet(new long[]{0x0000000020000000L});
+    public static final BitSet FOLLOW_rule__Parameter__Group_0__1_in_rule__Parameter__Group_0__010246 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleClass_in_rule__Parameter__Group_0__0__Impl10273 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Parameter__Group_0__1__Impl_in_rule__Parameter__Group_0__110302 = new BitSet(new long[]{0x0000000000400000L});
+    public static final BitSet FOLLOW_rule__Parameter__Group_0__2_in_rule__Parameter__Group_0__110305 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_29_in_rule__Parameter__Group_0__1__Impl10333 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Parameter__Group_0__2__Impl_in_rule__Parameter__Group_0__210364 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_22_in_rule__Parameter__Group_0__2__Impl10392 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Parameter__Group_1__0__Impl_in_rule__Parameter__Group_1__010429 = new BitSet(new long[]{0x0000000020000000L});
+    public static final BitSet FOLLOW_rule__Parameter__Group_1__1_in_rule__Parameter__Group_1__010432 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleReference_in_rule__Parameter__Group_1__0__Impl10459 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Parameter__Group_1__1__Impl_in_rule__Parameter__Group_1__110488 = new BitSet(new long[]{0x0000000008000000L});
+    public static final BitSet FOLLOW_rule__Parameter__Group_1__2_in_rule__Parameter__Group_1__110491 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_29_in_rule__Parameter__Group_1__1__Impl10519 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Parameter__Group_1__2__Impl_in_rule__Parameter__Group_1__210550 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_27_in_rule__Parameter__Group_1__2__Impl10578 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Parameter__Group_2__0__Impl_in_rule__Parameter__Group_2__010615 = new BitSet(new long[]{0x0000000020000000L});
+    public static final BitSet FOLLOW_rule__Parameter__Group_2__1_in_rule__Parameter__Group_2__010618 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rulePackage_in_rule__Parameter__Group_2__0__Impl10645 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Parameter__Group_2__1__Impl_in_rule__Parameter__Group_2__110674 = new BitSet(new long[]{0x0000000000002000L});
+    public static final BitSet FOLLOW_rule__Parameter__Group_2__2_in_rule__Parameter__Group_2__110677 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_29_in_rule__Parameter__Group_2__1__Impl10705 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Parameter__Group_2__2__Impl_in_rule__Parameter__Group_2__210736 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_13_in_rule__Parameter__Group_2__2__Impl10764 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Parameter__Group_3__0__Impl_in_rule__Parameter__Group_3__010801 = new BitSet(new long[]{0x0000000020000000L});
+    public static final BitSet FOLLOW_rule__Parameter__Group_3__1_in_rule__Parameter__Group_3__010804 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleAttribute_in_rule__Parameter__Group_3__0__Impl10831 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Parameter__Group_3__1__Impl_in_rule__Parameter__Group_3__110860 = new BitSet(new long[]{0x0000000004000000L});
+    public static final BitSet FOLLOW_rule__Parameter__Group_3__2_in_rule__Parameter__Group_3__110863 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_29_in_rule__Parameter__Group_3__1__Impl10891 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Parameter__Group_3__2__Impl_in_rule__Parameter__Group_3__210922 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_26_in_rule__Parameter__Group_3__2__Impl10950 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Parameter__Group_4__0__Impl_in_rule__Parameter__Group_4__010987 = new BitSet(new long[]{0x0000000020000000L});
+    public static final BitSet FOLLOW_rule__Parameter__Group_4__1_in_rule__Parameter__Group_4__010990 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleBooleanDef_in_rule__Parameter__Group_4__0__Impl11017 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Parameter__Group_4__1__Impl_in_rule__Parameter__Group_4__111046 = new BitSet(new long[]{0x0000000040000000L});
+    public static final BitSet FOLLOW_rule__Parameter__Group_4__2_in_rule__Parameter__Group_4__111049 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_29_in_rule__Parameter__Group_4__1__Impl11077 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Parameter__Group_4__2__Impl_in_rule__Parameter__Group_4__211108 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_30_in_rule__Parameter__Group_4__2__Impl11136 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Parameter__Group_5__0__Impl_in_rule__Parameter__Group_5__011173 = new BitSet(new long[]{0x0000000020000000L});
+    public static final BitSet FOLLOW_rule__Parameter__Group_5__1_in_rule__Parameter__Group_5__011176 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleIntDef_in_rule__Parameter__Group_5__0__Impl11203 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Parameter__Group_5__1__Impl_in_rule__Parameter__Group_5__111232 = new BitSet(new long[]{0x0000000080000000L});
+    public static final BitSet FOLLOW_rule__Parameter__Group_5__2_in_rule__Parameter__Group_5__111235 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_29_in_rule__Parameter__Group_5__1__Impl11263 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Parameter__Group_5__2__Impl_in_rule__Parameter__Group_5__211294 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_31_in_rule__Parameter__Group_5__2__Impl11322 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Parameter__Group_6__0__Impl_in_rule__Parameter__Group_6__011359 = new BitSet(new long[]{0x0000000020000000L});
+    public static final BitSet FOLLOW_rule__Parameter__Group_6__1_in_rule__Parameter__Group_6__011362 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleStringDef_in_rule__Parameter__Group_6__0__Impl11389 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Parameter__Group_6__1__Impl_in_rule__Parameter__Group_6__111418 = new BitSet(new long[]{0x0000000100000000L});
+    public static final BitSet FOLLOW_rule__Parameter__Group_6__2_in_rule__Parameter__Group_6__111421 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_29_in_rule__Parameter__Group_6__1__Impl11449 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Parameter__Group_6__2__Impl_in_rule__Parameter__Group_6__211480 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_32_in_rule__Parameter__Group_6__2__Impl11508 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Attribute__Group__0__Impl_in_rule__Attribute__Group__011545 = new BitSet(new long[]{0x0000000000000040L});
+    public static final BitSet FOLLOW_rule__Attribute__Group__1_in_rule__Attribute__Group__011548 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Attribute__Group__1__Impl_in_rule__Attribute__Group__111606 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Attribute__NameAssignment_1_in_rule__Attribute__Group__1__Impl11633 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Reference__Group__0__Impl_in_rule__Reference__Group__011667 = new BitSet(new long[]{0x0000000000000040L});
+    public static final BitSet FOLLOW_rule__Reference__Group__1_in_rule__Reference__Group__011670 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Reference__Group__1__Impl_in_rule__Reference__Group__111728 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Reference__NameAssignment_1_in_rule__Reference__Group__1__Impl11755 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__BooleanDef__Group__0__Impl_in_rule__BooleanDef__Group__011789 = new BitSet(new long[]{0x0000000000000040L});
+    public static final BitSet FOLLOW_rule__BooleanDef__Group__1_in_rule__BooleanDef__Group__011792 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__BooleanDef__Group__1__Impl_in_rule__BooleanDef__Group__111850 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__BooleanDef__NameAssignment_1_in_rule__BooleanDef__Group__1__Impl11877 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__IntDef__Group__0__Impl_in_rule__IntDef__Group__011911 = new BitSet(new long[]{0x0000000000000040L});
+    public static final BitSet FOLLOW_rule__IntDef__Group__1_in_rule__IntDef__Group__011914 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__IntDef__Group__1__Impl_in_rule__IntDef__Group__111972 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__IntDef__NameAssignment_1_in_rule__IntDef__Group__1__Impl11999 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Model__PackagesAlternatives_0_in_rule__Model__PackagesAssignment12038 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rulePackage_in_rule__EPackageOperation__VarAssignment_0_112071 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__EPackageOperation__OpAlternatives_1_0_0_0_in_rule__EPackageOperation__OpAssignment_1_0_012102 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rulesetter_in_rule__EPackageOperation__SettersAssignment_1_0_2_012135 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleEClassOperation_in_rule__EPackageOperation__ClassesAssignment_1_0_2_112166 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleComplexOperator_in_rule__EPackageOperation__ComplexAssignment_1_112197 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__DeletePackage__RefAssignment_212232 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_STRING_in_rule__AddPackage__NewAssignment_2_012267 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__AddPackage__RefAssignment_2_112302 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__ChangePackage__RefAssignment_212341 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__Package__NameAssignment_112376 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleClass_in_rule__EClassOperation__VarAssignment_0_112407 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleChangeClass_in_rule__EClassOperation__OpAssignment_1_0_012438 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleAddClass_in_rule__EClassOperation__OpAssignment_1_0_112469 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleDeleteClass_in_rule__EClassOperation__OpAssignment_1_0_212500 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rulesetter_in_rule__EClassOperation__SettersAssignment_1_1_0_1_012531 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleEAttributeOperation_in_rule__EClassOperation__AttributesAssignment_1_1_0_1_112562 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleEReferenceOperation_in_rule__EClassOperation__ReferencesAssignment_1_1_0_1_212593 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleComplexOperator_in_rule__EClassOperation__ComplexAssignment_1_1_112624 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_33_in_rule__ChangeClass__OpAssignment_112660 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__ChangeClass__RefAssignment_212703 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_34_in_rule__AddClass__OpAssignment_012743 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_STRING_in_rule__AddClass__NewAssignment_1_012782 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__AddClass__RefAssignment_1_112817 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_35_in_rule__DeleteClass__OpAssignment_012857 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__DeleteClass__RefAssignment_112900 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__Class__NameAssignment_112935 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__Setter__MetafeatureAssignment_112970 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_36_in_rule__Setter__OperatorAssignment_213010 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_STRING_in_rule__Setter__ValueAssignment_3_0_013049 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleCardinality_in_rule__Setter__CardAssignment_3_113080 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__Setter__ValueRefAssignment_3_213115 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__Setter__ValueRefAssignment_4_113154 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleAttribute_in_rule__EAttributeOperation__VarAssignment_0_113189 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleChangeAttribute_in_rule__EAttributeOperation__OpAssignment_1_0_0_013220 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleAddAttribute_in_rule__EAttributeOperation__OpAssignment_1_0_0_113251 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleDeleteAttribute_in_rule__EAttributeOperation__OpAssignment_1_0_0_213282 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rulesetter_in_rule__EAttributeOperation__SettersAssignment_1_0_1_113313 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleComplexOperator_in_rule__EAttributeOperation__ComplexAssignment_1_113344 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_37_in_rule__ChangeAttribute__OpAssignment_013380 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__ChangeAttribute__RefAssignment_113423 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_38_in_rule__AddAttribute__OpAssignment_013463 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_STRING_in_rule__AddAttribute__NewAssignment_1_013502 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__AddAttribute__RefAssignment_1_113537 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_39_in_rule__DeleteAttribute__OpAssignment_013577 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__DeleteAttribute__RefAssignment_113620 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleReference_in_rule__EReferenceOperation__VarAssignment_0_113655 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleChangeReference_in_rule__EReferenceOperation__OpAssignment_1_0_0_013686 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleAddReference_in_rule__EReferenceOperation__OpAssignment_1_0_0_113717 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleDeleteReference_in_rule__EReferenceOperation__OpAssignment_1_0_0_213748 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rulesetter_in_rule__EReferenceOperation__SettersAssignment_1_0_1_113779 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleComplexOperator_in_rule__EReferenceOperation__ComplexAssignment_1_113810 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_40_in_rule__ChangeReference__OpAssignment_013846 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__ChangeReference__RefAssignment_213889 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_41_in_rule__AddReference__OpAssignment_013929 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_STRING_in_rule__AddReference__NewAssignment_2_013968 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__AddReference__RefAssignment_2_114003 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_42_in_rule__DeleteReference__OpAssignment_014043 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__DeleteReference__RefAssignment_214086 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__ComplexOperatorDef__NameAssignment_114121 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleParameter_in_rule__ComplexOperatorDef__ParamsAssignment_2_114152 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleParameter_in_rule__ComplexOperatorDef__ParamsAssignment_2_2_114183 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleEPackageOperation_in_rule__ComplexOperatorDef__PackageOperationsAssignment_4_014214 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleEClassOperation_in_rule__ComplexOperatorDef__ClassOperationsAssignment_4_114245 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleEAttributeOperation_in_rule__ComplexOperatorDef__AttributeOperationsAssignment_4_214276 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleEReferenceOperation_in_rule__ComplexOperatorDef__ReferenceOperationsAssignment_4_314307 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__ComplexOperator__RefAssignment_014342 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__ComplexOperator__ArgsAssignment_2_014381 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_STRING_in_rule__ComplexOperator__NewAssignment_2_114416 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__ComplexOperator__ArgsAssignment_3_1_014451 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_STRING_in_rule__ComplexOperator__NewAssignment_3_1_114486 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__Attribute__NameAssignment_114517 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__Reference__NameAssignment_114548 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__BooleanDef__NameAssignment_114579 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__StringDef__NameAssignment14610 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rule__IntDef__NameAssignment_114641 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__EClassOperation__AttributesAssignment_1_1_0_1_1_in_synpred12_InternalEDeltaLang2223 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__ComplexOperatorDef__PackageOperationsAssignment_4_0_in_synpred26_InternalEDeltaLang2838 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__ComplexOperatorDef__AttributeOperationsAssignment_4_2_in_synpred28_InternalEDeltaLang2874 = new BitSet(new long[]{0x0000000000000002L});

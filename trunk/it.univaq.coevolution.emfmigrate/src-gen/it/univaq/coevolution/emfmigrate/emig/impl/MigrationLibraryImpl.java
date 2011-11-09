@@ -32,7 +32,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link it.univaq.coevolution.emfmigrate.emig.impl.MigrationLibraryImpl#getTitle <em>Title</em>}</li>
+ *   <li>{@link it.univaq.coevolution.emfmigrate.emig.impl.MigrationLibraryImpl#getName <em>Name</em>}</li>
  *   <li>{@link it.univaq.coevolution.emfmigrate.emig.impl.MigrationLibraryImpl#getRules <em>Rules</em>}</li>
  * </ul>
  * </p>
@@ -42,24 +42,24 @@ import org.eclipse.emf.ecore.util.InternalEList;
 public class MigrationLibraryImpl extends MinimalEObjectImpl.Container implements MigrationLibrary
 {
   /**
-   * The default value of the '{@link #getTitle() <em>Title</em>}' attribute.
+   * The default value of the '{@link #getName() <em>Name</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getTitle()
+   * @see #getName()
    * @generated
    * @ordered
    */
-  protected static final String TITLE_EDEFAULT = null;
+  protected static final String NAME_EDEFAULT = null;
 
   /**
-   * The cached value of the '{@link #getTitle() <em>Title</em>}' attribute.
+   * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getTitle()
+   * @see #getName()
    * @generated
    * @ordered
    */
-  protected String title = TITLE_EDEFAULT;
+  protected String name = NAME_EDEFAULT;
 
   /**
    * The cached value of the '{@link #getRules() <em>Rules</em>}' containment reference list.
@@ -97,9 +97,9 @@ public class MigrationLibraryImpl extends MinimalEObjectImpl.Container implement
    * <!-- end-user-doc -->
    * @generated
    */
-  public String getTitle()
+  public String getName()
   {
-    return title;
+    return name;
   }
 
   /**
@@ -107,12 +107,12 @@ public class MigrationLibraryImpl extends MinimalEObjectImpl.Container implement
    * <!-- end-user-doc -->
    * @generated
    */
-  public void setTitle(String newTitle)
+  public void setName(String newName)
   {
-    String oldTitle = title;
-    title = newTitle;
+    String oldName = name;
+    name = newName;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, EmigPackage.MIGRATION_LIBRARY__TITLE, oldTitle, title));
+      eNotify(new ENotificationImpl(this, Notification.SET, EmigPackage.MIGRATION_LIBRARY__NAME, oldName, name));
   }
 
   /**
@@ -155,8 +155,8 @@ public class MigrationLibraryImpl extends MinimalEObjectImpl.Container implement
   {
     switch (featureID)
     {
-      case EmigPackage.MIGRATION_LIBRARY__TITLE:
-        return getTitle();
+      case EmigPackage.MIGRATION_LIBRARY__NAME:
+        return getName();
       case EmigPackage.MIGRATION_LIBRARY__RULES:
         return getRules();
     }
@@ -174,8 +174,8 @@ public class MigrationLibraryImpl extends MinimalEObjectImpl.Container implement
   {
     switch (featureID)
     {
-      case EmigPackage.MIGRATION_LIBRARY__TITLE:
-        setTitle((String)newValue);
+      case EmigPackage.MIGRATION_LIBRARY__NAME:
+        setName((String)newValue);
         return;
       case EmigPackage.MIGRATION_LIBRARY__RULES:
         getRules().clear();
@@ -195,8 +195,8 @@ public class MigrationLibraryImpl extends MinimalEObjectImpl.Container implement
   {
     switch (featureID)
     {
-      case EmigPackage.MIGRATION_LIBRARY__TITLE:
-        setTitle(TITLE_EDEFAULT);
+      case EmigPackage.MIGRATION_LIBRARY__NAME:
+        setName(NAME_EDEFAULT);
         return;
       case EmigPackage.MIGRATION_LIBRARY__RULES:
         getRules().clear();
@@ -215,8 +215,8 @@ public class MigrationLibraryImpl extends MinimalEObjectImpl.Container implement
   {
     switch (featureID)
     {
-      case EmigPackage.MIGRATION_LIBRARY__TITLE:
-        return TITLE_EDEFAULT == null ? title != null : !TITLE_EDEFAULT.equals(title);
+      case EmigPackage.MIGRATION_LIBRARY__NAME:
+        return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
       case EmigPackage.MIGRATION_LIBRARY__RULES:
         return rules != null && !rules.isEmpty();
     }
@@ -234,8 +234,8 @@ public class MigrationLibraryImpl extends MinimalEObjectImpl.Container implement
     if (eIsProxy()) return super.toString();
 
     StringBuffer result = new StringBuffer(super.toString());
-    result.append(" (title: ");
-    result.append(title);
+    result.append(" (name: ");
+    result.append(name);
     result.append(')');
     return result.toString();
   }

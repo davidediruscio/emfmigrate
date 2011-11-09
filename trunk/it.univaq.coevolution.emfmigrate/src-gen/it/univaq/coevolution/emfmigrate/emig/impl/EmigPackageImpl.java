@@ -16,6 +16,7 @@ import it.univaq.coevolution.emfmigrate.emig.EReferenceOpDef;
 import it.univaq.coevolution.emfmigrate.emig.EmigFactory;
 import it.univaq.coevolution.emfmigrate.emig.EmigPackage;
 import it.univaq.coevolution.emfmigrate.emig.FilterMigrator;
+import it.univaq.coevolution.emfmigrate.emig.LocatedElement;
 import it.univaq.coevolution.emfmigrate.emig.MigrationLibrary;
 import it.univaq.coevolution.emfmigrate.emig.MigrationProgram;
 import it.univaq.coevolution.emfmigrate.emig.Migrator;
@@ -57,6 +58,13 @@ public class EmigPackageImpl extends EPackageImpl implements EmigPackage
    * @generated
    */
   private EClass migrationLibraryEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass locatedElementEClass = null;
 
   /**
    * <!-- begin-user-doc -->
@@ -313,7 +321,7 @@ public class EmigPackageImpl extends EPackageImpl implements EmigPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getMigrationLibrary_Title()
+  public EAttribute getMigrationLibrary_Name()
   {
     return (EAttribute)migrationLibraryEClass.getEStructuralFeatures().get(0);
   }
@@ -333,6 +341,56 @@ public class EmigPackageImpl extends EPackageImpl implements EmigPackage
    * <!-- end-user-doc -->
    * @generated
    */
+  public EClass getLocatedElement()
+  {
+    return locatedElementEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getLocatedElement_Line()
+  {
+    return (EAttribute)locatedElementEClass.getEStructuralFeatures().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getLocatedElement_Endline()
+  {
+    return (EAttribute)locatedElementEClass.getEStructuralFeatures().get(1);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getLocatedElement_Offset()
+  {
+    return (EAttribute)locatedElementEClass.getEStructuralFeatures().get(2);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getLocatedElement_Endoffset()
+  {
+    return (EAttribute)locatedElementEClass.getEStructuralFeatures().get(3);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public EClass getMigrationProgram()
   {
     return migrationProgramEClass;
@@ -343,7 +401,7 @@ public class EmigPackageImpl extends EPackageImpl implements EmigPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getMigrationProgram_Libs()
+  public EAttribute getMigrationProgram_Name()
   {
     return (EAttribute)migrationProgramEClass.getEStructuralFeatures().get(0);
   }
@@ -353,7 +411,7 @@ public class EmigPackageImpl extends EPackageImpl implements EmigPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getMigrationProgram_Migr()
+  public EAttribute getMigrationProgram_Libs()
   {
     return (EAttribute)migrationProgramEClass.getEStructuralFeatures().get(1);
   }
@@ -363,9 +421,9 @@ public class EmigPackageImpl extends EPackageImpl implements EmigPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getMigrationProgram_TypeArt()
+  public EAttribute getMigrationProgram_Migr()
   {
-    return (EReference)migrationProgramEClass.getEStructuralFeatures().get(2);
+    return (EAttribute)migrationProgramEClass.getEStructuralFeatures().get(2);
   }
 
   /**
@@ -373,9 +431,19 @@ public class EmigPackageImpl extends EPackageImpl implements EmigPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getMigrationProgram_Name()
+  public EReference getMigrationProgram_TypeArt()
   {
-    return (EAttribute)migrationProgramEClass.getEStructuralFeatures().get(3);
+    return (EReference)migrationProgramEClass.getEStructuralFeatures().get(3);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getMigrationProgram_Artifact()
+  {
+    return (EAttribute)migrationProgramEClass.getEStructuralFeatures().get(4);
   }
 
   /**
@@ -385,7 +453,7 @@ public class EmigPackageImpl extends EPackageImpl implements EmigPackage
    */
   public EReference getMigrationProgram_TransformationPackage()
   {
-    return (EReference)migrationProgramEClass.getEStructuralFeatures().get(4);
+    return (EReference)migrationProgramEClass.getEStructuralFeatures().get(5);
   }
 
   /**
@@ -395,7 +463,7 @@ public class EmigPackageImpl extends EPackageImpl implements EmigPackage
    */
   public EAttribute getMigrationProgram_Delta()
   {
-    return (EAttribute)migrationProgramEClass.getEStructuralFeatures().get(5);
+    return (EAttribute)migrationProgramEClass.getEStructuralFeatures().get(6);
   }
 
   /**
@@ -405,7 +473,7 @@ public class EmigPackageImpl extends EPackageImpl implements EmigPackage
    */
   public EReference getMigrationProgram_Rules()
   {
-    return (EReference)migrationProgramEClass.getEStructuralFeatures().get(6);
+    return (EReference)migrationProgramEClass.getEStructuralFeatures().get(7);
   }
 
   /**
@@ -703,7 +771,7 @@ public class EmigPackageImpl extends EPackageImpl implements EmigPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getRewritingRule_MigratorsSX()
+  public EReference getRewritingRule_MigratorSX()
   {
     return (EReference)rewritingRuleEClass.getEStructuralFeatures().get(0);
   }
@@ -716,16 +784,6 @@ public class EmigPackageImpl extends EPackageImpl implements EmigPackage
   public EReference getRewritingRule_MigratorDX()
   {
     return (EReference)rewritingRuleEClass.getEStructuralFeatures().get(1);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EReference getRewritingRule_MigratorSX()
-  {
-    return (EReference)rewritingRuleEClass.getEStructuralFeatures().get(2);
   }
 
   /**
@@ -783,6 +841,16 @@ public class EmigPackageImpl extends EPackageImpl implements EmigPackage
    * <!-- end-user-doc -->
    * @generated
    */
+  public EReference getMigratorSX_RewritingRule()
+  {
+    return (EReference)migratorSXEClass.getEStructuralFeatures().get(2);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public EClass getMigratorDX()
   {
     return migratorDXEClass;
@@ -806,6 +874,16 @@ public class EmigPackageImpl extends EPackageImpl implements EmigPackage
   public EReference getMigratorDX_FilterDX()
   {
     return (EReference)migratorDXEClass.getEStructuralFeatures().get(1);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EReference getMigratorDX_RewritingRule()
+  {
+    return (EReference)migratorDXEClass.getEStructuralFeatures().get(2);
   }
 
   /**
@@ -1003,14 +1081,21 @@ public class EmigPackageImpl extends EPackageImpl implements EmigPackage
     createEReference(myModelEClass, MY_MODEL__MIGRATION_PROGR);
 
     migrationLibraryEClass = createEClass(MIGRATION_LIBRARY);
-    createEAttribute(migrationLibraryEClass, MIGRATION_LIBRARY__TITLE);
+    createEAttribute(migrationLibraryEClass, MIGRATION_LIBRARY__NAME);
     createEReference(migrationLibraryEClass, MIGRATION_LIBRARY__RULES);
 
+    locatedElementEClass = createEClass(LOCATED_ELEMENT);
+    createEAttribute(locatedElementEClass, LOCATED_ELEMENT__LINE);
+    createEAttribute(locatedElementEClass, LOCATED_ELEMENT__ENDLINE);
+    createEAttribute(locatedElementEClass, LOCATED_ELEMENT__OFFSET);
+    createEAttribute(locatedElementEClass, LOCATED_ELEMENT__ENDOFFSET);
+
     migrationProgramEClass = createEClass(MIGRATION_PROGRAM);
+    createEAttribute(migrationProgramEClass, MIGRATION_PROGRAM__NAME);
     createEAttribute(migrationProgramEClass, MIGRATION_PROGRAM__LIBS);
     createEAttribute(migrationProgramEClass, MIGRATION_PROGRAM__MIGR);
     createEReference(migrationProgramEClass, MIGRATION_PROGRAM__TYPE_ART);
-    createEAttribute(migrationProgramEClass, MIGRATION_PROGRAM__NAME);
+    createEAttribute(migrationProgramEClass, MIGRATION_PROGRAM__ARTIFACT);
     createEReference(migrationProgramEClass, MIGRATION_PROGRAM__TRANSFORMATION_PACKAGE);
     createEAttribute(migrationProgramEClass, MIGRATION_PROGRAM__DELTA);
     createEReference(migrationProgramEClass, MIGRATION_PROGRAM__RULES);
@@ -1052,9 +1137,8 @@ public class EmigPackageImpl extends EPackageImpl implements EmigPackage
     createEReference(setterDefEClass, SETTER_DEF__PAR);
 
     rewritingRuleEClass = createEClass(REWRITING_RULE);
-    createEReference(rewritingRuleEClass, REWRITING_RULE__MIGRATORS_SX);
-    createEReference(rewritingRuleEClass, REWRITING_RULE__MIGRATOR_DX);
     createEReference(rewritingRuleEClass, REWRITING_RULE__MIGRATOR_SX);
+    createEReference(rewritingRuleEClass, REWRITING_RULE__MIGRATOR_DX);
 
     migratorEClass = createEClass(MIGRATOR);
     createEAttribute(migratorEClass, MIGRATOR__NAME);
@@ -1062,10 +1146,12 @@ public class EmigPackageImpl extends EPackageImpl implements EmigPackage
     migratorSXEClass = createEClass(MIGRATOR_SX);
     createEReference(migratorSXEClass, MIGRATOR_SX__ELEMENT_SX);
     createEReference(migratorSXEClass, MIGRATOR_SX__FILTER_SX);
+    createEReference(migratorSXEClass, MIGRATOR_SX__REWRITING_RULE);
 
     migratorDXEClass = createEClass(MIGRATOR_DX);
     createEReference(migratorDXEClass, MIGRATOR_DX__ELEMENT_DX);
     createEReference(migratorDXEClass, MIGRATOR_DX__FILTER_DX);
+    createEReference(migratorDXEClass, MIGRATOR_DX__REWRITING_RULE);
 
     filterMigratorEClass = createEClass(FILTER_MIGRATOR);
     createEReference(filterMigratorEClass, FILTER_MIGRATOR__FEATURE_SX);
@@ -1121,12 +1207,23 @@ public class EmigPackageImpl extends EPackageImpl implements EmigPackage
     // Set bounds for type parameters
 
     // Add supertypes to classes
+    migrationProgramEClass.getESuperTypes().add(this.getLocatedElement());
+    artifactEClass.getESuperTypes().add(this.getLocatedElement());
+    ruleEClass.getESuperTypes().add(this.getLocatedElement());
+    opDefEClass.getESuperTypes().add(this.getLocatedElement());
     ePackageOpDefEClass.getESuperTypes().add(this.getOpDef());
     eClassOpDefEClass.getESuperTypes().add(this.getOpDef());
     eAttributeOpDefEClass.getESuperTypes().add(this.getOpDef());
     eReferenceOpDefEClass.getESuperTypes().add(this.getOpDef());
+    setterDefEClass.getESuperTypes().add(this.getLocatedElement());
+    rewritingRuleEClass.getESuperTypes().add(this.getLocatedElement());
+    migratorEClass.getESuperTypes().add(this.getLocatedElement());
     migratorSXEClass.getESuperTypes().add(this.getMigrator());
     migratorDXEClass.getESuperTypes().add(this.getMigrator());
+    filterMigratorEClass.getESuperTypes().add(this.getLocatedElement());
+    dotNavigationObjSXEClass.getESuperTypes().add(this.getLocatedElement());
+    dotNavigationObjDXEClass.getESuperTypes().add(this.getLocatedElement());
+    parameterEClass.getESuperTypes().add(this.getLocatedElement());
     packageEClass.getESuperTypes().add(ecorePackage.getEPackage());
     classEClass.getESuperTypes().add(ecorePackage.getEClass());
     attributeEClass.getESuperTypes().add(ecorePackage.getEAttribute());
@@ -1138,14 +1235,21 @@ public class EmigPackageImpl extends EPackageImpl implements EmigPackage
     initEReference(getMyModel_MigrationProgr(), this.getMigrationProgram(), null, "MigrationProgr", null, 0, 1, MyModel.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(migrationLibraryEClass, MigrationLibrary.class, "MigrationLibrary", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEAttribute(getMigrationLibrary_Title(), ecorePackage.getEString(), "title", null, 0, 1, MigrationLibrary.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getMigrationLibrary_Name(), ecorePackage.getEString(), "name", null, 0, 1, MigrationLibrary.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getMigrationLibrary_Rules(), this.getRule(), null, "rules", null, 0, -1, MigrationLibrary.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
+    initEClass(locatedElementEClass, LocatedElement.class, "LocatedElement", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEAttribute(getLocatedElement_Line(), ecorePackage.getEInt(), "line", null, 1, 1, LocatedElement.class, IS_TRANSIENT, IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
+    initEAttribute(getLocatedElement_Endline(), ecorePackage.getEInt(), "endline", null, 1, 1, LocatedElement.class, IS_TRANSIENT, IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
+    initEAttribute(getLocatedElement_Offset(), ecorePackage.getEInt(), "offset", null, 1, 1, LocatedElement.class, IS_TRANSIENT, IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
+    initEAttribute(getLocatedElement_Endoffset(), ecorePackage.getEInt(), "endoffset", null, 1, 1, LocatedElement.class, IS_TRANSIENT, IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
+
     initEClass(migrationProgramEClass, MigrationProgram.class, "MigrationProgram", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEAttribute(getMigrationProgram_Name(), ecorePackage.getEString(), "name", null, 0, 1, MigrationProgram.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getMigrationProgram_Libs(), ecorePackage.getEString(), "libs", null, 0, -1, MigrationProgram.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getMigrationProgram_Migr(), ecorePackage.getEString(), "migr", null, 0, 1, MigrationProgram.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getMigrationProgram_TypeArt(), this.getArtifact(), null, "typeArt", null, 0, 1, MigrationProgram.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getMigrationProgram_Name(), ecorePackage.getEString(), "name", null, 0, 1, MigrationProgram.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getMigrationProgram_Artifact(), ecorePackage.getEString(), "artifact", null, 0, 1, MigrationProgram.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getMigrationProgram_TransformationPackage(), ecorePackage.getEPackage(), null, "transformationPackage", null, 0, -1, MigrationProgram.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getMigrationProgram_Delta(), ecorePackage.getEString(), "delta", null, 0, 1, MigrationProgram.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getMigrationProgram_Rules(), this.getRule(), null, "rules", null, 0, -1, MigrationProgram.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1187,9 +1291,8 @@ public class EmigPackageImpl extends EPackageImpl implements EmigPackage
     initEReference(getsetterDef_Par(), this.getParameter(), null, "par", null, 0, -1, setterDef.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(rewritingRuleEClass, RewritingRule.class, "RewritingRule", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEReference(getRewritingRule_MigratorsSX(), this.getMigratorSX(), null, "migratorsSX", null, 0, -1, RewritingRule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getRewritingRule_MigratorDX(), this.getMigratorDX(), null, "migratorDX", null, 0, -1, RewritingRule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getRewritingRule_MigratorSX(), this.getMigratorSX(), null, "migratorSX", null, 0, -1, RewritingRule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getRewritingRule_MigratorSX(), this.getMigratorSX(), this.getMigratorSX_RewritingRule(), "migratorSX", null, 0, -1, RewritingRule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getRewritingRule_MigratorDX(), this.getMigratorDX(), this.getMigratorDX_RewritingRule(), "migratorDX", null, 0, -1, RewritingRule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(migratorEClass, Migrator.class, "Migrator", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getMigrator_Name(), ecorePackage.getEString(), "name", null, 0, 1, Migrator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1197,10 +1300,12 @@ public class EmigPackageImpl extends EPackageImpl implements EmigPackage
     initEClass(migratorSXEClass, MigratorSX.class, "MigratorSX", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEReference(getMigratorSX_ElementSX(), ecorePackage.getEClass(), null, "elementSX", null, 0, 1, MigratorSX.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getMigratorSX_FilterSX(), this.getFilterMigrator(), null, "filterSX", null, 0, -1, MigratorSX.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getMigratorSX_RewritingRule(), this.getRewritingRule(), this.getRewritingRule_MigratorSX(), "rewritingRule", null, 0, 1, MigratorSX.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(migratorDXEClass, MigratorDX.class, "MigratorDX", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEReference(getMigratorDX_ElementDX(), ecorePackage.getEClass(), null, "elementDX", null, 0, 1, MigratorDX.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getMigratorDX_FilterDX(), this.getFilterMigrator(), null, "filterDX", null, 0, -1, MigratorDX.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getMigratorDX_RewritingRule(), this.getRewritingRule(), this.getRewritingRule_MigratorDX(), "rewritingRule", null, 0, 1, MigratorDX.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(filterMigratorEClass, FilterMigrator.class, "FilterMigrator", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEReference(getFilterMigrator_FeatureSX(), this.getDotNavigationObjSX(), null, "featureSX", null, 0, 1, FilterMigrator.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

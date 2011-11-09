@@ -713,10 +713,10 @@ public class InternalEDeltaLangLexer extends Lexer {
         try {
             int _type = RULE_BOOL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2466:11: ( ( 'true' | 'false' ) )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2466:13: ( 'true' | 'false' )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2486:11: ( ( 'true' | 'false' ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2486:13: ( 'true' | 'false' )
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2466:13: ( 'true' | 'false' )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2486:13: ( 'true' | 'false' )
             int alt1=2;
             int LA1_0 = input.LA(1);
 
@@ -734,7 +734,7 @@ public class InternalEDeltaLangLexer extends Lexer {
             }
             switch (alt1) {
                 case 1 :
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2466:14: 'true'
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2486:14: 'true'
                     {
                     match("true"); 
 
@@ -742,7 +742,7 @@ public class InternalEDeltaLangLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2466:21: 'false'
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2486:21: 'false'
                     {
                     match("false"); 
 
@@ -768,10 +768,10 @@ public class InternalEDeltaLangLexer extends Lexer {
         try {
             int _type = RULE_ID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2468:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )* )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2468:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2488:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )* )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2488:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2468:11: ( '^' )?
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2488:11: ( '^' )?
             int alt2=2;
             int LA2_0 = input.LA(1);
 
@@ -780,7 +780,7 @@ public class InternalEDeltaLangLexer extends Lexer {
             }
             switch (alt2) {
                 case 1 :
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2468:11: '^'
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2488:11: '^'
                     {
                     match('^'); 
 
@@ -798,7 +798,7 @@ public class InternalEDeltaLangLexer extends Lexer {
                 recover(mse);
                 throw mse;}
 
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2468:40: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2488:40: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
             loop3:
             do {
                 int alt3=2;
@@ -847,10 +847,10 @@ public class InternalEDeltaLangLexer extends Lexer {
         try {
             int _type = RULE_INT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2470:10: ( ( '0' .. '9' )+ )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2470:12: ( '0' .. '9' )+
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2490:10: ( ( '0' .. '9' )+ )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2490:12: ( '0' .. '9' )+
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2470:12: ( '0' .. '9' )+
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2490:12: ( '0' .. '9' )+
             int cnt4=0;
             loop4:
             do {
@@ -864,7 +864,7 @@ public class InternalEDeltaLangLexer extends Lexer {
 
                 switch (alt4) {
             	case 1 :
-            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2470:13: '0' .. '9'
+            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2490:13: '0' .. '9'
             	    {
             	    matchRange('0','9'); 
 
@@ -896,10 +896,10 @@ public class InternalEDeltaLangLexer extends Lexer {
         try {
             int _type = RULE_STRING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2472:13: ( ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2472:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2492:13: ( ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2492:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2472:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2492:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             int alt7=2;
             int LA7_0 = input.LA(1);
 
@@ -917,10 +917,10 @@ public class InternalEDeltaLangLexer extends Lexer {
             }
             switch (alt7) {
                 case 1 :
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2472:16: '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2492:16: '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
                     {
                     match('\"'); 
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2472:20: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )*
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2492:20: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )*
                     loop5:
                     do {
                         int alt5=3;
@@ -936,7 +936,7 @@ public class InternalEDeltaLangLexer extends Lexer {
 
                         switch (alt5) {
                     	case 1 :
-                    	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2472:21: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
+                    	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2492:21: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
                     	    {
                     	    match('\\'); 
                     	    if ( input.LA(1)=='\"'||input.LA(1)=='\''||input.LA(1)=='\\'||input.LA(1)=='b'||input.LA(1)=='f'||input.LA(1)=='n'||input.LA(1)=='r'||(input.LA(1)>='t' && input.LA(1)<='u') ) {
@@ -952,7 +952,7 @@ public class InternalEDeltaLangLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2472:66: ~ ( ( '\\\\' | '\"' ) )
+                    	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2492:66: ~ ( ( '\\\\' | '\"' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='!')||(input.LA(1)>='#' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -977,10 +977,10 @@ public class InternalEDeltaLangLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2472:86: '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2492:86: '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
                     {
                     match('\''); 
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2472:91: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )*
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2492:91: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )*
                     loop6:
                     do {
                         int alt6=3;
@@ -996,7 +996,7 @@ public class InternalEDeltaLangLexer extends Lexer {
 
                         switch (alt6) {
                     	case 1 :
-                    	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2472:92: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
+                    	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2492:92: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
                     	    {
                     	    match('\\'); 
                     	    if ( input.LA(1)=='\"'||input.LA(1)=='\''||input.LA(1)=='\\'||input.LA(1)=='b'||input.LA(1)=='f'||input.LA(1)=='n'||input.LA(1)=='r'||(input.LA(1)>='t' && input.LA(1)<='u') ) {
@@ -1012,7 +1012,7 @@ public class InternalEDeltaLangLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2472:137: ~ ( ( '\\\\' | '\\'' ) )
+                    	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2492:137: ~ ( ( '\\\\' | '\\'' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -1055,12 +1055,12 @@ public class InternalEDeltaLangLexer extends Lexer {
         try {
             int _type = RULE_ML_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2474:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2474:19: '/*' ( options {greedy=false; } : . )* '*/'
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2494:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2494:19: '/*' ( options {greedy=false; } : . )* '*/'
             {
             match("/*"); 
 
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2474:24: ( options {greedy=false; } : . )*
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2494:24: ( options {greedy=false; } : . )*
             loop8:
             do {
                 int alt8=2;
@@ -1085,7 +1085,7 @@ public class InternalEDeltaLangLexer extends Lexer {
 
                 switch (alt8) {
             	case 1 :
-            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2474:52: .
+            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2494:52: .
             	    {
             	    matchAny(); 
 
@@ -1115,12 +1115,12 @@ public class InternalEDeltaLangLexer extends Lexer {
         try {
             int _type = RULE_SL_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2476:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2476:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2496:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2496:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
             {
             match("//"); 
 
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2476:24: (~ ( ( '\\n' | '\\r' ) ) )*
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2496:24: (~ ( ( '\\n' | '\\r' ) ) )*
             loop9:
             do {
                 int alt9=2;
@@ -1133,7 +1133,7 @@ public class InternalEDeltaLangLexer extends Lexer {
 
                 switch (alt9) {
             	case 1 :
-            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2476:24: ~ ( ( '\\n' | '\\r' ) )
+            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2496:24: ~ ( ( '\\n' | '\\r' ) )
             	    {
             	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
@@ -1153,7 +1153,7 @@ public class InternalEDeltaLangLexer extends Lexer {
                 }
             } while (true);
 
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2476:40: ( ( '\\r' )? '\\n' )?
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2496:40: ( ( '\\r' )? '\\n' )?
             int alt11=2;
             int LA11_0 = input.LA(1);
 
@@ -1162,9 +1162,9 @@ public class InternalEDeltaLangLexer extends Lexer {
             }
             switch (alt11) {
                 case 1 :
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2476:41: ( '\\r' )? '\\n'
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2496:41: ( '\\r' )? '\\n'
                     {
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2476:41: ( '\\r' )?
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2496:41: ( '\\r' )?
                     int alt10=2;
                     int LA10_0 = input.LA(1);
 
@@ -1173,7 +1173,7 @@ public class InternalEDeltaLangLexer extends Lexer {
                     }
                     switch (alt10) {
                         case 1 :
-                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2476:41: '\\r'
+                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2496:41: '\\r'
                             {
                             match('\r'); 
 
@@ -1205,10 +1205,10 @@ public class InternalEDeltaLangLexer extends Lexer {
         try {
             int _type = RULE_WS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2478:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2478:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2498:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2498:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2478:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2498:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             int cnt12=0;
             loop12:
             do {
@@ -1262,8 +1262,8 @@ public class InternalEDeltaLangLexer extends Lexer {
         try {
             int _type = RULE_ANY_OTHER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2480:16: ( . )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2480:18: .
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2500:16: ( . )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2500:18: .
             {
             matchAny(); 
 

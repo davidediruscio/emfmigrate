@@ -317,11 +317,10 @@ public class InternalEDeltaLangLexer extends Lexer {
         try {
             int _type = T__24;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:23:7: ( '<=' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:23:9: '<='
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:23:7: ( ';' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:23:9: ';'
             {
-            match("<="); 
-
+            match(';'); 
 
             }
 
@@ -338,10 +337,10 @@ public class InternalEDeltaLangLexer extends Lexer {
         try {
             int _type = T__25;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:24:7: ( ';' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:24:9: ';'
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:24:7: ( ',' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:24:9: ','
             {
-            match(';'); 
+            match(','); 
 
             }
 
@@ -358,10 +357,11 @@ public class InternalEDeltaLangLexer extends Lexer {
         try {
             int _type = T__26;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:25:7: ( ',' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:25:9: ','
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:25:7: ( 'attribute' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:25:9: 'attribute'
             {
-            match(','); 
+            match("attribute"); 
+
 
             }
 
@@ -378,10 +378,10 @@ public class InternalEDeltaLangLexer extends Lexer {
         try {
             int _type = T__27;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:26:7: ( 'attribute' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:26:9: 'attribute'
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:26:7: ( 'reference' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:26:9: 'reference'
             {
-            match("attribute"); 
+            match("reference"); 
 
 
             }
@@ -399,10 +399,10 @@ public class InternalEDeltaLangLexer extends Lexer {
         try {
             int _type = T__28;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:27:7: ( 'reference' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:27:9: 'reference'
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:27:7: ( 'def change' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:27:9: 'def change'
             {
-            match("reference"); 
+            match("def change"); 
 
 
             }
@@ -420,11 +420,10 @@ public class InternalEDeltaLangLexer extends Lexer {
         try {
             int _type = T__29;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:28:7: ( 'def change' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:28:9: 'def change'
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:28:7: ( ':' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:28:9: ':'
             {
-            match("def change"); 
-
+            match(':'); 
 
             }
 
@@ -441,10 +440,11 @@ public class InternalEDeltaLangLexer extends Lexer {
         try {
             int _type = T__30;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:29:7: ( ':' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:29:9: ':'
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:29:7: ( 'bool' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:29:9: 'bool'
             {
-            match(':'); 
+            match("bool"); 
+
 
             }
 
@@ -461,10 +461,10 @@ public class InternalEDeltaLangLexer extends Lexer {
         try {
             int _type = T__31;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:30:7: ( 'bool' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:30:9: 'bool'
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:30:7: ( 'int' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:30:9: 'int'
             {
-            match("bool"); 
+            match("int"); 
 
 
             }
@@ -482,10 +482,10 @@ public class InternalEDeltaLangLexer extends Lexer {
         try {
             int _type = T__32;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:31:7: ( 'int' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:31:9: 'int'
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:31:7: ( 'string' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:31:9: 'string'
             {
-            match("int"); 
+            match("string"); 
 
 
             }
@@ -503,10 +503,10 @@ public class InternalEDeltaLangLexer extends Lexer {
         try {
             int _type = T__33;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:32:7: ( 'string' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:32:9: 'string'
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:32:7: ( 'changeClass(' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:32:9: 'changeClass('
             {
-            match("string"); 
+            match("changeClass("); 
 
 
             }
@@ -524,10 +524,10 @@ public class InternalEDeltaLangLexer extends Lexer {
         try {
             int _type = T__34;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:33:7: ( 'changeClass(' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:33:9: 'changeClass('
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:33:7: ( 'addClass(' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:33:9: 'addClass('
             {
-            match("changeClass("); 
+            match("addClass("); 
 
 
             }
@@ -545,10 +545,10 @@ public class InternalEDeltaLangLexer extends Lexer {
         try {
             int _type = T__35;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:34:7: ( 'addClass(' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:34:9: 'addClass('
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:34:7: ( 'deleteClass(' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:34:9: 'deleteClass('
             {
-            match("addClass("); 
+            match("deleteClass("); 
 
 
             }
@@ -566,10 +566,10 @@ public class InternalEDeltaLangLexer extends Lexer {
         try {
             int _type = T__36;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:35:7: ( 'deleteClass(' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:35:9: 'deleteClass('
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:35:7: ( '<=' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:35:9: '<='
             {
-            match("deleteClass("); 
+            match("<="); 
 
 
             }
@@ -713,10 +713,10 @@ public class InternalEDeltaLangLexer extends Lexer {
         try {
             int _type = RULE_BOOL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7209:11: ( ( 'true' | 'false' ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7209:13: ( 'true' | 'false' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7263:11: ( ( 'true' | 'false' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7263:13: ( 'true' | 'false' )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7209:13: ( 'true' | 'false' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7263:13: ( 'true' | 'false' )
             int alt1=2;
             int LA1_0 = input.LA(1);
 
@@ -734,7 +734,7 @@ public class InternalEDeltaLangLexer extends Lexer {
             }
             switch (alt1) {
                 case 1 :
-                    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7209:14: 'true'
+                    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7263:14: 'true'
                     {
                     match("true"); 
 
@@ -742,7 +742,7 @@ public class InternalEDeltaLangLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7209:21: 'false'
+                    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7263:21: 'false'
                     {
                     match("false"); 
 
@@ -768,10 +768,10 @@ public class InternalEDeltaLangLexer extends Lexer {
         try {
             int _type = RULE_ID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7211:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )* )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7211:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7265:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )* )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7265:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7211:11: ( '^' )?
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7265:11: ( '^' )?
             int alt2=2;
             int LA2_0 = input.LA(1);
 
@@ -780,7 +780,7 @@ public class InternalEDeltaLangLexer extends Lexer {
             }
             switch (alt2) {
                 case 1 :
-                    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7211:11: '^'
+                    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7265:11: '^'
                     {
                     match('^'); 
 
@@ -798,7 +798,7 @@ public class InternalEDeltaLangLexer extends Lexer {
                 recover(mse);
                 throw mse;}
 
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7211:40: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7265:40: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
             loop3:
             do {
                 int alt3=2;
@@ -847,10 +847,10 @@ public class InternalEDeltaLangLexer extends Lexer {
         try {
             int _type = RULE_INT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7213:10: ( ( '0' .. '9' )+ )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7213:12: ( '0' .. '9' )+
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7267:10: ( ( '0' .. '9' )+ )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7267:12: ( '0' .. '9' )+
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7213:12: ( '0' .. '9' )+
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7267:12: ( '0' .. '9' )+
             int cnt4=0;
             loop4:
             do {
@@ -864,7 +864,7 @@ public class InternalEDeltaLangLexer extends Lexer {
 
                 switch (alt4) {
             	case 1 :
-            	    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7213:13: '0' .. '9'
+            	    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7267:13: '0' .. '9'
             	    {
             	    matchRange('0','9'); 
 
@@ -896,10 +896,10 @@ public class InternalEDeltaLangLexer extends Lexer {
         try {
             int _type = RULE_STRING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7215:13: ( ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7215:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7269:13: ( ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7269:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7215:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7269:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             int alt7=2;
             int LA7_0 = input.LA(1);
 
@@ -917,10 +917,10 @@ public class InternalEDeltaLangLexer extends Lexer {
             }
             switch (alt7) {
                 case 1 :
-                    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7215:16: '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
+                    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7269:16: '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
                     {
                     match('\"'); 
-                    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7215:20: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )*
+                    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7269:20: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )*
                     loop5:
                     do {
                         int alt5=3;
@@ -936,7 +936,7 @@ public class InternalEDeltaLangLexer extends Lexer {
 
                         switch (alt5) {
                     	case 1 :
-                    	    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7215:21: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
+                    	    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7269:21: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
                     	    {
                     	    match('\\'); 
                     	    if ( input.LA(1)=='\"'||input.LA(1)=='\''||input.LA(1)=='\\'||input.LA(1)=='b'||input.LA(1)=='f'||input.LA(1)=='n'||input.LA(1)=='r'||(input.LA(1)>='t' && input.LA(1)<='u') ) {
@@ -952,7 +952,7 @@ public class InternalEDeltaLangLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7215:66: ~ ( ( '\\\\' | '\"' ) )
+                    	    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7269:66: ~ ( ( '\\\\' | '\"' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='!')||(input.LA(1)>='#' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -977,10 +977,10 @@ public class InternalEDeltaLangLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7215:86: '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
+                    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7269:86: '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
                     {
                     match('\''); 
-                    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7215:91: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )*
+                    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7269:91: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )*
                     loop6:
                     do {
                         int alt6=3;
@@ -996,7 +996,7 @@ public class InternalEDeltaLangLexer extends Lexer {
 
                         switch (alt6) {
                     	case 1 :
-                    	    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7215:92: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
+                    	    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7269:92: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
                     	    {
                     	    match('\\'); 
                     	    if ( input.LA(1)=='\"'||input.LA(1)=='\''||input.LA(1)=='\\'||input.LA(1)=='b'||input.LA(1)=='f'||input.LA(1)=='n'||input.LA(1)=='r'||(input.LA(1)>='t' && input.LA(1)<='u') ) {
@@ -1012,7 +1012,7 @@ public class InternalEDeltaLangLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7215:137: ~ ( ( '\\\\' | '\\'' ) )
+                    	    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7269:137: ~ ( ( '\\\\' | '\\'' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -1055,12 +1055,12 @@ public class InternalEDeltaLangLexer extends Lexer {
         try {
             int _type = RULE_ML_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7217:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7217:19: '/*' ( options {greedy=false; } : . )* '*/'
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7271:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7271:19: '/*' ( options {greedy=false; } : . )* '*/'
             {
             match("/*"); 
 
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7217:24: ( options {greedy=false; } : . )*
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7271:24: ( options {greedy=false; } : . )*
             loop8:
             do {
                 int alt8=2;
@@ -1085,7 +1085,7 @@ public class InternalEDeltaLangLexer extends Lexer {
 
                 switch (alt8) {
             	case 1 :
-            	    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7217:52: .
+            	    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7271:52: .
             	    {
             	    matchAny(); 
 
@@ -1115,12 +1115,12 @@ public class InternalEDeltaLangLexer extends Lexer {
         try {
             int _type = RULE_SL_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7219:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7219:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7273:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7273:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
             {
             match("//"); 
 
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7219:24: (~ ( ( '\\n' | '\\r' ) ) )*
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7273:24: (~ ( ( '\\n' | '\\r' ) ) )*
             loop9:
             do {
                 int alt9=2;
@@ -1133,7 +1133,7 @@ public class InternalEDeltaLangLexer extends Lexer {
 
                 switch (alt9) {
             	case 1 :
-            	    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7219:24: ~ ( ( '\\n' | '\\r' ) )
+            	    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7273:24: ~ ( ( '\\n' | '\\r' ) )
             	    {
             	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
@@ -1153,7 +1153,7 @@ public class InternalEDeltaLangLexer extends Lexer {
                 }
             } while (true);
 
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7219:40: ( ( '\\r' )? '\\n' )?
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7273:40: ( ( '\\r' )? '\\n' )?
             int alt11=2;
             int LA11_0 = input.LA(1);
 
@@ -1162,9 +1162,9 @@ public class InternalEDeltaLangLexer extends Lexer {
             }
             switch (alt11) {
                 case 1 :
-                    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7219:41: ( '\\r' )? '\\n'
+                    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7273:41: ( '\\r' )? '\\n'
                     {
-                    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7219:41: ( '\\r' )?
+                    // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7273:41: ( '\\r' )?
                     int alt10=2;
                     int LA10_0 = input.LA(1);
 
@@ -1173,7 +1173,7 @@ public class InternalEDeltaLangLexer extends Lexer {
                     }
                     switch (alt10) {
                         case 1 :
-                            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7219:41: '\\r'
+                            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7273:41: '\\r'
                             {
                             match('\r'); 
 
@@ -1205,10 +1205,10 @@ public class InternalEDeltaLangLexer extends Lexer {
         try {
             int _type = RULE_WS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7221:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7221:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7275:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7275:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             {
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7221:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7275:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             int cnt12=0;
             loop12:
             do {
@@ -1262,8 +1262,8 @@ public class InternalEDeltaLangLexer extends Lexer {
         try {
             int _type = RULE_ANY_OTHER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7223:16: ( . )
-            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7223:18: .
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7277:16: ( . )
+            // ../it.univaq.coevolution.differences.edelta.ui/src-gen/it/univaq/coevolution/differences/edelta/ui/contentassist/antlr/internal/InternalEDeltaLang.g:7277:18: .
             {
             matchAny(); 
 
@@ -1563,72 +1563,72 @@ public class InternalEDeltaLangLexer extends Lexer {
 
     protected DFA13 dfa13 = new DFA13(this);
     static final String DFA13_eotS =
-        "\2\uffff\1\37\3\uffff\1\37\2\uffff\3\37\1\34\2\uffff\1\37\1\uffff"+
-        "\4\37\1\34\2\uffff\3\34\3\uffff\1\37\4\uffff\1\37\2\uffff\6\37\3"+
-        "\uffff\1\37\1\uffff\4\37\5\uffff\7\37\1\122\3\37\1\126\4\37\1\uffff"+
-        "\7\37\1\uffff\2\37\1\144\1\uffff\1\145\11\37\1\157\2\37\2\uffff"+
-        "\1\145\10\37\1\uffff\1\u0080\1\37\1\u0082\15\37\1\uffff\1\37\1\uffff"+
-        "\23\37\1\uffff\2\37\1\u00a6\4\37\1\u00ab\4\37\1\u00b0\2\37\1\uffff"+
-        "\4\37\1\uffff\4\37\1\uffff\7\37\1\uffff\3\37\1\u00c5\1\37\1\uffff"+
-        "\2\37\1\u00c9\2\37\2\uffff\1\u00cc\2\37\1\uffff\2\37\1\uffff\3\37"+
-        "\1\u00d4\1\37\1\u00d6\4\uffff";
+        "\2\uffff\1\37\3\uffff\1\37\2\uffff\3\37\2\uffff\1\37\1\uffff\2\37"+
+        "\1\34\2\37\1\34\2\uffff\3\34\3\uffff\1\37\4\uffff\1\37\2\uffff\6"+
+        "\37\2\uffff\1\37\1\uffff\2\37\1\uffff\2\37\5\uffff\7\37\1\122\3"+
+        "\37\1\126\4\37\1\uffff\7\37\1\uffff\2\37\1\144\1\uffff\1\145\11"+
+        "\37\1\157\2\37\2\uffff\1\145\10\37\1\uffff\1\u0080\1\37\1\u0082"+
+        "\15\37\1\uffff\1\37\1\uffff\23\37\1\uffff\2\37\1\u00a6\4\37\1\u00ab"+
+        "\4\37\1\u00b0\2\37\1\uffff\4\37\1\uffff\4\37\1\uffff\7\37\1\uffff"+
+        "\3\37\1\u00c5\1\37\1\uffff\2\37\1\u00c9\2\37\2\uffff\1\u00cc\2\37"+
+        "\1\uffff\2\37\1\uffff\3\37\1\u00d4\1\37\1\u00d6\4\uffff";
     static final String DFA13_eofS =
         "\u00d7\uffff";
     static final String DFA13_minS =
-        "\1\0\1\uffff\1\141\3\uffff\1\145\2\uffff\1\144\1\150\1\145\1\75"+
-        "\2\uffff\1\145\1\uffff\1\157\1\156\1\162\1\141\1\101\2\uffff\2\0"+
-        "\1\52\3\uffff\1\143\4\uffff\1\146\2\uffff\1\144\1\164\2\141\1\164"+
-        "\1\162\3\uffff\1\146\1\uffff\1\157\1\164\1\165\1\154\5\uffff\1\153"+
-        "\1\145\1\40\1\101\1\162\1\156\1\163\1\60\1\151\1\145\1\154\1\60"+
-        "\1\145\1\163\1\141\1\164\1\uffff\1\141\1\154\1\164\1\145\1\151\1"+
-        "\147\1\163\1\uffff\1\156\1\162\1\60\1\uffff\1\60\1\145\1\147\1\145"+
-        "\1\143\1\141\1\164\1\146\1\142\1\145\1\60\1\147\1\145\2\uffff\1"+
-        "\60\1\145\1\101\1\153\1\163\1\162\1\145\1\165\1\101\1\uffff\1\60"+
-        "\1\156\1\60\1\141\1\154\1\164\1\145\1\141\1\163\1\151\1\162\1\164"+
-        "\1\141\1\154\1\164\1\145\1\uffff\1\143\1\uffff\1\143\1\141\1\164"+
-        "\1\146\1\147\1\50\1\142\2\145\1\143\1\141\1\164\1\146\1\145\1\153"+
-        "\1\163\1\162\2\145\1\uffff\1\165\1\156\1\60\1\153\1\163\1\162\1"+
-        "\145\1\60\1\141\1\163\1\151\1\162\1\60\1\164\1\143\1\uffff\1\141"+
-        "\1\163\1\151\1\162\1\uffff\1\147\1\50\1\142\1\145\1\uffff\2\145"+
-        "\1\147\1\50\1\142\2\145\1\uffff\1\165\1\156\1\50\1\60\1\145\1\uffff"+
-        "\1\165\1\156\1\60\1\164\1\143\2\uffff\1\60\1\164\1\143\1\uffff\2"+
-        "\145\1\uffff\2\145\1\50\1\60\1\50\1\60\4\uffff";
+        "\1\0\1\uffff\1\141\3\uffff\1\145\2\uffff\1\144\1\150\1\145\2\uffff"+
+        "\1\145\1\uffff\1\157\1\156\1\75\1\162\1\141\1\101\2\uffff\2\0\1"+
+        "\52\3\uffff\1\143\4\uffff\1\146\2\uffff\1\144\1\164\2\141\1\164"+
+        "\1\162\2\uffff\1\146\1\uffff\1\157\1\164\1\uffff\1\165\1\154\5\uffff"+
+        "\1\153\1\145\1\40\1\101\1\162\1\156\1\163\1\60\1\151\1\145\1\154"+
+        "\1\60\1\145\1\163\1\141\1\164\1\uffff\1\141\1\154\1\164\1\145\1"+
+        "\151\1\147\1\163\1\uffff\1\156\1\162\1\60\1\uffff\1\60\1\145\1\147"+
+        "\1\145\1\143\1\141\1\164\1\146\1\142\1\145\1\60\1\147\1\145\2\uffff"+
+        "\1\60\1\145\1\101\1\153\1\163\1\162\1\145\1\165\1\101\1\uffff\1"+
+        "\60\1\156\1\60\1\141\1\154\1\164\1\145\1\141\1\163\1\151\1\162\1"+
+        "\164\1\141\1\154\1\164\1\145\1\uffff\1\143\1\uffff\1\143\1\141\1"+
+        "\164\1\146\1\147\1\50\1\142\2\145\1\143\1\141\1\164\1\146\1\145"+
+        "\1\153\1\163\1\162\2\145\1\uffff\1\165\1\156\1\60\1\153\1\163\1"+
+        "\162\1\145\1\60\1\141\1\163\1\151\1\162\1\60\1\164\1\143\1\uffff"+
+        "\1\141\1\163\1\151\1\162\1\uffff\1\147\1\50\1\142\1\145\1\uffff"+
+        "\2\145\1\147\1\50\1\142\2\145\1\uffff\1\165\1\156\1\50\1\60\1\145"+
+        "\1\uffff\1\165\1\156\1\60\1\164\1\143\2\uffff\1\60\1\164\1\143\1"+
+        "\uffff\2\145\1\uffff\2\145\1\50\1\60\1\50\1\60\4\uffff";
     static final String DFA13_maxS =
-        "\1\uffff\1\uffff\1\141\3\uffff\1\145\2\uffff\1\164\1\154\1\164\1"+
-        "\75\2\uffff\1\145\1\uffff\1\157\1\156\1\162\1\141\1\172\2\uffff"+
+        "\1\uffff\1\uffff\1\141\3\uffff\1\145\2\uffff\1\164\1\154\1\164\2"+
+        "\uffff\1\145\1\uffff\1\157\1\156\1\75\1\162\1\141\1\172\2\uffff"+
         "\2\uffff\1\57\3\uffff\1\143\4\uffff\1\154\2\uffff\1\144\1\164\2"+
-        "\141\1\164\1\162\3\uffff\1\146\1\uffff\1\157\1\164\1\165\1\154\5"+
-        "\uffff\1\153\1\145\1\40\1\122\1\162\1\156\1\163\1\172\1\151\1\145"+
-        "\1\154\1\172\1\145\1\163\1\141\1\164\1\uffff\1\141\1\154\1\164\1"+
-        "\145\1\151\1\147\1\163\1\uffff\1\156\1\162\1\172\1\uffff\1\172\1"+
-        "\145\1\147\1\145\1\143\1\141\1\164\1\146\1\142\1\145\1\172\1\147"+
-        "\1\145\2\uffff\1\172\1\145\1\122\1\153\1\163\1\162\1\145\1\165\1"+
-        "\122\1\uffff\1\172\1\156\1\172\1\141\1\154\1\164\1\145\1\141\1\163"+
-        "\1\151\1\162\1\164\1\141\1\154\1\164\1\145\1\uffff\1\143\1\uffff"+
-        "\1\143\1\141\1\164\1\146\1\147\1\50\1\142\2\145\1\143\1\141\1\164"+
-        "\1\146\1\145\1\153\1\163\1\162\2\145\1\uffff\1\165\1\156\1\172\1"+
-        "\153\1\163\1\162\1\145\1\172\1\141\1\163\1\151\1\162\1\172\1\164"+
-        "\1\143\1\uffff\1\141\1\163\1\151\1\162\1\uffff\1\147\1\50\1\142"+
-        "\1\145\1\uffff\2\145\1\147\1\50\1\142\2\145\1\uffff\1\165\1\156"+
-        "\1\50\1\172\1\145\1\uffff\1\165\1\156\1\172\1\164\1\143\2\uffff"+
-        "\1\172\1\164\1\143\1\uffff\2\145\1\uffff\2\145\1\50\1\172\1\50\1"+
-        "\172\4\uffff";
+        "\141\1\164\1\162\2\uffff\1\146\1\uffff\1\157\1\164\1\uffff\1\165"+
+        "\1\154\5\uffff\1\153\1\145\1\40\1\122\1\162\1\156\1\163\1\172\1"+
+        "\151\1\145\1\154\1\172\1\145\1\163\1\141\1\164\1\uffff\1\141\1\154"+
+        "\1\164\1\145\1\151\1\147\1\163\1\uffff\1\156\1\162\1\172\1\uffff"+
+        "\1\172\1\145\1\147\1\145\1\143\1\141\1\164\1\146\1\142\1\145\1\172"+
+        "\1\147\1\145\2\uffff\1\172\1\145\1\122\1\153\1\163\1\162\1\145\1"+
+        "\165\1\122\1\uffff\1\172\1\156\1\172\1\141\1\154\1\164\1\145\1\141"+
+        "\1\163\1\151\1\162\1\164\1\141\1\154\1\164\1\145\1\uffff\1\143\1"+
+        "\uffff\1\143\1\141\1\164\1\146\1\147\1\50\1\142\2\145\1\143\1\141"+
+        "\1\164\1\146\1\145\1\153\1\163\1\162\2\145\1\uffff\1\165\1\156\1"+
+        "\172\1\153\1\163\1\162\1\145\1\172\1\141\1\163\1\151\1\162\1\172"+
+        "\1\164\1\143\1\uffff\1\141\1\163\1\151\1\162\1\uffff\1\147\1\50"+
+        "\1\142\1\145\1\uffff\2\145\1\147\1\50\1\142\2\145\1\uffff\1\165"+
+        "\1\156\1\50\1\172\1\145\1\uffff\1\165\1\156\1\172\1\164\1\143\2"+
+        "\uffff\1\172\1\164\1\143\1\uffff\2\145\1\uffff\2\145\1\50\1\172"+
+        "\1\50\1\172\4\uffff";
     static final String DFA13_acceptS =
-        "\1\uffff\1\1\1\uffff\1\3\1\4\1\5\1\uffff\1\7\1\10\4\uffff\1\16\1"+
-        "\17\1\uffff\1\23\5\uffff\1\41\1\42\3\uffff\1\46\1\47\1\1\1\uffff"+
-        "\1\41\1\3\1\4\1\5\1\uffff\1\7\1\10\6\uffff\1\15\1\16\1\17\1\uffff"+
-        "\1\23\4\uffff\1\42\1\43\1\44\1\45\1\46\20\uffff\1\22\7\uffff\1\14"+
-        "\3\uffff\1\25\15\uffff\1\24\1\40\11\uffff\1\13\20\uffff\1\26\1\uffff"+
-        "\1\2\23\uffff\1\30\17\uffff\1\20\4\uffff\1\21\4\uffff\1\11\7\uffff"+
-        "\1\31\5\uffff\1\27\5\uffff\1\33\1\36\3\uffff\1\6\2\uffff\1\12\6"+
-        "\uffff\1\34\1\37\1\32\1\35";
+        "\1\uffff\1\1\1\uffff\1\3\1\4\1\5\1\uffff\1\7\1\10\3\uffff\1\15\1"+
+        "\16\1\uffff\1\22\6\uffff\1\41\1\42\3\uffff\1\46\1\47\1\1\1\uffff"+
+        "\1\41\1\3\1\4\1\5\1\uffff\1\7\1\10\6\uffff\1\15\1\16\1\uffff\1\22"+
+        "\2\uffff\1\31\2\uffff\1\42\1\43\1\44\1\45\1\46\20\uffff\1\21\7\uffff"+
+        "\1\14\3\uffff\1\24\15\uffff\1\23\1\40\11\uffff\1\13\20\uffff\1\25"+
+        "\1\uffff\1\2\23\uffff\1\27\17\uffff\1\17\4\uffff\1\20\4\uffff\1"+
+        "\11\7\uffff\1\30\5\uffff\1\26\5\uffff\1\33\1\36\3\uffff\1\6\2\uffff"+
+        "\1\12\6\uffff\1\34\1\37\1\32\1\35";
     static final String DFA13_specialS =
         "\1\2\27\uffff\1\0\1\1\u00bd\uffff}>";
     static final String[] DFA13_transitionS = {
             "\11\34\2\33\2\34\1\33\22\34\1\33\1\34\1\30\4\34\1\31\1\7\1\10"+
-            "\1\1\1\34\1\16\2\34\1\32\12\27\1\20\1\15\1\14\1\3\3\34\32\26"+
-            "\3\34\1\25\1\26\1\34\1\11\1\21\1\12\1\6\1\26\1\24\2\26\1\22"+
-            "\6\26\1\2\1\26\1\17\1\13\1\23\6\26\1\4\1\34\1\5\uff82\34",
+            "\1\1\1\34\1\15\2\34\1\32\12\27\1\17\1\14\1\22\1\3\3\34\32\26"+
+            "\3\34\1\25\1\26\1\34\1\11\1\20\1\12\1\6\1\26\1\24\2\26\1\21"+
+            "\6\26\1\2\1\26\1\16\1\13\1\23\6\26\1\4\1\34\1\5\uff82\34",
             "",
             "\1\36",
             "",
@@ -1640,11 +1640,11 @@ public class InternalEDeltaLangLexer extends Lexer {
             "\1\46\17\uffff\1\47",
             "\1\50\3\uffff\1\51",
             "\1\52\16\uffff\1\53",
-            "\1\54",
             "",
             "",
-            "\1\57",
+            "\1\56",
             "",
+            "\1\60",
             "\1\61",
             "\1\62",
             "\1\63",
@@ -1674,11 +1674,11 @@ public class InternalEDeltaLangLexer extends Lexer {
             "\1\102",
             "",
             "",
-            "",
             "\1\103",
             "",
             "\1\104",
             "\1\105",
+            "",
             "\1\106",
             "\1\107",
             "",
@@ -1927,19 +1927,19 @@ public class InternalEDeltaLangLexer extends Lexer {
 
                         else if ( (LA13_0=='s') ) {s = 11;}
 
-                        else if ( (LA13_0=='<') ) {s = 12;}
+                        else if ( (LA13_0==';') ) {s = 12;}
 
-                        else if ( (LA13_0==';') ) {s = 13;}
+                        else if ( (LA13_0==',') ) {s = 13;}
 
-                        else if ( (LA13_0==',') ) {s = 14;}
+                        else if ( (LA13_0=='r') ) {s = 14;}
 
-                        else if ( (LA13_0=='r') ) {s = 15;}
+                        else if ( (LA13_0==':') ) {s = 15;}
 
-                        else if ( (LA13_0==':') ) {s = 16;}
+                        else if ( (LA13_0=='b') ) {s = 16;}
 
-                        else if ( (LA13_0=='b') ) {s = 17;}
+                        else if ( (LA13_0=='i') ) {s = 17;}
 
-                        else if ( (LA13_0=='i') ) {s = 18;}
+                        else if ( (LA13_0=='<') ) {s = 18;}
 
                         else if ( (LA13_0=='t') ) {s = 19;}
 

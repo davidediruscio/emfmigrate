@@ -21,7 +21,7 @@ import java.util.ArrayList;
 @SuppressWarnings("all")
 public class InternalEmigParser extends AbstractInternalAntlrParser {
     public static final String[] tokenNames = new String[] {
-        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_ID", "RULE_STRING", "RULE_INT", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'Library'", "'{'", "'}'", "'include'", "';'", "'migrate'", "':'", "','", "'with'", "'transformation'", "'model'", "'tcs-model'", "'rule'", "'['", "']'", "'package'", "'='", "'changePackage'", "'addPackage'", "'deletePackage'", "'('", "')'", "'where'", "'class'", "'changeClass'", "'addClass'", "'deleteClass'", "'attribute'", "'changeEAttribute'", "'addEAttribute'", "'deleteEAttribute'", "'reference'", "'changeEReference'", "'addEReference'", "'deleteEReference'", "'set'", "'->'", "'&'", "'null'", "'#'", "'.'", "'%'"
+        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_ID", "RULE_STRING", "RULE_INT", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'Library'", "'{'", "'}'", "'Migration'", "';'", "'include'", "'migrate'", "':'", "','", "'with'", "'transformation'", "'model'", "'tcs-model'", "'rule'", "'['", "']'", "'package'", "'='", "'changePackage'", "'addPackage'", "'deletePackage'", "'('", "')'", "'where'", "'class'", "'changeClass'", "'addClass'", "'deleteClass'", "'attribute'", "'changeEAttribute'", "'addEAttribute'", "'deleteEAttribute'", "'reference'", "'changeEReference'", "'addEReference'", "'deleteEReference'", "'set'", "'->'", "'&'", "'null'", "'#'", "'.'", "'%'"
     };
     public static final int RULE_ID=4;
     public static final int T__29=29;
@@ -41,6 +41,7 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
     public static final int T__16=16;
     public static final int T__52=52;
     public static final int T__15=15;
+    public static final int T__53=53;
     public static final int T__18=18;
     public static final int T__17=17;
     public static final int T__12=12;
@@ -171,7 +172,7 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
             if ( (LA1_0==11) ) {
                 alt1=1;
             }
-            else if ( (LA1_0==14||LA1_0==16) ) {
+            else if ( (LA1_0==14) ) {
                 alt1=2;
             }
             else {
@@ -312,12 +313,12 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleMigrationLibrary"
-    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:134:1: ruleMigrationLibrary returns [EObject current=null] : (otherlv_0= 'Library' ( (lv_title_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_rules_3_0= ruleRule ) )* otherlv_4= '}' ) ;
+    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:134:1: ruleMigrationLibrary returns [EObject current=null] : (otherlv_0= 'Library' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_rules_3_0= ruleRule ) )* otherlv_4= '}' ) ;
     public final EObject ruleMigrationLibrary() throws RecognitionException {
         EObject current = null;
 
         Token otherlv_0=null;
-        Token lv_title_1_0=null;
+        Token lv_name_1_0=null;
         Token otherlv_2=null;
         Token otherlv_4=null;
         EObject lv_rules_3_0 = null;
@@ -326,25 +327,25 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:137:28: ( (otherlv_0= 'Library' ( (lv_title_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_rules_3_0= ruleRule ) )* otherlv_4= '}' ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:138:1: (otherlv_0= 'Library' ( (lv_title_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_rules_3_0= ruleRule ) )* otherlv_4= '}' )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:137:28: ( (otherlv_0= 'Library' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_rules_3_0= ruleRule ) )* otherlv_4= '}' ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:138:1: (otherlv_0= 'Library' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_rules_3_0= ruleRule ) )* otherlv_4= '}' )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:138:1: (otherlv_0= 'Library' ( (lv_title_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_rules_3_0= ruleRule ) )* otherlv_4= '}' )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:138:3: otherlv_0= 'Library' ( (lv_title_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_rules_3_0= ruleRule ) )* otherlv_4= '}'
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:138:1: (otherlv_0= 'Library' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_rules_3_0= ruleRule ) )* otherlv_4= '}' )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:138:3: otherlv_0= 'Library' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_rules_3_0= ruleRule ) )* otherlv_4= '}'
             {
             otherlv_0=(Token)match(input,11,FOLLOW_11_in_ruleMigrationLibrary241); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getMigrationLibraryAccess().getLibraryKeyword_0());
                 
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:142:1: ( (lv_title_1_0= RULE_ID ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:143:1: (lv_title_1_0= RULE_ID )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:142:1: ( (lv_name_1_0= RULE_ID ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:143:1: (lv_name_1_0= RULE_ID )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:143:1: (lv_title_1_0= RULE_ID )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:144:3: lv_title_1_0= RULE_ID
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:143:1: (lv_name_1_0= RULE_ID )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:144:3: lv_name_1_0= RULE_ID
             {
-            lv_title_1_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleMigrationLibrary258); 
+            lv_name_1_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleMigrationLibrary258); 
 
-            			newLeafNode(lv_title_1_0, grammarAccess.getMigrationLibraryAccess().getTitleIDTerminalRuleCall_1_0()); 
+            			newLeafNode(lv_name_1_0, grammarAccess.getMigrationLibraryAccess().getNameIDTerminalRuleCall_1_0()); 
             		
 
             	        if (current==null) {
@@ -352,8 +353,8 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
             	        }
                    		setWithLastConsumed(
                    			current, 
-                   			"title",
-                    		lv_title_1_0, 
+                   			"name",
+                    		lv_name_1_0, 
                     		"ID");
             	    
 
@@ -372,7 +373,7 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
                 int alt2=2;
                 int LA2_0 = input.LA(1);
 
-                if ( (LA2_0==23) ) {
+                if ( (LA2_0==24) ) {
                     alt2=1;
                 }
 
@@ -440,7 +441,7 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleMigrationProgram"
-    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:194:1: entryRuleMigrationProgram returns [EObject current=null] : iv_ruleMigrationProgram= ruleMigrationProgram EOF ;
+    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:196:1: entryRuleMigrationProgram returns [EObject current=null] : iv_ruleMigrationProgram= ruleMigrationProgram EOF ;
     public final EObject entryRuleMigrationProgram() throws RecognitionException {
         EObject current = null;
 
@@ -448,17 +449,17 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:195:2: (iv_ruleMigrationProgram= ruleMigrationProgram EOF )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:196:2: iv_ruleMigrationProgram= ruleMigrationProgram EOF
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:197:2: (iv_ruleMigrationProgram= ruleMigrationProgram EOF )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:198:2: iv_ruleMigrationProgram= ruleMigrationProgram EOF
             {
              newCompositeNode(grammarAccess.getMigrationProgramRule()); 
-            pushFollow(FOLLOW_ruleMigrationProgram_in_entryRuleMigrationProgram345);
+            pushFollow(FOLLOW_ruleMigrationProgram_in_entryRuleMigrationProgram347);
             iv_ruleMigrationProgram=ruleMigrationProgram();
 
             state._fsp--;
 
              current =iv_ruleMigrationProgram; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleMigrationProgram355); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleMigrationProgram357); 
 
             }
 
@@ -476,65 +477,102 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleMigrationProgram"
-    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:203:1: ruleMigrationProgram returns [EObject current=null] : ( (otherlv_0= 'include' ( (lv_libs_1_0= RULE_STRING ) ) otherlv_2= ';' )* ( (lv_migr_3_0= 'migrate' ) ) ( (lv_typeArt_4_0= ruleArtifact ) ) ( (lv_name_5_0= RULE_STRING ) ) otherlv_6= ':' ( ( (otherlv_7= RULE_ID ) ) (otherlv_8= ',' ( (otherlv_9= RULE_ID ) ) ) ) otherlv_10= 'with' ( (lv_delta_11_0= RULE_STRING ) ) otherlv_12= '{' ( (lv_rules_13_0= ruleRule ) )* otherlv_14= '}' ) ;
+    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:205:1: ruleMigrationProgram returns [EObject current=null] : (otherlv_0= 'Migration' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= ';' (otherlv_3= 'include' ( (lv_libs_4_0= RULE_STRING ) ) otherlv_5= ';' )* ( (lv_migr_6_0= 'migrate' ) ) ( (lv_typeArt_7_0= ruleArtifact ) ) ( (lv_artifact_8_0= RULE_STRING ) ) otherlv_9= ':' ( ( (otherlv_10= RULE_ID ) ) (otherlv_11= ',' ( (otherlv_12= RULE_ID ) ) ) ) otherlv_13= 'with' ( (lv_delta_14_0= RULE_STRING ) ) otherlv_15= '{' ( (lv_rules_16_0= ruleRule ) )* otherlv_17= '}' ) ;
     public final EObject ruleMigrationProgram() throws RecognitionException {
         EObject current = null;
 
         Token otherlv_0=null;
-        Token lv_libs_1_0=null;
+        Token lv_name_1_0=null;
         Token otherlv_2=null;
-        Token lv_migr_3_0=null;
-        Token lv_name_5_0=null;
-        Token otherlv_6=null;
-        Token otherlv_7=null;
-        Token otherlv_8=null;
+        Token otherlv_3=null;
+        Token lv_libs_4_0=null;
+        Token otherlv_5=null;
+        Token lv_migr_6_0=null;
+        Token lv_artifact_8_0=null;
         Token otherlv_9=null;
         Token otherlv_10=null;
-        Token lv_delta_11_0=null;
+        Token otherlv_11=null;
         Token otherlv_12=null;
-        Token otherlv_14=null;
-        EObject lv_typeArt_4_0 = null;
+        Token otherlv_13=null;
+        Token lv_delta_14_0=null;
+        Token otherlv_15=null;
+        Token otherlv_17=null;
+        EObject lv_typeArt_7_0 = null;
 
-        EObject lv_rules_13_0 = null;
+        EObject lv_rules_16_0 = null;
 
 
          enterRule(); 
             
         try {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:206:28: ( ( (otherlv_0= 'include' ( (lv_libs_1_0= RULE_STRING ) ) otherlv_2= ';' )* ( (lv_migr_3_0= 'migrate' ) ) ( (lv_typeArt_4_0= ruleArtifact ) ) ( (lv_name_5_0= RULE_STRING ) ) otherlv_6= ':' ( ( (otherlv_7= RULE_ID ) ) (otherlv_8= ',' ( (otherlv_9= RULE_ID ) ) ) ) otherlv_10= 'with' ( (lv_delta_11_0= RULE_STRING ) ) otherlv_12= '{' ( (lv_rules_13_0= ruleRule ) )* otherlv_14= '}' ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:207:1: ( (otherlv_0= 'include' ( (lv_libs_1_0= RULE_STRING ) ) otherlv_2= ';' )* ( (lv_migr_3_0= 'migrate' ) ) ( (lv_typeArt_4_0= ruleArtifact ) ) ( (lv_name_5_0= RULE_STRING ) ) otherlv_6= ':' ( ( (otherlv_7= RULE_ID ) ) (otherlv_8= ',' ( (otherlv_9= RULE_ID ) ) ) ) otherlv_10= 'with' ( (lv_delta_11_0= RULE_STRING ) ) otherlv_12= '{' ( (lv_rules_13_0= ruleRule ) )* otherlv_14= '}' )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:208:28: ( (otherlv_0= 'Migration' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= ';' (otherlv_3= 'include' ( (lv_libs_4_0= RULE_STRING ) ) otherlv_5= ';' )* ( (lv_migr_6_0= 'migrate' ) ) ( (lv_typeArt_7_0= ruleArtifact ) ) ( (lv_artifact_8_0= RULE_STRING ) ) otherlv_9= ':' ( ( (otherlv_10= RULE_ID ) ) (otherlv_11= ',' ( (otherlv_12= RULE_ID ) ) ) ) otherlv_13= 'with' ( (lv_delta_14_0= RULE_STRING ) ) otherlv_15= '{' ( (lv_rules_16_0= ruleRule ) )* otherlv_17= '}' ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:209:1: (otherlv_0= 'Migration' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= ';' (otherlv_3= 'include' ( (lv_libs_4_0= RULE_STRING ) ) otherlv_5= ';' )* ( (lv_migr_6_0= 'migrate' ) ) ( (lv_typeArt_7_0= ruleArtifact ) ) ( (lv_artifact_8_0= RULE_STRING ) ) otherlv_9= ':' ( ( (otherlv_10= RULE_ID ) ) (otherlv_11= ',' ( (otherlv_12= RULE_ID ) ) ) ) otherlv_13= 'with' ( (lv_delta_14_0= RULE_STRING ) ) otherlv_15= '{' ( (lv_rules_16_0= ruleRule ) )* otherlv_17= '}' )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:207:1: ( (otherlv_0= 'include' ( (lv_libs_1_0= RULE_STRING ) ) otherlv_2= ';' )* ( (lv_migr_3_0= 'migrate' ) ) ( (lv_typeArt_4_0= ruleArtifact ) ) ( (lv_name_5_0= RULE_STRING ) ) otherlv_6= ':' ( ( (otherlv_7= RULE_ID ) ) (otherlv_8= ',' ( (otherlv_9= RULE_ID ) ) ) ) otherlv_10= 'with' ( (lv_delta_11_0= RULE_STRING ) ) otherlv_12= '{' ( (lv_rules_13_0= ruleRule ) )* otherlv_14= '}' )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:207:2: (otherlv_0= 'include' ( (lv_libs_1_0= RULE_STRING ) ) otherlv_2= ';' )* ( (lv_migr_3_0= 'migrate' ) ) ( (lv_typeArt_4_0= ruleArtifact ) ) ( (lv_name_5_0= RULE_STRING ) ) otherlv_6= ':' ( ( (otherlv_7= RULE_ID ) ) (otherlv_8= ',' ( (otherlv_9= RULE_ID ) ) ) ) otherlv_10= 'with' ( (lv_delta_11_0= RULE_STRING ) ) otherlv_12= '{' ( (lv_rules_13_0= ruleRule ) )* otherlv_14= '}'
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:209:1: (otherlv_0= 'Migration' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= ';' (otherlv_3= 'include' ( (lv_libs_4_0= RULE_STRING ) ) otherlv_5= ';' )* ( (lv_migr_6_0= 'migrate' ) ) ( (lv_typeArt_7_0= ruleArtifact ) ) ( (lv_artifact_8_0= RULE_STRING ) ) otherlv_9= ':' ( ( (otherlv_10= RULE_ID ) ) (otherlv_11= ',' ( (otherlv_12= RULE_ID ) ) ) ) otherlv_13= 'with' ( (lv_delta_14_0= RULE_STRING ) ) otherlv_15= '{' ( (lv_rules_16_0= ruleRule ) )* otherlv_17= '}' )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:209:3: otherlv_0= 'Migration' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= ';' (otherlv_3= 'include' ( (lv_libs_4_0= RULE_STRING ) ) otherlv_5= ';' )* ( (lv_migr_6_0= 'migrate' ) ) ( (lv_typeArt_7_0= ruleArtifact ) ) ( (lv_artifact_8_0= RULE_STRING ) ) otherlv_9= ':' ( ( (otherlv_10= RULE_ID ) ) (otherlv_11= ',' ( (otherlv_12= RULE_ID ) ) ) ) otherlv_13= 'with' ( (lv_delta_14_0= RULE_STRING ) ) otherlv_15= '{' ( (lv_rules_16_0= ruleRule ) )* otherlv_17= '}'
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:207:2: (otherlv_0= 'include' ( (lv_libs_1_0= RULE_STRING ) ) otherlv_2= ';' )*
+            otherlv_0=(Token)match(input,14,FOLLOW_14_in_ruleMigrationProgram394); 
+
+                	newLeafNode(otherlv_0, grammarAccess.getMigrationProgramAccess().getMigrationKeyword_0());
+                
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:213:1: ( (lv_name_1_0= RULE_ID ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:214:1: (lv_name_1_0= RULE_ID )
+            {
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:214:1: (lv_name_1_0= RULE_ID )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:215:3: lv_name_1_0= RULE_ID
+            {
+            lv_name_1_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleMigrationProgram411); 
+
+            			newLeafNode(lv_name_1_0, grammarAccess.getMigrationProgramAccess().getNameIDTerminalRuleCall_1_0()); 
+            		
+
+            	        if (current==null) {
+            	            current = createModelElement(grammarAccess.getMigrationProgramRule());
+            	        }
+                   		setWithLastConsumed(
+                   			current, 
+                   			"name",
+                    		lv_name_1_0, 
+                    		"ID");
+            	    
+
+            }
+
+
+            }
+
+            otherlv_2=(Token)match(input,15,FOLLOW_15_in_ruleMigrationProgram428); 
+
+                	newLeafNode(otherlv_2, grammarAccess.getMigrationProgramAccess().getSemicolonKeyword_2());
+                
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:235:1: (otherlv_3= 'include' ( (lv_libs_4_0= RULE_STRING ) ) otherlv_5= ';' )*
             loop3:
             do {
                 int alt3=2;
                 int LA3_0 = input.LA(1);
 
-                if ( (LA3_0==14) ) {
+                if ( (LA3_0==16) ) {
                     alt3=1;
                 }
 
 
                 switch (alt3) {
             	case 1 :
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:207:4: otherlv_0= 'include' ( (lv_libs_1_0= RULE_STRING ) ) otherlv_2= ';'
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:235:3: otherlv_3= 'include' ( (lv_libs_4_0= RULE_STRING ) ) otherlv_5= ';'
             	    {
-            	    otherlv_0=(Token)match(input,14,FOLLOW_14_in_ruleMigrationProgram393); 
+            	    otherlv_3=(Token)match(input,16,FOLLOW_16_in_ruleMigrationProgram441); 
 
-            	        	newLeafNode(otherlv_0, grammarAccess.getMigrationProgramAccess().getIncludeKeyword_0_0());
+            	        	newLeafNode(otherlv_3, grammarAccess.getMigrationProgramAccess().getIncludeKeyword_3_0());
             	        
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:211:1: ( (lv_libs_1_0= RULE_STRING ) )
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:212:1: (lv_libs_1_0= RULE_STRING )
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:239:1: ( (lv_libs_4_0= RULE_STRING ) )
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:240:1: (lv_libs_4_0= RULE_STRING )
             	    {
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:212:1: (lv_libs_1_0= RULE_STRING )
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:213:3: lv_libs_1_0= RULE_STRING
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:240:1: (lv_libs_4_0= RULE_STRING )
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:241:3: lv_libs_4_0= RULE_STRING
             	    {
-            	    lv_libs_1_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleMigrationProgram410); 
+            	    lv_libs_4_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleMigrationProgram458); 
 
-            	    			newLeafNode(lv_libs_1_0, grammarAccess.getMigrationProgramAccess().getLibsSTRINGTerminalRuleCall_0_1_0()); 
+            	    			newLeafNode(lv_libs_4_0, grammarAccess.getMigrationProgramAccess().getLibsSTRINGTerminalRuleCall_3_1_0()); 
             	    		
 
             	    	        if (current==null) {
@@ -543,7 +581,7 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
             	           		addWithLastConsumed(
             	           			current, 
             	           			"libs",
-            	            		lv_libs_1_0, 
+            	            		lv_libs_4_0, 
             	            		"STRING");
             	    	    
 
@@ -552,9 +590,9 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
             	    }
 
-            	    otherlv_2=(Token)match(input,15,FOLLOW_15_in_ruleMigrationProgram427); 
+            	    otherlv_5=(Token)match(input,15,FOLLOW_15_in_ruleMigrationProgram475); 
 
-            	        	newLeafNode(otherlv_2, grammarAccess.getMigrationProgramAccess().getSemicolonKeyword_0_2());
+            	        	newLeafNode(otherlv_5, grammarAccess.getMigrationProgramAccess().getSemicolonKeyword_3_2());
             	        
 
             	    }
@@ -565,21 +603,21 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
                 }
             } while (true);
 
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:233:3: ( (lv_migr_3_0= 'migrate' ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:234:1: (lv_migr_3_0= 'migrate' )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:261:3: ( (lv_migr_6_0= 'migrate' ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:262:1: (lv_migr_6_0= 'migrate' )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:234:1: (lv_migr_3_0= 'migrate' )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:235:3: lv_migr_3_0= 'migrate'
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:262:1: (lv_migr_6_0= 'migrate' )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:263:3: lv_migr_6_0= 'migrate'
             {
-            lv_migr_3_0=(Token)match(input,16,FOLLOW_16_in_ruleMigrationProgram447); 
+            lv_migr_6_0=(Token)match(input,17,FOLLOW_17_in_ruleMigrationProgram495); 
 
-                    newLeafNode(lv_migr_3_0, grammarAccess.getMigrationProgramAccess().getMigrMigrateKeyword_1_0());
+                    newLeafNode(lv_migr_6_0, grammarAccess.getMigrationProgramAccess().getMigrMigrateKeyword_4_0());
                 
 
             	        if (current==null) {
             	            current = createModelElement(grammarAccess.getMigrationProgramRule());
             	        }
-                   		setWithLastConsumed(current, "migr", lv_migr_3_0, "migrate");
+                   		setWithLastConsumed(current, "migr", lv_migr_6_0, "migrate");
             	    
 
             }
@@ -587,17 +625,17 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:248:2: ( (lv_typeArt_4_0= ruleArtifact ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:249:1: (lv_typeArt_4_0= ruleArtifact )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:276:2: ( (lv_typeArt_7_0= ruleArtifact ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:277:1: (lv_typeArt_7_0= ruleArtifact )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:249:1: (lv_typeArt_4_0= ruleArtifact )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:250:3: lv_typeArt_4_0= ruleArtifact
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:277:1: (lv_typeArt_7_0= ruleArtifact )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:278:3: lv_typeArt_7_0= ruleArtifact
             {
              
-            	        newCompositeNode(grammarAccess.getMigrationProgramAccess().getTypeArtArtifactParserRuleCall_2_0()); 
+            	        newCompositeNode(grammarAccess.getMigrationProgramAccess().getTypeArtArtifactParserRuleCall_5_0()); 
             	    
-            pushFollow(FOLLOW_ruleArtifact_in_ruleMigrationProgram481);
-            lv_typeArt_4_0=ruleArtifact();
+            pushFollow(FOLLOW_ruleArtifact_in_ruleMigrationProgram529);
+            lv_typeArt_7_0=ruleArtifact();
 
             state._fsp--;
 
@@ -608,7 +646,7 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
                    		set(
                    			current, 
                    			"typeArt",
-                    		lv_typeArt_4_0, 
+                    		lv_typeArt_7_0, 
                     		"Artifact");
             	        afterParserOrEnumRuleCall();
             	    
@@ -618,15 +656,15 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:266:2: ( (lv_name_5_0= RULE_STRING ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:267:1: (lv_name_5_0= RULE_STRING )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:294:2: ( (lv_artifact_8_0= RULE_STRING ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:295:1: (lv_artifact_8_0= RULE_STRING )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:267:1: (lv_name_5_0= RULE_STRING )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:268:3: lv_name_5_0= RULE_STRING
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:295:1: (lv_artifact_8_0= RULE_STRING )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:296:3: lv_artifact_8_0= RULE_STRING
             {
-            lv_name_5_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleMigrationProgram498); 
+            lv_artifact_8_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleMigrationProgram546); 
 
-            			newLeafNode(lv_name_5_0, grammarAccess.getMigrationProgramAccess().getNameSTRINGTerminalRuleCall_3_0()); 
+            			newLeafNode(lv_artifact_8_0, grammarAccess.getMigrationProgramAccess().getArtifactSTRINGTerminalRuleCall_6_0()); 
             		
 
             	        if (current==null) {
@@ -634,8 +672,8 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
             	        }
                    		setWithLastConsumed(
                    			current, 
-                   			"name",
-                    		lv_name_5_0, 
+                   			"artifact",
+                    		lv_artifact_8_0, 
                     		"STRING");
             	    
 
@@ -644,27 +682,27 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_6=(Token)match(input,17,FOLLOW_17_in_ruleMigrationProgram515); 
+            otherlv_9=(Token)match(input,18,FOLLOW_18_in_ruleMigrationProgram563); 
 
-                	newLeafNode(otherlv_6, grammarAccess.getMigrationProgramAccess().getColonKeyword_4());
+                	newLeafNode(otherlv_9, grammarAccess.getMigrationProgramAccess().getColonKeyword_7());
                 
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:288:1: ( ( (otherlv_7= RULE_ID ) ) (otherlv_8= ',' ( (otherlv_9= RULE_ID ) ) ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:288:2: ( (otherlv_7= RULE_ID ) ) (otherlv_8= ',' ( (otherlv_9= RULE_ID ) ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:316:1: ( ( (otherlv_10= RULE_ID ) ) (otherlv_11= ',' ( (otherlv_12= RULE_ID ) ) ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:316:2: ( (otherlv_10= RULE_ID ) ) (otherlv_11= ',' ( (otherlv_12= RULE_ID ) ) )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:288:2: ( (otherlv_7= RULE_ID ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:289:1: (otherlv_7= RULE_ID )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:316:2: ( (otherlv_10= RULE_ID ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:317:1: (otherlv_10= RULE_ID )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:289:1: (otherlv_7= RULE_ID )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:290:3: otherlv_7= RULE_ID
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:317:1: (otherlv_10= RULE_ID )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:318:3: otherlv_10= RULE_ID
             {
 
             			if (current==null) {
             	            current = createModelElement(grammarAccess.getMigrationProgramRule());
             	        }
                     
-            otherlv_7=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleMigrationProgram536); 
+            otherlv_10=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleMigrationProgram584); 
 
-            		newLeafNode(otherlv_7, grammarAccess.getMigrationProgramAccess().getTransformationPackageEPackageCrossReference_5_0_0()); 
+            		newLeafNode(otherlv_10, grammarAccess.getMigrationProgramAccess().getTransformationPackageEPackageCrossReference_8_0_0()); 
             	
 
             }
@@ -672,27 +710,27 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:301:2: (otherlv_8= ',' ( (otherlv_9= RULE_ID ) ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:301:4: otherlv_8= ',' ( (otherlv_9= RULE_ID ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:329:2: (otherlv_11= ',' ( (otherlv_12= RULE_ID ) ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:329:4: otherlv_11= ',' ( (otherlv_12= RULE_ID ) )
             {
-            otherlv_8=(Token)match(input,18,FOLLOW_18_in_ruleMigrationProgram549); 
+            otherlv_11=(Token)match(input,19,FOLLOW_19_in_ruleMigrationProgram597); 
 
-                	newLeafNode(otherlv_8, grammarAccess.getMigrationProgramAccess().getCommaKeyword_5_1_0());
+                	newLeafNode(otherlv_11, grammarAccess.getMigrationProgramAccess().getCommaKeyword_8_1_0());
                 
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:305:1: ( (otherlv_9= RULE_ID ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:306:1: (otherlv_9= RULE_ID )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:333:1: ( (otherlv_12= RULE_ID ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:334:1: (otherlv_12= RULE_ID )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:306:1: (otherlv_9= RULE_ID )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:307:3: otherlv_9= RULE_ID
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:334:1: (otherlv_12= RULE_ID )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:335:3: otherlv_12= RULE_ID
             {
 
             			if (current==null) {
             	            current = createModelElement(grammarAccess.getMigrationProgramRule());
             	        }
                     
-            otherlv_9=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleMigrationProgram569); 
+            otherlv_12=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleMigrationProgram617); 
 
-            		newLeafNode(otherlv_9, grammarAccess.getMigrationProgramAccess().getTransformationPackageEPackageCrossReference_5_1_1_0()); 
+            		newLeafNode(otherlv_12, grammarAccess.getMigrationProgramAccess().getTransformationPackageEPackageCrossReference_8_1_1_0()); 
             	
 
             }
@@ -706,19 +744,19 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_10=(Token)match(input,19,FOLLOW_19_in_ruleMigrationProgram583); 
+            otherlv_13=(Token)match(input,20,FOLLOW_20_in_ruleMigrationProgram631); 
 
-                	newLeafNode(otherlv_10, grammarAccess.getMigrationProgramAccess().getWithKeyword_6());
+                	newLeafNode(otherlv_13, grammarAccess.getMigrationProgramAccess().getWithKeyword_9());
                 
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:322:1: ( (lv_delta_11_0= RULE_STRING ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:323:1: (lv_delta_11_0= RULE_STRING )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:350:1: ( (lv_delta_14_0= RULE_STRING ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:351:1: (lv_delta_14_0= RULE_STRING )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:323:1: (lv_delta_11_0= RULE_STRING )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:324:3: lv_delta_11_0= RULE_STRING
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:351:1: (lv_delta_14_0= RULE_STRING )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:352:3: lv_delta_14_0= RULE_STRING
             {
-            lv_delta_11_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleMigrationProgram600); 
+            lv_delta_14_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleMigrationProgram648); 
 
-            			newLeafNode(lv_delta_11_0, grammarAccess.getMigrationProgramAccess().getDeltaSTRINGTerminalRuleCall_7_0()); 
+            			newLeafNode(lv_delta_14_0, grammarAccess.getMigrationProgramAccess().getDeltaSTRINGTerminalRuleCall_10_0()); 
             		
 
             	        if (current==null) {
@@ -727,7 +765,7 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
                    		setWithLastConsumed(
                    			current, 
                    			"delta",
-                    		lv_delta_11_0, 
+                    		lv_delta_14_0, 
                     		"STRING");
             	    
 
@@ -736,33 +774,33 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_12=(Token)match(input,12,FOLLOW_12_in_ruleMigrationProgram617); 
+            otherlv_15=(Token)match(input,12,FOLLOW_12_in_ruleMigrationProgram665); 
 
-                	newLeafNode(otherlv_12, grammarAccess.getMigrationProgramAccess().getLeftCurlyBracketKeyword_8());
+                	newLeafNode(otherlv_15, grammarAccess.getMigrationProgramAccess().getLeftCurlyBracketKeyword_11());
                 
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:344:1: ( (lv_rules_13_0= ruleRule ) )*
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:372:1: ( (lv_rules_16_0= ruleRule ) )*
             loop4:
             do {
                 int alt4=2;
                 int LA4_0 = input.LA(1);
 
-                if ( (LA4_0==23) ) {
+                if ( (LA4_0==24) ) {
                     alt4=1;
                 }
 
 
                 switch (alt4) {
             	case 1 :
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:345:1: (lv_rules_13_0= ruleRule )
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:373:1: (lv_rules_16_0= ruleRule )
             	    {
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:345:1: (lv_rules_13_0= ruleRule )
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:346:3: lv_rules_13_0= ruleRule
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:373:1: (lv_rules_16_0= ruleRule )
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:374:3: lv_rules_16_0= ruleRule
             	    {
             	     
-            	    	        newCompositeNode(grammarAccess.getMigrationProgramAccess().getRulesRuleParserRuleCall_9_0()); 
+            	    	        newCompositeNode(grammarAccess.getMigrationProgramAccess().getRulesRuleParserRuleCall_12_0()); 
             	    	    
-            	    pushFollow(FOLLOW_ruleRule_in_ruleMigrationProgram638);
-            	    lv_rules_13_0=ruleRule();
+            	    pushFollow(FOLLOW_ruleRule_in_ruleMigrationProgram686);
+            	    lv_rules_16_0=ruleRule();
 
             	    state._fsp--;
 
@@ -773,7 +811,7 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
             	           		add(
             	           			current, 
             	           			"rules",
-            	            		lv_rules_13_0, 
+            	            		lv_rules_16_0, 
             	            		"Rule");
             	    	        afterParserOrEnumRuleCall();
             	    	    
@@ -789,9 +827,9 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
                 }
             } while (true);
 
-            otherlv_14=(Token)match(input,13,FOLLOW_13_in_ruleMigrationProgram651); 
+            otherlv_17=(Token)match(input,13,FOLLOW_13_in_ruleMigrationProgram699); 
 
-                	newLeafNode(otherlv_14, grammarAccess.getMigrationProgramAccess().getRightCurlyBracketKeyword_10());
+                	newLeafNode(otherlv_17, grammarAccess.getMigrationProgramAccess().getRightCurlyBracketKeyword_13());
                 
 
             }
@@ -814,7 +852,7 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleArtifact"
-    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:374:1: entryRuleArtifact returns [EObject current=null] : iv_ruleArtifact= ruleArtifact EOF ;
+    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:402:1: entryRuleArtifact returns [EObject current=null] : iv_ruleArtifact= ruleArtifact EOF ;
     public final EObject entryRuleArtifact() throws RecognitionException {
         EObject current = null;
 
@@ -822,17 +860,17 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:375:2: (iv_ruleArtifact= ruleArtifact EOF )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:376:2: iv_ruleArtifact= ruleArtifact EOF
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:403:2: (iv_ruleArtifact= ruleArtifact EOF )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:404:2: iv_ruleArtifact= ruleArtifact EOF
             {
              newCompositeNode(grammarAccess.getArtifactRule()); 
-            pushFollow(FOLLOW_ruleArtifact_in_entryRuleArtifact687);
+            pushFollow(FOLLOW_ruleArtifact_in_entryRuleArtifact735);
             iv_ruleArtifact=ruleArtifact();
 
             state._fsp--;
 
              current =iv_ruleArtifact; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleArtifact697); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleArtifact745); 
 
             }
 
@@ -850,7 +888,7 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleArtifact"
-    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:383:1: ruleArtifact returns [EObject current=null] : ( ( (lv_type_0_1= 'transformation' | lv_type_0_2= 'model' | lv_type_0_3= 'tcs-model' ) ) ) ;
+    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:411:1: ruleArtifact returns [EObject current=null] : ( ( (lv_type_0_1= 'transformation' | lv_type_0_2= 'model' | lv_type_0_3= 'tcs-model' ) ) ) ;
     public final EObject ruleArtifact() throws RecognitionException {
         EObject current = null;
 
@@ -861,29 +899,29 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:386:28: ( ( ( (lv_type_0_1= 'transformation' | lv_type_0_2= 'model' | lv_type_0_3= 'tcs-model' ) ) ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:387:1: ( ( (lv_type_0_1= 'transformation' | lv_type_0_2= 'model' | lv_type_0_3= 'tcs-model' ) ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:414:28: ( ( ( (lv_type_0_1= 'transformation' | lv_type_0_2= 'model' | lv_type_0_3= 'tcs-model' ) ) ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:415:1: ( ( (lv_type_0_1= 'transformation' | lv_type_0_2= 'model' | lv_type_0_3= 'tcs-model' ) ) )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:387:1: ( ( (lv_type_0_1= 'transformation' | lv_type_0_2= 'model' | lv_type_0_3= 'tcs-model' ) ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:388:1: ( (lv_type_0_1= 'transformation' | lv_type_0_2= 'model' | lv_type_0_3= 'tcs-model' ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:415:1: ( ( (lv_type_0_1= 'transformation' | lv_type_0_2= 'model' | lv_type_0_3= 'tcs-model' ) ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:416:1: ( (lv_type_0_1= 'transformation' | lv_type_0_2= 'model' | lv_type_0_3= 'tcs-model' ) )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:388:1: ( (lv_type_0_1= 'transformation' | lv_type_0_2= 'model' | lv_type_0_3= 'tcs-model' ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:389:1: (lv_type_0_1= 'transformation' | lv_type_0_2= 'model' | lv_type_0_3= 'tcs-model' )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:416:1: ( (lv_type_0_1= 'transformation' | lv_type_0_2= 'model' | lv_type_0_3= 'tcs-model' ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:417:1: (lv_type_0_1= 'transformation' | lv_type_0_2= 'model' | lv_type_0_3= 'tcs-model' )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:389:1: (lv_type_0_1= 'transformation' | lv_type_0_2= 'model' | lv_type_0_3= 'tcs-model' )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:417:1: (lv_type_0_1= 'transformation' | lv_type_0_2= 'model' | lv_type_0_3= 'tcs-model' )
             int alt5=3;
             switch ( input.LA(1) ) {
-            case 20:
+            case 21:
                 {
                 alt5=1;
                 }
                 break;
-            case 21:
+            case 22:
                 {
                 alt5=2;
                 }
                 break;
-            case 22:
+            case 23:
                 {
                 alt5=3;
                 }
@@ -897,9 +935,9 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
             switch (alt5) {
                 case 1 :
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:390:3: lv_type_0_1= 'transformation'
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:418:3: lv_type_0_1= 'transformation'
                     {
-                    lv_type_0_1=(Token)match(input,20,FOLLOW_20_in_ruleArtifact741); 
+                    lv_type_0_1=(Token)match(input,21,FOLLOW_21_in_ruleArtifact789); 
 
                             newLeafNode(lv_type_0_1, grammarAccess.getArtifactAccess().getTypeTransformationKeyword_0_0());
                         
@@ -913,9 +951,9 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:402:8: lv_type_0_2= 'model'
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:430:8: lv_type_0_2= 'model'
                     {
-                    lv_type_0_2=(Token)match(input,21,FOLLOW_21_in_ruleArtifact770); 
+                    lv_type_0_2=(Token)match(input,22,FOLLOW_22_in_ruleArtifact818); 
 
                             newLeafNode(lv_type_0_2, grammarAccess.getArtifactAccess().getTypeModelKeyword_0_1());
                         
@@ -929,9 +967,9 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 3 :
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:414:8: lv_type_0_3= 'tcs-model'
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:442:8: lv_type_0_3= 'tcs-model'
                     {
-                    lv_type_0_3=(Token)match(input,22,FOLLOW_22_in_ruleArtifact799); 
+                    lv_type_0_3=(Token)match(input,23,FOLLOW_23_in_ruleArtifact847); 
 
                             newLeafNode(lv_type_0_3, grammarAccess.getArtifactAccess().getTypeTcsModelKeyword_0_2());
                         
@@ -971,7 +1009,7 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleRule"
-    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:437:1: entryRuleRule returns [EObject current=null] : iv_ruleRule= ruleRule EOF ;
+    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:465:1: entryRuleRule returns [EObject current=null] : iv_ruleRule= ruleRule EOF ;
     public final EObject entryRuleRule() throws RecognitionException {
         EObject current = null;
 
@@ -979,17 +1017,17 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:438:2: (iv_ruleRule= ruleRule EOF )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:439:2: iv_ruleRule= ruleRule EOF
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:466:2: (iv_ruleRule= ruleRule EOF )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:467:2: iv_ruleRule= ruleRule EOF
             {
              newCompositeNode(grammarAccess.getRuleRule()); 
-            pushFollow(FOLLOW_ruleRule_in_entryRuleRule850);
+            pushFollow(FOLLOW_ruleRule_in_entryRuleRule898);
             iv_ruleRule=ruleRule();
 
             state._fsp--;
 
              current =iv_ruleRule; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleRule860); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleRule908); 
 
             }
 
@@ -1007,7 +1045,7 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleRule"
-    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:446:1: ruleRule returns [EObject current=null] : (otherlv_0= 'rule' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '[' ( (lv_filter_3_0= ruleOpDef ) ) otherlv_4= ']' otherlv_5= '{' ( (lv_rewritingRules_6_0= ruleRewritingRule ) )* otherlv_7= '}' ) ;
+    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:474:1: ruleRule returns [EObject current=null] : (otherlv_0= 'rule' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '[' ( (lv_filter_3_0= ruleOpDef ) ) otherlv_4= ']' otherlv_5= '{' ( (lv_rewritingRules_6_0= ruleRewritingRule ) )* otherlv_7= '}' ) ;
     public final EObject ruleRule() throws RecognitionException {
         EObject current = null;
 
@@ -1025,23 +1063,23 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:449:28: ( (otherlv_0= 'rule' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '[' ( (lv_filter_3_0= ruleOpDef ) ) otherlv_4= ']' otherlv_5= '{' ( (lv_rewritingRules_6_0= ruleRewritingRule ) )* otherlv_7= '}' ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:450:1: (otherlv_0= 'rule' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '[' ( (lv_filter_3_0= ruleOpDef ) ) otherlv_4= ']' otherlv_5= '{' ( (lv_rewritingRules_6_0= ruleRewritingRule ) )* otherlv_7= '}' )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:477:28: ( (otherlv_0= 'rule' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '[' ( (lv_filter_3_0= ruleOpDef ) ) otherlv_4= ']' otherlv_5= '{' ( (lv_rewritingRules_6_0= ruleRewritingRule ) )* otherlv_7= '}' ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:478:1: (otherlv_0= 'rule' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '[' ( (lv_filter_3_0= ruleOpDef ) ) otherlv_4= ']' otherlv_5= '{' ( (lv_rewritingRules_6_0= ruleRewritingRule ) )* otherlv_7= '}' )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:450:1: (otherlv_0= 'rule' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '[' ( (lv_filter_3_0= ruleOpDef ) ) otherlv_4= ']' otherlv_5= '{' ( (lv_rewritingRules_6_0= ruleRewritingRule ) )* otherlv_7= '}' )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:450:3: otherlv_0= 'rule' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '[' ( (lv_filter_3_0= ruleOpDef ) ) otherlv_4= ']' otherlv_5= '{' ( (lv_rewritingRules_6_0= ruleRewritingRule ) )* otherlv_7= '}'
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:478:1: (otherlv_0= 'rule' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '[' ( (lv_filter_3_0= ruleOpDef ) ) otherlv_4= ']' otherlv_5= '{' ( (lv_rewritingRules_6_0= ruleRewritingRule ) )* otherlv_7= '}' )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:478:3: otherlv_0= 'rule' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '[' ( (lv_filter_3_0= ruleOpDef ) ) otherlv_4= ']' otherlv_5= '{' ( (lv_rewritingRules_6_0= ruleRewritingRule ) )* otherlv_7= '}'
             {
-            otherlv_0=(Token)match(input,23,FOLLOW_23_in_ruleRule897); 
+            otherlv_0=(Token)match(input,24,FOLLOW_24_in_ruleRule945); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getRuleAccess().getRuleKeyword_0());
                 
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:454:1: ( (lv_name_1_0= RULE_ID ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:455:1: (lv_name_1_0= RULE_ID )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:482:1: ( (lv_name_1_0= RULE_ID ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:483:1: (lv_name_1_0= RULE_ID )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:455:1: (lv_name_1_0= RULE_ID )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:456:3: lv_name_1_0= RULE_ID
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:483:1: (lv_name_1_0= RULE_ID )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:484:3: lv_name_1_0= RULE_ID
             {
-            lv_name_1_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleRule914); 
+            lv_name_1_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleRule962); 
 
             			newLeafNode(lv_name_1_0, grammarAccess.getRuleAccess().getNameIDTerminalRuleCall_1_0()); 
             		
@@ -1061,20 +1099,20 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_2=(Token)match(input,24,FOLLOW_24_in_ruleRule931); 
+            otherlv_2=(Token)match(input,25,FOLLOW_25_in_ruleRule979); 
 
                 	newLeafNode(otherlv_2, grammarAccess.getRuleAccess().getLeftSquareBracketKeyword_2());
                 
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:476:1: ( (lv_filter_3_0= ruleOpDef ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:477:1: (lv_filter_3_0= ruleOpDef )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:504:1: ( (lv_filter_3_0= ruleOpDef ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:505:1: (lv_filter_3_0= ruleOpDef )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:477:1: (lv_filter_3_0= ruleOpDef )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:478:3: lv_filter_3_0= ruleOpDef
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:505:1: (lv_filter_3_0= ruleOpDef )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:506:3: lv_filter_3_0= ruleOpDef
             {
              
             	        newCompositeNode(grammarAccess.getRuleAccess().getFilterOpDefParserRuleCall_3_0()); 
             	    
-            pushFollow(FOLLOW_ruleOpDef_in_ruleRule952);
+            pushFollow(FOLLOW_ruleOpDef_in_ruleRule1000);
             lv_filter_3_0=ruleOpDef();
 
             state._fsp--;
@@ -1096,15 +1134,15 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_4=(Token)match(input,25,FOLLOW_25_in_ruleRule964); 
+            otherlv_4=(Token)match(input,26,FOLLOW_26_in_ruleRule1012); 
 
                 	newLeafNode(otherlv_4, grammarAccess.getRuleAccess().getRightSquareBracketKeyword_4());
                 
-            otherlv_5=(Token)match(input,12,FOLLOW_12_in_ruleRule976); 
+            otherlv_5=(Token)match(input,12,FOLLOW_12_in_ruleRule1024); 
 
                 	newLeafNode(otherlv_5, grammarAccess.getRuleAccess().getLeftCurlyBracketKeyword_5());
                 
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:502:1: ( (lv_rewritingRules_6_0= ruleRewritingRule ) )*
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:530:1: ( (lv_rewritingRules_6_0= ruleRewritingRule ) )*
             loop6:
             do {
                 int alt6=2;
@@ -1117,15 +1155,15 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
                 switch (alt6) {
             	case 1 :
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:503:1: (lv_rewritingRules_6_0= ruleRewritingRule )
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:531:1: (lv_rewritingRules_6_0= ruleRewritingRule )
             	    {
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:503:1: (lv_rewritingRules_6_0= ruleRewritingRule )
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:504:3: lv_rewritingRules_6_0= ruleRewritingRule
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:531:1: (lv_rewritingRules_6_0= ruleRewritingRule )
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:532:3: lv_rewritingRules_6_0= ruleRewritingRule
             	    {
             	     
             	    	        newCompositeNode(grammarAccess.getRuleAccess().getRewritingRulesRewritingRuleParserRuleCall_6_0()); 
             	    	    
-            	    pushFollow(FOLLOW_ruleRewritingRule_in_ruleRule997);
+            	    pushFollow(FOLLOW_ruleRewritingRule_in_ruleRule1045);
             	    lv_rewritingRules_6_0=ruleRewritingRule();
 
             	    state._fsp--;
@@ -1153,7 +1191,7 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
                 }
             } while (true);
 
-            otherlv_7=(Token)match(input,13,FOLLOW_13_in_ruleRule1010); 
+            otherlv_7=(Token)match(input,13,FOLLOW_13_in_ruleRule1058); 
 
                 	newLeafNode(otherlv_7, grammarAccess.getRuleAccess().getRightCurlyBracketKeyword_7());
                 
@@ -1178,7 +1216,7 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleOpDef"
-    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:532:1: entryRuleOpDef returns [EObject current=null] : iv_ruleOpDef= ruleOpDef EOF ;
+    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:560:1: entryRuleOpDef returns [EObject current=null] : iv_ruleOpDef= ruleOpDef EOF ;
     public final EObject entryRuleOpDef() throws RecognitionException {
         EObject current = null;
 
@@ -1186,17 +1224,17 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:533:2: (iv_ruleOpDef= ruleOpDef EOF )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:534:2: iv_ruleOpDef= ruleOpDef EOF
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:561:2: (iv_ruleOpDef= ruleOpDef EOF )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:562:2: iv_ruleOpDef= ruleOpDef EOF
             {
              newCompositeNode(grammarAccess.getOpDefRule()); 
-            pushFollow(FOLLOW_ruleOpDef_in_entryRuleOpDef1046);
+            pushFollow(FOLLOW_ruleOpDef_in_entryRuleOpDef1094);
             iv_ruleOpDef=ruleOpDef();
 
             state._fsp--;
 
              current =iv_ruleOpDef; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleOpDef1056); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleOpDef1104); 
 
             }
 
@@ -1214,7 +1252,7 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleOpDef"
-    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:541:1: ruleOpDef returns [EObject current=null] : (this_EPackageOpDef_0= ruleEPackageOpDef | this_EClassOpDef_1= ruleEClassOpDef | this_EAttributeOpDef_2= ruleEAttributeOpDef | this_EReferenceOpDef_3= ruleEReferenceOpDef ) ;
+    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:569:1: ruleOpDef returns [EObject current=null] : (this_EPackageOpDef_0= ruleEPackageOpDef | this_EClassOpDef_1= ruleEClassOpDef | this_EAttributeOpDef_2= ruleEAttributeOpDef | this_EReferenceOpDef_3= ruleEReferenceOpDef ) ;
     public final EObject ruleOpDef() throws RecognitionException {
         EObject current = null;
 
@@ -1230,28 +1268,28 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:544:28: ( (this_EPackageOpDef_0= ruleEPackageOpDef | this_EClassOpDef_1= ruleEClassOpDef | this_EAttributeOpDef_2= ruleEAttributeOpDef | this_EReferenceOpDef_3= ruleEReferenceOpDef ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:545:1: (this_EPackageOpDef_0= ruleEPackageOpDef | this_EClassOpDef_1= ruleEClassOpDef | this_EAttributeOpDef_2= ruleEAttributeOpDef | this_EReferenceOpDef_3= ruleEReferenceOpDef )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:572:28: ( (this_EPackageOpDef_0= ruleEPackageOpDef | this_EClassOpDef_1= ruleEClassOpDef | this_EAttributeOpDef_2= ruleEAttributeOpDef | this_EReferenceOpDef_3= ruleEReferenceOpDef ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:573:1: (this_EPackageOpDef_0= ruleEPackageOpDef | this_EClassOpDef_1= ruleEClassOpDef | this_EAttributeOpDef_2= ruleEAttributeOpDef | this_EReferenceOpDef_3= ruleEReferenceOpDef )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:545:1: (this_EPackageOpDef_0= ruleEPackageOpDef | this_EClassOpDef_1= ruleEClassOpDef | this_EAttributeOpDef_2= ruleEAttributeOpDef | this_EReferenceOpDef_3= ruleEReferenceOpDef )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:573:1: (this_EPackageOpDef_0= ruleEPackageOpDef | this_EClassOpDef_1= ruleEClassOpDef | this_EAttributeOpDef_2= ruleEAttributeOpDef | this_EReferenceOpDef_3= ruleEReferenceOpDef )
             int alt7=4;
             switch ( input.LA(1) ) {
-            case 26:
+            case 27:
                 {
                 alt7=1;
                 }
                 break;
-            case 34:
+            case 35:
                 {
                 alt7=2;
                 }
                 break;
-            case 38:
+            case 39:
                 {
                 alt7=3;
                 }
                 break;
-            case 42:
+            case 43:
                 {
                 alt7=4;
                 }
@@ -1265,12 +1303,12 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
             switch (alt7) {
                 case 1 :
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:546:5: this_EPackageOpDef_0= ruleEPackageOpDef
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:574:5: this_EPackageOpDef_0= ruleEPackageOpDef
                     {
                      
                             newCompositeNode(grammarAccess.getOpDefAccess().getEPackageOpDefParserRuleCall_0()); 
                         
-                    pushFollow(FOLLOW_ruleEPackageOpDef_in_ruleOpDef1103);
+                    pushFollow(FOLLOW_ruleEPackageOpDef_in_ruleOpDef1151);
                     this_EPackageOpDef_0=ruleEPackageOpDef();
 
                     state._fsp--;
@@ -1283,12 +1321,12 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:556:5: this_EClassOpDef_1= ruleEClassOpDef
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:584:5: this_EClassOpDef_1= ruleEClassOpDef
                     {
                      
                             newCompositeNode(grammarAccess.getOpDefAccess().getEClassOpDefParserRuleCall_1()); 
                         
-                    pushFollow(FOLLOW_ruleEClassOpDef_in_ruleOpDef1130);
+                    pushFollow(FOLLOW_ruleEClassOpDef_in_ruleOpDef1178);
                     this_EClassOpDef_1=ruleEClassOpDef();
 
                     state._fsp--;
@@ -1301,12 +1339,12 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 3 :
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:566:5: this_EAttributeOpDef_2= ruleEAttributeOpDef
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:594:5: this_EAttributeOpDef_2= ruleEAttributeOpDef
                     {
                      
                             newCompositeNode(grammarAccess.getOpDefAccess().getEAttributeOpDefParserRuleCall_2()); 
                         
-                    pushFollow(FOLLOW_ruleEAttributeOpDef_in_ruleOpDef1157);
+                    pushFollow(FOLLOW_ruleEAttributeOpDef_in_ruleOpDef1205);
                     this_EAttributeOpDef_2=ruleEAttributeOpDef();
 
                     state._fsp--;
@@ -1319,12 +1357,12 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 4 :
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:576:5: this_EReferenceOpDef_3= ruleEReferenceOpDef
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:604:5: this_EReferenceOpDef_3= ruleEReferenceOpDef
                     {
                      
                             newCompositeNode(grammarAccess.getOpDefAccess().getEReferenceOpDefParserRuleCall_3()); 
                         
-                    pushFollow(FOLLOW_ruleEReferenceOpDef_in_ruleOpDef1184);
+                    pushFollow(FOLLOW_ruleEReferenceOpDef_in_ruleOpDef1232);
                     this_EReferenceOpDef_3=ruleEReferenceOpDef();
 
                     state._fsp--;
@@ -1357,7 +1395,7 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleEPackageOpDef"
-    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:592:1: entryRuleEPackageOpDef returns [EObject current=null] : iv_ruleEPackageOpDef= ruleEPackageOpDef EOF ;
+    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:620:1: entryRuleEPackageOpDef returns [EObject current=null] : iv_ruleEPackageOpDef= ruleEPackageOpDef EOF ;
     public final EObject entryRuleEPackageOpDef() throws RecognitionException {
         EObject current = null;
 
@@ -1365,17 +1403,17 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:593:2: (iv_ruleEPackageOpDef= ruleEPackageOpDef EOF )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:594:2: iv_ruleEPackageOpDef= ruleEPackageOpDef EOF
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:621:2: (iv_ruleEPackageOpDef= ruleEPackageOpDef EOF )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:622:2: iv_ruleEPackageOpDef= ruleEPackageOpDef EOF
             {
              newCompositeNode(grammarAccess.getEPackageOpDefRule()); 
-            pushFollow(FOLLOW_ruleEPackageOpDef_in_entryRuleEPackageOpDef1219);
+            pushFollow(FOLLOW_ruleEPackageOpDef_in_entryRuleEPackageOpDef1267);
             iv_ruleEPackageOpDef=ruleEPackageOpDef();
 
             state._fsp--;
 
              current =iv_ruleEPackageOpDef; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleEPackageOpDef1229); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleEPackageOpDef1277); 
 
             }
 
@@ -1393,7 +1431,7 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleEPackageOpDef"
-    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:601:1: ruleEPackageOpDef returns [EObject current=null] : ( (otherlv_0= 'package' ( (lv_var_1_0= rulePackage ) ) otherlv_2= '=' ) ( ( ( (lv_op_3_0= 'changePackage' ) ) | ( (lv_op_4_0= 'addPackage' ) ) | ( (lv_op_5_0= 'deletePackage' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= rulePackage ) ) otherlv_8= ':' otherlv_9= 'package' otherlv_10= ')' otherlv_11= 'where' otherlv_12= '{' ( ( (lv_setters_13_0= rulesetterDef ) ) | ( (lv_classes_14_0= ruleEClassOpDef ) ) )* otherlv_15= '}' ) ) ;
+    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:629:1: ruleEPackageOpDef returns [EObject current=null] : ( (otherlv_0= 'package' ( (lv_var_1_0= rulePackage ) ) otherlv_2= '=' ) ( ( ( (lv_op_3_0= 'changePackage' ) ) | ( (lv_op_4_0= 'addPackage' ) ) | ( (lv_op_5_0= 'deletePackage' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= rulePackage ) ) otherlv_8= ':' otherlv_9= 'package' otherlv_10= ')' otherlv_11= 'where' otherlv_12= '{' ( ( (lv_setters_13_0= rulesetterDef ) ) | ( (lv_classes_14_0= ruleEClassOpDef ) ) )* otherlv_15= '}' ) ) ;
     public final EObject ruleEPackageOpDef() throws RecognitionException {
         EObject current = null;
 
@@ -1421,29 +1459,29 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:604:28: ( ( (otherlv_0= 'package' ( (lv_var_1_0= rulePackage ) ) otherlv_2= '=' ) ( ( ( (lv_op_3_0= 'changePackage' ) ) | ( (lv_op_4_0= 'addPackage' ) ) | ( (lv_op_5_0= 'deletePackage' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= rulePackage ) ) otherlv_8= ':' otherlv_9= 'package' otherlv_10= ')' otherlv_11= 'where' otherlv_12= '{' ( ( (lv_setters_13_0= rulesetterDef ) ) | ( (lv_classes_14_0= ruleEClassOpDef ) ) )* otherlv_15= '}' ) ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:605:1: ( (otherlv_0= 'package' ( (lv_var_1_0= rulePackage ) ) otherlv_2= '=' ) ( ( ( (lv_op_3_0= 'changePackage' ) ) | ( (lv_op_4_0= 'addPackage' ) ) | ( (lv_op_5_0= 'deletePackage' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= rulePackage ) ) otherlv_8= ':' otherlv_9= 'package' otherlv_10= ')' otherlv_11= 'where' otherlv_12= '{' ( ( (lv_setters_13_0= rulesetterDef ) ) | ( (lv_classes_14_0= ruleEClassOpDef ) ) )* otherlv_15= '}' ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:632:28: ( ( (otherlv_0= 'package' ( (lv_var_1_0= rulePackage ) ) otherlv_2= '=' ) ( ( ( (lv_op_3_0= 'changePackage' ) ) | ( (lv_op_4_0= 'addPackage' ) ) | ( (lv_op_5_0= 'deletePackage' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= rulePackage ) ) otherlv_8= ':' otherlv_9= 'package' otherlv_10= ')' otherlv_11= 'where' otherlv_12= '{' ( ( (lv_setters_13_0= rulesetterDef ) ) | ( (lv_classes_14_0= ruleEClassOpDef ) ) )* otherlv_15= '}' ) ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:633:1: ( (otherlv_0= 'package' ( (lv_var_1_0= rulePackage ) ) otherlv_2= '=' ) ( ( ( (lv_op_3_0= 'changePackage' ) ) | ( (lv_op_4_0= 'addPackage' ) ) | ( (lv_op_5_0= 'deletePackage' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= rulePackage ) ) otherlv_8= ':' otherlv_9= 'package' otherlv_10= ')' otherlv_11= 'where' otherlv_12= '{' ( ( (lv_setters_13_0= rulesetterDef ) ) | ( (lv_classes_14_0= ruleEClassOpDef ) ) )* otherlv_15= '}' ) )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:605:1: ( (otherlv_0= 'package' ( (lv_var_1_0= rulePackage ) ) otherlv_2= '=' ) ( ( ( (lv_op_3_0= 'changePackage' ) ) | ( (lv_op_4_0= 'addPackage' ) ) | ( (lv_op_5_0= 'deletePackage' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= rulePackage ) ) otherlv_8= ':' otherlv_9= 'package' otherlv_10= ')' otherlv_11= 'where' otherlv_12= '{' ( ( (lv_setters_13_0= rulesetterDef ) ) | ( (lv_classes_14_0= ruleEClassOpDef ) ) )* otherlv_15= '}' ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:605:2: (otherlv_0= 'package' ( (lv_var_1_0= rulePackage ) ) otherlv_2= '=' ) ( ( ( (lv_op_3_0= 'changePackage' ) ) | ( (lv_op_4_0= 'addPackage' ) ) | ( (lv_op_5_0= 'deletePackage' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= rulePackage ) ) otherlv_8= ':' otherlv_9= 'package' otherlv_10= ')' otherlv_11= 'where' otherlv_12= '{' ( ( (lv_setters_13_0= rulesetterDef ) ) | ( (lv_classes_14_0= ruleEClassOpDef ) ) )* otherlv_15= '}' )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:633:1: ( (otherlv_0= 'package' ( (lv_var_1_0= rulePackage ) ) otherlv_2= '=' ) ( ( ( (lv_op_3_0= 'changePackage' ) ) | ( (lv_op_4_0= 'addPackage' ) ) | ( (lv_op_5_0= 'deletePackage' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= rulePackage ) ) otherlv_8= ':' otherlv_9= 'package' otherlv_10= ')' otherlv_11= 'where' otherlv_12= '{' ( ( (lv_setters_13_0= rulesetterDef ) ) | ( (lv_classes_14_0= ruleEClassOpDef ) ) )* otherlv_15= '}' ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:633:2: (otherlv_0= 'package' ( (lv_var_1_0= rulePackage ) ) otherlv_2= '=' ) ( ( ( (lv_op_3_0= 'changePackage' ) ) | ( (lv_op_4_0= 'addPackage' ) ) | ( (lv_op_5_0= 'deletePackage' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= rulePackage ) ) otherlv_8= ':' otherlv_9= 'package' otherlv_10= ')' otherlv_11= 'where' otherlv_12= '{' ( ( (lv_setters_13_0= rulesetterDef ) ) | ( (lv_classes_14_0= ruleEClassOpDef ) ) )* otherlv_15= '}' )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:605:2: (otherlv_0= 'package' ( (lv_var_1_0= rulePackage ) ) otherlv_2= '=' )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:605:4: otherlv_0= 'package' ( (lv_var_1_0= rulePackage ) ) otherlv_2= '='
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:633:2: (otherlv_0= 'package' ( (lv_var_1_0= rulePackage ) ) otherlv_2= '=' )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:633:4: otherlv_0= 'package' ( (lv_var_1_0= rulePackage ) ) otherlv_2= '='
             {
-            otherlv_0=(Token)match(input,26,FOLLOW_26_in_ruleEPackageOpDef1267); 
+            otherlv_0=(Token)match(input,27,FOLLOW_27_in_ruleEPackageOpDef1315); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getEPackageOpDefAccess().getPackageKeyword_0_0());
                 
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:609:1: ( (lv_var_1_0= rulePackage ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:610:1: (lv_var_1_0= rulePackage )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:637:1: ( (lv_var_1_0= rulePackage ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:638:1: (lv_var_1_0= rulePackage )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:610:1: (lv_var_1_0= rulePackage )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:611:3: lv_var_1_0= rulePackage
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:638:1: (lv_var_1_0= rulePackage )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:639:3: lv_var_1_0= rulePackage
             {
              
             	        newCompositeNode(grammarAccess.getEPackageOpDefAccess().getVarPackageParserRuleCall_0_1_0()); 
             	    
-            pushFollow(FOLLOW_rulePackage_in_ruleEPackageOpDef1288);
+            pushFollow(FOLLOW_rulePackage_in_ruleEPackageOpDef1336);
             lv_var_1_0=rulePackage();
 
             state._fsp--;
@@ -1465,30 +1503,30 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_2=(Token)match(input,27,FOLLOW_27_in_ruleEPackageOpDef1300); 
+            otherlv_2=(Token)match(input,28,FOLLOW_28_in_ruleEPackageOpDef1348); 
 
                 	newLeafNode(otherlv_2, grammarAccess.getEPackageOpDefAccess().getEqualsSignKeyword_0_2());
                 
 
             }
 
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:631:2: ( ( ( (lv_op_3_0= 'changePackage' ) ) | ( (lv_op_4_0= 'addPackage' ) ) | ( (lv_op_5_0= 'deletePackage' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= rulePackage ) ) otherlv_8= ':' otherlv_9= 'package' otherlv_10= ')' otherlv_11= 'where' otherlv_12= '{' ( ( (lv_setters_13_0= rulesetterDef ) ) | ( (lv_classes_14_0= ruleEClassOpDef ) ) )* otherlv_15= '}' )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:631:3: ( ( (lv_op_3_0= 'changePackage' ) ) | ( (lv_op_4_0= 'addPackage' ) ) | ( (lv_op_5_0= 'deletePackage' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= rulePackage ) ) otherlv_8= ':' otherlv_9= 'package' otherlv_10= ')' otherlv_11= 'where' otherlv_12= '{' ( ( (lv_setters_13_0= rulesetterDef ) ) | ( (lv_classes_14_0= ruleEClassOpDef ) ) )* otherlv_15= '}'
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:659:2: ( ( ( (lv_op_3_0= 'changePackage' ) ) | ( (lv_op_4_0= 'addPackage' ) ) | ( (lv_op_5_0= 'deletePackage' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= rulePackage ) ) otherlv_8= ':' otherlv_9= 'package' otherlv_10= ')' otherlv_11= 'where' otherlv_12= '{' ( ( (lv_setters_13_0= rulesetterDef ) ) | ( (lv_classes_14_0= ruleEClassOpDef ) ) )* otherlv_15= '}' )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:659:3: ( ( (lv_op_3_0= 'changePackage' ) ) | ( (lv_op_4_0= 'addPackage' ) ) | ( (lv_op_5_0= 'deletePackage' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= rulePackage ) ) otherlv_8= ':' otherlv_9= 'package' otherlv_10= ')' otherlv_11= 'where' otherlv_12= '{' ( ( (lv_setters_13_0= rulesetterDef ) ) | ( (lv_classes_14_0= ruleEClassOpDef ) ) )* otherlv_15= '}'
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:631:3: ( ( (lv_op_3_0= 'changePackage' ) ) | ( (lv_op_4_0= 'addPackage' ) ) | ( (lv_op_5_0= 'deletePackage' ) ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:659:3: ( ( (lv_op_3_0= 'changePackage' ) ) | ( (lv_op_4_0= 'addPackage' ) ) | ( (lv_op_5_0= 'deletePackage' ) ) )
             int alt8=3;
             switch ( input.LA(1) ) {
-            case 28:
+            case 29:
                 {
                 alt8=1;
                 }
                 break;
-            case 29:
+            case 30:
                 {
                 alt8=2;
                 }
                 break;
-            case 30:
+            case 31:
                 {
                 alt8=3;
                 }
@@ -1502,15 +1540,15 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
             switch (alt8) {
                 case 1 :
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:631:4: ( (lv_op_3_0= 'changePackage' ) )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:659:4: ( (lv_op_3_0= 'changePackage' ) )
                     {
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:631:4: ( (lv_op_3_0= 'changePackage' ) )
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:632:1: (lv_op_3_0= 'changePackage' )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:659:4: ( (lv_op_3_0= 'changePackage' ) )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:660:1: (lv_op_3_0= 'changePackage' )
                     {
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:632:1: (lv_op_3_0= 'changePackage' )
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:633:3: lv_op_3_0= 'changePackage'
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:660:1: (lv_op_3_0= 'changePackage' )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:661:3: lv_op_3_0= 'changePackage'
                     {
-                    lv_op_3_0=(Token)match(input,28,FOLLOW_28_in_ruleEPackageOpDef1321); 
+                    lv_op_3_0=(Token)match(input,29,FOLLOW_29_in_ruleEPackageOpDef1369); 
 
                             newLeafNode(lv_op_3_0, grammarAccess.getEPackageOpDefAccess().getOpChangePackageKeyword_1_0_0_0());
                         
@@ -1530,15 +1568,15 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:647:6: ( (lv_op_4_0= 'addPackage' ) )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:675:6: ( (lv_op_4_0= 'addPackage' ) )
                     {
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:647:6: ( (lv_op_4_0= 'addPackage' ) )
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:648:1: (lv_op_4_0= 'addPackage' )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:675:6: ( (lv_op_4_0= 'addPackage' ) )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:676:1: (lv_op_4_0= 'addPackage' )
                     {
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:648:1: (lv_op_4_0= 'addPackage' )
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:649:3: lv_op_4_0= 'addPackage'
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:676:1: (lv_op_4_0= 'addPackage' )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:677:3: lv_op_4_0= 'addPackage'
                     {
-                    lv_op_4_0=(Token)match(input,29,FOLLOW_29_in_ruleEPackageOpDef1358); 
+                    lv_op_4_0=(Token)match(input,30,FOLLOW_30_in_ruleEPackageOpDef1406); 
 
                             newLeafNode(lv_op_4_0, grammarAccess.getEPackageOpDefAccess().getOpAddPackageKeyword_1_0_1_0());
                         
@@ -1558,15 +1596,15 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 3 :
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:663:6: ( (lv_op_5_0= 'deletePackage' ) )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:691:6: ( (lv_op_5_0= 'deletePackage' ) )
                     {
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:663:6: ( (lv_op_5_0= 'deletePackage' ) )
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:664:1: (lv_op_5_0= 'deletePackage' )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:691:6: ( (lv_op_5_0= 'deletePackage' ) )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:692:1: (lv_op_5_0= 'deletePackage' )
                     {
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:664:1: (lv_op_5_0= 'deletePackage' )
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:665:3: lv_op_5_0= 'deletePackage'
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:692:1: (lv_op_5_0= 'deletePackage' )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:693:3: lv_op_5_0= 'deletePackage'
                     {
-                    lv_op_5_0=(Token)match(input,30,FOLLOW_30_in_ruleEPackageOpDef1395); 
+                    lv_op_5_0=(Token)match(input,31,FOLLOW_31_in_ruleEPackageOpDef1443); 
 
                             newLeafNode(lv_op_5_0, grammarAccess.getEPackageOpDefAccess().getOpDeletePackageKeyword_1_0_2_0());
                         
@@ -1588,20 +1626,20 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_6=(Token)match(input,31,FOLLOW_31_in_ruleEPackageOpDef1421); 
+            otherlv_6=(Token)match(input,32,FOLLOW_32_in_ruleEPackageOpDef1469); 
 
                 	newLeafNode(otherlv_6, grammarAccess.getEPackageOpDefAccess().getLeftParenthesisKeyword_1_1());
                 
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:682:1: ( (lv_ref_7_0= rulePackage ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:683:1: (lv_ref_7_0= rulePackage )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:710:1: ( (lv_ref_7_0= rulePackage ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:711:1: (lv_ref_7_0= rulePackage )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:683:1: (lv_ref_7_0= rulePackage )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:684:3: lv_ref_7_0= rulePackage
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:711:1: (lv_ref_7_0= rulePackage )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:712:3: lv_ref_7_0= rulePackage
             {
              
             	        newCompositeNode(grammarAccess.getEPackageOpDefAccess().getRefPackageParserRuleCall_1_2_0()); 
             	    
-            pushFollow(FOLLOW_rulePackage_in_ruleEPackageOpDef1442);
+            pushFollow(FOLLOW_rulePackage_in_ruleEPackageOpDef1490);
             lv_ref_7_0=rulePackage();
 
             state._fsp--;
@@ -1623,54 +1661,54 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_8=(Token)match(input,17,FOLLOW_17_in_ruleEPackageOpDef1454); 
+            otherlv_8=(Token)match(input,18,FOLLOW_18_in_ruleEPackageOpDef1502); 
 
                 	newLeafNode(otherlv_8, grammarAccess.getEPackageOpDefAccess().getColonKeyword_1_3());
                 
-            otherlv_9=(Token)match(input,26,FOLLOW_26_in_ruleEPackageOpDef1466); 
+            otherlv_9=(Token)match(input,27,FOLLOW_27_in_ruleEPackageOpDef1514); 
 
                 	newLeafNode(otherlv_9, grammarAccess.getEPackageOpDefAccess().getPackageKeyword_1_4());
                 
-            otherlv_10=(Token)match(input,32,FOLLOW_32_in_ruleEPackageOpDef1478); 
+            otherlv_10=(Token)match(input,33,FOLLOW_33_in_ruleEPackageOpDef1526); 
 
                 	newLeafNode(otherlv_10, grammarAccess.getEPackageOpDefAccess().getRightParenthesisKeyword_1_5());
                 
-            otherlv_11=(Token)match(input,33,FOLLOW_33_in_ruleEPackageOpDef1490); 
+            otherlv_11=(Token)match(input,34,FOLLOW_34_in_ruleEPackageOpDef1538); 
 
                 	newLeafNode(otherlv_11, grammarAccess.getEPackageOpDefAccess().getWhereKeyword_1_6());
                 
-            otherlv_12=(Token)match(input,12,FOLLOW_12_in_ruleEPackageOpDef1502); 
+            otherlv_12=(Token)match(input,12,FOLLOW_12_in_ruleEPackageOpDef1550); 
 
                 	newLeafNode(otherlv_12, grammarAccess.getEPackageOpDefAccess().getLeftCurlyBracketKeyword_1_7());
                 
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:720:1: ( ( (lv_setters_13_0= rulesetterDef ) ) | ( (lv_classes_14_0= ruleEClassOpDef ) ) )*
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:748:1: ( ( (lv_setters_13_0= rulesetterDef ) ) | ( (lv_classes_14_0= ruleEClassOpDef ) ) )*
             loop9:
             do {
                 int alt9=3;
                 int LA9_0 = input.LA(1);
 
-                if ( (LA9_0==46) ) {
+                if ( (LA9_0==47) ) {
                     alt9=1;
                 }
-                else if ( (LA9_0==34) ) {
+                else if ( (LA9_0==35) ) {
                     alt9=2;
                 }
 
 
                 switch (alt9) {
             	case 1 :
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:720:2: ( (lv_setters_13_0= rulesetterDef ) )
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:748:2: ( (lv_setters_13_0= rulesetterDef ) )
             	    {
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:720:2: ( (lv_setters_13_0= rulesetterDef ) )
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:721:1: (lv_setters_13_0= rulesetterDef )
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:748:2: ( (lv_setters_13_0= rulesetterDef ) )
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:749:1: (lv_setters_13_0= rulesetterDef )
             	    {
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:721:1: (lv_setters_13_0= rulesetterDef )
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:722:3: lv_setters_13_0= rulesetterDef
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:749:1: (lv_setters_13_0= rulesetterDef )
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:750:3: lv_setters_13_0= rulesetterDef
             	    {
             	     
             	    	        newCompositeNode(grammarAccess.getEPackageOpDefAccess().getSettersSetterDefParserRuleCall_1_8_0_0()); 
             	    	    
-            	    pushFollow(FOLLOW_rulesetterDef_in_ruleEPackageOpDef1524);
+            	    pushFollow(FOLLOW_rulesetterDef_in_ruleEPackageOpDef1572);
             	    lv_setters_13_0=rulesetterDef();
 
             	    state._fsp--;
@@ -1696,18 +1734,18 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
             	    }
             	    break;
             	case 2 :
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:739:6: ( (lv_classes_14_0= ruleEClassOpDef ) )
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:767:6: ( (lv_classes_14_0= ruleEClassOpDef ) )
             	    {
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:739:6: ( (lv_classes_14_0= ruleEClassOpDef ) )
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:740:1: (lv_classes_14_0= ruleEClassOpDef )
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:767:6: ( (lv_classes_14_0= ruleEClassOpDef ) )
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:768:1: (lv_classes_14_0= ruleEClassOpDef )
             	    {
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:740:1: (lv_classes_14_0= ruleEClassOpDef )
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:741:3: lv_classes_14_0= ruleEClassOpDef
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:768:1: (lv_classes_14_0= ruleEClassOpDef )
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:769:3: lv_classes_14_0= ruleEClassOpDef
             	    {
             	     
             	    	        newCompositeNode(grammarAccess.getEPackageOpDefAccess().getClassesEClassOpDefParserRuleCall_1_8_1_0()); 
             	    	    
-            	    pushFollow(FOLLOW_ruleEClassOpDef_in_ruleEPackageOpDef1551);
+            	    pushFollow(FOLLOW_ruleEClassOpDef_in_ruleEPackageOpDef1599);
             	    lv_classes_14_0=ruleEClassOpDef();
 
             	    state._fsp--;
@@ -1738,7 +1776,7 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
                 }
             } while (true);
 
-            otherlv_15=(Token)match(input,13,FOLLOW_13_in_ruleEPackageOpDef1565); 
+            otherlv_15=(Token)match(input,13,FOLLOW_13_in_ruleEPackageOpDef1613); 
 
                 	newLeafNode(otherlv_15, grammarAccess.getEPackageOpDefAccess().getRightCurlyBracketKeyword_1_9());
                 
@@ -1766,7 +1804,7 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleEClassOpDef"
-    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:769:1: entryRuleEClassOpDef returns [EObject current=null] : iv_ruleEClassOpDef= ruleEClassOpDef EOF ;
+    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:797:1: entryRuleEClassOpDef returns [EObject current=null] : iv_ruleEClassOpDef= ruleEClassOpDef EOF ;
     public final EObject entryRuleEClassOpDef() throws RecognitionException {
         EObject current = null;
 
@@ -1774,17 +1812,17 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:770:2: (iv_ruleEClassOpDef= ruleEClassOpDef EOF )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:771:2: iv_ruleEClassOpDef= ruleEClassOpDef EOF
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:798:2: (iv_ruleEClassOpDef= ruleEClassOpDef EOF )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:799:2: iv_ruleEClassOpDef= ruleEClassOpDef EOF
             {
              newCompositeNode(grammarAccess.getEClassOpDefRule()); 
-            pushFollow(FOLLOW_ruleEClassOpDef_in_entryRuleEClassOpDef1602);
+            pushFollow(FOLLOW_ruleEClassOpDef_in_entryRuleEClassOpDef1650);
             iv_ruleEClassOpDef=ruleEClassOpDef();
 
             state._fsp--;
 
              current =iv_ruleEClassOpDef; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleEClassOpDef1612); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleEClassOpDef1660); 
 
             }
 
@@ -1802,7 +1840,7 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleEClassOpDef"
-    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:778:1: ruleEClassOpDef returns [EObject current=null] : ( (otherlv_0= 'class' ( (lv_var_1_0= ruleClass ) ) otherlv_2= '=' ) ( ( ( (lv_op_3_0= 'changeClass' ) ) | ( (lv_op_4_0= 'addClass' ) ) | ( (lv_op_5_0= 'deleteClass' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= ruleClass ) ) otherlv_8= ':' otherlv_9= 'class' otherlv_10= ')' otherlv_11= 'where' (otherlv_12= '{' ( ( (lv_setters_13_0= rulesetterDef ) ) | ( (lv_attributes_14_0= ruleEAttributeOpDef ) ) | ( (lv_references_15_0= ruleEReferenceOpDef ) ) )* otherlv_16= '}' ) ) ) ;
+    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:806:1: ruleEClassOpDef returns [EObject current=null] : ( (otherlv_0= 'class' ( (lv_var_1_0= ruleClass ) ) otherlv_2= '=' ) ( ( ( (lv_op_3_0= 'changeClass' ) ) | ( (lv_op_4_0= 'addClass' ) ) | ( (lv_op_5_0= 'deleteClass' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= ruleClass ) ) otherlv_8= ':' otherlv_9= 'class' otherlv_10= ')' otherlv_11= 'where' (otherlv_12= '{' ( ( (lv_setters_13_0= rulesetterDef ) ) | ( (lv_attributes_14_0= ruleEAttributeOpDef ) ) | ( (lv_references_15_0= ruleEReferenceOpDef ) ) )* otherlv_16= '}' ) ) ) ;
     public final EObject ruleEClassOpDef() throws RecognitionException {
         EObject current = null;
 
@@ -1832,29 +1870,29 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:781:28: ( ( (otherlv_0= 'class' ( (lv_var_1_0= ruleClass ) ) otherlv_2= '=' ) ( ( ( (lv_op_3_0= 'changeClass' ) ) | ( (lv_op_4_0= 'addClass' ) ) | ( (lv_op_5_0= 'deleteClass' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= ruleClass ) ) otherlv_8= ':' otherlv_9= 'class' otherlv_10= ')' otherlv_11= 'where' (otherlv_12= '{' ( ( (lv_setters_13_0= rulesetterDef ) ) | ( (lv_attributes_14_0= ruleEAttributeOpDef ) ) | ( (lv_references_15_0= ruleEReferenceOpDef ) ) )* otherlv_16= '}' ) ) ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:782:1: ( (otherlv_0= 'class' ( (lv_var_1_0= ruleClass ) ) otherlv_2= '=' ) ( ( ( (lv_op_3_0= 'changeClass' ) ) | ( (lv_op_4_0= 'addClass' ) ) | ( (lv_op_5_0= 'deleteClass' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= ruleClass ) ) otherlv_8= ':' otherlv_9= 'class' otherlv_10= ')' otherlv_11= 'where' (otherlv_12= '{' ( ( (lv_setters_13_0= rulesetterDef ) ) | ( (lv_attributes_14_0= ruleEAttributeOpDef ) ) | ( (lv_references_15_0= ruleEReferenceOpDef ) ) )* otherlv_16= '}' ) ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:809:28: ( ( (otherlv_0= 'class' ( (lv_var_1_0= ruleClass ) ) otherlv_2= '=' ) ( ( ( (lv_op_3_0= 'changeClass' ) ) | ( (lv_op_4_0= 'addClass' ) ) | ( (lv_op_5_0= 'deleteClass' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= ruleClass ) ) otherlv_8= ':' otherlv_9= 'class' otherlv_10= ')' otherlv_11= 'where' (otherlv_12= '{' ( ( (lv_setters_13_0= rulesetterDef ) ) | ( (lv_attributes_14_0= ruleEAttributeOpDef ) ) | ( (lv_references_15_0= ruleEReferenceOpDef ) ) )* otherlv_16= '}' ) ) ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:810:1: ( (otherlv_0= 'class' ( (lv_var_1_0= ruleClass ) ) otherlv_2= '=' ) ( ( ( (lv_op_3_0= 'changeClass' ) ) | ( (lv_op_4_0= 'addClass' ) ) | ( (lv_op_5_0= 'deleteClass' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= ruleClass ) ) otherlv_8= ':' otherlv_9= 'class' otherlv_10= ')' otherlv_11= 'where' (otherlv_12= '{' ( ( (lv_setters_13_0= rulesetterDef ) ) | ( (lv_attributes_14_0= ruleEAttributeOpDef ) ) | ( (lv_references_15_0= ruleEReferenceOpDef ) ) )* otherlv_16= '}' ) ) )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:782:1: ( (otherlv_0= 'class' ( (lv_var_1_0= ruleClass ) ) otherlv_2= '=' ) ( ( ( (lv_op_3_0= 'changeClass' ) ) | ( (lv_op_4_0= 'addClass' ) ) | ( (lv_op_5_0= 'deleteClass' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= ruleClass ) ) otherlv_8= ':' otherlv_9= 'class' otherlv_10= ')' otherlv_11= 'where' (otherlv_12= '{' ( ( (lv_setters_13_0= rulesetterDef ) ) | ( (lv_attributes_14_0= ruleEAttributeOpDef ) ) | ( (lv_references_15_0= ruleEReferenceOpDef ) ) )* otherlv_16= '}' ) ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:782:2: (otherlv_0= 'class' ( (lv_var_1_0= ruleClass ) ) otherlv_2= '=' ) ( ( ( (lv_op_3_0= 'changeClass' ) ) | ( (lv_op_4_0= 'addClass' ) ) | ( (lv_op_5_0= 'deleteClass' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= ruleClass ) ) otherlv_8= ':' otherlv_9= 'class' otherlv_10= ')' otherlv_11= 'where' (otherlv_12= '{' ( ( (lv_setters_13_0= rulesetterDef ) ) | ( (lv_attributes_14_0= ruleEAttributeOpDef ) ) | ( (lv_references_15_0= ruleEReferenceOpDef ) ) )* otherlv_16= '}' ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:810:1: ( (otherlv_0= 'class' ( (lv_var_1_0= ruleClass ) ) otherlv_2= '=' ) ( ( ( (lv_op_3_0= 'changeClass' ) ) | ( (lv_op_4_0= 'addClass' ) ) | ( (lv_op_5_0= 'deleteClass' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= ruleClass ) ) otherlv_8= ':' otherlv_9= 'class' otherlv_10= ')' otherlv_11= 'where' (otherlv_12= '{' ( ( (lv_setters_13_0= rulesetterDef ) ) | ( (lv_attributes_14_0= ruleEAttributeOpDef ) ) | ( (lv_references_15_0= ruleEReferenceOpDef ) ) )* otherlv_16= '}' ) ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:810:2: (otherlv_0= 'class' ( (lv_var_1_0= ruleClass ) ) otherlv_2= '=' ) ( ( ( (lv_op_3_0= 'changeClass' ) ) | ( (lv_op_4_0= 'addClass' ) ) | ( (lv_op_5_0= 'deleteClass' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= ruleClass ) ) otherlv_8= ':' otherlv_9= 'class' otherlv_10= ')' otherlv_11= 'where' (otherlv_12= '{' ( ( (lv_setters_13_0= rulesetterDef ) ) | ( (lv_attributes_14_0= ruleEAttributeOpDef ) ) | ( (lv_references_15_0= ruleEReferenceOpDef ) ) )* otherlv_16= '}' ) )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:782:2: (otherlv_0= 'class' ( (lv_var_1_0= ruleClass ) ) otherlv_2= '=' )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:782:4: otherlv_0= 'class' ( (lv_var_1_0= ruleClass ) ) otherlv_2= '='
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:810:2: (otherlv_0= 'class' ( (lv_var_1_0= ruleClass ) ) otherlv_2= '=' )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:810:4: otherlv_0= 'class' ( (lv_var_1_0= ruleClass ) ) otherlv_2= '='
             {
-            otherlv_0=(Token)match(input,34,FOLLOW_34_in_ruleEClassOpDef1650); 
+            otherlv_0=(Token)match(input,35,FOLLOW_35_in_ruleEClassOpDef1698); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getEClassOpDefAccess().getClassKeyword_0_0());
                 
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:786:1: ( (lv_var_1_0= ruleClass ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:787:1: (lv_var_1_0= ruleClass )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:814:1: ( (lv_var_1_0= ruleClass ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:815:1: (lv_var_1_0= ruleClass )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:787:1: (lv_var_1_0= ruleClass )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:788:3: lv_var_1_0= ruleClass
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:815:1: (lv_var_1_0= ruleClass )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:816:3: lv_var_1_0= ruleClass
             {
              
             	        newCompositeNode(grammarAccess.getEClassOpDefAccess().getVarClassParserRuleCall_0_1_0()); 
             	    
-            pushFollow(FOLLOW_ruleClass_in_ruleEClassOpDef1671);
+            pushFollow(FOLLOW_ruleClass_in_ruleEClassOpDef1719);
             lv_var_1_0=ruleClass();
 
             state._fsp--;
@@ -1876,30 +1914,30 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_2=(Token)match(input,27,FOLLOW_27_in_ruleEClassOpDef1683); 
+            otherlv_2=(Token)match(input,28,FOLLOW_28_in_ruleEClassOpDef1731); 
 
                 	newLeafNode(otherlv_2, grammarAccess.getEClassOpDefAccess().getEqualsSignKeyword_0_2());
                 
 
             }
 
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:808:2: ( ( ( (lv_op_3_0= 'changeClass' ) ) | ( (lv_op_4_0= 'addClass' ) ) | ( (lv_op_5_0= 'deleteClass' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= ruleClass ) ) otherlv_8= ':' otherlv_9= 'class' otherlv_10= ')' otherlv_11= 'where' (otherlv_12= '{' ( ( (lv_setters_13_0= rulesetterDef ) ) | ( (lv_attributes_14_0= ruleEAttributeOpDef ) ) | ( (lv_references_15_0= ruleEReferenceOpDef ) ) )* otherlv_16= '}' ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:808:3: ( ( (lv_op_3_0= 'changeClass' ) ) | ( (lv_op_4_0= 'addClass' ) ) | ( (lv_op_5_0= 'deleteClass' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= ruleClass ) ) otherlv_8= ':' otherlv_9= 'class' otherlv_10= ')' otherlv_11= 'where' (otherlv_12= '{' ( ( (lv_setters_13_0= rulesetterDef ) ) | ( (lv_attributes_14_0= ruleEAttributeOpDef ) ) | ( (lv_references_15_0= ruleEReferenceOpDef ) ) )* otherlv_16= '}' )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:836:2: ( ( ( (lv_op_3_0= 'changeClass' ) ) | ( (lv_op_4_0= 'addClass' ) ) | ( (lv_op_5_0= 'deleteClass' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= ruleClass ) ) otherlv_8= ':' otherlv_9= 'class' otherlv_10= ')' otherlv_11= 'where' (otherlv_12= '{' ( ( (lv_setters_13_0= rulesetterDef ) ) | ( (lv_attributes_14_0= ruleEAttributeOpDef ) ) | ( (lv_references_15_0= ruleEReferenceOpDef ) ) )* otherlv_16= '}' ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:836:3: ( ( (lv_op_3_0= 'changeClass' ) ) | ( (lv_op_4_0= 'addClass' ) ) | ( (lv_op_5_0= 'deleteClass' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= ruleClass ) ) otherlv_8= ':' otherlv_9= 'class' otherlv_10= ')' otherlv_11= 'where' (otherlv_12= '{' ( ( (lv_setters_13_0= rulesetterDef ) ) | ( (lv_attributes_14_0= ruleEAttributeOpDef ) ) | ( (lv_references_15_0= ruleEReferenceOpDef ) ) )* otherlv_16= '}' )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:808:3: ( ( (lv_op_3_0= 'changeClass' ) ) | ( (lv_op_4_0= 'addClass' ) ) | ( (lv_op_5_0= 'deleteClass' ) ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:836:3: ( ( (lv_op_3_0= 'changeClass' ) ) | ( (lv_op_4_0= 'addClass' ) ) | ( (lv_op_5_0= 'deleteClass' ) ) )
             int alt10=3;
             switch ( input.LA(1) ) {
-            case 35:
+            case 36:
                 {
                 alt10=1;
                 }
                 break;
-            case 36:
+            case 37:
                 {
                 alt10=2;
                 }
                 break;
-            case 37:
+            case 38:
                 {
                 alt10=3;
                 }
@@ -1913,15 +1951,15 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
             switch (alt10) {
                 case 1 :
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:808:4: ( (lv_op_3_0= 'changeClass' ) )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:836:4: ( (lv_op_3_0= 'changeClass' ) )
                     {
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:808:4: ( (lv_op_3_0= 'changeClass' ) )
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:809:1: (lv_op_3_0= 'changeClass' )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:836:4: ( (lv_op_3_0= 'changeClass' ) )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:837:1: (lv_op_3_0= 'changeClass' )
                     {
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:809:1: (lv_op_3_0= 'changeClass' )
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:810:3: lv_op_3_0= 'changeClass'
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:837:1: (lv_op_3_0= 'changeClass' )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:838:3: lv_op_3_0= 'changeClass'
                     {
-                    lv_op_3_0=(Token)match(input,35,FOLLOW_35_in_ruleEClassOpDef1704); 
+                    lv_op_3_0=(Token)match(input,36,FOLLOW_36_in_ruleEClassOpDef1752); 
 
                             newLeafNode(lv_op_3_0, grammarAccess.getEClassOpDefAccess().getOpChangeClassKeyword_1_0_0_0());
                         
@@ -1941,15 +1979,15 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:824:6: ( (lv_op_4_0= 'addClass' ) )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:852:6: ( (lv_op_4_0= 'addClass' ) )
                     {
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:824:6: ( (lv_op_4_0= 'addClass' ) )
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:825:1: (lv_op_4_0= 'addClass' )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:852:6: ( (lv_op_4_0= 'addClass' ) )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:853:1: (lv_op_4_0= 'addClass' )
                     {
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:825:1: (lv_op_4_0= 'addClass' )
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:826:3: lv_op_4_0= 'addClass'
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:853:1: (lv_op_4_0= 'addClass' )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:854:3: lv_op_4_0= 'addClass'
                     {
-                    lv_op_4_0=(Token)match(input,36,FOLLOW_36_in_ruleEClassOpDef1741); 
+                    lv_op_4_0=(Token)match(input,37,FOLLOW_37_in_ruleEClassOpDef1789); 
 
                             newLeafNode(lv_op_4_0, grammarAccess.getEClassOpDefAccess().getOpAddClassKeyword_1_0_1_0());
                         
@@ -1969,15 +2007,15 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 3 :
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:840:6: ( (lv_op_5_0= 'deleteClass' ) )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:868:6: ( (lv_op_5_0= 'deleteClass' ) )
                     {
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:840:6: ( (lv_op_5_0= 'deleteClass' ) )
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:841:1: (lv_op_5_0= 'deleteClass' )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:868:6: ( (lv_op_5_0= 'deleteClass' ) )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:869:1: (lv_op_5_0= 'deleteClass' )
                     {
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:841:1: (lv_op_5_0= 'deleteClass' )
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:842:3: lv_op_5_0= 'deleteClass'
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:869:1: (lv_op_5_0= 'deleteClass' )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:870:3: lv_op_5_0= 'deleteClass'
                     {
-                    lv_op_5_0=(Token)match(input,37,FOLLOW_37_in_ruleEClassOpDef1778); 
+                    lv_op_5_0=(Token)match(input,38,FOLLOW_38_in_ruleEClassOpDef1826); 
 
                             newLeafNode(lv_op_5_0, grammarAccess.getEClassOpDefAccess().getOpDeleteClassKeyword_1_0_2_0());
                         
@@ -1999,20 +2037,20 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_6=(Token)match(input,31,FOLLOW_31_in_ruleEClassOpDef1804); 
+            otherlv_6=(Token)match(input,32,FOLLOW_32_in_ruleEClassOpDef1852); 
 
                 	newLeafNode(otherlv_6, grammarAccess.getEClassOpDefAccess().getLeftParenthesisKeyword_1_1());
                 
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:859:1: ( (lv_ref_7_0= ruleClass ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:860:1: (lv_ref_7_0= ruleClass )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:887:1: ( (lv_ref_7_0= ruleClass ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:888:1: (lv_ref_7_0= ruleClass )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:860:1: (lv_ref_7_0= ruleClass )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:861:3: lv_ref_7_0= ruleClass
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:888:1: (lv_ref_7_0= ruleClass )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:889:3: lv_ref_7_0= ruleClass
             {
              
             	        newCompositeNode(grammarAccess.getEClassOpDefAccess().getRefClassParserRuleCall_1_2_0()); 
             	    
-            pushFollow(FOLLOW_ruleClass_in_ruleEClassOpDef1825);
+            pushFollow(FOLLOW_ruleClass_in_ruleEClassOpDef1873);
             lv_ref_7_0=ruleClass();
 
             state._fsp--;
@@ -2034,45 +2072,45 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_8=(Token)match(input,17,FOLLOW_17_in_ruleEClassOpDef1837); 
+            otherlv_8=(Token)match(input,18,FOLLOW_18_in_ruleEClassOpDef1885); 
 
                 	newLeafNode(otherlv_8, grammarAccess.getEClassOpDefAccess().getColonKeyword_1_3());
                 
-            otherlv_9=(Token)match(input,34,FOLLOW_34_in_ruleEClassOpDef1849); 
+            otherlv_9=(Token)match(input,35,FOLLOW_35_in_ruleEClassOpDef1897); 
 
                 	newLeafNode(otherlv_9, grammarAccess.getEClassOpDefAccess().getClassKeyword_1_4());
                 
-            otherlv_10=(Token)match(input,32,FOLLOW_32_in_ruleEClassOpDef1861); 
+            otherlv_10=(Token)match(input,33,FOLLOW_33_in_ruleEClassOpDef1909); 
 
                 	newLeafNode(otherlv_10, grammarAccess.getEClassOpDefAccess().getRightParenthesisKeyword_1_5());
                 
-            otherlv_11=(Token)match(input,33,FOLLOW_33_in_ruleEClassOpDef1873); 
+            otherlv_11=(Token)match(input,34,FOLLOW_34_in_ruleEClassOpDef1921); 
 
                 	newLeafNode(otherlv_11, grammarAccess.getEClassOpDefAccess().getWhereKeyword_1_6());
                 
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:893:1: (otherlv_12= '{' ( ( (lv_setters_13_0= rulesetterDef ) ) | ( (lv_attributes_14_0= ruleEAttributeOpDef ) ) | ( (lv_references_15_0= ruleEReferenceOpDef ) ) )* otherlv_16= '}' )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:893:3: otherlv_12= '{' ( ( (lv_setters_13_0= rulesetterDef ) ) | ( (lv_attributes_14_0= ruleEAttributeOpDef ) ) | ( (lv_references_15_0= ruleEReferenceOpDef ) ) )* otherlv_16= '}'
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:921:1: (otherlv_12= '{' ( ( (lv_setters_13_0= rulesetterDef ) ) | ( (lv_attributes_14_0= ruleEAttributeOpDef ) ) | ( (lv_references_15_0= ruleEReferenceOpDef ) ) )* otherlv_16= '}' )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:921:3: otherlv_12= '{' ( ( (lv_setters_13_0= rulesetterDef ) ) | ( (lv_attributes_14_0= ruleEAttributeOpDef ) ) | ( (lv_references_15_0= ruleEReferenceOpDef ) ) )* otherlv_16= '}'
             {
-            otherlv_12=(Token)match(input,12,FOLLOW_12_in_ruleEClassOpDef1886); 
+            otherlv_12=(Token)match(input,12,FOLLOW_12_in_ruleEClassOpDef1934); 
 
                 	newLeafNode(otherlv_12, grammarAccess.getEClassOpDefAccess().getLeftCurlyBracketKeyword_1_7_0());
                 
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:897:1: ( ( (lv_setters_13_0= rulesetterDef ) ) | ( (lv_attributes_14_0= ruleEAttributeOpDef ) ) | ( (lv_references_15_0= ruleEReferenceOpDef ) ) )*
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:925:1: ( ( (lv_setters_13_0= rulesetterDef ) ) | ( (lv_attributes_14_0= ruleEAttributeOpDef ) ) | ( (lv_references_15_0= ruleEReferenceOpDef ) ) )*
             loop11:
             do {
                 int alt11=4;
                 switch ( input.LA(1) ) {
-                case 46:
+                case 47:
                     {
                     alt11=1;
                     }
                     break;
-                case 38:
+                case 39:
                     {
                     alt11=2;
                     }
                     break;
-                case 42:
+                case 43:
                     {
                     alt11=3;
                     }
@@ -2082,18 +2120,18 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
                 switch (alt11) {
             	case 1 :
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:897:2: ( (lv_setters_13_0= rulesetterDef ) )
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:925:2: ( (lv_setters_13_0= rulesetterDef ) )
             	    {
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:897:2: ( (lv_setters_13_0= rulesetterDef ) )
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:898:1: (lv_setters_13_0= rulesetterDef )
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:925:2: ( (lv_setters_13_0= rulesetterDef ) )
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:926:1: (lv_setters_13_0= rulesetterDef )
             	    {
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:898:1: (lv_setters_13_0= rulesetterDef )
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:899:3: lv_setters_13_0= rulesetterDef
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:926:1: (lv_setters_13_0= rulesetterDef )
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:927:3: lv_setters_13_0= rulesetterDef
             	    {
             	     
             	    	        newCompositeNode(grammarAccess.getEClassOpDefAccess().getSettersSetterDefParserRuleCall_1_7_1_0_0()); 
             	    	    
-            	    pushFollow(FOLLOW_rulesetterDef_in_ruleEClassOpDef1908);
+            	    pushFollow(FOLLOW_rulesetterDef_in_ruleEClassOpDef1956);
             	    lv_setters_13_0=rulesetterDef();
 
             	    state._fsp--;
@@ -2119,18 +2157,18 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
             	    }
             	    break;
             	case 2 :
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:916:6: ( (lv_attributes_14_0= ruleEAttributeOpDef ) )
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:944:6: ( (lv_attributes_14_0= ruleEAttributeOpDef ) )
             	    {
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:916:6: ( (lv_attributes_14_0= ruleEAttributeOpDef ) )
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:917:1: (lv_attributes_14_0= ruleEAttributeOpDef )
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:944:6: ( (lv_attributes_14_0= ruleEAttributeOpDef ) )
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:945:1: (lv_attributes_14_0= ruleEAttributeOpDef )
             	    {
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:917:1: (lv_attributes_14_0= ruleEAttributeOpDef )
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:918:3: lv_attributes_14_0= ruleEAttributeOpDef
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:945:1: (lv_attributes_14_0= ruleEAttributeOpDef )
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:946:3: lv_attributes_14_0= ruleEAttributeOpDef
             	    {
             	     
             	    	        newCompositeNode(grammarAccess.getEClassOpDefAccess().getAttributesEAttributeOpDefParserRuleCall_1_7_1_1_0()); 
             	    	    
-            	    pushFollow(FOLLOW_ruleEAttributeOpDef_in_ruleEClassOpDef1935);
+            	    pushFollow(FOLLOW_ruleEAttributeOpDef_in_ruleEClassOpDef1983);
             	    lv_attributes_14_0=ruleEAttributeOpDef();
 
             	    state._fsp--;
@@ -2156,18 +2194,18 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
             	    }
             	    break;
             	case 3 :
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:935:6: ( (lv_references_15_0= ruleEReferenceOpDef ) )
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:963:6: ( (lv_references_15_0= ruleEReferenceOpDef ) )
             	    {
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:935:6: ( (lv_references_15_0= ruleEReferenceOpDef ) )
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:936:1: (lv_references_15_0= ruleEReferenceOpDef )
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:963:6: ( (lv_references_15_0= ruleEReferenceOpDef ) )
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:964:1: (lv_references_15_0= ruleEReferenceOpDef )
             	    {
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:936:1: (lv_references_15_0= ruleEReferenceOpDef )
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:937:3: lv_references_15_0= ruleEReferenceOpDef
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:964:1: (lv_references_15_0= ruleEReferenceOpDef )
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:965:3: lv_references_15_0= ruleEReferenceOpDef
             	    {
             	     
             	    	        newCompositeNode(grammarAccess.getEClassOpDefAccess().getReferencesEReferenceOpDefParserRuleCall_1_7_1_2_0()); 
             	    	    
-            	    pushFollow(FOLLOW_ruleEReferenceOpDef_in_ruleEClassOpDef1962);
+            	    pushFollow(FOLLOW_ruleEReferenceOpDef_in_ruleEClassOpDef2010);
             	    lv_references_15_0=ruleEReferenceOpDef();
 
             	    state._fsp--;
@@ -2198,7 +2236,7 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
                 }
             } while (true);
 
-            otherlv_16=(Token)match(input,13,FOLLOW_13_in_ruleEClassOpDef1976); 
+            otherlv_16=(Token)match(input,13,FOLLOW_13_in_ruleEClassOpDef2024); 
 
                 	newLeafNode(otherlv_16, grammarAccess.getEClassOpDefAccess().getRightCurlyBracketKeyword_1_7_2());
                 
@@ -2229,7 +2267,7 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleEAttributeOpDef"
-    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:965:1: entryRuleEAttributeOpDef returns [EObject current=null] : iv_ruleEAttributeOpDef= ruleEAttributeOpDef EOF ;
+    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:993:1: entryRuleEAttributeOpDef returns [EObject current=null] : iv_ruleEAttributeOpDef= ruleEAttributeOpDef EOF ;
     public final EObject entryRuleEAttributeOpDef() throws RecognitionException {
         EObject current = null;
 
@@ -2237,17 +2275,17 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:966:2: (iv_ruleEAttributeOpDef= ruleEAttributeOpDef EOF )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:967:2: iv_ruleEAttributeOpDef= ruleEAttributeOpDef EOF
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:994:2: (iv_ruleEAttributeOpDef= ruleEAttributeOpDef EOF )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:995:2: iv_ruleEAttributeOpDef= ruleEAttributeOpDef EOF
             {
              newCompositeNode(grammarAccess.getEAttributeOpDefRule()); 
-            pushFollow(FOLLOW_ruleEAttributeOpDef_in_entryRuleEAttributeOpDef2014);
+            pushFollow(FOLLOW_ruleEAttributeOpDef_in_entryRuleEAttributeOpDef2062);
             iv_ruleEAttributeOpDef=ruleEAttributeOpDef();
 
             state._fsp--;
 
              current =iv_ruleEAttributeOpDef; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleEAttributeOpDef2024); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleEAttributeOpDef2072); 
 
             }
 
@@ -2265,7 +2303,7 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleEAttributeOpDef"
-    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:974:1: ruleEAttributeOpDef returns [EObject current=null] : ( (otherlv_0= 'attribute' ( (lv_var_1_0= ruleAttribute ) ) otherlv_2= '=' ) ( ( ( ( (lv_op_3_0= 'changeEAttribute' ) ) | ( (lv_op_4_0= 'addEAttribute' ) ) | ( (lv_op_5_0= 'deleteEAttribute' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= ruleAttribute ) ) otherlv_8= ':' otherlv_9= 'attribute' ) otherlv_10= ')' otherlv_11= 'where' ( (otherlv_12= '{' ( (lv_setters_13_0= rulesetterDef ) )* otherlv_14= '}' ) | otherlv_15= ';' ) ) ) ;
+    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1002:1: ruleEAttributeOpDef returns [EObject current=null] : ( (otherlv_0= 'attribute' ( (lv_var_1_0= ruleAttribute ) ) otherlv_2= '=' ) ( ( ( ( (lv_op_3_0= 'changeEAttribute' ) ) | ( (lv_op_4_0= 'addEAttribute' ) ) | ( (lv_op_5_0= 'deleteEAttribute' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= ruleAttribute ) ) otherlv_8= ':' otherlv_9= 'attribute' ) otherlv_10= ')' otherlv_11= 'where' ( (otherlv_12= '{' ( (lv_setters_13_0= rulesetterDef ) )* otherlv_14= '}' ) | otherlv_15= ';' ) ) ) ;
     public final EObject ruleEAttributeOpDef() throws RecognitionException {
         EObject current = null;
 
@@ -2292,29 +2330,29 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:977:28: ( ( (otherlv_0= 'attribute' ( (lv_var_1_0= ruleAttribute ) ) otherlv_2= '=' ) ( ( ( ( (lv_op_3_0= 'changeEAttribute' ) ) | ( (lv_op_4_0= 'addEAttribute' ) ) | ( (lv_op_5_0= 'deleteEAttribute' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= ruleAttribute ) ) otherlv_8= ':' otherlv_9= 'attribute' ) otherlv_10= ')' otherlv_11= 'where' ( (otherlv_12= '{' ( (lv_setters_13_0= rulesetterDef ) )* otherlv_14= '}' ) | otherlv_15= ';' ) ) ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:978:1: ( (otherlv_0= 'attribute' ( (lv_var_1_0= ruleAttribute ) ) otherlv_2= '=' ) ( ( ( ( (lv_op_3_0= 'changeEAttribute' ) ) | ( (lv_op_4_0= 'addEAttribute' ) ) | ( (lv_op_5_0= 'deleteEAttribute' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= ruleAttribute ) ) otherlv_8= ':' otherlv_9= 'attribute' ) otherlv_10= ')' otherlv_11= 'where' ( (otherlv_12= '{' ( (lv_setters_13_0= rulesetterDef ) )* otherlv_14= '}' ) | otherlv_15= ';' ) ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1005:28: ( ( (otherlv_0= 'attribute' ( (lv_var_1_0= ruleAttribute ) ) otherlv_2= '=' ) ( ( ( ( (lv_op_3_0= 'changeEAttribute' ) ) | ( (lv_op_4_0= 'addEAttribute' ) ) | ( (lv_op_5_0= 'deleteEAttribute' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= ruleAttribute ) ) otherlv_8= ':' otherlv_9= 'attribute' ) otherlv_10= ')' otherlv_11= 'where' ( (otherlv_12= '{' ( (lv_setters_13_0= rulesetterDef ) )* otherlv_14= '}' ) | otherlv_15= ';' ) ) ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1006:1: ( (otherlv_0= 'attribute' ( (lv_var_1_0= ruleAttribute ) ) otherlv_2= '=' ) ( ( ( ( (lv_op_3_0= 'changeEAttribute' ) ) | ( (lv_op_4_0= 'addEAttribute' ) ) | ( (lv_op_5_0= 'deleteEAttribute' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= ruleAttribute ) ) otherlv_8= ':' otherlv_9= 'attribute' ) otherlv_10= ')' otherlv_11= 'where' ( (otherlv_12= '{' ( (lv_setters_13_0= rulesetterDef ) )* otherlv_14= '}' ) | otherlv_15= ';' ) ) )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:978:1: ( (otherlv_0= 'attribute' ( (lv_var_1_0= ruleAttribute ) ) otherlv_2= '=' ) ( ( ( ( (lv_op_3_0= 'changeEAttribute' ) ) | ( (lv_op_4_0= 'addEAttribute' ) ) | ( (lv_op_5_0= 'deleteEAttribute' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= ruleAttribute ) ) otherlv_8= ':' otherlv_9= 'attribute' ) otherlv_10= ')' otherlv_11= 'where' ( (otherlv_12= '{' ( (lv_setters_13_0= rulesetterDef ) )* otherlv_14= '}' ) | otherlv_15= ';' ) ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:978:2: (otherlv_0= 'attribute' ( (lv_var_1_0= ruleAttribute ) ) otherlv_2= '=' ) ( ( ( ( (lv_op_3_0= 'changeEAttribute' ) ) | ( (lv_op_4_0= 'addEAttribute' ) ) | ( (lv_op_5_0= 'deleteEAttribute' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= ruleAttribute ) ) otherlv_8= ':' otherlv_9= 'attribute' ) otherlv_10= ')' otherlv_11= 'where' ( (otherlv_12= '{' ( (lv_setters_13_0= rulesetterDef ) )* otherlv_14= '}' ) | otherlv_15= ';' ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1006:1: ( (otherlv_0= 'attribute' ( (lv_var_1_0= ruleAttribute ) ) otherlv_2= '=' ) ( ( ( ( (lv_op_3_0= 'changeEAttribute' ) ) | ( (lv_op_4_0= 'addEAttribute' ) ) | ( (lv_op_5_0= 'deleteEAttribute' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= ruleAttribute ) ) otherlv_8= ':' otherlv_9= 'attribute' ) otherlv_10= ')' otherlv_11= 'where' ( (otherlv_12= '{' ( (lv_setters_13_0= rulesetterDef ) )* otherlv_14= '}' ) | otherlv_15= ';' ) ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1006:2: (otherlv_0= 'attribute' ( (lv_var_1_0= ruleAttribute ) ) otherlv_2= '=' ) ( ( ( ( (lv_op_3_0= 'changeEAttribute' ) ) | ( (lv_op_4_0= 'addEAttribute' ) ) | ( (lv_op_5_0= 'deleteEAttribute' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= ruleAttribute ) ) otherlv_8= ':' otherlv_9= 'attribute' ) otherlv_10= ')' otherlv_11= 'where' ( (otherlv_12= '{' ( (lv_setters_13_0= rulesetterDef ) )* otherlv_14= '}' ) | otherlv_15= ';' ) )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:978:2: (otherlv_0= 'attribute' ( (lv_var_1_0= ruleAttribute ) ) otherlv_2= '=' )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:978:4: otherlv_0= 'attribute' ( (lv_var_1_0= ruleAttribute ) ) otherlv_2= '='
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1006:2: (otherlv_0= 'attribute' ( (lv_var_1_0= ruleAttribute ) ) otherlv_2= '=' )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1006:4: otherlv_0= 'attribute' ( (lv_var_1_0= ruleAttribute ) ) otherlv_2= '='
             {
-            otherlv_0=(Token)match(input,38,FOLLOW_38_in_ruleEAttributeOpDef2062); 
+            otherlv_0=(Token)match(input,39,FOLLOW_39_in_ruleEAttributeOpDef2110); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getEAttributeOpDefAccess().getAttributeKeyword_0_0());
                 
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:982:1: ( (lv_var_1_0= ruleAttribute ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:983:1: (lv_var_1_0= ruleAttribute )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1010:1: ( (lv_var_1_0= ruleAttribute ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1011:1: (lv_var_1_0= ruleAttribute )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:983:1: (lv_var_1_0= ruleAttribute )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:984:3: lv_var_1_0= ruleAttribute
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1011:1: (lv_var_1_0= ruleAttribute )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1012:3: lv_var_1_0= ruleAttribute
             {
              
             	        newCompositeNode(grammarAccess.getEAttributeOpDefAccess().getVarAttributeParserRuleCall_0_1_0()); 
             	    
-            pushFollow(FOLLOW_ruleAttribute_in_ruleEAttributeOpDef2083);
+            pushFollow(FOLLOW_ruleAttribute_in_ruleEAttributeOpDef2131);
             lv_var_1_0=ruleAttribute();
 
             state._fsp--;
@@ -2336,33 +2374,33 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_2=(Token)match(input,27,FOLLOW_27_in_ruleEAttributeOpDef2095); 
+            otherlv_2=(Token)match(input,28,FOLLOW_28_in_ruleEAttributeOpDef2143); 
 
                 	newLeafNode(otherlv_2, grammarAccess.getEAttributeOpDefAccess().getEqualsSignKeyword_0_2());
                 
 
             }
 
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1004:2: ( ( ( ( (lv_op_3_0= 'changeEAttribute' ) ) | ( (lv_op_4_0= 'addEAttribute' ) ) | ( (lv_op_5_0= 'deleteEAttribute' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= ruleAttribute ) ) otherlv_8= ':' otherlv_9= 'attribute' ) otherlv_10= ')' otherlv_11= 'where' ( (otherlv_12= '{' ( (lv_setters_13_0= rulesetterDef ) )* otherlv_14= '}' ) | otherlv_15= ';' ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1004:3: ( ( ( (lv_op_3_0= 'changeEAttribute' ) ) | ( (lv_op_4_0= 'addEAttribute' ) ) | ( (lv_op_5_0= 'deleteEAttribute' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= ruleAttribute ) ) otherlv_8= ':' otherlv_9= 'attribute' ) otherlv_10= ')' otherlv_11= 'where' ( (otherlv_12= '{' ( (lv_setters_13_0= rulesetterDef ) )* otherlv_14= '}' ) | otherlv_15= ';' )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1032:2: ( ( ( ( (lv_op_3_0= 'changeEAttribute' ) ) | ( (lv_op_4_0= 'addEAttribute' ) ) | ( (lv_op_5_0= 'deleteEAttribute' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= ruleAttribute ) ) otherlv_8= ':' otherlv_9= 'attribute' ) otherlv_10= ')' otherlv_11= 'where' ( (otherlv_12= '{' ( (lv_setters_13_0= rulesetterDef ) )* otherlv_14= '}' ) | otherlv_15= ';' ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1032:3: ( ( ( (lv_op_3_0= 'changeEAttribute' ) ) | ( (lv_op_4_0= 'addEAttribute' ) ) | ( (lv_op_5_0= 'deleteEAttribute' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= ruleAttribute ) ) otherlv_8= ':' otherlv_9= 'attribute' ) otherlv_10= ')' otherlv_11= 'where' ( (otherlv_12= '{' ( (lv_setters_13_0= rulesetterDef ) )* otherlv_14= '}' ) | otherlv_15= ';' )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1004:3: ( ( ( (lv_op_3_0= 'changeEAttribute' ) ) | ( (lv_op_4_0= 'addEAttribute' ) ) | ( (lv_op_5_0= 'deleteEAttribute' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= ruleAttribute ) ) otherlv_8= ':' otherlv_9= 'attribute' )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1004:4: ( ( (lv_op_3_0= 'changeEAttribute' ) ) | ( (lv_op_4_0= 'addEAttribute' ) ) | ( (lv_op_5_0= 'deleteEAttribute' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= ruleAttribute ) ) otherlv_8= ':' otherlv_9= 'attribute'
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1032:3: ( ( ( (lv_op_3_0= 'changeEAttribute' ) ) | ( (lv_op_4_0= 'addEAttribute' ) ) | ( (lv_op_5_0= 'deleteEAttribute' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= ruleAttribute ) ) otherlv_8= ':' otherlv_9= 'attribute' )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1032:4: ( ( (lv_op_3_0= 'changeEAttribute' ) ) | ( (lv_op_4_0= 'addEAttribute' ) ) | ( (lv_op_5_0= 'deleteEAttribute' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= ruleAttribute ) ) otherlv_8= ':' otherlv_9= 'attribute'
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1004:4: ( ( (lv_op_3_0= 'changeEAttribute' ) ) | ( (lv_op_4_0= 'addEAttribute' ) ) | ( (lv_op_5_0= 'deleteEAttribute' ) ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1032:4: ( ( (lv_op_3_0= 'changeEAttribute' ) ) | ( (lv_op_4_0= 'addEAttribute' ) ) | ( (lv_op_5_0= 'deleteEAttribute' ) ) )
             int alt12=3;
             switch ( input.LA(1) ) {
-            case 39:
+            case 40:
                 {
                 alt12=1;
                 }
                 break;
-            case 40:
+            case 41:
                 {
                 alt12=2;
                 }
                 break;
-            case 41:
+            case 42:
                 {
                 alt12=3;
                 }
@@ -2376,15 +2414,15 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
             switch (alt12) {
                 case 1 :
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1004:5: ( (lv_op_3_0= 'changeEAttribute' ) )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1032:5: ( (lv_op_3_0= 'changeEAttribute' ) )
                     {
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1004:5: ( (lv_op_3_0= 'changeEAttribute' ) )
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1005:1: (lv_op_3_0= 'changeEAttribute' )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1032:5: ( (lv_op_3_0= 'changeEAttribute' ) )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1033:1: (lv_op_3_0= 'changeEAttribute' )
                     {
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1005:1: (lv_op_3_0= 'changeEAttribute' )
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1006:3: lv_op_3_0= 'changeEAttribute'
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1033:1: (lv_op_3_0= 'changeEAttribute' )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1034:3: lv_op_3_0= 'changeEAttribute'
                     {
-                    lv_op_3_0=(Token)match(input,39,FOLLOW_39_in_ruleEAttributeOpDef2117); 
+                    lv_op_3_0=(Token)match(input,40,FOLLOW_40_in_ruleEAttributeOpDef2165); 
 
                             newLeafNode(lv_op_3_0, grammarAccess.getEAttributeOpDefAccess().getOpChangeEAttributeKeyword_1_0_0_0_0());
                         
@@ -2404,15 +2442,15 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1020:6: ( (lv_op_4_0= 'addEAttribute' ) )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1048:6: ( (lv_op_4_0= 'addEAttribute' ) )
                     {
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1020:6: ( (lv_op_4_0= 'addEAttribute' ) )
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1021:1: (lv_op_4_0= 'addEAttribute' )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1048:6: ( (lv_op_4_0= 'addEAttribute' ) )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1049:1: (lv_op_4_0= 'addEAttribute' )
                     {
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1021:1: (lv_op_4_0= 'addEAttribute' )
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1022:3: lv_op_4_0= 'addEAttribute'
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1049:1: (lv_op_4_0= 'addEAttribute' )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1050:3: lv_op_4_0= 'addEAttribute'
                     {
-                    lv_op_4_0=(Token)match(input,40,FOLLOW_40_in_ruleEAttributeOpDef2154); 
+                    lv_op_4_0=(Token)match(input,41,FOLLOW_41_in_ruleEAttributeOpDef2202); 
 
                             newLeafNode(lv_op_4_0, grammarAccess.getEAttributeOpDefAccess().getOpAddEAttributeKeyword_1_0_0_1_0());
                         
@@ -2432,15 +2470,15 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 3 :
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1036:6: ( (lv_op_5_0= 'deleteEAttribute' ) )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1064:6: ( (lv_op_5_0= 'deleteEAttribute' ) )
                     {
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1036:6: ( (lv_op_5_0= 'deleteEAttribute' ) )
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1037:1: (lv_op_5_0= 'deleteEAttribute' )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1064:6: ( (lv_op_5_0= 'deleteEAttribute' ) )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1065:1: (lv_op_5_0= 'deleteEAttribute' )
                     {
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1037:1: (lv_op_5_0= 'deleteEAttribute' )
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1038:3: lv_op_5_0= 'deleteEAttribute'
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1065:1: (lv_op_5_0= 'deleteEAttribute' )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1066:3: lv_op_5_0= 'deleteEAttribute'
                     {
-                    lv_op_5_0=(Token)match(input,41,FOLLOW_41_in_ruleEAttributeOpDef2191); 
+                    lv_op_5_0=(Token)match(input,42,FOLLOW_42_in_ruleEAttributeOpDef2239); 
 
                             newLeafNode(lv_op_5_0, grammarAccess.getEAttributeOpDefAccess().getOpDeleteEAttributeKeyword_1_0_0_2_0());
                         
@@ -2462,20 +2500,20 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_6=(Token)match(input,31,FOLLOW_31_in_ruleEAttributeOpDef2217); 
+            otherlv_6=(Token)match(input,32,FOLLOW_32_in_ruleEAttributeOpDef2265); 
 
                 	newLeafNode(otherlv_6, grammarAccess.getEAttributeOpDefAccess().getLeftParenthesisKeyword_1_0_1());
                 
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1055:1: ( (lv_ref_7_0= ruleAttribute ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1056:1: (lv_ref_7_0= ruleAttribute )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1083:1: ( (lv_ref_7_0= ruleAttribute ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1084:1: (lv_ref_7_0= ruleAttribute )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1056:1: (lv_ref_7_0= ruleAttribute )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1057:3: lv_ref_7_0= ruleAttribute
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1084:1: (lv_ref_7_0= ruleAttribute )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1085:3: lv_ref_7_0= ruleAttribute
             {
              
             	        newCompositeNode(grammarAccess.getEAttributeOpDefAccess().getRefAttributeParserRuleCall_1_0_2_0()); 
             	    
-            pushFollow(FOLLOW_ruleAttribute_in_ruleEAttributeOpDef2238);
+            pushFollow(FOLLOW_ruleAttribute_in_ruleEAttributeOpDef2286);
             lv_ref_7_0=ruleAttribute();
 
             state._fsp--;
@@ -2497,26 +2535,26 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_8=(Token)match(input,17,FOLLOW_17_in_ruleEAttributeOpDef2250); 
+            otherlv_8=(Token)match(input,18,FOLLOW_18_in_ruleEAttributeOpDef2298); 
 
                 	newLeafNode(otherlv_8, grammarAccess.getEAttributeOpDefAccess().getColonKeyword_1_0_3());
                 
-            otherlv_9=(Token)match(input,38,FOLLOW_38_in_ruleEAttributeOpDef2262); 
+            otherlv_9=(Token)match(input,39,FOLLOW_39_in_ruleEAttributeOpDef2310); 
 
                 	newLeafNode(otherlv_9, grammarAccess.getEAttributeOpDefAccess().getAttributeKeyword_1_0_4());
                 
 
             }
 
-            otherlv_10=(Token)match(input,32,FOLLOW_32_in_ruleEAttributeOpDef2275); 
+            otherlv_10=(Token)match(input,33,FOLLOW_33_in_ruleEAttributeOpDef2323); 
 
                 	newLeafNode(otherlv_10, grammarAccess.getEAttributeOpDefAccess().getRightParenthesisKeyword_1_1());
                 
-            otherlv_11=(Token)match(input,33,FOLLOW_33_in_ruleEAttributeOpDef2287); 
+            otherlv_11=(Token)match(input,34,FOLLOW_34_in_ruleEAttributeOpDef2335); 
 
                 	newLeafNode(otherlv_11, grammarAccess.getEAttributeOpDefAccess().getWhereKeyword_1_2());
                 
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1089:1: ( (otherlv_12= '{' ( (lv_setters_13_0= rulesetterDef ) )* otherlv_14= '}' ) | otherlv_15= ';' )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1117:1: ( (otherlv_12= '{' ( (lv_setters_13_0= rulesetterDef ) )* otherlv_14= '}' ) | otherlv_15= ';' )
             int alt14=2;
             int LA14_0 = input.LA(1);
 
@@ -2534,37 +2572,37 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
             }
             switch (alt14) {
                 case 1 :
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1089:2: (otherlv_12= '{' ( (lv_setters_13_0= rulesetterDef ) )* otherlv_14= '}' )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1117:2: (otherlv_12= '{' ( (lv_setters_13_0= rulesetterDef ) )* otherlv_14= '}' )
                     {
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1089:2: (otherlv_12= '{' ( (lv_setters_13_0= rulesetterDef ) )* otherlv_14= '}' )
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1089:4: otherlv_12= '{' ( (lv_setters_13_0= rulesetterDef ) )* otherlv_14= '}'
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1117:2: (otherlv_12= '{' ( (lv_setters_13_0= rulesetterDef ) )* otherlv_14= '}' )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1117:4: otherlv_12= '{' ( (lv_setters_13_0= rulesetterDef ) )* otherlv_14= '}'
                     {
-                    otherlv_12=(Token)match(input,12,FOLLOW_12_in_ruleEAttributeOpDef2301); 
+                    otherlv_12=(Token)match(input,12,FOLLOW_12_in_ruleEAttributeOpDef2349); 
 
                         	newLeafNode(otherlv_12, grammarAccess.getEAttributeOpDefAccess().getLeftCurlyBracketKeyword_1_3_0_0());
                         
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1093:1: ( (lv_setters_13_0= rulesetterDef ) )*
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1121:1: ( (lv_setters_13_0= rulesetterDef ) )*
                     loop13:
                     do {
                         int alt13=2;
                         int LA13_0 = input.LA(1);
 
-                        if ( (LA13_0==46) ) {
+                        if ( (LA13_0==47) ) {
                             alt13=1;
                         }
 
 
                         switch (alt13) {
                     	case 1 :
-                    	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1094:1: (lv_setters_13_0= rulesetterDef )
+                    	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1122:1: (lv_setters_13_0= rulesetterDef )
                     	    {
-                    	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1094:1: (lv_setters_13_0= rulesetterDef )
-                    	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1095:3: lv_setters_13_0= rulesetterDef
+                    	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1122:1: (lv_setters_13_0= rulesetterDef )
+                    	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1123:3: lv_setters_13_0= rulesetterDef
                     	    {
                     	     
                     	    	        newCompositeNode(grammarAccess.getEAttributeOpDefAccess().getSettersSetterDefParserRuleCall_1_3_0_1_0()); 
                     	    	    
-                    	    pushFollow(FOLLOW_rulesetterDef_in_ruleEAttributeOpDef2322);
+                    	    pushFollow(FOLLOW_rulesetterDef_in_ruleEAttributeOpDef2370);
                     	    lv_setters_13_0=rulesetterDef();
 
                     	    state._fsp--;
@@ -2592,7 +2630,7 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
                         }
                     } while (true);
 
-                    otherlv_14=(Token)match(input,13,FOLLOW_13_in_ruleEAttributeOpDef2335); 
+                    otherlv_14=(Token)match(input,13,FOLLOW_13_in_ruleEAttributeOpDef2383); 
 
                         	newLeafNode(otherlv_14, grammarAccess.getEAttributeOpDefAccess().getRightCurlyBracketKeyword_1_3_0_2());
                         
@@ -2603,9 +2641,9 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1116:7: otherlv_15= ';'
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1144:7: otherlv_15= ';'
                     {
-                    otherlv_15=(Token)match(input,15,FOLLOW_15_in_ruleEAttributeOpDef2354); 
+                    otherlv_15=(Token)match(input,15,FOLLOW_15_in_ruleEAttributeOpDef2402); 
 
                         	newLeafNode(otherlv_15, grammarAccess.getEAttributeOpDefAccess().getSemicolonKeyword_1_3_1());
                         
@@ -2639,7 +2677,7 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleEReferenceOpDef"
-    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1128:1: entryRuleEReferenceOpDef returns [EObject current=null] : iv_ruleEReferenceOpDef= ruleEReferenceOpDef EOF ;
+    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1156:1: entryRuleEReferenceOpDef returns [EObject current=null] : iv_ruleEReferenceOpDef= ruleEReferenceOpDef EOF ;
     public final EObject entryRuleEReferenceOpDef() throws RecognitionException {
         EObject current = null;
 
@@ -2647,17 +2685,17 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1129:2: (iv_ruleEReferenceOpDef= ruleEReferenceOpDef EOF )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1130:2: iv_ruleEReferenceOpDef= ruleEReferenceOpDef EOF
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1157:2: (iv_ruleEReferenceOpDef= ruleEReferenceOpDef EOF )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1158:2: iv_ruleEReferenceOpDef= ruleEReferenceOpDef EOF
             {
              newCompositeNode(grammarAccess.getEReferenceOpDefRule()); 
-            pushFollow(FOLLOW_ruleEReferenceOpDef_in_entryRuleEReferenceOpDef2392);
+            pushFollow(FOLLOW_ruleEReferenceOpDef_in_entryRuleEReferenceOpDef2440);
             iv_ruleEReferenceOpDef=ruleEReferenceOpDef();
 
             state._fsp--;
 
              current =iv_ruleEReferenceOpDef; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleEReferenceOpDef2402); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleEReferenceOpDef2450); 
 
             }
 
@@ -2675,7 +2713,7 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleEReferenceOpDef"
-    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1137:1: ruleEReferenceOpDef returns [EObject current=null] : ( (otherlv_0= 'reference' ( (lv_var_1_0= ruleReference ) ) otherlv_2= '=' ) ( ( ( ( (lv_op_3_0= 'changeEReference' ) ) | ( (lv_op_4_0= 'addEReference' ) ) | ( (lv_op_5_0= 'deleteEReference' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= ruleReference ) ) otherlv_8= ':' otherlv_9= 'reference' ) otherlv_10= ')' otherlv_11= 'where' (otherlv_12= '{' ( (lv_setters_13_0= rulesetterDef ) )* otherlv_14= '}' ) ) ) ;
+    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1165:1: ruleEReferenceOpDef returns [EObject current=null] : ( (otherlv_0= 'reference' ( (lv_var_1_0= ruleReference ) ) otherlv_2= '=' ) ( ( ( ( (lv_op_3_0= 'changeEReference' ) ) | ( (lv_op_4_0= 'addEReference' ) ) | ( (lv_op_5_0= 'deleteEReference' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= ruleReference ) ) otherlv_8= ':' otherlv_9= 'reference' ) otherlv_10= ')' otherlv_11= 'where' (otherlv_12= '{' ( (lv_setters_13_0= rulesetterDef ) )* otherlv_14= '}' ) ) ) ;
     public final EObject ruleEReferenceOpDef() throws RecognitionException {
         EObject current = null;
 
@@ -2701,29 +2739,29 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1140:28: ( ( (otherlv_0= 'reference' ( (lv_var_1_0= ruleReference ) ) otherlv_2= '=' ) ( ( ( ( (lv_op_3_0= 'changeEReference' ) ) | ( (lv_op_4_0= 'addEReference' ) ) | ( (lv_op_5_0= 'deleteEReference' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= ruleReference ) ) otherlv_8= ':' otherlv_9= 'reference' ) otherlv_10= ')' otherlv_11= 'where' (otherlv_12= '{' ( (lv_setters_13_0= rulesetterDef ) )* otherlv_14= '}' ) ) ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1141:1: ( (otherlv_0= 'reference' ( (lv_var_1_0= ruleReference ) ) otherlv_2= '=' ) ( ( ( ( (lv_op_3_0= 'changeEReference' ) ) | ( (lv_op_4_0= 'addEReference' ) ) | ( (lv_op_5_0= 'deleteEReference' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= ruleReference ) ) otherlv_8= ':' otherlv_9= 'reference' ) otherlv_10= ')' otherlv_11= 'where' (otherlv_12= '{' ( (lv_setters_13_0= rulesetterDef ) )* otherlv_14= '}' ) ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1168:28: ( ( (otherlv_0= 'reference' ( (lv_var_1_0= ruleReference ) ) otherlv_2= '=' ) ( ( ( ( (lv_op_3_0= 'changeEReference' ) ) | ( (lv_op_4_0= 'addEReference' ) ) | ( (lv_op_5_0= 'deleteEReference' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= ruleReference ) ) otherlv_8= ':' otherlv_9= 'reference' ) otherlv_10= ')' otherlv_11= 'where' (otherlv_12= '{' ( (lv_setters_13_0= rulesetterDef ) )* otherlv_14= '}' ) ) ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1169:1: ( (otherlv_0= 'reference' ( (lv_var_1_0= ruleReference ) ) otherlv_2= '=' ) ( ( ( ( (lv_op_3_0= 'changeEReference' ) ) | ( (lv_op_4_0= 'addEReference' ) ) | ( (lv_op_5_0= 'deleteEReference' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= ruleReference ) ) otherlv_8= ':' otherlv_9= 'reference' ) otherlv_10= ')' otherlv_11= 'where' (otherlv_12= '{' ( (lv_setters_13_0= rulesetterDef ) )* otherlv_14= '}' ) ) )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1141:1: ( (otherlv_0= 'reference' ( (lv_var_1_0= ruleReference ) ) otherlv_2= '=' ) ( ( ( ( (lv_op_3_0= 'changeEReference' ) ) | ( (lv_op_4_0= 'addEReference' ) ) | ( (lv_op_5_0= 'deleteEReference' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= ruleReference ) ) otherlv_8= ':' otherlv_9= 'reference' ) otherlv_10= ')' otherlv_11= 'where' (otherlv_12= '{' ( (lv_setters_13_0= rulesetterDef ) )* otherlv_14= '}' ) ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1141:2: (otherlv_0= 'reference' ( (lv_var_1_0= ruleReference ) ) otherlv_2= '=' ) ( ( ( ( (lv_op_3_0= 'changeEReference' ) ) | ( (lv_op_4_0= 'addEReference' ) ) | ( (lv_op_5_0= 'deleteEReference' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= ruleReference ) ) otherlv_8= ':' otherlv_9= 'reference' ) otherlv_10= ')' otherlv_11= 'where' (otherlv_12= '{' ( (lv_setters_13_0= rulesetterDef ) )* otherlv_14= '}' ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1169:1: ( (otherlv_0= 'reference' ( (lv_var_1_0= ruleReference ) ) otherlv_2= '=' ) ( ( ( ( (lv_op_3_0= 'changeEReference' ) ) | ( (lv_op_4_0= 'addEReference' ) ) | ( (lv_op_5_0= 'deleteEReference' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= ruleReference ) ) otherlv_8= ':' otherlv_9= 'reference' ) otherlv_10= ')' otherlv_11= 'where' (otherlv_12= '{' ( (lv_setters_13_0= rulesetterDef ) )* otherlv_14= '}' ) ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1169:2: (otherlv_0= 'reference' ( (lv_var_1_0= ruleReference ) ) otherlv_2= '=' ) ( ( ( ( (lv_op_3_0= 'changeEReference' ) ) | ( (lv_op_4_0= 'addEReference' ) ) | ( (lv_op_5_0= 'deleteEReference' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= ruleReference ) ) otherlv_8= ':' otherlv_9= 'reference' ) otherlv_10= ')' otherlv_11= 'where' (otherlv_12= '{' ( (lv_setters_13_0= rulesetterDef ) )* otherlv_14= '}' ) )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1141:2: (otherlv_0= 'reference' ( (lv_var_1_0= ruleReference ) ) otherlv_2= '=' )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1141:4: otherlv_0= 'reference' ( (lv_var_1_0= ruleReference ) ) otherlv_2= '='
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1169:2: (otherlv_0= 'reference' ( (lv_var_1_0= ruleReference ) ) otherlv_2= '=' )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1169:4: otherlv_0= 'reference' ( (lv_var_1_0= ruleReference ) ) otherlv_2= '='
             {
-            otherlv_0=(Token)match(input,42,FOLLOW_42_in_ruleEReferenceOpDef2440); 
+            otherlv_0=(Token)match(input,43,FOLLOW_43_in_ruleEReferenceOpDef2488); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getEReferenceOpDefAccess().getReferenceKeyword_0_0());
                 
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1145:1: ( (lv_var_1_0= ruleReference ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1146:1: (lv_var_1_0= ruleReference )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1173:1: ( (lv_var_1_0= ruleReference ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1174:1: (lv_var_1_0= ruleReference )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1146:1: (lv_var_1_0= ruleReference )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1147:3: lv_var_1_0= ruleReference
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1174:1: (lv_var_1_0= ruleReference )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1175:3: lv_var_1_0= ruleReference
             {
              
             	        newCompositeNode(grammarAccess.getEReferenceOpDefAccess().getVarReferenceParserRuleCall_0_1_0()); 
             	    
-            pushFollow(FOLLOW_ruleReference_in_ruleEReferenceOpDef2461);
+            pushFollow(FOLLOW_ruleReference_in_ruleEReferenceOpDef2509);
             lv_var_1_0=ruleReference();
 
             state._fsp--;
@@ -2745,33 +2783,33 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_2=(Token)match(input,27,FOLLOW_27_in_ruleEReferenceOpDef2473); 
+            otherlv_2=(Token)match(input,28,FOLLOW_28_in_ruleEReferenceOpDef2521); 
 
                 	newLeafNode(otherlv_2, grammarAccess.getEReferenceOpDefAccess().getEqualsSignKeyword_0_2());
                 
 
             }
 
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1167:2: ( ( ( ( (lv_op_3_0= 'changeEReference' ) ) | ( (lv_op_4_0= 'addEReference' ) ) | ( (lv_op_5_0= 'deleteEReference' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= ruleReference ) ) otherlv_8= ':' otherlv_9= 'reference' ) otherlv_10= ')' otherlv_11= 'where' (otherlv_12= '{' ( (lv_setters_13_0= rulesetterDef ) )* otherlv_14= '}' ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1167:3: ( ( ( (lv_op_3_0= 'changeEReference' ) ) | ( (lv_op_4_0= 'addEReference' ) ) | ( (lv_op_5_0= 'deleteEReference' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= ruleReference ) ) otherlv_8= ':' otherlv_9= 'reference' ) otherlv_10= ')' otherlv_11= 'where' (otherlv_12= '{' ( (lv_setters_13_0= rulesetterDef ) )* otherlv_14= '}' )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1195:2: ( ( ( ( (lv_op_3_0= 'changeEReference' ) ) | ( (lv_op_4_0= 'addEReference' ) ) | ( (lv_op_5_0= 'deleteEReference' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= ruleReference ) ) otherlv_8= ':' otherlv_9= 'reference' ) otherlv_10= ')' otherlv_11= 'where' (otherlv_12= '{' ( (lv_setters_13_0= rulesetterDef ) )* otherlv_14= '}' ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1195:3: ( ( ( (lv_op_3_0= 'changeEReference' ) ) | ( (lv_op_4_0= 'addEReference' ) ) | ( (lv_op_5_0= 'deleteEReference' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= ruleReference ) ) otherlv_8= ':' otherlv_9= 'reference' ) otherlv_10= ')' otherlv_11= 'where' (otherlv_12= '{' ( (lv_setters_13_0= rulesetterDef ) )* otherlv_14= '}' )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1167:3: ( ( ( (lv_op_3_0= 'changeEReference' ) ) | ( (lv_op_4_0= 'addEReference' ) ) | ( (lv_op_5_0= 'deleteEReference' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= ruleReference ) ) otherlv_8= ':' otherlv_9= 'reference' )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1167:4: ( ( (lv_op_3_0= 'changeEReference' ) ) | ( (lv_op_4_0= 'addEReference' ) ) | ( (lv_op_5_0= 'deleteEReference' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= ruleReference ) ) otherlv_8= ':' otherlv_9= 'reference'
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1195:3: ( ( ( (lv_op_3_0= 'changeEReference' ) ) | ( (lv_op_4_0= 'addEReference' ) ) | ( (lv_op_5_0= 'deleteEReference' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= ruleReference ) ) otherlv_8= ':' otherlv_9= 'reference' )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1195:4: ( ( (lv_op_3_0= 'changeEReference' ) ) | ( (lv_op_4_0= 'addEReference' ) ) | ( (lv_op_5_0= 'deleteEReference' ) ) ) otherlv_6= '(' ( (lv_ref_7_0= ruleReference ) ) otherlv_8= ':' otherlv_9= 'reference'
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1167:4: ( ( (lv_op_3_0= 'changeEReference' ) ) | ( (lv_op_4_0= 'addEReference' ) ) | ( (lv_op_5_0= 'deleteEReference' ) ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1195:4: ( ( (lv_op_3_0= 'changeEReference' ) ) | ( (lv_op_4_0= 'addEReference' ) ) | ( (lv_op_5_0= 'deleteEReference' ) ) )
             int alt15=3;
             switch ( input.LA(1) ) {
-            case 43:
+            case 44:
                 {
                 alt15=1;
                 }
                 break;
-            case 44:
+            case 45:
                 {
                 alt15=2;
                 }
                 break;
-            case 45:
+            case 46:
                 {
                 alt15=3;
                 }
@@ -2785,15 +2823,15 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
             switch (alt15) {
                 case 1 :
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1167:5: ( (lv_op_3_0= 'changeEReference' ) )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1195:5: ( (lv_op_3_0= 'changeEReference' ) )
                     {
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1167:5: ( (lv_op_3_0= 'changeEReference' ) )
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1168:1: (lv_op_3_0= 'changeEReference' )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1195:5: ( (lv_op_3_0= 'changeEReference' ) )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1196:1: (lv_op_3_0= 'changeEReference' )
                     {
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1168:1: (lv_op_3_0= 'changeEReference' )
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1169:3: lv_op_3_0= 'changeEReference'
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1196:1: (lv_op_3_0= 'changeEReference' )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1197:3: lv_op_3_0= 'changeEReference'
                     {
-                    lv_op_3_0=(Token)match(input,43,FOLLOW_43_in_ruleEReferenceOpDef2495); 
+                    lv_op_3_0=(Token)match(input,44,FOLLOW_44_in_ruleEReferenceOpDef2543); 
 
                             newLeafNode(lv_op_3_0, grammarAccess.getEReferenceOpDefAccess().getOpChangeEReferenceKeyword_1_0_0_0_0());
                         
@@ -2813,15 +2851,15 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1183:6: ( (lv_op_4_0= 'addEReference' ) )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1211:6: ( (lv_op_4_0= 'addEReference' ) )
                     {
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1183:6: ( (lv_op_4_0= 'addEReference' ) )
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1184:1: (lv_op_4_0= 'addEReference' )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1211:6: ( (lv_op_4_0= 'addEReference' ) )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1212:1: (lv_op_4_0= 'addEReference' )
                     {
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1184:1: (lv_op_4_0= 'addEReference' )
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1185:3: lv_op_4_0= 'addEReference'
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1212:1: (lv_op_4_0= 'addEReference' )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1213:3: lv_op_4_0= 'addEReference'
                     {
-                    lv_op_4_0=(Token)match(input,44,FOLLOW_44_in_ruleEReferenceOpDef2532); 
+                    lv_op_4_0=(Token)match(input,45,FOLLOW_45_in_ruleEReferenceOpDef2580); 
 
                             newLeafNode(lv_op_4_0, grammarAccess.getEReferenceOpDefAccess().getOpAddEReferenceKeyword_1_0_0_1_0());
                         
@@ -2841,15 +2879,15 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 3 :
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1199:6: ( (lv_op_5_0= 'deleteEReference' ) )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1227:6: ( (lv_op_5_0= 'deleteEReference' ) )
                     {
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1199:6: ( (lv_op_5_0= 'deleteEReference' ) )
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1200:1: (lv_op_5_0= 'deleteEReference' )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1227:6: ( (lv_op_5_0= 'deleteEReference' ) )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1228:1: (lv_op_5_0= 'deleteEReference' )
                     {
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1200:1: (lv_op_5_0= 'deleteEReference' )
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1201:3: lv_op_5_0= 'deleteEReference'
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1228:1: (lv_op_5_0= 'deleteEReference' )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1229:3: lv_op_5_0= 'deleteEReference'
                     {
-                    lv_op_5_0=(Token)match(input,45,FOLLOW_45_in_ruleEReferenceOpDef2569); 
+                    lv_op_5_0=(Token)match(input,46,FOLLOW_46_in_ruleEReferenceOpDef2617); 
 
                             newLeafNode(lv_op_5_0, grammarAccess.getEReferenceOpDefAccess().getOpDeleteEReferenceKeyword_1_0_0_2_0());
                         
@@ -2871,20 +2909,20 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_6=(Token)match(input,31,FOLLOW_31_in_ruleEReferenceOpDef2595); 
+            otherlv_6=(Token)match(input,32,FOLLOW_32_in_ruleEReferenceOpDef2643); 
 
                 	newLeafNode(otherlv_6, grammarAccess.getEReferenceOpDefAccess().getLeftParenthesisKeyword_1_0_1());
                 
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1218:1: ( (lv_ref_7_0= ruleReference ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1219:1: (lv_ref_7_0= ruleReference )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1246:1: ( (lv_ref_7_0= ruleReference ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1247:1: (lv_ref_7_0= ruleReference )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1219:1: (lv_ref_7_0= ruleReference )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1220:3: lv_ref_7_0= ruleReference
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1247:1: (lv_ref_7_0= ruleReference )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1248:3: lv_ref_7_0= ruleReference
             {
              
             	        newCompositeNode(grammarAccess.getEReferenceOpDefAccess().getRefReferenceParserRuleCall_1_0_2_0()); 
             	    
-            pushFollow(FOLLOW_ruleReference_in_ruleEReferenceOpDef2616);
+            pushFollow(FOLLOW_ruleReference_in_ruleEReferenceOpDef2664);
             lv_ref_7_0=ruleReference();
 
             state._fsp--;
@@ -2906,54 +2944,54 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_8=(Token)match(input,17,FOLLOW_17_in_ruleEReferenceOpDef2628); 
+            otherlv_8=(Token)match(input,18,FOLLOW_18_in_ruleEReferenceOpDef2676); 
 
                 	newLeafNode(otherlv_8, grammarAccess.getEReferenceOpDefAccess().getColonKeyword_1_0_3());
                 
-            otherlv_9=(Token)match(input,42,FOLLOW_42_in_ruleEReferenceOpDef2640); 
+            otherlv_9=(Token)match(input,43,FOLLOW_43_in_ruleEReferenceOpDef2688); 
 
                 	newLeafNode(otherlv_9, grammarAccess.getEReferenceOpDefAccess().getReferenceKeyword_1_0_4());
                 
 
             }
 
-            otherlv_10=(Token)match(input,32,FOLLOW_32_in_ruleEReferenceOpDef2653); 
+            otherlv_10=(Token)match(input,33,FOLLOW_33_in_ruleEReferenceOpDef2701); 
 
                 	newLeafNode(otherlv_10, grammarAccess.getEReferenceOpDefAccess().getRightParenthesisKeyword_1_1());
                 
-            otherlv_11=(Token)match(input,33,FOLLOW_33_in_ruleEReferenceOpDef2665); 
+            otherlv_11=(Token)match(input,34,FOLLOW_34_in_ruleEReferenceOpDef2713); 
 
                 	newLeafNode(otherlv_11, grammarAccess.getEReferenceOpDefAccess().getWhereKeyword_1_2());
                 
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1252:1: (otherlv_12= '{' ( (lv_setters_13_0= rulesetterDef ) )* otherlv_14= '}' )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1252:3: otherlv_12= '{' ( (lv_setters_13_0= rulesetterDef ) )* otherlv_14= '}'
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1280:1: (otherlv_12= '{' ( (lv_setters_13_0= rulesetterDef ) )* otherlv_14= '}' )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1280:3: otherlv_12= '{' ( (lv_setters_13_0= rulesetterDef ) )* otherlv_14= '}'
             {
-            otherlv_12=(Token)match(input,12,FOLLOW_12_in_ruleEReferenceOpDef2678); 
+            otherlv_12=(Token)match(input,12,FOLLOW_12_in_ruleEReferenceOpDef2726); 
 
                 	newLeafNode(otherlv_12, grammarAccess.getEReferenceOpDefAccess().getLeftCurlyBracketKeyword_1_3_0());
                 
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1256:1: ( (lv_setters_13_0= rulesetterDef ) )*
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1284:1: ( (lv_setters_13_0= rulesetterDef ) )*
             loop16:
             do {
                 int alt16=2;
                 int LA16_0 = input.LA(1);
 
-                if ( (LA16_0==46) ) {
+                if ( (LA16_0==47) ) {
                     alt16=1;
                 }
 
 
                 switch (alt16) {
             	case 1 :
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1257:1: (lv_setters_13_0= rulesetterDef )
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1285:1: (lv_setters_13_0= rulesetterDef )
             	    {
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1257:1: (lv_setters_13_0= rulesetterDef )
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1258:3: lv_setters_13_0= rulesetterDef
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1285:1: (lv_setters_13_0= rulesetterDef )
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1286:3: lv_setters_13_0= rulesetterDef
             	    {
             	     
             	    	        newCompositeNode(grammarAccess.getEReferenceOpDefAccess().getSettersSetterDefParserRuleCall_1_3_1_0()); 
             	    	    
-            	    pushFollow(FOLLOW_rulesetterDef_in_ruleEReferenceOpDef2699);
+            	    pushFollow(FOLLOW_rulesetterDef_in_ruleEReferenceOpDef2747);
             	    lv_setters_13_0=rulesetterDef();
 
             	    state._fsp--;
@@ -2981,7 +3019,7 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
                 }
             } while (true);
 
-            otherlv_14=(Token)match(input,13,FOLLOW_13_in_ruleEReferenceOpDef2712); 
+            otherlv_14=(Token)match(input,13,FOLLOW_13_in_ruleEReferenceOpDef2760); 
 
                 	newLeafNode(otherlv_14, grammarAccess.getEReferenceOpDefAccess().getRightCurlyBracketKeyword_1_3_2());
                 
@@ -3012,7 +3050,7 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRulesetterDef"
-    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1286:1: entryRulesetterDef returns [EObject current=null] : iv_rulesetterDef= rulesetterDef EOF ;
+    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1314:1: entryRulesetterDef returns [EObject current=null] : iv_rulesetterDef= rulesetterDef EOF ;
     public final EObject entryRulesetterDef() throws RecognitionException {
         EObject current = null;
 
@@ -3020,17 +3058,17 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1287:2: (iv_rulesetterDef= rulesetterDef EOF )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1288:2: iv_rulesetterDef= rulesetterDef EOF
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1315:2: (iv_rulesetterDef= rulesetterDef EOF )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1316:2: iv_rulesetterDef= rulesetterDef EOF
             {
              newCompositeNode(grammarAccess.getSetterDefRule()); 
-            pushFollow(FOLLOW_rulesetterDef_in_entryRulesetterDef2750);
+            pushFollow(FOLLOW_rulesetterDef_in_entryRulesetterDef2798);
             iv_rulesetterDef=rulesetterDef();
 
             state._fsp--;
 
              current =iv_rulesetterDef; 
-            match(input,EOF,FOLLOW_EOF_in_entryRulesetterDef2760); 
+            match(input,EOF,FOLLOW_EOF_in_entryRulesetterDef2808); 
 
             }
 
@@ -3048,7 +3086,7 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "rulesetterDef"
-    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1295:1: rulesetterDef returns [EObject current=null] : (otherlv_0= 'set' ( (otherlv_1= RULE_ID ) ) ( (lv_operator_2_0= '=' ) ) ( (lv_par_3_0= ruleParameter ) ) (otherlv_4= ',' ( (lv_par_5_0= ruleParameter ) ) )* otherlv_6= ';' ) ;
+    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1323:1: rulesetterDef returns [EObject current=null] : (otherlv_0= 'set' ( (otherlv_1= RULE_ID ) ) ( (lv_operator_2_0= '=' ) ) ( (lv_par_3_0= ruleParameter ) ) (otherlv_4= ',' ( (lv_par_5_0= ruleParameter ) ) )* otherlv_6= ';' ) ;
     public final EObject rulesetterDef() throws RecognitionException {
         EObject current = null;
 
@@ -3065,28 +3103,28 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1298:28: ( (otherlv_0= 'set' ( (otherlv_1= RULE_ID ) ) ( (lv_operator_2_0= '=' ) ) ( (lv_par_3_0= ruleParameter ) ) (otherlv_4= ',' ( (lv_par_5_0= ruleParameter ) ) )* otherlv_6= ';' ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1299:1: (otherlv_0= 'set' ( (otherlv_1= RULE_ID ) ) ( (lv_operator_2_0= '=' ) ) ( (lv_par_3_0= ruleParameter ) ) (otherlv_4= ',' ( (lv_par_5_0= ruleParameter ) ) )* otherlv_6= ';' )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1326:28: ( (otherlv_0= 'set' ( (otherlv_1= RULE_ID ) ) ( (lv_operator_2_0= '=' ) ) ( (lv_par_3_0= ruleParameter ) ) (otherlv_4= ',' ( (lv_par_5_0= ruleParameter ) ) )* otherlv_6= ';' ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1327:1: (otherlv_0= 'set' ( (otherlv_1= RULE_ID ) ) ( (lv_operator_2_0= '=' ) ) ( (lv_par_3_0= ruleParameter ) ) (otherlv_4= ',' ( (lv_par_5_0= ruleParameter ) ) )* otherlv_6= ';' )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1299:1: (otherlv_0= 'set' ( (otherlv_1= RULE_ID ) ) ( (lv_operator_2_0= '=' ) ) ( (lv_par_3_0= ruleParameter ) ) (otherlv_4= ',' ( (lv_par_5_0= ruleParameter ) ) )* otherlv_6= ';' )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1299:3: otherlv_0= 'set' ( (otherlv_1= RULE_ID ) ) ( (lv_operator_2_0= '=' ) ) ( (lv_par_3_0= ruleParameter ) ) (otherlv_4= ',' ( (lv_par_5_0= ruleParameter ) ) )* otherlv_6= ';'
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1327:1: (otherlv_0= 'set' ( (otherlv_1= RULE_ID ) ) ( (lv_operator_2_0= '=' ) ) ( (lv_par_3_0= ruleParameter ) ) (otherlv_4= ',' ( (lv_par_5_0= ruleParameter ) ) )* otherlv_6= ';' )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1327:3: otherlv_0= 'set' ( (otherlv_1= RULE_ID ) ) ( (lv_operator_2_0= '=' ) ) ( (lv_par_3_0= ruleParameter ) ) (otherlv_4= ',' ( (lv_par_5_0= ruleParameter ) ) )* otherlv_6= ';'
             {
-            otherlv_0=(Token)match(input,46,FOLLOW_46_in_rulesetterDef2797); 
+            otherlv_0=(Token)match(input,47,FOLLOW_47_in_rulesetterDef2845); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getSetterDefAccess().getSetKeyword_0());
                 
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1303:1: ( (otherlv_1= RULE_ID ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1304:1: (otherlv_1= RULE_ID )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1331:1: ( (otherlv_1= RULE_ID ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1332:1: (otherlv_1= RULE_ID )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1304:1: (otherlv_1= RULE_ID )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1305:3: otherlv_1= RULE_ID
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1332:1: (otherlv_1= RULE_ID )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1333:3: otherlv_1= RULE_ID
             {
 
             			if (current==null) {
             	            current = createModelElement(grammarAccess.getSetterDefRule());
             	        }
                     
-            otherlv_1=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_rulesetterDef2817); 
+            otherlv_1=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_rulesetterDef2865); 
 
             		newLeafNode(otherlv_1, grammarAccess.getSetterDefAccess().getMetafeatureEStructuralFeatureCrossReference_1_0()); 
             	
@@ -3096,13 +3134,13 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1316:2: ( (lv_operator_2_0= '=' ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1317:1: (lv_operator_2_0= '=' )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1344:2: ( (lv_operator_2_0= '=' ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1345:1: (lv_operator_2_0= '=' )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1317:1: (lv_operator_2_0= '=' )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1318:3: lv_operator_2_0= '='
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1345:1: (lv_operator_2_0= '=' )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1346:3: lv_operator_2_0= '='
             {
-            lv_operator_2_0=(Token)match(input,27,FOLLOW_27_in_rulesetterDef2835); 
+            lv_operator_2_0=(Token)match(input,28,FOLLOW_28_in_rulesetterDef2883); 
 
                     newLeafNode(lv_operator_2_0, grammarAccess.getSetterDefAccess().getOperatorEqualsSignKeyword_2_0());
                 
@@ -3118,16 +3156,16 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1331:2: ( (lv_par_3_0= ruleParameter ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1332:1: (lv_par_3_0= ruleParameter )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1359:2: ( (lv_par_3_0= ruleParameter ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1360:1: (lv_par_3_0= ruleParameter )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1332:1: (lv_par_3_0= ruleParameter )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1333:3: lv_par_3_0= ruleParameter
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1360:1: (lv_par_3_0= ruleParameter )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1361:3: lv_par_3_0= ruleParameter
             {
              
             	        newCompositeNode(grammarAccess.getSetterDefAccess().getParParameterParserRuleCall_3_0()); 
             	    
-            pushFollow(FOLLOW_ruleParameter_in_rulesetterDef2869);
+            pushFollow(FOLLOW_ruleParameter_in_rulesetterDef2917);
             lv_par_3_0=ruleParameter();
 
             state._fsp--;
@@ -3149,35 +3187,35 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1349:2: (otherlv_4= ',' ( (lv_par_5_0= ruleParameter ) ) )*
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1377:2: (otherlv_4= ',' ( (lv_par_5_0= ruleParameter ) ) )*
             loop17:
             do {
                 int alt17=2;
                 int LA17_0 = input.LA(1);
 
-                if ( (LA17_0==18) ) {
+                if ( (LA17_0==19) ) {
                     alt17=1;
                 }
 
 
                 switch (alt17) {
             	case 1 :
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1349:4: otherlv_4= ',' ( (lv_par_5_0= ruleParameter ) )
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1377:4: otherlv_4= ',' ( (lv_par_5_0= ruleParameter ) )
             	    {
-            	    otherlv_4=(Token)match(input,18,FOLLOW_18_in_rulesetterDef2882); 
+            	    otherlv_4=(Token)match(input,19,FOLLOW_19_in_rulesetterDef2930); 
 
             	        	newLeafNode(otherlv_4, grammarAccess.getSetterDefAccess().getCommaKeyword_4_0());
             	        
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1353:1: ( (lv_par_5_0= ruleParameter ) )
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1354:1: (lv_par_5_0= ruleParameter )
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1381:1: ( (lv_par_5_0= ruleParameter ) )
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1382:1: (lv_par_5_0= ruleParameter )
             	    {
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1354:1: (lv_par_5_0= ruleParameter )
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1355:3: lv_par_5_0= ruleParameter
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1382:1: (lv_par_5_0= ruleParameter )
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1383:3: lv_par_5_0= ruleParameter
             	    {
             	     
             	    	        newCompositeNode(grammarAccess.getSetterDefAccess().getParParameterParserRuleCall_4_1_0()); 
             	    	    
-            	    pushFollow(FOLLOW_ruleParameter_in_rulesetterDef2903);
+            	    pushFollow(FOLLOW_ruleParameter_in_rulesetterDef2951);
             	    lv_par_5_0=ruleParameter();
 
             	    state._fsp--;
@@ -3208,7 +3246,7 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
                 }
             } while (true);
 
-            otherlv_6=(Token)match(input,15,FOLLOW_15_in_rulesetterDef2917); 
+            otherlv_6=(Token)match(input,15,FOLLOW_15_in_rulesetterDef2965); 
 
                 	newLeafNode(otherlv_6, grammarAccess.getSetterDefAccess().getSemicolonKeyword_5());
                 
@@ -3233,7 +3271,7 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleRewritingRule"
-    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1383:1: entryRuleRewritingRule returns [EObject current=null] : iv_ruleRewritingRule= ruleRewritingRule EOF ;
+    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1411:1: entryRuleRewritingRule returns [EObject current=null] : iv_ruleRewritingRule= ruleRewritingRule EOF ;
     public final EObject entryRuleRewritingRule() throws RecognitionException {
         EObject current = null;
 
@@ -3241,17 +3279,17 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1384:2: (iv_ruleRewritingRule= ruleRewritingRule EOF )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1385:2: iv_ruleRewritingRule= ruleRewritingRule EOF
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1412:2: (iv_ruleRewritingRule= ruleRewritingRule EOF )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1413:2: iv_ruleRewritingRule= ruleRewritingRule EOF
             {
              newCompositeNode(grammarAccess.getRewritingRuleRule()); 
-            pushFollow(FOLLOW_ruleRewritingRule_in_entryRuleRewritingRule2953);
+            pushFollow(FOLLOW_ruleRewritingRule_in_entryRuleRewritingRule3001);
             iv_ruleRewritingRule=ruleRewritingRule();
 
             state._fsp--;
 
              current =iv_ruleRewritingRule; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleRewritingRule2963); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleRewritingRule3011); 
 
             }
 
@@ -3269,14 +3307,14 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleRewritingRule"
-    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1392:1: ruleRewritingRule returns [EObject current=null] : ( ( ( (lv_migratorsSX_0_0= ruleMigratorSX ) ) otherlv_1= '->' ( (lv_migratorDX_2_0= ruleMigratorDX ) ) ) (otherlv_3= '&' ( (lv_migratorSX_4_0= ruleMigratorSX ) ) otherlv_5= '->' ( (lv_migratorDX_6_0= ruleMigratorDX ) ) )* ) ;
+    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1420:1: ruleRewritingRule returns [EObject current=null] : ( ( ( (lv_migratorSX_0_0= ruleMigratorSX ) ) otherlv_1= '->' ( (lv_migratorDX_2_0= ruleMigratorDX ) ) ) (otherlv_3= '&' ( (lv_migratorSX_4_0= ruleMigratorSX ) ) otherlv_5= '->' ( (lv_migratorDX_6_0= ruleMigratorDX ) ) )* ) ;
     public final EObject ruleRewritingRule() throws RecognitionException {
         EObject current = null;
 
         Token otherlv_1=null;
         Token otherlv_3=null;
         Token otherlv_5=null;
-        EObject lv_migratorsSX_0_0 = null;
+        EObject lv_migratorSX_0_0 = null;
 
         EObject lv_migratorDX_2_0 = null;
 
@@ -3288,26 +3326,26 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1395:28: ( ( ( ( (lv_migratorsSX_0_0= ruleMigratorSX ) ) otherlv_1= '->' ( (lv_migratorDX_2_0= ruleMigratorDX ) ) ) (otherlv_3= '&' ( (lv_migratorSX_4_0= ruleMigratorSX ) ) otherlv_5= '->' ( (lv_migratorDX_6_0= ruleMigratorDX ) ) )* ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1396:1: ( ( ( (lv_migratorsSX_0_0= ruleMigratorSX ) ) otherlv_1= '->' ( (lv_migratorDX_2_0= ruleMigratorDX ) ) ) (otherlv_3= '&' ( (lv_migratorSX_4_0= ruleMigratorSX ) ) otherlv_5= '->' ( (lv_migratorDX_6_0= ruleMigratorDX ) ) )* )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1423:28: ( ( ( ( (lv_migratorSX_0_0= ruleMigratorSX ) ) otherlv_1= '->' ( (lv_migratorDX_2_0= ruleMigratorDX ) ) ) (otherlv_3= '&' ( (lv_migratorSX_4_0= ruleMigratorSX ) ) otherlv_5= '->' ( (lv_migratorDX_6_0= ruleMigratorDX ) ) )* ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1424:1: ( ( ( (lv_migratorSX_0_0= ruleMigratorSX ) ) otherlv_1= '->' ( (lv_migratorDX_2_0= ruleMigratorDX ) ) ) (otherlv_3= '&' ( (lv_migratorSX_4_0= ruleMigratorSX ) ) otherlv_5= '->' ( (lv_migratorDX_6_0= ruleMigratorDX ) ) )* )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1396:1: ( ( ( (lv_migratorsSX_0_0= ruleMigratorSX ) ) otherlv_1= '->' ( (lv_migratorDX_2_0= ruleMigratorDX ) ) ) (otherlv_3= '&' ( (lv_migratorSX_4_0= ruleMigratorSX ) ) otherlv_5= '->' ( (lv_migratorDX_6_0= ruleMigratorDX ) ) )* )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1396:2: ( ( (lv_migratorsSX_0_0= ruleMigratorSX ) ) otherlv_1= '->' ( (lv_migratorDX_2_0= ruleMigratorDX ) ) ) (otherlv_3= '&' ( (lv_migratorSX_4_0= ruleMigratorSX ) ) otherlv_5= '->' ( (lv_migratorDX_6_0= ruleMigratorDX ) ) )*
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1424:1: ( ( ( (lv_migratorSX_0_0= ruleMigratorSX ) ) otherlv_1= '->' ( (lv_migratorDX_2_0= ruleMigratorDX ) ) ) (otherlv_3= '&' ( (lv_migratorSX_4_0= ruleMigratorSX ) ) otherlv_5= '->' ( (lv_migratorDX_6_0= ruleMigratorDX ) ) )* )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1424:2: ( ( (lv_migratorSX_0_0= ruleMigratorSX ) ) otherlv_1= '->' ( (lv_migratorDX_2_0= ruleMigratorDX ) ) ) (otherlv_3= '&' ( (lv_migratorSX_4_0= ruleMigratorSX ) ) otherlv_5= '->' ( (lv_migratorDX_6_0= ruleMigratorDX ) ) )*
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1396:2: ( ( (lv_migratorsSX_0_0= ruleMigratorSX ) ) otherlv_1= '->' ( (lv_migratorDX_2_0= ruleMigratorDX ) ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1396:3: ( (lv_migratorsSX_0_0= ruleMigratorSX ) ) otherlv_1= '->' ( (lv_migratorDX_2_0= ruleMigratorDX ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1424:2: ( ( (lv_migratorSX_0_0= ruleMigratorSX ) ) otherlv_1= '->' ( (lv_migratorDX_2_0= ruleMigratorDX ) ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1424:3: ( (lv_migratorSX_0_0= ruleMigratorSX ) ) otherlv_1= '->' ( (lv_migratorDX_2_0= ruleMigratorDX ) )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1396:3: ( (lv_migratorsSX_0_0= ruleMigratorSX ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1397:1: (lv_migratorsSX_0_0= ruleMigratorSX )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1424:3: ( (lv_migratorSX_0_0= ruleMigratorSX ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1425:1: (lv_migratorSX_0_0= ruleMigratorSX )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1397:1: (lv_migratorsSX_0_0= ruleMigratorSX )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1398:3: lv_migratorsSX_0_0= ruleMigratorSX
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1425:1: (lv_migratorSX_0_0= ruleMigratorSX )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1426:3: lv_migratorSX_0_0= ruleMigratorSX
             {
              
-            	        newCompositeNode(grammarAccess.getRewritingRuleAccess().getMigratorsSXMigratorSXParserRuleCall_0_0_0()); 
+            	        newCompositeNode(grammarAccess.getRewritingRuleAccess().getMigratorSXMigratorSXParserRuleCall_0_0_0()); 
             	    
-            pushFollow(FOLLOW_ruleMigratorSX_in_ruleRewritingRule3010);
-            lv_migratorsSX_0_0=ruleMigratorSX();
+            pushFollow(FOLLOW_ruleMigratorSX_in_ruleRewritingRule3058);
+            lv_migratorSX_0_0=ruleMigratorSX();
 
             state._fsp--;
 
@@ -3317,8 +3355,8 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
             	        }
                    		add(
                    			current, 
-                   			"migratorsSX",
-                    		lv_migratorsSX_0_0, 
+                   			"migratorSX",
+                    		lv_migratorSX_0_0, 
                     		"MigratorSX");
             	        afterParserOrEnumRuleCall();
             	    
@@ -3328,20 +3366,20 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_1=(Token)match(input,47,FOLLOW_47_in_ruleRewritingRule3022); 
+            otherlv_1=(Token)match(input,48,FOLLOW_48_in_ruleRewritingRule3070); 
 
                 	newLeafNode(otherlv_1, grammarAccess.getRewritingRuleAccess().getHyphenMinusGreaterThanSignKeyword_0_1());
                 
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1418:1: ( (lv_migratorDX_2_0= ruleMigratorDX ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1419:1: (lv_migratorDX_2_0= ruleMigratorDX )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1446:1: ( (lv_migratorDX_2_0= ruleMigratorDX ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1447:1: (lv_migratorDX_2_0= ruleMigratorDX )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1419:1: (lv_migratorDX_2_0= ruleMigratorDX )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1420:3: lv_migratorDX_2_0= ruleMigratorDX
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1447:1: (lv_migratorDX_2_0= ruleMigratorDX )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1448:3: lv_migratorDX_2_0= ruleMigratorDX
             {
              
             	        newCompositeNode(grammarAccess.getRewritingRuleAccess().getMigratorDXMigratorDXParserRuleCall_0_2_0()); 
             	    
-            pushFollow(FOLLOW_ruleMigratorDX_in_ruleRewritingRule3043);
+            pushFollow(FOLLOW_ruleMigratorDX_in_ruleRewritingRule3091);
             lv_migratorDX_2_0=ruleMigratorDX();
 
             state._fsp--;
@@ -3366,35 +3404,35 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1436:3: (otherlv_3= '&' ( (lv_migratorSX_4_0= ruleMigratorSX ) ) otherlv_5= '->' ( (lv_migratorDX_6_0= ruleMigratorDX ) ) )*
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1464:3: (otherlv_3= '&' ( (lv_migratorSX_4_0= ruleMigratorSX ) ) otherlv_5= '->' ( (lv_migratorDX_6_0= ruleMigratorDX ) ) )*
             loop18:
             do {
                 int alt18=2;
                 int LA18_0 = input.LA(1);
 
-                if ( (LA18_0==48) ) {
+                if ( (LA18_0==49) ) {
                     alt18=1;
                 }
 
 
                 switch (alt18) {
             	case 1 :
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1436:5: otherlv_3= '&' ( (lv_migratorSX_4_0= ruleMigratorSX ) ) otherlv_5= '->' ( (lv_migratorDX_6_0= ruleMigratorDX ) )
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1464:5: otherlv_3= '&' ( (lv_migratorSX_4_0= ruleMigratorSX ) ) otherlv_5= '->' ( (lv_migratorDX_6_0= ruleMigratorDX ) )
             	    {
-            	    otherlv_3=(Token)match(input,48,FOLLOW_48_in_ruleRewritingRule3057); 
+            	    otherlv_3=(Token)match(input,49,FOLLOW_49_in_ruleRewritingRule3105); 
 
             	        	newLeafNode(otherlv_3, grammarAccess.getRewritingRuleAccess().getAmpersandKeyword_1_0());
             	        
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1440:1: ( (lv_migratorSX_4_0= ruleMigratorSX ) )
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1441:1: (lv_migratorSX_4_0= ruleMigratorSX )
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1468:1: ( (lv_migratorSX_4_0= ruleMigratorSX ) )
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1469:1: (lv_migratorSX_4_0= ruleMigratorSX )
             	    {
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1441:1: (lv_migratorSX_4_0= ruleMigratorSX )
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1442:3: lv_migratorSX_4_0= ruleMigratorSX
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1469:1: (lv_migratorSX_4_0= ruleMigratorSX )
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1470:3: lv_migratorSX_4_0= ruleMigratorSX
             	    {
             	     
             	    	        newCompositeNode(grammarAccess.getRewritingRuleAccess().getMigratorSXMigratorSXParserRuleCall_1_1_0()); 
             	    	    
-            	    pushFollow(FOLLOW_ruleMigratorSX_in_ruleRewritingRule3078);
+            	    pushFollow(FOLLOW_ruleMigratorSX_in_ruleRewritingRule3126);
             	    lv_migratorSX_4_0=ruleMigratorSX();
 
             	    state._fsp--;
@@ -3416,20 +3454,20 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
             	    }
 
-            	    otherlv_5=(Token)match(input,47,FOLLOW_47_in_ruleRewritingRule3090); 
+            	    otherlv_5=(Token)match(input,48,FOLLOW_48_in_ruleRewritingRule3138); 
 
             	        	newLeafNode(otherlv_5, grammarAccess.getRewritingRuleAccess().getHyphenMinusGreaterThanSignKeyword_1_2());
             	        
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1462:1: ( (lv_migratorDX_6_0= ruleMigratorDX ) )
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1463:1: (lv_migratorDX_6_0= ruleMigratorDX )
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1490:1: ( (lv_migratorDX_6_0= ruleMigratorDX ) )
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1491:1: (lv_migratorDX_6_0= ruleMigratorDX )
             	    {
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1463:1: (lv_migratorDX_6_0= ruleMigratorDX )
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1464:3: lv_migratorDX_6_0= ruleMigratorDX
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1491:1: (lv_migratorDX_6_0= ruleMigratorDX )
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1492:3: lv_migratorDX_6_0= ruleMigratorDX
             	    {
             	     
             	    	        newCompositeNode(grammarAccess.getRewritingRuleAccess().getMigratorDXMigratorDXParserRuleCall_1_3_0()); 
             	    	    
-            	    pushFollow(FOLLOW_ruleMigratorDX_in_ruleRewritingRule3111);
+            	    pushFollow(FOLLOW_ruleMigratorDX_in_ruleRewritingRule3159);
             	    lv_migratorDX_6_0=ruleMigratorDX();
 
             	    state._fsp--;
@@ -3480,8 +3518,166 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
     // $ANTLR end "ruleRewritingRule"
 
 
+    // $ANTLR start "entryRuleMigrator"
+    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1516:1: entryRuleMigrator returns [EObject current=null] : iv_ruleMigrator= ruleMigrator EOF ;
+    public final EObject entryRuleMigrator() throws RecognitionException {
+        EObject current = null;
+
+        EObject iv_ruleMigrator = null;
+
+
+        try {
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1517:2: (iv_ruleMigrator= ruleMigrator EOF )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1518:2: iv_ruleMigrator= ruleMigrator EOF
+            {
+             newCompositeNode(grammarAccess.getMigratorRule()); 
+            pushFollow(FOLLOW_ruleMigrator_in_entryRuleMigrator3197);
+            iv_ruleMigrator=ruleMigrator();
+
+            state._fsp--;
+
+             current =iv_ruleMigrator; 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleMigrator3207); 
+
+            }
+
+        }
+         
+            catch (RecognitionException re) { 
+                recover(input,re); 
+                appendSkippedTokens();
+            } 
+        finally {
+        }
+        return current;
+    }
+    // $ANTLR end "entryRuleMigrator"
+
+
+    // $ANTLR start "ruleMigrator"
+    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1525:1: ruleMigrator returns [EObject current=null] : (this_MigratorSX_0= ruleMigratorSX | this_MigratorDX_1= ruleMigratorDX ) ;
+    public final EObject ruleMigrator() throws RecognitionException {
+        EObject current = null;
+
+        EObject this_MigratorSX_0 = null;
+
+        EObject this_MigratorDX_1 = null;
+
+
+         enterRule(); 
+            
+        try {
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1528:28: ( (this_MigratorSX_0= ruleMigratorSX | this_MigratorDX_1= ruleMigratorDX ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1529:1: (this_MigratorSX_0= ruleMigratorSX | this_MigratorDX_1= ruleMigratorDX )
+            {
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1529:1: (this_MigratorSX_0= ruleMigratorSX | this_MigratorDX_1= ruleMigratorDX )
+            int alt19=2;
+            int LA19_0 = input.LA(1);
+
+            if ( (LA19_0==RULE_ID) ) {
+                int LA19_1 = input.LA(2);
+
+                if ( (LA19_1==18) ) {
+                    int LA19_3 = input.LA(3);
+
+                    if ( (LA19_3==RULE_ID) ) {
+                        int LA19_4 = input.LA(4);
+
+                        if ( (LA19_4==34) ) {
+                            alt19=1;
+                        }
+                        else if ( (LA19_4==25) ) {
+                            alt19=2;
+                        }
+                        else {
+                            NoViableAltException nvae =
+                                new NoViableAltException("", 19, 4, input);
+
+                            throw nvae;
+                        }
+                    }
+                    else {
+                        NoViableAltException nvae =
+                            new NoViableAltException("", 19, 3, input);
+
+                        throw nvae;
+                    }
+                }
+                else {
+                    NoViableAltException nvae =
+                        new NoViableAltException("", 19, 1, input);
+
+                    throw nvae;
+                }
+            }
+            else if ( (LA19_0==50) ) {
+                alt19=2;
+            }
+            else {
+                NoViableAltException nvae =
+                    new NoViableAltException("", 19, 0, input);
+
+                throw nvae;
+            }
+            switch (alt19) {
+                case 1 :
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1530:5: this_MigratorSX_0= ruleMigratorSX
+                    {
+                     
+                            newCompositeNode(grammarAccess.getMigratorAccess().getMigratorSXParserRuleCall_0()); 
+                        
+                    pushFollow(FOLLOW_ruleMigratorSX_in_ruleMigrator3254);
+                    this_MigratorSX_0=ruleMigratorSX();
+
+                    state._fsp--;
+
+                     
+                            current = this_MigratorSX_0; 
+                            afterParserOrEnumRuleCall();
+                        
+
+                    }
+                    break;
+                case 2 :
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1540:5: this_MigratorDX_1= ruleMigratorDX
+                    {
+                     
+                            newCompositeNode(grammarAccess.getMigratorAccess().getMigratorDXParserRuleCall_1()); 
+                        
+                    pushFollow(FOLLOW_ruleMigratorDX_in_ruleMigrator3281);
+                    this_MigratorDX_1=ruleMigratorDX();
+
+                    state._fsp--;
+
+                     
+                            current = this_MigratorDX_1; 
+                            afterParserOrEnumRuleCall();
+                        
+
+                    }
+                    break;
+
+            }
+
+
+            }
+
+             leaveRule(); 
+        }
+         
+            catch (RecognitionException re) { 
+                recover(input,re); 
+                appendSkippedTokens();
+            } 
+        finally {
+        }
+        return current;
+    }
+    // $ANTLR end "ruleMigrator"
+
+
     // $ANTLR start "entryRuleMigratorSX"
-    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1490:1: entryRuleMigratorSX returns [EObject current=null] : iv_ruleMigratorSX= ruleMigratorSX EOF ;
+    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1556:1: entryRuleMigratorSX returns [EObject current=null] : iv_ruleMigratorSX= ruleMigratorSX EOF ;
     public final EObject entryRuleMigratorSX() throws RecognitionException {
         EObject current = null;
 
@@ -3489,17 +3685,17 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1491:2: (iv_ruleMigratorSX= ruleMigratorSX EOF )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1492:2: iv_ruleMigratorSX= ruleMigratorSX EOF
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1557:2: (iv_ruleMigratorSX= ruleMigratorSX EOF )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1558:2: iv_ruleMigratorSX= ruleMigratorSX EOF
             {
              newCompositeNode(grammarAccess.getMigratorSXRule()); 
-            pushFollow(FOLLOW_ruleMigratorSX_in_entryRuleMigratorSX3151);
+            pushFollow(FOLLOW_ruleMigratorSX_in_entryRuleMigratorSX3316);
             iv_ruleMigratorSX=ruleMigratorSX();
 
             state._fsp--;
 
              current =iv_ruleMigratorSX; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleMigratorSX3161); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleMigratorSX3326); 
 
             }
 
@@ -3517,7 +3713,7 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleMigratorSX"
-    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1499:1: ruleMigratorSX returns [EObject current=null] : ( () ( (lv_name_1_0= RULE_ID ) ) otherlv_2= ':' ( (otherlv_3= RULE_ID ) ) otherlv_4= 'where' otherlv_5= '[' ( (lv_filterSX_6_0= ruleFilterMigrator ) ) (otherlv_7= '&' ( (lv_filterSX_8_0= ruleFilterMigrator ) ) )* otherlv_9= ']' ) ;
+    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1565:1: ruleMigratorSX returns [EObject current=null] : ( () ( (lv_name_1_0= RULE_ID ) ) otherlv_2= ':' ( (otherlv_3= RULE_ID ) ) otherlv_4= 'where' otherlv_5= '[' ( (lv_filterSX_6_0= ruleFilterMigrator ) ) (otherlv_7= '&' ( (lv_filterSX_8_0= ruleFilterMigrator ) ) )* otherlv_9= ']' ) ;
     public final EObject ruleMigratorSX() throws RecognitionException {
         EObject current = null;
 
@@ -3536,14 +3732,14 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1502:28: ( ( () ( (lv_name_1_0= RULE_ID ) ) otherlv_2= ':' ( (otherlv_3= RULE_ID ) ) otherlv_4= 'where' otherlv_5= '[' ( (lv_filterSX_6_0= ruleFilterMigrator ) ) (otherlv_7= '&' ( (lv_filterSX_8_0= ruleFilterMigrator ) ) )* otherlv_9= ']' ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1503:1: ( () ( (lv_name_1_0= RULE_ID ) ) otherlv_2= ':' ( (otherlv_3= RULE_ID ) ) otherlv_4= 'where' otherlv_5= '[' ( (lv_filterSX_6_0= ruleFilterMigrator ) ) (otherlv_7= '&' ( (lv_filterSX_8_0= ruleFilterMigrator ) ) )* otherlv_9= ']' )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1568:28: ( ( () ( (lv_name_1_0= RULE_ID ) ) otherlv_2= ':' ( (otherlv_3= RULE_ID ) ) otherlv_4= 'where' otherlv_5= '[' ( (lv_filterSX_6_0= ruleFilterMigrator ) ) (otherlv_7= '&' ( (lv_filterSX_8_0= ruleFilterMigrator ) ) )* otherlv_9= ']' ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1569:1: ( () ( (lv_name_1_0= RULE_ID ) ) otherlv_2= ':' ( (otherlv_3= RULE_ID ) ) otherlv_4= 'where' otherlv_5= '[' ( (lv_filterSX_6_0= ruleFilterMigrator ) ) (otherlv_7= '&' ( (lv_filterSX_8_0= ruleFilterMigrator ) ) )* otherlv_9= ']' )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1503:1: ( () ( (lv_name_1_0= RULE_ID ) ) otherlv_2= ':' ( (otherlv_3= RULE_ID ) ) otherlv_4= 'where' otherlv_5= '[' ( (lv_filterSX_6_0= ruleFilterMigrator ) ) (otherlv_7= '&' ( (lv_filterSX_8_0= ruleFilterMigrator ) ) )* otherlv_9= ']' )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1503:2: () ( (lv_name_1_0= RULE_ID ) ) otherlv_2= ':' ( (otherlv_3= RULE_ID ) ) otherlv_4= 'where' otherlv_5= '[' ( (lv_filterSX_6_0= ruleFilterMigrator ) ) (otherlv_7= '&' ( (lv_filterSX_8_0= ruleFilterMigrator ) ) )* otherlv_9= ']'
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1569:1: ( () ( (lv_name_1_0= RULE_ID ) ) otherlv_2= ':' ( (otherlv_3= RULE_ID ) ) otherlv_4= 'where' otherlv_5= '[' ( (lv_filterSX_6_0= ruleFilterMigrator ) ) (otherlv_7= '&' ( (lv_filterSX_8_0= ruleFilterMigrator ) ) )* otherlv_9= ']' )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1569:2: () ( (lv_name_1_0= RULE_ID ) ) otherlv_2= ':' ( (otherlv_3= RULE_ID ) ) otherlv_4= 'where' otherlv_5= '[' ( (lv_filterSX_6_0= ruleFilterMigrator ) ) (otherlv_7= '&' ( (lv_filterSX_8_0= ruleFilterMigrator ) ) )* otherlv_9= ']'
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1503:2: ()
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1504:5: 
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1569:2: ()
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1570:5: 
             {
 
                     current = forceCreateModelElement(
@@ -3553,13 +3749,13 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1509:2: ( (lv_name_1_0= RULE_ID ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1510:1: (lv_name_1_0= RULE_ID )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1575:2: ( (lv_name_1_0= RULE_ID ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1576:1: (lv_name_1_0= RULE_ID )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1510:1: (lv_name_1_0= RULE_ID )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1511:3: lv_name_1_0= RULE_ID
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1576:1: (lv_name_1_0= RULE_ID )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1577:3: lv_name_1_0= RULE_ID
             {
-            lv_name_1_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleMigratorSX3212); 
+            lv_name_1_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleMigratorSX3377); 
 
             			newLeafNode(lv_name_1_0, grammarAccess.getMigratorSXAccess().getNameIDTerminalRuleCall_1_0()); 
             		
@@ -3579,22 +3775,22 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_2=(Token)match(input,17,FOLLOW_17_in_ruleMigratorSX3229); 
+            otherlv_2=(Token)match(input,18,FOLLOW_18_in_ruleMigratorSX3394); 
 
                 	newLeafNode(otherlv_2, grammarAccess.getMigratorSXAccess().getColonKeyword_2());
                 
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1531:1: ( (otherlv_3= RULE_ID ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1532:1: (otherlv_3= RULE_ID )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1597:1: ( (otherlv_3= RULE_ID ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1598:1: (otherlv_3= RULE_ID )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1532:1: (otherlv_3= RULE_ID )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1533:3: otherlv_3= RULE_ID
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1598:1: (otherlv_3= RULE_ID )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1599:3: otherlv_3= RULE_ID
             {
 
             			if (current==null) {
             	            current = createModelElement(grammarAccess.getMigratorSXRule());
             	        }
                     
-            otherlv_3=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleMigratorSX3249); 
+            otherlv_3=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleMigratorSX3414); 
 
             		newLeafNode(otherlv_3, grammarAccess.getMigratorSXAccess().getElementSXEClassCrossReference_3_0()); 
             	
@@ -3604,24 +3800,24 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_4=(Token)match(input,33,FOLLOW_33_in_ruleMigratorSX3261); 
+            otherlv_4=(Token)match(input,34,FOLLOW_34_in_ruleMigratorSX3426); 
 
                 	newLeafNode(otherlv_4, grammarAccess.getMigratorSXAccess().getWhereKeyword_4());
                 
-            otherlv_5=(Token)match(input,24,FOLLOW_24_in_ruleMigratorSX3273); 
+            otherlv_5=(Token)match(input,25,FOLLOW_25_in_ruleMigratorSX3438); 
 
                 	newLeafNode(otherlv_5, grammarAccess.getMigratorSXAccess().getLeftSquareBracketKeyword_5());
                 
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1552:1: ( (lv_filterSX_6_0= ruleFilterMigrator ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1553:1: (lv_filterSX_6_0= ruleFilterMigrator )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1618:1: ( (lv_filterSX_6_0= ruleFilterMigrator ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1619:1: (lv_filterSX_6_0= ruleFilterMigrator )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1553:1: (lv_filterSX_6_0= ruleFilterMigrator )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1554:3: lv_filterSX_6_0= ruleFilterMigrator
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1619:1: (lv_filterSX_6_0= ruleFilterMigrator )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1620:3: lv_filterSX_6_0= ruleFilterMigrator
             {
              
             	        newCompositeNode(grammarAccess.getMigratorSXAccess().getFilterSXFilterMigratorParserRuleCall_6_0()); 
             	    
-            pushFollow(FOLLOW_ruleFilterMigrator_in_ruleMigratorSX3294);
+            pushFollow(FOLLOW_ruleFilterMigrator_in_ruleMigratorSX3459);
             lv_filterSX_6_0=ruleFilterMigrator();
 
             state._fsp--;
@@ -3643,35 +3839,35 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1570:2: (otherlv_7= '&' ( (lv_filterSX_8_0= ruleFilterMigrator ) ) )*
-            loop19:
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1636:2: (otherlv_7= '&' ( (lv_filterSX_8_0= ruleFilterMigrator ) ) )*
+            loop20:
             do {
-                int alt19=2;
-                int LA19_0 = input.LA(1);
+                int alt20=2;
+                int LA20_0 = input.LA(1);
 
-                if ( (LA19_0==48) ) {
-                    alt19=1;
+                if ( (LA20_0==49) ) {
+                    alt20=1;
                 }
 
 
-                switch (alt19) {
+                switch (alt20) {
             	case 1 :
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1570:4: otherlv_7= '&' ( (lv_filterSX_8_0= ruleFilterMigrator ) )
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1636:4: otherlv_7= '&' ( (lv_filterSX_8_0= ruleFilterMigrator ) )
             	    {
-            	    otherlv_7=(Token)match(input,48,FOLLOW_48_in_ruleMigratorSX3307); 
+            	    otherlv_7=(Token)match(input,49,FOLLOW_49_in_ruleMigratorSX3472); 
 
             	        	newLeafNode(otherlv_7, grammarAccess.getMigratorSXAccess().getAmpersandKeyword_7_0());
             	        
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1574:1: ( (lv_filterSX_8_0= ruleFilterMigrator ) )
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1575:1: (lv_filterSX_8_0= ruleFilterMigrator )
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1640:1: ( (lv_filterSX_8_0= ruleFilterMigrator ) )
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1641:1: (lv_filterSX_8_0= ruleFilterMigrator )
             	    {
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1575:1: (lv_filterSX_8_0= ruleFilterMigrator )
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1576:3: lv_filterSX_8_0= ruleFilterMigrator
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1641:1: (lv_filterSX_8_0= ruleFilterMigrator )
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1642:3: lv_filterSX_8_0= ruleFilterMigrator
             	    {
             	     
             	    	        newCompositeNode(grammarAccess.getMigratorSXAccess().getFilterSXFilterMigratorParserRuleCall_7_1_0()); 
             	    	    
-            	    pushFollow(FOLLOW_ruleFilterMigrator_in_ruleMigratorSX3328);
+            	    pushFollow(FOLLOW_ruleFilterMigrator_in_ruleMigratorSX3493);
             	    lv_filterSX_8_0=ruleFilterMigrator();
 
             	    state._fsp--;
@@ -3698,11 +3894,11 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    break loop19;
+            	    break loop20;
                 }
             } while (true);
 
-            otherlv_9=(Token)match(input,25,FOLLOW_25_in_ruleMigratorSX3342); 
+            otherlv_9=(Token)match(input,26,FOLLOW_26_in_ruleMigratorSX3507); 
 
                 	newLeafNode(otherlv_9, grammarAccess.getMigratorSXAccess().getRightSquareBracketKeyword_8());
                 
@@ -3727,7 +3923,7 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleMigratorDX"
-    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1604:1: entryRuleMigratorDX returns [EObject current=null] : iv_ruleMigratorDX= ruleMigratorDX EOF ;
+    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1670:1: entryRuleMigratorDX returns [EObject current=null] : iv_ruleMigratorDX= ruleMigratorDX EOF ;
     public final EObject entryRuleMigratorDX() throws RecognitionException {
         EObject current = null;
 
@@ -3735,17 +3931,17 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1605:2: (iv_ruleMigratorDX= ruleMigratorDX EOF )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1606:2: iv_ruleMigratorDX= ruleMigratorDX EOF
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1671:2: (iv_ruleMigratorDX= ruleMigratorDX EOF )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1672:2: iv_ruleMigratorDX= ruleMigratorDX EOF
             {
              newCompositeNode(grammarAccess.getMigratorDXRule()); 
-            pushFollow(FOLLOW_ruleMigratorDX_in_entryRuleMigratorDX3378);
+            pushFollow(FOLLOW_ruleMigratorDX_in_entryRuleMigratorDX3543);
             iv_ruleMigratorDX=ruleMigratorDX();
 
             state._fsp--;
 
              current =iv_ruleMigratorDX; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleMigratorDX3388); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleMigratorDX3553); 
 
             }
 
@@ -3763,7 +3959,7 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleMigratorDX"
-    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1613:1: ruleMigratorDX returns [EObject current=null] : ( ( () ( ( (lv_name_1_0= RULE_ID ) ) otherlv_2= ':' ( (otherlv_3= RULE_ID ) ) otherlv_4= '[' ( (lv_filterDX_5_0= ruleFilterMigrator ) ) (otherlv_6= '&' ( (lv_filterDX_7_0= ruleFilterMigrator ) ) )* otherlv_8= ']' ) ) | otherlv_9= 'null' ) ;
+    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1679:1: ruleMigratorDX returns [EObject current=null] : ( ( () ( ( (lv_name_1_0= RULE_ID ) ) otherlv_2= ':' ( (otherlv_3= RULE_ID ) ) otherlv_4= '[' ( (lv_filterDX_5_0= ruleFilterMigrator ) ) (otherlv_6= '&' ( (lv_filterDX_7_0= ruleFilterMigrator ) ) )* otherlv_8= ']' ) ) | otherlv_9= 'null' ) ;
     public final EObject ruleMigratorDX() throws RecognitionException {
         EObject current = null;
 
@@ -3782,34 +3978,34 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1616:28: ( ( ( () ( ( (lv_name_1_0= RULE_ID ) ) otherlv_2= ':' ( (otherlv_3= RULE_ID ) ) otherlv_4= '[' ( (lv_filterDX_5_0= ruleFilterMigrator ) ) (otherlv_6= '&' ( (lv_filterDX_7_0= ruleFilterMigrator ) ) )* otherlv_8= ']' ) ) | otherlv_9= 'null' ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1617:1: ( ( () ( ( (lv_name_1_0= RULE_ID ) ) otherlv_2= ':' ( (otherlv_3= RULE_ID ) ) otherlv_4= '[' ( (lv_filterDX_5_0= ruleFilterMigrator ) ) (otherlv_6= '&' ( (lv_filterDX_7_0= ruleFilterMigrator ) ) )* otherlv_8= ']' ) ) | otherlv_9= 'null' )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1682:28: ( ( ( () ( ( (lv_name_1_0= RULE_ID ) ) otherlv_2= ':' ( (otherlv_3= RULE_ID ) ) otherlv_4= '[' ( (lv_filterDX_5_0= ruleFilterMigrator ) ) (otherlv_6= '&' ( (lv_filterDX_7_0= ruleFilterMigrator ) ) )* otherlv_8= ']' ) ) | otherlv_9= 'null' ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1683:1: ( ( () ( ( (lv_name_1_0= RULE_ID ) ) otherlv_2= ':' ( (otherlv_3= RULE_ID ) ) otherlv_4= '[' ( (lv_filterDX_5_0= ruleFilterMigrator ) ) (otherlv_6= '&' ( (lv_filterDX_7_0= ruleFilterMigrator ) ) )* otherlv_8= ']' ) ) | otherlv_9= 'null' )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1617:1: ( ( () ( ( (lv_name_1_0= RULE_ID ) ) otherlv_2= ':' ( (otherlv_3= RULE_ID ) ) otherlv_4= '[' ( (lv_filterDX_5_0= ruleFilterMigrator ) ) (otherlv_6= '&' ( (lv_filterDX_7_0= ruleFilterMigrator ) ) )* otherlv_8= ']' ) ) | otherlv_9= 'null' )
-            int alt21=2;
-            int LA21_0 = input.LA(1);
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1683:1: ( ( () ( ( (lv_name_1_0= RULE_ID ) ) otherlv_2= ':' ( (otherlv_3= RULE_ID ) ) otherlv_4= '[' ( (lv_filterDX_5_0= ruleFilterMigrator ) ) (otherlv_6= '&' ( (lv_filterDX_7_0= ruleFilterMigrator ) ) )* otherlv_8= ']' ) ) | otherlv_9= 'null' )
+            int alt22=2;
+            int LA22_0 = input.LA(1);
 
-            if ( (LA21_0==RULE_ID) ) {
-                alt21=1;
+            if ( (LA22_0==RULE_ID) ) {
+                alt22=1;
             }
-            else if ( (LA21_0==49) ) {
-                alt21=2;
+            else if ( (LA22_0==50) ) {
+                alt22=2;
             }
             else {
                 NoViableAltException nvae =
-                    new NoViableAltException("", 21, 0, input);
+                    new NoViableAltException("", 22, 0, input);
 
                 throw nvae;
             }
-            switch (alt21) {
+            switch (alt22) {
                 case 1 :
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1617:2: ( () ( ( (lv_name_1_0= RULE_ID ) ) otherlv_2= ':' ( (otherlv_3= RULE_ID ) ) otherlv_4= '[' ( (lv_filterDX_5_0= ruleFilterMigrator ) ) (otherlv_6= '&' ( (lv_filterDX_7_0= ruleFilterMigrator ) ) )* otherlv_8= ']' ) )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1683:2: ( () ( ( (lv_name_1_0= RULE_ID ) ) otherlv_2= ':' ( (otherlv_3= RULE_ID ) ) otherlv_4= '[' ( (lv_filterDX_5_0= ruleFilterMigrator ) ) (otherlv_6= '&' ( (lv_filterDX_7_0= ruleFilterMigrator ) ) )* otherlv_8= ']' ) )
                     {
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1617:2: ( () ( ( (lv_name_1_0= RULE_ID ) ) otherlv_2= ':' ( (otherlv_3= RULE_ID ) ) otherlv_4= '[' ( (lv_filterDX_5_0= ruleFilterMigrator ) ) (otherlv_6= '&' ( (lv_filterDX_7_0= ruleFilterMigrator ) ) )* otherlv_8= ']' ) )
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1617:3: () ( ( (lv_name_1_0= RULE_ID ) ) otherlv_2= ':' ( (otherlv_3= RULE_ID ) ) otherlv_4= '[' ( (lv_filterDX_5_0= ruleFilterMigrator ) ) (otherlv_6= '&' ( (lv_filterDX_7_0= ruleFilterMigrator ) ) )* otherlv_8= ']' )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1683:2: ( () ( ( (lv_name_1_0= RULE_ID ) ) otherlv_2= ':' ( (otherlv_3= RULE_ID ) ) otherlv_4= '[' ( (lv_filterDX_5_0= ruleFilterMigrator ) ) (otherlv_6= '&' ( (lv_filterDX_7_0= ruleFilterMigrator ) ) )* otherlv_8= ']' ) )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1683:3: () ( ( (lv_name_1_0= RULE_ID ) ) otherlv_2= ':' ( (otherlv_3= RULE_ID ) ) otherlv_4= '[' ( (lv_filterDX_5_0= ruleFilterMigrator ) ) (otherlv_6= '&' ( (lv_filterDX_7_0= ruleFilterMigrator ) ) )* otherlv_8= ']' )
                     {
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1617:3: ()
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1618:5: 
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1683:3: ()
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1684:5: 
                     {
 
                             current = forceCreateModelElement(
@@ -3819,16 +4015,16 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
                     }
 
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1623:2: ( ( (lv_name_1_0= RULE_ID ) ) otherlv_2= ':' ( (otherlv_3= RULE_ID ) ) otherlv_4= '[' ( (lv_filterDX_5_0= ruleFilterMigrator ) ) (otherlv_6= '&' ( (lv_filterDX_7_0= ruleFilterMigrator ) ) )* otherlv_8= ']' )
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1623:3: ( (lv_name_1_0= RULE_ID ) ) otherlv_2= ':' ( (otherlv_3= RULE_ID ) ) otherlv_4= '[' ( (lv_filterDX_5_0= ruleFilterMigrator ) ) (otherlv_6= '&' ( (lv_filterDX_7_0= ruleFilterMigrator ) ) )* otherlv_8= ']'
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1689:2: ( ( (lv_name_1_0= RULE_ID ) ) otherlv_2= ':' ( (otherlv_3= RULE_ID ) ) otherlv_4= '[' ( (lv_filterDX_5_0= ruleFilterMigrator ) ) (otherlv_6= '&' ( (lv_filterDX_7_0= ruleFilterMigrator ) ) )* otherlv_8= ']' )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1689:3: ( (lv_name_1_0= RULE_ID ) ) otherlv_2= ':' ( (otherlv_3= RULE_ID ) ) otherlv_4= '[' ( (lv_filterDX_5_0= ruleFilterMigrator ) ) (otherlv_6= '&' ( (lv_filterDX_7_0= ruleFilterMigrator ) ) )* otherlv_8= ']'
                     {
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1623:3: ( (lv_name_1_0= RULE_ID ) )
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1624:1: (lv_name_1_0= RULE_ID )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1689:3: ( (lv_name_1_0= RULE_ID ) )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1690:1: (lv_name_1_0= RULE_ID )
                     {
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1624:1: (lv_name_1_0= RULE_ID )
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1625:3: lv_name_1_0= RULE_ID
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1690:1: (lv_name_1_0= RULE_ID )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1691:3: lv_name_1_0= RULE_ID
                     {
-                    lv_name_1_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleMigratorDX3441); 
+                    lv_name_1_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleMigratorDX3606); 
 
                     			newLeafNode(lv_name_1_0, grammarAccess.getMigratorDXAccess().getNameIDTerminalRuleCall_0_1_0_0()); 
                     		
@@ -3848,22 +4044,22 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
                     }
 
-                    otherlv_2=(Token)match(input,17,FOLLOW_17_in_ruleMigratorDX3458); 
+                    otherlv_2=(Token)match(input,18,FOLLOW_18_in_ruleMigratorDX3623); 
 
                         	newLeafNode(otherlv_2, grammarAccess.getMigratorDXAccess().getColonKeyword_0_1_1());
                         
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1645:1: ( (otherlv_3= RULE_ID ) )
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1646:1: (otherlv_3= RULE_ID )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1711:1: ( (otherlv_3= RULE_ID ) )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1712:1: (otherlv_3= RULE_ID )
                     {
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1646:1: (otherlv_3= RULE_ID )
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1647:3: otherlv_3= RULE_ID
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1712:1: (otherlv_3= RULE_ID )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1713:3: otherlv_3= RULE_ID
                     {
 
                     			if (current==null) {
                     	            current = createModelElement(grammarAccess.getMigratorDXRule());
                     	        }
                             
-                    otherlv_3=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleMigratorDX3478); 
+                    otherlv_3=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleMigratorDX3643); 
 
                     		newLeafNode(otherlv_3, grammarAccess.getMigratorDXAccess().getElementDXEClassCrossReference_0_1_2_0()); 
                     	
@@ -3873,20 +4069,20 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
                     }
 
-                    otherlv_4=(Token)match(input,24,FOLLOW_24_in_ruleMigratorDX3490); 
+                    otherlv_4=(Token)match(input,25,FOLLOW_25_in_ruleMigratorDX3655); 
 
                         	newLeafNode(otherlv_4, grammarAccess.getMigratorDXAccess().getLeftSquareBracketKeyword_0_1_3());
                         
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1662:1: ( (lv_filterDX_5_0= ruleFilterMigrator ) )
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1663:1: (lv_filterDX_5_0= ruleFilterMigrator )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1728:1: ( (lv_filterDX_5_0= ruleFilterMigrator ) )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1729:1: (lv_filterDX_5_0= ruleFilterMigrator )
                     {
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1663:1: (lv_filterDX_5_0= ruleFilterMigrator )
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1664:3: lv_filterDX_5_0= ruleFilterMigrator
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1729:1: (lv_filterDX_5_0= ruleFilterMigrator )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1730:3: lv_filterDX_5_0= ruleFilterMigrator
                     {
                      
                     	        newCompositeNode(grammarAccess.getMigratorDXAccess().getFilterDXFilterMigratorParserRuleCall_0_1_4_0()); 
                     	    
-                    pushFollow(FOLLOW_ruleFilterMigrator_in_ruleMigratorDX3511);
+                    pushFollow(FOLLOW_ruleFilterMigrator_in_ruleMigratorDX3676);
                     lv_filterDX_5_0=ruleFilterMigrator();
 
                     state._fsp--;
@@ -3908,35 +4104,35 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
                     }
 
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1680:2: (otherlv_6= '&' ( (lv_filterDX_7_0= ruleFilterMigrator ) ) )*
-                    loop20:
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1746:2: (otherlv_6= '&' ( (lv_filterDX_7_0= ruleFilterMigrator ) ) )*
+                    loop21:
                     do {
-                        int alt20=2;
-                        int LA20_0 = input.LA(1);
+                        int alt21=2;
+                        int LA21_0 = input.LA(1);
 
-                        if ( (LA20_0==48) ) {
-                            alt20=1;
+                        if ( (LA21_0==49) ) {
+                            alt21=1;
                         }
 
 
-                        switch (alt20) {
+                        switch (alt21) {
                     	case 1 :
-                    	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1680:4: otherlv_6= '&' ( (lv_filterDX_7_0= ruleFilterMigrator ) )
+                    	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1746:4: otherlv_6= '&' ( (lv_filterDX_7_0= ruleFilterMigrator ) )
                     	    {
-                    	    otherlv_6=(Token)match(input,48,FOLLOW_48_in_ruleMigratorDX3524); 
+                    	    otherlv_6=(Token)match(input,49,FOLLOW_49_in_ruleMigratorDX3689); 
 
                     	        	newLeafNode(otherlv_6, grammarAccess.getMigratorDXAccess().getAmpersandKeyword_0_1_5_0());
                     	        
-                    	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1684:1: ( (lv_filterDX_7_0= ruleFilterMigrator ) )
-                    	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1685:1: (lv_filterDX_7_0= ruleFilterMigrator )
+                    	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1750:1: ( (lv_filterDX_7_0= ruleFilterMigrator ) )
+                    	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1751:1: (lv_filterDX_7_0= ruleFilterMigrator )
                     	    {
-                    	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1685:1: (lv_filterDX_7_0= ruleFilterMigrator )
-                    	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1686:3: lv_filterDX_7_0= ruleFilterMigrator
+                    	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1751:1: (lv_filterDX_7_0= ruleFilterMigrator )
+                    	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1752:3: lv_filterDX_7_0= ruleFilterMigrator
                     	    {
                     	     
                     	    	        newCompositeNode(grammarAccess.getMigratorDXAccess().getFilterDXFilterMigratorParserRuleCall_0_1_5_1_0()); 
                     	    	    
-                    	    pushFollow(FOLLOW_ruleFilterMigrator_in_ruleMigratorDX3545);
+                    	    pushFollow(FOLLOW_ruleFilterMigrator_in_ruleMigratorDX3710);
                     	    lv_filterDX_7_0=ruleFilterMigrator();
 
                     	    state._fsp--;
@@ -3963,11 +4159,11 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop20;
+                    	    break loop21;
                         }
                     } while (true);
 
-                    otherlv_8=(Token)match(input,25,FOLLOW_25_in_ruleMigratorDX3559); 
+                    otherlv_8=(Token)match(input,26,FOLLOW_26_in_ruleMigratorDX3724); 
 
                         	newLeafNode(otherlv_8, grammarAccess.getMigratorDXAccess().getRightSquareBracketKeyword_0_1_6());
                         
@@ -3981,9 +4177,9 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1707:7: otherlv_9= 'null'
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1773:7: otherlv_9= 'null'
                     {
-                    otherlv_9=(Token)match(input,49,FOLLOW_49_in_ruleMigratorDX3579); 
+                    otherlv_9=(Token)match(input,50,FOLLOW_50_in_ruleMigratorDX3744); 
 
                         	newLeafNode(otherlv_9, grammarAccess.getMigratorDXAccess().getNullKeyword_1());
                         
@@ -4011,7 +4207,7 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleFilterMigrator"
-    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1719:1: entryRuleFilterMigrator returns [EObject current=null] : iv_ruleFilterMigrator= ruleFilterMigrator EOF ;
+    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1785:1: entryRuleFilterMigrator returns [EObject current=null] : iv_ruleFilterMigrator= ruleFilterMigrator EOF ;
     public final EObject entryRuleFilterMigrator() throws RecognitionException {
         EObject current = null;
 
@@ -4019,17 +4215,17 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1720:2: (iv_ruleFilterMigrator= ruleFilterMigrator EOF )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1721:2: iv_ruleFilterMigrator= ruleFilterMigrator EOF
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1786:2: (iv_ruleFilterMigrator= ruleFilterMigrator EOF )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1787:2: iv_ruleFilterMigrator= ruleFilterMigrator EOF
             {
              newCompositeNode(grammarAccess.getFilterMigratorRule()); 
-            pushFollow(FOLLOW_ruleFilterMigrator_in_entryRuleFilterMigrator3615);
+            pushFollow(FOLLOW_ruleFilterMigrator_in_entryRuleFilterMigrator3780);
             iv_ruleFilterMigrator=ruleFilterMigrator();
 
             state._fsp--;
 
              current =iv_ruleFilterMigrator; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleFilterMigrator3625); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleFilterMigrator3790); 
 
             }
 
@@ -4047,7 +4243,7 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleFilterMigrator"
-    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1728:1: ruleFilterMigrator returns [EObject current=null] : ( ( (lv_featureSX_0_0= ruleDotNavigationObjSX ) ) ( (lv_op_1_0= '=' ) ) ( (lv_value_2_0= ruleDotNavigationObjDX ) )? ) ;
+    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1794:1: ruleFilterMigrator returns [EObject current=null] : ( ( (lv_featureSX_0_0= ruleDotNavigationObjSX ) ) ( (lv_op_1_0= '=' ) ) ( (lv_value_2_0= ruleDotNavigationObjDX ) )? ) ;
     public final EObject ruleFilterMigrator() throws RecognitionException {
         EObject current = null;
 
@@ -4060,22 +4256,22 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1731:28: ( ( ( (lv_featureSX_0_0= ruleDotNavigationObjSX ) ) ( (lv_op_1_0= '=' ) ) ( (lv_value_2_0= ruleDotNavigationObjDX ) )? ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1732:1: ( ( (lv_featureSX_0_0= ruleDotNavigationObjSX ) ) ( (lv_op_1_0= '=' ) ) ( (lv_value_2_0= ruleDotNavigationObjDX ) )? )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1797:28: ( ( ( (lv_featureSX_0_0= ruleDotNavigationObjSX ) ) ( (lv_op_1_0= '=' ) ) ( (lv_value_2_0= ruleDotNavigationObjDX ) )? ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1798:1: ( ( (lv_featureSX_0_0= ruleDotNavigationObjSX ) ) ( (lv_op_1_0= '=' ) ) ( (lv_value_2_0= ruleDotNavigationObjDX ) )? )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1732:1: ( ( (lv_featureSX_0_0= ruleDotNavigationObjSX ) ) ( (lv_op_1_0= '=' ) ) ( (lv_value_2_0= ruleDotNavigationObjDX ) )? )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1732:2: ( (lv_featureSX_0_0= ruleDotNavigationObjSX ) ) ( (lv_op_1_0= '=' ) ) ( (lv_value_2_0= ruleDotNavigationObjDX ) )?
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1798:1: ( ( (lv_featureSX_0_0= ruleDotNavigationObjSX ) ) ( (lv_op_1_0= '=' ) ) ( (lv_value_2_0= ruleDotNavigationObjDX ) )? )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1798:2: ( (lv_featureSX_0_0= ruleDotNavigationObjSX ) ) ( (lv_op_1_0= '=' ) ) ( (lv_value_2_0= ruleDotNavigationObjDX ) )?
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1732:2: ( (lv_featureSX_0_0= ruleDotNavigationObjSX ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1733:1: (lv_featureSX_0_0= ruleDotNavigationObjSX )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1798:2: ( (lv_featureSX_0_0= ruleDotNavigationObjSX ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1799:1: (lv_featureSX_0_0= ruleDotNavigationObjSX )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1733:1: (lv_featureSX_0_0= ruleDotNavigationObjSX )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1734:3: lv_featureSX_0_0= ruleDotNavigationObjSX
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1799:1: (lv_featureSX_0_0= ruleDotNavigationObjSX )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1800:3: lv_featureSX_0_0= ruleDotNavigationObjSX
             {
              
             	        newCompositeNode(grammarAccess.getFilterMigratorAccess().getFeatureSXDotNavigationObjSXParserRuleCall_0_0()); 
             	    
-            pushFollow(FOLLOW_ruleDotNavigationObjSX_in_ruleFilterMigrator3671);
+            pushFollow(FOLLOW_ruleDotNavigationObjSX_in_ruleFilterMigrator3836);
             lv_featureSX_0_0=ruleDotNavigationObjSX();
 
             state._fsp--;
@@ -4097,13 +4293,13 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1750:2: ( (lv_op_1_0= '=' ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1751:1: (lv_op_1_0= '=' )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1816:2: ( (lv_op_1_0= '=' ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1817:1: (lv_op_1_0= '=' )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1751:1: (lv_op_1_0= '=' )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1752:3: lv_op_1_0= '='
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1817:1: (lv_op_1_0= '=' )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1818:3: lv_op_1_0= '='
             {
-            lv_op_1_0=(Token)match(input,27,FOLLOW_27_in_ruleFilterMigrator3689); 
+            lv_op_1_0=(Token)match(input,28,FOLLOW_28_in_ruleFilterMigrator3854); 
 
                     newLeafNode(lv_op_1_0, grammarAccess.getFilterMigratorAccess().getOpEqualsSignKeyword_1_0());
                 
@@ -4119,24 +4315,24 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1765:2: ( (lv_value_2_0= ruleDotNavigationObjDX ) )?
-            int alt22=2;
-            int LA22_0 = input.LA(1);
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1831:2: ( (lv_value_2_0= ruleDotNavigationObjDX ) )?
+            int alt23=2;
+            int LA23_0 = input.LA(1);
 
-            if ( (LA22_0==50) ) {
-                alt22=1;
+            if ( (LA23_0==51) ) {
+                alt23=1;
             }
-            switch (alt22) {
+            switch (alt23) {
                 case 1 :
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1766:1: (lv_value_2_0= ruleDotNavigationObjDX )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1832:1: (lv_value_2_0= ruleDotNavigationObjDX )
                     {
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1766:1: (lv_value_2_0= ruleDotNavigationObjDX )
-                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1767:3: lv_value_2_0= ruleDotNavigationObjDX
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1832:1: (lv_value_2_0= ruleDotNavigationObjDX )
+                    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1833:3: lv_value_2_0= ruleDotNavigationObjDX
                     {
                      
                     	        newCompositeNode(grammarAccess.getFilterMigratorAccess().getValueDotNavigationObjDXParserRuleCall_2_0()); 
                     	    
-                    pushFollow(FOLLOW_ruleDotNavigationObjDX_in_ruleFilterMigrator3723);
+                    pushFollow(FOLLOW_ruleDotNavigationObjDX_in_ruleFilterMigrator3888);
                     lv_value_2_0=ruleDotNavigationObjDX();
 
                     state._fsp--;
@@ -4182,7 +4378,7 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleDotNavigationObjSX"
-    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1791:1: entryRuleDotNavigationObjSX returns [EObject current=null] : iv_ruleDotNavigationObjSX= ruleDotNavigationObjSX EOF ;
+    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1857:1: entryRuleDotNavigationObjSX returns [EObject current=null] : iv_ruleDotNavigationObjSX= ruleDotNavigationObjSX EOF ;
     public final EObject entryRuleDotNavigationObjSX() throws RecognitionException {
         EObject current = null;
 
@@ -4190,17 +4386,17 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1792:2: (iv_ruleDotNavigationObjSX= ruleDotNavigationObjSX EOF )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1793:2: iv_ruleDotNavigationObjSX= ruleDotNavigationObjSX EOF
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1858:2: (iv_ruleDotNavigationObjSX= ruleDotNavigationObjSX EOF )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1859:2: iv_ruleDotNavigationObjSX= ruleDotNavigationObjSX EOF
             {
              newCompositeNode(grammarAccess.getDotNavigationObjSXRule()); 
-            pushFollow(FOLLOW_ruleDotNavigationObjSX_in_entryRuleDotNavigationObjSX3760);
+            pushFollow(FOLLOW_ruleDotNavigationObjSX_in_entryRuleDotNavigationObjSX3925);
             iv_ruleDotNavigationObjSX=ruleDotNavigationObjSX();
 
             state._fsp--;
 
              current =iv_ruleDotNavigationObjSX; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleDotNavigationObjSX3770); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleDotNavigationObjSX3935); 
 
             }
 
@@ -4218,7 +4414,7 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleDotNavigationObjSX"
-    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1800:1: ruleDotNavigationObjSX returns [EObject current=null] : (otherlv_0= '#' ( (otherlv_1= RULE_ID ) ) (otherlv_2= '.' ( (otherlv_3= RULE_ID ) ) )* ) ;
+    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1866:1: ruleDotNavigationObjSX returns [EObject current=null] : (otherlv_0= '#' ( (otherlv_1= RULE_ID ) ) (otherlv_2= '.' ( (otherlv_3= RULE_ID ) ) )* ) ;
     public final EObject ruleDotNavigationObjSX() throws RecognitionException {
         EObject current = null;
 
@@ -4230,28 +4426,28 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1803:28: ( (otherlv_0= '#' ( (otherlv_1= RULE_ID ) ) (otherlv_2= '.' ( (otherlv_3= RULE_ID ) ) )* ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1804:1: (otherlv_0= '#' ( (otherlv_1= RULE_ID ) ) (otherlv_2= '.' ( (otherlv_3= RULE_ID ) ) )* )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1869:28: ( (otherlv_0= '#' ( (otherlv_1= RULE_ID ) ) (otherlv_2= '.' ( (otherlv_3= RULE_ID ) ) )* ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1870:1: (otherlv_0= '#' ( (otherlv_1= RULE_ID ) ) (otherlv_2= '.' ( (otherlv_3= RULE_ID ) ) )* )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1804:1: (otherlv_0= '#' ( (otherlv_1= RULE_ID ) ) (otherlv_2= '.' ( (otherlv_3= RULE_ID ) ) )* )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1804:3: otherlv_0= '#' ( (otherlv_1= RULE_ID ) ) (otherlv_2= '.' ( (otherlv_3= RULE_ID ) ) )*
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1870:1: (otherlv_0= '#' ( (otherlv_1= RULE_ID ) ) (otherlv_2= '.' ( (otherlv_3= RULE_ID ) ) )* )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1870:3: otherlv_0= '#' ( (otherlv_1= RULE_ID ) ) (otherlv_2= '.' ( (otherlv_3= RULE_ID ) ) )*
             {
-            otherlv_0=(Token)match(input,50,FOLLOW_50_in_ruleDotNavigationObjSX3807); 
+            otherlv_0=(Token)match(input,51,FOLLOW_51_in_ruleDotNavigationObjSX3972); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getDotNavigationObjSXAccess().getNumberSignKeyword_0());
                 
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1808:1: ( (otherlv_1= RULE_ID ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1809:1: (otherlv_1= RULE_ID )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1874:1: ( (otherlv_1= RULE_ID ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1875:1: (otherlv_1= RULE_ID )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1809:1: (otherlv_1= RULE_ID )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1810:3: otherlv_1= RULE_ID
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1875:1: (otherlv_1= RULE_ID )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1876:3: otherlv_1= RULE_ID
             {
 
             			if (current==null) {
             	            current = createModelElement(grammarAccess.getDotNavigationObjSXRule());
             	        }
                     
-            otherlv_1=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleDotNavigationObjSX3827); 
+            otherlv_1=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleDotNavigationObjSX3992); 
 
             		newLeafNode(otherlv_1, grammarAccess.getDotNavigationObjSXAccess().getObjEObjectCrossReference_1_0()); 
             	
@@ -4261,188 +4457,39 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1821:2: (otherlv_2= '.' ( (otherlv_3= RULE_ID ) ) )*
-            loop23:
-            do {
-                int alt23=2;
-                int LA23_0 = input.LA(1);
-
-                if ( (LA23_0==51) ) {
-                    alt23=1;
-                }
-
-
-                switch (alt23) {
-            	case 1 :
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1821:4: otherlv_2= '.' ( (otherlv_3= RULE_ID ) )
-            	    {
-            	    otherlv_2=(Token)match(input,51,FOLLOW_51_in_ruleDotNavigationObjSX3840); 
-
-            	        	newLeafNode(otherlv_2, grammarAccess.getDotNavigationObjSXAccess().getFullStopKeyword_2_0());
-            	        
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1825:1: ( (otherlv_3= RULE_ID ) )
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1826:1: (otherlv_3= RULE_ID )
-            	    {
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1826:1: (otherlv_3= RULE_ID )
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1827:3: otherlv_3= RULE_ID
-            	    {
-
-            	    			if (current==null) {
-            	    	            current = createModelElement(grammarAccess.getDotNavigationObjSXRule());
-            	    	        }
-            	            
-            	    otherlv_3=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleDotNavigationObjSX3860); 
-
-            	    		newLeafNode(otherlv_3, grammarAccess.getDotNavigationObjSXAccess().getRefEStructuralFeatureCrossReference_2_1_0()); 
-            	    	
-
-            	    }
-
-
-            	    }
-
-
-            	    }
-            	    break;
-
-            	default :
-            	    break loop23;
-                }
-            } while (true);
-
-
-            }
-
-
-            }
-
-             leaveRule(); 
-        }
-         
-            catch (RecognitionException re) { 
-                recover(input,re); 
-                appendSkippedTokens();
-            } 
-        finally {
-        }
-        return current;
-    }
-    // $ANTLR end "ruleDotNavigationObjSX"
-
-
-    // $ANTLR start "entryRuleDotNavigationObjDX"
-    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1846:1: entryRuleDotNavigationObjDX returns [EObject current=null] : iv_ruleDotNavigationObjDX= ruleDotNavigationObjDX EOF ;
-    public final EObject entryRuleDotNavigationObjDX() throws RecognitionException {
-        EObject current = null;
-
-        EObject iv_ruleDotNavigationObjDX = null;
-
-
-        try {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1847:2: (iv_ruleDotNavigationObjDX= ruleDotNavigationObjDX EOF )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1848:2: iv_ruleDotNavigationObjDX= ruleDotNavigationObjDX EOF
-            {
-             newCompositeNode(grammarAccess.getDotNavigationObjDXRule()); 
-            pushFollow(FOLLOW_ruleDotNavigationObjDX_in_entryRuleDotNavigationObjDX3898);
-            iv_ruleDotNavigationObjDX=ruleDotNavigationObjDX();
-
-            state._fsp--;
-
-             current =iv_ruleDotNavigationObjDX; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleDotNavigationObjDX3908); 
-
-            }
-
-        }
-         
-            catch (RecognitionException re) { 
-                recover(input,re); 
-                appendSkippedTokens();
-            } 
-        finally {
-        }
-        return current;
-    }
-    // $ANTLR end "entryRuleDotNavigationObjDX"
-
-
-    // $ANTLR start "ruleDotNavigationObjDX"
-    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1855:1: ruleDotNavigationObjDX returns [EObject current=null] : (otherlv_0= '#' ( (otherlv_1= RULE_ID ) ) (otherlv_2= '.' ( (otherlv_3= RULE_ID ) ) )* ) ;
-    public final EObject ruleDotNavigationObjDX() throws RecognitionException {
-        EObject current = null;
-
-        Token otherlv_0=null;
-        Token otherlv_1=null;
-        Token otherlv_2=null;
-        Token otherlv_3=null;
-
-         enterRule(); 
-            
-        try {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1858:28: ( (otherlv_0= '#' ( (otherlv_1= RULE_ID ) ) (otherlv_2= '.' ( (otherlv_3= RULE_ID ) ) )* ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1859:1: (otherlv_0= '#' ( (otherlv_1= RULE_ID ) ) (otherlv_2= '.' ( (otherlv_3= RULE_ID ) ) )* )
-            {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1859:1: (otherlv_0= '#' ( (otherlv_1= RULE_ID ) ) (otherlv_2= '.' ( (otherlv_3= RULE_ID ) ) )* )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1859:3: otherlv_0= '#' ( (otherlv_1= RULE_ID ) ) (otherlv_2= '.' ( (otherlv_3= RULE_ID ) ) )*
-            {
-            otherlv_0=(Token)match(input,50,FOLLOW_50_in_ruleDotNavigationObjDX3945); 
-
-                	newLeafNode(otherlv_0, grammarAccess.getDotNavigationObjDXAccess().getNumberSignKeyword_0());
-                
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1863:1: ( (otherlv_1= RULE_ID ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1864:1: (otherlv_1= RULE_ID )
-            {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1864:1: (otherlv_1= RULE_ID )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1865:3: otherlv_1= RULE_ID
-            {
-
-            			if (current==null) {
-            	            current = createModelElement(grammarAccess.getDotNavigationObjDXRule());
-            	        }
-                    
-            otherlv_1=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleDotNavigationObjDX3965); 
-
-            		newLeafNode(otherlv_1, grammarAccess.getDotNavigationObjDXAccess().getObjEObjectCrossReference_1_0()); 
-            	
-
-            }
-
-
-            }
-
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1876:2: (otherlv_2= '.' ( (otherlv_3= RULE_ID ) ) )*
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1887:2: (otherlv_2= '.' ( (otherlv_3= RULE_ID ) ) )*
             loop24:
             do {
                 int alt24=2;
                 int LA24_0 = input.LA(1);
 
-                if ( (LA24_0==51) ) {
+                if ( (LA24_0==52) ) {
                     alt24=1;
                 }
 
 
                 switch (alt24) {
             	case 1 :
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1876:4: otherlv_2= '.' ( (otherlv_3= RULE_ID ) )
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1887:4: otherlv_2= '.' ( (otherlv_3= RULE_ID ) )
             	    {
-            	    otherlv_2=(Token)match(input,51,FOLLOW_51_in_ruleDotNavigationObjDX3978); 
+            	    otherlv_2=(Token)match(input,52,FOLLOW_52_in_ruleDotNavigationObjSX4005); 
 
-            	        	newLeafNode(otherlv_2, grammarAccess.getDotNavigationObjDXAccess().getFullStopKeyword_2_0());
+            	        	newLeafNode(otherlv_2, grammarAccess.getDotNavigationObjSXAccess().getFullStopKeyword_2_0());
             	        
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1880:1: ( (otherlv_3= RULE_ID ) )
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1881:1: (otherlv_3= RULE_ID )
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1891:1: ( (otherlv_3= RULE_ID ) )
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1892:1: (otherlv_3= RULE_ID )
             	    {
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1881:1: (otherlv_3= RULE_ID )
-            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1882:3: otherlv_3= RULE_ID
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1892:1: (otherlv_3= RULE_ID )
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1893:3: otherlv_3= RULE_ID
             	    {
 
             	    			if (current==null) {
-            	    	            current = createModelElement(grammarAccess.getDotNavigationObjDXRule());
+            	    	            current = createModelElement(grammarAccess.getDotNavigationObjSXRule());
             	    	        }
             	            
-            	    otherlv_3=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleDotNavigationObjDX3998); 
+            	    otherlv_3=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleDotNavigationObjSX4025); 
 
-            	    		newLeafNode(otherlv_3, grammarAccess.getDotNavigationObjDXAccess().getRefEStructuralFeatureCrossReference_2_1_0()); 
+            	    		newLeafNode(otherlv_3, grammarAccess.getDotNavigationObjSXAccess().getRefEStructuralFeatureCrossReference_2_1_0()); 
             	    	
 
             	    }
@@ -4476,11 +4523,160 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
         }
         return current;
     }
+    // $ANTLR end "ruleDotNavigationObjSX"
+
+
+    // $ANTLR start "entryRuleDotNavigationObjDX"
+    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1912:1: entryRuleDotNavigationObjDX returns [EObject current=null] : iv_ruleDotNavigationObjDX= ruleDotNavigationObjDX EOF ;
+    public final EObject entryRuleDotNavigationObjDX() throws RecognitionException {
+        EObject current = null;
+
+        EObject iv_ruleDotNavigationObjDX = null;
+
+
+        try {
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1913:2: (iv_ruleDotNavigationObjDX= ruleDotNavigationObjDX EOF )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1914:2: iv_ruleDotNavigationObjDX= ruleDotNavigationObjDX EOF
+            {
+             newCompositeNode(grammarAccess.getDotNavigationObjDXRule()); 
+            pushFollow(FOLLOW_ruleDotNavigationObjDX_in_entryRuleDotNavigationObjDX4063);
+            iv_ruleDotNavigationObjDX=ruleDotNavigationObjDX();
+
+            state._fsp--;
+
+             current =iv_ruleDotNavigationObjDX; 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleDotNavigationObjDX4073); 
+
+            }
+
+        }
+         
+            catch (RecognitionException re) { 
+                recover(input,re); 
+                appendSkippedTokens();
+            } 
+        finally {
+        }
+        return current;
+    }
+    // $ANTLR end "entryRuleDotNavigationObjDX"
+
+
+    // $ANTLR start "ruleDotNavigationObjDX"
+    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1921:1: ruleDotNavigationObjDX returns [EObject current=null] : (otherlv_0= '#' ( (otherlv_1= RULE_ID ) ) (otherlv_2= '.' ( (otherlv_3= RULE_ID ) ) )* ) ;
+    public final EObject ruleDotNavigationObjDX() throws RecognitionException {
+        EObject current = null;
+
+        Token otherlv_0=null;
+        Token otherlv_1=null;
+        Token otherlv_2=null;
+        Token otherlv_3=null;
+
+         enterRule(); 
+            
+        try {
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1924:28: ( (otherlv_0= '#' ( (otherlv_1= RULE_ID ) ) (otherlv_2= '.' ( (otherlv_3= RULE_ID ) ) )* ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1925:1: (otherlv_0= '#' ( (otherlv_1= RULE_ID ) ) (otherlv_2= '.' ( (otherlv_3= RULE_ID ) ) )* )
+            {
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1925:1: (otherlv_0= '#' ( (otherlv_1= RULE_ID ) ) (otherlv_2= '.' ( (otherlv_3= RULE_ID ) ) )* )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1925:3: otherlv_0= '#' ( (otherlv_1= RULE_ID ) ) (otherlv_2= '.' ( (otherlv_3= RULE_ID ) ) )*
+            {
+            otherlv_0=(Token)match(input,51,FOLLOW_51_in_ruleDotNavigationObjDX4110); 
+
+                	newLeafNode(otherlv_0, grammarAccess.getDotNavigationObjDXAccess().getNumberSignKeyword_0());
+                
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1929:1: ( (otherlv_1= RULE_ID ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1930:1: (otherlv_1= RULE_ID )
+            {
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1930:1: (otherlv_1= RULE_ID )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1931:3: otherlv_1= RULE_ID
+            {
+
+            			if (current==null) {
+            	            current = createModelElement(grammarAccess.getDotNavigationObjDXRule());
+            	        }
+                    
+            otherlv_1=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleDotNavigationObjDX4130); 
+
+            		newLeafNode(otherlv_1, grammarAccess.getDotNavigationObjDXAccess().getObjEObjectCrossReference_1_0()); 
+            	
+
+            }
+
+
+            }
+
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1942:2: (otherlv_2= '.' ( (otherlv_3= RULE_ID ) ) )*
+            loop25:
+            do {
+                int alt25=2;
+                int LA25_0 = input.LA(1);
+
+                if ( (LA25_0==52) ) {
+                    alt25=1;
+                }
+
+
+                switch (alt25) {
+            	case 1 :
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1942:4: otherlv_2= '.' ( (otherlv_3= RULE_ID ) )
+            	    {
+            	    otherlv_2=(Token)match(input,52,FOLLOW_52_in_ruleDotNavigationObjDX4143); 
+
+            	        	newLeafNode(otherlv_2, grammarAccess.getDotNavigationObjDXAccess().getFullStopKeyword_2_0());
+            	        
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1946:1: ( (otherlv_3= RULE_ID ) )
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1947:1: (otherlv_3= RULE_ID )
+            	    {
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1947:1: (otherlv_3= RULE_ID )
+            	    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1948:3: otherlv_3= RULE_ID
+            	    {
+
+            	    			if (current==null) {
+            	    	            current = createModelElement(grammarAccess.getDotNavigationObjDXRule());
+            	    	        }
+            	            
+            	    otherlv_3=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleDotNavigationObjDX4163); 
+
+            	    		newLeafNode(otherlv_3, grammarAccess.getDotNavigationObjDXAccess().getRefEStructuralFeatureCrossReference_2_1_0()); 
+            	    	
+
+            	    }
+
+
+            	    }
+
+
+            	    }
+            	    break;
+
+            	default :
+            	    break loop25;
+                }
+            } while (true);
+
+
+            }
+
+
+            }
+
+             leaveRule(); 
+        }
+         
+            catch (RecognitionException re) { 
+                recover(input,re); 
+                appendSkippedTokens();
+            } 
+        finally {
+        }
+        return current;
+    }
     // $ANTLR end "ruleDotNavigationObjDX"
 
 
     // $ANTLR start "entryRuleParameter"
-    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1901:1: entryRuleParameter returns [EObject current=null] : iv_ruleParameter= ruleParameter EOF ;
+    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1967:1: entryRuleParameter returns [EObject current=null] : iv_ruleParameter= ruleParameter EOF ;
     public final EObject entryRuleParameter() throws RecognitionException {
         EObject current = null;
 
@@ -4488,17 +4684,17 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1902:2: (iv_ruleParameter= ruleParameter EOF )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1903:2: iv_ruleParameter= ruleParameter EOF
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1968:2: (iv_ruleParameter= ruleParameter EOF )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1969:2: iv_ruleParameter= ruleParameter EOF
             {
              newCompositeNode(grammarAccess.getParameterRule()); 
-            pushFollow(FOLLOW_ruleParameter_in_entryRuleParameter4036);
+            pushFollow(FOLLOW_ruleParameter_in_entryRuleParameter4201);
             iv_ruleParameter=ruleParameter();
 
             state._fsp--;
 
              current =iv_ruleParameter; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleParameter4046); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleParameter4211); 
 
             }
 
@@ -4516,7 +4712,7 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleParameter"
-    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1910:1: ruleParameter returns [EObject current=null] : (otherlv_0= '%' ( (lv_name_1_0= RULE_ID ) ) ) ;
+    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1976:1: ruleParameter returns [EObject current=null] : (otherlv_0= '%' ( (lv_name_1_0= RULE_ID ) ) ) ;
     public final EObject ruleParameter() throws RecognitionException {
         EObject current = null;
 
@@ -4526,23 +4722,23 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1913:28: ( (otherlv_0= '%' ( (lv_name_1_0= RULE_ID ) ) ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1914:1: (otherlv_0= '%' ( (lv_name_1_0= RULE_ID ) ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1979:28: ( (otherlv_0= '%' ( (lv_name_1_0= RULE_ID ) ) ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1980:1: (otherlv_0= '%' ( (lv_name_1_0= RULE_ID ) ) )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1914:1: (otherlv_0= '%' ( (lv_name_1_0= RULE_ID ) ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1914:3: otherlv_0= '%' ( (lv_name_1_0= RULE_ID ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1980:1: (otherlv_0= '%' ( (lv_name_1_0= RULE_ID ) ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1980:3: otherlv_0= '%' ( (lv_name_1_0= RULE_ID ) )
             {
-            otherlv_0=(Token)match(input,52,FOLLOW_52_in_ruleParameter4083); 
+            otherlv_0=(Token)match(input,53,FOLLOW_53_in_ruleParameter4248); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getParameterAccess().getPercentSignKeyword_0());
                 
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1918:1: ( (lv_name_1_0= RULE_ID ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1919:1: (lv_name_1_0= RULE_ID )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1984:1: ( (lv_name_1_0= RULE_ID ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1985:1: (lv_name_1_0= RULE_ID )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1919:1: (lv_name_1_0= RULE_ID )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1920:3: lv_name_1_0= RULE_ID
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1985:1: (lv_name_1_0= RULE_ID )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1986:3: lv_name_1_0= RULE_ID
             {
-            lv_name_1_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleParameter4100); 
+            lv_name_1_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleParameter4265); 
 
             			newLeafNode(lv_name_1_0, grammarAccess.getParameterAccess().getNameIDTerminalRuleCall_1_0()); 
             		
@@ -4583,7 +4779,7 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRulePackage"
-    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1944:1: entryRulePackage returns [EObject current=null] : iv_rulePackage= rulePackage EOF ;
+    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2010:1: entryRulePackage returns [EObject current=null] : iv_rulePackage= rulePackage EOF ;
     public final EObject entryRulePackage() throws RecognitionException {
         EObject current = null;
 
@@ -4591,17 +4787,17 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1945:2: (iv_rulePackage= rulePackage EOF )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1946:2: iv_rulePackage= rulePackage EOF
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2011:2: (iv_rulePackage= rulePackage EOF )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2012:2: iv_rulePackage= rulePackage EOF
             {
              newCompositeNode(grammarAccess.getPackageRule()); 
-            pushFollow(FOLLOW_rulePackage_in_entryRulePackage4141);
+            pushFollow(FOLLOW_rulePackage_in_entryRulePackage4306);
             iv_rulePackage=rulePackage();
 
             state._fsp--;
 
              current =iv_rulePackage; 
-            match(input,EOF,FOLLOW_EOF_in_entryRulePackage4151); 
+            match(input,EOF,FOLLOW_EOF_in_entryRulePackage4316); 
 
             }
 
@@ -4619,7 +4815,7 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "rulePackage"
-    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1953:1: rulePackage returns [EObject current=null] : ( () ( (lv_name_1_0= RULE_ID ) ) ) ;
+    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2019:1: rulePackage returns [EObject current=null] : ( () ( (lv_name_1_0= RULE_ID ) ) ) ;
     public final EObject rulePackage() throws RecognitionException {
         EObject current = null;
 
@@ -4628,14 +4824,14 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1956:28: ( ( () ( (lv_name_1_0= RULE_ID ) ) ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1957:1: ( () ( (lv_name_1_0= RULE_ID ) ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2022:28: ( ( () ( (lv_name_1_0= RULE_ID ) ) ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2023:1: ( () ( (lv_name_1_0= RULE_ID ) ) )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1957:1: ( () ( (lv_name_1_0= RULE_ID ) ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1957:2: () ( (lv_name_1_0= RULE_ID ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2023:1: ( () ( (lv_name_1_0= RULE_ID ) ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2023:2: () ( (lv_name_1_0= RULE_ID ) )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1957:2: ()
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1958:5: 
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2023:2: ()
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2024:5: 
             {
 
                     current = forceCreateModelElement(
@@ -4645,13 +4841,13 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1963:2: ( (lv_name_1_0= RULE_ID ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1964:1: (lv_name_1_0= RULE_ID )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2029:2: ( (lv_name_1_0= RULE_ID ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2030:1: (lv_name_1_0= RULE_ID )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1964:1: (lv_name_1_0= RULE_ID )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1965:3: lv_name_1_0= RULE_ID
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2030:1: (lv_name_1_0= RULE_ID )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2031:3: lv_name_1_0= RULE_ID
             {
-            lv_name_1_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_rulePackage4202); 
+            lv_name_1_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_rulePackage4367); 
 
             			newLeafNode(lv_name_1_0, grammarAccess.getPackageAccess().getNameIDTerminalRuleCall_1_0()); 
             		
@@ -4692,7 +4888,7 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleClass"
-    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1989:1: entryRuleClass returns [EObject current=null] : iv_ruleClass= ruleClass EOF ;
+    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2055:1: entryRuleClass returns [EObject current=null] : iv_ruleClass= ruleClass EOF ;
     public final EObject entryRuleClass() throws RecognitionException {
         EObject current = null;
 
@@ -4700,17 +4896,17 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1990:2: (iv_ruleClass= ruleClass EOF )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1991:2: iv_ruleClass= ruleClass EOF
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2056:2: (iv_ruleClass= ruleClass EOF )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2057:2: iv_ruleClass= ruleClass EOF
             {
              newCompositeNode(grammarAccess.getClassRule()); 
-            pushFollow(FOLLOW_ruleClass_in_entryRuleClass4243);
+            pushFollow(FOLLOW_ruleClass_in_entryRuleClass4408);
             iv_ruleClass=ruleClass();
 
             state._fsp--;
 
              current =iv_ruleClass; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleClass4253); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleClass4418); 
 
             }
 
@@ -4728,7 +4924,7 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleClass"
-    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:1998:1: ruleClass returns [EObject current=null] : ( () ( (lv_name_1_0= RULE_ID ) ) ) ;
+    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2064:1: ruleClass returns [EObject current=null] : ( () ( (lv_name_1_0= RULE_ID ) ) ) ;
     public final EObject ruleClass() throws RecognitionException {
         EObject current = null;
 
@@ -4737,14 +4933,14 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2001:28: ( ( () ( (lv_name_1_0= RULE_ID ) ) ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2002:1: ( () ( (lv_name_1_0= RULE_ID ) ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2067:28: ( ( () ( (lv_name_1_0= RULE_ID ) ) ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2068:1: ( () ( (lv_name_1_0= RULE_ID ) ) )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2002:1: ( () ( (lv_name_1_0= RULE_ID ) ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2002:2: () ( (lv_name_1_0= RULE_ID ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2068:1: ( () ( (lv_name_1_0= RULE_ID ) ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2068:2: () ( (lv_name_1_0= RULE_ID ) )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2002:2: ()
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2003:5: 
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2068:2: ()
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2069:5: 
             {
 
                     current = forceCreateModelElement(
@@ -4754,13 +4950,13 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2008:2: ( (lv_name_1_0= RULE_ID ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2009:1: (lv_name_1_0= RULE_ID )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2074:2: ( (lv_name_1_0= RULE_ID ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2075:1: (lv_name_1_0= RULE_ID )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2009:1: (lv_name_1_0= RULE_ID )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2010:3: lv_name_1_0= RULE_ID
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2075:1: (lv_name_1_0= RULE_ID )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2076:3: lv_name_1_0= RULE_ID
             {
-            lv_name_1_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleClass4304); 
+            lv_name_1_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleClass4469); 
 
             			newLeafNode(lv_name_1_0, grammarAccess.getClassAccess().getNameIDTerminalRuleCall_1_0()); 
             		
@@ -4801,7 +4997,7 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleAttribute"
-    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2034:1: entryRuleAttribute returns [EObject current=null] : iv_ruleAttribute= ruleAttribute EOF ;
+    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2100:1: entryRuleAttribute returns [EObject current=null] : iv_ruleAttribute= ruleAttribute EOF ;
     public final EObject entryRuleAttribute() throws RecognitionException {
         EObject current = null;
 
@@ -4809,17 +5005,17 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2035:2: (iv_ruleAttribute= ruleAttribute EOF )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2036:2: iv_ruleAttribute= ruleAttribute EOF
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2101:2: (iv_ruleAttribute= ruleAttribute EOF )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2102:2: iv_ruleAttribute= ruleAttribute EOF
             {
              newCompositeNode(grammarAccess.getAttributeRule()); 
-            pushFollow(FOLLOW_ruleAttribute_in_entryRuleAttribute4345);
+            pushFollow(FOLLOW_ruleAttribute_in_entryRuleAttribute4510);
             iv_ruleAttribute=ruleAttribute();
 
             state._fsp--;
 
              current =iv_ruleAttribute; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleAttribute4355); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleAttribute4520); 
 
             }
 
@@ -4837,7 +5033,7 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleAttribute"
-    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2043:1: ruleAttribute returns [EObject current=null] : ( () ( (lv_name_1_0= RULE_ID ) ) ) ;
+    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2109:1: ruleAttribute returns [EObject current=null] : ( () ( (lv_name_1_0= RULE_ID ) ) ) ;
     public final EObject ruleAttribute() throws RecognitionException {
         EObject current = null;
 
@@ -4846,14 +5042,14 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2046:28: ( ( () ( (lv_name_1_0= RULE_ID ) ) ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2047:1: ( () ( (lv_name_1_0= RULE_ID ) ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2112:28: ( ( () ( (lv_name_1_0= RULE_ID ) ) ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2113:1: ( () ( (lv_name_1_0= RULE_ID ) ) )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2047:1: ( () ( (lv_name_1_0= RULE_ID ) ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2047:2: () ( (lv_name_1_0= RULE_ID ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2113:1: ( () ( (lv_name_1_0= RULE_ID ) ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2113:2: () ( (lv_name_1_0= RULE_ID ) )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2047:2: ()
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2048:5: 
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2113:2: ()
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2114:5: 
             {
 
                     current = forceCreateModelElement(
@@ -4863,13 +5059,13 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2053:2: ( (lv_name_1_0= RULE_ID ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2054:1: (lv_name_1_0= RULE_ID )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2119:2: ( (lv_name_1_0= RULE_ID ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2120:1: (lv_name_1_0= RULE_ID )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2054:1: (lv_name_1_0= RULE_ID )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2055:3: lv_name_1_0= RULE_ID
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2120:1: (lv_name_1_0= RULE_ID )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2121:3: lv_name_1_0= RULE_ID
             {
-            lv_name_1_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleAttribute4406); 
+            lv_name_1_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleAttribute4571); 
 
             			newLeafNode(lv_name_1_0, grammarAccess.getAttributeAccess().getNameIDTerminalRuleCall_1_0()); 
             		
@@ -4910,7 +5106,7 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleReference"
-    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2079:1: entryRuleReference returns [EObject current=null] : iv_ruleReference= ruleReference EOF ;
+    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2145:1: entryRuleReference returns [EObject current=null] : iv_ruleReference= ruleReference EOF ;
     public final EObject entryRuleReference() throws RecognitionException {
         EObject current = null;
 
@@ -4918,17 +5114,17 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2080:2: (iv_ruleReference= ruleReference EOF )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2081:2: iv_ruleReference= ruleReference EOF
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2146:2: (iv_ruleReference= ruleReference EOF )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2147:2: iv_ruleReference= ruleReference EOF
             {
              newCompositeNode(grammarAccess.getReferenceRule()); 
-            pushFollow(FOLLOW_ruleReference_in_entryRuleReference4447);
+            pushFollow(FOLLOW_ruleReference_in_entryRuleReference4612);
             iv_ruleReference=ruleReference();
 
             state._fsp--;
 
              current =iv_ruleReference; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleReference4457); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleReference4622); 
 
             }
 
@@ -4946,7 +5142,7 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleReference"
-    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2088:1: ruleReference returns [EObject current=null] : ( () ( (lv_name_1_0= RULE_ID ) ) ) ;
+    // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2154:1: ruleReference returns [EObject current=null] : ( () ( (lv_name_1_0= RULE_ID ) ) ) ;
     public final EObject ruleReference() throws RecognitionException {
         EObject current = null;
 
@@ -4955,14 +5151,14 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2091:28: ( ( () ( (lv_name_1_0= RULE_ID ) ) ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2092:1: ( () ( (lv_name_1_0= RULE_ID ) ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2157:28: ( ( () ( (lv_name_1_0= RULE_ID ) ) ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2158:1: ( () ( (lv_name_1_0= RULE_ID ) ) )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2092:1: ( () ( (lv_name_1_0= RULE_ID ) ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2092:2: () ( (lv_name_1_0= RULE_ID ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2158:1: ( () ( (lv_name_1_0= RULE_ID ) ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2158:2: () ( (lv_name_1_0= RULE_ID ) )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2092:2: ()
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2093:5: 
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2158:2: ()
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2159:5: 
             {
 
                     current = forceCreateModelElement(
@@ -4972,13 +5168,13 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2098:2: ( (lv_name_1_0= RULE_ID ) )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2099:1: (lv_name_1_0= RULE_ID )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2164:2: ( (lv_name_1_0= RULE_ID ) )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2165:1: (lv_name_1_0= RULE_ID )
             {
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2099:1: (lv_name_1_0= RULE_ID )
-            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2100:3: lv_name_1_0= RULE_ID
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2165:1: (lv_name_1_0= RULE_ID )
+            // ../it.univaq.coevolution.emfmigrate/src-gen/it/univaq/coevolution/emfmigrate/parser/antlr/internal/InternalEmig.g:2166:3: lv_name_1_0= RULE_ID
             {
-            lv_name_1_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleReference4508); 
+            lv_name_1_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleReference4673); 
 
             			newLeafNode(lv_name_1_0, grammarAccess.getReferenceAccess().getNameIDTerminalRuleCall_1_0()); 
             		
@@ -5030,191 +5226,198 @@ public class InternalEmigParser extends AbstractInternalAntlrParser {
     public static final BitSet FOLLOW_EOF_in_entryRuleMigrationLibrary204 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_11_in_ruleMigrationLibrary241 = new BitSet(new long[]{0x0000000000000010L});
     public static final BitSet FOLLOW_RULE_ID_in_ruleMigrationLibrary258 = new BitSet(new long[]{0x0000000000001000L});
-    public static final BitSet FOLLOW_12_in_ruleMigrationLibrary275 = new BitSet(new long[]{0x0000000000802000L});
-    public static final BitSet FOLLOW_ruleRule_in_ruleMigrationLibrary296 = new BitSet(new long[]{0x0000000000802000L});
+    public static final BitSet FOLLOW_12_in_ruleMigrationLibrary275 = new BitSet(new long[]{0x0000000001002000L});
+    public static final BitSet FOLLOW_ruleRule_in_ruleMigrationLibrary296 = new BitSet(new long[]{0x0000000001002000L});
     public static final BitSet FOLLOW_13_in_ruleMigrationLibrary309 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleMigrationProgram_in_entryRuleMigrationProgram345 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleMigrationProgram355 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_14_in_ruleMigrationProgram393 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_RULE_STRING_in_ruleMigrationProgram410 = new BitSet(new long[]{0x0000000000008000L});
-    public static final BitSet FOLLOW_15_in_ruleMigrationProgram427 = new BitSet(new long[]{0x0000000000014000L});
-    public static final BitSet FOLLOW_16_in_ruleMigrationProgram447 = new BitSet(new long[]{0x0000000000700000L});
-    public static final BitSet FOLLOW_ruleArtifact_in_ruleMigrationProgram481 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_RULE_STRING_in_ruleMigrationProgram498 = new BitSet(new long[]{0x0000000000020000L});
-    public static final BitSet FOLLOW_17_in_ruleMigrationProgram515 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleMigrationProgram536 = new BitSet(new long[]{0x0000000000040000L});
-    public static final BitSet FOLLOW_18_in_ruleMigrationProgram549 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleMigrationProgram569 = new BitSet(new long[]{0x0000000000080000L});
-    public static final BitSet FOLLOW_19_in_ruleMigrationProgram583 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_RULE_STRING_in_ruleMigrationProgram600 = new BitSet(new long[]{0x0000000000001000L});
-    public static final BitSet FOLLOW_12_in_ruleMigrationProgram617 = new BitSet(new long[]{0x0000000000802000L});
-    public static final BitSet FOLLOW_ruleRule_in_ruleMigrationProgram638 = new BitSet(new long[]{0x0000000000802000L});
-    public static final BitSet FOLLOW_13_in_ruleMigrationProgram651 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleArtifact_in_entryRuleArtifact687 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleArtifact697 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_20_in_ruleArtifact741 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_21_in_ruleArtifact770 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_22_in_ruleArtifact799 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleRule_in_entryRuleRule850 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleRule860 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_23_in_ruleRule897 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleRule914 = new BitSet(new long[]{0x0000000001000000L});
-    public static final BitSet FOLLOW_24_in_ruleRule931 = new BitSet(new long[]{0x0000044404000000L});
-    public static final BitSet FOLLOW_ruleOpDef_in_ruleRule952 = new BitSet(new long[]{0x0000000002000000L});
-    public static final BitSet FOLLOW_25_in_ruleRule964 = new BitSet(new long[]{0x0000000000001000L});
-    public static final BitSet FOLLOW_12_in_ruleRule976 = new BitSet(new long[]{0x0000000000002010L});
-    public static final BitSet FOLLOW_ruleRewritingRule_in_ruleRule997 = new BitSet(new long[]{0x0000000000002010L});
-    public static final BitSet FOLLOW_13_in_ruleRule1010 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleOpDef_in_entryRuleOpDef1046 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleOpDef1056 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleEPackageOpDef_in_ruleOpDef1103 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleEClassOpDef_in_ruleOpDef1130 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleEAttributeOpDef_in_ruleOpDef1157 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleEReferenceOpDef_in_ruleOpDef1184 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleEPackageOpDef_in_entryRuleEPackageOpDef1219 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleEPackageOpDef1229 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_26_in_ruleEPackageOpDef1267 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rulePackage_in_ruleEPackageOpDef1288 = new BitSet(new long[]{0x0000000008000000L});
-    public static final BitSet FOLLOW_27_in_ruleEPackageOpDef1300 = new BitSet(new long[]{0x0000000070000000L});
-    public static final BitSet FOLLOW_28_in_ruleEPackageOpDef1321 = new BitSet(new long[]{0x0000000080000000L});
-    public static final BitSet FOLLOW_29_in_ruleEPackageOpDef1358 = new BitSet(new long[]{0x0000000080000000L});
-    public static final BitSet FOLLOW_30_in_ruleEPackageOpDef1395 = new BitSet(new long[]{0x0000000080000000L});
-    public static final BitSet FOLLOW_31_in_ruleEPackageOpDef1421 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rulePackage_in_ruleEPackageOpDef1442 = new BitSet(new long[]{0x0000000000020000L});
-    public static final BitSet FOLLOW_17_in_ruleEPackageOpDef1454 = new BitSet(new long[]{0x0000000004000000L});
-    public static final BitSet FOLLOW_26_in_ruleEPackageOpDef1466 = new BitSet(new long[]{0x0000000100000000L});
-    public static final BitSet FOLLOW_32_in_ruleEPackageOpDef1478 = new BitSet(new long[]{0x0000000200000000L});
-    public static final BitSet FOLLOW_33_in_ruleEPackageOpDef1490 = new BitSet(new long[]{0x0000000000001000L});
-    public static final BitSet FOLLOW_12_in_ruleEPackageOpDef1502 = new BitSet(new long[]{0x0000400400002000L});
-    public static final BitSet FOLLOW_rulesetterDef_in_ruleEPackageOpDef1524 = new BitSet(new long[]{0x0000400400002000L});
-    public static final BitSet FOLLOW_ruleEClassOpDef_in_ruleEPackageOpDef1551 = new BitSet(new long[]{0x0000400400002000L});
-    public static final BitSet FOLLOW_13_in_ruleEPackageOpDef1565 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleEClassOpDef_in_entryRuleEClassOpDef1602 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleEClassOpDef1612 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_34_in_ruleEClassOpDef1650 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_ruleClass_in_ruleEClassOpDef1671 = new BitSet(new long[]{0x0000000008000000L});
-    public static final BitSet FOLLOW_27_in_ruleEClassOpDef1683 = new BitSet(new long[]{0x0000003800000000L});
-    public static final BitSet FOLLOW_35_in_ruleEClassOpDef1704 = new BitSet(new long[]{0x0000000080000000L});
-    public static final BitSet FOLLOW_36_in_ruleEClassOpDef1741 = new BitSet(new long[]{0x0000000080000000L});
-    public static final BitSet FOLLOW_37_in_ruleEClassOpDef1778 = new BitSet(new long[]{0x0000000080000000L});
-    public static final BitSet FOLLOW_31_in_ruleEClassOpDef1804 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_ruleClass_in_ruleEClassOpDef1825 = new BitSet(new long[]{0x0000000000020000L});
-    public static final BitSet FOLLOW_17_in_ruleEClassOpDef1837 = new BitSet(new long[]{0x0000000400000000L});
-    public static final BitSet FOLLOW_34_in_ruleEClassOpDef1849 = new BitSet(new long[]{0x0000000100000000L});
-    public static final BitSet FOLLOW_32_in_ruleEClassOpDef1861 = new BitSet(new long[]{0x0000000200000000L});
-    public static final BitSet FOLLOW_33_in_ruleEClassOpDef1873 = new BitSet(new long[]{0x0000000000001000L});
-    public static final BitSet FOLLOW_12_in_ruleEClassOpDef1886 = new BitSet(new long[]{0x0000444404002000L});
-    public static final BitSet FOLLOW_rulesetterDef_in_ruleEClassOpDef1908 = new BitSet(new long[]{0x0000444404002000L});
-    public static final BitSet FOLLOW_ruleEAttributeOpDef_in_ruleEClassOpDef1935 = new BitSet(new long[]{0x0000444404002000L});
-    public static final BitSet FOLLOW_ruleEReferenceOpDef_in_ruleEClassOpDef1962 = new BitSet(new long[]{0x0000444404002000L});
-    public static final BitSet FOLLOW_13_in_ruleEClassOpDef1976 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleEAttributeOpDef_in_entryRuleEAttributeOpDef2014 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleEAttributeOpDef2024 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_38_in_ruleEAttributeOpDef2062 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_ruleAttribute_in_ruleEAttributeOpDef2083 = new BitSet(new long[]{0x0000000008000000L});
-    public static final BitSet FOLLOW_27_in_ruleEAttributeOpDef2095 = new BitSet(new long[]{0x0000038000000000L});
-    public static final BitSet FOLLOW_39_in_ruleEAttributeOpDef2117 = new BitSet(new long[]{0x0000000080000000L});
-    public static final BitSet FOLLOW_40_in_ruleEAttributeOpDef2154 = new BitSet(new long[]{0x0000000080000000L});
-    public static final BitSet FOLLOW_41_in_ruleEAttributeOpDef2191 = new BitSet(new long[]{0x0000000080000000L});
-    public static final BitSet FOLLOW_31_in_ruleEAttributeOpDef2217 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_ruleAttribute_in_ruleEAttributeOpDef2238 = new BitSet(new long[]{0x0000000000020000L});
-    public static final BitSet FOLLOW_17_in_ruleEAttributeOpDef2250 = new BitSet(new long[]{0x0000004000000000L});
-    public static final BitSet FOLLOW_38_in_ruleEAttributeOpDef2262 = new BitSet(new long[]{0x0000000100000000L});
-    public static final BitSet FOLLOW_32_in_ruleEAttributeOpDef2275 = new BitSet(new long[]{0x0000000200000000L});
-    public static final BitSet FOLLOW_33_in_ruleEAttributeOpDef2287 = new BitSet(new long[]{0x0000000000009000L});
-    public static final BitSet FOLLOW_12_in_ruleEAttributeOpDef2301 = new BitSet(new long[]{0x0000400000002000L});
-    public static final BitSet FOLLOW_rulesetterDef_in_ruleEAttributeOpDef2322 = new BitSet(new long[]{0x0000400000002000L});
-    public static final BitSet FOLLOW_13_in_ruleEAttributeOpDef2335 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_15_in_ruleEAttributeOpDef2354 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleEReferenceOpDef_in_entryRuleEReferenceOpDef2392 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleEReferenceOpDef2402 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_42_in_ruleEReferenceOpDef2440 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_ruleReference_in_ruleEReferenceOpDef2461 = new BitSet(new long[]{0x0000000008000000L});
-    public static final BitSet FOLLOW_27_in_ruleEReferenceOpDef2473 = new BitSet(new long[]{0x0000380000000000L});
-    public static final BitSet FOLLOW_43_in_ruleEReferenceOpDef2495 = new BitSet(new long[]{0x0000000080000000L});
-    public static final BitSet FOLLOW_44_in_ruleEReferenceOpDef2532 = new BitSet(new long[]{0x0000000080000000L});
-    public static final BitSet FOLLOW_45_in_ruleEReferenceOpDef2569 = new BitSet(new long[]{0x0000000080000000L});
-    public static final BitSet FOLLOW_31_in_ruleEReferenceOpDef2595 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_ruleReference_in_ruleEReferenceOpDef2616 = new BitSet(new long[]{0x0000000000020000L});
-    public static final BitSet FOLLOW_17_in_ruleEReferenceOpDef2628 = new BitSet(new long[]{0x0000040000000000L});
-    public static final BitSet FOLLOW_42_in_ruleEReferenceOpDef2640 = new BitSet(new long[]{0x0000000100000000L});
-    public static final BitSet FOLLOW_32_in_ruleEReferenceOpDef2653 = new BitSet(new long[]{0x0000000200000000L});
-    public static final BitSet FOLLOW_33_in_ruleEReferenceOpDef2665 = new BitSet(new long[]{0x0000000000001000L});
-    public static final BitSet FOLLOW_12_in_ruleEReferenceOpDef2678 = new BitSet(new long[]{0x0000400000002000L});
-    public static final BitSet FOLLOW_rulesetterDef_in_ruleEReferenceOpDef2699 = new BitSet(new long[]{0x0000400000002000L});
-    public static final BitSet FOLLOW_13_in_ruleEReferenceOpDef2712 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rulesetterDef_in_entryRulesetterDef2750 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRulesetterDef2760 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_46_in_rulesetterDef2797 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_rulesetterDef2817 = new BitSet(new long[]{0x0000000008000000L});
-    public static final BitSet FOLLOW_27_in_rulesetterDef2835 = new BitSet(new long[]{0x0010000000000000L});
-    public static final BitSet FOLLOW_ruleParameter_in_rulesetterDef2869 = new BitSet(new long[]{0x0000000000048000L});
-    public static final BitSet FOLLOW_18_in_rulesetterDef2882 = new BitSet(new long[]{0x0010000000000000L});
-    public static final BitSet FOLLOW_ruleParameter_in_rulesetterDef2903 = new BitSet(new long[]{0x0000000000048000L});
-    public static final BitSet FOLLOW_15_in_rulesetterDef2917 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleRewritingRule_in_entryRuleRewritingRule2953 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleRewritingRule2963 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleMigratorSX_in_ruleRewritingRule3010 = new BitSet(new long[]{0x0000800000000000L});
-    public static final BitSet FOLLOW_47_in_ruleRewritingRule3022 = new BitSet(new long[]{0x0002000000000010L});
-    public static final BitSet FOLLOW_ruleMigratorDX_in_ruleRewritingRule3043 = new BitSet(new long[]{0x0001000000000002L});
-    public static final BitSet FOLLOW_48_in_ruleRewritingRule3057 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_ruleMigratorSX_in_ruleRewritingRule3078 = new BitSet(new long[]{0x0000800000000000L});
-    public static final BitSet FOLLOW_47_in_ruleRewritingRule3090 = new BitSet(new long[]{0x0002000000000010L});
-    public static final BitSet FOLLOW_ruleMigratorDX_in_ruleRewritingRule3111 = new BitSet(new long[]{0x0001000000000002L});
-    public static final BitSet FOLLOW_ruleMigratorSX_in_entryRuleMigratorSX3151 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleMigratorSX3161 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleMigratorSX3212 = new BitSet(new long[]{0x0000000000020000L});
-    public static final BitSet FOLLOW_17_in_ruleMigratorSX3229 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleMigratorSX3249 = new BitSet(new long[]{0x0000000200000000L});
-    public static final BitSet FOLLOW_33_in_ruleMigratorSX3261 = new BitSet(new long[]{0x0000000001000000L});
-    public static final BitSet FOLLOW_24_in_ruleMigratorSX3273 = new BitSet(new long[]{0x0004000000000000L});
-    public static final BitSet FOLLOW_ruleFilterMigrator_in_ruleMigratorSX3294 = new BitSet(new long[]{0x0001000002000000L});
-    public static final BitSet FOLLOW_48_in_ruleMigratorSX3307 = new BitSet(new long[]{0x0004000000000000L});
-    public static final BitSet FOLLOW_ruleFilterMigrator_in_ruleMigratorSX3328 = new BitSet(new long[]{0x0001000002000000L});
-    public static final BitSet FOLLOW_25_in_ruleMigratorSX3342 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleMigratorDX_in_entryRuleMigratorDX3378 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleMigratorDX3388 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleMigratorDX3441 = new BitSet(new long[]{0x0000000000020000L});
-    public static final BitSet FOLLOW_17_in_ruleMigratorDX3458 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleMigratorDX3478 = new BitSet(new long[]{0x0000000001000000L});
-    public static final BitSet FOLLOW_24_in_ruleMigratorDX3490 = new BitSet(new long[]{0x0004000000000000L});
-    public static final BitSet FOLLOW_ruleFilterMigrator_in_ruleMigratorDX3511 = new BitSet(new long[]{0x0001000002000000L});
-    public static final BitSet FOLLOW_48_in_ruleMigratorDX3524 = new BitSet(new long[]{0x0004000000000000L});
-    public static final BitSet FOLLOW_ruleFilterMigrator_in_ruleMigratorDX3545 = new BitSet(new long[]{0x0001000002000000L});
-    public static final BitSet FOLLOW_25_in_ruleMigratorDX3559 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_49_in_ruleMigratorDX3579 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleFilterMigrator_in_entryRuleFilterMigrator3615 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleFilterMigrator3625 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleDotNavigationObjSX_in_ruleFilterMigrator3671 = new BitSet(new long[]{0x0000000008000000L});
-    public static final BitSet FOLLOW_27_in_ruleFilterMigrator3689 = new BitSet(new long[]{0x0004000000000002L});
-    public static final BitSet FOLLOW_ruleDotNavigationObjDX_in_ruleFilterMigrator3723 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleDotNavigationObjSX_in_entryRuleDotNavigationObjSX3760 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleDotNavigationObjSX3770 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_50_in_ruleDotNavigationObjSX3807 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleDotNavigationObjSX3827 = new BitSet(new long[]{0x0008000000000002L});
-    public static final BitSet FOLLOW_51_in_ruleDotNavigationObjSX3840 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleDotNavigationObjSX3860 = new BitSet(new long[]{0x0008000000000002L});
-    public static final BitSet FOLLOW_ruleDotNavigationObjDX_in_entryRuleDotNavigationObjDX3898 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleDotNavigationObjDX3908 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_50_in_ruleDotNavigationObjDX3945 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleDotNavigationObjDX3965 = new BitSet(new long[]{0x0008000000000002L});
-    public static final BitSet FOLLOW_51_in_ruleDotNavigationObjDX3978 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleDotNavigationObjDX3998 = new BitSet(new long[]{0x0008000000000002L});
-    public static final BitSet FOLLOW_ruleParameter_in_entryRuleParameter4036 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleParameter4046 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_52_in_ruleParameter4083 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleParameter4100 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rulePackage_in_entryRulePackage4141 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRulePackage4151 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rulePackage4202 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleClass_in_entryRuleClass4243 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleClass4253 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleClass4304 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleAttribute_in_entryRuleAttribute4345 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleAttribute4355 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleAttribute4406 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleReference_in_entryRuleReference4447 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleReference4457 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleReference4508 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleMigrationProgram_in_entryRuleMigrationProgram347 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleMigrationProgram357 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_14_in_ruleMigrationProgram394 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleMigrationProgram411 = new BitSet(new long[]{0x0000000000008000L});
+    public static final BitSet FOLLOW_15_in_ruleMigrationProgram428 = new BitSet(new long[]{0x0000000000030000L});
+    public static final BitSet FOLLOW_16_in_ruleMigrationProgram441 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_RULE_STRING_in_ruleMigrationProgram458 = new BitSet(new long[]{0x0000000000008000L});
+    public static final BitSet FOLLOW_15_in_ruleMigrationProgram475 = new BitSet(new long[]{0x0000000000030000L});
+    public static final BitSet FOLLOW_17_in_ruleMigrationProgram495 = new BitSet(new long[]{0x0000000000E00000L});
+    public static final BitSet FOLLOW_ruleArtifact_in_ruleMigrationProgram529 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_RULE_STRING_in_ruleMigrationProgram546 = new BitSet(new long[]{0x0000000000040000L});
+    public static final BitSet FOLLOW_18_in_ruleMigrationProgram563 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleMigrationProgram584 = new BitSet(new long[]{0x0000000000080000L});
+    public static final BitSet FOLLOW_19_in_ruleMigrationProgram597 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleMigrationProgram617 = new BitSet(new long[]{0x0000000000100000L});
+    public static final BitSet FOLLOW_20_in_ruleMigrationProgram631 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_RULE_STRING_in_ruleMigrationProgram648 = new BitSet(new long[]{0x0000000000001000L});
+    public static final BitSet FOLLOW_12_in_ruleMigrationProgram665 = new BitSet(new long[]{0x0000000001002000L});
+    public static final BitSet FOLLOW_ruleRule_in_ruleMigrationProgram686 = new BitSet(new long[]{0x0000000001002000L});
+    public static final BitSet FOLLOW_13_in_ruleMigrationProgram699 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleArtifact_in_entryRuleArtifact735 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleArtifact745 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_21_in_ruleArtifact789 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_22_in_ruleArtifact818 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_23_in_ruleArtifact847 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleRule_in_entryRuleRule898 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleRule908 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_24_in_ruleRule945 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleRule962 = new BitSet(new long[]{0x0000000002000000L});
+    public static final BitSet FOLLOW_25_in_ruleRule979 = new BitSet(new long[]{0x0000088808000000L});
+    public static final BitSet FOLLOW_ruleOpDef_in_ruleRule1000 = new BitSet(new long[]{0x0000000004000000L});
+    public static final BitSet FOLLOW_26_in_ruleRule1012 = new BitSet(new long[]{0x0000000000001000L});
+    public static final BitSet FOLLOW_12_in_ruleRule1024 = new BitSet(new long[]{0x0000000000002010L});
+    public static final BitSet FOLLOW_ruleRewritingRule_in_ruleRule1045 = new BitSet(new long[]{0x0000000000002010L});
+    public static final BitSet FOLLOW_13_in_ruleRule1058 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleOpDef_in_entryRuleOpDef1094 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleOpDef1104 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleEPackageOpDef_in_ruleOpDef1151 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleEClassOpDef_in_ruleOpDef1178 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleEAttributeOpDef_in_ruleOpDef1205 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleEReferenceOpDef_in_ruleOpDef1232 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleEPackageOpDef_in_entryRuleEPackageOpDef1267 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleEPackageOpDef1277 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_27_in_ruleEPackageOpDef1315 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rulePackage_in_ruleEPackageOpDef1336 = new BitSet(new long[]{0x0000000010000000L});
+    public static final BitSet FOLLOW_28_in_ruleEPackageOpDef1348 = new BitSet(new long[]{0x00000000E0000000L});
+    public static final BitSet FOLLOW_29_in_ruleEPackageOpDef1369 = new BitSet(new long[]{0x0000000100000000L});
+    public static final BitSet FOLLOW_30_in_ruleEPackageOpDef1406 = new BitSet(new long[]{0x0000000100000000L});
+    public static final BitSet FOLLOW_31_in_ruleEPackageOpDef1443 = new BitSet(new long[]{0x0000000100000000L});
+    public static final BitSet FOLLOW_32_in_ruleEPackageOpDef1469 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rulePackage_in_ruleEPackageOpDef1490 = new BitSet(new long[]{0x0000000000040000L});
+    public static final BitSet FOLLOW_18_in_ruleEPackageOpDef1502 = new BitSet(new long[]{0x0000000008000000L});
+    public static final BitSet FOLLOW_27_in_ruleEPackageOpDef1514 = new BitSet(new long[]{0x0000000200000000L});
+    public static final BitSet FOLLOW_33_in_ruleEPackageOpDef1526 = new BitSet(new long[]{0x0000000400000000L});
+    public static final BitSet FOLLOW_34_in_ruleEPackageOpDef1538 = new BitSet(new long[]{0x0000000000001000L});
+    public static final BitSet FOLLOW_12_in_ruleEPackageOpDef1550 = new BitSet(new long[]{0x0000800800002000L});
+    public static final BitSet FOLLOW_rulesetterDef_in_ruleEPackageOpDef1572 = new BitSet(new long[]{0x0000800800002000L});
+    public static final BitSet FOLLOW_ruleEClassOpDef_in_ruleEPackageOpDef1599 = new BitSet(new long[]{0x0000800800002000L});
+    public static final BitSet FOLLOW_13_in_ruleEPackageOpDef1613 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleEClassOpDef_in_entryRuleEClassOpDef1650 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleEClassOpDef1660 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_35_in_ruleEClassOpDef1698 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_ruleClass_in_ruleEClassOpDef1719 = new BitSet(new long[]{0x0000000010000000L});
+    public static final BitSet FOLLOW_28_in_ruleEClassOpDef1731 = new BitSet(new long[]{0x0000007000000000L});
+    public static final BitSet FOLLOW_36_in_ruleEClassOpDef1752 = new BitSet(new long[]{0x0000000100000000L});
+    public static final BitSet FOLLOW_37_in_ruleEClassOpDef1789 = new BitSet(new long[]{0x0000000100000000L});
+    public static final BitSet FOLLOW_38_in_ruleEClassOpDef1826 = new BitSet(new long[]{0x0000000100000000L});
+    public static final BitSet FOLLOW_32_in_ruleEClassOpDef1852 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_ruleClass_in_ruleEClassOpDef1873 = new BitSet(new long[]{0x0000000000040000L});
+    public static final BitSet FOLLOW_18_in_ruleEClassOpDef1885 = new BitSet(new long[]{0x0000000800000000L});
+    public static final BitSet FOLLOW_35_in_ruleEClassOpDef1897 = new BitSet(new long[]{0x0000000200000000L});
+    public static final BitSet FOLLOW_33_in_ruleEClassOpDef1909 = new BitSet(new long[]{0x0000000400000000L});
+    public static final BitSet FOLLOW_34_in_ruleEClassOpDef1921 = new BitSet(new long[]{0x0000000000001000L});
+    public static final BitSet FOLLOW_12_in_ruleEClassOpDef1934 = new BitSet(new long[]{0x0000888808002000L});
+    public static final BitSet FOLLOW_rulesetterDef_in_ruleEClassOpDef1956 = new BitSet(new long[]{0x0000888808002000L});
+    public static final BitSet FOLLOW_ruleEAttributeOpDef_in_ruleEClassOpDef1983 = new BitSet(new long[]{0x0000888808002000L});
+    public static final BitSet FOLLOW_ruleEReferenceOpDef_in_ruleEClassOpDef2010 = new BitSet(new long[]{0x0000888808002000L});
+    public static final BitSet FOLLOW_13_in_ruleEClassOpDef2024 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleEAttributeOpDef_in_entryRuleEAttributeOpDef2062 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleEAttributeOpDef2072 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_39_in_ruleEAttributeOpDef2110 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_ruleAttribute_in_ruleEAttributeOpDef2131 = new BitSet(new long[]{0x0000000010000000L});
+    public static final BitSet FOLLOW_28_in_ruleEAttributeOpDef2143 = new BitSet(new long[]{0x0000070000000000L});
+    public static final BitSet FOLLOW_40_in_ruleEAttributeOpDef2165 = new BitSet(new long[]{0x0000000100000000L});
+    public static final BitSet FOLLOW_41_in_ruleEAttributeOpDef2202 = new BitSet(new long[]{0x0000000100000000L});
+    public static final BitSet FOLLOW_42_in_ruleEAttributeOpDef2239 = new BitSet(new long[]{0x0000000100000000L});
+    public static final BitSet FOLLOW_32_in_ruleEAttributeOpDef2265 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_ruleAttribute_in_ruleEAttributeOpDef2286 = new BitSet(new long[]{0x0000000000040000L});
+    public static final BitSet FOLLOW_18_in_ruleEAttributeOpDef2298 = new BitSet(new long[]{0x0000008000000000L});
+    public static final BitSet FOLLOW_39_in_ruleEAttributeOpDef2310 = new BitSet(new long[]{0x0000000200000000L});
+    public static final BitSet FOLLOW_33_in_ruleEAttributeOpDef2323 = new BitSet(new long[]{0x0000000400000000L});
+    public static final BitSet FOLLOW_34_in_ruleEAttributeOpDef2335 = new BitSet(new long[]{0x0000000000009000L});
+    public static final BitSet FOLLOW_12_in_ruleEAttributeOpDef2349 = new BitSet(new long[]{0x0000800000002000L});
+    public static final BitSet FOLLOW_rulesetterDef_in_ruleEAttributeOpDef2370 = new BitSet(new long[]{0x0000800000002000L});
+    public static final BitSet FOLLOW_13_in_ruleEAttributeOpDef2383 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_15_in_ruleEAttributeOpDef2402 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleEReferenceOpDef_in_entryRuleEReferenceOpDef2440 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleEReferenceOpDef2450 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_43_in_ruleEReferenceOpDef2488 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_ruleReference_in_ruleEReferenceOpDef2509 = new BitSet(new long[]{0x0000000010000000L});
+    public static final BitSet FOLLOW_28_in_ruleEReferenceOpDef2521 = new BitSet(new long[]{0x0000700000000000L});
+    public static final BitSet FOLLOW_44_in_ruleEReferenceOpDef2543 = new BitSet(new long[]{0x0000000100000000L});
+    public static final BitSet FOLLOW_45_in_ruleEReferenceOpDef2580 = new BitSet(new long[]{0x0000000100000000L});
+    public static final BitSet FOLLOW_46_in_ruleEReferenceOpDef2617 = new BitSet(new long[]{0x0000000100000000L});
+    public static final BitSet FOLLOW_32_in_ruleEReferenceOpDef2643 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_ruleReference_in_ruleEReferenceOpDef2664 = new BitSet(new long[]{0x0000000000040000L});
+    public static final BitSet FOLLOW_18_in_ruleEReferenceOpDef2676 = new BitSet(new long[]{0x0000080000000000L});
+    public static final BitSet FOLLOW_43_in_ruleEReferenceOpDef2688 = new BitSet(new long[]{0x0000000200000000L});
+    public static final BitSet FOLLOW_33_in_ruleEReferenceOpDef2701 = new BitSet(new long[]{0x0000000400000000L});
+    public static final BitSet FOLLOW_34_in_ruleEReferenceOpDef2713 = new BitSet(new long[]{0x0000000000001000L});
+    public static final BitSet FOLLOW_12_in_ruleEReferenceOpDef2726 = new BitSet(new long[]{0x0000800000002000L});
+    public static final BitSet FOLLOW_rulesetterDef_in_ruleEReferenceOpDef2747 = new BitSet(new long[]{0x0000800000002000L});
+    public static final BitSet FOLLOW_13_in_ruleEReferenceOpDef2760 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rulesetterDef_in_entryRulesetterDef2798 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRulesetterDef2808 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_47_in_rulesetterDef2845 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_rulesetterDef2865 = new BitSet(new long[]{0x0000000010000000L});
+    public static final BitSet FOLLOW_28_in_rulesetterDef2883 = new BitSet(new long[]{0x0020000000000000L});
+    public static final BitSet FOLLOW_ruleParameter_in_rulesetterDef2917 = new BitSet(new long[]{0x0000000000088000L});
+    public static final BitSet FOLLOW_19_in_rulesetterDef2930 = new BitSet(new long[]{0x0020000000000000L});
+    public static final BitSet FOLLOW_ruleParameter_in_rulesetterDef2951 = new BitSet(new long[]{0x0000000000088000L});
+    public static final BitSet FOLLOW_15_in_rulesetterDef2965 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleRewritingRule_in_entryRuleRewritingRule3001 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleRewritingRule3011 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleMigratorSX_in_ruleRewritingRule3058 = new BitSet(new long[]{0x0001000000000000L});
+    public static final BitSet FOLLOW_48_in_ruleRewritingRule3070 = new BitSet(new long[]{0x0004000000000010L});
+    public static final BitSet FOLLOW_ruleMigratorDX_in_ruleRewritingRule3091 = new BitSet(new long[]{0x0002000000000002L});
+    public static final BitSet FOLLOW_49_in_ruleRewritingRule3105 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_ruleMigratorSX_in_ruleRewritingRule3126 = new BitSet(new long[]{0x0001000000000000L});
+    public static final BitSet FOLLOW_48_in_ruleRewritingRule3138 = new BitSet(new long[]{0x0004000000000010L});
+    public static final BitSet FOLLOW_ruleMigratorDX_in_ruleRewritingRule3159 = new BitSet(new long[]{0x0002000000000002L});
+    public static final BitSet FOLLOW_ruleMigrator_in_entryRuleMigrator3197 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleMigrator3207 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleMigratorSX_in_ruleMigrator3254 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleMigratorDX_in_ruleMigrator3281 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleMigratorSX_in_entryRuleMigratorSX3316 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleMigratorSX3326 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleMigratorSX3377 = new BitSet(new long[]{0x0000000000040000L});
+    public static final BitSet FOLLOW_18_in_ruleMigratorSX3394 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleMigratorSX3414 = new BitSet(new long[]{0x0000000400000000L});
+    public static final BitSet FOLLOW_34_in_ruleMigratorSX3426 = new BitSet(new long[]{0x0000000002000000L});
+    public static final BitSet FOLLOW_25_in_ruleMigratorSX3438 = new BitSet(new long[]{0x0008000000000000L});
+    public static final BitSet FOLLOW_ruleFilterMigrator_in_ruleMigratorSX3459 = new BitSet(new long[]{0x0002000004000000L});
+    public static final BitSet FOLLOW_49_in_ruleMigratorSX3472 = new BitSet(new long[]{0x0008000000000000L});
+    public static final BitSet FOLLOW_ruleFilterMigrator_in_ruleMigratorSX3493 = new BitSet(new long[]{0x0002000004000000L});
+    public static final BitSet FOLLOW_26_in_ruleMigratorSX3507 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleMigratorDX_in_entryRuleMigratorDX3543 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleMigratorDX3553 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleMigratorDX3606 = new BitSet(new long[]{0x0000000000040000L});
+    public static final BitSet FOLLOW_18_in_ruleMigratorDX3623 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleMigratorDX3643 = new BitSet(new long[]{0x0000000002000000L});
+    public static final BitSet FOLLOW_25_in_ruleMigratorDX3655 = new BitSet(new long[]{0x0008000000000000L});
+    public static final BitSet FOLLOW_ruleFilterMigrator_in_ruleMigratorDX3676 = new BitSet(new long[]{0x0002000004000000L});
+    public static final BitSet FOLLOW_49_in_ruleMigratorDX3689 = new BitSet(new long[]{0x0008000000000000L});
+    public static final BitSet FOLLOW_ruleFilterMigrator_in_ruleMigratorDX3710 = new BitSet(new long[]{0x0002000004000000L});
+    public static final BitSet FOLLOW_26_in_ruleMigratorDX3724 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_50_in_ruleMigratorDX3744 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleFilterMigrator_in_entryRuleFilterMigrator3780 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleFilterMigrator3790 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleDotNavigationObjSX_in_ruleFilterMigrator3836 = new BitSet(new long[]{0x0000000010000000L});
+    public static final BitSet FOLLOW_28_in_ruleFilterMigrator3854 = new BitSet(new long[]{0x0008000000000002L});
+    public static final BitSet FOLLOW_ruleDotNavigationObjDX_in_ruleFilterMigrator3888 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleDotNavigationObjSX_in_entryRuleDotNavigationObjSX3925 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleDotNavigationObjSX3935 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_51_in_ruleDotNavigationObjSX3972 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleDotNavigationObjSX3992 = new BitSet(new long[]{0x0010000000000002L});
+    public static final BitSet FOLLOW_52_in_ruleDotNavigationObjSX4005 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleDotNavigationObjSX4025 = new BitSet(new long[]{0x0010000000000002L});
+    public static final BitSet FOLLOW_ruleDotNavigationObjDX_in_entryRuleDotNavigationObjDX4063 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleDotNavigationObjDX4073 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_51_in_ruleDotNavigationObjDX4110 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleDotNavigationObjDX4130 = new BitSet(new long[]{0x0010000000000002L});
+    public static final BitSet FOLLOW_52_in_ruleDotNavigationObjDX4143 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleDotNavigationObjDX4163 = new BitSet(new long[]{0x0010000000000002L});
+    public static final BitSet FOLLOW_ruleParameter_in_entryRuleParameter4201 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleParameter4211 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_53_in_ruleParameter4248 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleParameter4265 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rulePackage_in_entryRulePackage4306 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRulePackage4316 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rulePackage4367 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleClass_in_entryRuleClass4408 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleClass4418 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleClass4469 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleAttribute_in_entryRuleAttribute4510 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleAttribute4520 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleAttribute4571 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleReference_in_entryRuleReference4612 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleReference4622 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleReference4673 = new BitSet(new long[]{0x0000000000000002L});
 
 }

@@ -10,34 +10,48 @@
         containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="MigrationLibrary">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="title" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="rules" upperBound="-1"
         eType="#//Rule" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="MigrationProgram">
+  <eClassifiers xsi:type="ecore:EClass" name="LocatedElement">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="line" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
+        changeable="false" volatile="true" transient="true" derived="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="endline" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" changeable="false"
+        volatile="true" transient="true" derived="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="offset" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" changeable="false"
+        volatile="true" transient="true" derived="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="endoffset" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" changeable="false"
+        volatile="true" transient="true" derived="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MigrationProgram" eSuperTypes="#//LocatedElement">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="libs" unique="false" upperBound="-1"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="migr" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="typeArt" eType="#//Artifact"
         containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="artifact" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="transformationPackage"
         unique="false" upperBound="-1" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="delta" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="rules" upperBound="-1"
         eType="#//Rule" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Artifact">
+  <eClassifiers xsi:type="ecore:EClass" name="Artifact" eSuperTypes="#//LocatedElement">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Rule">
+  <eClassifiers xsi:type="ecore:EClass" name="Rule" eSuperTypes="#//LocatedElement">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="filter" eType="#//OpDef"
         containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="rewritingRules" upperBound="-1"
         eType="#//RewritingRule" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="OpDef">
+  <eClassifiers xsi:type="ecore:EClass" name="OpDef" eSuperTypes="#//LocatedElement">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="op" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="setters" upperBound="-1"
         eType="#//setterDef" containment="true"/>
@@ -72,49 +86,51 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="ref" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EReference"
         containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="setterDef">
+  <eClassifiers xsi:type="ecore:EClass" name="setterDef" eSuperTypes="#//LocatedElement">
     <eStructuralFeatures xsi:type="ecore:EReference" name="metafeature" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EStructuralFeature"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="operator" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="par" upperBound="-1" eType="#//Parameter"
         containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="RewritingRule">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="migratorsSX" upperBound="-1"
-        eType="#//MigratorSX" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="migratorDX" upperBound="-1"
-        eType="#//MigratorDX" containment="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="RewritingRule" eSuperTypes="#//LocatedElement">
     <eStructuralFeatures xsi:type="ecore:EReference" name="migratorSX" upperBound="-1"
-        eType="#//MigratorSX" containment="true"/>
+        eType="#//MigratorSX" containment="true" eOpposite="#//MigratorSX/rewritingRule"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="migratorDX" upperBound="-1"
+        eType="#//MigratorDX" containment="true" eOpposite="#//MigratorDX/rewritingRule"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Migrator">
+  <eClassifiers xsi:type="ecore:EClass" name="Migrator" eSuperTypes="#//LocatedElement">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="MigratorSX" eSuperTypes="#//Migrator">
     <eStructuralFeatures xsi:type="ecore:EReference" name="elementSX" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="filterSX" upperBound="-1"
         eType="#//FilterMigrator" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="rewritingRule" eType="#//RewritingRule"
+        eOpposite="#//RewritingRule/migratorSX"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="MigratorDX" eSuperTypes="#//Migrator">
     <eStructuralFeatures xsi:type="ecore:EReference" name="elementDX" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="filterDX" upperBound="-1"
         eType="#//FilterMigrator" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="rewritingRule" eType="#//RewritingRule"
+        eOpposite="#//RewritingRule/migratorDX"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="FilterMigrator">
+  <eClassifiers xsi:type="ecore:EClass" name="FilterMigrator" eSuperTypes="#//LocatedElement">
     <eStructuralFeatures xsi:type="ecore:EReference" name="featureSX" eType="#//DotNavigationObjSX"
         containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="op" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="value" eType="#//DotNavigationObjDX"
         containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="DotNavigationObjSX">
+  <eClassifiers xsi:type="ecore:EClass" name="DotNavigationObjSX" eSuperTypes="#//LocatedElement">
     <eStructuralFeatures xsi:type="ecore:EReference" name="obj" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="ref" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EStructuralFeature"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="DotNavigationObjDX">
+  <eClassifiers xsi:type="ecore:EClass" name="DotNavigationObjDX" eSuperTypes="#//LocatedElement">
     <eStructuralFeatures xsi:type="ecore:EReference" name="obj" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="ref" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EStructuralFeature"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Parameter">
+  <eClassifiers xsi:type="ecore:EClass" name="Parameter" eSuperTypes="#//LocatedElement">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Package" eSuperTypes="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>

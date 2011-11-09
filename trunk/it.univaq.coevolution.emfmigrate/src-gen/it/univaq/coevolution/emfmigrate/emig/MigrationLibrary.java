@@ -17,7 +17,7 @@ import org.eclipse.emf.ecore.EObject;
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link it.univaq.coevolution.emfmigrate.emig.MigrationLibrary#getTitle <em>Title</em>}</li>
+ *   <li>{@link it.univaq.coevolution.emfmigrate.emig.MigrationLibrary#getName <em>Name</em>}</li>
  *   <li>{@link it.univaq.coevolution.emfmigrate.emig.MigrationLibrary#getRules <em>Rules</em>}</li>
  * </ul>
  * </p>
@@ -29,30 +29,30 @@ import org.eclipse.emf.ecore.EObject;
 public interface MigrationLibrary extends EObject
 {
   /**
-   * Returns the value of the '<em><b>Title</b></em>' attribute.
+   * Returns the value of the '<em><b>Name</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>Title</em>' attribute isn't clear,
+   * If the meaning of the '<em>Name</em>' attribute isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Title</em>' attribute.
-   * @see #setTitle(String)
-   * @see it.univaq.coevolution.emfmigrate.emig.EmigPackage#getMigrationLibrary_Title()
+   * @return the value of the '<em>Name</em>' attribute.
+   * @see #setName(String)
+   * @see it.univaq.coevolution.emfmigrate.emig.EmigPackage#getMigrationLibrary_Name()
    * @model
    * @generated
    */
-  String getTitle();
+  String getName();
 
   /**
-   * Sets the value of the '{@link it.univaq.coevolution.emfmigrate.emig.MigrationLibrary#getTitle <em>Title</em>}' attribute.
+   * Sets the value of the '{@link it.univaq.coevolution.emfmigrate.emig.MigrationLibrary#getName <em>Name</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Title</em>' attribute.
-   * @see #getTitle()
+   * @param value the new value of the '<em>Name</em>' attribute.
+   * @see #getName()
    * @generated
    */
-  void setTitle(String value);
+  void setName(String value);
 
   /**
    * Returns the value of the '<em><b>Rules</b></em>' containment reference list.

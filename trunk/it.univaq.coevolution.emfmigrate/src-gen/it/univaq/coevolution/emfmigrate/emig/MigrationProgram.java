@@ -7,7 +7,6 @@ package it.univaq.coevolution.emfmigrate.emig;
 
 import org.eclipse.emf.common.util.EList;
 
-import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 
 /**
@@ -18,10 +17,11 @@ import org.eclipse.emf.ecore.EPackage;
  * <p>
  * The following features are supported:
  * <ul>
+ *   <li>{@link it.univaq.coevolution.emfmigrate.emig.MigrationProgram#getName <em>Name</em>}</li>
  *   <li>{@link it.univaq.coevolution.emfmigrate.emig.MigrationProgram#getLibs <em>Libs</em>}</li>
  *   <li>{@link it.univaq.coevolution.emfmigrate.emig.MigrationProgram#getMigr <em>Migr</em>}</li>
  *   <li>{@link it.univaq.coevolution.emfmigrate.emig.MigrationProgram#getTypeArt <em>Type Art</em>}</li>
- *   <li>{@link it.univaq.coevolution.emfmigrate.emig.MigrationProgram#getName <em>Name</em>}</li>
+ *   <li>{@link it.univaq.coevolution.emfmigrate.emig.MigrationProgram#getArtifact <em>Artifact</em>}</li>
  *   <li>{@link it.univaq.coevolution.emfmigrate.emig.MigrationProgram#getTransformationPackage <em>Transformation Package</em>}</li>
  *   <li>{@link it.univaq.coevolution.emfmigrate.emig.MigrationProgram#getDelta <em>Delta</em>}</li>
  *   <li>{@link it.univaq.coevolution.emfmigrate.emig.MigrationProgram#getRules <em>Rules</em>}</li>
@@ -32,8 +32,34 @@ import org.eclipse.emf.ecore.EPackage;
  * @model
  * @generated
  */
-public interface MigrationProgram extends EObject
+public interface MigrationProgram extends LocatedElement
 {
+  /**
+   * Returns the value of the '<em><b>Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of the '<em>Name</em>' attribute isn't clear,
+   * there really should be more of a description here...
+   * </p>
+   * <!-- end-user-doc -->
+   * @return the value of the '<em>Name</em>' attribute.
+   * @see #setName(String)
+   * @see it.univaq.coevolution.emfmigrate.emig.EmigPackage#getMigrationProgram_Name()
+   * @model
+   * @generated
+   */
+  String getName();
+
+  /**
+   * Sets the value of the '{@link it.univaq.coevolution.emfmigrate.emig.MigrationProgram#getName <em>Name</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @param value the new value of the '<em>Name</em>' attribute.
+   * @see #getName()
+   * @generated
+   */
+  void setName(String value);
+
   /**
    * Returns the value of the '<em><b>Libs</b></em>' attribute list.
    * The list contents are of type {@link java.lang.String}.
@@ -103,30 +129,30 @@ public interface MigrationProgram extends EObject
   void setTypeArt(Artifact value);
 
   /**
-   * Returns the value of the '<em><b>Name</b></em>' attribute.
+   * Returns the value of the '<em><b>Artifact</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>Name</em>' attribute isn't clear,
+   * If the meaning of the '<em>Artifact</em>' attribute isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Name</em>' attribute.
-   * @see #setName(String)
-   * @see it.univaq.coevolution.emfmigrate.emig.EmigPackage#getMigrationProgram_Name()
+   * @return the value of the '<em>Artifact</em>' attribute.
+   * @see #setArtifact(String)
+   * @see it.univaq.coevolution.emfmigrate.emig.EmigPackage#getMigrationProgram_Artifact()
    * @model
    * @generated
    */
-  String getName();
+  String getArtifact();
 
   /**
-   * Sets the value of the '{@link it.univaq.coevolution.emfmigrate.emig.MigrationProgram#getName <em>Name</em>}' attribute.
+   * Sets the value of the '{@link it.univaq.coevolution.emfmigrate.emig.MigrationProgram#getArtifact <em>Artifact</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Name</em>' attribute.
-   * @see #getName()
+   * @param value the new value of the '<em>Artifact</em>' attribute.
+   * @see #getArtifact()
    * @generated
    */
-  void setName(String value);
+  void setArtifact(String value);
 
   /**
    * Returns the value of the '<em><b>Transformation Package</b></em>' reference list.

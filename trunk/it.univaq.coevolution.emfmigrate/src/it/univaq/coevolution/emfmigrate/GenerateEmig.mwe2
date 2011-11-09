@@ -23,7 +23,7 @@ Workflow {
 		directory = "${runtimeProject}.ui/src-gen"
 	}
 
-	component = Generator {
+	component = generator.ExtendedGenerator {
 		pathRtProject = runtimeProject
 		pathUiProject = "${runtimeProject}.ui"
 		pathTestProject = "${runtimeProject}.tests"

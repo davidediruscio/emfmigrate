@@ -71,6 +71,19 @@
         </page>
     </extension>
     <extension
+            point="org.eclipse.ui.propertyPages">
+        <page
+            class="it.univaq.coevolution.differences.edelta.ui.EDeltaLangExecutableExtensionFactory:org.eclipse.xtext.ui.editor.preferences.LanguageRootPreferencePage"
+            id="it.univaq.coevolution.differences.edelta.EDeltaLang"
+            name="EDeltaLang">
+            <keywordReference id="it.univaq.coevolution.differences.edelta.ui.keyword_EDeltaLang"/>
+            <enabledWhen>
+	            <adapt type="org.eclipse.core.resources.IProject"/>
+			</enabledWhen>
+	        <filter name="projectNature" value="org.eclipse.xtext.ui.shared.xtextNature"/>
+        </page>
+    </extension>
+    <extension
         point="org.eclipse.ui.keywords">
         <keyword
             id="it.univaq.coevolution.differences.edelta.ui.keyword_EDeltaLang"
@@ -145,6 +158,30 @@
             class="it.univaq.coevolution.differences.edelta.ui.EDeltaLangExecutableExtensionFactory:org.eclipse.xtext.builder.IXtextBuilderParticipant">
       </participant>
    </extension>
+   <extension
+            point="org.eclipse.ui.preferencePages">
+        <page
+            category="it.univaq.coevolution.differences.edelta.EDeltaLang"
+            class="it.univaq.coevolution.differences.edelta.ui.EDeltaLangExecutableExtensionFactory:org.eclipse.xtext.builder.preferences.BuilderPreferencePage"
+            id="it.univaq.coevolution.differences.edelta.EDeltaLang.compiler.preferencePage"
+            name="Compiler">
+            <keywordReference id="it.univaq.coevolution.differences.edelta.ui.keyword_EDeltaLang"/>
+        </page>
+    </extension>
+    <extension
+            point="org.eclipse.ui.propertyPages">
+        <page
+            category="it.univaq.coevolution.differences.edelta.EDeltaLang"
+            class="it.univaq.coevolution.differences.edelta.ui.EDeltaLangExecutableExtensionFactory:org.eclipse.xtext.builder.preferences.BuilderPreferencePage"
+            id="it.univaq.coevolution.differences.edelta.EDeltaLang.compiler.propertyPage"
+            name="Compiler">
+            <keywordReference id="it.univaq.coevolution.differences.edelta.ui.keyword_EDeltaLang"/>
+            <enabledWhen>
+	            <adapt type="org.eclipse.core.resources.IProject"/>
+			</enabledWhen>
+	        <filter name="projectNature" value="org.eclipse.xtext.ui.shared.xtextNature"/>
+        </page>
+    </extension>
 
 	<!-- Quick Outline -->
 	<extension

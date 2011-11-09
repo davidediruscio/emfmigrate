@@ -16,7 +16,6 @@ import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -32,7 +31,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class DotNavigationObjSXImpl extends MinimalEObjectImpl.Container implements DotNavigationObjSX
+public class DotNavigationObjSXImpl extends LocatedElementImpl implements DotNavigationObjSX
 {
   /**
    * The cached value of the '{@link #getObj() <em>Obj</em>}' reference.

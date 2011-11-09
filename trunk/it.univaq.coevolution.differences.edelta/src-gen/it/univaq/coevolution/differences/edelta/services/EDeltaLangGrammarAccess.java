@@ -407,37 +407,41 @@ public class EDeltaLangGrammarAccess extends AbstractGrammarElementFinder {
 	public class ChangeClassElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "ChangeClass");
 		private final Group cGroup = (Group)rule.eContents().get(1);
-		private final Assignment cOpAssignment_0 = (Assignment)cGroup.eContents().get(0);
-		private final Keyword cOpChangeClassKeyword_0_0 = (Keyword)cOpAssignment_0.eContents().get(0);
-		private final Assignment cRefAssignment_1 = (Assignment)cGroup.eContents().get(1);
-		private final CrossReference cRefEClassCrossReference_1_0 = (CrossReference)cRefAssignment_1.eContents().get(0);
-		private final RuleCall cRefEClassIDTerminalRuleCall_1_0_1 = (RuleCall)cRefEClassCrossReference_1_0.eContents().get(1);
-		private final Keyword cRightParenthesisKeyword_2 = (Keyword)cGroup.eContents().get(2);
+		private final Action cChangeClassAction_0 = (Action)cGroup.eContents().get(0);
+		private final Assignment cOpAssignment_1 = (Assignment)cGroup.eContents().get(1);
+		private final Keyword cOpChangeClassKeyword_1_0 = (Keyword)cOpAssignment_1.eContents().get(0);
+		private final Assignment cRefAssignment_2 = (Assignment)cGroup.eContents().get(2);
+		private final CrossReference cRefEClassCrossReference_2_0 = (CrossReference)cRefAssignment_2.eContents().get(0);
+		private final RuleCall cRefEClassIDTerminalRuleCall_2_0_1 = (RuleCall)cRefEClassCrossReference_2_0.eContents().get(1);
+		private final Keyword cRightParenthesisKeyword_3 = (Keyword)cGroup.eContents().get(3);
 		
 		//ChangeClass:
-		//	op="changeClass(" ref=[ecore::EClass] ")";
+		//	{ChangeClass} op="changeClass(" ref=[ecore::EClass] ")";
 		public ParserRule getRule() { return rule; }
 
-		//op="changeClass(" ref=[ecore::EClass] ")"
+		//{ChangeClass} op="changeClass(" ref=[ecore::EClass] ")"
 		public Group getGroup() { return cGroup; }
 
+		//{ChangeClass}
+		public Action getChangeClassAction_0() { return cChangeClassAction_0; }
+
 		//op="changeClass("
-		public Assignment getOpAssignment_0() { return cOpAssignment_0; }
+		public Assignment getOpAssignment_1() { return cOpAssignment_1; }
 
 		//"changeClass("
-		public Keyword getOpChangeClassKeyword_0_0() { return cOpChangeClassKeyword_0_0; }
+		public Keyword getOpChangeClassKeyword_1_0() { return cOpChangeClassKeyword_1_0; }
 
 		//ref=[ecore::EClass]
-		public Assignment getRefAssignment_1() { return cRefAssignment_1; }
+		public Assignment getRefAssignment_2() { return cRefAssignment_2; }
 
 		//[ecore::EClass]
-		public CrossReference getRefEClassCrossReference_1_0() { return cRefEClassCrossReference_1_0; }
+		public CrossReference getRefEClassCrossReference_2_0() { return cRefEClassCrossReference_2_0; }
 
 		//ID
-		public RuleCall getRefEClassIDTerminalRuleCall_1_0_1() { return cRefEClassIDTerminalRuleCall_1_0_1; }
+		public RuleCall getRefEClassIDTerminalRuleCall_2_0_1() { return cRefEClassIDTerminalRuleCall_2_0_1; }
 
 		//")"
-		public Keyword getRightParenthesisKeyword_2() { return cRightParenthesisKeyword_2; }
+		public Keyword getRightParenthesisKeyword_3() { return cRightParenthesisKeyword_3; }
 	}
 
 	public class AddClassElements extends AbstractParserRuleElementFinder {
@@ -555,7 +559,8 @@ public class EDeltaLangGrammarAccess extends AbstractGrammarElementFinder {
 		private final Assignment cMetafeatureAssignment_1 = (Assignment)cGroup.eContents().get(1);
 		private final CrossReference cMetafeatureEStructuralFeatureCrossReference_1_0 = (CrossReference)cMetafeatureAssignment_1.eContents().get(0);
 		private final RuleCall cMetafeatureEStructuralFeatureIDTerminalRuleCall_1_0_1 = (RuleCall)cMetafeatureEStructuralFeatureCrossReference_1_0.eContents().get(1);
-		private final Keyword cLessThanSignEqualsSignKeyword_2 = (Keyword)cGroup.eContents().get(2);
+		private final Assignment cOperatorAssignment_2 = (Assignment)cGroup.eContents().get(2);
+		private final Keyword cOperatorLessThanSignEqualsSignKeyword_2_0 = (Keyword)cOperatorAssignment_2.eContents().get(0);
 		private final Alternatives cAlternatives_3 = (Alternatives)cGroup.eContents().get(3);
 		private final Alternatives cAlternatives_3_0 = (Alternatives)cAlternatives_3.eContents().get(0);
 		private final Assignment cValueAssignment_3_0_0 = (Assignment)cAlternatives_3_0.eContents().get(0);
@@ -574,11 +579,11 @@ public class EDeltaLangGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cSemicolonKeyword_5 = (Keyword)cGroup.eContents().get(5);
 		
 		//setter:
-		//	"set" metafeature=[ecore::EStructuralFeature] "<=" ((value=STRING | BOOL) | card=Cardinality |
+		//	"set" metafeature=[ecore::EStructuralFeature] operator="<=" ((value=STRING | BOOL) | card=Cardinality |
 		//	valueRef+=[ecore::EObject]) ("," valueRef+=[ecore::EObject])* ";";
 		public ParserRule getRule() { return rule; }
 
-		//"set" metafeature=[ecore::EStructuralFeature] "<=" ((value=STRING | BOOL) | card=Cardinality |
+		//"set" metafeature=[ecore::EStructuralFeature] operator="<=" ((value=STRING | BOOL) | card=Cardinality |
 		//valueRef+=[ecore::EObject]) ("," valueRef+=[ecore::EObject])* ";"
 		public Group getGroup() { return cGroup; }
 
@@ -594,8 +599,11 @@ public class EDeltaLangGrammarAccess extends AbstractGrammarElementFinder {
 		//ID
 		public RuleCall getMetafeatureEStructuralFeatureIDTerminalRuleCall_1_0_1() { return cMetafeatureEStructuralFeatureIDTerminalRuleCall_1_0_1; }
 
+		//operator="<="
+		public Assignment getOperatorAssignment_2() { return cOperatorAssignment_2; }
+
 		//"<="
-		public Keyword getLessThanSignEqualsSignKeyword_2() { return cLessThanSignEqualsSignKeyword_2; }
+		public Keyword getOperatorLessThanSignEqualsSignKeyword_2_0() { return cOperatorLessThanSignEqualsSignKeyword_2_0; }
 
 		//(value=STRING | BOOL) | card=Cardinality | valueRef+=[ecore::EObject]
 		public Alternatives getAlternatives_3() { return cAlternatives_3; }
@@ -1681,7 +1689,7 @@ public class EDeltaLangGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//ChangeClass:
-	//	op="changeClass(" ref=[ecore::EClass] ")";
+	//	{ChangeClass} op="changeClass(" ref=[ecore::EClass] ")";
 	public ChangeClassElements getChangeClassAccess() {
 		return (pChangeClass != null) ? pChangeClass : (pChangeClass = new ChangeClassElements());
 	}
@@ -1721,7 +1729,7 @@ public class EDeltaLangGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//setter:
-	//	"set" metafeature=[ecore::EStructuralFeature] "<=" ((value=STRING | BOOL) | card=Cardinality |
+	//	"set" metafeature=[ecore::EStructuralFeature] operator="<=" ((value=STRING | BOOL) | card=Cardinality |
 	//	valueRef+=[ecore::EObject]) ("," valueRef+=[ecore::EObject])* ";";
 	public SetterElements getSetterAccess() {
 		return (pSetter != null) ? pSetter : (pSetter = new SetterElements());

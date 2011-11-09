@@ -14,14 +14,21 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Emig.ecore#//MyModel/MigrationProgr"/>
     </genClasses>
     <genClasses ecoreClass="Emig.ecore#//MigrationLibrary">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Emig.ecore#//MigrationLibrary/title"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Emig.ecore#//MigrationLibrary/name"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Emig.ecore#//MigrationLibrary/rules"/>
     </genClasses>
+    <genClasses ecoreClass="Emig.ecore#//LocatedElement">
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute Emig.ecore#//LocatedElement/line"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute Emig.ecore#//LocatedElement/endline"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute Emig.ecore#//LocatedElement/offset"/>
+      <genFeatures property="Readonly" createChild="false" ecoreFeature="ecore:EAttribute Emig.ecore#//LocatedElement/endoffset"/>
+    </genClasses>
     <genClasses ecoreClass="Emig.ecore#//MigrationProgram">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Emig.ecore#//MigrationProgram/name"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Emig.ecore#//MigrationProgram/libs"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Emig.ecore#//MigrationProgram/migr"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Emig.ecore#//MigrationProgram/typeArt"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Emig.ecore#//MigrationProgram/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Emig.ecore#//MigrationProgram/artifact"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Emig.ecore#//MigrationProgram/transformationPackage"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Emig.ecore#//MigrationProgram/delta"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Emig.ecore#//MigrationProgram/rules"/>
@@ -63,9 +70,8 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Emig.ecore#//setterDef/par"/>
     </genClasses>
     <genClasses ecoreClass="Emig.ecore#//RewritingRule">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Emig.ecore#//RewritingRule/migratorsSX"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Emig.ecore#//RewritingRule/migratorDX"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Emig.ecore#//RewritingRule/migratorSX"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Emig.ecore#//RewritingRule/migratorDX"/>
     </genClasses>
     <genClasses ecoreClass="Emig.ecore#//Migrator">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Emig.ecore#//Migrator/name"/>
@@ -73,10 +79,12 @@
     <genClasses ecoreClass="Emig.ecore#//MigratorSX">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Emig.ecore#//MigratorSX/elementSX"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Emig.ecore#//MigratorSX/filterSX"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference Emig.ecore#//MigratorSX/rewritingRule"/>
     </genClasses>
     <genClasses ecoreClass="Emig.ecore#//MigratorDX">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Emig.ecore#//MigratorDX/elementDX"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Emig.ecore#//MigratorDX/filterDX"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference Emig.ecore#//MigratorDX/rewritingRule"/>
     </genClasses>
     <genClasses ecoreClass="Emig.ecore#//FilterMigrator">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Emig.ecore#//FilterMigrator/featureSX"/>

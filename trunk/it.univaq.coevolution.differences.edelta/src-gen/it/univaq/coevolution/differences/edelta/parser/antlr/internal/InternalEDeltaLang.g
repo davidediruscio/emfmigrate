@@ -703,17 +703,26 @@ ruleChangeClass returns [EObject current=null]
     }
     @after { leaveRule(); }:
 ((
-(
-		lv_op_0_0=	'changeClass(' 
+	{ 
+	  /* */ 
+	}
     {
-        newLeafNode(lv_op_0_0, grammarAccess.getChangeClassAccess().getOpChangeClassKeyword_0_0());
+        $current = forceCreateModelElement(
+            grammarAccess.getChangeClassAccess().getChangeClassAction_0(),
+            $current);
+    }
+)(
+(
+		lv_op_1_0=	'changeClass(' 
+    {
+        newLeafNode(lv_op_1_0, grammarAccess.getChangeClassAccess().getOpChangeClassKeyword_1_0());
     }
  
 	    {
 	        if ($current==null) {
 	            $current = createModelElement(grammarAccess.getChangeClassRule());
 	        }
-       		setWithLastConsumed($current, "op", lv_op_0_0, "changeClass(");
+       		setWithLastConsumed($current, "op", lv_op_1_0, "changeClass(");
 	    }
 
 )
@@ -727,15 +736,15 @@ ruleChangeClass returns [EObject current=null]
 	            $current = createModelElement(grammarAccess.getChangeClassRule());
 	        }
         }
-	otherlv_1=RULE_ID
+	otherlv_2=RULE_ID
 	{
-		newLeafNode(otherlv_1, grammarAccess.getChangeClassAccess().getRefEClassCrossReference_1_0()); 
+		newLeafNode(otherlv_2, grammarAccess.getChangeClassAccess().getRefEClassCrossReference_2_0()); 
 	}
 
 )
-)	otherlv_2=')' 
+)	otherlv_3=')' 
     {
-    	newLeafNode(otherlv_2, grammarAccess.getChangeClassAccess().getRightParenthesisKeyword_2());
+    	newLeafNode(otherlv_3, grammarAccess.getChangeClassAccess().getRightParenthesisKeyword_3());
     }
 )
 ;
@@ -957,11 +966,22 @@ rulesetter returns [EObject current=null]
 	}
 
 )
-)	otherlv_2='<=' 
+)(
+(
+		lv_operator_2_0=	'<=' 
     {
-    	newLeafNode(otherlv_2, grammarAccess.getSetterAccess().getLessThanSignEqualsSignKeyword_2());
+        newLeafNode(lv_operator_2_0, grammarAccess.getSetterAccess().getOperatorLessThanSignEqualsSignKeyword_2_0());
     }
-(((
+ 
+	    {
+	        if ($current==null) {
+	            $current = createModelElement(grammarAccess.getSetterRule());
+	        }
+       		setWithLastConsumed($current, "operator", lv_operator_2_0, "<=");
+	    }
+
+)
+)(((
 (
 		lv_value_3_0=RULE_STRING
 		{

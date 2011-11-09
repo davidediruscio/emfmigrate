@@ -45,7 +45,7 @@ op=DeleteClass)
 )
 ;
 
-ChangeClass:op="changeClass(" (ref=[ecore::EClass] )")";
+ChangeClass returns ChangeClass:{ChangeClass}op="changeClass(" (ref=[ecore::EClass] )")";
 
 
 AddClass:op="addClass(" (new=STRING|ref=[STRING] ) ")";
@@ -54,7 +54,7 @@ AddClass:op="addClass(" (new=STRING|ref=[STRING] ) ")";
 DeleteClass:op="deleteClass(" (ref=[ecore::EClass] )")";
 
 Class returns ecore::EClass:{Class}name=ID;
-setter: "set" metafeature=[ecore::EStructuralFeature] "<=" ((value=STRING|BOOL)|card=Cardinality| valueRef+=[ecore::EObject])
+setter: "set" metafeature=[ecore::EStructuralFeature] operator="<=" ((value=STRING|BOOL)|card=Cardinality| valueRef+=[ecore::EObject])
 ( "," valueRef+=[ecore::EObject])*";";
 
 Cardinality returns ecore::EInt: INT| '*';	

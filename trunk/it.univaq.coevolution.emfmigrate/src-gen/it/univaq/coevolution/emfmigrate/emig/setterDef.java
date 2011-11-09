@@ -7,7 +7,6 @@ package it.univaq.coevolution.emfmigrate.emig;
 
 import org.eclipse.emf.common.util.EList;
 
-import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EStructuralFeature;
 
 /**
@@ -28,7 +27,7 @@ import org.eclipse.emf.ecore.EStructuralFeature;
  * @model
  * @generated
  */
-public interface setterDef extends EObject
+public interface setterDef extends LocatedElement
 {
   /**
    * Returns the value of the '<em><b>Metafeature</b></em>' reference.

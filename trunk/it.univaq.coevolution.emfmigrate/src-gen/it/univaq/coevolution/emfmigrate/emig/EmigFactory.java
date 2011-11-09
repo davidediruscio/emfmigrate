@@ -44,6 +44,15 @@ public interface EmigFactory extends EFactory
   MigrationLibrary createMigrationLibrary();
 
   /**
+   * Returns a new object of class '<em>Located Element</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Located Element</em>'.
+   * @generated
+   */
+  LocatedElement createLocatedElement();
+
+  /**
    * Returns a new object of class '<em>Migration Program</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->

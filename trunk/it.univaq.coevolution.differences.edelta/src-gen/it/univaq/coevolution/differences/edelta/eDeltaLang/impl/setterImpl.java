@@ -32,6 +32,7 @@ import org.eclipse.emf.ecore.util.EObjectResolvingEList;
  * The following features are implemented:
  * <ul>
  *   <li>{@link it.univaq.coevolution.differences.edelta.eDeltaLang.impl.setterImpl#getMetafeature <em>Metafeature</em>}</li>
+ *   <li>{@link it.univaq.coevolution.differences.edelta.eDeltaLang.impl.setterImpl#getOperator <em>Operator</em>}</li>
  *   <li>{@link it.univaq.coevolution.differences.edelta.eDeltaLang.impl.setterImpl#getValue <em>Value</em>}</li>
  *   <li>{@link it.univaq.coevolution.differences.edelta.eDeltaLang.impl.setterImpl#getCard <em>Card</em>}</li>
  *   <li>{@link it.univaq.coevolution.differences.edelta.eDeltaLang.impl.setterImpl#getValueRef <em>Value Ref</em>}</li>
@@ -51,6 +52,26 @@ public class setterImpl extends MinimalEObjectImpl.Container implements setter
    * @ordered
    */
   protected EStructuralFeature metafeature;
+
+  /**
+   * The default value of the '{@link #getOperator() <em>Operator</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getOperator()
+   * @generated
+   * @ordered
+   */
+  protected static final String OPERATOR_EDEFAULT = null;
+
+  /**
+   * The cached value of the '{@link #getOperator() <em>Operator</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getOperator()
+   * @generated
+   * @ordered
+   */
+  protected String operator = OPERATOR_EDEFAULT;
 
   /**
    * The default value of the '{@link #getValue() <em>Value</em>}' attribute.
@@ -171,6 +192,29 @@ public class setterImpl extends MinimalEObjectImpl.Container implements setter
    * <!-- end-user-doc -->
    * @generated
    */
+  public String getOperator()
+  {
+    return operator;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void setOperator(String newOperator)
+  {
+    String oldOperator = operator;
+    operator = newOperator;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, EDeltaLangPackage.SETTER__OPERATOR, oldOperator, operator));
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public String getValue()
   {
     return value;
@@ -239,6 +283,8 @@ public class setterImpl extends MinimalEObjectImpl.Container implements setter
       case EDeltaLangPackage.SETTER__METAFEATURE:
         if (resolve) return getMetafeature();
         return basicGetMetafeature();
+      case EDeltaLangPackage.SETTER__OPERATOR:
+        return getOperator();
       case EDeltaLangPackage.SETTER__VALUE:
         return getValue();
       case EDeltaLangPackage.SETTER__CARD:
@@ -262,6 +308,9 @@ public class setterImpl extends MinimalEObjectImpl.Container implements setter
     {
       case EDeltaLangPackage.SETTER__METAFEATURE:
         setMetafeature((EStructuralFeature)newValue);
+        return;
+      case EDeltaLangPackage.SETTER__OPERATOR:
+        setOperator((String)newValue);
         return;
       case EDeltaLangPackage.SETTER__VALUE:
         setValue((String)newValue);
@@ -290,6 +339,9 @@ public class setterImpl extends MinimalEObjectImpl.Container implements setter
       case EDeltaLangPackage.SETTER__METAFEATURE:
         setMetafeature((EStructuralFeature)null);
         return;
+      case EDeltaLangPackage.SETTER__OPERATOR:
+        setOperator(OPERATOR_EDEFAULT);
+        return;
       case EDeltaLangPackage.SETTER__VALUE:
         setValue(VALUE_EDEFAULT);
         return;
@@ -315,6 +367,8 @@ public class setterImpl extends MinimalEObjectImpl.Container implements setter
     {
       case EDeltaLangPackage.SETTER__METAFEATURE:
         return metafeature != null;
+      case EDeltaLangPackage.SETTER__OPERATOR:
+        return OPERATOR_EDEFAULT == null ? operator != null : !OPERATOR_EDEFAULT.equals(operator);
       case EDeltaLangPackage.SETTER__VALUE:
         return VALUE_EDEFAULT == null ? value != null : !VALUE_EDEFAULT.equals(value);
       case EDeltaLangPackage.SETTER__CARD:
@@ -336,7 +390,9 @@ public class setterImpl extends MinimalEObjectImpl.Container implements setter
     if (eIsProxy()) return super.toString();
 
     StringBuffer result = new StringBuffer(super.toString());
-    result.append(" (value: ");
+    result.append(" (operator: ");
+    result.append(operator);
+    result.append(", value: ");
     result.append(value);
     result.append(", card: ");
     result.append(card);
