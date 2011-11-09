@@ -1,4 +1,6 @@
 package it.univaq.coevolution.emfmigrate.validation;
+
+import it.univaq.coevolution.emfmigrate.validation.AbstractEmigJavaValidator;
  
 
 public class EmigJavaValidator extends AbstractEmigJavaValidator {

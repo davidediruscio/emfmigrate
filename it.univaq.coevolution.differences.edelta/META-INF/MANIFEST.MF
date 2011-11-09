@@ -30,5 +30,8 @@ Export-Package: it.univaq.coevolution.differences.edelta,
  it.univaq.coevolution.differences.edelta.parseTreeConstruction,
  it.univaq.coevolution.differences.edelta.parser.antlr,
  it.univaq.coevolution.differences.edelta.parser.antlr.internal,
- it.univaq.coevolution.differences.edelta.validation
+ it.univaq.coevolution.differences.edelta.validation,
+ it.univaq.coevolution.differences.edelta.scoping,
+ it.univaq.coevolution.differences.edelta.generator,
+ it.univaq.coevolution.differences.edelta.formatting
 

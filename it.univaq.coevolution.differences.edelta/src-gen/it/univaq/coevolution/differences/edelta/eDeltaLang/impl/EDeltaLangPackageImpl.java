@@ -658,7 +658,7 @@ public class EDeltaLangPackageImpl extends EPackageImpl implements EDeltaLangPac
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getsetter_Value()
+  public EAttribute getsetter_Operator()
   {
     return (EAttribute)setterEClass.getEStructuralFeatures().get(1);
   }
@@ -668,7 +668,7 @@ public class EDeltaLangPackageImpl extends EPackageImpl implements EDeltaLangPac
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getsetter_Card()
+  public EAttribute getsetter_Value()
   {
     return (EAttribute)setterEClass.getEStructuralFeatures().get(2);
   }
@@ -678,9 +678,19 @@ public class EDeltaLangPackageImpl extends EPackageImpl implements EDeltaLangPac
    * <!-- end-user-doc -->
    * @generated
    */
+  public EAttribute getsetter_Card()
+  {
+    return (EAttribute)setterEClass.getEStructuralFeatures().get(3);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public EReference getsetter_ValueRef()
   {
-    return (EReference)setterEClass.getEStructuralFeatures().get(3);
+    return (EReference)setterEClass.getEStructuralFeatures().get(4);
   }
 
   /**
@@ -1286,6 +1296,7 @@ public class EDeltaLangPackageImpl extends EPackageImpl implements EDeltaLangPac
 
     setterEClass = createEClass(SETTER);
     createEReference(setterEClass, SETTER__METAFEATURE);
+    createEAttribute(setterEClass, SETTER__OPERATOR);
     createEAttribute(setterEClass, SETTER__VALUE);
     createEAttribute(setterEClass, SETTER__CARD);
     createEReference(setterEClass, SETTER__VALUE_REF);
@@ -1443,6 +1454,7 @@ public class EDeltaLangPackageImpl extends EPackageImpl implements EDeltaLangPac
 
     initEClass(setterEClass, setter.class, "setter", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEReference(getsetter_Metafeature(), ecorePackage.getEStructuralFeature(), null, "metafeature", null, 0, 1, setter.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getsetter_Operator(), ecorePackage.getEString(), "operator", null, 0, 1, setter.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getsetter_Value(), ecorePackage.getEString(), "value", null, 0, 1, setter.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEAttribute(getsetter_Card(), ecorePackage.getEInt(), "card", null, 0, 1, setter.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getsetter_ValueRef(), ecorePackage.getEObject(), null, "valueRef", null, 0, -1, setter.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

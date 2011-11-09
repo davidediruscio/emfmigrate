@@ -5,7 +5,6 @@
  */
 package it.univaq.coevolution.emfmigrate.emig;
 
-import org.eclipse.emf.ecore.EObject;
 
 /**
  * <!-- begin-user-doc -->
@@ -23,7 +22,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface Migrator extends EObject
+public interface Migrator extends LocatedElement
 {
   /**
    * Returns the value of the '<em><b>Name</b></em>' attribute.

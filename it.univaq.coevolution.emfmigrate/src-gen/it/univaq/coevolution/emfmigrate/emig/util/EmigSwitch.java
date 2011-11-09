@@ -15,6 +15,7 @@ import it.univaq.coevolution.emfmigrate.emig.EPackageOpDef;
 import it.univaq.coevolution.emfmigrate.emig.EReferenceOpDef;
 import it.univaq.coevolution.emfmigrate.emig.EmigPackage;
 import it.univaq.coevolution.emfmigrate.emig.FilterMigrator;
+import it.univaq.coevolution.emfmigrate.emig.LocatedElement;
 import it.univaq.coevolution.emfmigrate.emig.MigrationLibrary;
 import it.univaq.coevolution.emfmigrate.emig.MigrationProgram;
 import it.univaq.coevolution.emfmigrate.emig.Migrator;
@@ -118,10 +119,18 @@ public class EmigSwitch<T> extends Switch<T>
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
+      case EmigPackage.LOCATED_ELEMENT:
+      {
+        LocatedElement locatedElement = (LocatedElement)theEObject;
+        T result = caseLocatedElement(locatedElement);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
       case EmigPackage.MIGRATION_PROGRAM:
       {
         MigrationProgram migrationProgram = (MigrationProgram)theEObject;
         T result = caseMigrationProgram(migrationProgram);
+        if (result == null) result = caseLocatedElement(migrationProgram);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -129,6 +138,7 @@ public class EmigSwitch<T> extends Switch<T>
       {
         Artifact artifact = (Artifact)theEObject;
         T result = caseArtifact(artifact);
+        if (result == null) result = caseLocatedElement(artifact);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -136,6 +146,7 @@ public class EmigSwitch<T> extends Switch<T>
       {
         Rule rule = (Rule)theEObject;
         T result = caseRule(rule);
+        if (result == null) result = caseLocatedElement(rule);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -143,6 +154,7 @@ public class EmigSwitch<T> extends Switch<T>
       {
         OpDef opDef = (OpDef)theEObject;
         T result = caseOpDef(opDef);
+        if (result == null) result = caseLocatedElement(opDef);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -151,6 +163,7 @@ public class EmigSwitch<T> extends Switch<T>
         EPackageOpDef ePackageOpDef = (EPackageOpDef)theEObject;
         T result = caseEPackageOpDef(ePackageOpDef);
         if (result == null) result = caseOpDef(ePackageOpDef);
+        if (result == null) result = caseLocatedElement(ePackageOpDef);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -159,6 +172,7 @@ public class EmigSwitch<T> extends Switch<T>
         EClassOpDef eClassOpDef = (EClassOpDef)theEObject;
         T result = caseEClassOpDef(eClassOpDef);
         if (result == null) result = caseOpDef(eClassOpDef);
+        if (result == null) result = caseLocatedElement(eClassOpDef);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -167,6 +181,7 @@ public class EmigSwitch<T> extends Switch<T>
         EAttributeOpDef eAttributeOpDef = (EAttributeOpDef)theEObject;
         T result = caseEAttributeOpDef(eAttributeOpDef);
         if (result == null) result = caseOpDef(eAttributeOpDef);
+        if (result == null) result = caseLocatedElement(eAttributeOpDef);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -175,6 +190,7 @@ public class EmigSwitch<T> extends Switch<T>
         EReferenceOpDef eReferenceOpDef = (EReferenceOpDef)theEObject;
         T result = caseEReferenceOpDef(eReferenceOpDef);
         if (result == null) result = caseOpDef(eReferenceOpDef);
+        if (result == null) result = caseLocatedElement(eReferenceOpDef);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -182,6 +198,7 @@ public class EmigSwitch<T> extends Switch<T>
       {
         setterDef setterDef = (setterDef)theEObject;
         T result = casesetterDef(setterDef);
+        if (result == null) result = caseLocatedElement(setterDef);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -189,6 +206,7 @@ public class EmigSwitch<T> extends Switch<T>
       {
         RewritingRule rewritingRule = (RewritingRule)theEObject;
         T result = caseRewritingRule(rewritingRule);
+        if (result == null) result = caseLocatedElement(rewritingRule);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -196,6 +214,7 @@ public class EmigSwitch<T> extends Switch<T>
       {
         Migrator migrator = (Migrator)theEObject;
         T result = caseMigrator(migrator);
+        if (result == null) result = caseLocatedElement(migrator);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -204,6 +223,7 @@ public class EmigSwitch<T> extends Switch<T>
         MigratorSX migratorSX = (MigratorSX)theEObject;
         T result = caseMigratorSX(migratorSX);
         if (result == null) result = caseMigrator(migratorSX);
+        if (result == null) result = caseLocatedElement(migratorSX);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -212,6 +232,7 @@ public class EmigSwitch<T> extends Switch<T>
         MigratorDX migratorDX = (MigratorDX)theEObject;
         T result = caseMigratorDX(migratorDX);
         if (result == null) result = caseMigrator(migratorDX);
+        if (result == null) result = caseLocatedElement(migratorDX);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -219,6 +240,7 @@ public class EmigSwitch<T> extends Switch<T>
       {
         FilterMigrator filterMigrator = (FilterMigrator)theEObject;
         T result = caseFilterMigrator(filterMigrator);
+        if (result == null) result = caseLocatedElement(filterMigrator);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -226,6 +248,7 @@ public class EmigSwitch<T> extends Switch<T>
       {
         DotNavigationObjSX dotNavigationObjSX = (DotNavigationObjSX)theEObject;
         T result = caseDotNavigationObjSX(dotNavigationObjSX);
+        if (result == null) result = caseLocatedElement(dotNavigationObjSX);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -233,6 +256,7 @@ public class EmigSwitch<T> extends Switch<T>
       {
         DotNavigationObjDX dotNavigationObjDX = (DotNavigationObjDX)theEObject;
         T result = caseDotNavigationObjDX(dotNavigationObjDX);
+        if (result == null) result = caseLocatedElement(dotNavigationObjDX);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -240,6 +264,7 @@ public class EmigSwitch<T> extends Switch<T>
       {
         Parameter parameter = (Parameter)theEObject;
         T result = caseParameter(parameter);
+        if (result == null) result = caseLocatedElement(parameter);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -320,6 +345,22 @@ public class EmigSwitch<T> extends Switch<T>
    * @generated
    */
   public T caseMigrationLibrary(MigrationLibrary object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Located Element</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Located Element</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseLocatedElement(LocatedElement object)
   {
     return null;
   }

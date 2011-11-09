@@ -17,7 +17,6 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -34,7 +33,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  *
  * @generated
  */
-public class FilterMigratorImpl extends MinimalEObjectImpl.Container implements FilterMigrator
+public class FilterMigratorImpl extends LocatedElementImpl implements FilterMigrator
 {
   /**
    * The cached value of the '{@link #getFeatureSX() <em>Feature SX</em>}' containment reference.

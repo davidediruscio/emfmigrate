@@ -21,7 +21,6 @@ import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
@@ -41,7 +40,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class setterDefImpl extends MinimalEObjectImpl.Container implements setterDef
+public class setterDefImpl extends LocatedElementImpl implements setterDef
 {
   /**
    * The cached value of the '{@link #getMetafeature() <em>Metafeature</em>}' reference.

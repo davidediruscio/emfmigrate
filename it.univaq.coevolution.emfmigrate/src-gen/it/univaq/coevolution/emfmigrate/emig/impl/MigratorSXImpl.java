@@ -8,6 +8,7 @@ package it.univaq.coevolution.emfmigrate.emig.impl;
 import it.univaq.coevolution.emfmigrate.emig.EmigPackage;
 import it.univaq.coevolution.emfmigrate.emig.FilterMigrator;
 import it.univaq.coevolution.emfmigrate.emig.MigratorSX;
+import it.univaq.coevolution.emfmigrate.emig.RewritingRule;
 
 import java.util.Collection;
 
@@ -22,6 +23,7 @@ import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
@@ -33,6 +35,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <ul>
  *   <li>{@link it.univaq.coevolution.emfmigrate.emig.impl.MigratorSXImpl#getElementSX <em>Element SX</em>}</li>
  *   <li>{@link it.univaq.coevolution.emfmigrate.emig.impl.MigratorSXImpl#getFilterSX <em>Filter SX</em>}</li>
+ *   <li>{@link it.univaq.coevolution.emfmigrate.emig.impl.MigratorSXImpl#getRewritingRule <em>Rewriting Rule</em>}</li>
  * </ul>
  * </p>
  *
@@ -143,6 +146,69 @@ public class MigratorSXImpl extends MigratorImpl implements MigratorSX
    * <!-- end-user-doc -->
    * @generated
    */
+  public RewritingRule getRewritingRule()
+  {
+    if (eContainerFeatureID() != EmigPackage.MIGRATOR_SX__REWRITING_RULE) return null;
+    return (RewritingRule)eContainer();
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public NotificationChain basicSetRewritingRule(RewritingRule newRewritingRule, NotificationChain msgs)
+  {
+    msgs = eBasicSetContainer((InternalEObject)newRewritingRule, EmigPackage.MIGRATOR_SX__REWRITING_RULE, msgs);
+    return msgs;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void setRewritingRule(RewritingRule newRewritingRule)
+  {
+    if (newRewritingRule != eInternalContainer() || (eContainerFeatureID() != EmigPackage.MIGRATOR_SX__REWRITING_RULE && newRewritingRule != null))
+    {
+      if (EcoreUtil.isAncestor(this, newRewritingRule))
+        throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
+      NotificationChain msgs = null;
+      if (eInternalContainer() != null)
+        msgs = eBasicRemoveFromContainer(msgs);
+      if (newRewritingRule != null)
+        msgs = ((InternalEObject)newRewritingRule).eInverseAdd(this, EmigPackage.REWRITING_RULE__MIGRATOR_SX, RewritingRule.class, msgs);
+      msgs = basicSetRewritingRule(newRewritingRule, msgs);
+      if (msgs != null) msgs.dispatch();
+    }
+    else if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, EmigPackage.MIGRATOR_SX__REWRITING_RULE, newRewritingRule, newRewritingRule));
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs)
+  {
+    switch (featureID)
+    {
+      case EmigPackage.MIGRATOR_SX__REWRITING_RULE:
+        if (eInternalContainer() != null)
+          msgs = eBasicRemoveFromContainer(msgs);
+        return basicSetRewritingRule((RewritingRule)otherEnd, msgs);
+    }
+    return super.eInverseAdd(otherEnd, featureID, msgs);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
   {
@@ -150,8 +216,26 @@ public class MigratorSXImpl extends MigratorImpl implements MigratorSX
     {
       case EmigPackage.MIGRATOR_SX__FILTER_SX:
         return ((InternalEList<?>)getFilterSX()).basicRemove(otherEnd, msgs);
+      case EmigPackage.MIGRATOR_SX__REWRITING_RULE:
+        return basicSetRewritingRule(null, msgs);
     }
     return super.eInverseRemove(otherEnd, featureID, msgs);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public NotificationChain eBasicRemoveFromContainerFeature(NotificationChain msgs)
+  {
+    switch (eContainerFeatureID())
+    {
+      case EmigPackage.MIGRATOR_SX__REWRITING_RULE:
+        return eInternalContainer().eInverseRemove(this, EmigPackage.REWRITING_RULE__MIGRATOR_SX, RewritingRule.class, msgs);
+    }
+    return super.eBasicRemoveFromContainerFeature(msgs);
   }
 
   /**
@@ -169,6 +253,8 @@ public class MigratorSXImpl extends MigratorImpl implements MigratorSX
         return basicGetElementSX();
       case EmigPackage.MIGRATOR_SX__FILTER_SX:
         return getFilterSX();
+      case EmigPackage.MIGRATOR_SX__REWRITING_RULE:
+        return getRewritingRule();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -191,6 +277,9 @@ public class MigratorSXImpl extends MigratorImpl implements MigratorSX
         getFilterSX().clear();
         getFilterSX().addAll((Collection<? extends FilterMigrator>)newValue);
         return;
+      case EmigPackage.MIGRATOR_SX__REWRITING_RULE:
+        setRewritingRule((RewritingRule)newValue);
+        return;
     }
     super.eSet(featureID, newValue);
   }
@@ -211,6 +300,9 @@ public class MigratorSXImpl extends MigratorImpl implements MigratorSX
       case EmigPackage.MIGRATOR_SX__FILTER_SX:
         getFilterSX().clear();
         return;
+      case EmigPackage.MIGRATOR_SX__REWRITING_RULE:
+        setRewritingRule((RewritingRule)null);
+        return;
     }
     super.eUnset(featureID);
   }
@@ -229,6 +321,8 @@ public class MigratorSXImpl extends MigratorImpl implements MigratorSX
         return elementSX != null;
       case EmigPackage.MIGRATOR_SX__FILTER_SX:
         return filterSX != null && !filterSX.isEmpty();
+      case EmigPackage.MIGRATOR_SX__REWRITING_RULE:
+        return getRewritingRule() != null;
     }
     return super.eIsSet(featureID);
   }

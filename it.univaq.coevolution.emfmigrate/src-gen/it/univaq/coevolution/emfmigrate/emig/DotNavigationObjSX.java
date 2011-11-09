@@ -25,7 +25,7 @@ import org.eclipse.emf.ecore.EStructuralFeature;
  * @model
  * @generated
  */
-public interface DotNavigationObjSX extends EObject
+public interface DotNavigationObjSX extends LocatedElement
 {
   /**
    * Returns the value of the '<em><b>Obj</b></em>' reference.

@@ -19,9 +19,7 @@ import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
-
-import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.EObjectContainmentWithInverseEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
@@ -31,25 +29,24 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link it.univaq.coevolution.emfmigrate.emig.impl.RewritingRuleImpl#getMigratorsSX <em>Migrators SX</em>}</li>
- *   <li>{@link it.univaq.coevolution.emfmigrate.emig.impl.RewritingRuleImpl#getMigratorDX <em>Migrator DX</em>}</li>
  *   <li>{@link it.univaq.coevolution.emfmigrate.emig.impl.RewritingRuleImpl#getMigratorSX <em>Migrator SX</em>}</li>
+ *   <li>{@link it.univaq.coevolution.emfmigrate.emig.impl.RewritingRuleImpl#getMigratorDX <em>Migrator DX</em>}</li>
  * </ul>
  * </p>
  *
  * @generated
  */
-public class RewritingRuleImpl extends MinimalEObjectImpl.Container implements RewritingRule
+public class RewritingRuleImpl extends LocatedElementImpl implements RewritingRule
 {
   /**
-   * The cached value of the '{@link #getMigratorsSX() <em>Migrators SX</em>}' containment reference list.
+   * The cached value of the '{@link #getMigratorSX() <em>Migrator SX</em>}' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getMigratorsSX()
+   * @see #getMigratorSX()
    * @generated
    * @ordered
    */
-  protected EList<MigratorSX> migratorsSX;
+  protected EList<MigratorSX> migratorSX;
 
   /**
    * The cached value of the '{@link #getMigratorDX() <em>Migrator DX</em>}' containment reference list.
@@ -60,16 +57,6 @@ public class RewritingRuleImpl extends MinimalEObjectImpl.Container implements R
    * @ordered
    */
   protected EList<MigratorDX> migratorDX;
-
-  /**
-   * The cached value of the '{@link #getMigratorSX() <em>Migrator SX</em>}' containment reference list.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @see #getMigratorSX()
-   * @generated
-   * @ordered
-   */
-  protected EList<MigratorSX> migratorSX;
 
   /**
    * <!-- begin-user-doc -->
@@ -97,13 +84,13 @@ public class RewritingRuleImpl extends MinimalEObjectImpl.Container implements R
    * <!-- end-user-doc -->
    * @generated
    */
-  public EList<MigratorSX> getMigratorsSX()
+  public EList<MigratorSX> getMigratorSX()
   {
-    if (migratorsSX == null)
+    if (migratorSX == null)
     {
-      migratorsSX = new EObjectContainmentEList<MigratorSX>(MigratorSX.class, this, EmigPackage.REWRITING_RULE__MIGRATORS_SX);
+      migratorSX = new EObjectContainmentWithInverseEList<MigratorSX>(MigratorSX.class, this, EmigPackage.REWRITING_RULE__MIGRATOR_SX, EmigPackage.MIGRATOR_SX__REWRITING_RULE);
     }
-    return migratorsSX;
+    return migratorSX;
   }
 
   /**
@@ -115,7 +102,7 @@ public class RewritingRuleImpl extends MinimalEObjectImpl.Container implements R
   {
     if (migratorDX == null)
     {
-      migratorDX = new EObjectContainmentEList<MigratorDX>(MigratorDX.class, this, EmigPackage.REWRITING_RULE__MIGRATOR_DX);
+      migratorDX = new EObjectContainmentWithInverseEList<MigratorDX>(MigratorDX.class, this, EmigPackage.REWRITING_RULE__MIGRATOR_DX, EmigPackage.MIGRATOR_DX__REWRITING_RULE);
     }
     return migratorDX;
   }
@@ -125,13 +112,18 @@ public class RewritingRuleImpl extends MinimalEObjectImpl.Container implements R
    * <!-- end-user-doc -->
    * @generated
    */
-  public EList<MigratorSX> getMigratorSX()
+  @SuppressWarnings("unchecked")
+  @Override
+  public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs)
   {
-    if (migratorSX == null)
+    switch (featureID)
     {
-      migratorSX = new EObjectContainmentEList<MigratorSX>(MigratorSX.class, this, EmigPackage.REWRITING_RULE__MIGRATOR_SX);
+      case EmigPackage.REWRITING_RULE__MIGRATOR_SX:
+        return ((InternalEList<InternalEObject>)(InternalEList<?>)getMigratorSX()).basicAdd(otherEnd, msgs);
+      case EmigPackage.REWRITING_RULE__MIGRATOR_DX:
+        return ((InternalEList<InternalEObject>)(InternalEList<?>)getMigratorDX()).basicAdd(otherEnd, msgs);
     }
-    return migratorSX;
+    return super.eInverseAdd(otherEnd, featureID, msgs);
   }
 
   /**
@@ -144,12 +136,10 @@ public class RewritingRuleImpl extends MinimalEObjectImpl.Container implements R
   {
     switch (featureID)
     {
-      case EmigPackage.REWRITING_RULE__MIGRATORS_SX:
-        return ((InternalEList<?>)getMigratorsSX()).basicRemove(otherEnd, msgs);
-      case EmigPackage.REWRITING_RULE__MIGRATOR_DX:
-        return ((InternalEList<?>)getMigratorDX()).basicRemove(otherEnd, msgs);
       case EmigPackage.REWRITING_RULE__MIGRATOR_SX:
         return ((InternalEList<?>)getMigratorSX()).basicRemove(otherEnd, msgs);
+      case EmigPackage.REWRITING_RULE__MIGRATOR_DX:
+        return ((InternalEList<?>)getMigratorDX()).basicRemove(otherEnd, msgs);
     }
     return super.eInverseRemove(otherEnd, featureID, msgs);
   }
@@ -164,12 +154,10 @@ public class RewritingRuleImpl extends MinimalEObjectImpl.Container implements R
   {
     switch (featureID)
     {
-      case EmigPackage.REWRITING_RULE__MIGRATORS_SX:
-        return getMigratorsSX();
-      case EmigPackage.REWRITING_RULE__MIGRATOR_DX:
-        return getMigratorDX();
       case EmigPackage.REWRITING_RULE__MIGRATOR_SX:
         return getMigratorSX();
+      case EmigPackage.REWRITING_RULE__MIGRATOR_DX:
+        return getMigratorDX();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -185,17 +173,13 @@ public class RewritingRuleImpl extends MinimalEObjectImpl.Container implements R
   {
     switch (featureID)
     {
-      case EmigPackage.REWRITING_RULE__MIGRATORS_SX:
-        getMigratorsSX().clear();
-        getMigratorsSX().addAll((Collection<? extends MigratorSX>)newValue);
+      case EmigPackage.REWRITING_RULE__MIGRATOR_SX:
+        getMigratorSX().clear();
+        getMigratorSX().addAll((Collection<? extends MigratorSX>)newValue);
         return;
       case EmigPackage.REWRITING_RULE__MIGRATOR_DX:
         getMigratorDX().clear();
         getMigratorDX().addAll((Collection<? extends MigratorDX>)newValue);
-        return;
-      case EmigPackage.REWRITING_RULE__MIGRATOR_SX:
-        getMigratorSX().clear();
-        getMigratorSX().addAll((Collection<? extends MigratorSX>)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -211,14 +195,11 @@ public class RewritingRuleImpl extends MinimalEObjectImpl.Container implements R
   {
     switch (featureID)
     {
-      case EmigPackage.REWRITING_RULE__MIGRATORS_SX:
-        getMigratorsSX().clear();
+      case EmigPackage.REWRITING_RULE__MIGRATOR_SX:
+        getMigratorSX().clear();
         return;
       case EmigPackage.REWRITING_RULE__MIGRATOR_DX:
         getMigratorDX().clear();
-        return;
-      case EmigPackage.REWRITING_RULE__MIGRATOR_SX:
-        getMigratorSX().clear();
         return;
     }
     super.eUnset(featureID);
@@ -234,12 +215,10 @@ public class RewritingRuleImpl extends MinimalEObjectImpl.Container implements R
   {
     switch (featureID)
     {
-      case EmigPackage.REWRITING_RULE__MIGRATORS_SX:
-        return migratorsSX != null && !migratorsSX.isEmpty();
-      case EmigPackage.REWRITING_RULE__MIGRATOR_DX:
-        return migratorDX != null && !migratorDX.isEmpty();
       case EmigPackage.REWRITING_RULE__MIGRATOR_SX:
         return migratorSX != null && !migratorSX.isEmpty();
+      case EmigPackage.REWRITING_RULE__MIGRATOR_DX:
+        return migratorDX != null && !migratorDX.isEmpty();
     }
     return super.eIsSet(featureID);
   }

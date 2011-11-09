@@ -11,5 +11,6 @@ class EmigGenerator implements IGenerator {
 	
 	override void doGenerate(Resource resource, IFileSystemAccess fsa) {
 		//TODO implment me
+		
 	}
 }

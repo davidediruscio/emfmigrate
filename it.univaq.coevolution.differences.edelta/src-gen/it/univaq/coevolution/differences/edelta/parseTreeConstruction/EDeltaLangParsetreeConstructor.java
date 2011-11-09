@@ -1841,11 +1841,11 @@ protected class EClassOperation_ComplexAssignment_1_1_1 extends AssignmentToken 
 /************ begin Rule ChangeClass ****************
  *
  * ChangeClass:
- * 	op="changeClass(" ref=[ecore::EClass] ")";
+ * 	{ChangeClass} op="changeClass(" ref=[ecore::EClass] ")";
  *
  **/
 
-// op="changeClass(" ref=[ecore::EClass] ")"
+// {ChangeClass} op="changeClass(" ref=[ecore::EClass] ")"
 protected class ChangeClass_Group extends GroupToken {
 	
 	public ChangeClass_Group(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
@@ -1860,30 +1860,30 @@ protected class ChangeClass_Group extends GroupToken {
     @Override
 	public AbstractToken createFollower(int index, IEObjectConsumer inst) {
 		switch(index) {
-			case 0: return new ChangeClass_RightParenthesisKeyword_2(lastRuleCallOrigin, this, 0, inst);
+			case 0: return new ChangeClass_RightParenthesisKeyword_3(lastRuleCallOrigin, this, 0, inst);
 			default: return null;
 		}	
 	}
 
     @Override
 	public IEObjectConsumer tryConsume() {
-		if(getEObject().eClass() != grammarAccess.getChangeClassRule().getType().getClassifier())
+		if(getEObject().eClass() != grammarAccess.getChangeClassAccess().getChangeClassAction_0().getType().getClassifier())
 			return null;
 		return eObjectConsumer;
 	}
 
 }
 
-// op="changeClass("
-protected class ChangeClass_OpAssignment_0 extends AssignmentToken  {
-	
-	public ChangeClass_OpAssignment_0(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
+// {ChangeClass}
+protected class ChangeClass_ChangeClassAction_0 extends ActionToken  {
+
+	public ChangeClass_ChangeClassAction_0(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
 		super(lastRuleCallOrigin, next, transitionIndex, eObjectConsumer);
 	}
 	
 	@Override
-	public Assignment getGrammarElement() {
-		return grammarAccess.getChangeClassAccess().getOpAssignment_0();
+	public Action getGrammarElement() {
+		return grammarAccess.getChangeClassAccess().getChangeClassAction_0();
 	}
 
     @Override
@@ -1893,13 +1893,40 @@ protected class ChangeClass_OpAssignment_0 extends AssignmentToken  {
 		}	
 	}
 
+    @Override
+	public IEObjectConsumer tryConsume() {
+		if(!eObjectConsumer.isConsumed()) return null;
+		return eObjectConsumer;
+	}
+}
+
+// op="changeClass("
+protected class ChangeClass_OpAssignment_1 extends AssignmentToken  {
+	
+	public ChangeClass_OpAssignment_1(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
+		super(lastRuleCallOrigin, next, transitionIndex, eObjectConsumer);
+	}
+	
+	@Override
+	public Assignment getGrammarElement() {
+		return grammarAccess.getChangeClassAccess().getOpAssignment_1();
+	}
+
+    @Override
+	public AbstractToken createFollower(int index, IEObjectConsumer inst) {
+		switch(index) {
+			case 0: return new ChangeClass_ChangeClassAction_0(lastRuleCallOrigin, this, 0, inst);
+			default: return null;
+		}	
+	}
+
     @Override	
 	public IEObjectConsumer tryConsume() {
 		if((value = eObjectConsumer.getConsumable("op",true)) == null) return null;
 		IEObjectConsumer obj = eObjectConsumer.cloneAndConsume("op");
-		if(keywordSerializer.isValid(obj.getEObject(), grammarAccess.getChangeClassAccess().getOpChangeClassKeyword_0_0(), value, null)) {
+		if(keywordSerializer.isValid(obj.getEObject(), grammarAccess.getChangeClassAccess().getOpChangeClassKeyword_1_0(), value, null)) {
 			type = AssignmentType.KEYWORD;
-			element = grammarAccess.getChangeClassAccess().getOpChangeClassKeyword_0_0();
+			element = grammarAccess.getChangeClassAccess().getOpChangeClassKeyword_1_0();
 			return obj;
 		}
 		return null;
@@ -1908,21 +1935,21 @@ protected class ChangeClass_OpAssignment_0 extends AssignmentToken  {
 }
 
 // ref=[ecore::EClass]
-protected class ChangeClass_RefAssignment_1 extends AssignmentToken  {
+protected class ChangeClass_RefAssignment_2 extends AssignmentToken  {
 	
-	public ChangeClass_RefAssignment_1(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
+	public ChangeClass_RefAssignment_2(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
 		super(lastRuleCallOrigin, next, transitionIndex, eObjectConsumer);
 	}
 	
 	@Override
 	public Assignment getGrammarElement() {
-		return grammarAccess.getChangeClassAccess().getRefAssignment_1();
+		return grammarAccess.getChangeClassAccess().getRefAssignment_2();
 	}
 
     @Override
 	public AbstractToken createFollower(int index, IEObjectConsumer inst) {
 		switch(index) {
-			case 0: return new ChangeClass_OpAssignment_0(lastRuleCallOrigin, this, 0, inst);
+			case 0: return new ChangeClass_OpAssignment_1(lastRuleCallOrigin, this, 0, inst);
 			default: return null;
 		}	
 	}
@@ -1933,9 +1960,9 @@ protected class ChangeClass_RefAssignment_1 extends AssignmentToken  {
 		IEObjectConsumer obj = eObjectConsumer.cloneAndConsume("ref");
 		if(value instanceof EObject) { // org::eclipse::xtext::impl::CrossReferenceImpl
 			IEObjectConsumer param = createEObjectConsumer((EObject)value);
-			if(param.isInstanceOf(grammarAccess.getChangeClassAccess().getRefEClassCrossReference_1_0().getType().getClassifier())) {
+			if(param.isInstanceOf(grammarAccess.getChangeClassAccess().getRefEClassCrossReference_2_0().getType().getClassifier())) {
 				type = AssignmentType.CROSS_REFERENCE;
-				element = grammarAccess.getChangeClassAccess().getRefEClassCrossReference_1_0(); 
+				element = grammarAccess.getChangeClassAccess().getRefEClassCrossReference_2_0(); 
 				return obj;
 			}
 		}
@@ -1945,21 +1972,21 @@ protected class ChangeClass_RefAssignment_1 extends AssignmentToken  {
 }
 
 // ")"
-protected class ChangeClass_RightParenthesisKeyword_2 extends KeywordToken  {
+protected class ChangeClass_RightParenthesisKeyword_3 extends KeywordToken  {
 	
-	public ChangeClass_RightParenthesisKeyword_2(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
+	public ChangeClass_RightParenthesisKeyword_3(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
 		super(lastRuleCallOrigin, next, transitionIndex, eObjectConsumer);
 	}
 	
 	@Override
 	public Keyword getGrammarElement() {
-		return grammarAccess.getChangeClassAccess().getRightParenthesisKeyword_2();
+		return grammarAccess.getChangeClassAccess().getRightParenthesisKeyword_3();
 	}
 
     @Override
 	public AbstractToken createFollower(int index, IEObjectConsumer inst) {
 		switch(index) {
-			case 0: return new ChangeClass_RefAssignment_1(lastRuleCallOrigin, this, 0, inst);
+			case 0: return new ChangeClass_RefAssignment_2(lastRuleCallOrigin, this, 0, inst);
 			default: return null;
 		}	
 	}
@@ -2395,12 +2422,12 @@ protected class Class_NameAssignment_1 extends AssignmentToken  {
 /************ begin Rule setter ****************
  *
  * setter:
- * 	"set" metafeature=[ecore::EStructuralFeature] "<=" ((value=STRING | BOOL) | card=Cardinality |
+ * 	"set" metafeature=[ecore::EStructuralFeature] operator="<=" ((value=STRING | BOOL) | card=Cardinality |
  * 	valueRef+=[ecore::EObject]) ("," valueRef+=[ecore::EObject])* ";";
  *
  **/
 
-// "set" metafeature=[ecore::EStructuralFeature] "<=" ((value=STRING | BOOL) | card=Cardinality |
+// "set" metafeature=[ecore::EStructuralFeature] operator="<=" ((value=STRING | BOOL) | card=Cardinality |
 // valueRef+=[ecore::EObject]) ("," valueRef+=[ecore::EObject])* ";"
 protected class Setter_Group extends GroupToken {
 	
@@ -2488,16 +2515,16 @@ protected class Setter_MetafeatureAssignment_1 extends AssignmentToken  {
 
 }
 
-// "<="
-protected class Setter_LessThanSignEqualsSignKeyword_2 extends KeywordToken  {
+// operator="<="
+protected class Setter_OperatorAssignment_2 extends AssignmentToken  {
 	
-	public Setter_LessThanSignEqualsSignKeyword_2(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
+	public Setter_OperatorAssignment_2(AbstractToken lastRuleCallOrigin, AbstractToken next, int transitionIndex, IEObjectConsumer eObjectConsumer) {
 		super(lastRuleCallOrigin, next, transitionIndex, eObjectConsumer);
 	}
 	
 	@Override
-	public Keyword getGrammarElement() {
-		return grammarAccess.getSetterAccess().getLessThanSignEqualsSignKeyword_2();
+	public Assignment getGrammarElement() {
+		return grammarAccess.getSetterAccess().getOperatorAssignment_2();
 	}
 
     @Override
@@ -2506,6 +2533,18 @@ protected class Setter_LessThanSignEqualsSignKeyword_2 extends KeywordToken  {
 			case 0: return new Setter_MetafeatureAssignment_1(lastRuleCallOrigin, this, 0, inst);
 			default: return null;
 		}	
+	}
+
+    @Override	
+	public IEObjectConsumer tryConsume() {
+		if((value = eObjectConsumer.getConsumable("operator",true)) == null) return null;
+		IEObjectConsumer obj = eObjectConsumer.cloneAndConsume("operator");
+		if(keywordSerializer.isValid(obj.getEObject(), grammarAccess.getSetterAccess().getOperatorLessThanSignEqualsSignKeyword_2_0(), value, null)) {
+			type = AssignmentType.KEYWORD;
+			element = grammarAccess.getSetterAccess().getOperatorLessThanSignEqualsSignKeyword_2_0();
+			return obj;
+		}
+		return null;
 	}
 
 }
@@ -2572,7 +2611,7 @@ protected class Setter_ValueAssignment_3_0_0 extends AssignmentToken  {
     @Override
 	public AbstractToken createFollower(int index, IEObjectConsumer inst) {
 		switch(index) {
-			case 0: return new Setter_LessThanSignEqualsSignKeyword_2(lastRuleCallOrigin, this, 0, inst);
+			case 0: return new Setter_OperatorAssignment_2(lastRuleCallOrigin, this, 0, inst);
 			default: return null;
 		}	
 	}
@@ -2606,7 +2645,7 @@ protected class Setter_BOOLTerminalRuleCall_3_0_1 extends UnassignedTextToken {
     @Override
 	public AbstractToken createFollower(int index, IEObjectConsumer inst) {
 		switch(index) {
-			case 0: return new Setter_LessThanSignEqualsSignKeyword_2(lastRuleCallOrigin, this, 0, inst);
+			case 0: return new Setter_OperatorAssignment_2(lastRuleCallOrigin, this, 0, inst);
 			default: return null;
 		}	
 	}
@@ -2629,7 +2668,7 @@ protected class Setter_CardAssignment_3_1 extends AssignmentToken  {
     @Override
 	public AbstractToken createFollower(int index, IEObjectConsumer inst) {
 		switch(index) {
-			case 0: return new Setter_LessThanSignEqualsSignKeyword_2(lastRuleCallOrigin, this, 0, inst);
+			case 0: return new Setter_OperatorAssignment_2(lastRuleCallOrigin, this, 0, inst);
 			default: return null;
 		}	
 	}
@@ -2663,7 +2702,7 @@ protected class Setter_ValueRefAssignment_3_2 extends AssignmentToken  {
     @Override
 	public AbstractToken createFollower(int index, IEObjectConsumer inst) {
 		switch(index) {
-			case 0: return new Setter_LessThanSignEqualsSignKeyword_2(lastRuleCallOrigin, this, 0, inst);
+			case 0: return new Setter_OperatorAssignment_2(lastRuleCallOrigin, this, 0, inst);
 			default: return null;
 		}	
 	}

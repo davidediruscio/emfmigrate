@@ -5,7 +5,6 @@
  */
 package it.univaq.coevolution.emfmigrate.emig;
 
-import org.eclipse.emf.ecore.EObject;
 
 /**
  * <!-- begin-user-doc -->
@@ -25,7 +24,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface FilterMigrator extends EObject
+public interface FilterMigrator extends LocatedElement
 {
   /**
    * Returns the value of the '<em><b>Feature SX</b></em>' containment reference.

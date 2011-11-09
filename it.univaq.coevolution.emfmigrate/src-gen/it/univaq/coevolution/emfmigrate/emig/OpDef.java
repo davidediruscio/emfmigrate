@@ -7,8 +7,6 @@ package it.univaq.coevolution.emfmigrate.emig;
 
 import org.eclipse.emf.common.util.EList;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Op Def</b></em>'.
@@ -26,7 +24,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface OpDef extends EObject
+public interface OpDef extends LocatedElement
 {
   /**
    * Returns the value of the '<em><b>Op</b></em>' attribute.

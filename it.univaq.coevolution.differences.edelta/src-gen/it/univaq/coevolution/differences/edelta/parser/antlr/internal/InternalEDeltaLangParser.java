@@ -1928,33 +1928,51 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleChangeClass"
-    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:701:1: ruleChangeClass returns [EObject current=null] : ( ( (lv_op_0_0= 'changeClass(' ) ) ( (otherlv_1= RULE_ID ) ) otherlv_2= ')' ) ;
+    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:701:1: ruleChangeClass returns [EObject current=null] : ( () ( (lv_op_1_0= 'changeClass(' ) ) ( (otherlv_2= RULE_ID ) ) otherlv_3= ')' ) ;
     public final EObject ruleChangeClass() throws RecognitionException {
         EObject current = null;
 
-        Token lv_op_0_0=null;
-        Token otherlv_1=null;
+        Token lv_op_1_0=null;
         Token otherlv_2=null;
+        Token otherlv_3=null;
 
          enterRule(); 
             
         try {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:704:28: ( ( ( (lv_op_0_0= 'changeClass(' ) ) ( (otherlv_1= RULE_ID ) ) otherlv_2= ')' ) )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:705:1: ( ( (lv_op_0_0= 'changeClass(' ) ) ( (otherlv_1= RULE_ID ) ) otherlv_2= ')' )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:704:28: ( ( () ( (lv_op_1_0= 'changeClass(' ) ) ( (otherlv_2= RULE_ID ) ) otherlv_3= ')' ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:705:1: ( () ( (lv_op_1_0= 'changeClass(' ) ) ( (otherlv_2= RULE_ID ) ) otherlv_3= ')' )
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:705:1: ( ( (lv_op_0_0= 'changeClass(' ) ) ( (otherlv_1= RULE_ID ) ) otherlv_2= ')' )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:705:2: ( (lv_op_0_0= 'changeClass(' ) ) ( (otherlv_1= RULE_ID ) ) otherlv_2= ')'
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:705:1: ( () ( (lv_op_1_0= 'changeClass(' ) ) ( (otherlv_2= RULE_ID ) ) otherlv_3= ')' )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:705:2: () ( (lv_op_1_0= 'changeClass(' ) ) ( (otherlv_2= RULE_ID ) ) otherlv_3= ')'
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:705:2: ( (lv_op_0_0= 'changeClass(' ) )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:706:1: (lv_op_0_0= 'changeClass(' )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:705:2: ()
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:706:2: 
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:706:1: (lv_op_0_0= 'changeClass(' )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:707:3: lv_op_0_0= 'changeClass('
-            {
-            lv_op_0_0=(Token)match(input,22,FOLLOW_22_in_ruleChangeClass1397); if (state.failed) return current;
+            if ( state.backtracking==0 ) {
+               
+              	  /* */ 
+              	
+            }
             if ( state.backtracking==0 ) {
 
-                      newLeafNode(lv_op_0_0, grammarAccess.getChangeClassAccess().getOpChangeClassKeyword_0_0());
+                      current = forceCreateModelElement(
+                          grammarAccess.getChangeClassAccess().getChangeClassAction_0(),
+                          current);
+                  
+            }
+
+            }
+
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:714:2: ( (lv_op_1_0= 'changeClass(' ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:715:1: (lv_op_1_0= 'changeClass(' )
+            {
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:715:1: (lv_op_1_0= 'changeClass(' )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:716:3: lv_op_1_0= 'changeClass('
+            {
+            lv_op_1_0=(Token)match(input,22,FOLLOW_22_in_ruleChangeClass1409); if (state.failed) return current;
+            if ( state.backtracking==0 ) {
+
+                      newLeafNode(lv_op_1_0, grammarAccess.getChangeClassAccess().getOpChangeClassKeyword_1_0());
                   
             }
             if ( state.backtracking==0 ) {
@@ -1962,7 +1980,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
               	        if (current==null) {
               	            current = createModelElement(grammarAccess.getChangeClassRule());
               	        }
-                     		setWithLastConsumed(current, "op", lv_op_0_0, "changeClass(");
+                     		setWithLastConsumed(current, "op", lv_op_1_0, "changeClass(");
               	    
             }
 
@@ -1971,11 +1989,11 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:720:2: ( (otherlv_1= RULE_ID ) )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:721:1: (otherlv_1= RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:729:2: ( (otherlv_2= RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:730:1: (otherlv_2= RULE_ID )
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:721:1: (otherlv_1= RULE_ID )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:722:3: otherlv_1= RULE_ID
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:730:1: (otherlv_2= RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:731:3: otherlv_2= RULE_ID
             {
             if ( state.backtracking==0 ) {
                
@@ -1989,10 +2007,10 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
               	        }
                       
             }
-            otherlv_1=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleChangeClass1434); if (state.failed) return current;
+            otherlv_2=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleChangeClass1446); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
-              		newLeafNode(otherlv_1, grammarAccess.getChangeClassAccess().getRefEClassCrossReference_1_0()); 
+              		newLeafNode(otherlv_2, grammarAccess.getChangeClassAccess().getRefEClassCrossReference_2_0()); 
               	
             }
 
@@ -2001,10 +2019,10 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_2=(Token)match(input,18,FOLLOW_18_in_ruleChangeClass1446); if (state.failed) return current;
+            otherlv_3=(Token)match(input,18,FOLLOW_18_in_ruleChangeClass1458); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
-                  	newLeafNode(otherlv_2, grammarAccess.getChangeClassAccess().getRightParenthesisKeyword_2());
+                  	newLeafNode(otherlv_3, grammarAccess.getChangeClassAccess().getRightParenthesisKeyword_3());
                   
             }
 
@@ -2030,7 +2048,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleAddClass"
-    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:748:1: entryRuleAddClass returns [EObject current=null] : iv_ruleAddClass= ruleAddClass EOF ;
+    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:757:1: entryRuleAddClass returns [EObject current=null] : iv_ruleAddClass= ruleAddClass EOF ;
     public final EObject entryRuleAddClass() throws RecognitionException {
         EObject current = null;
 
@@ -2038,13 +2056,13 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:749:2: (iv_ruleAddClass= ruleAddClass EOF )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:750:2: iv_ruleAddClass= ruleAddClass EOF
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:758:2: (iv_ruleAddClass= ruleAddClass EOF )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:759:2: iv_ruleAddClass= ruleAddClass EOF
             {
             if ( state.backtracking==0 ) {
                newCompositeNode(grammarAccess.getAddClassRule()); 
             }
-            pushFollow(FOLLOW_ruleAddClass_in_entryRuleAddClass1482);
+            pushFollow(FOLLOW_ruleAddClass_in_entryRuleAddClass1494);
             iv_ruleAddClass=ruleAddClass();
 
             state._fsp--;
@@ -2052,7 +2070,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
             if ( state.backtracking==0 ) {
                current =iv_ruleAddClass; 
             }
-            match(input,EOF,FOLLOW_EOF_in_entryRuleAddClass1492); if (state.failed) return current;
+            match(input,EOF,FOLLOW_EOF_in_entryRuleAddClass1504); if (state.failed) return current;
 
             }
 
@@ -2070,7 +2088,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleAddClass"
-    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:757:1: ruleAddClass returns [EObject current=null] : ( ( (lv_op_0_0= 'addClass(' ) ) ( ( (lv_new_1_0= RULE_STRING ) ) | ( (otherlv_2= RULE_ID ) ) ) otherlv_3= ')' ) ;
+    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:766:1: ruleAddClass returns [EObject current=null] : ( ( (lv_op_0_0= 'addClass(' ) ) ( ( (lv_new_1_0= RULE_STRING ) ) | ( (otherlv_2= RULE_ID ) ) ) otherlv_3= ')' ) ;
     public final EObject ruleAddClass() throws RecognitionException {
         EObject current = null;
 
@@ -2082,19 +2100,19 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:760:28: ( ( ( (lv_op_0_0= 'addClass(' ) ) ( ( (lv_new_1_0= RULE_STRING ) ) | ( (otherlv_2= RULE_ID ) ) ) otherlv_3= ')' ) )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:761:1: ( ( (lv_op_0_0= 'addClass(' ) ) ( ( (lv_new_1_0= RULE_STRING ) ) | ( (otherlv_2= RULE_ID ) ) ) otherlv_3= ')' )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:769:28: ( ( ( (lv_op_0_0= 'addClass(' ) ) ( ( (lv_new_1_0= RULE_STRING ) ) | ( (otherlv_2= RULE_ID ) ) ) otherlv_3= ')' ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:770:1: ( ( (lv_op_0_0= 'addClass(' ) ) ( ( (lv_new_1_0= RULE_STRING ) ) | ( (otherlv_2= RULE_ID ) ) ) otherlv_3= ')' )
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:761:1: ( ( (lv_op_0_0= 'addClass(' ) ) ( ( (lv_new_1_0= RULE_STRING ) ) | ( (otherlv_2= RULE_ID ) ) ) otherlv_3= ')' )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:761:2: ( (lv_op_0_0= 'addClass(' ) ) ( ( (lv_new_1_0= RULE_STRING ) ) | ( (otherlv_2= RULE_ID ) ) ) otherlv_3= ')'
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:770:1: ( ( (lv_op_0_0= 'addClass(' ) ) ( ( (lv_new_1_0= RULE_STRING ) ) | ( (otherlv_2= RULE_ID ) ) ) otherlv_3= ')' )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:770:2: ( (lv_op_0_0= 'addClass(' ) ) ( ( (lv_new_1_0= RULE_STRING ) ) | ( (otherlv_2= RULE_ID ) ) ) otherlv_3= ')'
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:761:2: ( (lv_op_0_0= 'addClass(' ) )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:762:1: (lv_op_0_0= 'addClass(' )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:770:2: ( (lv_op_0_0= 'addClass(' ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:771:1: (lv_op_0_0= 'addClass(' )
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:762:1: (lv_op_0_0= 'addClass(' )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:763:3: lv_op_0_0= 'addClass('
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:771:1: (lv_op_0_0= 'addClass(' )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:772:3: lv_op_0_0= 'addClass('
             {
-            lv_op_0_0=(Token)match(input,23,FOLLOW_23_in_ruleAddClass1535); if (state.failed) return current;
+            lv_op_0_0=(Token)match(input,23,FOLLOW_23_in_ruleAddClass1547); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
                       newLeafNode(lv_op_0_0, grammarAccess.getAddClassAccess().getOpAddClassKeyword_0_0());
@@ -2114,7 +2132,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:776:2: ( ( (lv_new_1_0= RULE_STRING ) ) | ( (otherlv_2= RULE_ID ) ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:785:2: ( ( (lv_new_1_0= RULE_STRING ) ) | ( (otherlv_2= RULE_ID ) ) )
             int alt12=2;
             int LA12_0 = input.LA(1);
 
@@ -2133,15 +2151,15 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
             }
             switch (alt12) {
                 case 1 :
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:776:3: ( (lv_new_1_0= RULE_STRING ) )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:785:3: ( (lv_new_1_0= RULE_STRING ) )
                     {
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:776:3: ( (lv_new_1_0= RULE_STRING ) )
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:777:1: (lv_new_1_0= RULE_STRING )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:785:3: ( (lv_new_1_0= RULE_STRING ) )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:786:1: (lv_new_1_0= RULE_STRING )
                     {
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:777:1: (lv_new_1_0= RULE_STRING )
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:778:3: lv_new_1_0= RULE_STRING
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:786:1: (lv_new_1_0= RULE_STRING )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:787:3: lv_new_1_0= RULE_STRING
                     {
-                    lv_new_1_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleAddClass1566); if (state.failed) return current;
+                    lv_new_1_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleAddClass1578); if (state.failed) return current;
                     if ( state.backtracking==0 ) {
 
                       			newLeafNode(lv_new_1_0, grammarAccess.getAddClassAccess().getNewSTRINGTerminalRuleCall_1_0_0()); 
@@ -2169,13 +2187,13 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:795:6: ( (otherlv_2= RULE_ID ) )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:804:6: ( (otherlv_2= RULE_ID ) )
                     {
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:795:6: ( (otherlv_2= RULE_ID ) )
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:796:1: (otherlv_2= RULE_ID )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:804:6: ( (otherlv_2= RULE_ID ) )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:805:1: (otherlv_2= RULE_ID )
                     {
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:796:1: (otherlv_2= RULE_ID )
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:797:3: otherlv_2= RULE_ID
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:805:1: (otherlv_2= RULE_ID )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:806:3: otherlv_2= RULE_ID
                     {
                     if ( state.backtracking==0 ) {
                        
@@ -2189,7 +2207,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
                       	        }
                               
                     }
-                    otherlv_2=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleAddClass1601); if (state.failed) return current;
+                    otherlv_2=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleAddClass1613); if (state.failed) return current;
                     if ( state.backtracking==0 ) {
 
                       		newLeafNode(otherlv_2, grammarAccess.getAddClassAccess().getRefSTRINGCrossReference_1_1_0()); 
@@ -2207,7 +2225,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_3=(Token)match(input,18,FOLLOW_18_in_ruleAddClass1614); if (state.failed) return current;
+            otherlv_3=(Token)match(input,18,FOLLOW_18_in_ruleAddClass1626); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
                   	newLeafNode(otherlv_3, grammarAccess.getAddClassAccess().getRightParenthesisKeyword_2());
@@ -2236,7 +2254,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleDeleteClass"
-    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:823:1: entryRuleDeleteClass returns [EObject current=null] : iv_ruleDeleteClass= ruleDeleteClass EOF ;
+    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:832:1: entryRuleDeleteClass returns [EObject current=null] : iv_ruleDeleteClass= ruleDeleteClass EOF ;
     public final EObject entryRuleDeleteClass() throws RecognitionException {
         EObject current = null;
 
@@ -2244,13 +2262,13 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:824:2: (iv_ruleDeleteClass= ruleDeleteClass EOF )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:825:2: iv_ruleDeleteClass= ruleDeleteClass EOF
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:833:2: (iv_ruleDeleteClass= ruleDeleteClass EOF )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:834:2: iv_ruleDeleteClass= ruleDeleteClass EOF
             {
             if ( state.backtracking==0 ) {
                newCompositeNode(grammarAccess.getDeleteClassRule()); 
             }
-            pushFollow(FOLLOW_ruleDeleteClass_in_entryRuleDeleteClass1650);
+            pushFollow(FOLLOW_ruleDeleteClass_in_entryRuleDeleteClass1662);
             iv_ruleDeleteClass=ruleDeleteClass();
 
             state._fsp--;
@@ -2258,7 +2276,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
             if ( state.backtracking==0 ) {
                current =iv_ruleDeleteClass; 
             }
-            match(input,EOF,FOLLOW_EOF_in_entryRuleDeleteClass1660); if (state.failed) return current;
+            match(input,EOF,FOLLOW_EOF_in_entryRuleDeleteClass1672); if (state.failed) return current;
 
             }
 
@@ -2276,7 +2294,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleDeleteClass"
-    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:832:1: ruleDeleteClass returns [EObject current=null] : ( ( (lv_op_0_0= 'deleteClass(' ) ) ( (otherlv_1= RULE_ID ) ) otherlv_2= ')' ) ;
+    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:841:1: ruleDeleteClass returns [EObject current=null] : ( ( (lv_op_0_0= 'deleteClass(' ) ) ( (otherlv_1= RULE_ID ) ) otherlv_2= ')' ) ;
     public final EObject ruleDeleteClass() throws RecognitionException {
         EObject current = null;
 
@@ -2287,19 +2305,19 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:835:28: ( ( ( (lv_op_0_0= 'deleteClass(' ) ) ( (otherlv_1= RULE_ID ) ) otherlv_2= ')' ) )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:836:1: ( ( (lv_op_0_0= 'deleteClass(' ) ) ( (otherlv_1= RULE_ID ) ) otherlv_2= ')' )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:844:28: ( ( ( (lv_op_0_0= 'deleteClass(' ) ) ( (otherlv_1= RULE_ID ) ) otherlv_2= ')' ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:845:1: ( ( (lv_op_0_0= 'deleteClass(' ) ) ( (otherlv_1= RULE_ID ) ) otherlv_2= ')' )
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:836:1: ( ( (lv_op_0_0= 'deleteClass(' ) ) ( (otherlv_1= RULE_ID ) ) otherlv_2= ')' )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:836:2: ( (lv_op_0_0= 'deleteClass(' ) ) ( (otherlv_1= RULE_ID ) ) otherlv_2= ')'
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:845:1: ( ( (lv_op_0_0= 'deleteClass(' ) ) ( (otherlv_1= RULE_ID ) ) otherlv_2= ')' )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:845:2: ( (lv_op_0_0= 'deleteClass(' ) ) ( (otherlv_1= RULE_ID ) ) otherlv_2= ')'
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:836:2: ( (lv_op_0_0= 'deleteClass(' ) )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:837:1: (lv_op_0_0= 'deleteClass(' )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:845:2: ( (lv_op_0_0= 'deleteClass(' ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:846:1: (lv_op_0_0= 'deleteClass(' )
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:837:1: (lv_op_0_0= 'deleteClass(' )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:838:3: lv_op_0_0= 'deleteClass('
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:846:1: (lv_op_0_0= 'deleteClass(' )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:847:3: lv_op_0_0= 'deleteClass('
             {
-            lv_op_0_0=(Token)match(input,24,FOLLOW_24_in_ruleDeleteClass1703); if (state.failed) return current;
+            lv_op_0_0=(Token)match(input,24,FOLLOW_24_in_ruleDeleteClass1715); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
                       newLeafNode(lv_op_0_0, grammarAccess.getDeleteClassAccess().getOpDeleteClassKeyword_0_0());
@@ -2319,11 +2337,11 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:851:2: ( (otherlv_1= RULE_ID ) )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:852:1: (otherlv_1= RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:860:2: ( (otherlv_1= RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:861:1: (otherlv_1= RULE_ID )
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:852:1: (otherlv_1= RULE_ID )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:853:3: otherlv_1= RULE_ID
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:861:1: (otherlv_1= RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:862:3: otherlv_1= RULE_ID
             {
             if ( state.backtracking==0 ) {
                
@@ -2337,7 +2355,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
               	        }
                       
             }
-            otherlv_1=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleDeleteClass1740); if (state.failed) return current;
+            otherlv_1=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleDeleteClass1752); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
               		newLeafNode(otherlv_1, grammarAccess.getDeleteClassAccess().getRefEClassCrossReference_1_0()); 
@@ -2349,7 +2367,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_2=(Token)match(input,18,FOLLOW_18_in_ruleDeleteClass1752); if (state.failed) return current;
+            otherlv_2=(Token)match(input,18,FOLLOW_18_in_ruleDeleteClass1764); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
                   	newLeafNode(otherlv_2, grammarAccess.getDeleteClassAccess().getRightParenthesisKeyword_2());
@@ -2378,7 +2396,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleClass"
-    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:879:1: entryRuleClass returns [EObject current=null] : iv_ruleClass= ruleClass EOF ;
+    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:888:1: entryRuleClass returns [EObject current=null] : iv_ruleClass= ruleClass EOF ;
     public final EObject entryRuleClass() throws RecognitionException {
         EObject current = null;
 
@@ -2386,13 +2404,13 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:880:2: (iv_ruleClass= ruleClass EOF )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:881:2: iv_ruleClass= ruleClass EOF
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:889:2: (iv_ruleClass= ruleClass EOF )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:890:2: iv_ruleClass= ruleClass EOF
             {
             if ( state.backtracking==0 ) {
                newCompositeNode(grammarAccess.getClassRule()); 
             }
-            pushFollow(FOLLOW_ruleClass_in_entryRuleClass1788);
+            pushFollow(FOLLOW_ruleClass_in_entryRuleClass1800);
             iv_ruleClass=ruleClass();
 
             state._fsp--;
@@ -2400,7 +2418,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
             if ( state.backtracking==0 ) {
                current =iv_ruleClass; 
             }
-            match(input,EOF,FOLLOW_EOF_in_entryRuleClass1798); if (state.failed) return current;
+            match(input,EOF,FOLLOW_EOF_in_entryRuleClass1810); if (state.failed) return current;
 
             }
 
@@ -2418,7 +2436,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleClass"
-    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:888:1: ruleClass returns [EObject current=null] : ( () ( (lv_name_1_0= RULE_ID ) ) ) ;
+    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:897:1: ruleClass returns [EObject current=null] : ( () ( (lv_name_1_0= RULE_ID ) ) ) ;
     public final EObject ruleClass() throws RecognitionException {
         EObject current = null;
 
@@ -2427,14 +2445,14 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:891:28: ( ( () ( (lv_name_1_0= RULE_ID ) ) ) )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:892:1: ( () ( (lv_name_1_0= RULE_ID ) ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:900:28: ( ( () ( (lv_name_1_0= RULE_ID ) ) ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:901:1: ( () ( (lv_name_1_0= RULE_ID ) ) )
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:892:1: ( () ( (lv_name_1_0= RULE_ID ) ) )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:892:2: () ( (lv_name_1_0= RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:901:1: ( () ( (lv_name_1_0= RULE_ID ) ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:901:2: () ( (lv_name_1_0= RULE_ID ) )
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:892:2: ()
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:893:2: 
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:901:2: ()
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:902:2: 
             {
             if ( state.backtracking==0 ) {
                
@@ -2451,13 +2469,13 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:901:2: ( (lv_name_1_0= RULE_ID ) )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:902:1: (lv_name_1_0= RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:910:2: ( (lv_name_1_0= RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:911:1: (lv_name_1_0= RULE_ID )
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:902:1: (lv_name_1_0= RULE_ID )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:903:3: lv_name_1_0= RULE_ID
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:911:1: (lv_name_1_0= RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:912:3: lv_name_1_0= RULE_ID
             {
-            lv_name_1_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleClass1852); if (state.failed) return current;
+            lv_name_1_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleClass1864); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
               			newLeafNode(lv_name_1_0, grammarAccess.getClassAccess().getNameIDTerminalRuleCall_1_0()); 
@@ -2504,7 +2522,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRulesetter"
-    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:927:1: entryRulesetter returns [EObject current=null] : iv_rulesetter= rulesetter EOF ;
+    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:936:1: entryRulesetter returns [EObject current=null] : iv_rulesetter= rulesetter EOF ;
     public final EObject entryRulesetter() throws RecognitionException {
         EObject current = null;
 
@@ -2512,13 +2530,13 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:928:2: (iv_rulesetter= rulesetter EOF )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:929:2: iv_rulesetter= rulesetter EOF
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:937:2: (iv_rulesetter= rulesetter EOF )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:938:2: iv_rulesetter= rulesetter EOF
             {
             if ( state.backtracking==0 ) {
                newCompositeNode(grammarAccess.getSetterRule()); 
             }
-            pushFollow(FOLLOW_rulesetter_in_entryRulesetter1893);
+            pushFollow(FOLLOW_rulesetter_in_entryRulesetter1905);
             iv_rulesetter=rulesetter();
 
             state._fsp--;
@@ -2526,7 +2544,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
             if ( state.backtracking==0 ) {
                current =iv_rulesetter; 
             }
-            match(input,EOF,FOLLOW_EOF_in_entryRulesetter1903); if (state.failed) return current;
+            match(input,EOF,FOLLOW_EOF_in_entryRulesetter1915); if (state.failed) return current;
 
             }
 
@@ -2544,13 +2562,13 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "rulesetter"
-    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:936:1: rulesetter returns [EObject current=null] : (otherlv_0= 'set' ( (otherlv_1= RULE_ID ) ) otherlv_2= '<=' ( ( ( (lv_value_3_0= RULE_STRING ) ) | this_BOOL_4= RULE_BOOL ) | ( (lv_card_5_0= ruleCardinality ) ) | ( (otherlv_6= RULE_ID ) ) ) (otherlv_7= ',' ( (otherlv_8= RULE_ID ) ) )* otherlv_9= ';' ) ;
+    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:945:1: rulesetter returns [EObject current=null] : (otherlv_0= 'set' ( (otherlv_1= RULE_ID ) ) ( (lv_operator_2_0= '<=' ) ) ( ( ( (lv_value_3_0= RULE_STRING ) ) | this_BOOL_4= RULE_BOOL ) | ( (lv_card_5_0= ruleCardinality ) ) | ( (otherlv_6= RULE_ID ) ) ) (otherlv_7= ',' ( (otherlv_8= RULE_ID ) ) )* otherlv_9= ';' ) ;
     public final EObject rulesetter() throws RecognitionException {
         EObject current = null;
 
         Token otherlv_0=null;
         Token otherlv_1=null;
-        Token otherlv_2=null;
+        Token lv_operator_2_0=null;
         Token lv_value_3_0=null;
         Token this_BOOL_4=null;
         Token otherlv_6=null;
@@ -2563,23 +2581,23 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:939:28: ( (otherlv_0= 'set' ( (otherlv_1= RULE_ID ) ) otherlv_2= '<=' ( ( ( (lv_value_3_0= RULE_STRING ) ) | this_BOOL_4= RULE_BOOL ) | ( (lv_card_5_0= ruleCardinality ) ) | ( (otherlv_6= RULE_ID ) ) ) (otherlv_7= ',' ( (otherlv_8= RULE_ID ) ) )* otherlv_9= ';' ) )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:940:1: (otherlv_0= 'set' ( (otherlv_1= RULE_ID ) ) otherlv_2= '<=' ( ( ( (lv_value_3_0= RULE_STRING ) ) | this_BOOL_4= RULE_BOOL ) | ( (lv_card_5_0= ruleCardinality ) ) | ( (otherlv_6= RULE_ID ) ) ) (otherlv_7= ',' ( (otherlv_8= RULE_ID ) ) )* otherlv_9= ';' )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:948:28: ( (otherlv_0= 'set' ( (otherlv_1= RULE_ID ) ) ( (lv_operator_2_0= '<=' ) ) ( ( ( (lv_value_3_0= RULE_STRING ) ) | this_BOOL_4= RULE_BOOL ) | ( (lv_card_5_0= ruleCardinality ) ) | ( (otherlv_6= RULE_ID ) ) ) (otherlv_7= ',' ( (otherlv_8= RULE_ID ) ) )* otherlv_9= ';' ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:949:1: (otherlv_0= 'set' ( (otherlv_1= RULE_ID ) ) ( (lv_operator_2_0= '<=' ) ) ( ( ( (lv_value_3_0= RULE_STRING ) ) | this_BOOL_4= RULE_BOOL ) | ( (lv_card_5_0= ruleCardinality ) ) | ( (otherlv_6= RULE_ID ) ) ) (otherlv_7= ',' ( (otherlv_8= RULE_ID ) ) )* otherlv_9= ';' )
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:940:1: (otherlv_0= 'set' ( (otherlv_1= RULE_ID ) ) otherlv_2= '<=' ( ( ( (lv_value_3_0= RULE_STRING ) ) | this_BOOL_4= RULE_BOOL ) | ( (lv_card_5_0= ruleCardinality ) ) | ( (otherlv_6= RULE_ID ) ) ) (otherlv_7= ',' ( (otherlv_8= RULE_ID ) ) )* otherlv_9= ';' )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:940:3: otherlv_0= 'set' ( (otherlv_1= RULE_ID ) ) otherlv_2= '<=' ( ( ( (lv_value_3_0= RULE_STRING ) ) | this_BOOL_4= RULE_BOOL ) | ( (lv_card_5_0= ruleCardinality ) ) | ( (otherlv_6= RULE_ID ) ) ) (otherlv_7= ',' ( (otherlv_8= RULE_ID ) ) )* otherlv_9= ';'
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:949:1: (otherlv_0= 'set' ( (otherlv_1= RULE_ID ) ) ( (lv_operator_2_0= '<=' ) ) ( ( ( (lv_value_3_0= RULE_STRING ) ) | this_BOOL_4= RULE_BOOL ) | ( (lv_card_5_0= ruleCardinality ) ) | ( (otherlv_6= RULE_ID ) ) ) (otherlv_7= ',' ( (otherlv_8= RULE_ID ) ) )* otherlv_9= ';' )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:949:3: otherlv_0= 'set' ( (otherlv_1= RULE_ID ) ) ( (lv_operator_2_0= '<=' ) ) ( ( ( (lv_value_3_0= RULE_STRING ) ) | this_BOOL_4= RULE_BOOL ) | ( (lv_card_5_0= ruleCardinality ) ) | ( (otherlv_6= RULE_ID ) ) ) (otherlv_7= ',' ( (otherlv_8= RULE_ID ) ) )* otherlv_9= ';'
             {
-            otherlv_0=(Token)match(input,25,FOLLOW_25_in_rulesetter1940); if (state.failed) return current;
+            otherlv_0=(Token)match(input,25,FOLLOW_25_in_rulesetter1952); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
                   	newLeafNode(otherlv_0, grammarAccess.getSetterAccess().getSetKeyword_0());
                   
             }
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:944:1: ( (otherlv_1= RULE_ID ) )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:945:1: (otherlv_1= RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:953:1: ( (otherlv_1= RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:954:1: (otherlv_1= RULE_ID )
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:945:1: (otherlv_1= RULE_ID )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:946:3: otherlv_1= RULE_ID
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:954:1: (otherlv_1= RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:955:3: otherlv_1= RULE_ID
             {
             if ( state.backtracking==0 ) {
                
@@ -2593,7 +2611,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
               	        }
                       
             }
-            otherlv_1=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_rulesetter1964); if (state.failed) return current;
+            otherlv_1=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_rulesetter1976); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
               		newLeafNode(otherlv_1, grammarAccess.getSetterAccess().getMetafeatureEStructuralFeatureCrossReference_1_0()); 
@@ -2605,13 +2623,33 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_2=(Token)match(input,26,FOLLOW_26_in_rulesetter1976); if (state.failed) return current;
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:969:2: ( (lv_operator_2_0= '<=' ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:970:1: (lv_operator_2_0= '<=' )
+            {
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:970:1: (lv_operator_2_0= '<=' )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:971:3: lv_operator_2_0= '<='
+            {
+            lv_operator_2_0=(Token)match(input,26,FOLLOW_26_in_rulesetter1994); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
-                  	newLeafNode(otherlv_2, grammarAccess.getSetterAccess().getLessThanSignEqualsSignKeyword_2());
+                      newLeafNode(lv_operator_2_0, grammarAccess.getSetterAccess().getOperatorLessThanSignEqualsSignKeyword_2_0());
                   
             }
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:964:1: ( ( ( (lv_value_3_0= RULE_STRING ) ) | this_BOOL_4= RULE_BOOL ) | ( (lv_card_5_0= ruleCardinality ) ) | ( (otherlv_6= RULE_ID ) ) )
+            if ( state.backtracking==0 ) {
+
+              	        if (current==null) {
+              	            current = createModelElement(grammarAccess.getSetterRule());
+              	        }
+                     		setWithLastConsumed(current, "operator", lv_operator_2_0, "<=");
+              	    
+            }
+
+            }
+
+
+            }
+
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:984:2: ( ( ( (lv_value_3_0= RULE_STRING ) ) | this_BOOL_4= RULE_BOOL ) | ( (lv_card_5_0= ruleCardinality ) ) | ( (otherlv_6= RULE_ID ) ) )
             int alt14=3;
             switch ( input.LA(1) ) {
             case RULE_STRING:
@@ -2641,9 +2679,9 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
             switch (alt14) {
                 case 1 :
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:964:2: ( ( (lv_value_3_0= RULE_STRING ) ) | this_BOOL_4= RULE_BOOL )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:984:3: ( ( (lv_value_3_0= RULE_STRING ) ) | this_BOOL_4= RULE_BOOL )
                     {
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:964:2: ( ( (lv_value_3_0= RULE_STRING ) ) | this_BOOL_4= RULE_BOOL )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:984:3: ( ( (lv_value_3_0= RULE_STRING ) ) | this_BOOL_4= RULE_BOOL )
                     int alt13=2;
                     int LA13_0 = input.LA(1);
 
@@ -2662,15 +2700,15 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
                     }
                     switch (alt13) {
                         case 1 :
-                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:964:3: ( (lv_value_3_0= RULE_STRING ) )
+                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:984:4: ( (lv_value_3_0= RULE_STRING ) )
                             {
-                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:964:3: ( (lv_value_3_0= RULE_STRING ) )
-                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:965:1: (lv_value_3_0= RULE_STRING )
+                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:984:4: ( (lv_value_3_0= RULE_STRING ) )
+                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:985:1: (lv_value_3_0= RULE_STRING )
                             {
-                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:965:1: (lv_value_3_0= RULE_STRING )
-                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:966:3: lv_value_3_0= RULE_STRING
+                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:985:1: (lv_value_3_0= RULE_STRING )
+                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:986:3: lv_value_3_0= RULE_STRING
                             {
-                            lv_value_3_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rulesetter1995); if (state.failed) return current;
+                            lv_value_3_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rulesetter2026); if (state.failed) return current;
                             if ( state.backtracking==0 ) {
 
                               			newLeafNode(lv_value_3_0, grammarAccess.getSetterAccess().getValueSTRINGTerminalRuleCall_3_0_0_0()); 
@@ -2698,9 +2736,9 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
                             }
                             break;
                         case 2 :
-                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:983:6: this_BOOL_4= RULE_BOOL
+                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1003:6: this_BOOL_4= RULE_BOOL
                             {
-                            this_BOOL_4=(Token)match(input,RULE_BOOL,FOLLOW_RULE_BOOL_in_rulesetter2017); if (state.failed) return current;
+                            this_BOOL_4=(Token)match(input,RULE_BOOL,FOLLOW_RULE_BOOL_in_rulesetter2048); if (state.failed) return current;
                             if ( state.backtracking==0 ) {
                                
                                   newLeafNode(this_BOOL_4, grammarAccess.getSetterAccess().getBOOLTerminalRuleCall_3_0_1()); 
@@ -2716,20 +2754,20 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:988:6: ( (lv_card_5_0= ruleCardinality ) )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1008:6: ( (lv_card_5_0= ruleCardinality ) )
                     {
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:988:6: ( (lv_card_5_0= ruleCardinality ) )
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:989:1: (lv_card_5_0= ruleCardinality )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1008:6: ( (lv_card_5_0= ruleCardinality ) )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1009:1: (lv_card_5_0= ruleCardinality )
                     {
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:989:1: (lv_card_5_0= ruleCardinality )
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:990:3: lv_card_5_0= ruleCardinality
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1009:1: (lv_card_5_0= ruleCardinality )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1010:3: lv_card_5_0= ruleCardinality
                     {
                     if ( state.backtracking==0 ) {
                        
                       	        newCompositeNode(grammarAccess.getSetterAccess().getCardCardinalityParserRuleCall_3_1_0()); 
                       	    
                     }
-                    pushFollow(FOLLOW_ruleCardinality_in_rulesetter2044);
+                    pushFollow(FOLLOW_ruleCardinality_in_rulesetter2075);
                     lv_card_5_0=ruleCardinality();
 
                     state._fsp--;
@@ -2757,13 +2795,13 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 3 :
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1007:6: ( (otherlv_6= RULE_ID ) )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1027:6: ( (otherlv_6= RULE_ID ) )
                     {
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1007:6: ( (otherlv_6= RULE_ID ) )
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1008:1: (otherlv_6= RULE_ID )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1027:6: ( (otherlv_6= RULE_ID ) )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1028:1: (otherlv_6= RULE_ID )
                     {
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1008:1: (otherlv_6= RULE_ID )
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1009:3: otherlv_6= RULE_ID
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1028:1: (otherlv_6= RULE_ID )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1029:3: otherlv_6= RULE_ID
                     {
                     if ( state.backtracking==0 ) {
                        
@@ -2777,7 +2815,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
                       	        }
                               
                     }
-                    otherlv_6=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_rulesetter2074); if (state.failed) return current;
+                    otherlv_6=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_rulesetter2105); if (state.failed) return current;
                     if ( state.backtracking==0 ) {
 
                       		newLeafNode(otherlv_6, grammarAccess.getSetterAccess().getValueRefEObjectCrossReference_3_2_0()); 
@@ -2795,7 +2833,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1023:3: (otherlv_7= ',' ( (otherlv_8= RULE_ID ) ) )*
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1043:3: (otherlv_7= ',' ( (otherlv_8= RULE_ID ) ) )*
             loop15:
             do {
                 int alt15=2;
@@ -2808,19 +2846,19 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
                 switch (alt15) {
             	case 1 :
-            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1023:5: otherlv_7= ',' ( (otherlv_8= RULE_ID ) )
+            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1043:5: otherlv_7= ',' ( (otherlv_8= RULE_ID ) )
             	    {
-            	    otherlv_7=(Token)match(input,27,FOLLOW_27_in_rulesetter2088); if (state.failed) return current;
+            	    otherlv_7=(Token)match(input,27,FOLLOW_27_in_rulesetter2119); if (state.failed) return current;
             	    if ( state.backtracking==0 ) {
 
             	          	newLeafNode(otherlv_7, grammarAccess.getSetterAccess().getCommaKeyword_4_0());
             	          
             	    }
-            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1027:1: ( (otherlv_8= RULE_ID ) )
-            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1028:1: (otherlv_8= RULE_ID )
+            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1047:1: ( (otherlv_8= RULE_ID ) )
+            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1048:1: (otherlv_8= RULE_ID )
             	    {
-            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1028:1: (otherlv_8= RULE_ID )
-            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1029:3: otherlv_8= RULE_ID
+            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1048:1: (otherlv_8= RULE_ID )
+            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1049:3: otherlv_8= RULE_ID
             	    {
             	    if ( state.backtracking==0 ) {
             	       
@@ -2834,7 +2872,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
             	      	        }
             	              
             	    }
-            	    otherlv_8=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_rulesetter2112); if (state.failed) return current;
+            	    otherlv_8=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_rulesetter2143); if (state.failed) return current;
             	    if ( state.backtracking==0 ) {
 
             	      		newLeafNode(otherlv_8, grammarAccess.getSetterAccess().getValueRefEObjectCrossReference_4_1_0()); 
@@ -2855,7 +2893,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
                 }
             } while (true);
 
-            otherlv_9=(Token)match(input,28,FOLLOW_28_in_rulesetter2126); if (state.failed) return current;
+            otherlv_9=(Token)match(input,28,FOLLOW_28_in_rulesetter2157); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
                   	newLeafNode(otherlv_9, grammarAccess.getSetterAccess().getSemicolonKeyword_5());
@@ -2884,7 +2922,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleCardinality"
-    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1055:1: entryRuleCardinality returns [String current=null] : iv_ruleCardinality= ruleCardinality EOF ;
+    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1075:1: entryRuleCardinality returns [String current=null] : iv_ruleCardinality= ruleCardinality EOF ;
     public final String entryRuleCardinality() throws RecognitionException {
         String current = null;
 
@@ -2892,13 +2930,13 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1056:2: (iv_ruleCardinality= ruleCardinality EOF )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1057:2: iv_ruleCardinality= ruleCardinality EOF
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1076:2: (iv_ruleCardinality= ruleCardinality EOF )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1077:2: iv_ruleCardinality= ruleCardinality EOF
             {
             if ( state.backtracking==0 ) {
                newCompositeNode(grammarAccess.getCardinalityRule()); 
             }
-            pushFollow(FOLLOW_ruleCardinality_in_entryRuleCardinality2163);
+            pushFollow(FOLLOW_ruleCardinality_in_entryRuleCardinality2194);
             iv_ruleCardinality=ruleCardinality();
 
             state._fsp--;
@@ -2906,7 +2944,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
             if ( state.backtracking==0 ) {
                current =iv_ruleCardinality.getText(); 
             }
-            match(input,EOF,FOLLOW_EOF_in_entryRuleCardinality2174); if (state.failed) return current;
+            match(input,EOF,FOLLOW_EOF_in_entryRuleCardinality2205); if (state.failed) return current;
 
             }
 
@@ -2924,7 +2962,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleCardinality"
-    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1064:1: ruleCardinality returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : (this_INT_0= RULE_INT | kw= '*' ) ;
+    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1084:1: ruleCardinality returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : (this_INT_0= RULE_INT | kw= '*' ) ;
     public final AntlrDatatypeRuleToken ruleCardinality() throws RecognitionException {
         AntlrDatatypeRuleToken current = new AntlrDatatypeRuleToken();
 
@@ -2934,10 +2972,10 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1067:28: ( (this_INT_0= RULE_INT | kw= '*' ) )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1068:1: (this_INT_0= RULE_INT | kw= '*' )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1087:28: ( (this_INT_0= RULE_INT | kw= '*' ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1088:1: (this_INT_0= RULE_INT | kw= '*' )
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1068:1: (this_INT_0= RULE_INT | kw= '*' )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1088:1: (this_INT_0= RULE_INT | kw= '*' )
             int alt16=2;
             int LA16_0 = input.LA(1);
 
@@ -2956,9 +2994,9 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
             }
             switch (alt16) {
                 case 1 :
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1068:6: this_INT_0= RULE_INT
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1088:6: this_INT_0= RULE_INT
                     {
-                    this_INT_0=(Token)match(input,RULE_INT,FOLLOW_RULE_INT_in_ruleCardinality2214); if (state.failed) return current;
+                    this_INT_0=(Token)match(input,RULE_INT,FOLLOW_RULE_INT_in_ruleCardinality2245); if (state.failed) return current;
                     if ( state.backtracking==0 ) {
 
                       		current.merge(this_INT_0);
@@ -2973,9 +3011,9 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1077:2: kw= '*'
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1097:2: kw= '*'
                     {
-                    kw=(Token)match(input,29,FOLLOW_29_in_ruleCardinality2238); if (state.failed) return current;
+                    kw=(Token)match(input,29,FOLLOW_29_in_ruleCardinality2269); if (state.failed) return current;
                     if ( state.backtracking==0 ) {
 
                               current.merge(kw);
@@ -3008,7 +3046,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleEAttributeOperation"
-    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1090:1: entryRuleEAttributeOperation returns [EObject current=null] : iv_ruleEAttributeOperation= ruleEAttributeOperation EOF ;
+    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1110:1: entryRuleEAttributeOperation returns [EObject current=null] : iv_ruleEAttributeOperation= ruleEAttributeOperation EOF ;
     public final EObject entryRuleEAttributeOperation() throws RecognitionException {
         EObject current = null;
 
@@ -3016,13 +3054,13 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1091:2: (iv_ruleEAttributeOperation= ruleEAttributeOperation EOF )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1092:2: iv_ruleEAttributeOperation= ruleEAttributeOperation EOF
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1111:2: (iv_ruleEAttributeOperation= ruleEAttributeOperation EOF )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1112:2: iv_ruleEAttributeOperation= ruleEAttributeOperation EOF
             {
             if ( state.backtracking==0 ) {
                newCompositeNode(grammarAccess.getEAttributeOperationRule()); 
             }
-            pushFollow(FOLLOW_ruleEAttributeOperation_in_entryRuleEAttributeOperation2278);
+            pushFollow(FOLLOW_ruleEAttributeOperation_in_entryRuleEAttributeOperation2309);
             iv_ruleEAttributeOperation=ruleEAttributeOperation();
 
             state._fsp--;
@@ -3030,7 +3068,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
             if ( state.backtracking==0 ) {
                current =iv_ruleEAttributeOperation; 
             }
-            match(input,EOF,FOLLOW_EOF_in_entryRuleEAttributeOperation2288); if (state.failed) return current;
+            match(input,EOF,FOLLOW_EOF_in_entryRuleEAttributeOperation2319); if (state.failed) return current;
 
             }
 
@@ -3048,7 +3086,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleEAttributeOperation"
-    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1099:1: ruleEAttributeOperation returns [EObject current=null] : ( (otherlv_0= 'attribute' ( (lv_var_1_0= ruleAttribute ) ) otherlv_2= '=' )? ( ( ( ( (lv_op_3_0= ruleChangeAttribute ) ) | ( (lv_op_4_0= ruleAddAttribute ) ) | ( (lv_op_5_0= ruleDeleteAttribute ) ) ) (otherlv_6= '{' ( (lv_setters_7_0= rulesetter ) )* otherlv_8= '}' ) ) | ( (lv_complex_9_0= ruleComplexOperator ) ) ) ) ;
+    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1119:1: ruleEAttributeOperation returns [EObject current=null] : ( (otherlv_0= 'attribute' ( (lv_var_1_0= ruleAttribute ) ) otherlv_2= '=' )? ( ( ( ( (lv_op_3_0= ruleChangeAttribute ) ) | ( (lv_op_4_0= ruleAddAttribute ) ) | ( (lv_op_5_0= ruleDeleteAttribute ) ) ) (otherlv_6= '{' ( (lv_setters_7_0= rulesetter ) )* otherlv_8= '}' ) ) | ( (lv_complex_9_0= ruleComplexOperator ) ) ) ) ;
     public final EObject ruleEAttributeOperation() throws RecognitionException {
         EObject current = null;
 
@@ -3072,13 +3110,13 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1102:28: ( ( (otherlv_0= 'attribute' ( (lv_var_1_0= ruleAttribute ) ) otherlv_2= '=' )? ( ( ( ( (lv_op_3_0= ruleChangeAttribute ) ) | ( (lv_op_4_0= ruleAddAttribute ) ) | ( (lv_op_5_0= ruleDeleteAttribute ) ) ) (otherlv_6= '{' ( (lv_setters_7_0= rulesetter ) )* otherlv_8= '}' ) ) | ( (lv_complex_9_0= ruleComplexOperator ) ) ) ) )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1103:1: ( (otherlv_0= 'attribute' ( (lv_var_1_0= ruleAttribute ) ) otherlv_2= '=' )? ( ( ( ( (lv_op_3_0= ruleChangeAttribute ) ) | ( (lv_op_4_0= ruleAddAttribute ) ) | ( (lv_op_5_0= ruleDeleteAttribute ) ) ) (otherlv_6= '{' ( (lv_setters_7_0= rulesetter ) )* otherlv_8= '}' ) ) | ( (lv_complex_9_0= ruleComplexOperator ) ) ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1122:28: ( ( (otherlv_0= 'attribute' ( (lv_var_1_0= ruleAttribute ) ) otherlv_2= '=' )? ( ( ( ( (lv_op_3_0= ruleChangeAttribute ) ) | ( (lv_op_4_0= ruleAddAttribute ) ) | ( (lv_op_5_0= ruleDeleteAttribute ) ) ) (otherlv_6= '{' ( (lv_setters_7_0= rulesetter ) )* otherlv_8= '}' ) ) | ( (lv_complex_9_0= ruleComplexOperator ) ) ) ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1123:1: ( (otherlv_0= 'attribute' ( (lv_var_1_0= ruleAttribute ) ) otherlv_2= '=' )? ( ( ( ( (lv_op_3_0= ruleChangeAttribute ) ) | ( (lv_op_4_0= ruleAddAttribute ) ) | ( (lv_op_5_0= ruleDeleteAttribute ) ) ) (otherlv_6= '{' ( (lv_setters_7_0= rulesetter ) )* otherlv_8= '}' ) ) | ( (lv_complex_9_0= ruleComplexOperator ) ) ) )
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1103:1: ( (otherlv_0= 'attribute' ( (lv_var_1_0= ruleAttribute ) ) otherlv_2= '=' )? ( ( ( ( (lv_op_3_0= ruleChangeAttribute ) ) | ( (lv_op_4_0= ruleAddAttribute ) ) | ( (lv_op_5_0= ruleDeleteAttribute ) ) ) (otherlv_6= '{' ( (lv_setters_7_0= rulesetter ) )* otherlv_8= '}' ) ) | ( (lv_complex_9_0= ruleComplexOperator ) ) ) )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1103:2: (otherlv_0= 'attribute' ( (lv_var_1_0= ruleAttribute ) ) otherlv_2= '=' )? ( ( ( ( (lv_op_3_0= ruleChangeAttribute ) ) | ( (lv_op_4_0= ruleAddAttribute ) ) | ( (lv_op_5_0= ruleDeleteAttribute ) ) ) (otherlv_6= '{' ( (lv_setters_7_0= rulesetter ) )* otherlv_8= '}' ) ) | ( (lv_complex_9_0= ruleComplexOperator ) ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1123:1: ( (otherlv_0= 'attribute' ( (lv_var_1_0= ruleAttribute ) ) otherlv_2= '=' )? ( ( ( ( (lv_op_3_0= ruleChangeAttribute ) ) | ( (lv_op_4_0= ruleAddAttribute ) ) | ( (lv_op_5_0= ruleDeleteAttribute ) ) ) (otherlv_6= '{' ( (lv_setters_7_0= rulesetter ) )* otherlv_8= '}' ) ) | ( (lv_complex_9_0= ruleComplexOperator ) ) ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1123:2: (otherlv_0= 'attribute' ( (lv_var_1_0= ruleAttribute ) ) otherlv_2= '=' )? ( ( ( ( (lv_op_3_0= ruleChangeAttribute ) ) | ( (lv_op_4_0= ruleAddAttribute ) ) | ( (lv_op_5_0= ruleDeleteAttribute ) ) ) (otherlv_6= '{' ( (lv_setters_7_0= rulesetter ) )* otherlv_8= '}' ) ) | ( (lv_complex_9_0= ruleComplexOperator ) ) )
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1103:2: (otherlv_0= 'attribute' ( (lv_var_1_0= ruleAttribute ) ) otherlv_2= '=' )?
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1123:2: (otherlv_0= 'attribute' ( (lv_var_1_0= ruleAttribute ) ) otherlv_2= '=' )?
             int alt17=2;
             int LA17_0 = input.LA(1);
 
@@ -3087,26 +3125,26 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
             }
             switch (alt17) {
                 case 1 :
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1103:4: otherlv_0= 'attribute' ( (lv_var_1_0= ruleAttribute ) ) otherlv_2= '='
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1123:4: otherlv_0= 'attribute' ( (lv_var_1_0= ruleAttribute ) ) otherlv_2= '='
                     {
-                    otherlv_0=(Token)match(input,30,FOLLOW_30_in_ruleEAttributeOperation2326); if (state.failed) return current;
+                    otherlv_0=(Token)match(input,30,FOLLOW_30_in_ruleEAttributeOperation2357); if (state.failed) return current;
                     if ( state.backtracking==0 ) {
 
                           	newLeafNode(otherlv_0, grammarAccess.getEAttributeOperationAccess().getAttributeKeyword_0_0());
                           
                     }
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1107:1: ( (lv_var_1_0= ruleAttribute ) )
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1108:1: (lv_var_1_0= ruleAttribute )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1127:1: ( (lv_var_1_0= ruleAttribute ) )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1128:1: (lv_var_1_0= ruleAttribute )
                     {
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1108:1: (lv_var_1_0= ruleAttribute )
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1109:3: lv_var_1_0= ruleAttribute
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1128:1: (lv_var_1_0= ruleAttribute )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1129:3: lv_var_1_0= ruleAttribute
                     {
                     if ( state.backtracking==0 ) {
                        
                       	        newCompositeNode(grammarAccess.getEAttributeOperationAccess().getVarAttributeParserRuleCall_0_1_0()); 
                       	    
                     }
-                    pushFollow(FOLLOW_ruleAttribute_in_ruleEAttributeOperation2347);
+                    pushFollow(FOLLOW_ruleAttribute_in_ruleEAttributeOperation2378);
                     lv_var_1_0=ruleAttribute();
 
                     state._fsp--;
@@ -3130,7 +3168,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
                     }
 
-                    otherlv_2=(Token)match(input,13,FOLLOW_13_in_ruleEAttributeOperation2359); if (state.failed) return current;
+                    otherlv_2=(Token)match(input,13,FOLLOW_13_in_ruleEAttributeOperation2390); if (state.failed) return current;
                     if ( state.backtracking==0 ) {
 
                           	newLeafNode(otherlv_2, grammarAccess.getEAttributeOperationAccess().getEqualsSignKeyword_0_2());
@@ -3142,7 +3180,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1129:3: ( ( ( ( (lv_op_3_0= ruleChangeAttribute ) ) | ( (lv_op_4_0= ruleAddAttribute ) ) | ( (lv_op_5_0= ruleDeleteAttribute ) ) ) (otherlv_6= '{' ( (lv_setters_7_0= rulesetter ) )* otherlv_8= '}' ) ) | ( (lv_complex_9_0= ruleComplexOperator ) ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1149:3: ( ( ( ( (lv_op_3_0= ruleChangeAttribute ) ) | ( (lv_op_4_0= ruleAddAttribute ) ) | ( (lv_op_5_0= ruleDeleteAttribute ) ) ) (otherlv_6= '{' ( (lv_setters_7_0= rulesetter ) )* otherlv_8= '}' ) ) | ( (lv_complex_9_0= ruleComplexOperator ) ) )
             int alt20=2;
             int LA20_0 = input.LA(1);
 
@@ -3161,12 +3199,12 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
             }
             switch (alt20) {
                 case 1 :
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1129:4: ( ( ( (lv_op_3_0= ruleChangeAttribute ) ) | ( (lv_op_4_0= ruleAddAttribute ) ) | ( (lv_op_5_0= ruleDeleteAttribute ) ) ) (otherlv_6= '{' ( (lv_setters_7_0= rulesetter ) )* otherlv_8= '}' ) )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1149:4: ( ( ( (lv_op_3_0= ruleChangeAttribute ) ) | ( (lv_op_4_0= ruleAddAttribute ) ) | ( (lv_op_5_0= ruleDeleteAttribute ) ) ) (otherlv_6= '{' ( (lv_setters_7_0= rulesetter ) )* otherlv_8= '}' ) )
                     {
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1129:4: ( ( ( (lv_op_3_0= ruleChangeAttribute ) ) | ( (lv_op_4_0= ruleAddAttribute ) ) | ( (lv_op_5_0= ruleDeleteAttribute ) ) ) (otherlv_6= '{' ( (lv_setters_7_0= rulesetter ) )* otherlv_8= '}' ) )
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1129:5: ( ( (lv_op_3_0= ruleChangeAttribute ) ) | ( (lv_op_4_0= ruleAddAttribute ) ) | ( (lv_op_5_0= ruleDeleteAttribute ) ) ) (otherlv_6= '{' ( (lv_setters_7_0= rulesetter ) )* otherlv_8= '}' )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1149:4: ( ( ( (lv_op_3_0= ruleChangeAttribute ) ) | ( (lv_op_4_0= ruleAddAttribute ) ) | ( (lv_op_5_0= ruleDeleteAttribute ) ) ) (otherlv_6= '{' ( (lv_setters_7_0= rulesetter ) )* otherlv_8= '}' ) )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1149:5: ( ( (lv_op_3_0= ruleChangeAttribute ) ) | ( (lv_op_4_0= ruleAddAttribute ) ) | ( (lv_op_5_0= ruleDeleteAttribute ) ) ) (otherlv_6= '{' ( (lv_setters_7_0= rulesetter ) )* otherlv_8= '}' )
                     {
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1129:5: ( ( (lv_op_3_0= ruleChangeAttribute ) ) | ( (lv_op_4_0= ruleAddAttribute ) ) | ( (lv_op_5_0= ruleDeleteAttribute ) ) )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1149:5: ( ( (lv_op_3_0= ruleChangeAttribute ) ) | ( (lv_op_4_0= ruleAddAttribute ) ) | ( (lv_op_5_0= ruleDeleteAttribute ) ) )
                     int alt18=3;
                     switch ( input.LA(1) ) {
                     case 31:
@@ -3194,20 +3232,20 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
                     switch (alt18) {
                         case 1 :
-                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1129:6: ( (lv_op_3_0= ruleChangeAttribute ) )
+                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1149:6: ( (lv_op_3_0= ruleChangeAttribute ) )
                             {
-                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1129:6: ( (lv_op_3_0= ruleChangeAttribute ) )
-                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1130:1: (lv_op_3_0= ruleChangeAttribute )
+                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1149:6: ( (lv_op_3_0= ruleChangeAttribute ) )
+                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1150:1: (lv_op_3_0= ruleChangeAttribute )
                             {
-                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1130:1: (lv_op_3_0= ruleChangeAttribute )
-                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1131:3: lv_op_3_0= ruleChangeAttribute
+                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1150:1: (lv_op_3_0= ruleChangeAttribute )
+                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1151:3: lv_op_3_0= ruleChangeAttribute
                             {
                             if ( state.backtracking==0 ) {
                                
                               	        newCompositeNode(grammarAccess.getEAttributeOperationAccess().getOpChangeAttributeParserRuleCall_1_0_0_0_0()); 
                               	    
                             }
-                            pushFollow(FOLLOW_ruleChangeAttribute_in_ruleEAttributeOperation2385);
+                            pushFollow(FOLLOW_ruleChangeAttribute_in_ruleEAttributeOperation2416);
                             lv_op_3_0=ruleChangeAttribute();
 
                             state._fsp--;
@@ -3235,20 +3273,20 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
                             }
                             break;
                         case 2 :
-                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1148:6: ( (lv_op_4_0= ruleAddAttribute ) )
+                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1168:6: ( (lv_op_4_0= ruleAddAttribute ) )
                             {
-                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1148:6: ( (lv_op_4_0= ruleAddAttribute ) )
-                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1149:1: (lv_op_4_0= ruleAddAttribute )
+                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1168:6: ( (lv_op_4_0= ruleAddAttribute ) )
+                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1169:1: (lv_op_4_0= ruleAddAttribute )
                             {
-                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1149:1: (lv_op_4_0= ruleAddAttribute )
-                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1150:3: lv_op_4_0= ruleAddAttribute
+                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1169:1: (lv_op_4_0= ruleAddAttribute )
+                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1170:3: lv_op_4_0= ruleAddAttribute
                             {
                             if ( state.backtracking==0 ) {
                                
                               	        newCompositeNode(grammarAccess.getEAttributeOperationAccess().getOpAddAttributeParserRuleCall_1_0_0_1_0()); 
                               	    
                             }
-                            pushFollow(FOLLOW_ruleAddAttribute_in_ruleEAttributeOperation2412);
+                            pushFollow(FOLLOW_ruleAddAttribute_in_ruleEAttributeOperation2443);
                             lv_op_4_0=ruleAddAttribute();
 
                             state._fsp--;
@@ -3276,20 +3314,20 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
                             }
                             break;
                         case 3 :
-                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1167:6: ( (lv_op_5_0= ruleDeleteAttribute ) )
+                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1187:6: ( (lv_op_5_0= ruleDeleteAttribute ) )
                             {
-                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1167:6: ( (lv_op_5_0= ruleDeleteAttribute ) )
-                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1168:1: (lv_op_5_0= ruleDeleteAttribute )
+                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1187:6: ( (lv_op_5_0= ruleDeleteAttribute ) )
+                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1188:1: (lv_op_5_0= ruleDeleteAttribute )
                             {
-                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1168:1: (lv_op_5_0= ruleDeleteAttribute )
-                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1169:3: lv_op_5_0= ruleDeleteAttribute
+                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1188:1: (lv_op_5_0= ruleDeleteAttribute )
+                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1189:3: lv_op_5_0= ruleDeleteAttribute
                             {
                             if ( state.backtracking==0 ) {
                                
                               	        newCompositeNode(grammarAccess.getEAttributeOperationAccess().getOpDeleteAttributeParserRuleCall_1_0_0_2_0()); 
                               	    
                             }
-                            pushFollow(FOLLOW_ruleDeleteAttribute_in_ruleEAttributeOperation2439);
+                            pushFollow(FOLLOW_ruleDeleteAttribute_in_ruleEAttributeOperation2470);
                             lv_op_5_0=ruleDeleteAttribute();
 
                             state._fsp--;
@@ -3319,16 +3357,16 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
                     }
 
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1185:3: (otherlv_6= '{' ( (lv_setters_7_0= rulesetter ) )* otherlv_8= '}' )
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1185:5: otherlv_6= '{' ( (lv_setters_7_0= rulesetter ) )* otherlv_8= '}'
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1205:3: (otherlv_6= '{' ( (lv_setters_7_0= rulesetter ) )* otherlv_8= '}' )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1205:5: otherlv_6= '{' ( (lv_setters_7_0= rulesetter ) )* otherlv_8= '}'
                     {
-                    otherlv_6=(Token)match(input,14,FOLLOW_14_in_ruleEAttributeOperation2453); if (state.failed) return current;
+                    otherlv_6=(Token)match(input,14,FOLLOW_14_in_ruleEAttributeOperation2484); if (state.failed) return current;
                     if ( state.backtracking==0 ) {
 
                           	newLeafNode(otherlv_6, grammarAccess.getEAttributeOperationAccess().getLeftCurlyBracketKeyword_1_0_1_0());
                           
                     }
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1189:1: ( (lv_setters_7_0= rulesetter ) )*
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1209:1: ( (lv_setters_7_0= rulesetter ) )*
                     loop19:
                     do {
                         int alt19=2;
@@ -3341,17 +3379,17 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
                         switch (alt19) {
                     	case 1 :
-                    	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1190:1: (lv_setters_7_0= rulesetter )
+                    	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1210:1: (lv_setters_7_0= rulesetter )
                     	    {
-                    	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1190:1: (lv_setters_7_0= rulesetter )
-                    	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1191:3: lv_setters_7_0= rulesetter
+                    	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1210:1: (lv_setters_7_0= rulesetter )
+                    	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1211:3: lv_setters_7_0= rulesetter
                     	    {
                     	    if ( state.backtracking==0 ) {
                     	       
                     	      	        newCompositeNode(grammarAccess.getEAttributeOperationAccess().getSettersSetterParserRuleCall_1_0_1_1_0()); 
                     	      	    
                     	    }
-                    	    pushFollow(FOLLOW_rulesetter_in_ruleEAttributeOperation2474);
+                    	    pushFollow(FOLLOW_rulesetter_in_ruleEAttributeOperation2505);
                     	    lv_setters_7_0=rulesetter();
 
                     	    state._fsp--;
@@ -3381,7 +3419,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
                         }
                     } while (true);
 
-                    otherlv_8=(Token)match(input,15,FOLLOW_15_in_ruleEAttributeOperation2487); if (state.failed) return current;
+                    otherlv_8=(Token)match(input,15,FOLLOW_15_in_ruleEAttributeOperation2518); if (state.failed) return current;
                     if ( state.backtracking==0 ) {
 
                           	newLeafNode(otherlv_8, grammarAccess.getEAttributeOperationAccess().getRightCurlyBracketKeyword_1_0_1_2());
@@ -3397,20 +3435,20 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1212:6: ( (lv_complex_9_0= ruleComplexOperator ) )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1232:6: ( (lv_complex_9_0= ruleComplexOperator ) )
                     {
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1212:6: ( (lv_complex_9_0= ruleComplexOperator ) )
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1213:1: (lv_complex_9_0= ruleComplexOperator )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1232:6: ( (lv_complex_9_0= ruleComplexOperator ) )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1233:1: (lv_complex_9_0= ruleComplexOperator )
                     {
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1213:1: (lv_complex_9_0= ruleComplexOperator )
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1214:3: lv_complex_9_0= ruleComplexOperator
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1233:1: (lv_complex_9_0= ruleComplexOperator )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1234:3: lv_complex_9_0= ruleComplexOperator
                     {
                     if ( state.backtracking==0 ) {
                        
                       	        newCompositeNode(grammarAccess.getEAttributeOperationAccess().getComplexComplexOperatorParserRuleCall_1_1_0()); 
                       	    
                     }
-                    pushFollow(FOLLOW_ruleComplexOperator_in_ruleEAttributeOperation2516);
+                    pushFollow(FOLLOW_ruleComplexOperator_in_ruleEAttributeOperation2547);
                     lv_complex_9_0=ruleComplexOperator();
 
                     state._fsp--;
@@ -3463,7 +3501,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleChangeAttribute"
-    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1238:1: entryRuleChangeAttribute returns [EObject current=null] : iv_ruleChangeAttribute= ruleChangeAttribute EOF ;
+    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1258:1: entryRuleChangeAttribute returns [EObject current=null] : iv_ruleChangeAttribute= ruleChangeAttribute EOF ;
     public final EObject entryRuleChangeAttribute() throws RecognitionException {
         EObject current = null;
 
@@ -3471,13 +3509,13 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1239:2: (iv_ruleChangeAttribute= ruleChangeAttribute EOF )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1240:2: iv_ruleChangeAttribute= ruleChangeAttribute EOF
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1259:2: (iv_ruleChangeAttribute= ruleChangeAttribute EOF )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1260:2: iv_ruleChangeAttribute= ruleChangeAttribute EOF
             {
             if ( state.backtracking==0 ) {
                newCompositeNode(grammarAccess.getChangeAttributeRule()); 
             }
-            pushFollow(FOLLOW_ruleChangeAttribute_in_entryRuleChangeAttribute2553);
+            pushFollow(FOLLOW_ruleChangeAttribute_in_entryRuleChangeAttribute2584);
             iv_ruleChangeAttribute=ruleChangeAttribute();
 
             state._fsp--;
@@ -3485,7 +3523,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
             if ( state.backtracking==0 ) {
                current =iv_ruleChangeAttribute; 
             }
-            match(input,EOF,FOLLOW_EOF_in_entryRuleChangeAttribute2563); if (state.failed) return current;
+            match(input,EOF,FOLLOW_EOF_in_entryRuleChangeAttribute2594); if (state.failed) return current;
 
             }
 
@@ -3503,7 +3541,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleChangeAttribute"
-    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1247:1: ruleChangeAttribute returns [EObject current=null] : ( ( (lv_op_0_0= 'changeAttribute(' ) ) ( (otherlv_1= RULE_ID ) ) otherlv_2= ')' ) ;
+    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1267:1: ruleChangeAttribute returns [EObject current=null] : ( ( (lv_op_0_0= 'changeAttribute(' ) ) ( (otherlv_1= RULE_ID ) ) otherlv_2= ')' ) ;
     public final EObject ruleChangeAttribute() throws RecognitionException {
         EObject current = null;
 
@@ -3514,19 +3552,19 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1250:28: ( ( ( (lv_op_0_0= 'changeAttribute(' ) ) ( (otherlv_1= RULE_ID ) ) otherlv_2= ')' ) )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1251:1: ( ( (lv_op_0_0= 'changeAttribute(' ) ) ( (otherlv_1= RULE_ID ) ) otherlv_2= ')' )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1270:28: ( ( ( (lv_op_0_0= 'changeAttribute(' ) ) ( (otherlv_1= RULE_ID ) ) otherlv_2= ')' ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1271:1: ( ( (lv_op_0_0= 'changeAttribute(' ) ) ( (otherlv_1= RULE_ID ) ) otherlv_2= ')' )
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1251:1: ( ( (lv_op_0_0= 'changeAttribute(' ) ) ( (otherlv_1= RULE_ID ) ) otherlv_2= ')' )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1251:2: ( (lv_op_0_0= 'changeAttribute(' ) ) ( (otherlv_1= RULE_ID ) ) otherlv_2= ')'
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1271:1: ( ( (lv_op_0_0= 'changeAttribute(' ) ) ( (otherlv_1= RULE_ID ) ) otherlv_2= ')' )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1271:2: ( (lv_op_0_0= 'changeAttribute(' ) ) ( (otherlv_1= RULE_ID ) ) otherlv_2= ')'
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1251:2: ( (lv_op_0_0= 'changeAttribute(' ) )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1252:1: (lv_op_0_0= 'changeAttribute(' )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1271:2: ( (lv_op_0_0= 'changeAttribute(' ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1272:1: (lv_op_0_0= 'changeAttribute(' )
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1252:1: (lv_op_0_0= 'changeAttribute(' )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1253:3: lv_op_0_0= 'changeAttribute('
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1272:1: (lv_op_0_0= 'changeAttribute(' )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1273:3: lv_op_0_0= 'changeAttribute('
             {
-            lv_op_0_0=(Token)match(input,31,FOLLOW_31_in_ruleChangeAttribute2606); if (state.failed) return current;
+            lv_op_0_0=(Token)match(input,31,FOLLOW_31_in_ruleChangeAttribute2637); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
                       newLeafNode(lv_op_0_0, grammarAccess.getChangeAttributeAccess().getOpChangeAttributeKeyword_0_0());
@@ -3546,11 +3584,11 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1266:2: ( (otherlv_1= RULE_ID ) )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1267:1: (otherlv_1= RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1286:2: ( (otherlv_1= RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1287:1: (otherlv_1= RULE_ID )
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1267:1: (otherlv_1= RULE_ID )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1268:3: otherlv_1= RULE_ID
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1287:1: (otherlv_1= RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1288:3: otherlv_1= RULE_ID
             {
             if ( state.backtracking==0 ) {
                
@@ -3564,7 +3602,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
               	        }
                       
             }
-            otherlv_1=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleChangeAttribute2643); if (state.failed) return current;
+            otherlv_1=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleChangeAttribute2674); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
               		newLeafNode(otherlv_1, grammarAccess.getChangeAttributeAccess().getRefEAttributeCrossReference_1_0()); 
@@ -3576,7 +3614,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_2=(Token)match(input,18,FOLLOW_18_in_ruleChangeAttribute2655); if (state.failed) return current;
+            otherlv_2=(Token)match(input,18,FOLLOW_18_in_ruleChangeAttribute2686); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
                   	newLeafNode(otherlv_2, grammarAccess.getChangeAttributeAccess().getRightParenthesisKeyword_2());
@@ -3605,7 +3643,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleAddAttribute"
-    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1294:1: entryRuleAddAttribute returns [EObject current=null] : iv_ruleAddAttribute= ruleAddAttribute EOF ;
+    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1314:1: entryRuleAddAttribute returns [EObject current=null] : iv_ruleAddAttribute= ruleAddAttribute EOF ;
     public final EObject entryRuleAddAttribute() throws RecognitionException {
         EObject current = null;
 
@@ -3613,13 +3651,13 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1295:2: (iv_ruleAddAttribute= ruleAddAttribute EOF )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1296:2: iv_ruleAddAttribute= ruleAddAttribute EOF
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1315:2: (iv_ruleAddAttribute= ruleAddAttribute EOF )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1316:2: iv_ruleAddAttribute= ruleAddAttribute EOF
             {
             if ( state.backtracking==0 ) {
                newCompositeNode(grammarAccess.getAddAttributeRule()); 
             }
-            pushFollow(FOLLOW_ruleAddAttribute_in_entryRuleAddAttribute2691);
+            pushFollow(FOLLOW_ruleAddAttribute_in_entryRuleAddAttribute2722);
             iv_ruleAddAttribute=ruleAddAttribute();
 
             state._fsp--;
@@ -3627,7 +3665,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
             if ( state.backtracking==0 ) {
                current =iv_ruleAddAttribute; 
             }
-            match(input,EOF,FOLLOW_EOF_in_entryRuleAddAttribute2701); if (state.failed) return current;
+            match(input,EOF,FOLLOW_EOF_in_entryRuleAddAttribute2732); if (state.failed) return current;
 
             }
 
@@ -3645,7 +3683,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleAddAttribute"
-    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1303:1: ruleAddAttribute returns [EObject current=null] : ( ( (lv_op_0_0= 'addAttribute(' ) ) ( ( (lv_new_1_0= RULE_STRING ) ) | ( (otherlv_2= RULE_ID ) ) ) otherlv_3= ')' ) ;
+    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1323:1: ruleAddAttribute returns [EObject current=null] : ( ( (lv_op_0_0= 'addAttribute(' ) ) ( ( (lv_new_1_0= RULE_STRING ) ) | ( (otherlv_2= RULE_ID ) ) ) otherlv_3= ')' ) ;
     public final EObject ruleAddAttribute() throws RecognitionException {
         EObject current = null;
 
@@ -3657,19 +3695,19 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1306:28: ( ( ( (lv_op_0_0= 'addAttribute(' ) ) ( ( (lv_new_1_0= RULE_STRING ) ) | ( (otherlv_2= RULE_ID ) ) ) otherlv_3= ')' ) )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1307:1: ( ( (lv_op_0_0= 'addAttribute(' ) ) ( ( (lv_new_1_0= RULE_STRING ) ) | ( (otherlv_2= RULE_ID ) ) ) otherlv_3= ')' )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1326:28: ( ( ( (lv_op_0_0= 'addAttribute(' ) ) ( ( (lv_new_1_0= RULE_STRING ) ) | ( (otherlv_2= RULE_ID ) ) ) otherlv_3= ')' ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1327:1: ( ( (lv_op_0_0= 'addAttribute(' ) ) ( ( (lv_new_1_0= RULE_STRING ) ) | ( (otherlv_2= RULE_ID ) ) ) otherlv_3= ')' )
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1307:1: ( ( (lv_op_0_0= 'addAttribute(' ) ) ( ( (lv_new_1_0= RULE_STRING ) ) | ( (otherlv_2= RULE_ID ) ) ) otherlv_3= ')' )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1307:2: ( (lv_op_0_0= 'addAttribute(' ) ) ( ( (lv_new_1_0= RULE_STRING ) ) | ( (otherlv_2= RULE_ID ) ) ) otherlv_3= ')'
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1327:1: ( ( (lv_op_0_0= 'addAttribute(' ) ) ( ( (lv_new_1_0= RULE_STRING ) ) | ( (otherlv_2= RULE_ID ) ) ) otherlv_3= ')' )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1327:2: ( (lv_op_0_0= 'addAttribute(' ) ) ( ( (lv_new_1_0= RULE_STRING ) ) | ( (otherlv_2= RULE_ID ) ) ) otherlv_3= ')'
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1307:2: ( (lv_op_0_0= 'addAttribute(' ) )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1308:1: (lv_op_0_0= 'addAttribute(' )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1327:2: ( (lv_op_0_0= 'addAttribute(' ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1328:1: (lv_op_0_0= 'addAttribute(' )
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1308:1: (lv_op_0_0= 'addAttribute(' )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1309:3: lv_op_0_0= 'addAttribute('
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1328:1: (lv_op_0_0= 'addAttribute(' )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1329:3: lv_op_0_0= 'addAttribute('
             {
-            lv_op_0_0=(Token)match(input,32,FOLLOW_32_in_ruleAddAttribute2744); if (state.failed) return current;
+            lv_op_0_0=(Token)match(input,32,FOLLOW_32_in_ruleAddAttribute2775); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
                       newLeafNode(lv_op_0_0, grammarAccess.getAddAttributeAccess().getOpAddAttributeKeyword_0_0());
@@ -3689,7 +3727,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1322:2: ( ( (lv_new_1_0= RULE_STRING ) ) | ( (otherlv_2= RULE_ID ) ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1342:2: ( ( (lv_new_1_0= RULE_STRING ) ) | ( (otherlv_2= RULE_ID ) ) )
             int alt21=2;
             int LA21_0 = input.LA(1);
 
@@ -3708,15 +3746,15 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
             }
             switch (alt21) {
                 case 1 :
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1322:3: ( (lv_new_1_0= RULE_STRING ) )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1342:3: ( (lv_new_1_0= RULE_STRING ) )
                     {
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1322:3: ( (lv_new_1_0= RULE_STRING ) )
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1323:1: (lv_new_1_0= RULE_STRING )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1342:3: ( (lv_new_1_0= RULE_STRING ) )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1343:1: (lv_new_1_0= RULE_STRING )
                     {
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1323:1: (lv_new_1_0= RULE_STRING )
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1324:3: lv_new_1_0= RULE_STRING
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1343:1: (lv_new_1_0= RULE_STRING )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1344:3: lv_new_1_0= RULE_STRING
                     {
-                    lv_new_1_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleAddAttribute2775); if (state.failed) return current;
+                    lv_new_1_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleAddAttribute2806); if (state.failed) return current;
                     if ( state.backtracking==0 ) {
 
                       			newLeafNode(lv_new_1_0, grammarAccess.getAddAttributeAccess().getNewSTRINGTerminalRuleCall_1_0_0()); 
@@ -3744,13 +3782,13 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1341:6: ( (otherlv_2= RULE_ID ) )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1361:6: ( (otherlv_2= RULE_ID ) )
                     {
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1341:6: ( (otherlv_2= RULE_ID ) )
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1342:1: (otherlv_2= RULE_ID )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1361:6: ( (otherlv_2= RULE_ID ) )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1362:1: (otherlv_2= RULE_ID )
                     {
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1342:1: (otherlv_2= RULE_ID )
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1343:3: otherlv_2= RULE_ID
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1362:1: (otherlv_2= RULE_ID )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1363:3: otherlv_2= RULE_ID
                     {
                     if ( state.backtracking==0 ) {
                        
@@ -3764,7 +3802,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
                       	        }
                               
                     }
-                    otherlv_2=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleAddAttribute2810); if (state.failed) return current;
+                    otherlv_2=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleAddAttribute2841); if (state.failed) return current;
                     if ( state.backtracking==0 ) {
 
                       		newLeafNode(otherlv_2, grammarAccess.getAddAttributeAccess().getRefSTRINGCrossReference_1_1_0()); 
@@ -3782,7 +3820,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_3=(Token)match(input,18,FOLLOW_18_in_ruleAddAttribute2823); if (state.failed) return current;
+            otherlv_3=(Token)match(input,18,FOLLOW_18_in_ruleAddAttribute2854); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
                   	newLeafNode(otherlv_3, grammarAccess.getAddAttributeAccess().getRightParenthesisKeyword_2());
@@ -3811,7 +3849,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleDeleteAttribute"
-    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1369:1: entryRuleDeleteAttribute returns [EObject current=null] : iv_ruleDeleteAttribute= ruleDeleteAttribute EOF ;
+    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1389:1: entryRuleDeleteAttribute returns [EObject current=null] : iv_ruleDeleteAttribute= ruleDeleteAttribute EOF ;
     public final EObject entryRuleDeleteAttribute() throws RecognitionException {
         EObject current = null;
 
@@ -3819,13 +3857,13 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1370:2: (iv_ruleDeleteAttribute= ruleDeleteAttribute EOF )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1371:2: iv_ruleDeleteAttribute= ruleDeleteAttribute EOF
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1390:2: (iv_ruleDeleteAttribute= ruleDeleteAttribute EOF )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1391:2: iv_ruleDeleteAttribute= ruleDeleteAttribute EOF
             {
             if ( state.backtracking==0 ) {
                newCompositeNode(grammarAccess.getDeleteAttributeRule()); 
             }
-            pushFollow(FOLLOW_ruleDeleteAttribute_in_entryRuleDeleteAttribute2859);
+            pushFollow(FOLLOW_ruleDeleteAttribute_in_entryRuleDeleteAttribute2890);
             iv_ruleDeleteAttribute=ruleDeleteAttribute();
 
             state._fsp--;
@@ -3833,7 +3871,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
             if ( state.backtracking==0 ) {
                current =iv_ruleDeleteAttribute; 
             }
-            match(input,EOF,FOLLOW_EOF_in_entryRuleDeleteAttribute2869); if (state.failed) return current;
+            match(input,EOF,FOLLOW_EOF_in_entryRuleDeleteAttribute2900); if (state.failed) return current;
 
             }
 
@@ -3851,7 +3889,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleDeleteAttribute"
-    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1378:1: ruleDeleteAttribute returns [EObject current=null] : ( ( (lv_op_0_0= 'deleteAttribute(' ) ) ( (otherlv_1= RULE_ID ) ) otherlv_2= ')' ) ;
+    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1398:1: ruleDeleteAttribute returns [EObject current=null] : ( ( (lv_op_0_0= 'deleteAttribute(' ) ) ( (otherlv_1= RULE_ID ) ) otherlv_2= ')' ) ;
     public final EObject ruleDeleteAttribute() throws RecognitionException {
         EObject current = null;
 
@@ -3862,19 +3900,19 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1381:28: ( ( ( (lv_op_0_0= 'deleteAttribute(' ) ) ( (otherlv_1= RULE_ID ) ) otherlv_2= ')' ) )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1382:1: ( ( (lv_op_0_0= 'deleteAttribute(' ) ) ( (otherlv_1= RULE_ID ) ) otherlv_2= ')' )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1401:28: ( ( ( (lv_op_0_0= 'deleteAttribute(' ) ) ( (otherlv_1= RULE_ID ) ) otherlv_2= ')' ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1402:1: ( ( (lv_op_0_0= 'deleteAttribute(' ) ) ( (otherlv_1= RULE_ID ) ) otherlv_2= ')' )
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1382:1: ( ( (lv_op_0_0= 'deleteAttribute(' ) ) ( (otherlv_1= RULE_ID ) ) otherlv_2= ')' )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1382:2: ( (lv_op_0_0= 'deleteAttribute(' ) ) ( (otherlv_1= RULE_ID ) ) otherlv_2= ')'
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1402:1: ( ( (lv_op_0_0= 'deleteAttribute(' ) ) ( (otherlv_1= RULE_ID ) ) otherlv_2= ')' )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1402:2: ( (lv_op_0_0= 'deleteAttribute(' ) ) ( (otherlv_1= RULE_ID ) ) otherlv_2= ')'
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1382:2: ( (lv_op_0_0= 'deleteAttribute(' ) )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1383:1: (lv_op_0_0= 'deleteAttribute(' )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1402:2: ( (lv_op_0_0= 'deleteAttribute(' ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1403:1: (lv_op_0_0= 'deleteAttribute(' )
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1383:1: (lv_op_0_0= 'deleteAttribute(' )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1384:3: lv_op_0_0= 'deleteAttribute('
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1403:1: (lv_op_0_0= 'deleteAttribute(' )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1404:3: lv_op_0_0= 'deleteAttribute('
             {
-            lv_op_0_0=(Token)match(input,33,FOLLOW_33_in_ruleDeleteAttribute2912); if (state.failed) return current;
+            lv_op_0_0=(Token)match(input,33,FOLLOW_33_in_ruleDeleteAttribute2943); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
                       newLeafNode(lv_op_0_0, grammarAccess.getDeleteAttributeAccess().getOpDeleteAttributeKeyword_0_0());
@@ -3894,11 +3932,11 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1397:2: ( (otherlv_1= RULE_ID ) )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1398:1: (otherlv_1= RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1417:2: ( (otherlv_1= RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1418:1: (otherlv_1= RULE_ID )
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1398:1: (otherlv_1= RULE_ID )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1399:3: otherlv_1= RULE_ID
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1418:1: (otherlv_1= RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1419:3: otherlv_1= RULE_ID
             {
             if ( state.backtracking==0 ) {
                
@@ -3912,7 +3950,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
               	        }
                       
             }
-            otherlv_1=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleDeleteAttribute2949); if (state.failed) return current;
+            otherlv_1=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleDeleteAttribute2980); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
               		newLeafNode(otherlv_1, grammarAccess.getDeleteAttributeAccess().getRefEAttributeCrossReference_1_0()); 
@@ -3924,7 +3962,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_2=(Token)match(input,18,FOLLOW_18_in_ruleDeleteAttribute2961); if (state.failed) return current;
+            otherlv_2=(Token)match(input,18,FOLLOW_18_in_ruleDeleteAttribute2992); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
                   	newLeafNode(otherlv_2, grammarAccess.getDeleteAttributeAccess().getRightParenthesisKeyword_2());
@@ -3953,7 +3991,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleEReferenceOperation"
-    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1425:1: entryRuleEReferenceOperation returns [EObject current=null] : iv_ruleEReferenceOperation= ruleEReferenceOperation EOF ;
+    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1445:1: entryRuleEReferenceOperation returns [EObject current=null] : iv_ruleEReferenceOperation= ruleEReferenceOperation EOF ;
     public final EObject entryRuleEReferenceOperation() throws RecognitionException {
         EObject current = null;
 
@@ -3961,13 +3999,13 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1426:2: (iv_ruleEReferenceOperation= ruleEReferenceOperation EOF )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1427:2: iv_ruleEReferenceOperation= ruleEReferenceOperation EOF
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1446:2: (iv_ruleEReferenceOperation= ruleEReferenceOperation EOF )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1447:2: iv_ruleEReferenceOperation= ruleEReferenceOperation EOF
             {
             if ( state.backtracking==0 ) {
                newCompositeNode(grammarAccess.getEReferenceOperationRule()); 
             }
-            pushFollow(FOLLOW_ruleEReferenceOperation_in_entryRuleEReferenceOperation2997);
+            pushFollow(FOLLOW_ruleEReferenceOperation_in_entryRuleEReferenceOperation3028);
             iv_ruleEReferenceOperation=ruleEReferenceOperation();
 
             state._fsp--;
@@ -3975,7 +4013,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
             if ( state.backtracking==0 ) {
                current =iv_ruleEReferenceOperation; 
             }
-            match(input,EOF,FOLLOW_EOF_in_entryRuleEReferenceOperation3007); if (state.failed) return current;
+            match(input,EOF,FOLLOW_EOF_in_entryRuleEReferenceOperation3038); if (state.failed) return current;
 
             }
 
@@ -3993,7 +4031,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleEReferenceOperation"
-    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1434:1: ruleEReferenceOperation returns [EObject current=null] : ( (otherlv_0= 'reference' ( (lv_var_1_0= ruleReference ) ) otherlv_2= '=' )? ( ( ( ( (lv_op_3_0= ruleChangeReference ) ) | ( (lv_op_4_0= ruleAddReference ) ) | ( (lv_op_5_0= ruleDeleteReference ) ) ) (otherlv_6= '{' ( (lv_setters_7_0= rulesetter ) )* otherlv_8= '}' ) ) | ( (lv_complex_9_0= ruleComplexOperator ) ) ) ) ;
+    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1454:1: ruleEReferenceOperation returns [EObject current=null] : ( (otherlv_0= 'reference' ( (lv_var_1_0= ruleReference ) ) otherlv_2= '=' )? ( ( ( ( (lv_op_3_0= ruleChangeReference ) ) | ( (lv_op_4_0= ruleAddReference ) ) | ( (lv_op_5_0= ruleDeleteReference ) ) ) (otherlv_6= '{' ( (lv_setters_7_0= rulesetter ) )* otherlv_8= '}' ) ) | ( (lv_complex_9_0= ruleComplexOperator ) ) ) ) ;
     public final EObject ruleEReferenceOperation() throws RecognitionException {
         EObject current = null;
 
@@ -4017,13 +4055,13 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1437:28: ( ( (otherlv_0= 'reference' ( (lv_var_1_0= ruleReference ) ) otherlv_2= '=' )? ( ( ( ( (lv_op_3_0= ruleChangeReference ) ) | ( (lv_op_4_0= ruleAddReference ) ) | ( (lv_op_5_0= ruleDeleteReference ) ) ) (otherlv_6= '{' ( (lv_setters_7_0= rulesetter ) )* otherlv_8= '}' ) ) | ( (lv_complex_9_0= ruleComplexOperator ) ) ) ) )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1438:1: ( (otherlv_0= 'reference' ( (lv_var_1_0= ruleReference ) ) otherlv_2= '=' )? ( ( ( ( (lv_op_3_0= ruleChangeReference ) ) | ( (lv_op_4_0= ruleAddReference ) ) | ( (lv_op_5_0= ruleDeleteReference ) ) ) (otherlv_6= '{' ( (lv_setters_7_0= rulesetter ) )* otherlv_8= '}' ) ) | ( (lv_complex_9_0= ruleComplexOperator ) ) ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1457:28: ( ( (otherlv_0= 'reference' ( (lv_var_1_0= ruleReference ) ) otherlv_2= '=' )? ( ( ( ( (lv_op_3_0= ruleChangeReference ) ) | ( (lv_op_4_0= ruleAddReference ) ) | ( (lv_op_5_0= ruleDeleteReference ) ) ) (otherlv_6= '{' ( (lv_setters_7_0= rulesetter ) )* otherlv_8= '}' ) ) | ( (lv_complex_9_0= ruleComplexOperator ) ) ) ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1458:1: ( (otherlv_0= 'reference' ( (lv_var_1_0= ruleReference ) ) otherlv_2= '=' )? ( ( ( ( (lv_op_3_0= ruleChangeReference ) ) | ( (lv_op_4_0= ruleAddReference ) ) | ( (lv_op_5_0= ruleDeleteReference ) ) ) (otherlv_6= '{' ( (lv_setters_7_0= rulesetter ) )* otherlv_8= '}' ) ) | ( (lv_complex_9_0= ruleComplexOperator ) ) ) )
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1438:1: ( (otherlv_0= 'reference' ( (lv_var_1_0= ruleReference ) ) otherlv_2= '=' )? ( ( ( ( (lv_op_3_0= ruleChangeReference ) ) | ( (lv_op_4_0= ruleAddReference ) ) | ( (lv_op_5_0= ruleDeleteReference ) ) ) (otherlv_6= '{' ( (lv_setters_7_0= rulesetter ) )* otherlv_8= '}' ) ) | ( (lv_complex_9_0= ruleComplexOperator ) ) ) )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1438:2: (otherlv_0= 'reference' ( (lv_var_1_0= ruleReference ) ) otherlv_2= '=' )? ( ( ( ( (lv_op_3_0= ruleChangeReference ) ) | ( (lv_op_4_0= ruleAddReference ) ) | ( (lv_op_5_0= ruleDeleteReference ) ) ) (otherlv_6= '{' ( (lv_setters_7_0= rulesetter ) )* otherlv_8= '}' ) ) | ( (lv_complex_9_0= ruleComplexOperator ) ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1458:1: ( (otherlv_0= 'reference' ( (lv_var_1_0= ruleReference ) ) otherlv_2= '=' )? ( ( ( ( (lv_op_3_0= ruleChangeReference ) ) | ( (lv_op_4_0= ruleAddReference ) ) | ( (lv_op_5_0= ruleDeleteReference ) ) ) (otherlv_6= '{' ( (lv_setters_7_0= rulesetter ) )* otherlv_8= '}' ) ) | ( (lv_complex_9_0= ruleComplexOperator ) ) ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1458:2: (otherlv_0= 'reference' ( (lv_var_1_0= ruleReference ) ) otherlv_2= '=' )? ( ( ( ( (lv_op_3_0= ruleChangeReference ) ) | ( (lv_op_4_0= ruleAddReference ) ) | ( (lv_op_5_0= ruleDeleteReference ) ) ) (otherlv_6= '{' ( (lv_setters_7_0= rulesetter ) )* otherlv_8= '}' ) ) | ( (lv_complex_9_0= ruleComplexOperator ) ) )
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1438:2: (otherlv_0= 'reference' ( (lv_var_1_0= ruleReference ) ) otherlv_2= '=' )?
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1458:2: (otherlv_0= 'reference' ( (lv_var_1_0= ruleReference ) ) otherlv_2= '=' )?
             int alt22=2;
             int LA22_0 = input.LA(1);
 
@@ -4032,26 +4070,26 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
             }
             switch (alt22) {
                 case 1 :
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1438:4: otherlv_0= 'reference' ( (lv_var_1_0= ruleReference ) ) otherlv_2= '='
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1458:4: otherlv_0= 'reference' ( (lv_var_1_0= ruleReference ) ) otherlv_2= '='
                     {
-                    otherlv_0=(Token)match(input,34,FOLLOW_34_in_ruleEReferenceOperation3045); if (state.failed) return current;
+                    otherlv_0=(Token)match(input,34,FOLLOW_34_in_ruleEReferenceOperation3076); if (state.failed) return current;
                     if ( state.backtracking==0 ) {
 
                           	newLeafNode(otherlv_0, grammarAccess.getEReferenceOperationAccess().getReferenceKeyword_0_0());
                           
                     }
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1442:1: ( (lv_var_1_0= ruleReference ) )
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1443:1: (lv_var_1_0= ruleReference )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1462:1: ( (lv_var_1_0= ruleReference ) )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1463:1: (lv_var_1_0= ruleReference )
                     {
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1443:1: (lv_var_1_0= ruleReference )
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1444:3: lv_var_1_0= ruleReference
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1463:1: (lv_var_1_0= ruleReference )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1464:3: lv_var_1_0= ruleReference
                     {
                     if ( state.backtracking==0 ) {
                        
                       	        newCompositeNode(grammarAccess.getEReferenceOperationAccess().getVarReferenceParserRuleCall_0_1_0()); 
                       	    
                     }
-                    pushFollow(FOLLOW_ruleReference_in_ruleEReferenceOperation3066);
+                    pushFollow(FOLLOW_ruleReference_in_ruleEReferenceOperation3097);
                     lv_var_1_0=ruleReference();
 
                     state._fsp--;
@@ -4075,7 +4113,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
                     }
 
-                    otherlv_2=(Token)match(input,13,FOLLOW_13_in_ruleEReferenceOperation3078); if (state.failed) return current;
+                    otherlv_2=(Token)match(input,13,FOLLOW_13_in_ruleEReferenceOperation3109); if (state.failed) return current;
                     if ( state.backtracking==0 ) {
 
                           	newLeafNode(otherlv_2, grammarAccess.getEReferenceOperationAccess().getEqualsSignKeyword_0_2());
@@ -4087,7 +4125,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1464:3: ( ( ( ( (lv_op_3_0= ruleChangeReference ) ) | ( (lv_op_4_0= ruleAddReference ) ) | ( (lv_op_5_0= ruleDeleteReference ) ) ) (otherlv_6= '{' ( (lv_setters_7_0= rulesetter ) )* otherlv_8= '}' ) ) | ( (lv_complex_9_0= ruleComplexOperator ) ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1484:3: ( ( ( ( (lv_op_3_0= ruleChangeReference ) ) | ( (lv_op_4_0= ruleAddReference ) ) | ( (lv_op_5_0= ruleDeleteReference ) ) ) (otherlv_6= '{' ( (lv_setters_7_0= rulesetter ) )* otherlv_8= '}' ) ) | ( (lv_complex_9_0= ruleComplexOperator ) ) )
             int alt25=2;
             int LA25_0 = input.LA(1);
 
@@ -4106,12 +4144,12 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
             }
             switch (alt25) {
                 case 1 :
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1464:4: ( ( ( (lv_op_3_0= ruleChangeReference ) ) | ( (lv_op_4_0= ruleAddReference ) ) | ( (lv_op_5_0= ruleDeleteReference ) ) ) (otherlv_6= '{' ( (lv_setters_7_0= rulesetter ) )* otherlv_8= '}' ) )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1484:4: ( ( ( (lv_op_3_0= ruleChangeReference ) ) | ( (lv_op_4_0= ruleAddReference ) ) | ( (lv_op_5_0= ruleDeleteReference ) ) ) (otherlv_6= '{' ( (lv_setters_7_0= rulesetter ) )* otherlv_8= '}' ) )
                     {
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1464:4: ( ( ( (lv_op_3_0= ruleChangeReference ) ) | ( (lv_op_4_0= ruleAddReference ) ) | ( (lv_op_5_0= ruleDeleteReference ) ) ) (otherlv_6= '{' ( (lv_setters_7_0= rulesetter ) )* otherlv_8= '}' ) )
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1464:5: ( ( (lv_op_3_0= ruleChangeReference ) ) | ( (lv_op_4_0= ruleAddReference ) ) | ( (lv_op_5_0= ruleDeleteReference ) ) ) (otherlv_6= '{' ( (lv_setters_7_0= rulesetter ) )* otherlv_8= '}' )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1484:4: ( ( ( (lv_op_3_0= ruleChangeReference ) ) | ( (lv_op_4_0= ruleAddReference ) ) | ( (lv_op_5_0= ruleDeleteReference ) ) ) (otherlv_6= '{' ( (lv_setters_7_0= rulesetter ) )* otherlv_8= '}' ) )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1484:5: ( ( (lv_op_3_0= ruleChangeReference ) ) | ( (lv_op_4_0= ruleAddReference ) ) | ( (lv_op_5_0= ruleDeleteReference ) ) ) (otherlv_6= '{' ( (lv_setters_7_0= rulesetter ) )* otherlv_8= '}' )
                     {
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1464:5: ( ( (lv_op_3_0= ruleChangeReference ) ) | ( (lv_op_4_0= ruleAddReference ) ) | ( (lv_op_5_0= ruleDeleteReference ) ) )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1484:5: ( ( (lv_op_3_0= ruleChangeReference ) ) | ( (lv_op_4_0= ruleAddReference ) ) | ( (lv_op_5_0= ruleDeleteReference ) ) )
                     int alt23=3;
                     switch ( input.LA(1) ) {
                     case 35:
@@ -4139,20 +4177,20 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
                     switch (alt23) {
                         case 1 :
-                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1464:6: ( (lv_op_3_0= ruleChangeReference ) )
+                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1484:6: ( (lv_op_3_0= ruleChangeReference ) )
                             {
-                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1464:6: ( (lv_op_3_0= ruleChangeReference ) )
-                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1465:1: (lv_op_3_0= ruleChangeReference )
+                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1484:6: ( (lv_op_3_0= ruleChangeReference ) )
+                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1485:1: (lv_op_3_0= ruleChangeReference )
                             {
-                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1465:1: (lv_op_3_0= ruleChangeReference )
-                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1466:3: lv_op_3_0= ruleChangeReference
+                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1485:1: (lv_op_3_0= ruleChangeReference )
+                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1486:3: lv_op_3_0= ruleChangeReference
                             {
                             if ( state.backtracking==0 ) {
                                
                               	        newCompositeNode(grammarAccess.getEReferenceOperationAccess().getOpChangeReferenceParserRuleCall_1_0_0_0_0()); 
                               	    
                             }
-                            pushFollow(FOLLOW_ruleChangeReference_in_ruleEReferenceOperation3104);
+                            pushFollow(FOLLOW_ruleChangeReference_in_ruleEReferenceOperation3135);
                             lv_op_3_0=ruleChangeReference();
 
                             state._fsp--;
@@ -4180,20 +4218,20 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
                             }
                             break;
                         case 2 :
-                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1483:6: ( (lv_op_4_0= ruleAddReference ) )
+                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1503:6: ( (lv_op_4_0= ruleAddReference ) )
                             {
-                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1483:6: ( (lv_op_4_0= ruleAddReference ) )
-                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1484:1: (lv_op_4_0= ruleAddReference )
+                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1503:6: ( (lv_op_4_0= ruleAddReference ) )
+                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1504:1: (lv_op_4_0= ruleAddReference )
                             {
-                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1484:1: (lv_op_4_0= ruleAddReference )
-                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1485:3: lv_op_4_0= ruleAddReference
+                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1504:1: (lv_op_4_0= ruleAddReference )
+                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1505:3: lv_op_4_0= ruleAddReference
                             {
                             if ( state.backtracking==0 ) {
                                
                               	        newCompositeNode(grammarAccess.getEReferenceOperationAccess().getOpAddReferenceParserRuleCall_1_0_0_1_0()); 
                               	    
                             }
-                            pushFollow(FOLLOW_ruleAddReference_in_ruleEReferenceOperation3131);
+                            pushFollow(FOLLOW_ruleAddReference_in_ruleEReferenceOperation3162);
                             lv_op_4_0=ruleAddReference();
 
                             state._fsp--;
@@ -4221,20 +4259,20 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
                             }
                             break;
                         case 3 :
-                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1502:6: ( (lv_op_5_0= ruleDeleteReference ) )
+                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1522:6: ( (lv_op_5_0= ruleDeleteReference ) )
                             {
-                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1502:6: ( (lv_op_5_0= ruleDeleteReference ) )
-                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1503:1: (lv_op_5_0= ruleDeleteReference )
+                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1522:6: ( (lv_op_5_0= ruleDeleteReference ) )
+                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1523:1: (lv_op_5_0= ruleDeleteReference )
                             {
-                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1503:1: (lv_op_5_0= ruleDeleteReference )
-                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1504:3: lv_op_5_0= ruleDeleteReference
+                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1523:1: (lv_op_5_0= ruleDeleteReference )
+                            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1524:3: lv_op_5_0= ruleDeleteReference
                             {
                             if ( state.backtracking==0 ) {
                                
                               	        newCompositeNode(grammarAccess.getEReferenceOperationAccess().getOpDeleteReferenceParserRuleCall_1_0_0_2_0()); 
                               	    
                             }
-                            pushFollow(FOLLOW_ruleDeleteReference_in_ruleEReferenceOperation3158);
+                            pushFollow(FOLLOW_ruleDeleteReference_in_ruleEReferenceOperation3189);
                             lv_op_5_0=ruleDeleteReference();
 
                             state._fsp--;
@@ -4264,16 +4302,16 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
                     }
 
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1520:3: (otherlv_6= '{' ( (lv_setters_7_0= rulesetter ) )* otherlv_8= '}' )
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1520:5: otherlv_6= '{' ( (lv_setters_7_0= rulesetter ) )* otherlv_8= '}'
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1540:3: (otherlv_6= '{' ( (lv_setters_7_0= rulesetter ) )* otherlv_8= '}' )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1540:5: otherlv_6= '{' ( (lv_setters_7_0= rulesetter ) )* otherlv_8= '}'
                     {
-                    otherlv_6=(Token)match(input,14,FOLLOW_14_in_ruleEReferenceOperation3172); if (state.failed) return current;
+                    otherlv_6=(Token)match(input,14,FOLLOW_14_in_ruleEReferenceOperation3203); if (state.failed) return current;
                     if ( state.backtracking==0 ) {
 
                           	newLeafNode(otherlv_6, grammarAccess.getEReferenceOperationAccess().getLeftCurlyBracketKeyword_1_0_1_0());
                           
                     }
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1524:1: ( (lv_setters_7_0= rulesetter ) )*
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1544:1: ( (lv_setters_7_0= rulesetter ) )*
                     loop24:
                     do {
                         int alt24=2;
@@ -4286,17 +4324,17 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
                         switch (alt24) {
                     	case 1 :
-                    	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1525:1: (lv_setters_7_0= rulesetter )
+                    	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1545:1: (lv_setters_7_0= rulesetter )
                     	    {
-                    	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1525:1: (lv_setters_7_0= rulesetter )
-                    	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1526:3: lv_setters_7_0= rulesetter
+                    	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1545:1: (lv_setters_7_0= rulesetter )
+                    	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1546:3: lv_setters_7_0= rulesetter
                     	    {
                     	    if ( state.backtracking==0 ) {
                     	       
                     	      	        newCompositeNode(grammarAccess.getEReferenceOperationAccess().getSettersSetterParserRuleCall_1_0_1_1_0()); 
                     	      	    
                     	    }
-                    	    pushFollow(FOLLOW_rulesetter_in_ruleEReferenceOperation3193);
+                    	    pushFollow(FOLLOW_rulesetter_in_ruleEReferenceOperation3224);
                     	    lv_setters_7_0=rulesetter();
 
                     	    state._fsp--;
@@ -4326,7 +4364,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
                         }
                     } while (true);
 
-                    otherlv_8=(Token)match(input,15,FOLLOW_15_in_ruleEReferenceOperation3206); if (state.failed) return current;
+                    otherlv_8=(Token)match(input,15,FOLLOW_15_in_ruleEReferenceOperation3237); if (state.failed) return current;
                     if ( state.backtracking==0 ) {
 
                           	newLeafNode(otherlv_8, grammarAccess.getEReferenceOperationAccess().getRightCurlyBracketKeyword_1_0_1_2());
@@ -4342,20 +4380,20 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1547:6: ( (lv_complex_9_0= ruleComplexOperator ) )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1567:6: ( (lv_complex_9_0= ruleComplexOperator ) )
                     {
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1547:6: ( (lv_complex_9_0= ruleComplexOperator ) )
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1548:1: (lv_complex_9_0= ruleComplexOperator )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1567:6: ( (lv_complex_9_0= ruleComplexOperator ) )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1568:1: (lv_complex_9_0= ruleComplexOperator )
                     {
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1548:1: (lv_complex_9_0= ruleComplexOperator )
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1549:3: lv_complex_9_0= ruleComplexOperator
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1568:1: (lv_complex_9_0= ruleComplexOperator )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1569:3: lv_complex_9_0= ruleComplexOperator
                     {
                     if ( state.backtracking==0 ) {
                        
                       	        newCompositeNode(grammarAccess.getEReferenceOperationAccess().getComplexComplexOperatorParserRuleCall_1_1_0()); 
                       	    
                     }
-                    pushFollow(FOLLOW_ruleComplexOperator_in_ruleEReferenceOperation3235);
+                    pushFollow(FOLLOW_ruleComplexOperator_in_ruleEReferenceOperation3266);
                     lv_complex_9_0=ruleComplexOperator();
 
                     state._fsp--;
@@ -4408,7 +4446,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleChangeReference"
-    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1573:1: entryRuleChangeReference returns [EObject current=null] : iv_ruleChangeReference= ruleChangeReference EOF ;
+    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1593:1: entryRuleChangeReference returns [EObject current=null] : iv_ruleChangeReference= ruleChangeReference EOF ;
     public final EObject entryRuleChangeReference() throws RecognitionException {
         EObject current = null;
 
@@ -4416,13 +4454,13 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1574:2: (iv_ruleChangeReference= ruleChangeReference EOF )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1575:2: iv_ruleChangeReference= ruleChangeReference EOF
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1594:2: (iv_ruleChangeReference= ruleChangeReference EOF )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1595:2: iv_ruleChangeReference= ruleChangeReference EOF
             {
             if ( state.backtracking==0 ) {
                newCompositeNode(grammarAccess.getChangeReferenceRule()); 
             }
-            pushFollow(FOLLOW_ruleChangeReference_in_entryRuleChangeReference3272);
+            pushFollow(FOLLOW_ruleChangeReference_in_entryRuleChangeReference3303);
             iv_ruleChangeReference=ruleChangeReference();
 
             state._fsp--;
@@ -4430,7 +4468,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
             if ( state.backtracking==0 ) {
                current =iv_ruleChangeReference; 
             }
-            match(input,EOF,FOLLOW_EOF_in_entryRuleChangeReference3282); if (state.failed) return current;
+            match(input,EOF,FOLLOW_EOF_in_entryRuleChangeReference3313); if (state.failed) return current;
 
             }
 
@@ -4448,7 +4486,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleChangeReference"
-    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1582:1: ruleChangeReference returns [EObject current=null] : ( ( (lv_op_0_0= 'changeReference' ) ) otherlv_1= '(' ( (otherlv_2= RULE_ID ) ) otherlv_3= ')' ) ;
+    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1602:1: ruleChangeReference returns [EObject current=null] : ( ( (lv_op_0_0= 'changeReference' ) ) otherlv_1= '(' ( (otherlv_2= RULE_ID ) ) otherlv_3= ')' ) ;
     public final EObject ruleChangeReference() throws RecognitionException {
         EObject current = null;
 
@@ -4460,19 +4498,19 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1585:28: ( ( ( (lv_op_0_0= 'changeReference' ) ) otherlv_1= '(' ( (otherlv_2= RULE_ID ) ) otherlv_3= ')' ) )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1586:1: ( ( (lv_op_0_0= 'changeReference' ) ) otherlv_1= '(' ( (otherlv_2= RULE_ID ) ) otherlv_3= ')' )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1605:28: ( ( ( (lv_op_0_0= 'changeReference' ) ) otherlv_1= '(' ( (otherlv_2= RULE_ID ) ) otherlv_3= ')' ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1606:1: ( ( (lv_op_0_0= 'changeReference' ) ) otherlv_1= '(' ( (otherlv_2= RULE_ID ) ) otherlv_3= ')' )
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1586:1: ( ( (lv_op_0_0= 'changeReference' ) ) otherlv_1= '(' ( (otherlv_2= RULE_ID ) ) otherlv_3= ')' )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1586:2: ( (lv_op_0_0= 'changeReference' ) ) otherlv_1= '(' ( (otherlv_2= RULE_ID ) ) otherlv_3= ')'
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1606:1: ( ( (lv_op_0_0= 'changeReference' ) ) otherlv_1= '(' ( (otherlv_2= RULE_ID ) ) otherlv_3= ')' )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1606:2: ( (lv_op_0_0= 'changeReference' ) ) otherlv_1= '(' ( (otherlv_2= RULE_ID ) ) otherlv_3= ')'
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1586:2: ( (lv_op_0_0= 'changeReference' ) )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1587:1: (lv_op_0_0= 'changeReference' )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1606:2: ( (lv_op_0_0= 'changeReference' ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1607:1: (lv_op_0_0= 'changeReference' )
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1587:1: (lv_op_0_0= 'changeReference' )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1588:3: lv_op_0_0= 'changeReference'
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1607:1: (lv_op_0_0= 'changeReference' )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1608:3: lv_op_0_0= 'changeReference'
             {
-            lv_op_0_0=(Token)match(input,35,FOLLOW_35_in_ruleChangeReference3325); if (state.failed) return current;
+            lv_op_0_0=(Token)match(input,35,FOLLOW_35_in_ruleChangeReference3356); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
                       newLeafNode(lv_op_0_0, grammarAccess.getChangeReferenceAccess().getOpChangeReferenceKeyword_0_0());
@@ -4492,17 +4530,17 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_1=(Token)match(input,17,FOLLOW_17_in_ruleChangeReference3350); if (state.failed) return current;
+            otherlv_1=(Token)match(input,17,FOLLOW_17_in_ruleChangeReference3381); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
                   	newLeafNode(otherlv_1, grammarAccess.getChangeReferenceAccess().getLeftParenthesisKeyword_1());
                   
             }
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1605:1: ( (otherlv_2= RULE_ID ) )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1606:1: (otherlv_2= RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1625:1: ( (otherlv_2= RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1626:1: (otherlv_2= RULE_ID )
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1606:1: (otherlv_2= RULE_ID )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1607:3: otherlv_2= RULE_ID
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1626:1: (otherlv_2= RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1627:3: otherlv_2= RULE_ID
             {
             if ( state.backtracking==0 ) {
                
@@ -4516,7 +4554,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
               	        }
                       
             }
-            otherlv_2=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleChangeReference3374); if (state.failed) return current;
+            otherlv_2=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleChangeReference3405); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
               		newLeafNode(otherlv_2, grammarAccess.getChangeReferenceAccess().getRefEReferenceCrossReference_2_0()); 
@@ -4528,7 +4566,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_3=(Token)match(input,18,FOLLOW_18_in_ruleChangeReference3386); if (state.failed) return current;
+            otherlv_3=(Token)match(input,18,FOLLOW_18_in_ruleChangeReference3417); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
                   	newLeafNode(otherlv_3, grammarAccess.getChangeReferenceAccess().getRightParenthesisKeyword_3());
@@ -4557,7 +4595,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleAddReference"
-    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1633:1: entryRuleAddReference returns [EObject current=null] : iv_ruleAddReference= ruleAddReference EOF ;
+    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1653:1: entryRuleAddReference returns [EObject current=null] : iv_ruleAddReference= ruleAddReference EOF ;
     public final EObject entryRuleAddReference() throws RecognitionException {
         EObject current = null;
 
@@ -4565,13 +4603,13 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1634:2: (iv_ruleAddReference= ruleAddReference EOF )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1635:2: iv_ruleAddReference= ruleAddReference EOF
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1654:2: (iv_ruleAddReference= ruleAddReference EOF )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1655:2: iv_ruleAddReference= ruleAddReference EOF
             {
             if ( state.backtracking==0 ) {
                newCompositeNode(grammarAccess.getAddReferenceRule()); 
             }
-            pushFollow(FOLLOW_ruleAddReference_in_entryRuleAddReference3422);
+            pushFollow(FOLLOW_ruleAddReference_in_entryRuleAddReference3453);
             iv_ruleAddReference=ruleAddReference();
 
             state._fsp--;
@@ -4579,7 +4617,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
             if ( state.backtracking==0 ) {
                current =iv_ruleAddReference; 
             }
-            match(input,EOF,FOLLOW_EOF_in_entryRuleAddReference3432); if (state.failed) return current;
+            match(input,EOF,FOLLOW_EOF_in_entryRuleAddReference3463); if (state.failed) return current;
 
             }
 
@@ -4597,7 +4635,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleAddReference"
-    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1642:1: ruleAddReference returns [EObject current=null] : ( ( (lv_op_0_0= 'addReference' ) ) otherlv_1= '(' ( ( (lv_new_2_0= RULE_STRING ) ) | ( (otherlv_3= RULE_ID ) ) ) otherlv_4= ')' ) ;
+    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1662:1: ruleAddReference returns [EObject current=null] : ( ( (lv_op_0_0= 'addReference' ) ) otherlv_1= '(' ( ( (lv_new_2_0= RULE_STRING ) ) | ( (otherlv_3= RULE_ID ) ) ) otherlv_4= ')' ) ;
     public final EObject ruleAddReference() throws RecognitionException {
         EObject current = null;
 
@@ -4610,19 +4648,19 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1645:28: ( ( ( (lv_op_0_0= 'addReference' ) ) otherlv_1= '(' ( ( (lv_new_2_0= RULE_STRING ) ) | ( (otherlv_3= RULE_ID ) ) ) otherlv_4= ')' ) )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1646:1: ( ( (lv_op_0_0= 'addReference' ) ) otherlv_1= '(' ( ( (lv_new_2_0= RULE_STRING ) ) | ( (otherlv_3= RULE_ID ) ) ) otherlv_4= ')' )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1665:28: ( ( ( (lv_op_0_0= 'addReference' ) ) otherlv_1= '(' ( ( (lv_new_2_0= RULE_STRING ) ) | ( (otherlv_3= RULE_ID ) ) ) otherlv_4= ')' ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1666:1: ( ( (lv_op_0_0= 'addReference' ) ) otherlv_1= '(' ( ( (lv_new_2_0= RULE_STRING ) ) | ( (otherlv_3= RULE_ID ) ) ) otherlv_4= ')' )
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1646:1: ( ( (lv_op_0_0= 'addReference' ) ) otherlv_1= '(' ( ( (lv_new_2_0= RULE_STRING ) ) | ( (otherlv_3= RULE_ID ) ) ) otherlv_4= ')' )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1646:2: ( (lv_op_0_0= 'addReference' ) ) otherlv_1= '(' ( ( (lv_new_2_0= RULE_STRING ) ) | ( (otherlv_3= RULE_ID ) ) ) otherlv_4= ')'
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1666:1: ( ( (lv_op_0_0= 'addReference' ) ) otherlv_1= '(' ( ( (lv_new_2_0= RULE_STRING ) ) | ( (otherlv_3= RULE_ID ) ) ) otherlv_4= ')' )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1666:2: ( (lv_op_0_0= 'addReference' ) ) otherlv_1= '(' ( ( (lv_new_2_0= RULE_STRING ) ) | ( (otherlv_3= RULE_ID ) ) ) otherlv_4= ')'
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1646:2: ( (lv_op_0_0= 'addReference' ) )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1647:1: (lv_op_0_0= 'addReference' )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1666:2: ( (lv_op_0_0= 'addReference' ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1667:1: (lv_op_0_0= 'addReference' )
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1647:1: (lv_op_0_0= 'addReference' )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1648:3: lv_op_0_0= 'addReference'
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1667:1: (lv_op_0_0= 'addReference' )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1668:3: lv_op_0_0= 'addReference'
             {
-            lv_op_0_0=(Token)match(input,36,FOLLOW_36_in_ruleAddReference3475); if (state.failed) return current;
+            lv_op_0_0=(Token)match(input,36,FOLLOW_36_in_ruleAddReference3506); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
                       newLeafNode(lv_op_0_0, grammarAccess.getAddReferenceAccess().getOpAddReferenceKeyword_0_0());
@@ -4642,13 +4680,13 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_1=(Token)match(input,17,FOLLOW_17_in_ruleAddReference3500); if (state.failed) return current;
+            otherlv_1=(Token)match(input,17,FOLLOW_17_in_ruleAddReference3531); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
                   	newLeafNode(otherlv_1, grammarAccess.getAddReferenceAccess().getLeftParenthesisKeyword_1());
                   
             }
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1665:1: ( ( (lv_new_2_0= RULE_STRING ) ) | ( (otherlv_3= RULE_ID ) ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1685:1: ( ( (lv_new_2_0= RULE_STRING ) ) | ( (otherlv_3= RULE_ID ) ) )
             int alt26=2;
             int LA26_0 = input.LA(1);
 
@@ -4667,15 +4705,15 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
             }
             switch (alt26) {
                 case 1 :
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1665:2: ( (lv_new_2_0= RULE_STRING ) )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1685:2: ( (lv_new_2_0= RULE_STRING ) )
                     {
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1665:2: ( (lv_new_2_0= RULE_STRING ) )
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1666:1: (lv_new_2_0= RULE_STRING )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1685:2: ( (lv_new_2_0= RULE_STRING ) )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1686:1: (lv_new_2_0= RULE_STRING )
                     {
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1666:1: (lv_new_2_0= RULE_STRING )
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1667:3: lv_new_2_0= RULE_STRING
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1686:1: (lv_new_2_0= RULE_STRING )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1687:3: lv_new_2_0= RULE_STRING
                     {
-                    lv_new_2_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleAddReference3518); if (state.failed) return current;
+                    lv_new_2_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleAddReference3549); if (state.failed) return current;
                     if ( state.backtracking==0 ) {
 
                       			newLeafNode(lv_new_2_0, grammarAccess.getAddReferenceAccess().getNewSTRINGTerminalRuleCall_2_0_0()); 
@@ -4703,13 +4741,13 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1684:6: ( (otherlv_3= RULE_ID ) )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1704:6: ( (otherlv_3= RULE_ID ) )
                     {
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1684:6: ( (otherlv_3= RULE_ID ) )
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1685:1: (otherlv_3= RULE_ID )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1704:6: ( (otherlv_3= RULE_ID ) )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1705:1: (otherlv_3= RULE_ID )
                     {
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1685:1: (otherlv_3= RULE_ID )
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1686:3: otherlv_3= RULE_ID
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1705:1: (otherlv_3= RULE_ID )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1706:3: otherlv_3= RULE_ID
                     {
                     if ( state.backtracking==0 ) {
                        
@@ -4723,7 +4761,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
                       	        }
                               
                     }
-                    otherlv_3=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleAddReference3553); if (state.failed) return current;
+                    otherlv_3=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleAddReference3584); if (state.failed) return current;
                     if ( state.backtracking==0 ) {
 
                       		newLeafNode(otherlv_3, grammarAccess.getAddReferenceAccess().getRefSTRINGCrossReference_2_1_0()); 
@@ -4741,7 +4779,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_4=(Token)match(input,18,FOLLOW_18_in_ruleAddReference3566); if (state.failed) return current;
+            otherlv_4=(Token)match(input,18,FOLLOW_18_in_ruleAddReference3597); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
                   	newLeafNode(otherlv_4, grammarAccess.getAddReferenceAccess().getRightParenthesisKeyword_3());
@@ -4770,7 +4808,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleDeleteReference"
-    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1712:1: entryRuleDeleteReference returns [EObject current=null] : iv_ruleDeleteReference= ruleDeleteReference EOF ;
+    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1732:1: entryRuleDeleteReference returns [EObject current=null] : iv_ruleDeleteReference= ruleDeleteReference EOF ;
     public final EObject entryRuleDeleteReference() throws RecognitionException {
         EObject current = null;
 
@@ -4778,13 +4816,13 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1713:2: (iv_ruleDeleteReference= ruleDeleteReference EOF )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1714:2: iv_ruleDeleteReference= ruleDeleteReference EOF
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1733:2: (iv_ruleDeleteReference= ruleDeleteReference EOF )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1734:2: iv_ruleDeleteReference= ruleDeleteReference EOF
             {
             if ( state.backtracking==0 ) {
                newCompositeNode(grammarAccess.getDeleteReferenceRule()); 
             }
-            pushFollow(FOLLOW_ruleDeleteReference_in_entryRuleDeleteReference3602);
+            pushFollow(FOLLOW_ruleDeleteReference_in_entryRuleDeleteReference3633);
             iv_ruleDeleteReference=ruleDeleteReference();
 
             state._fsp--;
@@ -4792,7 +4830,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
             if ( state.backtracking==0 ) {
                current =iv_ruleDeleteReference; 
             }
-            match(input,EOF,FOLLOW_EOF_in_entryRuleDeleteReference3612); if (state.failed) return current;
+            match(input,EOF,FOLLOW_EOF_in_entryRuleDeleteReference3643); if (state.failed) return current;
 
             }
 
@@ -4810,7 +4848,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleDeleteReference"
-    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1721:1: ruleDeleteReference returns [EObject current=null] : ( ( (lv_op_0_0= 'deleteReference' ) ) otherlv_1= '(' ( (otherlv_2= RULE_ID ) ) otherlv_3= ')' ) ;
+    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1741:1: ruleDeleteReference returns [EObject current=null] : ( ( (lv_op_0_0= 'deleteReference' ) ) otherlv_1= '(' ( (otherlv_2= RULE_ID ) ) otherlv_3= ')' ) ;
     public final EObject ruleDeleteReference() throws RecognitionException {
         EObject current = null;
 
@@ -4822,19 +4860,19 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1724:28: ( ( ( (lv_op_0_0= 'deleteReference' ) ) otherlv_1= '(' ( (otherlv_2= RULE_ID ) ) otherlv_3= ')' ) )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1725:1: ( ( (lv_op_0_0= 'deleteReference' ) ) otherlv_1= '(' ( (otherlv_2= RULE_ID ) ) otherlv_3= ')' )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1744:28: ( ( ( (lv_op_0_0= 'deleteReference' ) ) otherlv_1= '(' ( (otherlv_2= RULE_ID ) ) otherlv_3= ')' ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1745:1: ( ( (lv_op_0_0= 'deleteReference' ) ) otherlv_1= '(' ( (otherlv_2= RULE_ID ) ) otherlv_3= ')' )
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1725:1: ( ( (lv_op_0_0= 'deleteReference' ) ) otherlv_1= '(' ( (otherlv_2= RULE_ID ) ) otherlv_3= ')' )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1725:2: ( (lv_op_0_0= 'deleteReference' ) ) otherlv_1= '(' ( (otherlv_2= RULE_ID ) ) otherlv_3= ')'
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1745:1: ( ( (lv_op_0_0= 'deleteReference' ) ) otherlv_1= '(' ( (otherlv_2= RULE_ID ) ) otherlv_3= ')' )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1745:2: ( (lv_op_0_0= 'deleteReference' ) ) otherlv_1= '(' ( (otherlv_2= RULE_ID ) ) otherlv_3= ')'
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1725:2: ( (lv_op_0_0= 'deleteReference' ) )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1726:1: (lv_op_0_0= 'deleteReference' )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1745:2: ( (lv_op_0_0= 'deleteReference' ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1746:1: (lv_op_0_0= 'deleteReference' )
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1726:1: (lv_op_0_0= 'deleteReference' )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1727:3: lv_op_0_0= 'deleteReference'
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1746:1: (lv_op_0_0= 'deleteReference' )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1747:3: lv_op_0_0= 'deleteReference'
             {
-            lv_op_0_0=(Token)match(input,37,FOLLOW_37_in_ruleDeleteReference3655); if (state.failed) return current;
+            lv_op_0_0=(Token)match(input,37,FOLLOW_37_in_ruleDeleteReference3686); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
                       newLeafNode(lv_op_0_0, grammarAccess.getDeleteReferenceAccess().getOpDeleteReferenceKeyword_0_0());
@@ -4854,17 +4892,17 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_1=(Token)match(input,17,FOLLOW_17_in_ruleDeleteReference3680); if (state.failed) return current;
+            otherlv_1=(Token)match(input,17,FOLLOW_17_in_ruleDeleteReference3711); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
                   	newLeafNode(otherlv_1, grammarAccess.getDeleteReferenceAccess().getLeftParenthesisKeyword_1());
                   
             }
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1744:1: ( (otherlv_2= RULE_ID ) )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1745:1: (otherlv_2= RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1764:1: ( (otherlv_2= RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1765:1: (otherlv_2= RULE_ID )
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1745:1: (otherlv_2= RULE_ID )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1746:3: otherlv_2= RULE_ID
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1765:1: (otherlv_2= RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1766:3: otherlv_2= RULE_ID
             {
             if ( state.backtracking==0 ) {
                
@@ -4878,7 +4916,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
               	        }
                       
             }
-            otherlv_2=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleDeleteReference3704); if (state.failed) return current;
+            otherlv_2=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleDeleteReference3735); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
               		newLeafNode(otherlv_2, grammarAccess.getDeleteReferenceAccess().getRefEReferenceCrossReference_2_0()); 
@@ -4890,7 +4928,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_3=(Token)match(input,18,FOLLOW_18_in_ruleDeleteReference3716); if (state.failed) return current;
+            otherlv_3=(Token)match(input,18,FOLLOW_18_in_ruleDeleteReference3747); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
                   	newLeafNode(otherlv_3, grammarAccess.getDeleteReferenceAccess().getRightParenthesisKeyword_3());
@@ -4919,7 +4957,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleComplexOperatorDef"
-    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1772:1: entryRuleComplexOperatorDef returns [EObject current=null] : iv_ruleComplexOperatorDef= ruleComplexOperatorDef EOF ;
+    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1792:1: entryRuleComplexOperatorDef returns [EObject current=null] : iv_ruleComplexOperatorDef= ruleComplexOperatorDef EOF ;
     public final EObject entryRuleComplexOperatorDef() throws RecognitionException {
         EObject current = null;
 
@@ -4927,13 +4965,13 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1773:2: (iv_ruleComplexOperatorDef= ruleComplexOperatorDef EOF )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1774:2: iv_ruleComplexOperatorDef= ruleComplexOperatorDef EOF
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1793:2: (iv_ruleComplexOperatorDef= ruleComplexOperatorDef EOF )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1794:2: iv_ruleComplexOperatorDef= ruleComplexOperatorDef EOF
             {
             if ( state.backtracking==0 ) {
                newCompositeNode(grammarAccess.getComplexOperatorDefRule()); 
             }
-            pushFollow(FOLLOW_ruleComplexOperatorDef_in_entryRuleComplexOperatorDef3752);
+            pushFollow(FOLLOW_ruleComplexOperatorDef_in_entryRuleComplexOperatorDef3783);
             iv_ruleComplexOperatorDef=ruleComplexOperatorDef();
 
             state._fsp--;
@@ -4941,7 +4979,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
             if ( state.backtracking==0 ) {
                current =iv_ruleComplexOperatorDef; 
             }
-            match(input,EOF,FOLLOW_EOF_in_entryRuleComplexOperatorDef3762); if (state.failed) return current;
+            match(input,EOF,FOLLOW_EOF_in_entryRuleComplexOperatorDef3793); if (state.failed) return current;
 
             }
 
@@ -4959,7 +4997,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleComplexOperatorDef"
-    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1781:1: ruleComplexOperatorDef returns [EObject current=null] : (otherlv_0= 'def change' ( (lv_name_1_0= RULE_ID ) ) (otherlv_2= '(' ( (lv_params_3_0= ruleParameter ) )? (otherlv_4= ',' ( (lv_params_5_0= ruleParameter ) ) )* otherlv_6= ')' ) otherlv_7= '{' ( ( (lv_packageOperations_8_0= ruleEPackageOperation ) ) | ( (lv_classOperations_9_0= ruleEClassOperation ) ) | ( (lv_attributeOperations_10_0= ruleEAttributeOperation ) ) | ( (lv_referenceOperations_11_0= ruleEReferenceOperation ) ) )* otherlv_12= '}' ) ;
+    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1801:1: ruleComplexOperatorDef returns [EObject current=null] : (otherlv_0= 'def change' ( (lv_name_1_0= RULE_ID ) ) (otherlv_2= '(' ( (lv_params_3_0= ruleParameter ) )? (otherlv_4= ',' ( (lv_params_5_0= ruleParameter ) ) )* otherlv_6= ')' ) otherlv_7= '{' ( ( (lv_packageOperations_8_0= ruleEPackageOperation ) ) | ( (lv_classOperations_9_0= ruleEClassOperation ) ) | ( (lv_attributeOperations_10_0= ruleEAttributeOperation ) ) | ( (lv_referenceOperations_11_0= ruleEReferenceOperation ) ) )* otherlv_12= '}' ) ;
     public final EObject ruleComplexOperatorDef() throws RecognitionException {
         EObject current = null;
 
@@ -4986,25 +5024,25 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1784:28: ( (otherlv_0= 'def change' ( (lv_name_1_0= RULE_ID ) ) (otherlv_2= '(' ( (lv_params_3_0= ruleParameter ) )? (otherlv_4= ',' ( (lv_params_5_0= ruleParameter ) ) )* otherlv_6= ')' ) otherlv_7= '{' ( ( (lv_packageOperations_8_0= ruleEPackageOperation ) ) | ( (lv_classOperations_9_0= ruleEClassOperation ) ) | ( (lv_attributeOperations_10_0= ruleEAttributeOperation ) ) | ( (lv_referenceOperations_11_0= ruleEReferenceOperation ) ) )* otherlv_12= '}' ) )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1785:1: (otherlv_0= 'def change' ( (lv_name_1_0= RULE_ID ) ) (otherlv_2= '(' ( (lv_params_3_0= ruleParameter ) )? (otherlv_4= ',' ( (lv_params_5_0= ruleParameter ) ) )* otherlv_6= ')' ) otherlv_7= '{' ( ( (lv_packageOperations_8_0= ruleEPackageOperation ) ) | ( (lv_classOperations_9_0= ruleEClassOperation ) ) | ( (lv_attributeOperations_10_0= ruleEAttributeOperation ) ) | ( (lv_referenceOperations_11_0= ruleEReferenceOperation ) ) )* otherlv_12= '}' )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1804:28: ( (otherlv_0= 'def change' ( (lv_name_1_0= RULE_ID ) ) (otherlv_2= '(' ( (lv_params_3_0= ruleParameter ) )? (otherlv_4= ',' ( (lv_params_5_0= ruleParameter ) ) )* otherlv_6= ')' ) otherlv_7= '{' ( ( (lv_packageOperations_8_0= ruleEPackageOperation ) ) | ( (lv_classOperations_9_0= ruleEClassOperation ) ) | ( (lv_attributeOperations_10_0= ruleEAttributeOperation ) ) | ( (lv_referenceOperations_11_0= ruleEReferenceOperation ) ) )* otherlv_12= '}' ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1805:1: (otherlv_0= 'def change' ( (lv_name_1_0= RULE_ID ) ) (otherlv_2= '(' ( (lv_params_3_0= ruleParameter ) )? (otherlv_4= ',' ( (lv_params_5_0= ruleParameter ) ) )* otherlv_6= ')' ) otherlv_7= '{' ( ( (lv_packageOperations_8_0= ruleEPackageOperation ) ) | ( (lv_classOperations_9_0= ruleEClassOperation ) ) | ( (lv_attributeOperations_10_0= ruleEAttributeOperation ) ) | ( (lv_referenceOperations_11_0= ruleEReferenceOperation ) ) )* otherlv_12= '}' )
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1785:1: (otherlv_0= 'def change' ( (lv_name_1_0= RULE_ID ) ) (otherlv_2= '(' ( (lv_params_3_0= ruleParameter ) )? (otherlv_4= ',' ( (lv_params_5_0= ruleParameter ) ) )* otherlv_6= ')' ) otherlv_7= '{' ( ( (lv_packageOperations_8_0= ruleEPackageOperation ) ) | ( (lv_classOperations_9_0= ruleEClassOperation ) ) | ( (lv_attributeOperations_10_0= ruleEAttributeOperation ) ) | ( (lv_referenceOperations_11_0= ruleEReferenceOperation ) ) )* otherlv_12= '}' )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1785:3: otherlv_0= 'def change' ( (lv_name_1_0= RULE_ID ) ) (otherlv_2= '(' ( (lv_params_3_0= ruleParameter ) )? (otherlv_4= ',' ( (lv_params_5_0= ruleParameter ) ) )* otherlv_6= ')' ) otherlv_7= '{' ( ( (lv_packageOperations_8_0= ruleEPackageOperation ) ) | ( (lv_classOperations_9_0= ruleEClassOperation ) ) | ( (lv_attributeOperations_10_0= ruleEAttributeOperation ) ) | ( (lv_referenceOperations_11_0= ruleEReferenceOperation ) ) )* otherlv_12= '}'
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1805:1: (otherlv_0= 'def change' ( (lv_name_1_0= RULE_ID ) ) (otherlv_2= '(' ( (lv_params_3_0= ruleParameter ) )? (otherlv_4= ',' ( (lv_params_5_0= ruleParameter ) ) )* otherlv_6= ')' ) otherlv_7= '{' ( ( (lv_packageOperations_8_0= ruleEPackageOperation ) ) | ( (lv_classOperations_9_0= ruleEClassOperation ) ) | ( (lv_attributeOperations_10_0= ruleEAttributeOperation ) ) | ( (lv_referenceOperations_11_0= ruleEReferenceOperation ) ) )* otherlv_12= '}' )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1805:3: otherlv_0= 'def change' ( (lv_name_1_0= RULE_ID ) ) (otherlv_2= '(' ( (lv_params_3_0= ruleParameter ) )? (otherlv_4= ',' ( (lv_params_5_0= ruleParameter ) ) )* otherlv_6= ')' ) otherlv_7= '{' ( ( (lv_packageOperations_8_0= ruleEPackageOperation ) ) | ( (lv_classOperations_9_0= ruleEClassOperation ) ) | ( (lv_attributeOperations_10_0= ruleEAttributeOperation ) ) | ( (lv_referenceOperations_11_0= ruleEReferenceOperation ) ) )* otherlv_12= '}'
             {
-            otherlv_0=(Token)match(input,38,FOLLOW_38_in_ruleComplexOperatorDef3799); if (state.failed) return current;
+            otherlv_0=(Token)match(input,38,FOLLOW_38_in_ruleComplexOperatorDef3830); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
                   	newLeafNode(otherlv_0, grammarAccess.getComplexOperatorDefAccess().getDefChangeKeyword_0());
                   
             }
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1789:1: ( (lv_name_1_0= RULE_ID ) )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1790:1: (lv_name_1_0= RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1809:1: ( (lv_name_1_0= RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1810:1: (lv_name_1_0= RULE_ID )
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1790:1: (lv_name_1_0= RULE_ID )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1791:3: lv_name_1_0= RULE_ID
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1810:1: (lv_name_1_0= RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1811:3: lv_name_1_0= RULE_ID
             {
-            lv_name_1_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleComplexOperatorDef3816); if (state.failed) return current;
+            lv_name_1_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleComplexOperatorDef3847); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
               			newLeafNode(lv_name_1_0, grammarAccess.getComplexOperatorDefAccess().getNameIDTerminalRuleCall_1_0()); 
@@ -5028,16 +5066,16 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1807:2: (otherlv_2= '(' ( (lv_params_3_0= ruleParameter ) )? (otherlv_4= ',' ( (lv_params_5_0= ruleParameter ) ) )* otherlv_6= ')' )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1807:4: otherlv_2= '(' ( (lv_params_3_0= ruleParameter ) )? (otherlv_4= ',' ( (lv_params_5_0= ruleParameter ) ) )* otherlv_6= ')'
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1827:2: (otherlv_2= '(' ( (lv_params_3_0= ruleParameter ) )? (otherlv_4= ',' ( (lv_params_5_0= ruleParameter ) ) )* otherlv_6= ')' )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1827:4: otherlv_2= '(' ( (lv_params_3_0= ruleParameter ) )? (otherlv_4= ',' ( (lv_params_5_0= ruleParameter ) ) )* otherlv_6= ')'
             {
-            otherlv_2=(Token)match(input,17,FOLLOW_17_in_ruleComplexOperatorDef3834); if (state.failed) return current;
+            otherlv_2=(Token)match(input,17,FOLLOW_17_in_ruleComplexOperatorDef3865); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
                   	newLeafNode(otherlv_2, grammarAccess.getComplexOperatorDefAccess().getLeftParenthesisKeyword_2_0());
                   
             }
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1811:1: ( (lv_params_3_0= ruleParameter ) )?
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1831:1: ( (lv_params_3_0= ruleParameter ) )?
             int alt27=2;
             int LA27_0 = input.LA(1);
 
@@ -5046,17 +5084,17 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
             }
             switch (alt27) {
                 case 1 :
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1812:1: (lv_params_3_0= ruleParameter )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1832:1: (lv_params_3_0= ruleParameter )
                     {
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1812:1: (lv_params_3_0= ruleParameter )
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1813:3: lv_params_3_0= ruleParameter
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1832:1: (lv_params_3_0= ruleParameter )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1833:3: lv_params_3_0= ruleParameter
                     {
                     if ( state.backtracking==0 ) {
                        
                       	        newCompositeNode(grammarAccess.getComplexOperatorDefAccess().getParamsParameterParserRuleCall_2_1_0()); 
                       	    
                     }
-                    pushFollow(FOLLOW_ruleParameter_in_ruleComplexOperatorDef3855);
+                    pushFollow(FOLLOW_ruleParameter_in_ruleComplexOperatorDef3886);
                     lv_params_3_0=ruleParameter();
 
                     state._fsp--;
@@ -5083,7 +5121,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1829:3: (otherlv_4= ',' ( (lv_params_5_0= ruleParameter ) ) )*
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1849:3: (otherlv_4= ',' ( (lv_params_5_0= ruleParameter ) ) )*
             loop28:
             do {
                 int alt28=2;
@@ -5096,26 +5134,26 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
                 switch (alt28) {
             	case 1 :
-            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1829:5: otherlv_4= ',' ( (lv_params_5_0= ruleParameter ) )
+            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1849:5: otherlv_4= ',' ( (lv_params_5_0= ruleParameter ) )
             	    {
-            	    otherlv_4=(Token)match(input,27,FOLLOW_27_in_ruleComplexOperatorDef3869); if (state.failed) return current;
+            	    otherlv_4=(Token)match(input,27,FOLLOW_27_in_ruleComplexOperatorDef3900); if (state.failed) return current;
             	    if ( state.backtracking==0 ) {
 
             	          	newLeafNode(otherlv_4, grammarAccess.getComplexOperatorDefAccess().getCommaKeyword_2_2_0());
             	          
             	    }
-            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1833:1: ( (lv_params_5_0= ruleParameter ) )
-            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1834:1: (lv_params_5_0= ruleParameter )
+            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1853:1: ( (lv_params_5_0= ruleParameter ) )
+            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1854:1: (lv_params_5_0= ruleParameter )
             	    {
-            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1834:1: (lv_params_5_0= ruleParameter )
-            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1835:3: lv_params_5_0= ruleParameter
+            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1854:1: (lv_params_5_0= ruleParameter )
+            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1855:3: lv_params_5_0= ruleParameter
             	    {
             	    if ( state.backtracking==0 ) {
             	       
             	      	        newCompositeNode(grammarAccess.getComplexOperatorDefAccess().getParamsParameterParserRuleCall_2_2_1_0()); 
             	      	    
             	    }
-            	    pushFollow(FOLLOW_ruleParameter_in_ruleComplexOperatorDef3890);
+            	    pushFollow(FOLLOW_ruleParameter_in_ruleComplexOperatorDef3921);
             	    lv_params_5_0=ruleParameter();
 
             	    state._fsp--;
@@ -5148,7 +5186,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
                 }
             } while (true);
 
-            otherlv_6=(Token)match(input,18,FOLLOW_18_in_ruleComplexOperatorDef3904); if (state.failed) return current;
+            otherlv_6=(Token)match(input,18,FOLLOW_18_in_ruleComplexOperatorDef3935); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
                   	newLeafNode(otherlv_6, grammarAccess.getComplexOperatorDefAccess().getRightParenthesisKeyword_2_3());
@@ -5157,33 +5195,33 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_7=(Token)match(input,14,FOLLOW_14_in_ruleComplexOperatorDef3917); if (state.failed) return current;
+            otherlv_7=(Token)match(input,14,FOLLOW_14_in_ruleComplexOperatorDef3948); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
                   	newLeafNode(otherlv_7, grammarAccess.getComplexOperatorDefAccess().getLeftCurlyBracketKeyword_3());
                   
             }
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1859:1: ( ( (lv_packageOperations_8_0= ruleEPackageOperation ) ) | ( (lv_classOperations_9_0= ruleEClassOperation ) ) | ( (lv_attributeOperations_10_0= ruleEAttributeOperation ) ) | ( (lv_referenceOperations_11_0= ruleEReferenceOperation ) ) )*
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1879:1: ( ( (lv_packageOperations_8_0= ruleEPackageOperation ) ) | ( (lv_classOperations_9_0= ruleEClassOperation ) ) | ( (lv_attributeOperations_10_0= ruleEAttributeOperation ) ) | ( (lv_referenceOperations_11_0= ruleEReferenceOperation ) ) )*
             loop29:
             do {
                 int alt29=5;
                 alt29 = dfa29.predict(input);
                 switch (alt29) {
             	case 1 :
-            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1859:2: ( (lv_packageOperations_8_0= ruleEPackageOperation ) )
+            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1879:2: ( (lv_packageOperations_8_0= ruleEPackageOperation ) )
             	    {
-            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1859:2: ( (lv_packageOperations_8_0= ruleEPackageOperation ) )
-            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1860:1: (lv_packageOperations_8_0= ruleEPackageOperation )
+            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1879:2: ( (lv_packageOperations_8_0= ruleEPackageOperation ) )
+            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1880:1: (lv_packageOperations_8_0= ruleEPackageOperation )
             	    {
-            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1860:1: (lv_packageOperations_8_0= ruleEPackageOperation )
-            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1861:3: lv_packageOperations_8_0= ruleEPackageOperation
+            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1880:1: (lv_packageOperations_8_0= ruleEPackageOperation )
+            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1881:3: lv_packageOperations_8_0= ruleEPackageOperation
             	    {
             	    if ( state.backtracking==0 ) {
             	       
             	      	        newCompositeNode(grammarAccess.getComplexOperatorDefAccess().getPackageOperationsEPackageOperationParserRuleCall_4_0_0()); 
             	      	    
             	    }
-            	    pushFollow(FOLLOW_ruleEPackageOperation_in_ruleComplexOperatorDef3939);
+            	    pushFollow(FOLLOW_ruleEPackageOperation_in_ruleComplexOperatorDef3970);
             	    lv_packageOperations_8_0=ruleEPackageOperation();
 
             	    state._fsp--;
@@ -5211,20 +5249,20 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
             	    }
             	    break;
             	case 2 :
-            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1878:6: ( (lv_classOperations_9_0= ruleEClassOperation ) )
+            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1898:6: ( (lv_classOperations_9_0= ruleEClassOperation ) )
             	    {
-            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1878:6: ( (lv_classOperations_9_0= ruleEClassOperation ) )
-            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1879:1: (lv_classOperations_9_0= ruleEClassOperation )
+            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1898:6: ( (lv_classOperations_9_0= ruleEClassOperation ) )
+            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1899:1: (lv_classOperations_9_0= ruleEClassOperation )
             	    {
-            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1879:1: (lv_classOperations_9_0= ruleEClassOperation )
-            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1880:3: lv_classOperations_9_0= ruleEClassOperation
+            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1899:1: (lv_classOperations_9_0= ruleEClassOperation )
+            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1900:3: lv_classOperations_9_0= ruleEClassOperation
             	    {
             	    if ( state.backtracking==0 ) {
             	       
             	      	        newCompositeNode(grammarAccess.getComplexOperatorDefAccess().getClassOperationsEClassOperationParserRuleCall_4_1_0()); 
             	      	    
             	    }
-            	    pushFollow(FOLLOW_ruleEClassOperation_in_ruleComplexOperatorDef3966);
+            	    pushFollow(FOLLOW_ruleEClassOperation_in_ruleComplexOperatorDef3997);
             	    lv_classOperations_9_0=ruleEClassOperation();
 
             	    state._fsp--;
@@ -5252,20 +5290,20 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
             	    }
             	    break;
             	case 3 :
-            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1897:6: ( (lv_attributeOperations_10_0= ruleEAttributeOperation ) )
+            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1917:6: ( (lv_attributeOperations_10_0= ruleEAttributeOperation ) )
             	    {
-            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1897:6: ( (lv_attributeOperations_10_0= ruleEAttributeOperation ) )
-            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1898:1: (lv_attributeOperations_10_0= ruleEAttributeOperation )
+            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1917:6: ( (lv_attributeOperations_10_0= ruleEAttributeOperation ) )
+            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1918:1: (lv_attributeOperations_10_0= ruleEAttributeOperation )
             	    {
-            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1898:1: (lv_attributeOperations_10_0= ruleEAttributeOperation )
-            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1899:3: lv_attributeOperations_10_0= ruleEAttributeOperation
+            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1918:1: (lv_attributeOperations_10_0= ruleEAttributeOperation )
+            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1919:3: lv_attributeOperations_10_0= ruleEAttributeOperation
             	    {
             	    if ( state.backtracking==0 ) {
             	       
             	      	        newCompositeNode(grammarAccess.getComplexOperatorDefAccess().getAttributeOperationsEAttributeOperationParserRuleCall_4_2_0()); 
             	      	    
             	    }
-            	    pushFollow(FOLLOW_ruleEAttributeOperation_in_ruleComplexOperatorDef3993);
+            	    pushFollow(FOLLOW_ruleEAttributeOperation_in_ruleComplexOperatorDef4024);
             	    lv_attributeOperations_10_0=ruleEAttributeOperation();
 
             	    state._fsp--;
@@ -5293,20 +5331,20 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
             	    }
             	    break;
             	case 4 :
-            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1916:6: ( (lv_referenceOperations_11_0= ruleEReferenceOperation ) )
+            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1936:6: ( (lv_referenceOperations_11_0= ruleEReferenceOperation ) )
             	    {
-            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1916:6: ( (lv_referenceOperations_11_0= ruleEReferenceOperation ) )
-            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1917:1: (lv_referenceOperations_11_0= ruleEReferenceOperation )
+            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1936:6: ( (lv_referenceOperations_11_0= ruleEReferenceOperation ) )
+            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1937:1: (lv_referenceOperations_11_0= ruleEReferenceOperation )
             	    {
-            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1917:1: (lv_referenceOperations_11_0= ruleEReferenceOperation )
-            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1918:3: lv_referenceOperations_11_0= ruleEReferenceOperation
+            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1937:1: (lv_referenceOperations_11_0= ruleEReferenceOperation )
+            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1938:3: lv_referenceOperations_11_0= ruleEReferenceOperation
             	    {
             	    if ( state.backtracking==0 ) {
             	       
             	      	        newCompositeNode(grammarAccess.getComplexOperatorDefAccess().getReferenceOperationsEReferenceOperationParserRuleCall_4_3_0()); 
             	      	    
             	    }
-            	    pushFollow(FOLLOW_ruleEReferenceOperation_in_ruleComplexOperatorDef4020);
+            	    pushFollow(FOLLOW_ruleEReferenceOperation_in_ruleComplexOperatorDef4051);
             	    lv_referenceOperations_11_0=ruleEReferenceOperation();
 
             	    state._fsp--;
@@ -5339,7 +5377,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
                 }
             } while (true);
 
-            otherlv_12=(Token)match(input,15,FOLLOW_15_in_ruleComplexOperatorDef4034); if (state.failed) return current;
+            otherlv_12=(Token)match(input,15,FOLLOW_15_in_ruleComplexOperatorDef4065); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
                   	newLeafNode(otherlv_12, grammarAccess.getComplexOperatorDefAccess().getRightCurlyBracketKeyword_5());
@@ -5368,7 +5406,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleComplexOperator"
-    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1946:1: entryRuleComplexOperator returns [EObject current=null] : iv_ruleComplexOperator= ruleComplexOperator EOF ;
+    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1966:1: entryRuleComplexOperator returns [EObject current=null] : iv_ruleComplexOperator= ruleComplexOperator EOF ;
     public final EObject entryRuleComplexOperator() throws RecognitionException {
         EObject current = null;
 
@@ -5376,13 +5414,13 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1947:2: (iv_ruleComplexOperator= ruleComplexOperator EOF )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1948:2: iv_ruleComplexOperator= ruleComplexOperator EOF
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1967:2: (iv_ruleComplexOperator= ruleComplexOperator EOF )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1968:2: iv_ruleComplexOperator= ruleComplexOperator EOF
             {
             if ( state.backtracking==0 ) {
                newCompositeNode(grammarAccess.getComplexOperatorRule()); 
             }
-            pushFollow(FOLLOW_ruleComplexOperator_in_entryRuleComplexOperator4070);
+            pushFollow(FOLLOW_ruleComplexOperator_in_entryRuleComplexOperator4101);
             iv_ruleComplexOperator=ruleComplexOperator();
 
             state._fsp--;
@@ -5390,7 +5428,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
             if ( state.backtracking==0 ) {
                current =iv_ruleComplexOperator; 
             }
-            match(input,EOF,FOLLOW_EOF_in_entryRuleComplexOperator4080); if (state.failed) return current;
+            match(input,EOF,FOLLOW_EOF_in_entryRuleComplexOperator4111); if (state.failed) return current;
 
             }
 
@@ -5408,7 +5446,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleComplexOperator"
-    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1955:1: ruleComplexOperator returns [EObject current=null] : ( ( (otherlv_0= RULE_ID ) ) otherlv_1= '(' ( ( (otherlv_2= RULE_ID ) ) | ( (lv_new_3_0= RULE_STRING ) ) )? (otherlv_4= ',' ( ( (otherlv_5= RULE_ID ) ) | ( (lv_new_6_0= RULE_STRING ) ) ) )* otherlv_7= ')' otherlv_8= ';' ) ;
+    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1975:1: ruleComplexOperator returns [EObject current=null] : ( ( (otherlv_0= RULE_ID ) ) otherlv_1= '(' ( ( (otherlv_2= RULE_ID ) ) | ( (lv_new_3_0= RULE_STRING ) ) )? (otherlv_4= ',' ( ( (otherlv_5= RULE_ID ) ) | ( (lv_new_6_0= RULE_STRING ) ) ) )* otherlv_7= ')' otherlv_8= ';' ) ;
     public final EObject ruleComplexOperator() throws RecognitionException {
         EObject current = null;
 
@@ -5425,17 +5463,17 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1958:28: ( ( ( (otherlv_0= RULE_ID ) ) otherlv_1= '(' ( ( (otherlv_2= RULE_ID ) ) | ( (lv_new_3_0= RULE_STRING ) ) )? (otherlv_4= ',' ( ( (otherlv_5= RULE_ID ) ) | ( (lv_new_6_0= RULE_STRING ) ) ) )* otherlv_7= ')' otherlv_8= ';' ) )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1959:1: ( ( (otherlv_0= RULE_ID ) ) otherlv_1= '(' ( ( (otherlv_2= RULE_ID ) ) | ( (lv_new_3_0= RULE_STRING ) ) )? (otherlv_4= ',' ( ( (otherlv_5= RULE_ID ) ) | ( (lv_new_6_0= RULE_STRING ) ) ) )* otherlv_7= ')' otherlv_8= ';' )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1978:28: ( ( ( (otherlv_0= RULE_ID ) ) otherlv_1= '(' ( ( (otherlv_2= RULE_ID ) ) | ( (lv_new_3_0= RULE_STRING ) ) )? (otherlv_4= ',' ( ( (otherlv_5= RULE_ID ) ) | ( (lv_new_6_0= RULE_STRING ) ) ) )* otherlv_7= ')' otherlv_8= ';' ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1979:1: ( ( (otherlv_0= RULE_ID ) ) otherlv_1= '(' ( ( (otherlv_2= RULE_ID ) ) | ( (lv_new_3_0= RULE_STRING ) ) )? (otherlv_4= ',' ( ( (otherlv_5= RULE_ID ) ) | ( (lv_new_6_0= RULE_STRING ) ) ) )* otherlv_7= ')' otherlv_8= ';' )
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1959:1: ( ( (otherlv_0= RULE_ID ) ) otherlv_1= '(' ( ( (otherlv_2= RULE_ID ) ) | ( (lv_new_3_0= RULE_STRING ) ) )? (otherlv_4= ',' ( ( (otherlv_5= RULE_ID ) ) | ( (lv_new_6_0= RULE_STRING ) ) ) )* otherlv_7= ')' otherlv_8= ';' )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1959:2: ( (otherlv_0= RULE_ID ) ) otherlv_1= '(' ( ( (otherlv_2= RULE_ID ) ) | ( (lv_new_3_0= RULE_STRING ) ) )? (otherlv_4= ',' ( ( (otherlv_5= RULE_ID ) ) | ( (lv_new_6_0= RULE_STRING ) ) ) )* otherlv_7= ')' otherlv_8= ';'
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1979:1: ( ( (otherlv_0= RULE_ID ) ) otherlv_1= '(' ( ( (otherlv_2= RULE_ID ) ) | ( (lv_new_3_0= RULE_STRING ) ) )? (otherlv_4= ',' ( ( (otherlv_5= RULE_ID ) ) | ( (lv_new_6_0= RULE_STRING ) ) ) )* otherlv_7= ')' otherlv_8= ';' )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1979:2: ( (otherlv_0= RULE_ID ) ) otherlv_1= '(' ( ( (otherlv_2= RULE_ID ) ) | ( (lv_new_3_0= RULE_STRING ) ) )? (otherlv_4= ',' ( ( (otherlv_5= RULE_ID ) ) | ( (lv_new_6_0= RULE_STRING ) ) ) )* otherlv_7= ')' otherlv_8= ';'
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1959:2: ( (otherlv_0= RULE_ID ) )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1960:1: (otherlv_0= RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1979:2: ( (otherlv_0= RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1980:1: (otherlv_0= RULE_ID )
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1960:1: (otherlv_0= RULE_ID )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1961:3: otherlv_0= RULE_ID
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1980:1: (otherlv_0= RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1981:3: otherlv_0= RULE_ID
             {
             if ( state.backtracking==0 ) {
                
@@ -5449,7 +5487,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
               	        }
                       
             }
-            otherlv_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleComplexOperator4129); if (state.failed) return current;
+            otherlv_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleComplexOperator4160); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
               		newLeafNode(otherlv_0, grammarAccess.getComplexOperatorAccess().getRefComplexOperatorDefCrossReference_0_0()); 
@@ -5461,13 +5499,13 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_1=(Token)match(input,17,FOLLOW_17_in_ruleComplexOperator4141); if (state.failed) return current;
+            otherlv_1=(Token)match(input,17,FOLLOW_17_in_ruleComplexOperator4172); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
                   	newLeafNode(otherlv_1, grammarAccess.getComplexOperatorAccess().getLeftParenthesisKeyword_1());
                   
             }
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1979:1: ( ( (otherlv_2= RULE_ID ) ) | ( (lv_new_3_0= RULE_STRING ) ) )?
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1999:1: ( ( (otherlv_2= RULE_ID ) ) | ( (lv_new_3_0= RULE_STRING ) ) )?
             int alt30=3;
             int LA30_0 = input.LA(1);
 
@@ -5479,13 +5517,13 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
             }
             switch (alt30) {
                 case 1 :
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1979:2: ( (otherlv_2= RULE_ID ) )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1999:2: ( (otherlv_2= RULE_ID ) )
                     {
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1979:2: ( (otherlv_2= RULE_ID ) )
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1980:1: (otherlv_2= RULE_ID )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1999:2: ( (otherlv_2= RULE_ID ) )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2000:1: (otherlv_2= RULE_ID )
                     {
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1980:1: (otherlv_2= RULE_ID )
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1981:3: otherlv_2= RULE_ID
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2000:1: (otherlv_2= RULE_ID )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2001:3: otherlv_2= RULE_ID
                     {
                     if ( state.backtracking==0 ) {
                        
@@ -5499,7 +5537,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
                       	        }
                               
                     }
-                    otherlv_2=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleComplexOperator4166); if (state.failed) return current;
+                    otherlv_2=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleComplexOperator4197); if (state.failed) return current;
                     if ( state.backtracking==0 ) {
 
                       		newLeafNode(otherlv_2, grammarAccess.getComplexOperatorAccess().getArgsEObjectCrossReference_2_0_0()); 
@@ -5515,15 +5553,15 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1996:6: ( (lv_new_3_0= RULE_STRING ) )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2016:6: ( (lv_new_3_0= RULE_STRING ) )
                     {
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1996:6: ( (lv_new_3_0= RULE_STRING ) )
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1997:1: (lv_new_3_0= RULE_STRING )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2016:6: ( (lv_new_3_0= RULE_STRING ) )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2017:1: (lv_new_3_0= RULE_STRING )
                     {
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1997:1: (lv_new_3_0= RULE_STRING )
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1998:3: lv_new_3_0= RULE_STRING
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2017:1: (lv_new_3_0= RULE_STRING )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2018:3: lv_new_3_0= RULE_STRING
                     {
-                    lv_new_3_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleComplexOperator4189); if (state.failed) return current;
+                    lv_new_3_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleComplexOperator4220); if (state.failed) return current;
                     if ( state.backtracking==0 ) {
 
                       			newLeafNode(lv_new_3_0, grammarAccess.getComplexOperatorAccess().getNewSTRINGTerminalRuleCall_2_1_0()); 
@@ -5553,7 +5591,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2014:4: (otherlv_4= ',' ( ( (otherlv_5= RULE_ID ) ) | ( (lv_new_6_0= RULE_STRING ) ) ) )*
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2034:4: (otherlv_4= ',' ( ( (otherlv_5= RULE_ID ) ) | ( (lv_new_6_0= RULE_STRING ) ) ) )*
             loop32:
             do {
                 int alt32=2;
@@ -5566,15 +5604,15 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
                 switch (alt32) {
             	case 1 :
-            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2014:6: otherlv_4= ',' ( ( (otherlv_5= RULE_ID ) ) | ( (lv_new_6_0= RULE_STRING ) ) )
+            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2034:6: otherlv_4= ',' ( ( (otherlv_5= RULE_ID ) ) | ( (lv_new_6_0= RULE_STRING ) ) )
             	    {
-            	    otherlv_4=(Token)match(input,27,FOLLOW_27_in_ruleComplexOperator4209); if (state.failed) return current;
+            	    otherlv_4=(Token)match(input,27,FOLLOW_27_in_ruleComplexOperator4240); if (state.failed) return current;
             	    if ( state.backtracking==0 ) {
 
             	          	newLeafNode(otherlv_4, grammarAccess.getComplexOperatorAccess().getCommaKeyword_3_0());
             	          
             	    }
-            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2018:1: ( ( (otherlv_5= RULE_ID ) ) | ( (lv_new_6_0= RULE_STRING ) ) )
+            	    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2038:1: ( ( (otherlv_5= RULE_ID ) ) | ( (lv_new_6_0= RULE_STRING ) ) )
             	    int alt31=2;
             	    int LA31_0 = input.LA(1);
 
@@ -5593,13 +5631,13 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
             	    }
             	    switch (alt31) {
             	        case 1 :
-            	            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2018:2: ( (otherlv_5= RULE_ID ) )
+            	            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2038:2: ( (otherlv_5= RULE_ID ) )
             	            {
-            	            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2018:2: ( (otherlv_5= RULE_ID ) )
-            	            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2019:1: (otherlv_5= RULE_ID )
+            	            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2038:2: ( (otherlv_5= RULE_ID ) )
+            	            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2039:1: (otherlv_5= RULE_ID )
             	            {
-            	            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2019:1: (otherlv_5= RULE_ID )
-            	            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2020:3: otherlv_5= RULE_ID
+            	            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2039:1: (otherlv_5= RULE_ID )
+            	            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2040:3: otherlv_5= RULE_ID
             	            {
             	            if ( state.backtracking==0 ) {
             	               
@@ -5613,7 +5651,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
             	              	        }
             	                      
             	            }
-            	            otherlv_5=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleComplexOperator4234); if (state.failed) return current;
+            	            otherlv_5=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleComplexOperator4265); if (state.failed) return current;
             	            if ( state.backtracking==0 ) {
 
             	              		newLeafNode(otherlv_5, grammarAccess.getComplexOperatorAccess().getArgsEObjectCrossReference_3_1_0_0()); 
@@ -5629,15 +5667,15 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
             	            }
             	            break;
             	        case 2 :
-            	            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2035:6: ( (lv_new_6_0= RULE_STRING ) )
+            	            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2055:6: ( (lv_new_6_0= RULE_STRING ) )
             	            {
-            	            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2035:6: ( (lv_new_6_0= RULE_STRING ) )
-            	            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2036:1: (lv_new_6_0= RULE_STRING )
+            	            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2055:6: ( (lv_new_6_0= RULE_STRING ) )
+            	            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2056:1: (lv_new_6_0= RULE_STRING )
             	            {
-            	            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2036:1: (lv_new_6_0= RULE_STRING )
-            	            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2037:3: lv_new_6_0= RULE_STRING
+            	            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2056:1: (lv_new_6_0= RULE_STRING )
+            	            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2057:3: lv_new_6_0= RULE_STRING
             	            {
-            	            lv_new_6_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleComplexOperator4257); if (state.failed) return current;
+            	            lv_new_6_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleComplexOperator4288); if (state.failed) return current;
             	            if ( state.backtracking==0 ) {
 
             	              			newLeafNode(lv_new_6_0, grammarAccess.getComplexOperatorAccess().getNewSTRINGTerminalRuleCall_3_1_1_0()); 
@@ -5676,13 +5714,13 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
                 }
             } while (true);
 
-            otherlv_7=(Token)match(input,18,FOLLOW_18_in_ruleComplexOperator4277); if (state.failed) return current;
+            otherlv_7=(Token)match(input,18,FOLLOW_18_in_ruleComplexOperator4308); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
                   	newLeafNode(otherlv_7, grammarAccess.getComplexOperatorAccess().getRightParenthesisKeyword_4());
                   
             }
-            otherlv_8=(Token)match(input,28,FOLLOW_28_in_ruleComplexOperator4289); if (state.failed) return current;
+            otherlv_8=(Token)match(input,28,FOLLOW_28_in_ruleComplexOperator4320); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
                   	newLeafNode(otherlv_8, grammarAccess.getComplexOperatorAccess().getSemicolonKeyword_5());
@@ -5711,7 +5749,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleParameter"
-    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2069:1: entryRuleParameter returns [EObject current=null] : iv_ruleParameter= ruleParameter EOF ;
+    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2089:1: entryRuleParameter returns [EObject current=null] : iv_ruleParameter= ruleParameter EOF ;
     public final EObject entryRuleParameter() throws RecognitionException {
         EObject current = null;
 
@@ -5719,13 +5757,13 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2070:2: (iv_ruleParameter= ruleParameter EOF )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2071:2: iv_ruleParameter= ruleParameter EOF
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2090:2: (iv_ruleParameter= ruleParameter EOF )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2091:2: iv_ruleParameter= ruleParameter EOF
             {
             if ( state.backtracking==0 ) {
                newCompositeNode(grammarAccess.getParameterRule()); 
             }
-            pushFollow(FOLLOW_ruleParameter_in_entryRuleParameter4325);
+            pushFollow(FOLLOW_ruleParameter_in_entryRuleParameter4356);
             iv_ruleParameter=ruleParameter();
 
             state._fsp--;
@@ -5733,7 +5771,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
             if ( state.backtracking==0 ) {
                current =iv_ruleParameter; 
             }
-            match(input,EOF,FOLLOW_EOF_in_entryRuleParameter4335); if (state.failed) return current;
+            match(input,EOF,FOLLOW_EOF_in_entryRuleParameter4366); if (state.failed) return current;
 
             }
 
@@ -5751,7 +5789,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleParameter"
-    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2078:1: ruleParameter returns [EObject current=null] : ( (this_Class_0= ruleClass otherlv_1= ':' otherlv_2= 'class' ) | (this_Reference_3= ruleReference otherlv_4= ':' otherlv_5= 'reference' ) | (this_Package_6= rulePackage otherlv_7= ':' otherlv_8= 'package' ) | (this_Attribute_9= ruleAttribute otherlv_10= ':' otherlv_11= 'attribute' ) | (this_BooleanDef_12= ruleBooleanDef otherlv_13= ':' otherlv_14= 'bool' ) | (this_IntDef_15= ruleIntDef otherlv_16= ':' otherlv_17= 'int' ) | (this_StringDef_18= ruleStringDef otherlv_19= ':' otherlv_20= 'string' ) ) ;
+    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2098:1: ruleParameter returns [EObject current=null] : ( (this_Class_0= ruleClass otherlv_1= ':' otherlv_2= 'class' ) | (this_Reference_3= ruleReference otherlv_4= ':' otherlv_5= 'reference' ) | (this_Package_6= rulePackage otherlv_7= ':' otherlv_8= 'package' ) | (this_Attribute_9= ruleAttribute otherlv_10= ':' otherlv_11= 'attribute' ) | (this_BooleanDef_12= ruleBooleanDef otherlv_13= ':' otherlv_14= 'bool' ) | (this_IntDef_15= ruleIntDef otherlv_16= ':' otherlv_17= 'int' ) | (this_StringDef_18= ruleStringDef otherlv_19= ':' otherlv_20= 'string' ) ) ;
     public final EObject ruleParameter() throws RecognitionException {
         EObject current = null;
 
@@ -5787,18 +5825,18 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2081:28: ( ( (this_Class_0= ruleClass otherlv_1= ':' otherlv_2= 'class' ) | (this_Reference_3= ruleReference otherlv_4= ':' otherlv_5= 'reference' ) | (this_Package_6= rulePackage otherlv_7= ':' otherlv_8= 'package' ) | (this_Attribute_9= ruleAttribute otherlv_10= ':' otherlv_11= 'attribute' ) | (this_BooleanDef_12= ruleBooleanDef otherlv_13= ':' otherlv_14= 'bool' ) | (this_IntDef_15= ruleIntDef otherlv_16= ':' otherlv_17= 'int' ) | (this_StringDef_18= ruleStringDef otherlv_19= ':' otherlv_20= 'string' ) ) )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2082:1: ( (this_Class_0= ruleClass otherlv_1= ':' otherlv_2= 'class' ) | (this_Reference_3= ruleReference otherlv_4= ':' otherlv_5= 'reference' ) | (this_Package_6= rulePackage otherlv_7= ':' otherlv_8= 'package' ) | (this_Attribute_9= ruleAttribute otherlv_10= ':' otherlv_11= 'attribute' ) | (this_BooleanDef_12= ruleBooleanDef otherlv_13= ':' otherlv_14= 'bool' ) | (this_IntDef_15= ruleIntDef otherlv_16= ':' otherlv_17= 'int' ) | (this_StringDef_18= ruleStringDef otherlv_19= ':' otherlv_20= 'string' ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2101:28: ( ( (this_Class_0= ruleClass otherlv_1= ':' otherlv_2= 'class' ) | (this_Reference_3= ruleReference otherlv_4= ':' otherlv_5= 'reference' ) | (this_Package_6= rulePackage otherlv_7= ':' otherlv_8= 'package' ) | (this_Attribute_9= ruleAttribute otherlv_10= ':' otherlv_11= 'attribute' ) | (this_BooleanDef_12= ruleBooleanDef otherlv_13= ':' otherlv_14= 'bool' ) | (this_IntDef_15= ruleIntDef otherlv_16= ':' otherlv_17= 'int' ) | (this_StringDef_18= ruleStringDef otherlv_19= ':' otherlv_20= 'string' ) ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2102:1: ( (this_Class_0= ruleClass otherlv_1= ':' otherlv_2= 'class' ) | (this_Reference_3= ruleReference otherlv_4= ':' otherlv_5= 'reference' ) | (this_Package_6= rulePackage otherlv_7= ':' otherlv_8= 'package' ) | (this_Attribute_9= ruleAttribute otherlv_10= ':' otherlv_11= 'attribute' ) | (this_BooleanDef_12= ruleBooleanDef otherlv_13= ':' otherlv_14= 'bool' ) | (this_IntDef_15= ruleIntDef otherlv_16= ':' otherlv_17= 'int' ) | (this_StringDef_18= ruleStringDef otherlv_19= ':' otherlv_20= 'string' ) )
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2082:1: ( (this_Class_0= ruleClass otherlv_1= ':' otherlv_2= 'class' ) | (this_Reference_3= ruleReference otherlv_4= ':' otherlv_5= 'reference' ) | (this_Package_6= rulePackage otherlv_7= ':' otherlv_8= 'package' ) | (this_Attribute_9= ruleAttribute otherlv_10= ':' otherlv_11= 'attribute' ) | (this_BooleanDef_12= ruleBooleanDef otherlv_13= ':' otherlv_14= 'bool' ) | (this_IntDef_15= ruleIntDef otherlv_16= ':' otherlv_17= 'int' ) | (this_StringDef_18= ruleStringDef otherlv_19= ':' otherlv_20= 'string' ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2102:1: ( (this_Class_0= ruleClass otherlv_1= ':' otherlv_2= 'class' ) | (this_Reference_3= ruleReference otherlv_4= ':' otherlv_5= 'reference' ) | (this_Package_6= rulePackage otherlv_7= ':' otherlv_8= 'package' ) | (this_Attribute_9= ruleAttribute otherlv_10= ':' otherlv_11= 'attribute' ) | (this_BooleanDef_12= ruleBooleanDef otherlv_13= ':' otherlv_14= 'bool' ) | (this_IntDef_15= ruleIntDef otherlv_16= ':' otherlv_17= 'int' ) | (this_StringDef_18= ruleStringDef otherlv_19= ':' otherlv_20= 'string' ) )
             int alt33=7;
             alt33 = dfa33.predict(input);
             switch (alt33) {
                 case 1 :
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2082:2: (this_Class_0= ruleClass otherlv_1= ':' otherlv_2= 'class' )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2102:2: (this_Class_0= ruleClass otherlv_1= ':' otherlv_2= 'class' )
                     {
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2082:2: (this_Class_0= ruleClass otherlv_1= ':' otherlv_2= 'class' )
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2083:2: this_Class_0= ruleClass otherlv_1= ':' otherlv_2= 'class'
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2102:2: (this_Class_0= ruleClass otherlv_1= ':' otherlv_2= 'class' )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2103:2: this_Class_0= ruleClass otherlv_1= ':' otherlv_2= 'class'
                     {
                     if ( state.backtracking==0 ) {
                        
@@ -5810,7 +5848,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
                               newCompositeNode(grammarAccess.getParameterAccess().getClassParserRuleCall_0_0()); 
                           
                     }
-                    pushFollow(FOLLOW_ruleClass_in_ruleParameter4386);
+                    pushFollow(FOLLOW_ruleClass_in_ruleParameter4417);
                     this_Class_0=ruleClass();
 
                     state._fsp--;
@@ -5821,13 +5859,13 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
                               afterParserOrEnumRuleCall();
                           
                     }
-                    otherlv_1=(Token)match(input,39,FOLLOW_39_in_ruleParameter4397); if (state.failed) return current;
+                    otherlv_1=(Token)match(input,39,FOLLOW_39_in_ruleParameter4428); if (state.failed) return current;
                     if ( state.backtracking==0 ) {
 
                           	newLeafNode(otherlv_1, grammarAccess.getParameterAccess().getColonKeyword_0_1());
                           
                     }
-                    otherlv_2=(Token)match(input,21,FOLLOW_21_in_ruleParameter4409); if (state.failed) return current;
+                    otherlv_2=(Token)match(input,21,FOLLOW_21_in_ruleParameter4440); if (state.failed) return current;
                     if ( state.backtracking==0 ) {
 
                           	newLeafNode(otherlv_2, grammarAccess.getParameterAccess().getClassKeyword_0_2());
@@ -5840,10 +5878,10 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2103:6: (this_Reference_3= ruleReference otherlv_4= ':' otherlv_5= 'reference' )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2123:6: (this_Reference_3= ruleReference otherlv_4= ':' otherlv_5= 'reference' )
                     {
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2103:6: (this_Reference_3= ruleReference otherlv_4= ':' otherlv_5= 'reference' )
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2104:2: this_Reference_3= ruleReference otherlv_4= ':' otherlv_5= 'reference'
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2123:6: (this_Reference_3= ruleReference otherlv_4= ':' otherlv_5= 'reference' )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2124:2: this_Reference_3= ruleReference otherlv_4= ':' otherlv_5= 'reference'
                     {
                     if ( state.backtracking==0 ) {
                        
@@ -5855,7 +5893,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
                               newCompositeNode(grammarAccess.getParameterAccess().getReferenceParserRuleCall_1_0()); 
                           
                     }
-                    pushFollow(FOLLOW_ruleReference_in_ruleParameter4442);
+                    pushFollow(FOLLOW_ruleReference_in_ruleParameter4473);
                     this_Reference_3=ruleReference();
 
                     state._fsp--;
@@ -5866,13 +5904,13 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
                               afterParserOrEnumRuleCall();
                           
                     }
-                    otherlv_4=(Token)match(input,39,FOLLOW_39_in_ruleParameter4453); if (state.failed) return current;
+                    otherlv_4=(Token)match(input,39,FOLLOW_39_in_ruleParameter4484); if (state.failed) return current;
                     if ( state.backtracking==0 ) {
 
                           	newLeafNode(otherlv_4, grammarAccess.getParameterAccess().getColonKeyword_1_1());
                           
                     }
-                    otherlv_5=(Token)match(input,34,FOLLOW_34_in_ruleParameter4465); if (state.failed) return current;
+                    otherlv_5=(Token)match(input,34,FOLLOW_34_in_ruleParameter4496); if (state.failed) return current;
                     if ( state.backtracking==0 ) {
 
                           	newLeafNode(otherlv_5, grammarAccess.getParameterAccess().getReferenceKeyword_1_2());
@@ -5885,10 +5923,10 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 3 :
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2124:6: (this_Package_6= rulePackage otherlv_7= ':' otherlv_8= 'package' )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2144:6: (this_Package_6= rulePackage otherlv_7= ':' otherlv_8= 'package' )
                     {
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2124:6: (this_Package_6= rulePackage otherlv_7= ':' otherlv_8= 'package' )
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2125:2: this_Package_6= rulePackage otherlv_7= ':' otherlv_8= 'package'
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2144:6: (this_Package_6= rulePackage otherlv_7= ':' otherlv_8= 'package' )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2145:2: this_Package_6= rulePackage otherlv_7= ':' otherlv_8= 'package'
                     {
                     if ( state.backtracking==0 ) {
                        
@@ -5900,7 +5938,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
                               newCompositeNode(grammarAccess.getParameterAccess().getPackageParserRuleCall_2_0()); 
                           
                     }
-                    pushFollow(FOLLOW_rulePackage_in_ruleParameter4498);
+                    pushFollow(FOLLOW_rulePackage_in_ruleParameter4529);
                     this_Package_6=rulePackage();
 
                     state._fsp--;
@@ -5911,13 +5949,13 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
                               afterParserOrEnumRuleCall();
                           
                     }
-                    otherlv_7=(Token)match(input,39,FOLLOW_39_in_ruleParameter4509); if (state.failed) return current;
+                    otherlv_7=(Token)match(input,39,FOLLOW_39_in_ruleParameter4540); if (state.failed) return current;
                     if ( state.backtracking==0 ) {
 
                           	newLeafNode(otherlv_7, grammarAccess.getParameterAccess().getColonKeyword_2_1());
                           
                     }
-                    otherlv_8=(Token)match(input,12,FOLLOW_12_in_ruleParameter4521); if (state.failed) return current;
+                    otherlv_8=(Token)match(input,12,FOLLOW_12_in_ruleParameter4552); if (state.failed) return current;
                     if ( state.backtracking==0 ) {
 
                           	newLeafNode(otherlv_8, grammarAccess.getParameterAccess().getPackageKeyword_2_2());
@@ -5930,10 +5968,10 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 4 :
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2145:6: (this_Attribute_9= ruleAttribute otherlv_10= ':' otherlv_11= 'attribute' )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2165:6: (this_Attribute_9= ruleAttribute otherlv_10= ':' otherlv_11= 'attribute' )
                     {
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2145:6: (this_Attribute_9= ruleAttribute otherlv_10= ':' otherlv_11= 'attribute' )
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2146:2: this_Attribute_9= ruleAttribute otherlv_10= ':' otherlv_11= 'attribute'
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2165:6: (this_Attribute_9= ruleAttribute otherlv_10= ':' otherlv_11= 'attribute' )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2166:2: this_Attribute_9= ruleAttribute otherlv_10= ':' otherlv_11= 'attribute'
                     {
                     if ( state.backtracking==0 ) {
                        
@@ -5945,7 +5983,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
                               newCompositeNode(grammarAccess.getParameterAccess().getAttributeParserRuleCall_3_0()); 
                           
                     }
-                    pushFollow(FOLLOW_ruleAttribute_in_ruleParameter4554);
+                    pushFollow(FOLLOW_ruleAttribute_in_ruleParameter4585);
                     this_Attribute_9=ruleAttribute();
 
                     state._fsp--;
@@ -5956,13 +5994,13 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
                               afterParserOrEnumRuleCall();
                           
                     }
-                    otherlv_10=(Token)match(input,39,FOLLOW_39_in_ruleParameter4565); if (state.failed) return current;
+                    otherlv_10=(Token)match(input,39,FOLLOW_39_in_ruleParameter4596); if (state.failed) return current;
                     if ( state.backtracking==0 ) {
 
                           	newLeafNode(otherlv_10, grammarAccess.getParameterAccess().getColonKeyword_3_1());
                           
                     }
-                    otherlv_11=(Token)match(input,30,FOLLOW_30_in_ruleParameter4577); if (state.failed) return current;
+                    otherlv_11=(Token)match(input,30,FOLLOW_30_in_ruleParameter4608); if (state.failed) return current;
                     if ( state.backtracking==0 ) {
 
                           	newLeafNode(otherlv_11, grammarAccess.getParameterAccess().getAttributeKeyword_3_2());
@@ -5975,10 +6013,10 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 5 :
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2166:6: (this_BooleanDef_12= ruleBooleanDef otherlv_13= ':' otherlv_14= 'bool' )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2186:6: (this_BooleanDef_12= ruleBooleanDef otherlv_13= ':' otherlv_14= 'bool' )
                     {
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2166:6: (this_BooleanDef_12= ruleBooleanDef otherlv_13= ':' otherlv_14= 'bool' )
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2167:2: this_BooleanDef_12= ruleBooleanDef otherlv_13= ':' otherlv_14= 'bool'
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2186:6: (this_BooleanDef_12= ruleBooleanDef otherlv_13= ':' otherlv_14= 'bool' )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2187:2: this_BooleanDef_12= ruleBooleanDef otherlv_13= ':' otherlv_14= 'bool'
                     {
                     if ( state.backtracking==0 ) {
                        
@@ -5990,7 +6028,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
                               newCompositeNode(grammarAccess.getParameterAccess().getBooleanDefParserRuleCall_4_0()); 
                           
                     }
-                    pushFollow(FOLLOW_ruleBooleanDef_in_ruleParameter4610);
+                    pushFollow(FOLLOW_ruleBooleanDef_in_ruleParameter4641);
                     this_BooleanDef_12=ruleBooleanDef();
 
                     state._fsp--;
@@ -6001,13 +6039,13 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
                               afterParserOrEnumRuleCall();
                           
                     }
-                    otherlv_13=(Token)match(input,39,FOLLOW_39_in_ruleParameter4621); if (state.failed) return current;
+                    otherlv_13=(Token)match(input,39,FOLLOW_39_in_ruleParameter4652); if (state.failed) return current;
                     if ( state.backtracking==0 ) {
 
                           	newLeafNode(otherlv_13, grammarAccess.getParameterAccess().getColonKeyword_4_1());
                           
                     }
-                    otherlv_14=(Token)match(input,40,FOLLOW_40_in_ruleParameter4633); if (state.failed) return current;
+                    otherlv_14=(Token)match(input,40,FOLLOW_40_in_ruleParameter4664); if (state.failed) return current;
                     if ( state.backtracking==0 ) {
 
                           	newLeafNode(otherlv_14, grammarAccess.getParameterAccess().getBoolKeyword_4_2());
@@ -6020,10 +6058,10 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 6 :
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2187:6: (this_IntDef_15= ruleIntDef otherlv_16= ':' otherlv_17= 'int' )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2207:6: (this_IntDef_15= ruleIntDef otherlv_16= ':' otherlv_17= 'int' )
                     {
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2187:6: (this_IntDef_15= ruleIntDef otherlv_16= ':' otherlv_17= 'int' )
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2188:2: this_IntDef_15= ruleIntDef otherlv_16= ':' otherlv_17= 'int'
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2207:6: (this_IntDef_15= ruleIntDef otherlv_16= ':' otherlv_17= 'int' )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2208:2: this_IntDef_15= ruleIntDef otherlv_16= ':' otherlv_17= 'int'
                     {
                     if ( state.backtracking==0 ) {
                        
@@ -6035,7 +6073,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
                               newCompositeNode(grammarAccess.getParameterAccess().getIntDefParserRuleCall_5_0()); 
                           
                     }
-                    pushFollow(FOLLOW_ruleIntDef_in_ruleParameter4666);
+                    pushFollow(FOLLOW_ruleIntDef_in_ruleParameter4697);
                     this_IntDef_15=ruleIntDef();
 
                     state._fsp--;
@@ -6046,13 +6084,13 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
                               afterParserOrEnumRuleCall();
                           
                     }
-                    otherlv_16=(Token)match(input,39,FOLLOW_39_in_ruleParameter4677); if (state.failed) return current;
+                    otherlv_16=(Token)match(input,39,FOLLOW_39_in_ruleParameter4708); if (state.failed) return current;
                     if ( state.backtracking==0 ) {
 
                           	newLeafNode(otherlv_16, grammarAccess.getParameterAccess().getColonKeyword_5_1());
                           
                     }
-                    otherlv_17=(Token)match(input,41,FOLLOW_41_in_ruleParameter4689); if (state.failed) return current;
+                    otherlv_17=(Token)match(input,41,FOLLOW_41_in_ruleParameter4720); if (state.failed) return current;
                     if ( state.backtracking==0 ) {
 
                           	newLeafNode(otherlv_17, grammarAccess.getParameterAccess().getIntKeyword_5_2());
@@ -6065,10 +6103,10 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 7 :
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2208:6: (this_StringDef_18= ruleStringDef otherlv_19= ':' otherlv_20= 'string' )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2228:6: (this_StringDef_18= ruleStringDef otherlv_19= ':' otherlv_20= 'string' )
                     {
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2208:6: (this_StringDef_18= ruleStringDef otherlv_19= ':' otherlv_20= 'string' )
-                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2209:2: this_StringDef_18= ruleStringDef otherlv_19= ':' otherlv_20= 'string'
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2228:6: (this_StringDef_18= ruleStringDef otherlv_19= ':' otherlv_20= 'string' )
+                    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2229:2: this_StringDef_18= ruleStringDef otherlv_19= ':' otherlv_20= 'string'
                     {
                     if ( state.backtracking==0 ) {
                        
@@ -6080,7 +6118,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
                               newCompositeNode(grammarAccess.getParameterAccess().getStringDefParserRuleCall_6_0()); 
                           
                     }
-                    pushFollow(FOLLOW_ruleStringDef_in_ruleParameter4722);
+                    pushFollow(FOLLOW_ruleStringDef_in_ruleParameter4753);
                     this_StringDef_18=ruleStringDef();
 
                     state._fsp--;
@@ -6091,13 +6129,13 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
                               afterParserOrEnumRuleCall();
                           
                     }
-                    otherlv_19=(Token)match(input,39,FOLLOW_39_in_ruleParameter4733); if (state.failed) return current;
+                    otherlv_19=(Token)match(input,39,FOLLOW_39_in_ruleParameter4764); if (state.failed) return current;
                     if ( state.backtracking==0 ) {
 
                           	newLeafNode(otherlv_19, grammarAccess.getParameterAccess().getColonKeyword_6_1());
                           
                     }
-                    otherlv_20=(Token)match(input,42,FOLLOW_42_in_ruleParameter4745); if (state.failed) return current;
+                    otherlv_20=(Token)match(input,42,FOLLOW_42_in_ruleParameter4776); if (state.failed) return current;
                     if ( state.backtracking==0 ) {
 
                           	newLeafNode(otherlv_20, grammarAccess.getParameterAccess().getStringKeyword_6_2());
@@ -6132,7 +6170,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleAttribute"
-    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2236:1: entryRuleAttribute returns [EObject current=null] : iv_ruleAttribute= ruleAttribute EOF ;
+    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2256:1: entryRuleAttribute returns [EObject current=null] : iv_ruleAttribute= ruleAttribute EOF ;
     public final EObject entryRuleAttribute() throws RecognitionException {
         EObject current = null;
 
@@ -6140,13 +6178,13 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2237:2: (iv_ruleAttribute= ruleAttribute EOF )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2238:2: iv_ruleAttribute= ruleAttribute EOF
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2257:2: (iv_ruleAttribute= ruleAttribute EOF )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2258:2: iv_ruleAttribute= ruleAttribute EOF
             {
             if ( state.backtracking==0 ) {
                newCompositeNode(grammarAccess.getAttributeRule()); 
             }
-            pushFollow(FOLLOW_ruleAttribute_in_entryRuleAttribute4782);
+            pushFollow(FOLLOW_ruleAttribute_in_entryRuleAttribute4813);
             iv_ruleAttribute=ruleAttribute();
 
             state._fsp--;
@@ -6154,7 +6192,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
             if ( state.backtracking==0 ) {
                current =iv_ruleAttribute; 
             }
-            match(input,EOF,FOLLOW_EOF_in_entryRuleAttribute4792); if (state.failed) return current;
+            match(input,EOF,FOLLOW_EOF_in_entryRuleAttribute4823); if (state.failed) return current;
 
             }
 
@@ -6172,7 +6210,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleAttribute"
-    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2245:1: ruleAttribute returns [EObject current=null] : ( () ( (lv_name_1_0= RULE_ID ) ) ) ;
+    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2265:1: ruleAttribute returns [EObject current=null] : ( () ( (lv_name_1_0= RULE_ID ) ) ) ;
     public final EObject ruleAttribute() throws RecognitionException {
         EObject current = null;
 
@@ -6181,14 +6219,14 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2248:28: ( ( () ( (lv_name_1_0= RULE_ID ) ) ) )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2249:1: ( () ( (lv_name_1_0= RULE_ID ) ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2268:28: ( ( () ( (lv_name_1_0= RULE_ID ) ) ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2269:1: ( () ( (lv_name_1_0= RULE_ID ) ) )
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2249:1: ( () ( (lv_name_1_0= RULE_ID ) ) )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2249:2: () ( (lv_name_1_0= RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2269:1: ( () ( (lv_name_1_0= RULE_ID ) ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2269:2: () ( (lv_name_1_0= RULE_ID ) )
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2249:2: ()
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2250:2: 
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2269:2: ()
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2270:2: 
             {
             if ( state.backtracking==0 ) {
                
@@ -6205,13 +6243,13 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2258:2: ( (lv_name_1_0= RULE_ID ) )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2259:1: (lv_name_1_0= RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2278:2: ( (lv_name_1_0= RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2279:1: (lv_name_1_0= RULE_ID )
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2259:1: (lv_name_1_0= RULE_ID )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2260:3: lv_name_1_0= RULE_ID
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2279:1: (lv_name_1_0= RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2280:3: lv_name_1_0= RULE_ID
             {
-            lv_name_1_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleAttribute4846); if (state.failed) return current;
+            lv_name_1_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleAttribute4877); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
               			newLeafNode(lv_name_1_0, grammarAccess.getAttributeAccess().getNameIDTerminalRuleCall_1_0()); 
@@ -6258,7 +6296,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleReference"
-    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2284:1: entryRuleReference returns [EObject current=null] : iv_ruleReference= ruleReference EOF ;
+    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2304:1: entryRuleReference returns [EObject current=null] : iv_ruleReference= ruleReference EOF ;
     public final EObject entryRuleReference() throws RecognitionException {
         EObject current = null;
 
@@ -6266,13 +6304,13 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2285:2: (iv_ruleReference= ruleReference EOF )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2286:2: iv_ruleReference= ruleReference EOF
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2305:2: (iv_ruleReference= ruleReference EOF )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2306:2: iv_ruleReference= ruleReference EOF
             {
             if ( state.backtracking==0 ) {
                newCompositeNode(grammarAccess.getReferenceRule()); 
             }
-            pushFollow(FOLLOW_ruleReference_in_entryRuleReference4887);
+            pushFollow(FOLLOW_ruleReference_in_entryRuleReference4918);
             iv_ruleReference=ruleReference();
 
             state._fsp--;
@@ -6280,7 +6318,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
             if ( state.backtracking==0 ) {
                current =iv_ruleReference; 
             }
-            match(input,EOF,FOLLOW_EOF_in_entryRuleReference4897); if (state.failed) return current;
+            match(input,EOF,FOLLOW_EOF_in_entryRuleReference4928); if (state.failed) return current;
 
             }
 
@@ -6298,7 +6336,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleReference"
-    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2293:1: ruleReference returns [EObject current=null] : ( () ( (lv_name_1_0= RULE_ID ) ) ) ;
+    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2313:1: ruleReference returns [EObject current=null] : ( () ( (lv_name_1_0= RULE_ID ) ) ) ;
     public final EObject ruleReference() throws RecognitionException {
         EObject current = null;
 
@@ -6307,14 +6345,14 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2296:28: ( ( () ( (lv_name_1_0= RULE_ID ) ) ) )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2297:1: ( () ( (lv_name_1_0= RULE_ID ) ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2316:28: ( ( () ( (lv_name_1_0= RULE_ID ) ) ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2317:1: ( () ( (lv_name_1_0= RULE_ID ) ) )
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2297:1: ( () ( (lv_name_1_0= RULE_ID ) ) )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2297:2: () ( (lv_name_1_0= RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2317:1: ( () ( (lv_name_1_0= RULE_ID ) ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2317:2: () ( (lv_name_1_0= RULE_ID ) )
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2297:2: ()
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2298:2: 
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2317:2: ()
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2318:2: 
             {
             if ( state.backtracking==0 ) {
                
@@ -6331,13 +6369,13 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2306:2: ( (lv_name_1_0= RULE_ID ) )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2307:1: (lv_name_1_0= RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2326:2: ( (lv_name_1_0= RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2327:1: (lv_name_1_0= RULE_ID )
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2307:1: (lv_name_1_0= RULE_ID )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2308:3: lv_name_1_0= RULE_ID
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2327:1: (lv_name_1_0= RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2328:3: lv_name_1_0= RULE_ID
             {
-            lv_name_1_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleReference4951); if (state.failed) return current;
+            lv_name_1_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleReference4982); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
               			newLeafNode(lv_name_1_0, grammarAccess.getReferenceAccess().getNameIDTerminalRuleCall_1_0()); 
@@ -6384,7 +6422,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleBooleanDef"
-    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2332:1: entryRuleBooleanDef returns [EObject current=null] : iv_ruleBooleanDef= ruleBooleanDef EOF ;
+    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2352:1: entryRuleBooleanDef returns [EObject current=null] : iv_ruleBooleanDef= ruleBooleanDef EOF ;
     public final EObject entryRuleBooleanDef() throws RecognitionException {
         EObject current = null;
 
@@ -6392,13 +6430,13 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2333:2: (iv_ruleBooleanDef= ruleBooleanDef EOF )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2334:2: iv_ruleBooleanDef= ruleBooleanDef EOF
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2353:2: (iv_ruleBooleanDef= ruleBooleanDef EOF )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2354:2: iv_ruleBooleanDef= ruleBooleanDef EOF
             {
             if ( state.backtracking==0 ) {
                newCompositeNode(grammarAccess.getBooleanDefRule()); 
             }
-            pushFollow(FOLLOW_ruleBooleanDef_in_entryRuleBooleanDef4992);
+            pushFollow(FOLLOW_ruleBooleanDef_in_entryRuleBooleanDef5023);
             iv_ruleBooleanDef=ruleBooleanDef();
 
             state._fsp--;
@@ -6406,7 +6444,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
             if ( state.backtracking==0 ) {
                current =iv_ruleBooleanDef; 
             }
-            match(input,EOF,FOLLOW_EOF_in_entryRuleBooleanDef5002); if (state.failed) return current;
+            match(input,EOF,FOLLOW_EOF_in_entryRuleBooleanDef5033); if (state.failed) return current;
 
             }
 
@@ -6424,7 +6462,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleBooleanDef"
-    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2341:1: ruleBooleanDef returns [EObject current=null] : ( () ( (lv_name_1_0= RULE_ID ) ) ) ;
+    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2361:1: ruleBooleanDef returns [EObject current=null] : ( () ( (lv_name_1_0= RULE_ID ) ) ) ;
     public final EObject ruleBooleanDef() throws RecognitionException {
         EObject current = null;
 
@@ -6433,14 +6471,14 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2344:28: ( ( () ( (lv_name_1_0= RULE_ID ) ) ) )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2345:1: ( () ( (lv_name_1_0= RULE_ID ) ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2364:28: ( ( () ( (lv_name_1_0= RULE_ID ) ) ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2365:1: ( () ( (lv_name_1_0= RULE_ID ) ) )
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2345:1: ( () ( (lv_name_1_0= RULE_ID ) ) )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2345:2: () ( (lv_name_1_0= RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2365:1: ( () ( (lv_name_1_0= RULE_ID ) ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2365:2: () ( (lv_name_1_0= RULE_ID ) )
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2345:2: ()
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2346:2: 
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2365:2: ()
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2366:2: 
             {
             if ( state.backtracking==0 ) {
                
@@ -6457,13 +6495,13 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2354:2: ( (lv_name_1_0= RULE_ID ) )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2355:1: (lv_name_1_0= RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2374:2: ( (lv_name_1_0= RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2375:1: (lv_name_1_0= RULE_ID )
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2355:1: (lv_name_1_0= RULE_ID )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2356:3: lv_name_1_0= RULE_ID
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2375:1: (lv_name_1_0= RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2376:3: lv_name_1_0= RULE_ID
             {
-            lv_name_1_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleBooleanDef5056); if (state.failed) return current;
+            lv_name_1_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleBooleanDef5087); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
               			newLeafNode(lv_name_1_0, grammarAccess.getBooleanDefAccess().getNameIDTerminalRuleCall_1_0()); 
@@ -6510,7 +6548,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleStringDef"
-    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2380:1: entryRuleStringDef returns [EObject current=null] : iv_ruleStringDef= ruleStringDef EOF ;
+    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2400:1: entryRuleStringDef returns [EObject current=null] : iv_ruleStringDef= ruleStringDef EOF ;
     public final EObject entryRuleStringDef() throws RecognitionException {
         EObject current = null;
 
@@ -6518,13 +6556,13 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2381:2: (iv_ruleStringDef= ruleStringDef EOF )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2382:2: iv_ruleStringDef= ruleStringDef EOF
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2401:2: (iv_ruleStringDef= ruleStringDef EOF )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2402:2: iv_ruleStringDef= ruleStringDef EOF
             {
             if ( state.backtracking==0 ) {
                newCompositeNode(grammarAccess.getStringDefRule()); 
             }
-            pushFollow(FOLLOW_ruleStringDef_in_entryRuleStringDef5097);
+            pushFollow(FOLLOW_ruleStringDef_in_entryRuleStringDef5128);
             iv_ruleStringDef=ruleStringDef();
 
             state._fsp--;
@@ -6532,7 +6570,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
             if ( state.backtracking==0 ) {
                current =iv_ruleStringDef; 
             }
-            match(input,EOF,FOLLOW_EOF_in_entryRuleStringDef5107); if (state.failed) return current;
+            match(input,EOF,FOLLOW_EOF_in_entryRuleStringDef5138); if (state.failed) return current;
 
             }
 
@@ -6550,7 +6588,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleStringDef"
-    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2389:1: ruleStringDef returns [EObject current=null] : ( (lv_name_0_0= RULE_ID ) ) ;
+    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2409:1: ruleStringDef returns [EObject current=null] : ( (lv_name_0_0= RULE_ID ) ) ;
     public final EObject ruleStringDef() throws RecognitionException {
         EObject current = null;
 
@@ -6559,16 +6597,16 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2392:28: ( ( (lv_name_0_0= RULE_ID ) ) )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2393:1: ( (lv_name_0_0= RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2412:28: ( ( (lv_name_0_0= RULE_ID ) ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2413:1: ( (lv_name_0_0= RULE_ID ) )
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2393:1: ( (lv_name_0_0= RULE_ID ) )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2394:1: (lv_name_0_0= RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2413:1: ( (lv_name_0_0= RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2414:1: (lv_name_0_0= RULE_ID )
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2394:1: (lv_name_0_0= RULE_ID )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2395:3: lv_name_0_0= RULE_ID
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2414:1: (lv_name_0_0= RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2415:3: lv_name_0_0= RULE_ID
             {
-            lv_name_0_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleStringDef5148); if (state.failed) return current;
+            lv_name_0_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleStringDef5179); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
               			newLeafNode(lv_name_0_0, grammarAccess.getStringDefAccess().getNameIDTerminalRuleCall_0()); 
@@ -6612,7 +6650,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleIntDef"
-    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2419:1: entryRuleIntDef returns [EObject current=null] : iv_ruleIntDef= ruleIntDef EOF ;
+    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2439:1: entryRuleIntDef returns [EObject current=null] : iv_ruleIntDef= ruleIntDef EOF ;
     public final EObject entryRuleIntDef() throws RecognitionException {
         EObject current = null;
 
@@ -6620,13 +6658,13 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2420:2: (iv_ruleIntDef= ruleIntDef EOF )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2421:2: iv_ruleIntDef= ruleIntDef EOF
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2440:2: (iv_ruleIntDef= ruleIntDef EOF )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2441:2: iv_ruleIntDef= ruleIntDef EOF
             {
             if ( state.backtracking==0 ) {
                newCompositeNode(grammarAccess.getIntDefRule()); 
             }
-            pushFollow(FOLLOW_ruleIntDef_in_entryRuleIntDef5188);
+            pushFollow(FOLLOW_ruleIntDef_in_entryRuleIntDef5219);
             iv_ruleIntDef=ruleIntDef();
 
             state._fsp--;
@@ -6634,7 +6672,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
             if ( state.backtracking==0 ) {
                current =iv_ruleIntDef; 
             }
-            match(input,EOF,FOLLOW_EOF_in_entryRuleIntDef5198); if (state.failed) return current;
+            match(input,EOF,FOLLOW_EOF_in_entryRuleIntDef5229); if (state.failed) return current;
 
             }
 
@@ -6652,7 +6690,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleIntDef"
-    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2428:1: ruleIntDef returns [EObject current=null] : ( () ( (lv_name_1_0= RULE_ID ) ) ) ;
+    // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2448:1: ruleIntDef returns [EObject current=null] : ( () ( (lv_name_1_0= RULE_ID ) ) ) ;
     public final EObject ruleIntDef() throws RecognitionException {
         EObject current = null;
 
@@ -6661,14 +6699,14 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2431:28: ( ( () ( (lv_name_1_0= RULE_ID ) ) ) )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2432:1: ( () ( (lv_name_1_0= RULE_ID ) ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2451:28: ( ( () ( (lv_name_1_0= RULE_ID ) ) ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2452:1: ( () ( (lv_name_1_0= RULE_ID ) ) )
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2432:1: ( () ( (lv_name_1_0= RULE_ID ) ) )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2432:2: () ( (lv_name_1_0= RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2452:1: ( () ( (lv_name_1_0= RULE_ID ) ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2452:2: () ( (lv_name_1_0= RULE_ID ) )
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2432:2: ()
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2433:2: 
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2452:2: ()
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2453:2: 
             {
             if ( state.backtracking==0 ) {
                
@@ -6685,13 +6723,13 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2441:2: ( (lv_name_1_0= RULE_ID ) )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2442:1: (lv_name_1_0= RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2461:2: ( (lv_name_1_0= RULE_ID ) )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2462:1: (lv_name_1_0= RULE_ID )
             {
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2442:1: (lv_name_1_0= RULE_ID )
-            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2443:3: lv_name_1_0= RULE_ID
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2462:1: (lv_name_1_0= RULE_ID )
+            // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:2463:3: lv_name_1_0= RULE_ID
             {
-            lv_name_1_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleIntDef5252); if (state.failed) return current;
+            lv_name_1_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleIntDef5283); if (state.failed) return current;
             if ( state.backtracking==0 ) {
 
               			newLeafNode(lv_name_1_0, grammarAccess.getIntDefAccess().getNameIDTerminalRuleCall_1_0()); 
@@ -6811,21 +6849,21 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
         EObject lv_packageOperations_8_0 = null;
 
 
-        // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1859:2: ( ( (lv_packageOperations_8_0= ruleEPackageOperation ) ) )
-        // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1859:2: ( (lv_packageOperations_8_0= ruleEPackageOperation ) )
+        // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1879:2: ( ( (lv_packageOperations_8_0= ruleEPackageOperation ) ) )
+        // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1879:2: ( (lv_packageOperations_8_0= ruleEPackageOperation ) )
         {
-        // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1859:2: ( (lv_packageOperations_8_0= ruleEPackageOperation ) )
-        // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1860:1: (lv_packageOperations_8_0= ruleEPackageOperation )
+        // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1879:2: ( (lv_packageOperations_8_0= ruleEPackageOperation ) )
+        // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1880:1: (lv_packageOperations_8_0= ruleEPackageOperation )
         {
-        // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1860:1: (lv_packageOperations_8_0= ruleEPackageOperation )
-        // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1861:3: lv_packageOperations_8_0= ruleEPackageOperation
+        // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1880:1: (lv_packageOperations_8_0= ruleEPackageOperation )
+        // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1881:3: lv_packageOperations_8_0= ruleEPackageOperation
         {
         if ( state.backtracking==0 ) {
            
           	        newCompositeNode(grammarAccess.getComplexOperatorDefAccess().getPackageOperationsEPackageOperationParserRuleCall_4_0_0()); 
           	    
         }
-        pushFollow(FOLLOW_ruleEPackageOperation_in_synpred37_InternalEDeltaLang3939);
+        pushFollow(FOLLOW_ruleEPackageOperation_in_synpred37_InternalEDeltaLang3970);
         lv_packageOperations_8_0=ruleEPackageOperation();
 
         state._fsp--;
@@ -6846,21 +6884,21 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
         EObject lv_attributeOperations_10_0 = null;
 
 
-        // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1897:6: ( ( (lv_attributeOperations_10_0= ruleEAttributeOperation ) ) )
-        // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1897:6: ( (lv_attributeOperations_10_0= ruleEAttributeOperation ) )
+        // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1917:6: ( ( (lv_attributeOperations_10_0= ruleEAttributeOperation ) ) )
+        // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1917:6: ( (lv_attributeOperations_10_0= ruleEAttributeOperation ) )
         {
-        // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1897:6: ( (lv_attributeOperations_10_0= ruleEAttributeOperation ) )
-        // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1898:1: (lv_attributeOperations_10_0= ruleEAttributeOperation )
+        // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1917:6: ( (lv_attributeOperations_10_0= ruleEAttributeOperation ) )
+        // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1918:1: (lv_attributeOperations_10_0= ruleEAttributeOperation )
         {
-        // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1898:1: (lv_attributeOperations_10_0= ruleEAttributeOperation )
-        // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1899:3: lv_attributeOperations_10_0= ruleEAttributeOperation
+        // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1918:1: (lv_attributeOperations_10_0= ruleEAttributeOperation )
+        // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1919:3: lv_attributeOperations_10_0= ruleEAttributeOperation
         {
         if ( state.backtracking==0 ) {
            
           	        newCompositeNode(grammarAccess.getComplexOperatorDefAccess().getAttributeOperationsEAttributeOperationParserRuleCall_4_2_0()); 
           	    
         }
-        pushFollow(FOLLOW_ruleEAttributeOperation_in_synpred39_InternalEDeltaLang3993);
+        pushFollow(FOLLOW_ruleEAttributeOperation_in_synpred39_InternalEDeltaLang4024);
         lv_attributeOperations_10_0=ruleEAttributeOperation();
 
         state._fsp--;
@@ -6881,21 +6919,21 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
         EObject lv_referenceOperations_11_0 = null;
 
 
-        // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1916:6: ( ( (lv_referenceOperations_11_0= ruleEReferenceOperation ) ) )
-        // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1916:6: ( (lv_referenceOperations_11_0= ruleEReferenceOperation ) )
+        // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1936:6: ( ( (lv_referenceOperations_11_0= ruleEReferenceOperation ) ) )
+        // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1936:6: ( (lv_referenceOperations_11_0= ruleEReferenceOperation ) )
         {
-        // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1916:6: ( (lv_referenceOperations_11_0= ruleEReferenceOperation ) )
-        // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1917:1: (lv_referenceOperations_11_0= ruleEReferenceOperation )
+        // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1936:6: ( (lv_referenceOperations_11_0= ruleEReferenceOperation ) )
+        // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1937:1: (lv_referenceOperations_11_0= ruleEReferenceOperation )
         {
-        // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1917:1: (lv_referenceOperations_11_0= ruleEReferenceOperation )
-        // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1918:3: lv_referenceOperations_11_0= ruleEReferenceOperation
+        // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1937:1: (lv_referenceOperations_11_0= ruleEReferenceOperation )
+        // ../it.univaq.coevolution.differences.edelta/src-gen/it/univaq/coevolution/differences/edelta/parser/antlr/internal/InternalEDeltaLang.g:1938:3: lv_referenceOperations_11_0= ruleEReferenceOperation
         {
         if ( state.backtracking==0 ) {
            
           	        newCompositeNode(grammarAccess.getComplexOperatorDefAccess().getReferenceOperationsEReferenceOperationParserRuleCall_4_3_0()); 
           	    
         }
-        pushFollow(FOLLOW_ruleEReferenceOperation_in_synpred40_InternalEDeltaLang4020);
+        pushFollow(FOLLOW_ruleEReferenceOperation_in_synpred40_InternalEDeltaLang4051);
         lv_referenceOperations_11_0=ruleEReferenceOperation();
 
         state._fsp--;
@@ -7137,7 +7175,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
             this.transition = DFA29_transition;
         }
         public String getDescription() {
-            return "()* loopback of 1859:1: ( ( (lv_packageOperations_8_0= ruleEPackageOperation ) ) | ( (lv_classOperations_9_0= ruleEClassOperation ) ) | ( (lv_attributeOperations_10_0= ruleEAttributeOperation ) ) | ( (lv_referenceOperations_11_0= ruleEReferenceOperation ) ) )*";
+            return "()* loopback of 1879:1: ( ( (lv_packageOperations_8_0= ruleEPackageOperation ) ) | ( (lv_classOperations_9_0= ruleEClassOperation ) ) | ( (lv_attributeOperations_10_0= ruleEAttributeOperation ) ) | ( (lv_referenceOperations_11_0= ruleEReferenceOperation ) ) )*";
         }
         public int specialStateTransition(int s, IntStream _input) throws NoViableAltException {
             TokenStream input = (TokenStream)_input;
@@ -7177,14 +7215,14 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
     static final String DFA33_maxS =
         "\1\4\1\47\1\52\7\uffff";
     static final String DFA33_acceptS =
-        "\3\uffff\1\2\1\4\1\6\1\7\1\5\1\1\1\3";
+        "\3\uffff\1\5\1\3\1\4\1\7\1\6\1\1\1\2";
     static final String DFA33_specialS =
         "\12\uffff}>";
     static final String[] DFA33_transitionS = {
             "\1\1",
             "\1\2",
-            "\1\11\10\uffff\1\10\10\uffff\1\4\3\uffff\1\3\5\uffff\1\7\1"+
-            "\5\1\6",
+            "\1\4\10\uffff\1\10\10\uffff\1\5\3\uffff\1\11\5\uffff\1\3\1"+
+            "\7\1\6",
             "",
             "",
             "",
@@ -7224,7 +7262,7 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
             this.transition = DFA33_transition;
         }
         public String getDescription() {
-            return "2082:1: ( (this_Class_0= ruleClass otherlv_1= ':' otherlv_2= 'class' ) | (this_Reference_3= ruleReference otherlv_4= ':' otherlv_5= 'reference' ) | (this_Package_6= rulePackage otherlv_7= ':' otherlv_8= 'package' ) | (this_Attribute_9= ruleAttribute otherlv_10= ':' otherlv_11= 'attribute' ) | (this_BooleanDef_12= ruleBooleanDef otherlv_13= ':' otherlv_14= 'bool' ) | (this_IntDef_15= ruleIntDef otherlv_16= ':' otherlv_17= 'int' ) | (this_StringDef_18= ruleStringDef otherlv_19= ':' otherlv_20= 'string' ) )";
+            return "2102:1: ( (this_Class_0= ruleClass otherlv_1= ':' otherlv_2= 'class' ) | (this_Reference_3= ruleReference otherlv_4= ':' otherlv_5= 'reference' ) | (this_Package_6= rulePackage otherlv_7= ':' otherlv_8= 'package' ) | (this_Attribute_9= ruleAttribute otherlv_10= ':' otherlv_11= 'attribute' ) | (this_BooleanDef_12= ruleBooleanDef otherlv_13= ':' otherlv_14= 'bool' ) | (this_IntDef_15= ruleIntDef otherlv_16= ':' otherlv_17= 'int' ) | (this_StringDef_18= ruleStringDef otherlv_19= ':' otherlv_20= 'string' ) )";
         }
     }
  
@@ -7284,166 +7322,166 @@ public class InternalEDeltaLangParser extends AbstractInternalAntlrParser {
     public static final BitSet FOLLOW_ruleComplexOperator_in_ruleEClassOperation1306 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleChangeClass_in_entryRuleChangeClass1344 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRuleChangeClass1354 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_22_in_ruleChangeClass1397 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleChangeClass1434 = new BitSet(new long[]{0x0000000000040000L});
-    public static final BitSet FOLLOW_18_in_ruleChangeClass1446 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleAddClass_in_entryRuleAddClass1482 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleAddClass1492 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_23_in_ruleAddClass1535 = new BitSet(new long[]{0x0000000000000030L});
-    public static final BitSet FOLLOW_RULE_STRING_in_ruleAddClass1566 = new BitSet(new long[]{0x0000000000040000L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleAddClass1601 = new BitSet(new long[]{0x0000000000040000L});
-    public static final BitSet FOLLOW_18_in_ruleAddClass1614 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleDeleteClass_in_entryRuleDeleteClass1650 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleDeleteClass1660 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_24_in_ruleDeleteClass1703 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleDeleteClass1740 = new BitSet(new long[]{0x0000000000040000L});
-    public static final BitSet FOLLOW_18_in_ruleDeleteClass1752 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleClass_in_entryRuleClass1788 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleClass1798 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleClass1852 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rulesetter_in_entryRulesetter1893 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRulesetter1903 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_25_in_rulesetter1940 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_rulesetter1964 = new BitSet(new long[]{0x0000000004000000L});
-    public static final BitSet FOLLOW_26_in_rulesetter1976 = new BitSet(new long[]{0x00000000200000F0L});
-    public static final BitSet FOLLOW_RULE_STRING_in_rulesetter1995 = new BitSet(new long[]{0x0000000018000000L});
-    public static final BitSet FOLLOW_RULE_BOOL_in_rulesetter2017 = new BitSet(new long[]{0x0000000018000000L});
-    public static final BitSet FOLLOW_ruleCardinality_in_rulesetter2044 = new BitSet(new long[]{0x0000000018000000L});
-    public static final BitSet FOLLOW_RULE_ID_in_rulesetter2074 = new BitSet(new long[]{0x0000000018000000L});
-    public static final BitSet FOLLOW_27_in_rulesetter2088 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_rulesetter2112 = new BitSet(new long[]{0x0000000018000000L});
-    public static final BitSet FOLLOW_28_in_rulesetter2126 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleCardinality_in_entryRuleCardinality2163 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleCardinality2174 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_INT_in_ruleCardinality2214 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_29_in_ruleCardinality2238 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleEAttributeOperation_in_entryRuleEAttributeOperation2278 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleEAttributeOperation2288 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_30_in_ruleEAttributeOperation2326 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_ruleAttribute_in_ruleEAttributeOperation2347 = new BitSet(new long[]{0x0000000000002000L});
-    public static final BitSet FOLLOW_13_in_ruleEAttributeOperation2359 = new BitSet(new long[]{0x0000000380191010L});
-    public static final BitSet FOLLOW_ruleChangeAttribute_in_ruleEAttributeOperation2385 = new BitSet(new long[]{0x0000000000004000L});
-    public static final BitSet FOLLOW_ruleAddAttribute_in_ruleEAttributeOperation2412 = new BitSet(new long[]{0x0000000000004000L});
-    public static final BitSet FOLLOW_ruleDeleteAttribute_in_ruleEAttributeOperation2439 = new BitSet(new long[]{0x0000000000004000L});
-    public static final BitSet FOLLOW_14_in_ruleEAttributeOperation2453 = new BitSet(new long[]{0x0000000002008000L});
-    public static final BitSet FOLLOW_rulesetter_in_ruleEAttributeOperation2474 = new BitSet(new long[]{0x0000000002008000L});
-    public static final BitSet FOLLOW_15_in_ruleEAttributeOperation2487 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleComplexOperator_in_ruleEAttributeOperation2516 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleChangeAttribute_in_entryRuleChangeAttribute2553 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleChangeAttribute2563 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_31_in_ruleChangeAttribute2606 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleChangeAttribute2643 = new BitSet(new long[]{0x0000000000040000L});
-    public static final BitSet FOLLOW_18_in_ruleChangeAttribute2655 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleAddAttribute_in_entryRuleAddAttribute2691 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleAddAttribute2701 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_32_in_ruleAddAttribute2744 = new BitSet(new long[]{0x0000000000000030L});
-    public static final BitSet FOLLOW_RULE_STRING_in_ruleAddAttribute2775 = new BitSet(new long[]{0x0000000000040000L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleAddAttribute2810 = new BitSet(new long[]{0x0000000000040000L});
-    public static final BitSet FOLLOW_18_in_ruleAddAttribute2823 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleDeleteAttribute_in_entryRuleDeleteAttribute2859 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleDeleteAttribute2869 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_33_in_ruleDeleteAttribute2912 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleDeleteAttribute2949 = new BitSet(new long[]{0x0000000000040000L});
-    public static final BitSet FOLLOW_18_in_ruleDeleteAttribute2961 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleEReferenceOperation_in_entryRuleEReferenceOperation2997 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleEReferenceOperation3007 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_34_in_ruleEReferenceOperation3045 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_ruleReference_in_ruleEReferenceOperation3066 = new BitSet(new long[]{0x0000000000002000L});
-    public static final BitSet FOLLOW_13_in_ruleEReferenceOperation3078 = new BitSet(new long[]{0x0000003800191010L});
-    public static final BitSet FOLLOW_ruleChangeReference_in_ruleEReferenceOperation3104 = new BitSet(new long[]{0x0000000000004000L});
-    public static final BitSet FOLLOW_ruleAddReference_in_ruleEReferenceOperation3131 = new BitSet(new long[]{0x0000000000004000L});
-    public static final BitSet FOLLOW_ruleDeleteReference_in_ruleEReferenceOperation3158 = new BitSet(new long[]{0x0000000000004000L});
-    public static final BitSet FOLLOW_14_in_ruleEReferenceOperation3172 = new BitSet(new long[]{0x0000000002008000L});
-    public static final BitSet FOLLOW_rulesetter_in_ruleEReferenceOperation3193 = new BitSet(new long[]{0x0000000002008000L});
-    public static final BitSet FOLLOW_15_in_ruleEReferenceOperation3206 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleComplexOperator_in_ruleEReferenceOperation3235 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleChangeReference_in_entryRuleChangeReference3272 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleChangeReference3282 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_35_in_ruleChangeReference3325 = new BitSet(new long[]{0x0000000000020000L});
-    public static final BitSet FOLLOW_17_in_ruleChangeReference3350 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleChangeReference3374 = new BitSet(new long[]{0x0000000000040000L});
-    public static final BitSet FOLLOW_18_in_ruleChangeReference3386 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleAddReference_in_entryRuleAddReference3422 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleAddReference3432 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_36_in_ruleAddReference3475 = new BitSet(new long[]{0x0000000000020000L});
-    public static final BitSet FOLLOW_17_in_ruleAddReference3500 = new BitSet(new long[]{0x0000000000000030L});
-    public static final BitSet FOLLOW_RULE_STRING_in_ruleAddReference3518 = new BitSet(new long[]{0x0000000000040000L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleAddReference3553 = new BitSet(new long[]{0x0000000000040000L});
-    public static final BitSet FOLLOW_18_in_ruleAddReference3566 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleDeleteReference_in_entryRuleDeleteReference3602 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleDeleteReference3612 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_37_in_ruleDeleteReference3655 = new BitSet(new long[]{0x0000000000020000L});
-    public static final BitSet FOLLOW_17_in_ruleDeleteReference3680 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleDeleteReference3704 = new BitSet(new long[]{0x0000000000040000L});
-    public static final BitSet FOLLOW_18_in_ruleDeleteReference3716 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleComplexOperatorDef_in_entryRuleComplexOperatorDef3752 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleComplexOperatorDef3762 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_38_in_ruleComplexOperatorDef3799 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleComplexOperatorDef3816 = new BitSet(new long[]{0x0000000000020000L});
-    public static final BitSet FOLLOW_17_in_ruleComplexOperatorDef3834 = new BitSet(new long[]{0x0000000008040010L});
-    public static final BitSet FOLLOW_ruleParameter_in_ruleComplexOperatorDef3855 = new BitSet(new long[]{0x0000000008040000L});
-    public static final BitSet FOLLOW_27_in_ruleComplexOperatorDef3869 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_ruleParameter_in_ruleComplexOperatorDef3890 = new BitSet(new long[]{0x0000000008040000L});
-    public static final BitSet FOLLOW_18_in_ruleComplexOperatorDef3904 = new BitSet(new long[]{0x0000000000004000L});
-    public static final BitSet FOLLOW_14_in_ruleComplexOperatorDef3917 = new BitSet(new long[]{0x0000003FC3F99010L});
-    public static final BitSet FOLLOW_ruleEPackageOperation_in_ruleComplexOperatorDef3939 = new BitSet(new long[]{0x0000003FC3F99010L});
-    public static final BitSet FOLLOW_ruleEClassOperation_in_ruleComplexOperatorDef3966 = new BitSet(new long[]{0x0000003FC3F99010L});
-    public static final BitSet FOLLOW_ruleEAttributeOperation_in_ruleComplexOperatorDef3993 = new BitSet(new long[]{0x0000003FC3F99010L});
-    public static final BitSet FOLLOW_ruleEReferenceOperation_in_ruleComplexOperatorDef4020 = new BitSet(new long[]{0x0000003FC3F99010L});
-    public static final BitSet FOLLOW_15_in_ruleComplexOperatorDef4034 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleComplexOperator_in_entryRuleComplexOperator4070 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleComplexOperator4080 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleComplexOperator4129 = new BitSet(new long[]{0x0000000000020000L});
-    public static final BitSet FOLLOW_17_in_ruleComplexOperator4141 = new BitSet(new long[]{0x0000000008040030L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleComplexOperator4166 = new BitSet(new long[]{0x0000000008040000L});
-    public static final BitSet FOLLOW_RULE_STRING_in_ruleComplexOperator4189 = new BitSet(new long[]{0x0000000008040000L});
-    public static final BitSet FOLLOW_27_in_ruleComplexOperator4209 = new BitSet(new long[]{0x0000000000000030L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleComplexOperator4234 = new BitSet(new long[]{0x0000000008040000L});
-    public static final BitSet FOLLOW_RULE_STRING_in_ruleComplexOperator4257 = new BitSet(new long[]{0x0000000008040000L});
-    public static final BitSet FOLLOW_18_in_ruleComplexOperator4277 = new BitSet(new long[]{0x0000000010000000L});
-    public static final BitSet FOLLOW_28_in_ruleComplexOperator4289 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleParameter_in_entryRuleParameter4325 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleParameter4335 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleClass_in_ruleParameter4386 = new BitSet(new long[]{0x0000008000000000L});
-    public static final BitSet FOLLOW_39_in_ruleParameter4397 = new BitSet(new long[]{0x0000000000200000L});
-    public static final BitSet FOLLOW_21_in_ruleParameter4409 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleReference_in_ruleParameter4442 = new BitSet(new long[]{0x0000008000000000L});
-    public static final BitSet FOLLOW_39_in_ruleParameter4453 = new BitSet(new long[]{0x0000000400000000L});
-    public static final BitSet FOLLOW_34_in_ruleParameter4465 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rulePackage_in_ruleParameter4498 = new BitSet(new long[]{0x0000008000000000L});
-    public static final BitSet FOLLOW_39_in_ruleParameter4509 = new BitSet(new long[]{0x0000000000001000L});
-    public static final BitSet FOLLOW_12_in_ruleParameter4521 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleAttribute_in_ruleParameter4554 = new BitSet(new long[]{0x0000008000000000L});
-    public static final BitSet FOLLOW_39_in_ruleParameter4565 = new BitSet(new long[]{0x0000000040000000L});
-    public static final BitSet FOLLOW_30_in_ruleParameter4577 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleBooleanDef_in_ruleParameter4610 = new BitSet(new long[]{0x0000008000000000L});
-    public static final BitSet FOLLOW_39_in_ruleParameter4621 = new BitSet(new long[]{0x0000010000000000L});
-    public static final BitSet FOLLOW_40_in_ruleParameter4633 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleIntDef_in_ruleParameter4666 = new BitSet(new long[]{0x0000008000000000L});
-    public static final BitSet FOLLOW_39_in_ruleParameter4677 = new BitSet(new long[]{0x0000020000000000L});
-    public static final BitSet FOLLOW_41_in_ruleParameter4689 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleStringDef_in_ruleParameter4722 = new BitSet(new long[]{0x0000008000000000L});
-    public static final BitSet FOLLOW_39_in_ruleParameter4733 = new BitSet(new long[]{0x0000040000000000L});
-    public static final BitSet FOLLOW_42_in_ruleParameter4745 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleAttribute_in_entryRuleAttribute4782 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleAttribute4792 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleAttribute4846 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleReference_in_entryRuleReference4887 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleReference4897 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleReference4951 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleBooleanDef_in_entryRuleBooleanDef4992 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleBooleanDef5002 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleBooleanDef5056 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleStringDef_in_entryRuleStringDef5097 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleStringDef5107 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleStringDef5148 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleIntDef_in_entryRuleIntDef5188 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleIntDef5198 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleIntDef5252 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_22_in_ruleChangeClass1409 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleChangeClass1446 = new BitSet(new long[]{0x0000000000040000L});
+    public static final BitSet FOLLOW_18_in_ruleChangeClass1458 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleAddClass_in_entryRuleAddClass1494 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleAddClass1504 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_23_in_ruleAddClass1547 = new BitSet(new long[]{0x0000000000000030L});
+    public static final BitSet FOLLOW_RULE_STRING_in_ruleAddClass1578 = new BitSet(new long[]{0x0000000000040000L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleAddClass1613 = new BitSet(new long[]{0x0000000000040000L});
+    public static final BitSet FOLLOW_18_in_ruleAddClass1626 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleDeleteClass_in_entryRuleDeleteClass1662 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleDeleteClass1672 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_24_in_ruleDeleteClass1715 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleDeleteClass1752 = new BitSet(new long[]{0x0000000000040000L});
+    public static final BitSet FOLLOW_18_in_ruleDeleteClass1764 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleClass_in_entryRuleClass1800 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleClass1810 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleClass1864 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rulesetter_in_entryRulesetter1905 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRulesetter1915 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_25_in_rulesetter1952 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_rulesetter1976 = new BitSet(new long[]{0x0000000004000000L});
+    public static final BitSet FOLLOW_26_in_rulesetter1994 = new BitSet(new long[]{0x00000000200000F0L});
+    public static final BitSet FOLLOW_RULE_STRING_in_rulesetter2026 = new BitSet(new long[]{0x0000000018000000L});
+    public static final BitSet FOLLOW_RULE_BOOL_in_rulesetter2048 = new BitSet(new long[]{0x0000000018000000L});
+    public static final BitSet FOLLOW_ruleCardinality_in_rulesetter2075 = new BitSet(new long[]{0x0000000018000000L});
+    public static final BitSet FOLLOW_RULE_ID_in_rulesetter2105 = new BitSet(new long[]{0x0000000018000000L});
+    public static final BitSet FOLLOW_27_in_rulesetter2119 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_rulesetter2143 = new BitSet(new long[]{0x0000000018000000L});
+    public static final BitSet FOLLOW_28_in_rulesetter2157 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleCardinality_in_entryRuleCardinality2194 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleCardinality2205 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_INT_in_ruleCardinality2245 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_29_in_ruleCardinality2269 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleEAttributeOperation_in_entryRuleEAttributeOperation2309 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleEAttributeOperation2319 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_30_in_ruleEAttributeOperation2357 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_ruleAttribute_in_ruleEAttributeOperation2378 = new BitSet(new long[]{0x0000000000002000L});
+    public static final BitSet FOLLOW_13_in_ruleEAttributeOperation2390 = new BitSet(new long[]{0x0000000380191010L});
+    public static final BitSet FOLLOW_ruleChangeAttribute_in_ruleEAttributeOperation2416 = new BitSet(new long[]{0x0000000000004000L});
+    public static final BitSet FOLLOW_ruleAddAttribute_in_ruleEAttributeOperation2443 = new BitSet(new long[]{0x0000000000004000L});
+    public static final BitSet FOLLOW_ruleDeleteAttribute_in_ruleEAttributeOperation2470 = new BitSet(new long[]{0x0000000000004000L});
+    public static final BitSet FOLLOW_14_in_ruleEAttributeOperation2484 = new BitSet(new long[]{0x0000000002008000L});
+    public static final BitSet FOLLOW_rulesetter_in_ruleEAttributeOperation2505 = new BitSet(new long[]{0x0000000002008000L});
+    public static final BitSet FOLLOW_15_in_ruleEAttributeOperation2518 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleComplexOperator_in_ruleEAttributeOperation2547 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleChangeAttribute_in_entryRuleChangeAttribute2584 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleChangeAttribute2594 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_31_in_ruleChangeAttribute2637 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleChangeAttribute2674 = new BitSet(new long[]{0x0000000000040000L});
+    public static final BitSet FOLLOW_18_in_ruleChangeAttribute2686 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleAddAttribute_in_entryRuleAddAttribute2722 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleAddAttribute2732 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_32_in_ruleAddAttribute2775 = new BitSet(new long[]{0x0000000000000030L});
+    public static final BitSet FOLLOW_RULE_STRING_in_ruleAddAttribute2806 = new BitSet(new long[]{0x0000000000040000L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleAddAttribute2841 = new BitSet(new long[]{0x0000000000040000L});
+    public static final BitSet FOLLOW_18_in_ruleAddAttribute2854 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleDeleteAttribute_in_entryRuleDeleteAttribute2890 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleDeleteAttribute2900 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_33_in_ruleDeleteAttribute2943 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleDeleteAttribute2980 = new BitSet(new long[]{0x0000000000040000L});
+    public static final BitSet FOLLOW_18_in_ruleDeleteAttribute2992 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleEReferenceOperation_in_entryRuleEReferenceOperation3028 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleEReferenceOperation3038 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_34_in_ruleEReferenceOperation3076 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_ruleReference_in_ruleEReferenceOperation3097 = new BitSet(new long[]{0x0000000000002000L});
+    public static final BitSet FOLLOW_13_in_ruleEReferenceOperation3109 = new BitSet(new long[]{0x0000003800191010L});
+    public static final BitSet FOLLOW_ruleChangeReference_in_ruleEReferenceOperation3135 = new BitSet(new long[]{0x0000000000004000L});
+    public static final BitSet FOLLOW_ruleAddReference_in_ruleEReferenceOperation3162 = new BitSet(new long[]{0x0000000000004000L});
+    public static final BitSet FOLLOW_ruleDeleteReference_in_ruleEReferenceOperation3189 = new BitSet(new long[]{0x0000000000004000L});
+    public static final BitSet FOLLOW_14_in_ruleEReferenceOperation3203 = new BitSet(new long[]{0x0000000002008000L});
+    public static final BitSet FOLLOW_rulesetter_in_ruleEReferenceOperation3224 = new BitSet(new long[]{0x0000000002008000L});
+    public static final BitSet FOLLOW_15_in_ruleEReferenceOperation3237 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleComplexOperator_in_ruleEReferenceOperation3266 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleChangeReference_in_entryRuleChangeReference3303 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleChangeReference3313 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_35_in_ruleChangeReference3356 = new BitSet(new long[]{0x0000000000020000L});
+    public static final BitSet FOLLOW_17_in_ruleChangeReference3381 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleChangeReference3405 = new BitSet(new long[]{0x0000000000040000L});
+    public static final BitSet FOLLOW_18_in_ruleChangeReference3417 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleAddReference_in_entryRuleAddReference3453 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleAddReference3463 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_36_in_ruleAddReference3506 = new BitSet(new long[]{0x0000000000020000L});
+    public static final BitSet FOLLOW_17_in_ruleAddReference3531 = new BitSet(new long[]{0x0000000000000030L});
+    public static final BitSet FOLLOW_RULE_STRING_in_ruleAddReference3549 = new BitSet(new long[]{0x0000000000040000L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleAddReference3584 = new BitSet(new long[]{0x0000000000040000L});
+    public static final BitSet FOLLOW_18_in_ruleAddReference3597 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleDeleteReference_in_entryRuleDeleteReference3633 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleDeleteReference3643 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_37_in_ruleDeleteReference3686 = new BitSet(new long[]{0x0000000000020000L});
+    public static final BitSet FOLLOW_17_in_ruleDeleteReference3711 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleDeleteReference3735 = new BitSet(new long[]{0x0000000000040000L});
+    public static final BitSet FOLLOW_18_in_ruleDeleteReference3747 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleComplexOperatorDef_in_entryRuleComplexOperatorDef3783 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleComplexOperatorDef3793 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_38_in_ruleComplexOperatorDef3830 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleComplexOperatorDef3847 = new BitSet(new long[]{0x0000000000020000L});
+    public static final BitSet FOLLOW_17_in_ruleComplexOperatorDef3865 = new BitSet(new long[]{0x0000000008040010L});
+    public static final BitSet FOLLOW_ruleParameter_in_ruleComplexOperatorDef3886 = new BitSet(new long[]{0x0000000008040000L});
+    public static final BitSet FOLLOW_27_in_ruleComplexOperatorDef3900 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_ruleParameter_in_ruleComplexOperatorDef3921 = new BitSet(new long[]{0x0000000008040000L});
+    public static final BitSet FOLLOW_18_in_ruleComplexOperatorDef3935 = new BitSet(new long[]{0x0000000000004000L});
+    public static final BitSet FOLLOW_14_in_ruleComplexOperatorDef3948 = new BitSet(new long[]{0x0000003FC3F99010L});
+    public static final BitSet FOLLOW_ruleEPackageOperation_in_ruleComplexOperatorDef3970 = new BitSet(new long[]{0x0000003FC3F99010L});
+    public static final BitSet FOLLOW_ruleEClassOperation_in_ruleComplexOperatorDef3997 = new BitSet(new long[]{0x0000003FC3F99010L});
+    public static final BitSet FOLLOW_ruleEAttributeOperation_in_ruleComplexOperatorDef4024 = new BitSet(new long[]{0x0000003FC3F99010L});
+    public static final BitSet FOLLOW_ruleEReferenceOperation_in_ruleComplexOperatorDef4051 = new BitSet(new long[]{0x0000003FC3F99010L});
+    public static final BitSet FOLLOW_15_in_ruleComplexOperatorDef4065 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleComplexOperator_in_entryRuleComplexOperator4101 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleComplexOperator4111 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleComplexOperator4160 = new BitSet(new long[]{0x0000000000020000L});
+    public static final BitSet FOLLOW_17_in_ruleComplexOperator4172 = new BitSet(new long[]{0x0000000008040030L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleComplexOperator4197 = new BitSet(new long[]{0x0000000008040000L});
+    public static final BitSet FOLLOW_RULE_STRING_in_ruleComplexOperator4220 = new BitSet(new long[]{0x0000000008040000L});
+    public static final BitSet FOLLOW_27_in_ruleComplexOperator4240 = new BitSet(new long[]{0x0000000000000030L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleComplexOperator4265 = new BitSet(new long[]{0x0000000008040000L});
+    public static final BitSet FOLLOW_RULE_STRING_in_ruleComplexOperator4288 = new BitSet(new long[]{0x0000000008040000L});
+    public static final BitSet FOLLOW_18_in_ruleComplexOperator4308 = new BitSet(new long[]{0x0000000010000000L});
+    public static final BitSet FOLLOW_28_in_ruleComplexOperator4320 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleParameter_in_entryRuleParameter4356 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleParameter4366 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleClass_in_ruleParameter4417 = new BitSet(new long[]{0x0000008000000000L});
+    public static final BitSet FOLLOW_39_in_ruleParameter4428 = new BitSet(new long[]{0x0000000000200000L});
+    public static final BitSet FOLLOW_21_in_ruleParameter4440 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleReference_in_ruleParameter4473 = new BitSet(new long[]{0x0000008000000000L});
+    public static final BitSet FOLLOW_39_in_ruleParameter4484 = new BitSet(new long[]{0x0000000400000000L});
+    public static final BitSet FOLLOW_34_in_ruleParameter4496 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rulePackage_in_ruleParameter4529 = new BitSet(new long[]{0x0000008000000000L});
+    public static final BitSet FOLLOW_39_in_ruleParameter4540 = new BitSet(new long[]{0x0000000000001000L});
+    public static final BitSet FOLLOW_12_in_ruleParameter4552 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleAttribute_in_ruleParameter4585 = new BitSet(new long[]{0x0000008000000000L});
+    public static final BitSet FOLLOW_39_in_ruleParameter4596 = new BitSet(new long[]{0x0000000040000000L});
+    public static final BitSet FOLLOW_30_in_ruleParameter4608 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleBooleanDef_in_ruleParameter4641 = new BitSet(new long[]{0x0000008000000000L});
+    public static final BitSet FOLLOW_39_in_ruleParameter4652 = new BitSet(new long[]{0x0000010000000000L});
+    public static final BitSet FOLLOW_40_in_ruleParameter4664 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleIntDef_in_ruleParameter4697 = new BitSet(new long[]{0x0000008000000000L});
+    public static final BitSet FOLLOW_39_in_ruleParameter4708 = new BitSet(new long[]{0x0000020000000000L});
+    public static final BitSet FOLLOW_41_in_ruleParameter4720 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleStringDef_in_ruleParameter4753 = new BitSet(new long[]{0x0000008000000000L});
+    public static final BitSet FOLLOW_39_in_ruleParameter4764 = new BitSet(new long[]{0x0000040000000000L});
+    public static final BitSet FOLLOW_42_in_ruleParameter4776 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleAttribute_in_entryRuleAttribute4813 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleAttribute4823 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleAttribute4877 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleReference_in_entryRuleReference4918 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleReference4928 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleReference4982 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleBooleanDef_in_entryRuleBooleanDef5023 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleBooleanDef5033 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleBooleanDef5087 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleStringDef_in_entryRuleStringDef5128 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleStringDef5138 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleStringDef5179 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleIntDef_in_entryRuleIntDef5219 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleIntDef5229 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleIntDef5283 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleEAttributeOperation_in_synpred14_InternalEDeltaLang1237 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleEReferenceOperation_in_synpred15_InternalEDeltaLang1264 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleEPackageOperation_in_synpred37_InternalEDeltaLang3939 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleEAttributeOperation_in_synpred39_InternalEDeltaLang3993 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleEReferenceOperation_in_synpred40_InternalEDeltaLang4020 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleEPackageOperation_in_synpred37_InternalEDeltaLang3970 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleEAttributeOperation_in_synpred39_InternalEDeltaLang4024 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleEReferenceOperation_in_synpred40_InternalEDeltaLang4051 = new BitSet(new long[]{0x0000000000000002L});
 
 }

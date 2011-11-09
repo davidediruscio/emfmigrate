@@ -22,7 +22,6 @@ import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
 import org.eclipse.emf.ecore.util.EDataTypeEList;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
@@ -36,10 +35,11 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * <p>
  * The following features are implemented:
  * <ul>
+ *   <li>{@link it.univaq.coevolution.emfmigrate.emig.impl.MigrationProgramImpl#getName <em>Name</em>}</li>
  *   <li>{@link it.univaq.coevolution.emfmigrate.emig.impl.MigrationProgramImpl#getLibs <em>Libs</em>}</li>
  *   <li>{@link it.univaq.coevolution.emfmigrate.emig.impl.MigrationProgramImpl#getMigr <em>Migr</em>}</li>
  *   <li>{@link it.univaq.coevolution.emfmigrate.emig.impl.MigrationProgramImpl#getTypeArt <em>Type Art</em>}</li>
- *   <li>{@link it.univaq.coevolution.emfmigrate.emig.impl.MigrationProgramImpl#getName <em>Name</em>}</li>
+ *   <li>{@link it.univaq.coevolution.emfmigrate.emig.impl.MigrationProgramImpl#getArtifact <em>Artifact</em>}</li>
  *   <li>{@link it.univaq.coevolution.emfmigrate.emig.impl.MigrationProgramImpl#getTransformationPackage <em>Transformation Package</em>}</li>
  *   <li>{@link it.univaq.coevolution.emfmigrate.emig.impl.MigrationProgramImpl#getDelta <em>Delta</em>}</li>
  *   <li>{@link it.univaq.coevolution.emfmigrate.emig.impl.MigrationProgramImpl#getRules <em>Rules</em>}</li>
@@ -48,8 +48,28 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *
  * @generated
  */
-public class MigrationProgramImpl extends MinimalEObjectImpl.Container implements MigrationProgram
+public class MigrationProgramImpl extends LocatedElementImpl implements MigrationProgram
 {
+  /**
+   * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getName()
+   * @generated
+   * @ordered
+   */
+  protected static final String NAME_EDEFAULT = null;
+
+  /**
+   * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getName()
+   * @generated
+   * @ordered
+   */
+  protected String name = NAME_EDEFAULT;
+
   /**
    * The cached value of the '{@link #getLibs() <em>Libs</em>}' attribute list.
    * <!-- begin-user-doc -->
@@ -91,24 +111,24 @@ public class MigrationProgramImpl extends MinimalEObjectImpl.Container implement
   protected Artifact typeArt;
 
   /**
-   * The default value of the '{@link #getName() <em>Name</em>}' attribute.
+   * The default value of the '{@link #getArtifact() <em>Artifact</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getName()
+   * @see #getArtifact()
    * @generated
    * @ordered
    */
-  protected static final String NAME_EDEFAULT = null;
+  protected static final String ARTIFACT_EDEFAULT = null;
 
   /**
-   * The cached value of the '{@link #getName() <em>Name</em>}' attribute.
+   * The cached value of the '{@link #getArtifact() <em>Artifact</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getName()
+   * @see #getArtifact()
    * @generated
    * @ordered
    */
-  protected String name = NAME_EDEFAULT;
+  protected String artifact = ARTIFACT_EDEFAULT;
 
   /**
    * The cached value of the '{@link #getTransformationPackage() <em>Transformation Package</em>}' reference list.
@@ -169,6 +189,29 @@ public class MigrationProgramImpl extends MinimalEObjectImpl.Container implement
   protected EClass eStaticClass()
   {
     return EmigPackage.Literals.MIGRATION_PROGRAM;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public String getName()
+  {
+    return name;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void setName(String newName)
+  {
+    String oldName = name;
+    name = newName;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, EmigPackage.MIGRATION_PROGRAM__NAME, oldName, name));
   }
 
   /**
@@ -261,9 +304,9 @@ public class MigrationProgramImpl extends MinimalEObjectImpl.Container implement
    * <!-- end-user-doc -->
    * @generated
    */
-  public String getName()
+  public String getArtifact()
   {
-    return name;
+    return artifact;
   }
 
   /**
@@ -271,12 +314,12 @@ public class MigrationProgramImpl extends MinimalEObjectImpl.Container implement
    * <!-- end-user-doc -->
    * @generated
    */
-  public void setName(String newName)
+  public void setArtifact(String newArtifact)
   {
-    String oldName = name;
-    name = newName;
+    String oldArtifact = artifact;
+    artifact = newArtifact;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, EmigPackage.MIGRATION_PROGRAM__NAME, oldName, name));
+      eNotify(new ENotificationImpl(this, Notification.SET, EmigPackage.MIGRATION_PROGRAM__ARTIFACT, oldArtifact, artifact));
   }
 
   /**
@@ -358,14 +401,16 @@ public class MigrationProgramImpl extends MinimalEObjectImpl.Container implement
   {
     switch (featureID)
     {
+      case EmigPackage.MIGRATION_PROGRAM__NAME:
+        return getName();
       case EmigPackage.MIGRATION_PROGRAM__LIBS:
         return getLibs();
       case EmigPackage.MIGRATION_PROGRAM__MIGR:
         return getMigr();
       case EmigPackage.MIGRATION_PROGRAM__TYPE_ART:
         return getTypeArt();
-      case EmigPackage.MIGRATION_PROGRAM__NAME:
-        return getName();
+      case EmigPackage.MIGRATION_PROGRAM__ARTIFACT:
+        return getArtifact();
       case EmigPackage.MIGRATION_PROGRAM__TRANSFORMATION_PACKAGE:
         return getTransformationPackage();
       case EmigPackage.MIGRATION_PROGRAM__DELTA:
@@ -387,6 +432,9 @@ public class MigrationProgramImpl extends MinimalEObjectImpl.Container implement
   {
     switch (featureID)
     {
+      case EmigPackage.MIGRATION_PROGRAM__NAME:
+        setName((String)newValue);
+        return;
       case EmigPackage.MIGRATION_PROGRAM__LIBS:
         getLibs().clear();
         getLibs().addAll((Collection<? extends String>)newValue);
@@ -397,8 +445,8 @@ public class MigrationProgramImpl extends MinimalEObjectImpl.Container implement
       case EmigPackage.MIGRATION_PROGRAM__TYPE_ART:
         setTypeArt((Artifact)newValue);
         return;
-      case EmigPackage.MIGRATION_PROGRAM__NAME:
-        setName((String)newValue);
+      case EmigPackage.MIGRATION_PROGRAM__ARTIFACT:
+        setArtifact((String)newValue);
         return;
       case EmigPackage.MIGRATION_PROGRAM__TRANSFORMATION_PACKAGE:
         getTransformationPackage().clear();
@@ -425,6 +473,9 @@ public class MigrationProgramImpl extends MinimalEObjectImpl.Container implement
   {
     switch (featureID)
     {
+      case EmigPackage.MIGRATION_PROGRAM__NAME:
+        setName(NAME_EDEFAULT);
+        return;
       case EmigPackage.MIGRATION_PROGRAM__LIBS:
         getLibs().clear();
         return;
@@ -434,8 +485,8 @@ public class MigrationProgramImpl extends MinimalEObjectImpl.Container implement
       case EmigPackage.MIGRATION_PROGRAM__TYPE_ART:
         setTypeArt((Artifact)null);
         return;
-      case EmigPackage.MIGRATION_PROGRAM__NAME:
-        setName(NAME_EDEFAULT);
+      case EmigPackage.MIGRATION_PROGRAM__ARTIFACT:
+        setArtifact(ARTIFACT_EDEFAULT);
         return;
       case EmigPackage.MIGRATION_PROGRAM__TRANSFORMATION_PACKAGE:
         getTransformationPackage().clear();
@@ -460,14 +511,16 @@ public class MigrationProgramImpl extends MinimalEObjectImpl.Container implement
   {
     switch (featureID)
     {
+      case EmigPackage.MIGRATION_PROGRAM__NAME:
+        return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
       case EmigPackage.MIGRATION_PROGRAM__LIBS:
         return libs != null && !libs.isEmpty();
       case EmigPackage.MIGRATION_PROGRAM__MIGR:
         return MIGR_EDEFAULT == null ? migr != null : !MIGR_EDEFAULT.equals(migr);
       case EmigPackage.MIGRATION_PROGRAM__TYPE_ART:
         return typeArt != null;
-      case EmigPackage.MIGRATION_PROGRAM__NAME:
-        return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+      case EmigPackage.MIGRATION_PROGRAM__ARTIFACT:
+        return ARTIFACT_EDEFAULT == null ? artifact != null : !ARTIFACT_EDEFAULT.equals(artifact);
       case EmigPackage.MIGRATION_PROGRAM__TRANSFORMATION_PACKAGE:
         return transformationPackage != null && !transformationPackage.isEmpty();
       case EmigPackage.MIGRATION_PROGRAM__DELTA:
@@ -489,12 +542,14 @@ public class MigrationProgramImpl extends MinimalEObjectImpl.Container implement
     if (eIsProxy()) return super.toString();
 
     StringBuffer result = new StringBuffer(super.toString());
-    result.append(" (libs: ");
+    result.append(" (name: ");
+    result.append(name);
+    result.append(", libs: ");
     result.append(libs);
     result.append(", migr: ");
     result.append(migr);
-    result.append(", name: ");
-    result.append(name);
+    result.append(", artifact: ");
+    result.append(artifact);
     result.append(", delta: ");
     result.append(delta);
     result.append(')');

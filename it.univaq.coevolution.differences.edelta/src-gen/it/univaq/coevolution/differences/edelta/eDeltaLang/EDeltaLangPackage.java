@@ -458,13 +458,22 @@ public interface EDeltaLangPackage extends EPackage
   int SETTER__METAFEATURE = 0;
 
   /**
+   * The feature id for the '<em><b>Operator</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int SETTER__OPERATOR = 1;
+
+  /**
    * The feature id for the '<em><b>Value</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int SETTER__VALUE = 1;
+  int SETTER__VALUE = 2;
 
   /**
    * The feature id for the '<em><b>Card</b></em>' attribute.
@@ -473,7 +482,7 @@ public interface EDeltaLangPackage extends EPackage
    * @generated
    * @ordered
    */
-  int SETTER__CARD = 2;
+  int SETTER__CARD = 3;
 
   /**
    * The feature id for the '<em><b>Value Ref</b></em>' reference list.
@@ -482,7 +491,7 @@ public interface EDeltaLangPackage extends EPackage
    * @generated
    * @ordered
    */
-  int SETTER__VALUE_REF = 3;
+  int SETTER__VALUE_REF = 4;
 
   /**
    * The number of structural features of the '<em>setter</em>' class.
@@ -491,7 +500,7 @@ public interface EDeltaLangPackage extends EPackage
    * @generated
    * @ordered
    */
-  int SETTER_FEATURE_COUNT = 4;
+  int SETTER_FEATURE_COUNT = 5;
 
   /**
    * The meta object id for the '{@link it.univaq.coevolution.differences.edelta.eDeltaLang.impl.EAttributeOperationImpl <em>EAttribute Operation</em>}' class.
@@ -2210,6 +2219,17 @@ public interface EDeltaLangPackage extends EPackage
   EReference getsetter_Metafeature();
 
   /**
+   * Returns the meta object for the attribute '{@link it.univaq.coevolution.differences.edelta.eDeltaLang.setter#getOperator <em>Operator</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Operator</em>'.
+   * @see it.univaq.coevolution.differences.edelta.eDeltaLang.setter#getOperator()
+   * @see #getsetter()
+   * @generated
+   */
+  EAttribute getsetter_Operator();
+
+  /**
    * Returns the meta object for the attribute '{@link it.univaq.coevolution.differences.edelta.eDeltaLang.setter#getValue <em>Value</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -3120,6 +3140,14 @@ public interface EDeltaLangPackage extends EPackage
      * @generated
      */
     EReference SETTER__METAFEATURE = eINSTANCE.getsetter_Metafeature();
+
+    /**
+     * The meta object literal for the '<em><b>Operator</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute SETTER__OPERATOR = eINSTANCE.getsetter_Operator();
 
     /**
      * The meta object literal for the '<em><b>Value</b></em>' attribute feature.

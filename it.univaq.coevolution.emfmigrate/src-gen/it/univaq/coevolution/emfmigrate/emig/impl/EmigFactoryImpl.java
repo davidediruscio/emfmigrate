@@ -16,6 +16,7 @@ import it.univaq.coevolution.emfmigrate.emig.EReferenceOpDef;
 import it.univaq.coevolution.emfmigrate.emig.EmigFactory;
 import it.univaq.coevolution.emfmigrate.emig.EmigPackage;
 import it.univaq.coevolution.emfmigrate.emig.FilterMigrator;
+import it.univaq.coevolution.emfmigrate.emig.LocatedElement;
 import it.univaq.coevolution.emfmigrate.emig.MigrationLibrary;
 import it.univaq.coevolution.emfmigrate.emig.MigrationProgram;
 import it.univaq.coevolution.emfmigrate.emig.Migrator;
@@ -91,6 +92,7 @@ public class EmigFactoryImpl extends EFactoryImpl implements EmigFactory
     {
       case EmigPackage.MY_MODEL: return createMyModel();
       case EmigPackage.MIGRATION_LIBRARY: return createMigrationLibrary();
+      case EmigPackage.LOCATED_ELEMENT: return createLocatedElement();
       case EmigPackage.MIGRATION_PROGRAM: return createMigrationProgram();
       case EmigPackage.ARTIFACT: return createArtifact();
       case EmigPackage.RULE: return createRule();
@@ -137,6 +139,17 @@ public class EmigFactoryImpl extends EFactoryImpl implements EmigFactory
   {
     MigrationLibraryImpl migrationLibrary = new MigrationLibraryImpl();
     return migrationLibrary;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public LocatedElement createLocatedElement()
+  {
+    LocatedElementImpl locatedElement = new LocatedElementImpl();
+    return locatedElement;
   }
 
   /**

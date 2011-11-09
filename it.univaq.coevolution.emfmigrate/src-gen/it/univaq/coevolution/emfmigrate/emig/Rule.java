@@ -7,8 +7,6 @@ package it.univaq.coevolution.emfmigrate.emig;
 
 import org.eclipse.emf.common.util.EList;
 
-import org.eclipse.emf.ecore.EObject;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Rule</b></em>'.
@@ -27,7 +25,7 @@ import org.eclipse.emf.ecore.EObject;
  * @model
  * @generated
  */
-public interface Rule extends EObject
+public interface Rule extends LocatedElement
 {
   /**
    * Returns the value of the '<em><b>Name</b></em>' attribute.

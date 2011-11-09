@@ -125,8 +125,8 @@ public class EDeltaLangParser extends AbstractContentAssistParser {
 					put(grammarAccess.getEClassOperationAccess().getAttributesAssignment_1_1_0_1_1(), "rule__EClassOperation__AttributesAssignment_1_1_0_1_1");
 					put(grammarAccess.getEClassOperationAccess().getReferencesAssignment_1_1_0_1_2(), "rule__EClassOperation__ReferencesAssignment_1_1_0_1_2");
 					put(grammarAccess.getEClassOperationAccess().getComplexAssignment_1_1_1(), "rule__EClassOperation__ComplexAssignment_1_1_1");
-					put(grammarAccess.getChangeClassAccess().getOpAssignment_0(), "rule__ChangeClass__OpAssignment_0");
-					put(grammarAccess.getChangeClassAccess().getRefAssignment_1(), "rule__ChangeClass__RefAssignment_1");
+					put(grammarAccess.getChangeClassAccess().getOpAssignment_1(), "rule__ChangeClass__OpAssignment_1");
+					put(grammarAccess.getChangeClassAccess().getRefAssignment_2(), "rule__ChangeClass__RefAssignment_2");
 					put(grammarAccess.getAddClassAccess().getOpAssignment_0(), "rule__AddClass__OpAssignment_0");
 					put(grammarAccess.getAddClassAccess().getNewAssignment_1_0(), "rule__AddClass__NewAssignment_1_0");
 					put(grammarAccess.getAddClassAccess().getRefAssignment_1_1(), "rule__AddClass__RefAssignment_1_1");
@@ -134,6 +134,7 @@ public class EDeltaLangParser extends AbstractContentAssistParser {
 					put(grammarAccess.getDeleteClassAccess().getRefAssignment_1(), "rule__DeleteClass__RefAssignment_1");
 					put(grammarAccess.getClassAccess().getNameAssignment_1(), "rule__Class__NameAssignment_1");
 					put(grammarAccess.getSetterAccess().getMetafeatureAssignment_1(), "rule__Setter__MetafeatureAssignment_1");
+					put(grammarAccess.getSetterAccess().getOperatorAssignment_2(), "rule__Setter__OperatorAssignment_2");
 					put(grammarAccess.getSetterAccess().getValueAssignment_3_0_0(), "rule__Setter__ValueAssignment_3_0_0");
 					put(grammarAccess.getSetterAccess().getCardAssignment_3_1(), "rule__Setter__CardAssignment_3_1");
 					put(grammarAccess.getSetterAccess().getValueRefAssignment_3_2(), "rule__Setter__ValueRefAssignment_3_2");

@@ -19,6 +19,7 @@ import org.eclipse.emf.ecore.EClass;
  * <ul>
  *   <li>{@link it.univaq.coevolution.emfmigrate.emig.MigratorDX#getElementDX <em>Element DX</em>}</li>
  *   <li>{@link it.univaq.coevolution.emfmigrate.emig.MigratorDX#getFilterDX <em>Filter DX</em>}</li>
+ *   <li>{@link it.univaq.coevolution.emfmigrate.emig.MigratorDX#getRewritingRule <em>Rewriting Rule</em>}</li>
  * </ul>
  * </p>
  *
@@ -69,5 +70,33 @@ public interface MigratorDX extends Migrator
    * @generated
    */
   EList<FilterMigrator> getFilterDX();
+
+  /**
+   * Returns the value of the '<em><b>Rewriting Rule</b></em>' container reference.
+   * It is bidirectional and its opposite is '{@link it.univaq.coevolution.emfmigrate.emig.RewritingRule#getMigratorDX <em>Migrator DX</em>}'.
+   * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of the '<em>Rewriting Rule</em>' container reference isn't clear,
+   * there really should be more of a description here...
+   * </p>
+   * <!-- end-user-doc -->
+   * @return the value of the '<em>Rewriting Rule</em>' container reference.
+   * @see #setRewritingRule(RewritingRule)
+   * @see it.univaq.coevolution.emfmigrate.emig.EmigPackage#getMigratorDX_RewritingRule()
+   * @see it.univaq.coevolution.emfmigrate.emig.RewritingRule#getMigratorDX
+   * @model opposite="migratorDX" transient="false"
+   * @generated
+   */
+  RewritingRule getRewritingRule();
+
+  /**
+   * Sets the value of the '{@link it.univaq.coevolution.emfmigrate.emig.MigratorDX#getRewritingRule <em>Rewriting Rule</em>}' container reference.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @param value the new value of the '<em>Rewriting Rule</em>' container reference.
+   * @see #getRewritingRule()
+   * @generated
+   */
+  void setRewritingRule(RewritingRule value);
 
 } // MigratorDX
