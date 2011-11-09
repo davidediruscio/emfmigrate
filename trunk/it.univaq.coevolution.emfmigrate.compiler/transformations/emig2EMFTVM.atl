@@ -85,6 +85,16 @@ helper context OclAny def: localVar(isSX: Boolean): EMFTVM!LocalVariable =
 				endif
 		endif;
 
+helper context EMig!MigratorSX def: isRefined: Boolean =
+	self.rewritingRule.migratorDX -> exists(d | self.name = d.name);
+
+helper context EMig!MigratorSX def: replacedBy: Sequence(EMig!MigratorDX) =
+	if self.isRefined then
+		Sequence{}
+	else
+		self.rewritingRule.migratorDX
+	endif;
+
 -- ======================================================================
 -- helpers end
 -- ======================================================================
@@ -160,15 +170,17 @@ rule Rule {
 					'ref2')) -> union(s.filter.setters -> collect(m | m.par -> collect(p
 					| thisModule.resolveTemp(p, 'lv2'))) -> flatten()),
 			nested <- Sequence{thisModule.resolveTemp(s.filter, 'initRef2')} -> union(s.
-					rewritingRules -> collect(r | r.migratorDX -> collect(m | thisModule.
-					resolveTemp(m, 'cb'))) -> flatten()),
-			code <- Sequence{invoke_refinit2,
-						invoke_allcbs},
+					filter.setters -> collect(e | e.par -> collect(p | thisModule.
+					resolveTemp(p, 'initLv2'))) -> flatten()) -> union(s.rewritingRules
+					-> collect(r | r.migratorDX -> collect(m | thisModule.resolveTemp(m,
+					'cb'))) -> flatten()) -> union(s.rewritingRules -> collect(r | r.
+					migratorSX -> reject(m | m.isRefined)) -> flatten() -> collect(e |
+					thisModule.resolveTemp(e, 'delete_cb'))),
+			code <- Sequence{invoke_allcbs},
 			lineNumbers <- Sequence{aln}
 		),
 		aln: EMFTVM!LineNumber (
-			instructions <- Sequence{invoke_refinit2,
-						invoke_allcbs},
+			instructions <- Sequence{invoke_allcbs},
 			startLine <- s.line,
 			endLine <- s.endline,
 			startChar <- s.offset,
@@ -180,16 +192,19 @@ rule Rule {
 					-> prepend(s.filter) -> collect(n | thisModule.resolveTemp(n, 'lv1'))
 					-> append(thisModule.resolveTemp(s.filter, 'ref')) -> union(s.filter.
 					setters -> collect(e | e.par) -> flatten()),
-			code <- Sequence{invoke_refinit,
-							invoke_filter} -> union(s.rewritingRules -> collect(r | r.
-									migratorSX -> collect(m | thisModule.resolveTemp(m,
-									'and_'))) -> flatten()),
+			code <- Sequence{invoke_refinit} -> union(s.filter.setters -> collect(e | e.
+					par -> collect(p | thisModule.resolveTemp(p, 'invoke_initLv1'))) ->
+					flatten()) -> append(invoke_filter) -> union(s.rewritingRules ->
+					collect(r | r.migratorSX -> collect(m | thisModule.resolveTemp(m,
+					'and_'))) -> flatten()),
 			lineNumbers <- Sequence{ln},
 			nested <- Sequence{thisModule.resolveTemp(s.filter, 'cb'),
-							thisModule.resolveTemp(s.filter, 'initRef')} -> union(s.
-									rewritingRules -> collect(r | r.migratorSX ->
-									collect(m | thisModule.resolveTemp(m, 'cb'))) ->
-									flatten())
+								thisModule.resolveTemp(s.filter, 'initRef')} -> union(s.
+										filter.setters -> collect(e | e.par -> collect(p
+										| thisModule.resolveTemp(p, 'initLv1'))) ->
+										flatten()) -> union(s.rewritingRules -> collect(r
+										| r.migratorSX -> collect(m | thisModule.
+										resolveTemp(m, 'cb'))) -> flatten())
 		),
 		ln: EMFTVM!LineNumber (
 			instructions <- Sequence{invoke_refinit,
@@ -204,9 +219,6 @@ rule Rule {
 		),
 		invoke_filter: EMFTVM!InvokeCb (
 			codeBlock <- thisModule.resolveTemp(s.filter, 'cb')
-		),
-		invoke_refinit2: EMFTVM!InvokeCb (
-			codeBlock <- thisModule.resolveTemp(s.filter, 'initRef2')
 		)
 }
 
@@ -249,6 +261,60 @@ rule MigratorSX {
 			codeBlock <- cb
 		)
 }
+
+rule MigratorSXDeleted extends MigratorSX {
+	from
+		s: EMig!MigratorSX in IN (
+			not s.isRefined
+		)
+	to
+		t: EMFTVM!InputRuleElement,
+		lv2: EMFTVM!LocalVariable,
+		delete_cb: EMFTVM!CodeBlock (
+			code <- Sequence{load_lv2,
+						dup_sx1,
+						invoke_resolve,
+						dup_x1_sx1,
+						invoke_remap,
+						pop_dx,
+						delete_lv2},
+			lineNumbers <- Sequence{delete_ln}
+		),
+		delete_ln: EMFTVM!LineNumber (
+			instructions <- Sequence{load_lv2,
+						dup_sx1,
+						invoke_resolve,
+						dup_x1_sx1,
+						invoke_remap,
+						pop_dx,
+						delete_lv2},
+			startLine <- s.line,
+			endLine <- s.endline,
+			startChar <- s.offset,
+			endChar <- s.endoffset
+		),
+		load_lv2: EMFTVM!Load (
+			localVariable <- lv2
+		),
+		--[sx]
+		dup_sx1: EMFTVM!Dup --[sx,sx]
+		,
+		invoke_resolve: EMFTVM!Invoke (
+			opname <- 'resolve'
+		),
+		dup_x1_sx1: EMFTVM!DupX1 --[sx,dx,sx]
+		,
+		invoke_remap: EMFTVM!Invoke (
+			opname <- 'remap',
+			argcount <- 1
+		),
+		--[sx,dx]
+		--[sx,dx]
+		pop_dx: EMFTVM!Pop --[sx]
+		,
+		delete_lv2: EMFTVM!Delete --[]
+	
+		 }
 
 rule FilterMigratorSX {
 	from
@@ -353,15 +419,28 @@ rule MigratorDX {
 	to
 		t: EMFTVM!OutputRuleElement (
 			name <- s.name,
-			type <- s.elementSX.qName,
+			type <- s.elementDX.qName,
 			typeModel <- s.typeModel,
 			models <- Sequence{'IN'},
-			"mapsTo" <- s.rewritingRule.migratorSX -> first()
+			"mapsTo" <- s.rewritingRule.migratorSX
 		),
 		lv2: EMFTVM!LocalVariable (
 			name <- s.name,
-			type <- s.elementSX.qName,
+			type <- s.elementDX.qName,
 			typeModel <- s.typeModel
+		),
+		cb: EMFTVM!CodeBlock (
+			nested <- s.filterDX,
+			code <- Sequence{invoke_allCbs},
+			lineNumbers <- Sequence{ln}
+		),
+		invoke_allCbs: EMFTVM!InvokeAllCbs,
+		ln: EMFTVM!LineNumber (
+			startLine <- s.line,
+			endLine <- s.endline,
+			startChar <- s.offset,
+			endChar <- s.endoffset,
+			instructions <- Sequence{invoke_allCbs}
 		)
 }
 
@@ -396,6 +475,7 @@ rule FilterMigratorDX {
 	to
 		t: EMFTVM!CodeBlock (
 			code <- Sequence{invokecb_value,
+						invoke_resolve,
 						load_migrDXObj,
 						setFeature},
 			nested <- Sequence{s.value},
@@ -403,6 +483,7 @@ rule FilterMigratorDX {
 		),
 		ln: EMFTVM!LineNumber (
 			instructions <- Sequence{invokecb_value,
+						invoke_resolve,
 						load_migrDXObj,
 						setFeature},
 			startLine <- s.line,
@@ -413,12 +494,19 @@ rule FilterMigratorDX {
 		invokecb_value: EMFTVM!InvokeCb (
 			codeBlock <- s.value
 		),
+		--[value]
+		invoke_resolve: EMFTVM!Invoke (
+			opname <- 'resolve'
+		),
+		--[rvalue]
 		load_migrDXObj: EMFTVM!Load (
 			localVariable <- s.refImmediateComposite().localVar(false)
 		),
+		--[rvalue,obj]
 		setFeature: EMFTVM!"Set" (
 			fieldname <- s.featureSX.obj.name
-		)
+		) --[]
+	
 }
 
 rule DotNavigationObjDXTarget {
@@ -525,10 +613,7 @@ abstract rule OpDef {
 			localVariable <- ref
 		),
 		--[]
-		ref2: EMFTVM!LocalVariable (
-			startInstruction <- thisModule.resolveTemp(s.refImmediateComposite(),
-					'invoke_refinit2')
-		),
+		ref2: EMFTVM!LocalVariable,
 		initRef2: EMFTVM!CodeBlock (
 			code <- Sequence{load2,
 						get2,
@@ -769,76 +854,315 @@ rule Parameter {
 		--match variable
 		lv2: EMFTVM!LocalVariable (
 			name <- s.name
-		), --applier variable
-		initLv1:EMFTVM!CodeBlock (
-			code <- Sequence{},
+		),
+		--applier variable
+		invoke_initLv1: EMFTVM!InvokeCb (
+			codeBlock <- initLv1
+		),
+		initLv1: EMFTVM!CodeBlock (
+			code <- Sequence{lv1_load,
+						lv1_invoke,
+						lv1_get,
+						lv1_it,
+						lv1_dup,
+						lv1_get_mf,
+						lv1_get_name,
+						lv1_push,
+						lv1_invoke_eq,
+						lv1_if_eq,
+						lv1_pop_s,
+						lv1_endit,
+						lv1_goto,
+						lv1_dupS,
+						lv1_get_vr,
+						lv1_dup_valueRef,
+						lv1_push_null,
+						lv1_invoke_eq2,
+						lv1_if_null,
+						lv1_store,
+						lv1_pop_s2,
+						lv1_goto2,
+						lv1_pop_s3,
+						lv1_get_value,
+						lv1_store2,
+						lv1_pop_it},
 			lineNumbers <- Sequence{lnLv1}
 		),
-		lnLv1:EMFTVM!LineNumber (
+		lnLv1: EMFTVM!LineNumber (
 			startLine <- s.line,
 			endLine <- s.endline,
 			startChar <- s.offset,
 			endChar <- s.endoffset,
-			instructions <- Sequence{}
+			instructions <- Sequence{lv1_load,
+						lv1_invoke,
+						lv1_get,
+						lv1_it,
+						lv1_dup,
+						lv1_get_mf,
+						lv1_get_name,
+						lv1_push,
+						lv1_invoke_eq,
+						lv1_if_eq,
+						lv1_pop_s,
+						lv1_endit,
+						lv1_goto,
+						lv1_dupS,
+						lv1_get_vr,
+						lv1_dup_valueRef,
+						lv1_push_null,
+						lv1_invoke_eq2,
+						lv1_if_null,
+						lv1_store,
+						lv1_pop_s2,
+						lv1_goto2,
+						lv1_pop_s3,
+						lv1_get_value,
+						lv1_store2,
+						lv1_pop_it}
 		),
 		lv1_load: EMFTVM!Load (
-			localVariable <-s.refImmediateComposite().refImmediateComposite().var.localVar(true)
+			localVariable <- s.refImmediateComposite().refImmediateComposite().var.
+					localVar(true)
 		),
-		--[var]
 		lv1_invoke: EMFTVM!Invoke (
 			opname <- 'refImmediateComposite',
 			argcount <- 0
 		),
-		--[EClassOperation element]
 		lv1_get: EMFTVM!Get (
 			fieldname <- 'setters'
 		),
-		--[Sequence{setters}]
 		lv1_it: EMFTVM!Iterate (
 			target <- lv1_endit
 		),
-		lv1_dup:EMFTVM!Dup,
-		--[it,s,s]
+		lv1_dup: EMFTVM!Dup,
 		lv1_get_mf: EMFTVM!Get (
 			fieldname <- 'metafeature'
 		),
-		--[it,s,mf]
 		lv1_get_name: EMFTVM!Get (
 			fieldname <- 'name'
 		),
-		--[it,s,name]
 		lv1_push: EMFTVM!Push (
 			stringValue <- s.refImmediateComposite().metafeature.name
 		),
-		--[it,s,name,mf.name]
 		lv1_invoke_eq: EMFTVM!Invoke (
 			opname <- '=',
 			argcount <- 1
 		),
-		--[it,s,boolean]
 		lv1_if_eq: EMFTVM!If (
 			target <- lv1_goto
 		),
-		--[it,s]
-		lv1_pop_s:EMFTVM!Pop
-		--[it]
+		lv1_pop_s: EMFTVM!Pop --[it]
 		,
 		lv1_endit: EMFTVM!Enditerate (
 			target <- lv1_it
-		),
-		lv1_pushF: EMFTVM!Pushf,
-		-- [false]
+		) --[]
+		,
 		lv1_goto: EMFTVM!Goto (
-			target <- lv1_pusht
+			target <- lv1_pop_it
 		),
-		--[false]
-		lv1_get_mf:EMFTVM!Get, --ToDO
-		lv1_pop: EMFTVM!Pop,
-		--[]
-		--[]
-		lv1_pusht: EMFTVM!Pusht
-		--[true]
-		
+		lv1_dupS: EMFTVM!Dup --[it,s,s]
+		,
+		lv1_get_vr: EMFTVM!Get (
+			fieldname <- 'valueRef'
+		),
+		lv1_dup_valueRef: EMFTVM!Dup --[it,s,valueRef,valueRef]
+		,
+		lv1_push_null: EMFTVM!Push --[it,s,valueRef,valueRef,null]
+		,
+		lv1_invoke_eq2: EMFTVM!Invoke (
+			argcount <- 1,
+			opname <- '='
+		) --[it,s,valueRef,Bool]
+		,
+		lv1_if_null: EMFTVM!If (
+			target <- lv1_goto2
+		) --[it,s,valueRef]
+		,
+		lv1_store: EMFTVM!Store (
+			localVariable <- lv1
+		),
+		lv1_pop_s2: EMFTVM!Pop --[it]
+		,
+		lv1_goto2: EMFTVM!Goto (
+			target <- lv1_store2
+		) --[it,s,valueRef]
+		,
+		lv1_pop_s3: EMFTVM!Pop --[it,s]
+		,
+		lv1_get_value: EMFTVM!Get (
+			fieldname <- 'value'
+		) --[it,value]
+		,
+		lv1_store2: EMFTVM!Store (
+			localVariable <- lv1
+		) --[it]
+		,
+		lv1_pop_it: EMFTVM!Pop --[]
+		,
+		initLv2: EMFTVM!CodeBlock (
+			code <- Sequence{lv2_load,
+						lv2_invoke,
+						lv2_get,
+						lv2_it,
+						lv2_dup,
+						lv2_get_mf,
+						lv2_get_name,
+						lv2_push,
+						lv2_invoke_eq,
+						lv2_if_eq,
+						lv2_pop_s,
+						lv2_endit,
+						lv2_goto,
+						lv2_dupS,
+						lv2_get_vr,
+						lv2_dup_valueRef,
+						lv2_push_null,
+						lv2_invoke_eq2,
+						lv2_if_null,
+						lv2_store,
+						lv2_pop_s2,
+						lv2_goto2,
+						lv2_pop_s3,
+						lv2_get_value,
+						lv2_store2,
+						lv2_pop_it},
+			lineNumbers <- Sequence{lnLv2}
+		),
+		lnLv2: EMFTVM!LineNumber (
+			startLine <- s.line,
+			endLine <- s.endline,
+			startChar <- s.offset,
+			endChar <- s.endoffset,
+			instructions <- Sequence{lv2_load,
+						lv2_invoke,
+						lv2_get,
+						lv2_it,
+						lv2_dup,
+						lv2_get_mf,
+						lv2_get_name,
+						lv2_push,
+						lv2_invoke_eq,
+						lv2_if_eq,
+						lv2_pop_s,
+						lv2_endit,
+						lv2_goto,
+						lv2_dupS,
+						lv2_get_vr,
+						lv2_dup_valueRef,
+						lv2_push_null,
+						lv2_invoke_eq2,
+						lv2_if_null,
+						lv2_store,
+						lv2_pop_s2,
+						lv2_goto2,
+						lv2_pop_s3,
+						lv2_get_value,
+						lv2_store2,
+						lv2_pop_it}
+		),
+		lv2_load: EMFTVM!Load (
+			localVariable <- s.refImmediateComposite().refImmediateComposite().var.
+					localVar(false)
+		),
+		--[var]
+		--[var]
+		lv2_invoke: EMFTVM!Invoke (
+			opname <- 'refImmediateComposite',
+			argcount <- 0
+		),
+		--[EClassOperation element]
+		--[EClassOperation element]
+		lv2_get: EMFTVM!Get (
+			fieldname <- 'setters'
+		),
+		--[Sequence{setters}]
+		--[Sequence{setters}]
+		lv2_it: EMFTVM!Iterate (
+			target <- lv2_endit
+		),
+		lv2_dup: EMFTVM!Dup,
+		--[it,s,s]
+		--[it,s,s]
+		lv2_get_mf: EMFTVM!Get (
+			fieldname <- 'metafeature'
+		),
+		--[it,s,mf]
+		--[it,s,mf]
+		lv2_get_name: EMFTVM!Get (
+			fieldname <- 'name'
+		),
+		--[it,s,name]
+		--[it,s,name]
+		lv2_push: EMFTVM!Push (
+			stringValue <- s.refImmediateComposite().metafeature.name
+		),
+		--[it,s,name,mf.name]
+		--[it,s,name,mf.name]
+		lv2_invoke_eq: EMFTVM!Invoke (
+			opname <- '=',
+			argcount <- 1
+		),
+		--[it,s,boolean]
+		--[it,s,boolean]
+		lv2_if_eq: EMFTVM!If (
+			target <- lv2_goto
+		),
+		lv2_pop_s: EMFTVM!Pop --[it]
+		,
+		lv2_endit: EMFTVM!Enditerate (
+			target <- lv2_it
+		) --[]
+		,
+		lv2_goto: EMFTVM!Goto (
+			target <- lv2_pop_it
+		),
+		lv2_dupS: EMFTVM!Dup --[it,s,s]
+		,
+		lv2_get_vr: EMFTVM!Get (
+			fieldname <- 'valueRef'
+		),
+		--[it,s,valueRef]
+		--[it,s,valueRef]
+		lv2_dup_valueRef: EMFTVM!Dup --[it,s,valueRef,valueRef]
+		,
+		lv2_push_null: EMFTVM!Push --[it,s,valueRef,valueRef,null]
+		,
+		lv2_invoke_eq2: EMFTVM!Invoke (
+			argcount <- 1,
+			opname <- '='
+		) --[it,s,valueRef,Bool]
+		,
+		lv2_if_null: EMFTVM!If (
+			target <- lv2_goto2
+		) --[it,s,valueRef]
+		,
+		lv2_store: EMFTVM!Store (
+			localVariable <- lv2
+		),
+		--[it,s]
+		--[it,s]
+		--[it,s]
+		--[it,s]
+		--[it,s]
+		--[it,s]
+		lv2_pop_s2: EMFTVM!Pop --[it]
+		,
+		lv2_goto2: EMFTVM!Goto (
+			target <- lv2_store2
+		) --[it,s,valueRef]
+		,
+		lv2_pop_s3: EMFTVM!Pop --[it,s]
+		,
+		lv2_get_value: EMFTVM!Get (
+			fieldname <- 'value'
+		) --[it,value]
+		,
+		lv2_store2: EMFTVM!Store (
+			localVariable <- lv2
+		) --[it]
+		,
+		lv2_pop_it: EMFTVM!Pop --[]
+	
 }
 
 -- ======================================================================
