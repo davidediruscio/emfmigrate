@@ -1,10 +1,11 @@
 package it.univaq.coevolution.emfmigrate.compiler.builder;
 
-import java.util.Map;
+import it.univaq.coevolution.emfmigrate.compiler.Activator;
+import it.univaq.coevolution.emfmigrate.emig.EmigPackage;
 
-import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.parsers.SAXParser;
-import javax.xml.parsers.SAXParserFactory;
+import java.util.Collections;
+import java.util.Map;
+import java.util.logging.Level;
 
 import org.eclipse.core.resources.IFile;
 import org.eclipse.core.resources.IMarker;
@@ -14,11 +15,25 @@ import org.eclipse.core.resources.IResourceDelta;
 import org.eclipse.core.resources.IResourceDeltaVisitor;
 import org.eclipse.core.resources.IResourceVisitor;
 import org.eclipse.core.resources.IncrementalProjectBuilder;
+import org.eclipse.core.resources.ResourcesPlugin;
 import org.eclipse.core.runtime.CoreException;
+import org.eclipse.core.runtime.IPath;
 import org.eclipse.core.runtime.IProgressMonitor;
-import org.xml.sax.SAXException;
-import org.xml.sax.SAXParseException;
-import org.xml.sax.helpers.DefaultHandler;
+import org.eclipse.core.runtime.IStatus;
+import org.eclipse.core.runtime.Path;
+import org.eclipse.core.runtime.Status;
+import org.eclipse.emf.common.util.URI;
+import org.eclipse.emf.ecore.resource.Resource;
+import org.eclipse.emf.ecore.resource.ResourceSet;
+import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
+import org.eclipse.m2m.atl.common.ATLLogger;
+import org.eclipse.m2m.atl.emftvm.EmftvmFactory;
+import org.eclipse.m2m.atl.emftvm.ExecEnv;
+import org.eclipse.m2m.atl.emftvm.Metamodel;
+import org.eclipse.m2m.atl.emftvm.Model;
+import org.eclipse.m2m.atl.emftvm.util.DefaultModuleResolver;
+import org.eclipse.m2m.atl.emftvm.util.ModuleResolver;
+import org.eclipse.m2m.atl.emftvm.util.TimingData;
 
 public class EmigBuilder extends IncrementalProjectBuilder {
 
@@ -33,14 +48,14 @@ public class EmigBuilder extends IncrementalProjectBuilder {
 			switch (delta.getKind()) {
 			case IResourceDelta.ADDED:
 				// handle added resource
-				checkXML(resource);
+				buildResource(resource);
 				break;
 			case IResourceDelta.REMOVED:
 				// handle removed resource
 				break;
 			case IResourceDelta.CHANGED:
 				// handle changed resource
-				checkXML(resource);
+				buildResource(resource);
 				break;
 			}
 			//return true to continue visiting children.
@@ -50,43 +65,32 @@ public class EmigBuilder extends IncrementalProjectBuilder {
 
 	class SampleResourceVisitor implements IResourceVisitor {
 		public boolean visit(IResource resource) {
-			checkXML(resource);
+			buildResource(resource);
 			//return true to continue visiting children.
 			return true;
 		}
 	}
 
-	class XMLErrorHandler extends DefaultHandler {
-		
-		private IFile file;
 
-		public XMLErrorHandler(IFile file) {
-			this.file = file;
-		}
-
-		private void addMarker(SAXParseException e, int severity) {
-			EmigBuilder.this.addMarker(file, e.getMessage(), e
-					.getLineNumber(), severity);
-		}
-
-		public void error(SAXParseException exception) throws SAXException {
-			addMarker(exception, IMarker.SEVERITY_ERROR);
-		}
-
-		public void fatalError(SAXParseException exception) throws SAXException {
-			addMarker(exception, IMarker.SEVERITY_ERROR);
-		}
-
-		public void warning(SAXParseException exception) throws SAXException {
-			addMarker(exception, IMarker.SEVERITY_WARNING);
-		}
-	}
 
 	public static final String BUILDER_ID = "it.univaq.coevolution.emfmigrate.compiler.emigBuilder";
 
 	private static final String MARKER_TYPE = "it.univaq.coevolution.emfmigrate.compiler.xmlProblem";
 
-	private SAXParserFactory parserFactory;
+	protected final ResourceSet rs=new ResourceSetImpl();
+	
+	protected final Metamodel emigMM=EmftvmFactory.eINSTANCE.createMetamodel();
+	
+	protected final ModuleResolver mr=new DefaultModuleResolver("platform:/plugin/"+Activator.PLUGIN_ID+"/transformations/", rs);
+	
+	
+	
+	public EmigBuilder() {
+		super();
+		// TODO Auto-generated constructor stub
+		emigMM.setResource(EmigPackage.eINSTANCE.eResource());
+		
+	}
 
 	private void addMarker(IFile file, String message, int lineNumber,
 			int severity) {
@@ -125,14 +129,67 @@ public class EmigBuilder extends IncrementalProjectBuilder {
 		return null;
 	}
 
-	void checkXML(IResource resource) {
-		if (resource instanceof IFile && resource.getName().endsWith(".xml")) {
+	@SuppressWarnings("deprecation")
+	void buildResource(IResource resource) {
+		if (resource instanceof IFile && resource.getName().endsWith(".emig")) {
 			IFile file = (IFile) resource;
 			deleteMarkers(file);
-			XMLErrorHandler reporter = new XMLErrorHandler(file);
+			
+			final Model emigModel = EmftvmFactory.eINSTANCE.createModel();
+			
+			final String emigModelPath=resource.getProject().getName()+"/"+resource.getProjectRelativePath().toString();
+			final URI emigModelUri=URI.createPlatformResourceURI(emigModelPath,true);
+			final Resource emigModelres=rs.getResource(emigModelUri, true);
+			emigModel.setResource(emigModelres);
+			
+			final Resource r= rs.createResource(URI.createFileURI("out.emftvm"),"be.ac.vub.emftvm");
+			final Model emftvmm=EmftvmFactory.eINSTANCE.createModel();
+			emftvmm.setResource(r);
+			
+			final URI riURI=emigModelres.getURI().trimFileExtension().appendFileExtension("emftvm");
+			
+			//TODO:content ID will change to org.eclipse.m2m.atl.emftvm
+			final Resource ri=rs.createResource(riURI,"be.ac.vub.emftvm");
+			final Model emftvmmmi=EmftvmFactory.eINSTANCE.createModel();
+			emftvmmmi.setResource(ri);
+			
+			
+		
 			try {
-				getParser().parse(file.getContents(), reporter);
-			} catch (Exception e1) {
+				ExecEnv env=EmftvmFactory.eINSTANCE.createExecEnv();
+				env.getMetaModels().put("EMig", emigMM);
+				env.getInputModels().put("IN", emigModel);
+				env.getOutputModels().put("OUT", emftvmm);
+				env.loadModule(mr, "emig2EMFTVM");
+				env.run(new TimingData(), null);
+				
+				env=EmftvmFactory.eINSTANCE.createExecEnv();
+				env.getInputModels().put("IN", emftvmm);
+				env.getOutputModels().put("OUT", emftvmmmi);
+				env.loadModule(mr, "InlineCodeblocks");
+				env.run(new TimingData(), null);
+				ri.save(Collections.emptyMap());
+				if(ri.getURI().isPlatformResource()){
+					final IPath riPath=new Path(ri.getURI().toPlatformString(true));
+					final IFile riFile=ResourcesPlugin.getWorkspace().getRoot().getFile(riPath);
+					riFile.setDerived(true);
+				}
+				
+				
+				
+			}catch (CoreException e) {
+				ATLLogger.log(Level.SEVERE, e.getMessage(), e);
+			
+				Activator.getDefault().getLog().log(e.getStatus());
+			} 
+			catch (Exception e1) {
+				ATLLogger.log(Level.SEVERE, e1.getMessage(), e1);
+				final IStatus status=new Status(IStatus.ERROR, Activator.PLUGIN_ID, 0,e1.getMessage(),e1);
+				Activator.getDefault().getLog().log(status);
+			}finally{
+				rs.getResources().remove(r);
+				rs.getResources().remove(ri);
+				
 			}
 		}
 	}
@@ -152,13 +209,7 @@ public class EmigBuilder extends IncrementalProjectBuilder {
 		}
 	}
 
-	private SAXParser getParser() throws ParserConfigurationException,
-			SAXException {
-		if (parserFactory == null) {
-			parserFactory = SAXParserFactory.newInstance();
-		}
-		return parserFactory.newSAXParser();
-	}
+	
 
 	protected void incrementalBuild(IResourceDelta delta,
 			IProgressMonitor monitor) throws CoreException {

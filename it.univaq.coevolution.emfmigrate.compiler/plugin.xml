@@ -36,7 +36,7 @@
                class="it.univaq.coevolution.emfmigrate.compiler.builder.ToggleNatureAction"
                enablesFor="+"
                id="it.univaq.coevolution.emfmigrate.compiler.addRemoveNatureAction"
-               label="Add/Remove Sample Nature"
+               label="Add/Remove EMig Nature"
                menubarPath="additions">
          </action>
       </objectContribution>
