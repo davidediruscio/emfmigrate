@@ -1,0 +1,18 @@
+module Test;
+
+models EMF : EMF, M : EMF;
+
+context OclAny def : test() : Boolean =
+	String::parseBoolean(self.toString()).test() or
+	EMF!EClass.allInstancesFrom('IN')->select(i|true)->size() > 3 and (false + #enum * true + 35);
+
+static def : stringSeq : Sequence(String) = 
+	Sequence{'3\'koe'};
+
+context Sequence(OclAny) def : mySelect(f : Lambda(OclAny):Boolean) : Sequence(OclAny) =
+	self->iterate(e : OclAny; acc: Sequence(OclAny) = Sequence{} |  
+		if f(e) then
+			acc->append(e)
+		else
+			acc
+		endif);
