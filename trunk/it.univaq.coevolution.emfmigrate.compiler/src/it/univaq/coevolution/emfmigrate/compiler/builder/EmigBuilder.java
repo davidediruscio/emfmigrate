@@ -33,7 +33,6 @@ import org.eclipse.m2m.atl.emftvm.Metamodel;
 import org.eclipse.m2m.atl.emftvm.Model;
 import org.eclipse.m2m.atl.emftvm.util.DefaultModuleResolver;
 import org.eclipse.m2m.atl.emftvm.util.ModuleResolver;
-import org.eclipse.m2m.atl.emftvm.util.TimingData;
 
 public class EmigBuilder extends IncrementalProjectBuilder {
 
@@ -129,7 +128,6 @@ public class EmigBuilder extends IncrementalProjectBuilder {
 		return null;
 	}
 
-	@SuppressWarnings("deprecation")
 	void buildResource(IResource resource) {
 		if (resource instanceof IFile && resource.getName().endsWith(".emig")) {
 			IFile file = (IFile) resource;
@@ -157,22 +155,22 @@ public class EmigBuilder extends IncrementalProjectBuilder {
 		
 			try {
 				ExecEnv env=EmftvmFactory.eINSTANCE.createExecEnv();
-				env.getMetaModels().put("EMig", emigMM);
-				env.getInputModels().put("IN", emigModel);
-				env.getOutputModels().put("OUT", emftvmm);
+				env.registerMetaModel("EMig", emigMM);
+				env.registerInputModel("IN", emigModel);
+				env.registerOutputModel("OUT", emftvmm);
 				env.loadModule(mr, "emig2EMFTVM");
-				env.run(new TimingData(), null);
+				env.run(null);
 				
 				env=EmftvmFactory.eINSTANCE.createExecEnv();
-				env.getInputModels().put("IN", emftvmm);
-				env.getOutputModels().put("OUT", emftvmmmi);
+				env.registerInputModel("IN", emftvmm);
+				env.registerOutputModel("OUT", emftvmmmi);
 				env.loadModule(mr, "InlineCodeblocks");
-				env.run(new TimingData(), null);
+				env.run(null);
 				ri.save(Collections.emptyMap());
 				if(ri.getURI().isPlatformResource()){
 					final IPath riPath=new Path(ri.getURI().toPlatformString(true));
 					final IFile riFile=ResourcesPlugin.getWorkspace().getRoot().getFile(riPath);
-					riFile.setDerived(true);
+					riFile.setDerived(true, null);
 				}
 				
 				

@@ -240,43 +240,45 @@ rule MigratorSXDeleted extends MigratorSX {
 	to t: EMFTVM!InputRuleElement,
 		lv2: EMFTVM!LocalVariable,
 		delete_cb: EMFTVM!CodeBlock (
-			code <- Sequence{load_lv2, dup_sx1, invoke_resolve, dup_x1_sx1, invoke_remap, pop_dx, delete_lv2},
+			code <- Sequence{load_lv2, dup_sx1, dup_sx1_2, invoke_resolve, invoke_remap, pop_dx, delete_lv2},
 			lineNumbers <- Sequence{delete_ln}),
 		delete_ln: EMFTVM!LineNumber (
-			instructions <- Sequence{load_lv2, dup_sx1,	invoke_resolve,	dup_x1_sx1, invoke_remap, pop_dx, delete_lv2},
+			instructions <- Sequence{load_lv2, dup_sx1,	dup_sx1_2, invoke_resolve, invoke_remap, pop_dx, delete_lv2},
 			startLine <- s.line,
 			endLine <- s.endline,
 			startChar <- s.offset,
 			endChar <- s.endoffset),
-		load_lv2: EMFTVM!Load (localVariable <- lv2),					--[sx]
-		dup_sx1: EMFTVM!Dup, 											--[sx,sx]
-		invoke_resolve: EMFTVM!Invoke (opname <- 'resolve'),			--[sx,dx]
-		dup_x1_sx1: EMFTVM!DupX1, 										--[sx,dx,sx]
-		invoke_remap: EMFTVM!Invoke (opname <- 'remap',	argcount <- 1),	--[sx,dx]
-		pop_dx: EMFTVM!Pop, 											--[sx]
-		delete_lv2: EMFTVM!Delete 										--[]
+		load_lv2: EMFTVM!Load (localVariable <- lv2),					--[...,sx]
+		dup_sx1: EMFTVM!Dup, 											--[...,sx,sx]
+		dup_sx1_2: EMFTVM!Dup, 											--[...,sx,sx,sx]
+		invoke_resolve: EMFTVM!Invoke (opname <- 'resolve'),			--[...,sx,sx,dx]
+		invoke_remap: EMFTVM!Invoke (opname <- 'remap',	argcount <- 1),	--[...,sx,dx]
+		pop_dx: EMFTVM!Pop, 											--[...,sx]
+		delete_lv2: EMFTVM!Delete 										--[...]
 }
 
 rule FilterMigratorSX {
 	from s: EMig!FilterMigrator in IN (s.isSX)
 	to t: EMFTVM!CodeBlock (
-			code <- Sequence{invokecb_value,
+			code <- Sequence{
 						invokecb_feature,
+						invokecb_value,
 						invoke},
 			nested <- Sequence{s.value,
 						s.featureSX},
 			lineNumbers <- Sequence{ln}),
 		ln: EMFTVM!LineNumber (
-			instructions <- Sequence{invokecb_value,
+			instructions <- Sequence{
 						invokecb_feature,
+						invokecb_value,
 						invoke},
 			startLine <- s.line,
 			endLine <- s.endline,
 			startChar <- s.offset,
 			endChar <- s.endoffset),
-		invokecb_value: EMFTVM!InvokeCb (codeBlock <- s.value),
-		invokecb_feature: EMFTVM!InvokeCb (codeBlock <- s.featureSX),
-		invoke: EMFTVM!Invoke (opname <- s.op, argcount <- 1),
+		invokecb_feature: EMFTVM!InvokeCb (codeBlock <- s.featureSX),	--[...,feature]
+		invokecb_value: EMFTVM!InvokeCb (codeBlock <- s.value),			--[...,feature,value]
+		invoke: EMFTVM!Invoke (opname <- s.op, argcount <- 1),			--[...,bool]
 		and_: EMFTVM!And (codeBlock <- t)
 }
 
@@ -345,20 +347,20 @@ rule MigratorDXRefining {
 rule FilterMigratorDX {
 	from s: EMig!FilterMigrator in IN (not s.isSX)
 	to t: EMFTVM!CodeBlock (
-			code <- Sequence{invokecb_value, invoke_resolve, load_migrDXObj, setFeature},
+			code <- Sequence{load_migrDXObj, invokecb_value, invoke_resolve, setFeature},
 			nested <- Sequence{s.value},
 			lineNumbers <- Sequence{ln}),
 		ln: EMFTVM!LineNumber (
-			instructions <- Sequence{invokecb_value, invoke_resolve, load_migrDXObj, setFeature},
+			instructions <- Sequence{load_migrDXObj, invokecb_value, invoke_resolve, setFeature},
 			startLine <- s.line,
 			endLine <- s.endline,
 			startChar <- s.offset,
 			endChar <- s.endoffset),
-		invokecb_value: EMFTVM!InvokeCb (codeBlock <- s.value),				--[value]
-		invoke_resolve: EMFTVM!Invoke (opname <- 'resolve'),				--[rvalue]
 		load_migrDXObj: EMFTVM!Load (localVariable <- s.
-					refImmediateComposite().localVar(false)),				--[rvalue,obj]
-		setFeature: EMFTVM!"Set" (fieldname <- s.featureSX.obj.name)		--[]
+					refImmediateComposite().localVar(false)),				--[...,obj]
+		invokecb_value: EMFTVM!InvokeCb (codeBlock <- s.value),				--[...,obj,value]
+		invoke_resolve: EMFTVM!Invoke (opname <- 'resolve'),				--[...,obj,rvalue]
+		setFeature: EMFTVM!"Set" (fieldname <- s.featureSX.obj.name)		--[...]
 }
 
 rule DotNavigationObjDXTarget {
@@ -422,9 +424,9 @@ abstract rule OpDef {
 			startChar <- s.offset,
 			endChar <- s.endoffset,
 			instructions <- Sequence{load, get, store}),
-		load: EMFTVM!Load (localVariable <- lv1),							--[lv1]
-		get: EMFTVM!Get (fieldname <- 'ref'),								--[ref]
-		store: EMFTVM!Store (localVariable <- ref),							--[]
+		load: EMFTVM!Load (localVariable <- lv1),							--[...,lv1]
+		get: EMFTVM!Get (fieldname <- 'ref'),								--[...,ref]
+		store: EMFTVM!Store (localVariable <- ref),							--[...]
 		ref2: EMFTVM!LocalVariable,
 		initRef2: EMFTVM!CodeBlock (
 			code <- Sequence{load2, get2, store2},
@@ -435,9 +437,9 @@ abstract rule OpDef {
 			startChar <- s.offset,
 			endChar <- s.endoffset,
 			instructions <- Sequence{load2, get2, store2}),
-		load2: EMFTVM!Load (localVariable <- lv2),							--[lv2]
-		get2: EMFTVM!Get (fieldname <- 'ref'),								--[ref]
-		store2: EMFTVM!Store (localVariable <- ref2)						--[]
+		load2: EMFTVM!Load (localVariable <- lv2),							--[...,lv2]
+		get2: EMFTVM!Get (fieldname <- 'ref'),								--[...,ref]
+		store2: EMFTVM!Store (localVariable <- ref2)						--[...]
 }
 
 rule EPackageOpDef extends OpDef {
@@ -525,22 +527,22 @@ rule setterDef {
 			endChar <- s.endoffset,
 			instructions <- Sequence{load, invoke, get, it, get_mf, get_name, push, invoke_eq, 
 						if_eq, endit, pushF, goto, pop, pusht}),
-		load: EMFTVM!Load (													--[lv1]
+		load: EMFTVM!Load (													--[...,lv1]
 			localVariable <- thisModule.resolveTemp(s.refImmediateComposite(), 'lv1')),
-		invoke: EMFTVM!Invoke (												--[EClassOperation element]
+		invoke: EMFTVM!Invoke (												--[...,EClassOperation element]
 			opname <- 'refImmediateComposite', argcount <- 0),
-		get: EMFTVM!Get (fieldname <- 'setters'),							--[Sequence{setters}]
-		it: EMFTVM!Iterate (target <- endit),								--[it,s]
-		get_mf: EMFTVM!Get (fieldname <- 'metafeature'),					--[it,mf]
-		get_name: EMFTVM!Get (fieldname <- 'name'),							--[it,name]
-		push: EMFTVM!Push (stringValue <- s.metafeature.name),				--[it,name,mf.name]
-		invoke_eq: EMFTVM!Invoke (opname <- '=', argcount <- 1),			--[it,boolean]
-		if_eq: EMFTVM!If (target <- goto),									--[it]
-		endit: EMFTVM!Enditerate (target <- it),							--[]
-		pushF: EMFTVM!Pushf,												--[false]
-		goto: EMFTVM!Goto (target <- pusht),								--[false]
-		pop: EMFTVM!Pop,													--[]
-		pusht: EMFTVM!Pusht,												--[true]
+		get: EMFTVM!Get (fieldname <- 'setters'),							--[...,Sequence{setters}]
+		it: EMFTVM!Iterate (target <- endit),								--[...,it,s]
+		get_mf: EMFTVM!Get (fieldname <- 'metafeature'),					--[...,it,mf]
+		get_name: EMFTVM!Get (fieldname <- 'name'),							--[...,it,name]
+		push: EMFTVM!Push (stringValue <- s.metafeature.name),				--[...,it,name,mf.name]
+		invoke_eq: EMFTVM!Invoke (opname <- '=', argcount <- 1),			--[...,it,boolean]
+		if_eq: EMFTVM!If (target <- goto),									--[...,it]
+		endit: EMFTVM!Enditerate (target <- it),							--[...]
+		pushF: EMFTVM!Pushf,												--[...,false]
+		goto: EMFTVM!Goto (target <- pusht),								--[...,false]
+		pop: EMFTVM!Pop,													--[...]
+		pusht: EMFTVM!Pusht,												--[...,true]
 		_and: EMFTVM!And (codeBlock <- t)
 }
 
@@ -569,34 +571,34 @@ rule Parameter {
 						lv1_goto, lv1_dupS, lv1_get_vr, lv1_dup_valueRef, lv1_invoke_isEmpty,
 						lv1_if_empty, lv1_store, lv1_pop_s2, lv1_goto2, lv1_pop_s3, lv1_get_value,
 						lv1_store2, lv1_pop_it}),
-		lv1_load: EMFTVM!Load (localVariable <- s.refImmediateComposite().	--[lv1]
+		lv1_load: EMFTVM!Load (localVariable <- s.refImmediateComposite().	--[...,lv1]
 					refImmediateComposite().var.localVar(true)),
-		lv1_invoke: EMFTVM!Invoke (											--[parent]
+		lv1_invoke: EMFTVM!Invoke (											--[...,parent]
 			opname <- 'refImmediateComposite', argcount <- 0),
-		lv1_get: EMFTVM!Get (fieldname <- 'setters'),						--[setters]
-		lv1_it: EMFTVM!Iterate (target <- lv1_endit),						--[it,s]
-		lv1_dup: EMFTVM!Dup,												--[it,s,s]
-		lv1_get_mf: EMFTVM!Get (fieldname <- 'metafeature'),				--[it,s,mf]
-		lv1_get_name: EMFTVM!Get (fieldname <- 'name'),						--[it,s,name]
-		lv1_push: EMFTVM!Push (												--[it,s,name,mf.name]
+		lv1_get: EMFTVM!Get (fieldname <- 'setters'),						--[...,setters]
+		lv1_it: EMFTVM!Iterate (target <- lv1_endit),						--[...,it,s]
+		lv1_dup: EMFTVM!Dup,												--[...,it,s,s]
+		lv1_get_mf: EMFTVM!Get (fieldname <- 'metafeature'),				--[...,it,s,mf]
+		lv1_get_name: EMFTVM!Get (fieldname <- 'name'),						--[...,it,s,name]
+		lv1_push: EMFTVM!Push (												--[...,it,s,name,mf.name]
 			stringValue <- s.refImmediateComposite().metafeature.name),
-		lv1_invoke_eq: EMFTVM!Invoke (opname <- '=', argcount <- 1),		--[it,s,boolean]
-		lv1_if_eq: EMFTVM!If (target <- lv1_goto),							--[it,s]
-		lv1_pop_s: EMFTVM!Pop, 												--[it]
-		lv1_endit: EMFTVM!Enditerate (target <- lv1_it), 					--[]
-		lv1_goto: EMFTVM!Goto (target <- lv1_pop_it),						--[it,s]
-		lv1_dupS: EMFTVM!Dup, 												--[it,s,s]
-		lv1_get_vr: EMFTVM!Get (fieldname <- 'valueRef'),					--[it,s,valueRef]
-		lv1_dup_valueRef: EMFTVM!Dup, 										--[it,s,valueRef,valueRef]
-		lv1_invoke_isEmpty: EMFTVM!Invoke (opname <- 'isEmpty'),			--[it,s,valueRef,boolean]
-		lv1_if_empty: EMFTVM!If (target <- lv1_goto2),						--[it,s,valueRef]
-		lv1_store: EMFTVM!Store (localVariable <- lv1),						--[it,s]
-		lv1_pop_s2: EMFTVM!Pop, 											--[it]
-		lv1_goto2: EMFTVM!Goto (target <- lv1_store2), 						--[it,s,valueRef]
-		lv1_pop_s3: EMFTVM!Pop,												--[it,s]
-		lv1_get_value: EMFTVM!Get (fieldname <- 'value'),					--[it,value]
-		lv1_store2: EMFTVM!Store (localVariable <- lv1),					--[it]
-		lv1_pop_it: EMFTVM!Pop,												--[]
+		lv1_invoke_eq: EMFTVM!Invoke (opname <- '=', argcount <- 1),		--[...,it,s,boolean]
+		lv1_if_eq: EMFTVM!If (target <- lv1_goto),							--[...,it,s]
+		lv1_pop_s: EMFTVM!Pop, 												--[...,it]
+		lv1_endit: EMFTVM!Enditerate (target <- lv1_it), 					--[...]
+		lv1_goto: EMFTVM!Goto (target <- lv1_pop_it),						--[...]
+		lv1_dupS: EMFTVM!Dup, 												--[...,it,s,s]
+		lv1_get_vr: EMFTVM!Get (fieldname <- 'valueRef'),					--[...,it,s,valueRef]
+		lv1_dup_valueRef: EMFTVM!Dup, 										--[...,it,s,valueRef,valueRef]
+		lv1_invoke_isEmpty: EMFTVM!Invoke (opname <- 'isEmpty'),			--[...,it,s,valueRef,boolean]
+		lv1_if_empty: EMFTVM!If (target <- lv1_goto2),						--[...,it,s,valueRef]
+		lv1_store: EMFTVM!Store (localVariable <- lv1),						--[...,it,s]
+		lv1_pop_s2: EMFTVM!Pop, 											--[...,it]
+		lv1_goto2: EMFTVM!Goto (target <- lv1_store2), 						--[...,it]
+		lv1_pop_s3: EMFTVM!Pop,												--[...,it,s]
+		lv1_get_value: EMFTVM!Get (fieldname <- 'value'),					--[...,it,value]
+		lv1_store2: EMFTVM!Store (localVariable <- lv1),					--[...,it]
+		lv1_pop_it: EMFTVM!Pop,												--[...]
 		initLv2: EMFTVM!CodeBlock (
 			code <- Sequence{lv2_load, lv2_invoke, lv2_get, lv2_it, lv2_dup, lv2_get_mf,
 						lv2_get_name, lv2_push, lv2_invoke_eq, lv2_if_eq, lv2_pop_s,
@@ -615,33 +617,33 @@ rule Parameter {
 						lv2_invoke_isEmpty, lv2_if_empty, lv2_store, lv2_pop_s2, lv2_goto2,
 						lv2_pop_s3, lv2_get_value, lv2_store2, lv2_pop_it}),
 		lv2_load: EMFTVM!Load (localVariable <- s.refImmediateComposite().
-					refImmediateComposite().var.localVar(false)),			--[var]
-		lv2_invoke: EMFTVM!Invoke (											--[EClassOperation element]
+					refImmediateComposite().var.localVar(false)),			--[...,var]
+		lv2_invoke: EMFTVM!Invoke (											--[...,EClassOperation element]
 			opname <- 'refImmediateComposite', argcount <- 0),
-		lv2_get: EMFTVM!Get (fieldname <- 'setters'),						--[Sequence{setters}]
-		lv2_it: EMFTVM!Iterate (target <- lv2_endit),						--[it,s]
-		lv2_dup: EMFTVM!Dup,												--[it,s,s]
-		lv2_get_mf: EMFTVM!Get (fieldname <- 'metafeature'),				--[it,s,mf]
-		lv2_get_name: EMFTVM!Get (fieldname <- 'name'),						--[it,s,name]
-		lv2_push: EMFTVM!Push (												--[it,s,name,mf.name]
+		lv2_get: EMFTVM!Get (fieldname <- 'setters'),						--[...,Sequence{setters}]
+		lv2_it: EMFTVM!Iterate (target <- lv2_endit),						--[...,it,s]
+		lv2_dup: EMFTVM!Dup,												--[...,it,s,s]
+		lv2_get_mf: EMFTVM!Get (fieldname <- 'metafeature'),				--[...,it,s,mf]
+		lv2_get_name: EMFTVM!Get (fieldname <- 'name'),						--[...,it,s,name]
+		lv2_push: EMFTVM!Push (												--[...,it,s,name,mf.name]
 			stringValue <- s.refImmediateComposite().metafeature.name),
-		lv2_invoke_eq: EMFTVM!Invoke (opname <- '=', argcount <- 1),		--[it,s,boolean]
-		lv2_if_eq: EMFTVM!If (target <- lv2_goto),							--[it,s]
-		lv2_pop_s: EMFTVM!Pop,												--[it]
-		lv2_endit: EMFTVM!Enditerate (target <- lv2_it),					--[]
-		lv2_goto: EMFTVM!Goto (target <- lv2_pop_it),						--[]
-		lv2_dupS: EMFTVM!Dup,												--[it,s,s]
-		lv2_get_vr: EMFTVM!Get (fieldname <- 'valueRef'),					--[it,s,valueRef]
-		lv2_dup_valueRef: EMFTVM!Dup,										--[it,s,valueRef,valueRef]
-		lv2_invoke_isEmpty: EMFTVM!Invoke (opname <- 'isEmpty'),			--[it,s,valueRef,boolean]
-		lv2_if_empty: EMFTVM!If (target <- lv2_goto2),						--[it,s,valueRef]
-		lv2_store: EMFTVM!Store (localVariable <- lv2),						--[it,s]
-		lv2_pop_s2: EMFTVM!Pop,												--[it]
-		lv2_goto2: EMFTVM!Goto (target <- lv2_store2),						--[it]
-		lv2_pop_s3: EMFTVM!Pop,												--[it,s]
-		lv2_get_value: EMFTVM!Get (fieldname <- 'value'),					--[it,value]
-		lv2_store2: EMFTVM!Store (localVariable <- lv2),					--[it]
-		lv2_pop_it: EMFTVM!Pop												--[]
+		lv2_invoke_eq: EMFTVM!Invoke (opname <- '=', argcount <- 1),		--[...,it,s,boolean]
+		lv2_if_eq: EMFTVM!If (target <- lv2_goto),							--[...,it,s]
+		lv2_pop_s: EMFTVM!Pop,												--[...,it]
+		lv2_endit: EMFTVM!Enditerate (target <- lv2_it),					--[...]
+		lv2_goto: EMFTVM!Goto (target <- lv2_pop_it),						--[...]
+		lv2_dupS: EMFTVM!Dup,												--[...,it,s,s]
+		lv2_get_vr: EMFTVM!Get (fieldname <- 'valueRef'),					--[...,it,s,valueRef]
+		lv2_dup_valueRef: EMFTVM!Dup,										--[...,it,s,valueRef,valueRef]
+		lv2_invoke_isEmpty: EMFTVM!Invoke (opname <- 'isEmpty'),			--[...,it,s,valueRef,boolean]
+		lv2_if_empty: EMFTVM!If (target <- lv2_goto2),						--[...,it,s,valueRef]
+		lv2_store: EMFTVM!Store (localVariable <- lv2),						--[...,it,s]
+		lv2_pop_s2: EMFTVM!Pop,												--[...,it]
+		lv2_goto2: EMFTVM!Goto (target <- lv2_store2),						--[...,it]
+		lv2_pop_s3: EMFTVM!Pop,												--[...,it,s]
+		lv2_get_value: EMFTVM!Get (fieldname <- 'value'),					--[...,it,value]
+		lv2_store2: EMFTVM!Store (localVariable <- lv2),					--[...,it]
+		lv2_pop_it: EMFTVM!Pop												--[...]
 }
 
 -- ======================================================================
