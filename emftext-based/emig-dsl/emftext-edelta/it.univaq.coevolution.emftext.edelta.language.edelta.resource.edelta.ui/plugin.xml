@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+	<extension point="org.emftext.access.syntax.ui">
+		<metaInformationProvider class="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.ui.EdeltaUIMetaInformation" id="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.ui.EdeltaUIMetaInformation">
+		</metaInformationProvider>
+	</extension>
+	
+	<extension point="org.eclipse.ui.editors">
+		<editor class="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.ui.EdeltaEditor" contributorClass="org.eclipse.ui.texteditor.BasicTextEditorActionContributor" extensions="edelta" icon="icons/editor_icon.gif" id="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.ui.EdeltaEditor" name="EMFText edelta Editor">
+			<contentTypeBinding contentTypeId="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta">
+			</contentTypeBinding>
+		</editor>
+	</extension>
+	
+	<extension point="org.eclipse.core.runtime.preferences">
+		<initializer class="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.ui.EdeltaPreferenceInitializer">
+		</initializer>
+	</extension>
+	
+	<extension point="org.eclipse.ui.preferencePages">
+		<page name="Edelta Text Editor" id="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.ui.EdeltaPreferencePage" class="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.ui.EdeltaPreferencePage" category="org.eclipse.ui.preferencePages.GeneralTextEditor">
+		</page>
+		<page name="Syntax Coloring" id="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.ui.EdeltaSyntaxColoringPreferencePage" class="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.ui.EdeltaSyntaxColoringPreferencePage" category="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.ui.EdeltaPreferencePage">
+		</page>
+		<page name="Brackets" id="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.ui.EdeltaBracketPreferencePage" class="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.ui.EdeltaBracketPreferencePage" category="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.ui.EdeltaPreferencePage">
+		</page>
+	</extension>
+	
+	<extension point="org.eclipse.ui.newWizards">
+		<category id="org.emftext.runtime.ui.EMFTextFileCategory" name="EMFText File">
+		</category>
+		<wizard category="org.emftext.runtime.ui.EMFTextFileCategory" icon="/icons/default_new_icon.gif" class="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.ui.EdeltaNewFileWizard" id="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.ui.EdeltaNewFileWizard" name="EMFText .edelta file">
+		</wizard>
+		<category id="org.emftext.runtime.ui.EMFTextProjectCategory" name="EMFText Project">
+		</category>
+		<wizard category="org.emftext.runtime.ui.EMFTextProjectCategory" icon="/icons/default_new_icon.gif" class="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.ui.EdeltaNewProjectWizard" id="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.ui.EdeltaNewProjectWizard" name="EMFText edelta project" project="true">
+		</wizard>
+	</extension>
+	
+	<extension point="org.eclipse.ui.ide.markerResolution">
+		<markerResolutionGenerator class="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.ui.EdeltaMarkerResolutionGenerator" markerType="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.problem">
+		</markerResolutionGenerator>
+	</extension>
+	
+	<extension point="org.eclipse.core.filebuffers.annotationModelCreation">
+		<factory class="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.ui.EdeltaAnnotationModelFactory" extensions="edelta">
+		</factory>
+	</extension>
+	
+	<extension point="org.eclipse.core.contenttype.contentTypes">
+		<content-type id="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta" name=".edelta File" base-type="org.eclipse.core.runtime.text" file-extensions="edelta">
+		</content-type>
+	</extension>
+	
+	<extension point="org.eclipse.ui.editors.documentProviders">
+		<provider class="org.eclipse.ui.editors.text.TextFileDocumentProvider" extensions="edelta" id="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.ui.provider">
+		</provider>
+	</extension>
+	
+	<extension point="org.eclipse.ui.editors.annotationTypes">
+		<type name="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.ui.occurences">
+		</type>
+		<type name="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.ui.occurences.declaration" super="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.ui.occurences">
+		</type>
+	</extension>
+	
+	<extension point="org.eclipse.ui.editors.markerAnnotationSpecification">
+		<specification annotationType="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.ui.occurences" label="Occurrences (in .edelta files)" icon="/icons/occurrence_icon.gif" textPreferenceKey="edelta.occurrenceIndication" textPreferenceValue="false" highlightPreferenceKey="edelta.occurrenceHighlighting" highlightPreferenceValue="true" contributesToHeader="false" overviewRulerPreferenceKey="edelta.occurrenceIndicationInOverviewRuler" overviewRulerPreferenceValue="true" verticalRulerPreferenceKey="edelta.occurrenceIndicationInVerticalRuler" verticalRulerPreferenceValue="false" colorPreferenceKey="edelta.occurrenceIndicationColor" colorPreferenceValue="212,212,212" presentationLayer="4" showInNextPrevDropdownToolbarActionKey="edelta.showOccurrenceInNextPrevDropdownToolbarAction" showInNextPrevDropdownToolbarAction="true" isGoToNextNavigationTargetKey="edelta.isOccurrenceGoToNextNavigationTarget" isGoToNextNavigationTarget="false" isGoToPreviousNavigationTargetKey="edelta.isOccurrenceGoToPreviousNavigationTarget" isGoToPreviousNavigationTarget="false" textStylePreferenceKey="edelta.occurrenceTextStyle" textStylePreferenceValue="NONE">
+		</specification>
+		<specification annotationType="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.ui.occurences.declaration" label="Declarations (in .edelta files)" textPreferenceKey="edelta.declarationIndication" textPreferenceValue="false" highlightPreferenceKey="edelta.declarationHighlighting" highlightPreferenceValue="true" overviewRulerPreferenceKey="edelta.declarationIndicationInOverviewRuler" overviewRulerPreferenceValue="true" verticalRulerPreferenceKey="edelta.declarationIndicationInVerticalRuler" verticalRulerPreferenceValue="false" colorPreferenceKey="edelta.declarationIndicationColor" colorPreferenceValue="240,216,168" presentationLayer="4" textStylePreferenceKey="edelta.declarationTextStyle" textStylePreferenceValue="NONE">
+		</specification>
+	</extension>
+	
+	<extension point="org.eclipse.debug.ui.launchConfigurationTypeImages">
+		<launchConfigurationTypeImage icon="/icons/launch_type_icon.gif" configTypeID="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.ui.launchConfigurationType" id="it.univaq.coevolution.emftext.edelta.language.edelta.launchImage">
+		</launchConfigurationTypeImage>
+	</extension>
+	
+	<extension point="org.eclipse.debug.ui.launchConfigurationTabGroups">
+		<launchConfigurationTabGroup type="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.ui.launchConfigurationType" class="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.ui.launch.EdeltaLaunchConfigurationTabGroup" id="it.univaq.coevolution.emftext.edelta.language.edelta.launchConfigurationTabGroup" helpContextId="it.univaq.coevolution.emftext.edelta.language.edelta.launchConfigHelpContext">
+			<launchMode mode="debug" perspective="org.eclipse.debug.ui.DebugPerspective" description="Debug edelta model.">
+			</launchMode>
+			<launchMode mode="run" description="Run edelta model.">
+			</launchMode>
+		</launchConfigurationTabGroup>
+	</extension>
+	
+	<extension point="org.eclipse.debug.ui.launchShortcuts">
+		<shortcut label="edelta Application" icon="/icons/launch_shortcut_icon.gif" helpContextId="it.univaq.coevolution.emftext.edelta.language.edelta.launch" modes="run,debug" class="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.ui.launch.EdeltaLaunchShortcut" description="Launch a edelta model" id="it.univaq.coevolution.emftext.edelta.language.edelta.launchShortcut">
+			<description description="Run edelta model" mode="run">
+			</description>
+			<description description="Debug edelta model" mode="debug">
+			</description>
+			<contextualLaunch>
+				<enablement>
+					<with variable="selection">
+						<count value="1">
+						</count>
+						<iterate>
+							<test property="it.univaq.coevolution.emftext.edelta.language.edelta.isLaunchable">
+							</test>
+						</iterate>
+					</with>
+				</enablement>
+			</contextualLaunch>
+			<configurationType id="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.ui.launchConfigurationType">
+			</configurationType>
+		</shortcut>
+	</extension>
+	
+	<extension point="org.eclipse.core.expressions.propertyTesters">
+		<propertyTester id="it.univaq.coevolution.emftext.edelta.language.edelta.PropertyTester" type="java.lang.Object" namespace="it.univaq.coevolution.emftext.edelta.language.edelta" properties="isLaunchable" class="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.ui.EdeltaPropertyTester">
+		</propertyTester>
+	</extension>
+	
+	<extension point="org.eclipse.ui.editors.annotationTypes">
+		<type name="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.ui.debug.lineBreakpoint" markerType="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.debug.lineBreakpoint.marker" super="org.eclipse.debug.core.breakpoint">
+		</type>
+	</extension>
+	
+	<extension point="org.eclipse.ui.editors.markerAnnotationSpecification">
+		<specification annotationType="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.ui.debug.lineBreakpoint" label="Breakpoints (in .edelta files)" icon="/icons/breakpoint_icon.gif" textPreferenceKey="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.ui.lineBreakpoint" textPreferenceValue="false" highlightPreferenceKey="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.ui.lineBreakpointHighlighting" highlightPreferenceValue="true" contributesToHeader="false" overviewRulerPreferenceKey="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.ui.lineBreakpointIndicationInOverviewRuler" overviewRulerPreferenceValue="true" verticalRulerPreferenceKey="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.ui.lineBreakpointIndicationInVerticalRuler" verticalRulerPreferenceValue="false" colorPreferenceKey="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.ui.lineBreakpointColor" colorPreferenceValue="212,212,212" presentationLayer="4" showInNextPrevDropdownToolbarActionKey="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.ui.showLineBreakpointInNextPrevDropdownToolbarAction" showInNextPrevDropdownToolbarAction="true" isGoToNextNavigationTargetKey="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.ui.isLineBreakpointGoToNextNavigationTarget" isGoToNextNavigationTarget="false" isGoToPreviousNavigationTargetKey="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.ui.isLineBreakpointGoToPreviousNavigationTarget" isGoToPreviousNavigationTarget="false" textStylePreferenceKey="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.ui.lineBreakpointTextStyle" textStylePreferenceValue="NONE">
+		</specification>
+	</extension>
+	
+	<extension point="org.eclipse.core.runtime.adapters">
+		<factory adaptableType="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.ui.EdeltaEditor" class="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.ui.debug.EdeltaAdapterFactory">
+			<adapter type="org.eclipse.debug.ui.actions.IToggleBreakpointsTarget">
+			</adapter>
+		</factory>
+		<factory adaptableType="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.debug.EdeltaDebugVariable" class="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.ui.debug.EdeltaAdapterFactory">
+			<adapter type="org.eclipse.debug.internal.ui.viewers.model.provisional.IElementLabelProvider">
+			</adapter>
+		</factory>
+		<factory adaptableType="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.debug.EdeltaDebugVariable" class="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.ui.debug.EdeltaAdapterFactory">
+			<adapter type="org.eclipse.debug.internal.ui.viewers.model.provisional.IElementContentProvider">
+			</adapter>
+		</factory>
+	</extension>
+	
+	<extension point="org.eclipse.ui.popupMenus">
+		<viewerContribution id="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.ui.RulerPopupActions" targetID="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.EditorRuler">
+			<action id="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.ui.toggleBreakpointAction" icon="icons/breakpoint_icon.gif" label="Toggle Breakpoint" class="org.eclipse.debug.ui.actions.RulerToggleBreakpointActionDelegate" menubarPath="debug">
+			</action>
+		</viewerContribution>
+	</extension>
+	
+	<extension point="org.eclipse.ui.editorActions">
+		<editorContribution targetID="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.ui.EdeltaEditor" id="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.ui.BreakpointRulerActions">
+			<action id="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.ui.debug.RulerToggleBreakpointAction" label="Add breakpoint" class="org.eclipse.debug.ui.actions.RulerToggleBreakpointActionDelegate" actionID="RulerDoubleClick">
+			</action>
+		</editorContribution>
+	</extension>
+	
+	<extension point="org.eclipse.debug.ui.debugModelPresentations">
+		<debugModelPresentation id="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.debugModel" class="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.ui.debug.EdeltaDebugModelPresentation">
+		</debugModelPresentation>
+	</extension>
+	
+</plugin>

@@ -1,0 +1,3 @@
+[% for (rule in EMIG!Rule.allInstances()) { %] 
+a
+[% } %]

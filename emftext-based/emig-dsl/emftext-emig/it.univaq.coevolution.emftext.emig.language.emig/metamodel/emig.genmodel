@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/it.univaq.coevolution.emftext.emig.language.emig/src-gen"
+    modelPluginID="it.univaq.coevolution.emftext.emig.language.emig" modelName="emig"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
+    usedGenPackages="platform:/plugin/be.ac.vub.simpleocl/metamodel/simpleocl.genmodel#//simpleocl">
+  <foreignModel>emig.ecore</foreignModel>
+  <foreignModel>../../../plugin/be.ac.vub.simpleocl/metamodel/simpleocl.ecore</foreignModel>
+  <genPackages prefix="Emig" basePackage="it.univaq.coevolution.emftext.emig.language"
+      disposableProviderFactory="true" ecorePackage="emig.ecore#/">
+    <genClasses ecoreClass="emig.ecore#//MigrationLibrary"/>
+    <genClasses ecoreClass="emig.ecore#//MigrationProgram">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference emig.ecore#//MigrationProgram/model"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute emig.ecore#//MigrationProgram/delta"/>
+    </genClasses>
+    <genClasses ecoreClass="emig.ecore#//Rule">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference emig.ecore#//Rule/filter"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference emig.ecore#//Rule/rewritingRules"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference emig.ecore#//Rule/where"/>
+    </genClasses>
+    <genClasses ecoreClass="emig.ecore#//RewritingRule">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference emig.ecore#//RewritingRule/left"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference emig.ecore#//RewritingRule/right"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference emig.ecore#//RewritingRule/rule"/>
+    </genClasses>
+    <genClasses ecoreClass="emig.ecore#//Binding">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference emig.ecore#//Binding/expr"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute emig.ecore#//Binding/property"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference emig.ecore#//Binding/ruleElement"/>
+    </genClasses>
+    <genClasses ecoreClass="emig.ecore#//LeftRuleElement">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference emig.ecore#//LeftRuleElement/rewritingRule"/>
+    </genClasses>
+    <genClasses ecoreClass="emig.ecore#//RightRuleElement">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference emig.ecore#//RightRuleElement/rewritingRule"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference emig.ecore#//RightRuleElement/binding"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="emig.ecore#//OpDef">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference emig.ecore#//OpDef/setters"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute emig.ecore#//OpDef/op"/>
+    </genClasses>
+    <genClasses ecoreClass="emig.ecore#//PackageOpDef">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference emig.ecore#//PackageOpDef/classesOp"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference emig.ecore#//PackageOpDef/packagePar"/>
+    </genClasses>
+    <genClasses ecoreClass="emig.ecore#//Package"/>
+    <genClasses ecoreClass="emig.ecore#//ClassOpDef">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference emig.ecore#//ClassOpDef/featureOp"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference emig.ecore#//ClassOpDef/classPar"/>
+    </genClasses>
+    <genClasses ecoreClass="emig.ecore#//Class"/>
+    <genClasses image="false" ecoreClass="emig.ecore#//FeatureOpDef">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference emig.ecore#//FeatureOpDef/featureOpDef"/>
+    </genClasses>
+    <genClasses ecoreClass="emig.ecore#//AttributeOpDef">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference emig.ecore#//AttributeOpDef/attributePar"/>
+    </genClasses>
+    <genClasses ecoreClass="emig.ecore#//Feature"/>
+    <genClasses ecoreClass="emig.ecore#//Attribute"/>
+    <genClasses ecoreClass="emig.ecore#//ReferenceOpDef">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference emig.ecore#//ReferenceOpDef/referencePar"/>
+    </genClasses>
+    <genClasses ecoreClass="emig.ecore#//Reference"/>
+    <genClasses ecoreClass="emig.ecore#//SetterDef">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute emig.ecore#//SetterDef/metafeature"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference emig.ecore#//SetterDef/parametersDef"/>
+    </genClasses>
+    <genClasses ecoreClass="emig.ecore#//MParameter"/>
+  </genPackages>
+</genmodel:GenModel>

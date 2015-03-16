@@ -1,0 +1,89 @@
+migration Migration;
+metamodel MTL;
+
+migrate "Generate.mtl":MTL with delta;
+	
+	
+	rule extractInlineMetaClassBNR1 [
+	 	package p = changePackage{
+			class c = changeClass {
+				attribute attrDel = deleteAttribute {
+					
+				}
+				reference refAdd = addReference {			
+				}
+			}
+			class c2 = addClass {
+				attribute attrAdd1 = addAttribute {}
+				attribute attrAdd2 = addAttribute {}
+				
+			}
+		}
+	]
+	{
+		propCallExpOld : MTL!PropertyCallExp -> propCallExpNew : MTL!PropertyCallExp [
+			name <- propCallExpNew.name,
+		    ordered <- propCallExpNew.ordered,
+		    unique <- propCallExpNew.unique,
+		    lowerBound <- propCallExpNew.lowerBound,
+		    upperBound <- propCallExpNew.upperBound,
+		    startPosition <- propCallExpNew.startPosition,
+		    endPosition <- propCallExpNew.endPosition,
+		    propertyStartPosition <- propCallExpNew.propertyStartPosition,
+		    propertyEndPosition <- propCallExpNew.propertyEndPosition,
+		    markedPre <- propCallExpNew.markedPre,
+		    
+		    var attrChosen <- System.prompt("Choice the migration operation",Sequence{attrAdd1,attrAdd2}),
+		    eType <- attrChosen.eType,
+    		source <- attrChosem.eContainingClass,
+		    source.eType <- c2,
+		    referredProperty <- attrChosen
+		];
+	}
+	
+	rule splitAttributeBNR2 [
+		class c = changeClass {
+			attribute a1 = addAttribute {
+				set name <- var newName1;
+			}
+			attribute a2 = addAttribute {
+				set name <- var newName2;
+			}
+			attribute d = deleteAttribute {
+				set name <- var oldName;
+			}
+		}
+	]
+	{
+		propCallExpOld : MTL!PropertyCallExp -> propCallExpNew : MTL!PropertyCallExp [
+			ordered <- propCallExpOld.ordered,
+			unique <- propCallExpOld.unique,
+		    lowerBound <- propCallExpOld.lowerBound,
+		    upperBound <- propCallExpOld.upperBound,
+		    startPosition <- propCallExpOld.startPosition,
+		    endPosition <- propCallExpOld.endPosition,
+		    propertyStartPosition <- propCallExpOld.propertyStartPosition,
+		    propertyEndPosition <- propCallExpOld.propertyEndPosition,
+		    markedPre <- propCallExpOld.markedPre,
+    		
+    		var attrChosen = System.prompt("Choice the migration operation",Sequence{a1,a2}),
+    		eType <- attrChosen.eType,
+    		source <- attrChosem.eContainingClass,
+    		referredProperty = attrChosen
+		];
+	}
+	
+	rule changeReferenceTypeBNR3[
+		class c = changeClass {
+			reference r = changeReference {
+				set eType <- var newType;
+			}
+		}
+	]
+	{
+		templateInvocationOld : MTL!TemplateInvocation -> templateInvocationNew : MTL!TemplateInvocation [
+		];	
+	}
+
+
+  

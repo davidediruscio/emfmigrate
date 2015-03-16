@@ -1,0 +1,516 @@
+grammar it.univaq.coevolution.emfmigrate.Emig with org.eclipse.xtext.common.Terminals
+
+import "http://www.eclipse.org/emf/2002/Ecore" as ecore
+import "platform:/resource/it.univaq.coevolution.emfmigrate/models/OCLinEmig.ecore" as ocl
+generate emig "http://www.univaq.it/coevolution/emfmigrate/Emig"
+
+MyModel:
+(migrationLib=MigrationLibrary)|
+(MigrationProgr=MigrationProgram)
+;
+
+MigrationLibrary:
+	("Library" title=ID "{"
+rules+=Rule*
+"}")
+;
+
+
+MigrationProgram:
+	("include" libs+=STRING";")*
+migr="migrate" typeArt=Artifact name=STRING ":" ((transformationPackage+=[ecore::EPackage]) (","transformationPackage+=[ecore::EPackage])) "with" delta=STRING "{"
+rules+=Rule*
+"}"
+;
+
+Artifact:
+	type=('transformation'|'model'|'tcs-model')
+;
+
+Rule:"rule" name=ID 
+"["
+(filter=(OpDef)//|refFilter=[edelta::ComplexOperatorDef]
+)
+"]"
+"{"
+rewritingRules+=(RewritingRule)*
+"}"
+;
+
+
+//ComplexOpDef:op=[];
+
+OpDef:EPackageOpDef|EClassOpDef|EAttributeOpDef|EReferenceOpDef
+;
+
+EPackageOpDef:
+("package" var=Package "=")
+(
+(op="changePackage"|op="addPackage"|op="deletePackage")"("ref=Package ":" "package" ")" "where"
+"{"
+(setters+=setterDef|classes+=EClassOpDef)*
+"}"
+//|complex+=CallOperator
+)
+;
+
+EClassOpDef :
+("class" var=Class "=") 
+(
+(op="changeClass"|op="addClass"|op="deleteClass" )"(" ref=Class ":""class"  ")" "where"
+("{"
+ (setters+=setterDef|attributes+= EAttributeOpDef|references+=EReferenceOpDef)*
+"}")
+//|complex+=CallOperator
+)
+;
+
+EAttributeOpDef:
+("attribute" var=Attribute "=")
+((
+(op="changeEAttribute"|op="addEAttribute"|op="deleteEAttribute")
+"("ref=Attribute ":""attribute")")" "where"
+(('{' setters+=setterDef* '}')|";"))//|complex+=CallOperator
+;
+EReferenceOpDef:
+("reference" var=Reference "=")
+((
+(op="changeEReference" |op="addEReference"|op="deleteEReference")
+"("ref=Reference ":""reference")")" "where"
+('{' setters+=setterDef* '}')//|complex+=CallOperator
+);
+
+setterDef:"set" metafeature=[ecore::EStructuralFeature] operator="="
+	//infixOperator 
+	par+=Parameter ("," par+=Parameter)* ";"
+;
+
+RewritingRule:(migratorsSX+=MigratorSX "->" migratorDX+=MigratorDX) ("&"migratorSX+=MigratorSX "->" migratorDX+=MigratorDX)* ;
+
+Migrator:MigratorSX|MigratorDX;
+
+MigratorSX :{MigratorSX} name=VariableDeclaration ":" elementSX=[ecore::EClass] "where" "[" (filterSX+=FilterMigrator) ("&" filterSX+=FilterMigrator)*"]" ;
+
+MigratorDX:{MigratorDX} (name=ID ":" elementDX=[ecore::EClass] "["(filterDX+=FilterMigrator) ("&" filterDX+=FilterMigrator)*"]")|"null" ;
+
+
+FilterMigrator: 
+ specification=OclExpression?
+//(featureSX=DotNavigationObjSX) op="="
+////EssentialOCLInfixOperator   
+//(value=DotNavigationObjDX)?
+;
+
+
+
+
+
+
+DotNavigationObjSX:
+'#'	(obj=[ecore::EObject])("." ref=[ecore::EStructuralFeature])*
+;
+DotNavigationObjDX:
+'#'	(obj=[ecore::EObject])("." ref=[ecore::EStructuralFeature])*
+;
+
+
+Parameter:  '%'name=ID;
+Package returns ecore::EPackage :{Package} name=ID;
+Class returns ecore::EClass: {Class} name=ID;
+Attribute returns ecore::EAttribute: {Attribute}  name=ID;
+Reference returns ecore::EReference:{Reference}  name=ID;
+StructuralFeature returns ecore::EStructuralFeature:Attribute|Reference;
+
+//Ocl grammar specification
+
+OclFeature returns ocl::OclFeature:
+	OclAttribute | Operation;
+
+OclType returns ocl::OclType:
+	OclType_Impl | CollectionType_Impl | StringType | BooleanType | IntegerType | RealType | BagType | OrderedSetType | SequenceType | SetType | OclAnyType | TupleType | OclModelElement | MapType;
+
+
+OclExpression returns ocl::OclExpression: 
+
+VariableExp | SuperExp | StringExp | BooleanExp | RealExp | IntegerExp | BagExp | OrderedSetExp | SequenceExp | SetExp | TupleExp | MapExp | EnumLiteralExp | OclUndefinedExp  | OperatorCallExp | CollectionOperationCallExp | IterateExp | IteratorExp | LetExp | IfExp | CollectionType_Impl | OclType_Impl | StringType | BooleanType | IntegerType | RealType | BagType | OrderedSetType | SequenceType | SetType | OclAnyType | TupleType | OclModelElement | MapType
+|
+("." NavigationOrAttributeCallExp{NavigationOrAttributeCallExp.source+=current}
+)
+	
+;
+
+
+
+VariableDeclaration returns ocl::VariableDeclaration:
+	VariableDeclaration_Impl | TuplePart | Iterator | OclParameter;
+
+OclFeatureDefinition returns ocl::OclFeatureDefinition:
+	
+		('context_' context_=OclContextDefinition)?
+		
+		'def' ':' feature=OclFeature
+  ;
+
+String0 returns ocl::String:
+	'String' /* TODO: implement this rule and an appropriate IValueConverter */;
+
+OclContextDefinition returns ocl::OclContextDefinition:
+	
+		'context' context_=OclType
+;
+
+OclAttribute returns ocl::Attribute:
+
+		
+	 name=STRING ':' type=OclType '=' 
+		 initExpression=OclExpression
+;
+
+Operation returns ocl::Operation:
+
+		name=STRING '('
+		( '{' parameters+=OclParameter ( "," parameters+=OclParameter)* '}' )?
+		')'
+		':' returnType=OclType
+	body=OclExpression
+		
+ ;
+
+OclType_Impl returns ocl::OclType:
+	'OclType'
+		 name=STRING
+		('type' type=OclType)?
+ ;
+
+VariableExp returns ocl::VariableExp: {VariableExp}
+ referredVariable=[ocl::VariableDeclaration] //STRING
+		
+;
+
+SuperExp returns ocl::SuperExp:
+	{SuperExp}
+	'super'
+	;
+
+StringExp returns ocl::StringExp:
+
+	 stringSymbol=String0
+ ;
+
+BooleanExp returns ocl::BooleanExp:
+	
+	 booleanSymbol=Boolean
+	
+  ;
+
+RealExp returns ocl::RealExp:
+realSymbol=Double
+		;
+
+IntegerExp returns ocl::IntegerExp:
+	integerSymbol=Integer
+		;
+
+BagExp returns ocl::BagExp:
+	{BagExp}
+	'Bag'
+	'{'
+		( '{' elements+=OclExpression ( "," elements+=OclExpression)* '}' )?
+    '}';
+
+OrderedSetExp returns ocl::OrderedSetExp:
+	{OrderedSetExp}
+	'OrderedSet'
+	'{'
+		( '{' elements+=OclExpression ( "," elements+=OclExpression)* '}' )?
+    '}';
+
+SequenceExp returns ocl::SequenceExp:
+	{SequenceExp}
+	'Sequence'
+	'{'
+		( '{' elements+=OclExpression ( "," elements+=OclExpression)* '}' )?
+    '}';
+
+SetExp returns ocl::SetExp:
+	{SetExp}
+	'Set'
+	'{'
+		( '{' elements+=OclExpression ( "," elements+=OclExpression)* '}' )?
+    '}';
+
+TupleExp returns ocl::TupleExp:
+	{TupleExp}
+	'Tuple'
+	'{'
+		('{' tuplePart+=TuplePart ( "," tuplePart+=TuplePart)* '}' )?
+    '}';
+
+MapExp returns ocl::MapExp:
+	{MapExp}
+	'Map'
+	'{'
+		('{' elements+=MapElement ( "," elements+=MapElement)* '}' )?
+    '}';
+
+EnumLiteralExp returns ocl::EnumLiteralExp:
+
+		'#' name=STRING
+		//('type' type=OclType)?
+ ;
+
+OclUndefinedExp returns ocl::OclUndefinedExp:
+	{OclUndefinedExp}
+
+	'OclUndefined'
+;
+
+
+NavigationOrAttributeCallExp returns ocl::OclExpression:{ocl::NavigationOrAttributeCallExp}
+(".")name=ID 
+		
+ ;
+
+OperationCallExp returns ocl::OperationCallExp:
+	
+	operationName=ID '('
+	arguments+=OclExpression ( "," arguments+=OclExpression)*
+	')'
+		//'source' source=OclExpression
+	
+   ;
+
+OperatorCallExp returns ocl::OperatorCallExp:
+		
+		operationName=String0 '('	('arguments' '{' arguments+=OclExpression ( "," arguments+=OclExpression)* '}' )? ')'
+	
+	//	'source' source=OclExpression
+;
+
+CollectionOperationCallExp returns ocl::CollectionOperationCallExp:
+
+	 operationName=ID '('
+	 arguments+=OclExpression ( "," arguments+=OclExpression)* 
+	 ')'
+		//'source' source=OclExpression
+
+    ;
+
+IterateExp returns ocl::IterateExp:
+
+		'iterate' '(' 
+		 (iterators+=Iterator ( "," iterators+=Iterator)*) ';'
+		result=VariableDeclaration '|'
+		body=OclExpression
+		')'
+
+		//'source' source=OclExpression
+	
+ ;
+
+IteratorExp returns ocl::IteratorExp:
+	
+		 name=STRING '(' 
+		(( iterators+=Iterator ( "," iterators+=Iterator)* )
+			| body=OclExpression
+		)
+		 ')'
+	
+	 
+;
+
+LetExp returns ocl::LetExp:	
+	'let'	
+		
+	variable=VariableDeclaration
+		'in' in_=OclExpression
+    ;
+
+IfExp returns ocl::IfExp:
+	'If' condition=OclExpression 'then'
+	thenExpression=OclExpression
+	'else' elseExpression=OclExpression
+	'endif'	
+   ;
+
+CollectionType_Impl returns ocl::CollectionType:
+	'Collection'
+
+	'('
+		 elementType=OclType
+    ')';
+
+StringType returns ocl::StringType:
+	'String'
+;
+
+BooleanType returns ocl::BooleanType:
+	'Boolean'
+	;
+
+IntegerType returns ocl::IntegerType:
+	'Integer'
+
+   ;
+
+RealType returns ocl::RealType:
+	'Real'
+	;
+
+BagType returns ocl::BagType:
+	'BagType'
+	'{'
+		
+		'name' name=String0
+		('type' type=OclType)?
+		'elementType' elementType=OclType
+    '}';
+
+OrderedSetType returns ocl::OrderedSetType:
+	'OrderedSetType'
+	'{'
+	
+		'name' name=String0
+		('type' type=OclType)?
+		'elementType' elementType=OclType
+    '}';
+
+SequenceType returns ocl::SequenceType:
+	'SequenceType'
+	'{'
+		
+		'name' name=String0
+		('type' type=OclType)?
+		'elementType' elementType=OclType
+    '}';
+
+SetType returns ocl::SetType:
+	'SetType'
+	'{'
+
+		'name' name=String0
+		('type' type=OclType)?
+		'elementType' elementType=OclType
+    '}';
+
+OclAnyType returns ocl::OclAnyType:
+	'OclAny'
+	;
+
+TupleType returns ocl::TupleType:
+	'TupleType'
+	
+		'( '( '{' attributes+=TupleTypeAttribute ( "," attributes+=TupleTypeAttribute)* '}' )? ')'
+;
+
+OclModelElement returns ocl::OclModelElement:
+	
+		( model=[ocl::OclModel|STRING])'!'name=String0
+		
+    ;
+
+MapType returns ocl::MapType:
+
+		'Map' '(' keyType=OclType ',' valueType=OclType ')'
+		
+		
+;
+
+VariableDeclaration_Impl returns ocl::VariableDeclaration:
+ '#'  varName=ID 
+		((':' '(' variableExp+=[ocl::VariableExp|STRING] ( "," variableExp+=[ocl::VariableExp|STRING])* ')' )?
+		( type=OclType)?  '='
+		( initExpression=OclExpression)? )?
+;
+
+TuplePart returns ocl::TuplePart:
+	
+		 varName=ID
+		//('variableExp' '(' variableExp+=[ocl::VariableExp|STRING] ( "," variableExp+=[ocl::VariableExp|STRING])* ')' )?
+		(':' type=OclType)?
+		('=' initExpression=OclExpression)?
+ ;
+
+Iterator returns ocl::Iterator:
+	 varName=String0
+//		('variableExp' '(' variableExp+=[ocl::VariableExp|STRING] ( "," variableExp+=[ocl::VariableExp|STRING])* ')' )?
+//		('type' type=OclType)?
+//		('initExpression' initExpression=OclExpression)?
+;
+
+OclParameter returns ocl::Parameter:
+		
+		('id' id=String0)?
+		 varName=String0 ':'
+		('variableExp' '(' variableExp+=[ocl::VariableExp|STRING] ( "," variableExp+=[ocl::VariableExp|STRING])* ')' )?
+		( type=OclType)? '='
+		( initExpression=OclExpression)?
+;
+
+
+Boolean returns ocl::Boolean:
+	'true' |'false' /* TODO: implement this rule and an appropriate IValueConverter */;
+
+Double returns ocl::Double:
+	'Double' /* TODO: implement this rule and an appropriate IValueConverter */;
+
+Integer returns ocl::Integer:
+	'Integer' /* TODO: implement this rule and an appropriate IValueConverter */;
+
+
+MapElement returns ocl::MapElement:
+	
+		'(' key=OclExpression ','
+		 value=OclExpression ')'
+   ;
+
+TupleTypeAttribute returns ocl::TupleTypeAttribute:
+	 name=String0 ':' type=OclType
+   ;
+
+OclModel returns ocl::OclModel:
+	
+	name=String0 ':'metamodel=[ocl::OclModel|STRING]
+//		('elements' '(' elements+=[ocl::OclModelElement|STRING] ( "," elements+=[ocl::OclModelElement|STRING])* ')' )?
+//		('model' '(' model+=[ocl::OclModel|STRING] ( "," model+=[ocl::OclModel|STRING])* ')' )?
+  ;
+
+
+		
+
+	PrimitiveTypeIdentifier:
+	'Boolean'
+	| 'Integer'
+	| 'Real'
+	| 'String'
+	| 'UnlimitedNatural'
+	| 'OclAny'
+	| 'OclInvalid'
+	| 'OclVoid';
+	
+OCLReservedKeyword:
+	'and'
+	| 'else'
+	| 'endif'
+	| 'if'
+	| 'implies'
+	| 'in'
+	| 'let'
+	| 'not'
+	| 'or'
+	| 'then'
+	| 'xor';
+
+OCLUnrestrictedIdentifier:
+	'e'
+	| 'E';
+
+OCLPrefixOperator:
+	'-' | 'not';
+
+OCLInfixOperator:
+	'*' | '/' | '+' | '-' | '>' | '<' | '>=' | '<=' | '=' | '<>' | 'and' | 'or' | 'xor' | 'implies';
+
+
+	
+selfExpression: 'self';

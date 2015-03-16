@@ -1,0 +1,43 @@
+migration test;
+
+metamodel ATL : 'http://www.eclipse.org/gmt/2005/ATL';
+migrate T : ATL with someDelta;
+
+rule RenameClass
+[	-- filter
+	class c = changeClass {
+		set name <- var newName;
+	}
+]
+{	--migration actions
+	o1 : ATL!OclModelElement -> o1 : ATL!OclModelElement [ name <- newName ];
+}
+where [ o1.name = c.name ]
+
+rule mergeReferences
+[
+	class c = changeClass{
+	reference ref1 = deleteReference{}
+	reference ref2 = deleteReference{}
+	reference ref_merged=addReference{
+	set name<-var newName;
+	set eType <- var commonsupertype;
+
+}
+}
+	
+]
+{
+s1:ATL!NavigationorAttributeCallExp -> it_Exp:ATL!IteratorExp [name<-'select',source<-s1,body<-op], s1:ATL!NavigationOrAttributCallExp[name<-newName] ,op:ATL!OperationCallExp[operationName<-'ocliskindof',source<-v,arguments<-commonsupertype],v:ATL!VariableExp[ereferredVar<-it],it:ATL!Iterator[]
+;
+}where[s1.name=ref1.name or s1.name =ref2.name  ]
+
+
+rule abstractClass [
+	class c =changeClass{
+		set abstract <-var abstractValue;
+	}
+]
+{
+	r: ATL!MatchedRule -> drop;
+}where[r.inPattern.elements.size()=1 and r.inPattern.elements->collect(e|e.type.name=c.name)=true and abstractValue=true]

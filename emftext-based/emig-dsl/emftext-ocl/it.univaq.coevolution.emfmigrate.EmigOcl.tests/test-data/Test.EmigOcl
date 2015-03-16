@@ -1,0 +1,28 @@
+module Test;
+
+models EMF: EMF, IN: EMF;
+
+context String def: test : Boolean =
+	String::parseBoolean(self)
+	;
+
+context Sequence(OclAny) def: mySelect(f: Lambda(OclAny): Boolean) : Sequence(OclAny) =
+	self->iterate(e; acc: Sequence(OclAny) = Sequence{} |
+		if f(e) then
+			acc->including(e)
+		else
+			acc
+		endif)
+	;
+
+context Integer def: calculate(a: Integer, b: Integer) : Integer =
+	if self > a and self > b then
+		self - a * b.test()
+	else
+		(self + a) * (self + b)
+	endif
+	;
+
+def: "allFunnyEClassInstances"() : Collection(EMF!EClass) =
+	EMF!"ecore::EClass".allInstancesFrom('IN')->select(e|e.name.toUpperCase() = 'FUNNY')
+	;

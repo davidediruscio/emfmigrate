@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/it.univaq.coevolution.emftext.edelta/src-gen"
+    modelPluginID="it.univaq.coevolution.emftext.edelta" modelName="edelta" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="5.0" copyrightFields="false">
+  <foreignModel>edelta.ecore</foreignModel>
+  <genPackages prefix="Edelta" basePackage="it.univaq.coevolution.emftext.edelta.language"
+      disposableProviderFactory="true" ecorePackage="edelta.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="edelta.ecore#//FeatureKind">
+      <genEnumLiterals ecoreEnumLiteral="edelta.ecore#//FeatureKind/attribute"/>
+      <genEnumLiterals ecoreEnumLiteral="edelta.ecore#//FeatureKind/reference"/>
+      <genEnumLiterals ecoreEnumLiteral="edelta.ecore#//FeatureKind/containment"/>
+    </genEnums>
+    <genClasses image="false" ecoreClass="edelta.ecore#//NamedElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute edelta.ecore#//NamedElement/name"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="edelta.ecore#//Type"/>
+    <genClasses ecoreClass="edelta.ecore#//DataType"/>
+    <genClasses ecoreClass="edelta.ecore#//Class">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference edelta.ecore#//Class/classOp"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="edelta.ecore#//PackageOperation">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference edelta.ecore#//PackageOperation/classesoperations"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference edelta.ecore#//PackageOperation/setter"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="edelta.ecore#//FeatureOperation">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference edelta.ecore#//FeatureOperation/setter"/>
+    </genClasses>
+    <genClasses ecoreClass="edelta.ecore#//AttributeOperation"/>
+    <genClasses ecoreClass="edelta.ecore#//ReferenceOperation"/>
+    <genClasses image="false" ecoreClass="edelta.ecore#//AtomicOperator"/>
+    <genClasses ecoreClass="edelta.ecore#//addPackage"/>
+    <genClasses ecoreClass="edelta.ecore#//deletePackage">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference edelta.ecore#//deletePackage/ref"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute edelta.ecore#//deletePackage/ext"/>
+    </genClasses>
+    <genClasses ecoreClass="edelta.ecore#//changePackage">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference edelta.ecore#//changePackage/ref"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute edelta.ecore#//changePackage/ext"/>
+    </genClasses>
+    <genClasses ecoreClass="edelta.ecore#//Package">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference edelta.ecore#//Package/packageOp"/>
+    </genClasses>
+    <genClasses ecoreClass="edelta.ecore#//Model">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference edelta.ecore#//Model/packageoperations"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference edelta.ecore#//Model/module"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference edelta.ecore#//Model/datatypes"/>
+    </genClasses>
+    <genClasses ecoreClass="edelta.ecore#//Module"/>
+    <genClasses image="false" ecoreClass="edelta.ecore#//ClassOperation">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference edelta.ecore#//ClassOperation/featuresoperations"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference edelta.ecore#//ClassOperation/setter"/>
+    </genClasses>
+    <genClasses ecoreClass="edelta.ecore#//changeClass">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference edelta.ecore#//changeClass/ref"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute edelta.ecore#//changeClass/ext"/>
+    </genClasses>
+    <genClasses ecoreClass="edelta.ecore#//deleteClass">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference edelta.ecore#//deleteClass/ref"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute edelta.ecore#//deleteClass/ext"/>
+    </genClasses>
+    <genClasses ecoreClass="edelta.ecore#//addClass"/>
+    <genClasses ecoreClass="edelta.ecore#//Feature"/>
+    <genClasses ecoreClass="edelta.ecore#//Attribute">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference edelta.ecore#//Attribute/featuresOp"/>
+    </genClasses>
+    <genClasses ecoreClass="edelta.ecore#//Reference">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference edelta.ecore#//Reference/featuresOp"/>
+    </genClasses>
+    <genClasses ecoreClass="edelta.ecore#//addAttribute"/>
+    <genClasses ecoreClass="edelta.ecore#//deleteAttribute">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference edelta.ecore#//deleteAttribute/ref"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute edelta.ecore#//deleteAttribute/ext"/>
+    </genClasses>
+    <genClasses ecoreClass="edelta.ecore#//changeAttribute">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference edelta.ecore#//changeAttribute/ref"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute edelta.ecore#//changeAttribute/ext"/>
+    </genClasses>
+    <genClasses ecoreClass="edelta.ecore#//addReference"/>
+    <genClasses ecoreClass="edelta.ecore#//deleteReference">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference edelta.ecore#//deleteReference/ref"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute edelta.ecore#//deleteReference/ext"/>
+    </genClasses>
+    <genClasses ecoreClass="edelta.ecore#//changeReference">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference edelta.ecore#//changeReference/ref"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute edelta.ecore#//changeReference/ext"/>
+    </genClasses>
+    <genClasses ecoreClass="edelta.ecore#//Setter">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute edelta.ecore#//Setter/metafeature"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EReference edelta.ecore#//Setter/value"/>
+    </genClasses>
+    <genClasses ecoreClass="edelta.ecore#//SetterValue">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute edelta.ecore#//SetterValue/feature"/>
+    </genClasses>
+    <genClasses ecoreClass="edelta.ecore#//Parameter">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference edelta.ecore#//Parameter/type"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference edelta.ecore#//Parameter/refType"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

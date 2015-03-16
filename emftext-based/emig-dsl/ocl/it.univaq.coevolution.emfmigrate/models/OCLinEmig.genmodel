@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/it.univaq.coevolution.emfmigrate/src-gen"
+    modelPluginID="it.univaq.coevolution.emfmigrate" modelName="OCLinEmig" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="6.0" copyrightFields="false">
+  <foreignModel>OCLinEmig.ecore</foreignModel>
+  <genPackages prefix="OCLinEmig" disposableProviderFactory="true" ecorePackage="OCLinEmig.ecore#/">
+    <genDataTypes ecoreDataType="OCLinEmig.ecore#//Boolean"/>
+    <genDataTypes ecoreDataType="OCLinEmig.ecore#//Double"/>
+    <genDataTypes ecoreDataType="OCLinEmig.ecore#//Integer"/>
+    <genDataTypes ecoreDataType="OCLinEmig.ecore#//String"/>
+    <genClasses image="false" ecoreClass="OCLinEmig.ecore#//OclExpression">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OCLinEmig.ecore#//OclExpression/type"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference OCLinEmig.ecore#//OclExpression/ifExp3"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference OCLinEmig.ecore#//OclExpression/appliedProperty"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference OCLinEmig.ecore#//OclExpression/collection"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference OCLinEmig.ecore#//OclExpression/letExp"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference OCLinEmig.ecore#//OclExpression/loopExp"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference OCLinEmig.ecore#//OclExpression/parentOperation"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference OCLinEmig.ecore#//OclExpression/initializedVariable"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference OCLinEmig.ecore#//OclExpression/ifExp2"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference OCLinEmig.ecore#//OclExpression/owningOperation"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference OCLinEmig.ecore#//OclExpression/ifExp1"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference OCLinEmig.ecore#//OclExpression/owningAttribute"/>
+    </genClasses>
+    <genClasses ecoreClass="OCLinEmig.ecore#//VariableExp">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference OCLinEmig.ecore#//VariableExp/referredVariable"/>
+    </genClasses>
+    <genClasses ecoreClass="OCLinEmig.ecore#//SuperExp"/>
+    <genClasses image="false" ecoreClass="OCLinEmig.ecore#//PrimitiveExp"/>
+    <genClasses ecoreClass="OCLinEmig.ecore#//StringExp">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OCLinEmig.ecore#//StringExp/stringSymbol"/>
+    </genClasses>
+    <genClasses ecoreClass="OCLinEmig.ecore#//BooleanExp">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OCLinEmig.ecore#//BooleanExp/booleanSymbol"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="OCLinEmig.ecore#//NumericExp"/>
+    <genClasses ecoreClass="OCLinEmig.ecore#//RealExp">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OCLinEmig.ecore#//RealExp/realSymbol"/>
+    </genClasses>
+    <genClasses ecoreClass="OCLinEmig.ecore#//IntegerExp">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OCLinEmig.ecore#//IntegerExp/integerSymbol"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="OCLinEmig.ecore#//CollectionExp">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OCLinEmig.ecore#//CollectionExp/elements"/>
+    </genClasses>
+    <genClasses ecoreClass="OCLinEmig.ecore#//BagExp"/>
+    <genClasses ecoreClass="OCLinEmig.ecore#//OrderedSetExp"/>
+    <genClasses ecoreClass="OCLinEmig.ecore#//SequenceExp"/>
+    <genClasses ecoreClass="OCLinEmig.ecore#//SetExp"/>
+    <genClasses ecoreClass="OCLinEmig.ecore#//TupleExp">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OCLinEmig.ecore#//TupleExp/tuplePart"/>
+    </genClasses>
+    <genClasses ecoreClass="OCLinEmig.ecore#//TuplePart">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference OCLinEmig.ecore#//TuplePart/tuple"/>
+    </genClasses>
+    <genClasses ecoreClass="OCLinEmig.ecore#//MapExp">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OCLinEmig.ecore#//MapExp/elements"/>
+    </genClasses>
+    <genClasses ecoreClass="OCLinEmig.ecore#//MapElement">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference OCLinEmig.ecore#//MapElement/map"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OCLinEmig.ecore#//MapElement/key"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OCLinEmig.ecore#//MapElement/value"/>
+    </genClasses>
+    <genClasses ecoreClass="OCLinEmig.ecore#//EnumLiteralExp">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OCLinEmig.ecore#//EnumLiteralExp/name"/>
+    </genClasses>
+    <genClasses ecoreClass="OCLinEmig.ecore#//OclUndefinedExp"/>
+    <genClasses image="false" ecoreClass="OCLinEmig.ecore#//PropertyCallExp">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OCLinEmig.ecore#//PropertyCallExp/source"/>
+    </genClasses>
+    <genClasses ecoreClass="OCLinEmig.ecore#//NavigationOrAttributeCallExp">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OCLinEmig.ecore#//NavigationOrAttributeCallExp/name"/>
+    </genClasses>
+    <genClasses ecoreClass="OCLinEmig.ecore#//OperationCallExp">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OCLinEmig.ecore#//OperationCallExp/arguments"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OCLinEmig.ecore#//OperationCallExp/operationName"/>
+    </genClasses>
+    <genClasses ecoreClass="OCLinEmig.ecore#//OperatorCallExp"/>
+    <genClasses ecoreClass="OCLinEmig.ecore#//CollectionOperationCallExp"/>
+    <genClasses image="false" ecoreClass="OCLinEmig.ecore#//LoopExp">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OCLinEmig.ecore#//LoopExp/body"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OCLinEmig.ecore#//LoopExp/iterators"/>
+    </genClasses>
+    <genClasses ecoreClass="OCLinEmig.ecore#//IterateExp">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OCLinEmig.ecore#//IterateExp/result"/>
+    </genClasses>
+    <genClasses ecoreClass="OCLinEmig.ecore#//IteratorExp">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OCLinEmig.ecore#//IteratorExp/name"/>
+    </genClasses>
+    <genClasses ecoreClass="OCLinEmig.ecore#//LetExp">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OCLinEmig.ecore#//LetExp/variable"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OCLinEmig.ecore#//LetExp/in_"/>
+    </genClasses>
+    <genClasses ecoreClass="OCLinEmig.ecore#//IfExp">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OCLinEmig.ecore#//IfExp/thenExpression"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OCLinEmig.ecore#//IfExp/condition"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OCLinEmig.ecore#//IfExp/elseExpression"/>
+    </genClasses>
+    <genClasses ecoreClass="OCLinEmig.ecore#//VariableDeclaration">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OCLinEmig.ecore#//VariableDeclaration/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OCLinEmig.ecore#//VariableDeclaration/varName"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OCLinEmig.ecore#//VariableDeclaration/type"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OCLinEmig.ecore#//VariableDeclaration/initExpression"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference OCLinEmig.ecore#//VariableDeclaration/letExp"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference OCLinEmig.ecore#//VariableDeclaration/baseExp"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference OCLinEmig.ecore#//VariableDeclaration/variableExp"/>
+    </genClasses>
+    <genClasses ecoreClass="OCLinEmig.ecore#//Iterator">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference OCLinEmig.ecore#//Iterator/loopExpr"/>
+    </genClasses>
+    <genClasses ecoreClass="OCLinEmig.ecore#//Parameter">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference OCLinEmig.ecore#//Parameter/operation"/>
+    </genClasses>
+    <genClasses ecoreClass="OCLinEmig.ecore#//CollectionType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OCLinEmig.ecore#//CollectionType/elementType"/>
+    </genClasses>
+    <genClasses ecoreClass="OCLinEmig.ecore#//OclType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OCLinEmig.ecore#//OclType/name"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference OCLinEmig.ecore#//OclType/definitions"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference OCLinEmig.ecore#//OclType/oclExpression"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference OCLinEmig.ecore#//OclType/operation"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference OCLinEmig.ecore#//OclType/mapType2"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference OCLinEmig.ecore#//OclType/attribute"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference OCLinEmig.ecore#//OclType/mapType"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference OCLinEmig.ecore#//OclType/collectionTypes"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference OCLinEmig.ecore#//OclType/tupleTypeAttribute"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference OCLinEmig.ecore#//OclType/variableDeclaration"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="OCLinEmig.ecore#//Primitive"/>
+    <genClasses ecoreClass="OCLinEmig.ecore#//StringType"/>
+    <genClasses ecoreClass="OCLinEmig.ecore#//BooleanType"/>
+    <genClasses image="false" ecoreClass="OCLinEmig.ecore#//NumericType"/>
+    <genClasses ecoreClass="OCLinEmig.ecore#//IntegerType"/>
+    <genClasses ecoreClass="OCLinEmig.ecore#//RealType"/>
+    <genClasses ecoreClass="OCLinEmig.ecore#//BagType"/>
+    <genClasses ecoreClass="OCLinEmig.ecore#//OrderedSetType"/>
+    <genClasses ecoreClass="OCLinEmig.ecore#//SequenceType"/>
+    <genClasses ecoreClass="OCLinEmig.ecore#//SetType"/>
+    <genClasses ecoreClass="OCLinEmig.ecore#//OclAnyType"/>
+    <genClasses ecoreClass="OCLinEmig.ecore#//TupleType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OCLinEmig.ecore#//TupleType/attributes"/>
+    </genClasses>
+    <genClasses ecoreClass="OCLinEmig.ecore#//TupleTypeAttribute">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OCLinEmig.ecore#//TupleTypeAttribute/type"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference OCLinEmig.ecore#//TupleTypeAttribute/tupleType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OCLinEmig.ecore#//TupleTypeAttribute/name"/>
+    </genClasses>
+    <genClasses ecoreClass="OCLinEmig.ecore#//OclModelElement">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference OCLinEmig.ecore#//OclModelElement/model"/>
+    </genClasses>
+    <genClasses ecoreClass="OCLinEmig.ecore#//MapType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OCLinEmig.ecore#//MapType/valueType"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OCLinEmig.ecore#//MapType/keyType"/>
+    </genClasses>
+    <genClasses ecoreClass="OCLinEmig.ecore#//OclFeatureDefinition">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OCLinEmig.ecore#//OclFeatureDefinition/feature"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OCLinEmig.ecore#//OclFeatureDefinition/context_"/>
+    </genClasses>
+    <genClasses ecoreClass="OCLinEmig.ecore#//OclContextDefinition">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference OCLinEmig.ecore#//OclContextDefinition/definition"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OCLinEmig.ecore#//OclContextDefinition/context_"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="OCLinEmig.ecore#//OclFeature">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference OCLinEmig.ecore#//OclFeature/definition"/>
+    </genClasses>
+    <genClasses ecoreClass="OCLinEmig.ecore#//Attribute">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OCLinEmig.ecore#//Attribute/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OCLinEmig.ecore#//Attribute/initExpression"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OCLinEmig.ecore#//Attribute/type"/>
+    </genClasses>
+    <genClasses ecoreClass="OCLinEmig.ecore#//Operation">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OCLinEmig.ecore#//Operation/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OCLinEmig.ecore#//Operation/parameters"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OCLinEmig.ecore#//Operation/returnType"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OCLinEmig.ecore#//Operation/body"/>
+    </genClasses>
+    <genClasses ecoreClass="OCLinEmig.ecore#//OclModel">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OCLinEmig.ecore#//OclModel/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference OCLinEmig.ecore#//OclModel/metamodel"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference OCLinEmig.ecore#//OclModel/elements"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference OCLinEmig.ecore#//OclModel/model"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="OCLinEmig.ecore#//LocatedElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OCLinEmig.ecore#//LocatedElement/location"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OCLinEmig.ecore#//LocatedElement/commentsBefore"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OCLinEmig.ecore#//LocatedElement/commentsAfter"/>
+    </genClasses>
+    <genClasses ecoreClass="OCLinEmig.ecore#//Module">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference OCLinEmig.ecore#//Module/oclFeatures"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute OCLinEmig.ecore#//Module/name"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

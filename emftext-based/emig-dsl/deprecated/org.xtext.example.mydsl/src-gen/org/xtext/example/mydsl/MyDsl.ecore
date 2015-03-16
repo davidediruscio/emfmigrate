@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="myDsl"
+    nsURI="http://www.xtext.org/example/mydsl/MyDsl" nsPrefix="myDsl">
+  <eClassifiers xsi:type="ecore:EClass" name="MyModel">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="migrationLib" eType="ecore:EClass platform:/resource/org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/MyDsl.ecore#//MigrationLibrary"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="MigrationProgr" eType="ecore:EClass platform:/resource/org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/MyDsl.ecore#//MigrationProgram"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MigrationLibrary">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="title" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="rules" upperBound="-1"
+        eType="ecore:EClass platform:/resource/org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/MyDsl.ecore#//Rule"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MigrationProgram">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="libs" unique="false" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="migr" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="typeArt" eType="ecore:EClass platform:/resource/org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/MyDsl.ecore#//Artifact"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="transformationPackage"
+        unique="false" upperBound="-1" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="delta" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="rules" upperBound="-1"
+        eType="ecore:EClass platform:/resource/org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/MyDsl.ecore#//Rule"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Artifact">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Rule">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="filter" eType="ecore:EClass platform:/resource/org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/MyDsl.ecore#//OpDef"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="rewritingRules" upperBound="-1"
+        eType="ecore:EClass platform:/resource/org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/MyDsl.ecore#//RewritingRule"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="OpDef">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="op" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="setters" upperBound="-1"
+        eType="ecore:EClass platform:/resource/org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/MyDsl.ecore#//setterDef"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="EPackageOpDef" eSuperTypes="platform:/resource/org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/MyDsl.ecore#//OpDef">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="var" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EPackage"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ref" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EPackage"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="classes" upperBound="-1"
+        eType="ecore:EClass platform:/resource/org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/MyDsl.ecore#//EClassOpDef"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="EClassOpDef" eSuperTypes="platform:/resource/org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/MyDsl.ecore#//OpDef">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="var" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EClass"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ref" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EClass"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="attributes" upperBound="-1"
+        eType="ecore:EClass platform:/resource/org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/MyDsl.ecore#//EAttributeOpDef"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="references" upperBound="-1"
+        eType="ecore:EClass platform:/resource/org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/MyDsl.ecore#//EReferenceOpDef"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="EAttributeOpDef" eSuperTypes="platform:/resource/org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/MyDsl.ecore#//OpDef">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="var" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EAttribute"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ref" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EAttribute"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="EReferenceOpDef" eSuperTypes="platform:/resource/org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/MyDsl.ecore#//OpDef">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="var" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EReference"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ref" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EReference"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="setterDef">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="metafeature" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EStructuralFeature"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="operator" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="par" upperBound="-1" eType="ecore:EClass platform:/resource/org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/MyDsl.ecore#//Parameter"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RewritingRule">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="migratorsSX" upperBound="-1"
+        eType="ecore:EClass platform:/resource/org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/MyDsl.ecore#//MigratorSX"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="migratorDX" upperBound="-1"
+        eType="ecore:EClass platform:/resource/org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/MyDsl.ecore#//MigratorDX"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="migratorSX" upperBound="-1"
+        eType="ecore:EClass platform:/resource/org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/MyDsl.ecore#//MigratorSX"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Migrator">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MigratorSX" eSuperTypes="platform:/resource/org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/MyDsl.ecore#//Migrator">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="elementSX" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="filterSX" upperBound="-1"
+        eType="ecore:EClass platform:/resource/org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/MyDsl.ecore#//FilterMigrator"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MigratorDX" eSuperTypes="platform:/resource/org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/MyDsl.ecore#//Migrator">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="elementDX" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="filterDX" upperBound="-1"
+        eType="ecore:EClass platform:/resource/org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/MyDsl.ecore#//FilterMigrator"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FilterMigrator">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="featureSX" eType="ecore:EClass platform:/resource/org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/MyDsl.ecore#//DotNavigationObjSX"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="op" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="value" eType="ecore:EClass platform:/resource/org.xtext.example.mydsl/src-gen/org/xtext/example/mydsl/MyDsl.ecore#//DotNavigationObjDX"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DotNavigationObjSX">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="obj" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ref" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EStructuralFeature"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DotNavigationObjDX">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="obj" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EObject"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ref" eType="ecore:EClass http://www.eclipse.org/emf/2002/Ecore#//EStructuralFeature"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="OCLinEcoreSpecificationCS">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ownedExpression" eType="ecore:EClass platform:/resource/org.eclipse.ocl.examples.xtext.essentialocl/model/EssentialOCLCST.ecore#//ExpCS"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="exprString" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Parameter">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Package" eSuperTypes="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Class" eSuperTypes="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Attribute" eSuperTypes="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Reference" eSuperTypes="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+</ecore:EPackage>

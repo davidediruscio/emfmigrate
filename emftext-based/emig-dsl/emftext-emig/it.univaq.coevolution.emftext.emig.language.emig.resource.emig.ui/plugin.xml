@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+	<extension point="org.emftext.access.syntax.ui">
+		<metaInformationProvider class="it.univaq.coevolution.emftext.emig.language.emig.resource.emig.ui.EmigUIMetaInformation" id="it.univaq.coevolution.emftext.emig.language.emig.resource.emig.ui.EmigUIMetaInformation">
+		</metaInformationProvider>
+	</extension>
+	
+	<extension point="org.eclipse.ui.editors">
+		<editor class="it.univaq.coevolution.emftext.emig.language.emig.resource.emig.ui.EmigEditor" contributorClass="org.eclipse.ui.texteditor.BasicTextEditorActionContributor" extensions="emig" icon="icons/editor_icon.gif" id="it.univaq.coevolution.emftext.emig.language.emig.resource.emig.ui.EmigEditor" name="EMFText emig Editor">
+			<contentTypeBinding contentTypeId="it.univaq.coevolution.emftext.emig.language.emig.resource.emig">
+			</contentTypeBinding>
+		</editor>
+	</extension>
+	
+	<extension point="org.eclipse.core.runtime.preferences">
+		<initializer class="it.univaq.coevolution.emftext.emig.language.emig.resource.emig.ui.EmigPreferenceInitializer">
+		</initializer>
+	</extension>
+	
+	<extension point="org.eclipse.ui.preferencePages">
+		<page name="Emig Text Editor" id="it.univaq.coevolution.emftext.emig.language.emig.resource.emig.ui.EmigPreferencePage" class="it.univaq.coevolution.emftext.emig.language.emig.resource.emig.ui.EmigPreferencePage" category="org.eclipse.ui.preferencePages.GeneralTextEditor">
+		</page>
+		<page name="Syntax Coloring" id="it.univaq.coevolution.emftext.emig.language.emig.resource.emig.ui.EmigSyntaxColoringPreferencePage" class="it.univaq.coevolution.emftext.emig.language.emig.resource.emig.ui.EmigSyntaxColoringPreferencePage" category="it.univaq.coevolution.emftext.emig.language.emig.resource.emig.ui.EmigPreferencePage">
+		</page>
+		<page name="Brackets" id="it.univaq.coevolution.emftext.emig.language.emig.resource.emig.ui.EmigBracketPreferencePage" class="it.univaq.coevolution.emftext.emig.language.emig.resource.emig.ui.EmigBracketPreferencePage" category="it.univaq.coevolution.emftext.emig.language.emig.resource.emig.ui.EmigPreferencePage">
+		</page>
+	</extension>
+	
+	<extension point="org.eclipse.ui.newWizards">
+		<category id="org.emftext.runtime.ui.EMFTextFileCategory" name="EMFText File">
+		</category>
+		<wizard category="org.emftext.runtime.ui.EMFTextFileCategory" icon="/icons/default_new_icon.gif" class="it.univaq.coevolution.emftext.emig.language.emig.resource.emig.ui.EmigNewFileWizard" id="it.univaq.coevolution.emftext.emig.language.emig.resource.emig.ui.EmigNewFileWizard" name="EMFText .emig file">
+		</wizard>
+		<category id="org.emftext.runtime.ui.EMFTextProjectCategory" name="EMFText Project">
+		</category>
+		<wizard category="org.emftext.runtime.ui.EMFTextProjectCategory" icon="/icons/default_new_icon.gif" class="it.univaq.coevolution.emftext.emig.language.emig.resource.emig.ui.EmigNewProjectWizard" id="it.univaq.coevolution.emftext.emig.language.emig.resource.emig.ui.EmigNewProjectWizard" name="EMFText emig project" project="true">
+		</wizard>
+	</extension>
+	
+	<extension point="org.eclipse.ui.ide.markerResolution">
+		<markerResolutionGenerator class="it.univaq.coevolution.emftext.emig.language.emig.resource.emig.ui.EmigMarkerResolutionGenerator" markerType="it.univaq.coevolution.emftext.emig.language.emig.resource.emig.problem">
+		</markerResolutionGenerator>
+	</extension>
+	
+	<extension point="org.eclipse.core.filebuffers.annotationModelCreation">
+		<factory class="it.univaq.coevolution.emftext.emig.language.emig.resource.emig.ui.EmigAnnotationModelFactory" extensions="emig">
+		</factory>
+	</extension>
+	
+	<extension point="org.eclipse.core.contenttype.contentTypes">
+		<content-type id="it.univaq.coevolution.emftext.emig.language.emig.resource.emig" name=".emig File" base-type="org.eclipse.core.runtime.text" file-extensions="emig">
+		</content-type>
+	</extension>
+	
+	<extension point="org.eclipse.ui.editors.documentProviders">
+		<provider class="org.eclipse.ui.editors.text.TextFileDocumentProvider" extensions="emig" id="it.univaq.coevolution.emftext.emig.language.emig.resource.emig.ui.provider">
+		</provider>
+	</extension>
+	
+	<extension point="org.eclipse.ui.editors.annotationTypes">
+		<type name="it.univaq.coevolution.emftext.emig.language.emig.resource.emig.ui.occurences">
+		</type>
+		<type name="it.univaq.coevolution.emftext.emig.language.emig.resource.emig.ui.occurences.declaration" super="it.univaq.coevolution.emftext.emig.language.emig.resource.emig.ui.occurences">
+		</type>
+	</extension>
+	
+	<extension point="org.eclipse.ui.editors.markerAnnotationSpecification">
+		<specification annotationType="it.univaq.coevolution.emftext.emig.language.emig.resource.emig.ui.occurences" label="Occurrences (in .emig files)" icon="/icons/occurrence_icon.gif" textPreferenceKey="emig.occurrenceIndication" textPreferenceValue="false" highlightPreferenceKey="emig.occurrenceHighlighting" highlightPreferenceValue="true" contributesToHeader="false" overviewRulerPreferenceKey="emig.occurrenceIndicationInOverviewRuler" overviewRulerPreferenceValue="true" verticalRulerPreferenceKey="emig.occurrenceIndicationInVerticalRuler" verticalRulerPreferenceValue="false" colorPreferenceKey="emig.occurrenceIndicationColor" colorPreferenceValue="212,212,212" presentationLayer="4" showInNextPrevDropdownToolbarActionKey="emig.showOccurrenceInNextPrevDropdownToolbarAction" showInNextPrevDropdownToolbarAction="true" isGoToNextNavigationTargetKey="emig.isOccurrenceGoToNextNavigationTarget" isGoToNextNavigationTarget="false" isGoToPreviousNavigationTargetKey="emig.isOccurrenceGoToPreviousNavigationTarget" isGoToPreviousNavigationTarget="false" textStylePreferenceKey="emig.occurrenceTextStyle" textStylePreferenceValue="NONE">
+		</specification>
+		<specification annotationType="it.univaq.coevolution.emftext.emig.language.emig.resource.emig.ui.occurences.declaration" label="Declarations (in .emig files)" textPreferenceKey="emig.declarationIndication" textPreferenceValue="false" highlightPreferenceKey="emig.declarationHighlighting" highlightPreferenceValue="true" overviewRulerPreferenceKey="emig.declarationIndicationInOverviewRuler" overviewRulerPreferenceValue="true" verticalRulerPreferenceKey="emig.declarationIndicationInVerticalRuler" verticalRulerPreferenceValue="false" colorPreferenceKey="emig.declarationIndicationColor" colorPreferenceValue="240,216,168" presentationLayer="4" textStylePreferenceKey="emig.declarationTextStyle" textStylePreferenceValue="NONE">
+		</specification>
+	</extension>
+	
+	<extension point="org.eclipse.ui.editors.annotationTypes">
+		<type name="it.univaq.coevolution.emftext.emig.language.emig.resource.emig.ui.debug.lineBreakpoint" markerType="it.univaq.coevolution.emftext.emig.language.emig.resource.emig.debug.lineBreakpoint.marker" super="org.eclipse.debug.core.breakpoint">
+		</type>
+	</extension>
+	
+	<extension point="org.eclipse.ui.editors.markerAnnotationSpecification">
+		<specification annotationType="it.univaq.coevolution.emftext.emig.language.emig.resource.emig.ui.debug.lineBreakpoint" label="Breakpoints (in .emig files)" icon="/icons/breakpoint_icon.gif" textPreferenceKey="it.univaq.coevolution.emftext.emig.language.emig.resource.emig.ui.lineBreakpoint" textPreferenceValue="false" highlightPreferenceKey="it.univaq.coevolution.emftext.emig.language.emig.resource.emig.ui.lineBreakpointHighlighting" highlightPreferenceValue="true" contributesToHeader="false" overviewRulerPreferenceKey="it.univaq.coevolution.emftext.emig.language.emig.resource.emig.ui.lineBreakpointIndicationInOverviewRuler" overviewRulerPreferenceValue="true" verticalRulerPreferenceKey="it.univaq.coevolution.emftext.emig.language.emig.resource.emig.ui.lineBreakpointIndicationInVerticalRuler" verticalRulerPreferenceValue="false" colorPreferenceKey="it.univaq.coevolution.emftext.emig.language.emig.resource.emig.ui.lineBreakpointColor" colorPreferenceValue="212,212,212" presentationLayer="4" showInNextPrevDropdownToolbarActionKey="it.univaq.coevolution.emftext.emig.language.emig.resource.emig.ui.showLineBreakpointInNextPrevDropdownToolbarAction" showInNextPrevDropdownToolbarAction="true" isGoToNextNavigationTargetKey="it.univaq.coevolution.emftext.emig.language.emig.resource.emig.ui.isLineBreakpointGoToNextNavigationTarget" isGoToNextNavigationTarget="false" isGoToPreviousNavigationTargetKey="it.univaq.coevolution.emftext.emig.language.emig.resource.emig.ui.isLineBreakpointGoToPreviousNavigationTarget" isGoToPreviousNavigationTarget="false" textStylePreferenceKey="it.univaq.coevolution.emftext.emig.language.emig.resource.emig.ui.lineBreakpointTextStyle" textStylePreferenceValue="NONE">
+		</specification>
+	</extension>
+	
+	<extension point="org.eclipse.core.runtime.adapters">
+		<factory adaptableType="it.univaq.coevolution.emftext.emig.language.emig.resource.emig.ui.EmigEditor" class="it.univaq.coevolution.emftext.emig.language.emig.resource.emig.ui.debug.EmigAdapterFactory">
+			<adapter type="org.eclipse.debug.ui.actions.IToggleBreakpointsTarget">
+			</adapter>
+		</factory>
+		<factory adaptableType="it.univaq.coevolution.emftext.emig.language.emig.resource.emig.debug.EmigDebugVariable" class="it.univaq.coevolution.emftext.emig.language.emig.resource.emig.ui.debug.EmigAdapterFactory">
+			<adapter type="org.eclipse.debug.internal.ui.viewers.model.provisional.IElementLabelProvider">
+			</adapter>
+		</factory>
+		<factory adaptableType="it.univaq.coevolution.emftext.emig.language.emig.resource.emig.debug.EmigDebugVariable" class="it.univaq.coevolution.emftext.emig.language.emig.resource.emig.ui.debug.EmigAdapterFactory">
+			<adapter type="org.eclipse.debug.internal.ui.viewers.model.provisional.IElementContentProvider">
+			</adapter>
+		</factory>
+	</extension>
+	
+	<extension point="org.eclipse.ui.popupMenus">
+		<viewerContribution id="it.univaq.coevolution.emftext.emig.language.emig.resource.emig.ui.RulerPopupActions" targetID="it.univaq.coevolution.emftext.emig.language.emig.resource.emig.EditorRuler">
+			<action id="it.univaq.coevolution.emftext.emig.language.emig.resource.emig.ui.toggleBreakpointAction" icon="icons/breakpoint_icon.gif" label="Toggle Breakpoint" class="org.eclipse.debug.ui.actions.RulerToggleBreakpointActionDelegate" menubarPath="debug">
+			</action>
+		</viewerContribution>
+	</extension>
+	
+	<extension point="org.eclipse.ui.editorActions">
+		<editorContribution targetID="it.univaq.coevolution.emftext.emig.language.emig.resource.emig.ui.EmigEditor" id="it.univaq.coevolution.emftext.emig.language.emig.resource.emig.ui.BreakpointRulerActions">
+			<action id="it.univaq.coevolution.emftext.emig.language.emig.resource.emig.ui.debug.RulerToggleBreakpointAction" label="Add breakpoint" class="org.eclipse.debug.ui.actions.RulerToggleBreakpointActionDelegate" actionID="RulerDoubleClick">
+			</action>
+		</editorContribution>
+	</extension>
+	
+	<extension point="org.eclipse.debug.ui.debugModelPresentations">
+		<debugModelPresentation id="it.univaq.coevolution.emftext.emig.language.emig.resource.emig.debugModel" class="it.univaq.coevolution.emftext.emig.language.emig.resource.emig.ui.debug.EmigDebugModelPresentation">
+		</debugModelPresentation>
+	</extension>
+	
+</plugin>

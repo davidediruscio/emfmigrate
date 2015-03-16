@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+	<extension point="org.emftext.access.syntax">
+		<metaInformationProvider class="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.mopp.EdeltaMetaInformation" id="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.mopp.EdeltaMetaInformation">
+		</metaInformationProvider>
+	</extension>
+	
+	<extension id="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.problem" name="EMFText Problem" point="org.eclipse.core.resources.markers">
+		<persistent value="true">
+		</persistent>
+		<super type="org.eclipse.core.resources.problemmarker">
+		</super>
+		<super type="org.eclipse.core.resources.textmarker">
+		</super>
+		<super type="org.eclipse.emf.ecore.diagnostic">
+		</super>
+	</extension>
+	
+	<extension id="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.problem.syntax_error" name="EMFText Problem" point="org.eclipse.core.resources.markers">
+		<persistent value="true">
+		</persistent>
+		<super type="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.problem">
+		</super>
+	</extension>
+	
+	<extension id="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.problem.print_problem" name="EMFText Problem" point="org.eclipse.core.resources.markers">
+		<persistent value="true">
+		</persistent>
+		<super type="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.problem">
+		</super>
+	</extension>
+	
+	<extension id="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.problem.unresolved_reference" name="EMFText Problem" point="org.eclipse.core.resources.markers">
+		<persistent value="true">
+		</persistent>
+		<super type="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.problem">
+		</super>
+	</extension>
+	
+	<extension id="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.problem.analysis_problem" name="EMFText Problem" point="org.eclipse.core.resources.markers">
+		<persistent value="true">
+		</persistent>
+		<super type="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.problem">
+		</super>
+	</extension>
+	
+	<extension id="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.problem.builder_error" name="EMFText Problem" point="org.eclipse.core.resources.markers">
+		<persistent value="true">
+		</persistent>
+		<super type="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.problem">
+		</super>
+	</extension>
+	
+	<extension id="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.nature" name="edelta nature" point="org.eclipse.core.resources.natures">
+		<runtime>
+			<run class="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.mopp.EdeltaNature">
+			</run>
+		</runtime>
+		<builder id="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.builder">
+		</builder>
+	</extension>
+	
+	<extension point="org.eclipse.core.resources.builders" id="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.builder" name="edelta Builder">
+		<builder hasNature="true">
+			<run class="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.mopp.EdeltaBuilderAdapter">
+			</run>
+		</builder>
+	</extension>
+	
+	<extension-point id="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.default_load_options" name="Default Load Options" schema="schema/default_load_options.exsd">
+	</extension-point>
+	
+	<extension point="org.eclipse.emf.ecore.extension_parser">
+		<parser class="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.mopp.EdeltaResourceFactoryDelegator" type="edelta">
+		</parser>
+	</extension>
+	
+	<extension-point id="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.additional_extension_parser" name="Additional Extension Parser" schema="schema/additional_extension_parser.exsd">
+	</extension-point>
+	
+	<extension point="org.eclipse.debug.core.breakpoints">
+		<breakpoint class="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.debug.EdeltaLineBreakpoint" id="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.debug.breakpoint" markerType="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.debug.lineBreakpoint.marker" name="edelta Breakpoint">
+		</breakpoint>
+	</extension>
+	
+	<extension id="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.debug.lineBreakpoint.marker" point="org.eclipse.core.resources.markers">
+		<super type="org.eclipse.debug.core.lineBreakpointMarker">
+		</super>
+		<super type="org.eclipse.core.resources.textmarker">
+		</super>
+		<persistent value="true">
+		</persistent>
+	</extension>
+	
+	<extension point="org.eclipse.debug.core.launchConfigurationTypes">
+		<launchConfigurationType id="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.ui.launchConfigurationType" delegate="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.launch.EdeltaLaunchConfigurationDelegate" modes="run,debug" name="edelta Application" sourceLocatorId="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.ui.sourceLocator" sourcePathComputerId="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.ui.sourcePathComputer" delegateName="edelta Launch Tooling" delegateDescription="This will run or debug .edelta files.">
+		</launchConfigurationType>
+	</extension>
+	
+	<extension point="org.eclipse.debug.core.sourcePathComputers">
+		<sourcePathComputer class="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.debug.EdeltaSourcePathComputerDelegate" id="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.ui.sourcePathComputer">
+		</sourcePathComputer>
+	</extension>
+	
+	<extension point="org.eclipse.debug.core.sourceLocators">
+		<sourceLocator id="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.ui.sourceLocator" class="it.univaq.coevolution.emftext.edelta.language.edelta.resource.edelta.debug.EdeltaSourceLocator" name="edelta Source Locator">
+		</sourceLocator>
+	</extension>
+	
+</plugin>

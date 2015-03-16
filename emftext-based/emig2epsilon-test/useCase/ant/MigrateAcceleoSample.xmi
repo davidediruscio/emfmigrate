@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="ASCII"?>
+<emig:MigrationProgram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:emig="http://www.emftext.org/language/evoEmig" xmlns:simpleocl="http://eclipselabs.org/simpleocl/2013/SimpleOCL" name="Migration" delta="delta">
+  <metamodels name="mtl" elements="//@elements.0/@rewritingRules.0/@left.0/@type //@elements.0/@rewritingRules.0/@right.0/@type //@elements.1/@rewritingRules.0/@left.0/@type //@elements.1/@rewritingRules.0/@right.0/@type //@elements.2/@rewritingRules.0/@left.0/@type //@elements.2/@rewritingRules.0/@right.0/@type" model="//@model" uri="http://www.eclipse.org/acceleo/mtl/3.0"/>
+  <elements xsi:type="emig:Rule" name="splitAttributeBNR2">
+    <filter xsi:type="emig:ClassOpDef" op="changeClass">
+      <featureOp xsi:type="emig:AttributeOpDef" op="addAttribute" featureOpDef="//@elements.0/@filter/@featureOp.0">
+        <setters metafeature="name">
+          <parametersDef varName="name"/>
+        </setters>
+        <attributePar varName="a1"/>
+      </featureOp>
+      <featureOp xsi:type="emig:AttributeOpDef" op="addAttribute" featureOpDef="//@elements.0/@filter/@featureOp.1">
+        <attributePar varName="a2"/>
+      </featureOp>
+      <featureOp xsi:type="emig:AttributeOpDef" op="deleteAttribute" featureOpDef="//@elements.0/@filter/@featureOp.2">
+        <attributePar varName="delAttribute"/>
+      </featureOp>
+      <classPar varName="changedClassBNR2"/>
+    </filter>
+    <rewritingRules>
+      <left varName="propCallExpOld" variableExp="//@elements.0/@rewritingRules.0/@right.0/@binding.0/@expr/@source //@elements.0/@rewritingRules.0/@right.0/@binding.5/@expr/@source //@elements.0/@rewritingRules.0/@right.0/@binding.6/@expr/@source //@elements.0/@rewritingRules.0/@right.0/@binding.7/@expr/@source //@elements.0/@rewritingRules.0/@right.0/@binding.8/@expr/@source //@elements.0/@rewritingRules.0/@right.0/@binding.9/@expr/@source //@elements.0/@rewritingRules.0/@right.0/@binding.10/@expr/@source //@elements.0/@rewritingRules.0/@right.0/@binding.11/@expr/@source //@elements.0/@rewritingRules.0/@right.0/@binding.12/@expr/@source">
+        <type xsi:type="simpleocl:OclModelElement" name="PropertyCallExp" model="//@metamodels.0"/>
+      </left>
+      <right varName="propCallExpNew">
+        <type xsi:type="simpleocl:OclModelElement" name="PropCallExp" model="//@metamodels.0"/>
+        <binding xsi:type="emig:OclBinding" property="ordered">
+          <expr xsi:type="simpleocl:PropertyCallExp">
+            <calls xsi:type="simpleocl:NavigationOrAttributeCall" name="ordered"/>
+            <source xsi:type="simpleocl:VariableExp" referredVariable="//@elements.0/@rewritingRules.0/@left.0"/>
+          </expr>
+        </binding>
+        <binding xsi:type="emig:DynamicBinding">
+          <ask message="Choice" elements="//@elements.0/@filter/@featureOp.0/@attributePar //@elements.0/@filter/@featureOp.1/@attributePar"/>
+          <variable xsi:type="emig:MParameter" varName="temp" variableExp="//@elements.0/@rewritingRules.0/@right.0/@binding.2/@expr/@source //@elements.0/@rewritingRules.0/@right.0/@binding.3/@expr/@source //@elements.0/@rewritingRules.0/@right.0/@binding.4/@expr"/>
+        </binding>
+        <binding xsi:type="emig:OclBinding" property="eType">
+          <expr xsi:type="simpleocl:PropertyCallExp">
+            <calls xsi:type="simpleocl:NavigationOrAttributeCall" name="eType"/>
+            <source xsi:type="simpleocl:VariableExp" referredVariable="//@elements.0/@rewritingRules.0/@right.0/@binding.1/@variable"/>
+          </expr>
+        </binding>
+        <binding xsi:type="emig:OclBinding" property="source">
+          <expr xsi:type="simpleocl:PropertyCallExp">
+            <calls xsi:type="simpleocl:NavigationOrAttributeCall" name="eContainingClass"/>
+            <source xsi:type="simpleocl:VariableExp" referredVariable="//@elements.0/@rewritingRules.0/@right.0/@binding.1/@variable"/>
+          </expr>
+        </binding>
+        <binding xsi:type="emig:OclBinding" property="referredProprerty">
+          <expr xsi:type="simpleocl:VariableExp" referredVariable="//@elements.0/@rewritingRules.0/@right.0/@binding.1/@variable"/>
+        </binding>
+        <binding xsi:type="emig:OclBinding" property="unique">
+          <expr xsi:type="simpleocl:PropertyCallExp">
+            <calls xsi:type="simpleocl:NavigationOrAttributeCall" name="unique"/>
+            <source xsi:type="simpleocl:VariableExp" referredVariable="//@elements.0/@rewritingRules.0/@left.0"/>
+          </expr>
+        </binding>
+        <binding xsi:type="emig:OclBinding" property="lowerBound">
+          <expr xsi:type="simpleocl:PropertyCallExp">
+            <calls xsi:type="simpleocl:NavigationOrAttributeCall" name="lowerBound"/>
+            <source xsi:type="simpleocl:VariableExp" referredVariable="//@elements.0/@rewritingRules.0/@left.0"/>
+          </expr>
+        </binding>
+        <binding xsi:type="emig:OclBinding" property="upperBound">
+          <expr xsi:type="simpleocl:PropertyCallExp">
+            <calls xsi:type="simpleocl:NavigationOrAttributeCall" name="upperBound"/>
+            <source xsi:type="simpleocl:VariableExp" referredVariable="//@elements.0/@rewritingRules.0/@left.0"/>
+          </expr>
+        </binding>
+        <binding xsi:type="emig:OclBinding" property="startPosition">
+          <expr xsi:type="simpleocl:PropertyCallExp">
+            <calls xsi:type="simpleocl:NavigationOrAttributeCall" name="startPosition"/>
+            <source xsi:type="simpleocl:VariableExp" referredVariable="//@elements.0/@rewritingRules.0/@left.0"/>
+          </expr>
+        </binding>
+        <binding xsi:type="emig:OclBinding" property="endPosition">
+          <expr xsi:type="simpleocl:PropertyCallExp">
+            <calls xsi:type="simpleocl:NavigationOrAttributeCall" name="endPosition"/>
+            <source xsi:type="simpleocl:VariableExp" referredVariable="//@elements.0/@rewritingRules.0/@left.0"/>
+          </expr>
+        </binding>
+        <binding xsi:type="emig:OclBinding" property="propertyStartPosition">
+          <expr xsi:type="simpleocl:PropertyCallExp">
+            <calls xsi:type="simpleocl:NavigationOrAttributeCall" name="propertyStartPosition"/>
+            <source xsi:type="simpleocl:VariableExp" referredVariable="//@elements.0/@rewritingRules.0/@left.0"/>
+          </expr>
+        </binding>
+        <binding xsi:type="emig:OclBinding" property="propertyEndPosition">
+          <expr xsi:type="simpleocl:PropertyCallExp">
+            <calls xsi:type="simpleocl:NavigationOrAttributeCall" name="propertyEndPosition"/>
+            <source xsi:type="simpleocl:VariableExp" referredVariable="//@elements.0/@rewritingRules.0/@left.0"/>
+          </expr>
+        </binding>
+        <binding xsi:type="emig:OclBinding" property="markedPre">
+          <expr xsi:type="simpleocl:PropertyCallExp">
+            <calls xsi:type="simpleocl:NavigationOrAttributeCall" name="markedPre"/>
+            <source xsi:type="simpleocl:VariableExp" referredVariable="//@elements.0/@rewritingRules.0/@left.0"/>
+          </expr>
+        </binding>
+      </right>
+    </rewritingRules>
+  </elements>
+  <elements xsi:type="emig:Rule" name="extractInlineMetaClassBNR1">
+    <filter xsi:type="emig:PackageOpDef" op="changePackage">
+      <classesOp op="changeClass">
+        <featureOp xsi:type="emig:AttributeOpDef" op="deleteAttribute" featureOpDef="//@elements.1/@filter/@classesOp.0/@featureOp.0">
+          <attributePar varName="deleteAttributeBNR1"/>
+        </featureOp>
+        <featureOp xsi:type="emig:ReferenceOpDef" op="addReference" featureOpDef="//@elements.1/@filter/@classesOp.0/@featureOp.1">
+          <referencePar varName="addReferenceBNR1" variableExp="//@elements.1/@where/@source/@source"/>
+        </featureOp>
+        <classPar varName="changedClassBNR1"/>
+      </classesOp>
+      <classesOp op="addClass">
+        <featureOp xsi:type="emig:AttributeOpDef" op="addAttribute" featureOpDef="//@elements.1/@filter/@classesOp.1/@featureOp.0">
+          <setters metafeature="name">
+            <parametersDef varName="name"/>
+          </setters>
+          <attributePar varName="addedAttribute1BNR1"/>
+        </featureOp>
+        <featureOp xsi:type="emig:AttributeOpDef" op="addAttribute" featureOpDef="//@elements.1/@filter/@classesOp.1/@featureOp.1">
+          <setters metafeature="name">
+            <parametersDef varName="name"/>
+          </setters>
+          <attributePar varName="addedAttribute2BNR1"/>
+        </featureOp>
+        <classPar varName="addedClassBNR1" variableExp="//@elements.1/@where/@argument"/>
+      </classesOp>
+      <packagePar varName="changedPackageBNR1"/>
+    </filter>
+    <rewritingRules>
+      <left varName="propCallExpOld" variableExp="//@elements.1/@rewritingRules.0/@right.0/@binding.0/@expr/@source //@elements.1/@rewritingRules.0/@right.0/@binding.5/@expr/@source //@elements.1/@rewritingRules.0/@right.0/@binding.6/@expr/@source //@elements.1/@rewritingRules.0/@right.0/@binding.7/@expr/@source //@elements.1/@rewritingRules.0/@right.0/@binding.8/@expr/@source //@elements.1/@rewritingRules.0/@right.0/@binding.9/@expr/@source //@elements.1/@rewritingRules.0/@right.0/@binding.10/@expr/@source //@elements.1/@rewritingRules.0/@right.0/@binding.11/@expr/@source //@elements.1/@rewritingRules.0/@right.0/@binding.12/@expr/@source //@elements.1/@rewritingRules.0/@right.0/@binding.13/@expr/@source">
+        <type xsi:type="simpleocl:OclModelElement" name="PropertyCallExp" model="//@metamodels.0"/>
+      </left>
+      <right varName="propCallExpNew">
+        <type xsi:type="simpleocl:OclModelElement" name="PropCallExp" model="//@metamodels.0"/>
+        <binding xsi:type="emig:OclBinding" property="name">
+          <expr xsi:type="simpleocl:PropertyCallExp">
+            <calls xsi:type="simpleocl:NavigationOrAttributeCall" name="name"/>
+            <source xsi:type="simpleocl:VariableExp" referredVariable="//@elements.1/@rewritingRules.0/@left.0"/>
+          </expr>
+        </binding>
+        <binding xsi:type="emig:DynamicBinding">
+          <ask message="Choice" elements="//@elements.1/@filter/@classesOp.1/@featureOp.0/@attributePar //@elements.1/@filter/@classesOp.1/@featureOp.1/@attributePar"/>
+          <variable xsi:type="emig:MParameter" varName="tempBNR1" variableExp="//@elements.1/@rewritingRules.0/@right.0/@binding.2/@expr/@source //@elements.1/@rewritingRules.0/@right.0/@binding.3/@expr/@source //@elements.1/@rewritingRules.0/@right.0/@binding.4/@expr"/>
+        </binding>
+        <binding xsi:type="emig:OclBinding" property="eType">
+          <expr xsi:type="simpleocl:PropertyCallExp">
+            <calls xsi:type="simpleocl:NavigationOrAttributeCall" name="eType"/>
+            <source xsi:type="simpleocl:VariableExp" referredVariable="//@elements.1/@rewritingRules.0/@right.0/@binding.1/@variable"/>
+          </expr>
+        </binding>
+        <binding xsi:type="emig:OclBinding" property="source">
+          <expr xsi:type="simpleocl:PropertyCallExp">
+            <calls xsi:type="simpleocl:NavigationOrAttributeCall" name="eContainingClass"/>
+            <source xsi:type="simpleocl:VariableExp" referredVariable="//@elements.1/@rewritingRules.0/@right.0/@binding.1/@variable"/>
+          </expr>
+        </binding>
+        <binding xsi:type="emig:OclBinding" property="referredProperty">
+          <expr xsi:type="simpleocl:VariableExp" referredVariable="//@elements.1/@rewritingRules.0/@right.0/@binding.1/@variable"/>
+        </binding>
+        <binding xsi:type="emig:OclBinding" property="ordered">
+          <expr xsi:type="simpleocl:PropertyCallExp">
+            <calls xsi:type="simpleocl:NavigationOrAttributeCall" name="ordered"/>
+            <source xsi:type="simpleocl:VariableExp" referredVariable="//@elements.1/@rewritingRules.0/@left.0"/>
+          </expr>
+        </binding>
+        <binding xsi:type="emig:OclBinding" property="unique">
+          <expr xsi:type="simpleocl:PropertyCallExp">
+            <calls xsi:type="simpleocl:NavigationOrAttributeCall" name="unique"/>
+            <source xsi:type="simpleocl:VariableExp" referredVariable="//@elements.1/@rewritingRules.0/@left.0"/>
+          </expr>
+        </binding>
+        <binding xsi:type="emig:OclBinding" property="lowerBound">
+          <expr xsi:type="simpleocl:PropertyCallExp">
+            <calls xsi:type="simpleocl:NavigationOrAttributeCall" name="lowerBound"/>
+            <source xsi:type="simpleocl:VariableExp" referredVariable="//@elements.1/@rewritingRules.0/@left.0"/>
+          </expr>
+        </binding>
+        <binding xsi:type="emig:OclBinding" property="upperBound">
+          <expr xsi:type="simpleocl:PropertyCallExp">
+            <calls xsi:type="simpleocl:NavigationOrAttributeCall" name="upperBound"/>
+            <source xsi:type="simpleocl:VariableExp" referredVariable="//@elements.1/@rewritingRules.0/@left.0"/>
+          </expr>
+        </binding>
+        <binding xsi:type="emig:OclBinding" property="startPosition">
+          <expr xsi:type="simpleocl:PropertyCallExp">
+            <calls xsi:type="simpleocl:NavigationOrAttributeCall" name="startPosition"/>
+            <source xsi:type="simpleocl:VariableExp" referredVariable="//@elements.1/@rewritingRules.0/@left.0"/>
+          </expr>
+        </binding>
+        <binding xsi:type="emig:OclBinding" property="endPosition">
+          <expr xsi:type="simpleocl:PropertyCallExp">
+            <calls xsi:type="simpleocl:NavigationOrAttributeCall" name="endPosition"/>
+            <source xsi:type="simpleocl:VariableExp" referredVariable="//@elements.1/@rewritingRules.0/@left.0"/>
+          </expr>
+        </binding>
+        <binding xsi:type="emig:OclBinding" property="propertyStartPosition">
+          <expr xsi:type="simpleocl:PropertyCallExp">
+            <calls xsi:type="simpleocl:NavigationOrAttributeCall" name="propertyStartPosition"/>
+            <source xsi:type="simpleocl:VariableExp" referredVariable="//@elements.1/@rewritingRules.0/@left.0"/>
+          </expr>
+        </binding>
+        <binding xsi:type="emig:OclBinding" property="propertyEndPosition">
+          <expr xsi:type="simpleocl:PropertyCallExp">
+            <calls xsi:type="simpleocl:NavigationOrAttributeCall" name="propertyEndPosition"/>
+            <source xsi:type="simpleocl:VariableExp" referredVariable="//@elements.1/@rewritingRules.0/@left.0"/>
+          </expr>
+        </binding>
+        <binding xsi:type="emig:OclBinding" property="markedPre">
+          <expr xsi:type="simpleocl:PropertyCallExp">
+            <calls xsi:type="simpleocl:NavigationOrAttributeCall" name="markedPre"/>
+            <source xsi:type="simpleocl:VariableExp" referredVariable="//@elements.1/@rewritingRules.0/@left.0"/>
+          </expr>
+        </binding>
+      </right>
+    </rewritingRules>
+    <where xsi:type="simpleocl:EqOpCallExp" operationName="=">
+      <argument xsi:type="simpleocl:VariableExp" referredVariable="//@elements.1/@filter/@classesOp.1/@classPar"/>
+      <source xsi:type="simpleocl:PropertyCallExp">
+        <calls xsi:type="simpleocl:NavigationOrAttributeCall" name="eType"/>
+        <source xsi:type="simpleocl:VariableExp" referredVariable="//@elements.1/@filter/@classesOp.0/@featureOp.1/@referencePar"/>
+      </source>
+    </where>
+  </elements>
+  <elements xsi:type="emig:Rule" name="changeReferenceTypeBNR3">
+    <filter xsi:type="emig:ClassOpDef" op="changeClass">
+      <featureOp xsi:type="emig:ReferenceOpDef" op="changeReference" featureOpDef="//@elements.2/@filter/@featureOp.0">
+        <setters metafeature="eType">
+          <parametersDef varName="newType"/>
+        </setters>
+        <referencePar varName="changeRefBNR3"/>
+      </featureOp>
+      <classPar varName="changedClassBNR3"/>
+    </filter>
+    <rewritingRules>
+      <left varName="templateInvocationOld" variableExp="//@elements.2/@rewritingRules.0/@right.0/@binding.0/@expr/@source">
+        <type xsi:type="simpleocl:OclModelElement" name="TemplateInvocation" model="//@metamodels.0"/>
+      </left>
+      <right varName="templateInvocationNew">
+        <type xsi:type="simpleocl:OclModelElement" name="TemplateInvocation" model="//@metamodels.0"/>
+        <binding xsi:type="emig:OclBinding" property="name">
+          <expr xsi:type="simpleocl:PropertyCallExp">
+            <calls xsi:type="simpleocl:NavigationOrAttributeCall" name="name"/>
+            <source xsi:type="simpleocl:VariableExp" referredVariable="//@elements.2/@rewritingRules.0/@left.0"/>
+          </expr>
+        </binding>
+      </right>
+    </rewritingRules>
+  </elements>
+  <model name="Generate" metamodel="//@metamodels.0"/>
+</emig:MigrationProgram>

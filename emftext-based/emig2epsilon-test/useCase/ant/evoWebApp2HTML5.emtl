@@ -1,0 +1,1143 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:mtl="http://www.eclipse.org/acceleo/mtl/3.0" xmlns:ocl.ecore="http://www.eclipse.org/ocl/1.1.0/Ecore">
+  <mtl:Module name="Generate" nsURI="it::univaq::disim::mde::webapp2html::main::Generate" startHeaderPosition="29" endHeaderPosition="86">
+    <input>
+      <takesTypesFrom href="evoWebapp.ecore#/"/>
+    </input>
+    <ownedModuleElement xsi:type="mtl:Template" name="Generate" visibility="Public" main="true">
+      <body xsi:type="mtl:FileBlock" openMode="OverWrite">
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;html>&#xA;&#x9;&lt;head>&#xA;&#x9;&#x9;&lt;title>"/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="aWebApp" referredVariable="/0/Generate/aWebApp">
+            <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//WebApp"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="evoWebapp.ecore#//NamedElement/name"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;/title>&#xA;&#x9;&lt;/head>&#xA;&#x9;&lt;body>&#xA;&#x9;&#x9;&lt;script type=&quot;text/javascript&quot;>&#xA;&#x9;&#x9;window.app = {&#xA;&#x9;&#x9;&#x9;models: {},&#xA;&#x9;&#x9;&#x9;collections: {},&#xA;&#x9;&#x9;&#x9;templates: {},&#xA;&#x9;&#x9;&#x9;views: {},&#xA;&#x9;&#x9;&#x9;controllers: {},&#xA;&#x9;&#x9;&#x9;router: null&#xA;&#x9;&#x9;};&#xA;&#x9;&#x9;&lt;/script>&#xA;&#xA;"/>
+        <body xsi:type="mtl:ForBlock">
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;"/>
+          <body xsi:type="mtl:TemplateInvocation" definition="/0/generateModel">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <argument xsi:type="ocl.ecore:VariableExp" name="model" referredVariable="/0/Generate/%/%.3/model">
+              <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Model"/>
+            </argument>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
+          <loopVariable name="model">
+            <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Model"/>
+          </loopVariable>
+          <iterSet xsi:type="ocl.ecore:PropertyCallExp" eType="/148">
+            <source xsi:type="ocl.ecore:VariableExp" name="aWebApp" referredVariable="/0/Generate/aWebApp">
+              <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//WebApp"/>
+            </source>
+            <referredProperty xsi:type="ecore:EReference" href="evoWebapp.ecore#//WebApp/models"/>
+          </iterSet>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;&#xA;"/>
+        <body xsi:type="mtl:ForBlock">
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;"/>
+          <body xsi:type="mtl:TemplateInvocation" definition="/0/generateCollection">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <argument xsi:type="ocl.ecore:VariableExp" name="collection" referredVariable="/0/Generate/%/%.5/collection">
+              <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Collection"/>
+            </argument>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
+          <loopVariable name="collection">
+            <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Collection"/>
+          </loopVariable>
+          <iterSet xsi:type="ocl.ecore:PropertyCallExp" eType="/149">
+            <source xsi:type="ocl.ecore:VariableExp" name="aWebApp" referredVariable="/0/Generate/aWebApp">
+              <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//WebApp"/>
+            </source>
+            <referredProperty xsi:type="ecore:EReference" href="evoWebapp.ecore#//WebApp/collections"/>
+          </iterSet>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;&#xA;"/>
+        <body xsi:type="mtl:ForBlock">
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;"/>
+          <body xsi:type="mtl:TemplateInvocation" definition="/0/generateTemplate">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <argument xsi:type="ocl.ecore:VariableExp" name="aTemplate" referredVariable="/0/Generate/%/%.7/aTemplate">
+              <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Template"/>
+            </argument>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
+          <loopVariable name="aTemplate">
+            <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Template"/>
+          </loopVariable>
+          <iterSet xsi:type="ocl.ecore:PropertyCallExp" eType="/150">
+            <source xsi:type="ocl.ecore:VariableExp" name="aWebApp" referredVariable="/0/Generate/aWebApp">
+              <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//WebApp"/>
+            </source>
+            <referredProperty xsi:type="ecore:EReference" href="evoWebapp.ecore#//WebApp/templates"/>
+          </iterSet>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;&#xA;"/>
+        <body xsi:type="mtl:ForBlock">
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;"/>
+          <body xsi:type="mtl:TemplateInvocation" definition="/0/generateView">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <argument xsi:type="ocl.ecore:VariableExp" name="view" referredVariable="/0/Generate/%/%.9/view">
+              <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//View"/>
+            </argument>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
+          <loopVariable name="view">
+            <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//View"/>
+          </loopVariable>
+          <iterSet xsi:type="ocl.ecore:PropertyCallExp" eType="/151">
+            <source xsi:type="ocl.ecore:VariableExp" name="aWebApp" referredVariable="/0/Generate/aWebApp">
+              <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//WebApp"/>
+            </source>
+            <referredProperty xsi:type="ecore:EReference" href="evoWebapp.ecore#//WebApp/views"/>
+          </iterSet>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;&#xA;"/>
+        <body xsi:type="mtl:ForBlock">
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;"/>
+          <body xsi:type="mtl:TemplateInvocation" definition="/0/generateController">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <argument xsi:type="ocl.ecore:VariableExp" name="controller" referredVariable="/0/Generate/%/%.11/controller">
+              <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Controller"/>
+            </argument>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
+          <loopVariable name="controller">
+            <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Controller"/>
+          </loopVariable>
+          <iterSet xsi:type="ocl.ecore:PropertyCallExp" eType="/152">
+            <source xsi:type="ocl.ecore:VariableExp" name="aWebApp" referredVariable="/0/Generate/aWebApp">
+              <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//WebApp"/>
+            </source>
+            <referredProperty xsi:type="ecore:EReference" href="evoWebapp.ecore#//WebApp/controllers"/>
+          </iterSet>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#x9;&#x9;&#xA;&#x9;&#x9;"/>
+        <body xsi:type="mtl:TemplateInvocation" definition="/0/generateRouter">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <argument xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Router"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="aWebApp" referredVariable="/0/Generate/aWebApp">
+              <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//WebApp"/>
+            </source>
+            <referredProperty xsi:type="ecore:EReference" href="evoWebapp.ecore#//WebApp/router"/>
+          </argument>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;&#x9;&lt;/body>&#xA;&lt;/html>&#xA;"/>
+        <fileUrl xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="index.html">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </fileUrl>
+        <charset xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="UTF-8">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </charset>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
+      <parameter name="aWebApp">
+        <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//WebApp"/>
+      </parameter>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Template" name="generateModel" visibility="Public">
+      <body xsi:type="mtl:FileBlock" openMode="OverWrite">
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="app.models."/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="model" referredVariable="/0/generateModel/model">
+            <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Model"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="evoWebapp.ecore#//NamedElement/name"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" = (function() {&#xA;  var "/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="model" referredVariable="/0/generateModel/model">
+            <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Model"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="evoWebapp.ecore#//NamedElement/name"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" = {&#xA;    endpoint: '"/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="model" referredVariable="/0/generateModel/model">
+            <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Model"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="evoWebapp.ecore#//Data/endpoint"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="',&#xA;    props: {&#xA;"/>
+        <body xsi:type="mtl:ForBlock">
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="      "/>
+          <body xsi:type="mtl:TemplateInvocation" definition="/0/generateModelAttribute">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <argument xsi:type="ocl.ecore:VariableExp" name="attribute" referredVariable="/0/generateModel/%/%.7/attribute">
+              <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Attribute"/>
+            </argument>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
+          <loopVariable name="attribute">
+            <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Attribute"/>
+          </loopVariable>
+          <iterSet xsi:type="ocl.ecore:PropertyCallExp" eType="/153">
+            <source xsi:type="ocl.ecore:VariableExp" name="model" referredVariable="/0/generateModel/model">
+              <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Model"/>
+            </source>
+            <referredProperty xsi:type="ecore:EReference" href="evoWebapp.ecore#//Model/attributes"/>
+          </iterSet>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="    }&#xA;  };&#xA;  return "/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="model" referredVariable="/0/generateModel/model">
+            <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Model"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="evoWebapp.ecore#//NamedElement/name"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=";&#xA;})();&#xA;"/>
+        <fileUrl xsi:type="ocl.ecore:OperationCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:OperationCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="models/">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            </source>
+            <argument xsi:type="ocl.ecore:PropertyCallExp">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              <source xsi:type="ocl.ecore:VariableExp" name="model" referredVariable="/0/generateModel/model">
+                <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Model"/>
+              </source>
+              <referredProperty xsi:type="ecore:EAttribute" href="evoWebapp.ecore#//NamedElement/name"/>
+            </argument>
+            <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String_Class/concat"/>
+          </source>
+          <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=".js">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          </argument>
+          <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String_Class/concat"/>
+        </fileUrl>
+        <charset xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="UTF-8">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </charset>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;script type=&quot;text/javascript&quot; src=&quot;models/"/>
+      <body xsi:type="ocl.ecore:PropertyCallExp">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <source xsi:type="ocl.ecore:VariableExp" name="model" referredVariable="/0/generateModel/model">
+          <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Model"/>
+        </source>
+        <referredProperty xsi:type="ecore:EAttribute" href="evoWebapp.ecore#//NamedElement/name"/>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=".js&quot;>&lt;/script>"/>
+      <parameter name="model">
+        <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Model"/>
+      </parameter>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Template" name="generateCollection" visibility="Public">
+      <body xsi:type="mtl:FileBlock" openMode="OverWrite">
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="app.collections."/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="collection" referredVariable="/0/generateCollection/collection">
+            <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Collection"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="evoWebapp.ecore#//NamedElement/name"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" = (function() {&#xA;  var "/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="collection" referredVariable="/0/generateCollection/collection">
+            <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Collection"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="evoWebapp.ecore#//NamedElement/name"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" = {&#xA;    endpoint: '"/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="collection" referredVariable="/0/generateCollection/collection">
+            <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Collection"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="evoWebapp.ecore#//Data/endpoint"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="',&#xA;    model: app.models."/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Model"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="collection" referredVariable="/0/generateCollection/collection">
+              <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Collection"/>
+            </source>
+            <referredProperty xsi:type="ecore:EReference" href="evoWebapp.ecore#//Collection/model"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="evoWebapp.ecore#//NamedElement/name"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;  };&#xA;  return "/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="collection" referredVariable="/0/generateCollection/collection">
+            <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Collection"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="evoWebapp.ecore#//NamedElement/name"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=";&#xA;})();&#xA;"/>
+        <fileUrl xsi:type="ocl.ecore:OperationCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:OperationCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="collections/">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            </source>
+            <argument xsi:type="ocl.ecore:PropertyCallExp">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              <source xsi:type="ocl.ecore:VariableExp" name="collection" referredVariable="/0/generateCollection/collection">
+                <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Collection"/>
+              </source>
+              <referredProperty xsi:type="ecore:EAttribute" href="evoWebapp.ecore#//NamedElement/name"/>
+            </argument>
+            <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String_Class/concat"/>
+          </source>
+          <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=".js">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          </argument>
+          <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String_Class/concat"/>
+        </fileUrl>
+        <charset xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="UTF-8">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </charset>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;script type=&quot;text/javascript&quot; src=&quot;collections/"/>
+      <body xsi:type="ocl.ecore:PropertyCallExp">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <source xsi:type="ocl.ecore:VariableExp" name="collection" referredVariable="/0/generateCollection/collection">
+          <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Collection"/>
+        </source>
+        <referredProperty xsi:type="ecore:EAttribute" href="evoWebapp.ecore#//NamedElement/name"/>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=".js&quot;>&lt;/script>"/>
+      <parameter name="collection">
+        <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Collection"/>
+      </parameter>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Template" name="generateTemplate" visibility="Public">
+      <body xsi:type="mtl:FileBlock" openMode="OverWrite">
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;style>&#xA;"/>
+        <body xsi:type="ocl.ecore:PropertyCallExp"/>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;&lt;/style>&#xA;&#xA;"/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="aTemplate" referredVariable="/0/generateTemplate/aTemplate">
+            <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Template"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="evoWebapp.ecore#//Template/structure"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
+        <fileUrl xsi:type="ocl.ecore:OperationCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:OperationCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="templates/">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            </source>
+            <argument xsi:type="ocl.ecore:PropertyCallExp">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              <source xsi:type="ocl.ecore:VariableExp" name="aTemplate" referredVariable="/0/generateTemplate/aTemplate">
+                <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Template"/>
+              </source>
+              <referredProperty xsi:type="ecore:EAttribute" href="evoWebapp.ecore#//NamedElement/name"/>
+            </argument>
+            <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String_Class/concat"/>
+          </source>
+          <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=".html">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          </argument>
+          <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String_Class/concat"/>
+        </fileUrl>
+        <charset xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="UTF-8">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </charset>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;script type=&quot;text/javascript&quot; src=&quot;templates/"/>
+      <body xsi:type="ocl.ecore:PropertyCallExp">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <source xsi:type="ocl.ecore:VariableExp" name="aTemplate" referredVariable="/0/generateTemplate/aTemplate">
+          <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Template"/>
+        </source>
+        <referredProperty xsi:type="ecore:EAttribute" href="evoWebapp.ecore#//NamedElement/name"/>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=".js&quot;>&lt;/script>"/>
+      <parameter name="aTemplate">
+        <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Template"/>
+      </parameter>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Template" name="generateView" visibility="Public">
+      <body xsi:type="mtl:FileBlock" openMode="OverWrite">
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="app.views."/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="view" referredVariable="/0/generateView/view">
+            <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//View"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="evoWebapp.ecore#//NamedElement/name"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" = (function() {&#xA;  var "/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="view" referredVariable="/0/generateView/view">
+            <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//View"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="evoWebapp.ecore#//NamedElement/name"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" = {&#xA;    subviews: "/>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="[">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </body>
+        <body xsi:type="mtl:ForBlock">
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" app.views."/>
+          <body xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="subview" referredVariable="/0/generateView/%/%.6/subview">
+              <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//View"/>
+            </source>
+            <referredProperty xsi:type="ecore:EAttribute" href="evoWebapp.ecore#//NamedElement/name"/>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=", "/>
+          <loopVariable name="subview">
+            <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//View"/>
+          </loopVariable>
+          <iterSet xsi:type="ocl.ecore:PropertyCallExp" eType="/151">
+            <source xsi:type="ocl.ecore:VariableExp" name="view" referredVariable="/0/generateView/view">
+              <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//View"/>
+            </source>
+            <referredProperty xsi:type="ecore:EReference" href="evoWebapp.ecore#//View/subviews"/>
+          </iterSet>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="]">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=",&#xA;    template: app.templates."/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Template"/>
+            <source xsi:type="ocl.ecore:VariableExp" name="view" referredVariable="/0/generateView/view">
+              <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//View"/>
+            </source>
+            <referredProperty xsi:type="ecore:EReference" href="evoWebapp.ecore#//View/template"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="evoWebapp.ecore#//NamedElement/name"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=",&#xA;    data: {&#xA;      "/>
+        <body xsi:type="mtl:TemplateInvocation"/>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;    }&#xA;  };&#xA;  return "/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="view" referredVariable="/0/generateView/view">
+            <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//View"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="evoWebapp.ecore#//NamedElement/name"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=";&#xA;})();&#xA;"/>
+        <fileUrl xsi:type="ocl.ecore:OperationCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:OperationCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="views/">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            </source>
+            <argument xsi:type="ocl.ecore:PropertyCallExp">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              <source xsi:type="ocl.ecore:VariableExp" name="view" referredVariable="/0/generateView/view">
+                <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//View"/>
+              </source>
+              <referredProperty xsi:type="ecore:EAttribute" href="evoWebapp.ecore#//NamedElement/name"/>
+            </argument>
+            <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String_Class/concat"/>
+          </source>
+          <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=".js">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          </argument>
+          <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String_Class/concat"/>
+        </fileUrl>
+        <charset xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="UTF-8">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </charset>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;script type=&quot;text/javascript&quot; src=&quot;views/"/>
+      <body xsi:type="ocl.ecore:PropertyCallExp">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <source xsi:type="ocl.ecore:VariableExp" name="view" referredVariable="/0/generateView/view">
+          <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//View"/>
+        </source>
+        <referredProperty xsi:type="ecore:EAttribute" href="evoWebapp.ecore#//NamedElement/name"/>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=".js&quot;>&lt;/script>"/>
+      <parameter name="view">
+        <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//View"/>
+      </parameter>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Template" name="generateController" visibility="Public">
+      <body xsi:type="mtl:FileBlock" openMode="OverWrite">
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="app.controllers."/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="controller" referredVariable="/0/generateController/controller">
+            <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Controller"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="evoWebapp.ecore#//NamedElement/name"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" = (function() {&#xA;  var "/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="controller" referredVariable="/0/generateController/controller">
+            <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Controller"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="evoWebapp.ecore#//NamedElement/name"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=" = { &#xA;    parameters: {&#xA;"/>
+        <body xsi:type="mtl:ForBlock">
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="      "/>
+          <body xsi:type="mtl:TemplateInvocation" definition="/0/generateAttribute">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <argument xsi:type="ocl.ecore:VariableExp" name="parameter" referredVariable="/0/generateController/%/%.5/parameter">
+              <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Attribute"/>
+            </argument>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&#xA;"/>
+          <loopVariable name="parameter">
+            <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Attribute"/>
+          </loopVariable>
+          <iterSet xsi:type="ocl.ecore:PropertyCallExp" eType="/153">
+            <source xsi:type="ocl.ecore:VariableExp" name="controller" referredVariable="/0/generateController/controller">
+              <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Controller"/>
+            </source>
+            <referredProperty xsi:type="ecore:EReference" href="evoWebapp.ecore#//Controller/parameters"/>
+          </iterSet>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="    }&#xA;  };&#xA;  return "/>
+        <body xsi:type="ocl.ecore:PropertyCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="controller" referredVariable="/0/generateController/controller">
+            <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Controller"/>
+          </source>
+          <referredProperty xsi:type="ecore:EAttribute" href="evoWebapp.ecore#//NamedElement/name"/>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=";&#xA;})();&#xA;"/>
+        <fileUrl xsi:type="ocl.ecore:OperationCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          <source xsi:type="ocl.ecore:OperationCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="controllers/">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            </source>
+            <argument xsi:type="ocl.ecore:PropertyCallExp">
+              <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+              <source xsi:type="ocl.ecore:VariableExp" name="controller" referredVariable="/0/generateController/controller">
+                <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Controller"/>
+              </source>
+              <referredProperty xsi:type="ecore:EAttribute" href="evoWebapp.ecore#//NamedElement/name"/>
+            </argument>
+            <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String_Class/concat"/>
+          </source>
+          <argument xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=".js">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+          </argument>
+          <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String_Class/concat"/>
+        </fileUrl>
+        <charset xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="UTF-8">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </charset>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;script type=&quot;text/javascript&quot; src=&quot;controllers/"/>
+      <body xsi:type="ocl.ecore:PropertyCallExp">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <source xsi:type="ocl.ecore:VariableExp" name="controller" referredVariable="/0/generateController/controller">
+          <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Controller"/>
+        </source>
+        <referredProperty xsi:type="ecore:EAttribute" href="evoWebapp.ecore#//NamedElement/name"/>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=".js&quot;>&lt;/script>"/>
+      <parameter name="controller">
+        <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Controller"/>
+      </parameter>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Template" name="generateRouter" visibility="Public">
+      <body xsi:type="mtl:FileBlock" openMode="OverWrite">
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="app.router = (function() {&#xA;  var router = {&#xA;    routes: {&#xA;"/>
+        <body xsi:type="mtl:ForBlock">
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="      '"/>
+          <body xsi:type="ocl.ecore:PropertyCallExp"/>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="': app.controllers."/>
+          <body xsi:type="ocl.ecore:PropertyCallExp">
+            <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+            <source xsi:type="ocl.ecore:PropertyCallExp">
+              <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Controller"/>
+              <source xsi:type="ocl.ecore:VariableExp" name="binding" referredVariable="/0/generateRouter/%/%.1/binding">
+                <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//RouterBinding"/>
+              </source>
+              <referredProperty xsi:type="ecore:EReference" href="evoWebapp.ecore#//RouterBinding/controller"/>
+            </source>
+            <referredProperty xsi:type="ecore:EAttribute" href="evoWebapp.ecore#//NamedElement/name"/>
+          </body>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=",&#xA;"/>
+          <loopVariable name="binding">
+            <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//RouterBinding"/>
+          </loopVariable>
+          <iterSet xsi:type="ocl.ecore:PropertyCallExp" eType="/154">
+            <source xsi:type="ocl.ecore:VariableExp" name="router" referredVariable="/0/generateRouter/router">
+              <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Router"/>
+            </source>
+            <referredProperty xsi:type="ecore:EReference" href="evoWebapp.ecore#//Router/bindings"/>
+          </iterSet>
+        </body>
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="    }&#xA;  };&#xA;  return router;&#xA;})();&#xA;"/>
+        <fileUrl xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="router.js">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </fileUrl>
+        <charset xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="UTF-8">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        </charset>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="&lt;script type=&quot;text/javascript&quot; src=&quot;router.js&quot;>&lt;/script>"/>
+      <parameter name="router">
+        <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Router"/>
+      </parameter>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Template" name="generateViewData" visibility="Public">
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="'"/>
+      <body xsi:type="ocl.ecore:PropertyCallExp">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <source xsi:type="ocl.ecore:VariableExp" name="data" referredVariable="/0/generateViewData/data">
+          <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Data"/>
+        </source>
+        <referredProperty xsi:type="ecore:EAttribute" href="evoWebapp.ecore#//NamedElement/name"/>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="': app."/>
+      <body xsi:type="mtl:IfBlock">
+        <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="model"/>
+        <ifExpr xsi:type="ocl.ecore:OperationCallExp">
+          <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Boolean"/>
+          <source xsi:type="ocl.ecore:VariableExp" name="data" referredVariable="/0/generateViewData/data">
+            <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Data"/>
+          </source>
+          <argument xsi:type="ocl.ecore:TypeExp">
+            <eType xsi:type="ocl.ecore:TypeType" href="WebApp2HTML5.emtl#/124/Model"/>
+            <referredType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Model"/>
+          </argument>
+          <referredOperation xsi:type="ecore:EOperation" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/OclAny_Class/oclIsTypeOf"/>
+        </ifExpr>
+        <else>
+          <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="collection"/>
+        </else>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="."/>
+      <body xsi:type="ocl.ecore:PropertyCallExp">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <source xsi:type="ocl.ecore:VariableExp" name="data" referredVariable="/0/generateViewData/data">
+          <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Data"/>
+        </source>
+        <referredProperty xsi:type="ecore:EAttribute" href="evoWebapp.ecore#//NamedElement/name"/>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol=","/>
+      <parameter name="data">
+        <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Data"/>
+      </parameter>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Template" name="generateAttribute" visibility="Public">
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="'"/>
+      <body xsi:type="ocl.ecore:PropertyCallExp">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <source xsi:type="ocl.ecore:VariableExp" name="attribute" referredVariable="/0/generateAttribute/attribute">
+          <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Attribute"/>
+        </source>
+        <referredProperty xsi:type="ecore:EAttribute" href="evoWebapp.ecore#//NamedElement/name"/>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="': {&#xA;  baseType: '"/>
+      <body xsi:type="ocl.ecore:PropertyCallExp">
+        <eType xsi:type="ecore:EEnum" href="evoWebapp.ecore#//DataType"/>
+        <source xsi:type="ocl.ecore:VariableExp" name="attribute" referredVariable="/0/generateAttribute/attribute">
+          <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Attribute"/>
+        </source>
+        <referredProperty xsi:type="ecore:EAttribute" href="evoWebapp.ecore#//Attribute/baseType"/>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="',&#xA;  customType: '"/>
+      <body xsi:type="ocl.ecore:PropertyCallExp">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <source xsi:type="ocl.ecore:VariableExp" name="attribute" referredVariable="/0/generateAttribute/attribute">
+          <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Attribute"/>
+        </source>
+        <referredProperty xsi:type="ecore:EAttribute" href="evoWebapp.ecore#//Attribute/customType"/>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="'&#xA;},"/>
+      <parameter name="attribute">
+        <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Attribute"/>
+      </parameter>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Comment">
+      <body startPosition="3966" endPosition="4018" value=" Model only has base types for database limitations "/>
+    </ownedModuleElement>
+    <ownedModuleElement xsi:type="mtl:Template" name="generateModelAttribute" visibility="Public">
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="'"/>
+      <body xsi:type="ocl.ecore:PropertyCallExp">
+        <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+        <source xsi:type="ocl.ecore:VariableExp" name="attribute" referredVariable="/0/generateModelAttribute/attribute">
+          <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Attribute"/>
+        </source>
+        <referredProperty xsi:type="ecore:EAttribute" href="evoWebapp.ecore#//NamedElement/name"/>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="': '"/>
+      <body xsi:type="ocl.ecore:PropertyCallExp">
+        <eType xsi:type="ecore:EEnum" href="evoWebapp.ecore#//DataType"/>
+        <source xsi:type="ocl.ecore:VariableExp" name="attribute" referredVariable="/0/generateModelAttribute/attribute">
+          <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Attribute"/>
+        </source>
+        <referredProperty xsi:type="ecore:EAttribute" href="evoWebapp.ecore#//Attribute/baseType"/>
+      </body>
+      <body xsi:type="ocl.ecore:StringLiteralExp" stringSymbol="',"/>
+      <parameter name="attribute">
+        <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Attribute"/>
+      </parameter>
+    </ownedModuleElement>
+  </mtl:Module>
+  <ocl.ecore:StringLiteralExp stringSymbol="UTF-8">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+  </ocl.ecore:StringLiteralExp>
+  <ocl.ecore:StringLiteralExp stringSymbol="UTF-8">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+  </ocl.ecore:StringLiteralExp>
+  <ocl.ecore:StringLiteralExp stringSymbol="UTF-8">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+  </ocl.ecore:StringLiteralExp>
+  <ocl.ecore:StringLiteralExp stringSymbol="UTF-8">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+  </ocl.ecore:StringLiteralExp>
+  <ocl.ecore:StringLiteralExp stringSymbol="UTF-8">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+  </ocl.ecore:StringLiteralExp>
+  <ocl.ecore:StringLiteralExp stringSymbol="UTF-8">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+  </ocl.ecore:StringLiteralExp>
+  <ocl.ecore:StringLiteralExp stringSymbol="UTF-8">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+  </ocl.ecore:StringLiteralExp>
+  <ocl.ecore:PropertyCallExp>
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Data"/>
+    <source xsi:type="ocl.ecore:VariableExp" name="view" referredVariable="/0/generateView/view">
+      <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//View"/>
+    </source>
+    <referredProperty xsi:type="ecore:EReference" href="evoWebapp.ecore#//View/data"/>
+  </ocl.ecore:PropertyCallExp>
+  <ocl.ecore:VariableExp name="aTemplate" referredVariable="/0/generateTemplate/aTemplate">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Template"/>
+  </ocl.ecore:VariableExp>
+  <ocl.ecore:VariableExp name="binding" referredVariable="/0/generateRouter/%/%.1/binding">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//RouterBinding"/>
+  </ocl.ecore:VariableExp>
+  <ocl.ecore:Variable name="self"/>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//WebApp"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//WebApp"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//WebApp"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//WebApp"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//WebApp"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//WebApp"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Model"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Model"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//WebApp"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="i">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//WebApp"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Collection"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Collection"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//WebApp"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="i">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//WebApp"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Template"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Template"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//WebApp"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="i">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//WebApp"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//View"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//View"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//WebApp"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="i">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//WebApp"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Controller"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Controller"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//WebApp"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="i">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//WebApp"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self"/>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Model"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Model"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Model"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Model"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Model"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Model"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Model"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Model"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Attribute"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Attribute"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Model"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="i">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Model"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Model"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self"/>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Collection"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Collection"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Collection"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Collection"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Collection"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Collection"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Collection"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Collection"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Collection"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Collection"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self"/>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Template"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Template"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Template"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Template"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Template"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Template"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Template"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self"/>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//View"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//View"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//View"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//View"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//View"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//View"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//View"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//View"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//View"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//View"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//View"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="i">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//View"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//View"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//View"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//View"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//View"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self"/>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Controller"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Controller"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Controller"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Controller"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Controller"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Controller"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Controller"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Attribute"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Attribute"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Controller"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="i">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Controller"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Controller"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self"/>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Router"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Router"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Router"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Router"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Router"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//RouterBinding"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//RouterBinding"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//RouterBinding"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Router"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="i">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/Integer"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self"/>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Data"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Data"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Data"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Data"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Data"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self"/>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Attribute"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Attribute"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Attribute"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Attribute"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Attribute"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self"/>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Attribute"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ocl.ecore:PrimitiveType" href="http://www.eclipse.org/ocl/1.1.0/oclstdlib.ecore#/0/String"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Attribute"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Attribute"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self">
+    <eType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Attribute"/>
+  </ocl.ecore:Variable>
+  <ocl.ecore:Variable name="self"/>
+  <ocl.ecore:OrderedSetType name="OrderedSet(Model)" instanceClassName="java.util.LinkedHashSet">
+    <elementType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Model"/>
+  </ocl.ecore:OrderedSetType>
+  <ocl.ecore:OrderedSetType name="OrderedSet(Collection)" instanceClassName="java.util.LinkedHashSet">
+    <elementType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Collection"/>
+  </ocl.ecore:OrderedSetType>
+  <ocl.ecore:OrderedSetType name="OrderedSet(Template)" instanceClassName="java.util.LinkedHashSet">
+    <elementType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Template"/>
+  </ocl.ecore:OrderedSetType>
+  <ocl.ecore:OrderedSetType name="OrderedSet(View)" instanceClassName="java.util.LinkedHashSet">
+    <elementType xsi:type="ecore:EClass" href="evoWebapp.ecore#//View"/>
+  </ocl.ecore:OrderedSetType>
+  <ocl.ecore:OrderedSetType name="OrderedSet(Controller)" instanceClassName="java.util.LinkedHashSet">
+    <elementType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Controller"/>
+  </ocl.ecore:OrderedSetType>
+  <ocl.ecore:OrderedSetType name="OrderedSet(Attribute)" instanceClassName="java.util.LinkedHashSet">
+    <elementType xsi:type="ecore:EClass" href="evoWebapp.ecore#//Attribute"/>
+  </ocl.ecore:OrderedSetType>
+  <ocl.ecore:OrderedSetType name="OrderedSet(RouterBinding)" instanceClassName="java.util.LinkedHashSet">
+    <elementType xsi:type="ecore:EClass" href="evoWebapp.ecore#//RouterBinding"/>
+  </ocl.ecore:OrderedSetType>
+</xmi:XMI>
