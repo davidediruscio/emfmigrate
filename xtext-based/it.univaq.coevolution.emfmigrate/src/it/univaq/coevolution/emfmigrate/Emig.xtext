@@ -1,0 +1,121 @@
+grammar it.univaq.coevolution.emfmigrate.Emig with org.eclipse.xtext.common.Terminals
+
+import "http://www.eclipse.org/emf/2002/Ecore" as ecore
+//import "platform:/resource/it.univaq.coevolution.emfmigrate/models/OCLinEmig.ecore" as ocl
+generate emig "http://www.univaq.it/coevolution/emfmigrate/Emig"
+
+MyModel:
+
+(migrationLib=MigrationLibrary)|
+(MigrationProgr=MigrationProgram)
+;
+
+MigrationLibrary:
+	("Library" name=ID "{"
+rules+=Rule*
+"}")
+;
+
+
+LocatedElement: line=INT endline=INT offset=INT endoffset=INT|DotNavigationObjSX|DotNavigationObjDX| setterDef|MigrationProgram|Rule|Artifact|OpDef|RewritingRule|Migrator|FilterMigrator|Parameter;
+
+MigrationProgram:
+	'Migration' name=ID";"
+	("include" libs+=STRING";")*
+migr="migrate" typeArt=Artifact artifact=STRING ":" ((transformationPackage+=[ecore::EPackage]) (","transformationPackage+=[ecore::EPackage])) "with" delta=STRING "{"
+rules+=Rule*
+"}"
+;
+
+Artifact:
+	type=('transformation'|'model'|'tcs-model')
+;
+
+Rule:"rule" name=ID 
+"["
+(filter=(OpDef)//|refFilter=[edelta::ComplexOperatorDef]
+)
+"]"
+"{"
+rewritingRules+=(RewritingRule)*
+"}"
+;
+
+
+//ComplexOpDef:op=[];
+
+OpDef:EPackageOpDef|EClassOpDef|EAttributeOpDef|EReferenceOpDef
+;
+
+EPackageOpDef:
+("package" var=Package "=")
+(
+(op="changePackage"|op="addPackage"|op="deletePackage")"("ref=Package ":" "package" ")" "where"
+"{"
+(setters+=setterDef|classes+=EClassOpDef)*
+"}"
+//|complex+=CallOperator
+)
+;
+
+EClassOpDef :
+("class" var=Class "=") 
+(
+(op="changeClass"|op="addClass"|op="deleteClass" )"(" ref=Class ":""class"  ")" "where"
+("{"
+ (setters+=setterDef|attributes+= EAttributeOpDef|references+=EReferenceOpDef)*
+"}")
+//|complex+=CallOperator
+)
+;
+
+EAttributeOpDef:
+("attribute" var=Attribute "=")
+((
+(op="changeEAttribute"|op="addEAttribute"|op="deleteEAttribute")
+"("ref=Attribute ":""attribute")")" "where"
+(('{' setters+=setterDef* '}')|";"))//|complex+=CallOperator
+;
+EReferenceOpDef:
+("reference" var=Reference "=")
+((
+(op="changeEReference" |op="addEReference"|op="deleteEReference")
+"("ref=Reference ":""reference")")" "where"
+('{' setters+=setterDef* '}')//|complex+=CallOperator
+);
+
+setterDef:"set" metafeature=[ecore::EStructuralFeature] operator="="
+	//infixOperator 
+	par+=Parameter ("," par+=Parameter)* ";"
+;
+
+RewritingRule:(migratorSX+=MigratorSX "->" migratorDX+=MigratorDX) ("&"migratorSX+=MigratorSX "->" migratorDX+=MigratorDX)* ;
+
+Migrator:MigratorSX|MigratorDX;
+
+MigratorSX :{MigratorSX} name=ID ":" elementSX=[ecore::EClass] "where" "[" (filterSX+=FilterMigrator) ("&" filterSX+=FilterMigrator)*"]" ;
+
+MigratorDX:{MigratorDX} (name=ID ":" elementDX=[ecore::EClass] "["(filterDX+=FilterMigrator) ("&" filterDX+=FilterMigrator)*"]")|"null" ;
+
+
+FilterMigrator: 
+
+(featureSX=DotNavigationObjSX) op="="
+//EssentialOCLInfixOperator   
+(value=DotNavigationObjDX)?
+;
+
+
+DotNavigationObjSX:
+'#'	(obj=[ecore::EObject])("." ref=[ecore::EStructuralFeature])*
+;
+DotNavigationObjDX:
+'#'	(obj=[ecore::EObject])("." ref=[ecore::EStructuralFeature])*
+;
+
+Parameter:  '%'name=ID;
+Package returns ecore::EPackage :{Package} name=ID;
+Class returns ecore::EClass: {Class} name=ID;
+Attribute returns ecore::EAttribute: {Attribute}  name=ID;
+Reference returns ecore::EReference:{Reference}  name=ID;
+StructuralFeature returns ecore::EStructuralFeature:Attribute|Reference;
