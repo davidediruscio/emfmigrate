@@ -15,7 +15,7 @@ A first implementation of the approach was based on EMFTVM and XText (see the fo
 For an introduction to the coupled evolution problem and for some applications of EMFMigrate please refer to the following publications:
 
 <ul>
-<li>Davide Di Ruscio, Juergen Etzlstorfer, Ludovico Iovino, Alfonso Pierantonio and Wieland Schwinger, Supporting variability exploration and resolution during model migration, in: 12th European Conference on Modelling Foundations and Applications (ECMFA), Vienna, Austria, 2016
+<li>Davide Di Ruscio, Juergen Etzlstorfer, Ludovico Iovino, Alfonso Pierantonio and Wieland Schwinger, <b>Supporting variability exploration and resolution during model migration</b>, in: 12th European Conference on Modelling Foundations and Applications (ECMFA), Vienna, Austria, 2016
 <li>Juri Di Rocco, Davide Di Ruscio, Ludovico Iovino and Alfonso Pierantonio, <b>Dealing with the coupled evolution of metamodels and model-to-text transformations</b>, in: Models and Evolution (ME2014) workshop @MoDELS 2014, Valencia, Spain, 2014
 <li>Davide Di Ruscio, Ludovico Iovino and Alfonso Pierantonio, <b>A methodological approach for the coupled evolution of metamodels and ATL transformations</b>, in: 6th International Conference on Model Transformation (ICMT2013), Budapest, Hungary, pages 60-75, Springer, 2013
 <li>Davide Di Ruscio, Ludovico Iovino and Alfonso Pierantonio, <b>Managing the Coupled Evolution of Metamodels and Textual Concrete Syntax Specifications</b>, in: 39th Euromicro Conference on Software Engineering and Advanced Applications (SEAA 2013), Santander, Spain, 2013
